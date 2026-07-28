@@ -2916,3 +2916,26 @@ font-family: 'Lobster', cursive;
 font-size:18px;
 color:#3D6D8C !important;
 }
+/* =========================================================
+   PASSEPORTS — EN COURS
+   ========================================================= */
+
+.mmic-icon-in-progress {
+  --mmic-icon: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHBhdGggZD0iTTEwIDZoMzFsMTMgMTN2MTlsLTcgN1YyNEgzNlYxM0gxN3YzOGgxOGwtNyA3SDEwVjZ6bTMyIDl2M2gzbC0zLTN6TTUzIDM1bDYgNi0yMCAyMEgyOVY1MWwyMC0yMCA0IDR6bS0xOCAxOHYzaDNsMTUtMTUtMy0zLTE1IDE1ek0yMiAyNWgxOHY1SDIyem0wIDEwaDE0djVIMjJ6Ii8+PC9zdmc+");
+}
+
+/* =========================================================
+   PASSEPORTS — VALIDÉS
+   ========================================================= */
+
+.mmic-icon-approved {
+  --mmic-icon: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHBhdGggZD0iTTEwIDVoMzljNCAwIDcgMyA3IDd2MjdoLTdWMTJIMTh2NDBoMTl2N0gxMFY1em0xNyAxNGM4IDAgMTQgNiAxNCAxNHMtNiAxNC0xNCAxNC0xNC02LTE0LTE0IDYtMTQgMTQtMTR6bS04IDExaDVjMS0zIDItNSAzLTctNCAwLTcgMy04IDd6bTExLTdjMSAyIDIgNCAzIDdoNWMtMS00LTQtNy04LTd6bS0xMSAxM2MxIDQgNCA3IDggNy0xLTItMi00LTMtN2gtNXptMTEgN2M0IDAgNy0zIDgtN2gtNWMtMSAzLTIgNS0zIDd6bTEzIDUgNSA1IDExLTEzIDUgNC0xNiAxOS0xMC0xMCA1LTV6Ii8+PC9zdmc+");
+}
+
+/* =========================================================
+   PASSEPORTS — EN DANGER
+   ========================================================= */
+
+.mmic-icon-danger {
+  --mmic-icon: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHBhdGggZD0iTTEwIDVoMzZ2N2gtNGMtMSA5LTQgMTUtMTAgMjAgNiA1IDkgMTEgMTAgMjBoNHY3SDEwdi03aDRjMS05IDQtMTUgMTAtMjAtNi01LTktMTEtMTAtMjBoLTRWNXptMTEgN2MxIDcgNCAxMSA3IDE0IDMtMyA2LTcgNy0xNEgyMXptNyAyNmMtMyAzLTYgNy03IDE0aDE0Yy0xLTctNC0xMS03LTE0em0yMi0xN2g3djIxaC03VjIxem0wIDI2aDd2N2gtN3YtN3oiLz48L3N2Zz4=");
+}
