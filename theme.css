@@ -622,12 +622,8 @@
 
 /* EN COURS — feuille et crayon */
 
-.mmic-icon-drawing.mmic-icon-in-progress,
-.mmic-icon-in-progress .mmic-icon-drawing {
-  --mmic-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M10 5h31l13 13v19h-7V23H36V12H17v40h17v7H10V5zm32 10v3h3l-3-3zM50 34l9 9-18 18H29V49l21-21 6 6-6 6-3-3-12 12v6h5l16-16-6-5zM22 25h18v5H22zm0 10h14v5H22z'/%3E%3C/svg%3E") !important;
-
-  -webkit-mask-image: var(--mmic-icon) !important;
-  mask-image: var(--mmic-icon) !important;
+.mmic-icon-in-progress {
+  --mmic-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='22' fill='black'/%3E%3C/svg%3E");
 }
 
 
