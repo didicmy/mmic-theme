@@ -585,6 +585,10 @@
 .mmic-icon-male {
   --mmic-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath fill='black' d='M35 29c-5 0-9 4-9 9s4 9 9 9 9-4 9-9-4-9-9-9zm0-6c8 0 15 7 15 15s-7 15-15 15-15-7-15-15 7-15 15-15zM42 7h15v15h-6v-5l-9 9-4-4 9-9h-5V7zM10 48l2 5 5 2-5 2-2 5-2-5-5-2 5-2z'/%3E%3C/svg%3E");
 }
+
+.mmic-icon-presentation-progress
+.mmic-icon-presentation-approved
+.mmic-icon-presentation-danger
 /* CONTENU CENTRAL */
 
 .mmic-forum-content {
