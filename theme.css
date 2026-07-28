@@ -587,28 +587,43 @@
 }
 
 /* =========================================================
-   PASSEPORTS — EN COURS
+   PASSEPORTS — ICÔNES FORCÉES
    ========================================================= */
 
-.mmic-icon-in-progress {
-  --mmic-icon: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHBhdGggZD0iTTEwIDZoMzFsMTMgMTN2MTlsLTcgN1YyNEgzNlYxM0gxN3YzOGgxOGwtNyA3SDEwVjZ6bTMyIDl2M2gzbC0zLTN6TTUzIDM1bDYgNi0yMCAyMEgyOVY1MWwyMC0yMCA0IDR6bS0xOCAxOHYzaDNsMTUtMTUtMy0zLTE1IDE1ek0yMiAyNWgxOHY1SDIyem0wIDEwaDE0djVIMjJ6Ii8+PC9zdmc+");
+
+/* EN COURS — feuille et crayon */
+
+.mmic-icon-drawing.mmic-icon-in-progress,
+.mmic-icon-in-progress .mmic-icon-drawing {
+  --mmic-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M10 5h31l13 13v19h-7V23H36V12H17v40h17v7H10V5zm32 10v3h3l-3-3zM50 34l9 9-18 18H29V49l21-21 6 6-6 6-3-3-12 12v6h5l16-16-6-5zM22 25h18v5H22zm0 10h14v5H22z'/%3E%3C/svg%3E") !important;
+
+  -webkit-mask-image: var(--mmic-icon) !important;
+  mask-image: var(--mmic-icon) !important;
 }
 
-/* =========================================================
-   PASSEPORTS — VALIDÉS
-   ========================================================= */
 
-.mmic-icon-approved {
-  --mmic-icon: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHBhdGggZD0iTTEwIDVoMzljNCAwIDcgMyA3IDd2MjdoLTdWMTJIMTh2NDBoMTl2N0gxMFY1em0xNyAxNGM4IDAgMTQgNiAxNCAxNHMtNiAxNC0xNCAxNC0xNC02LTE0LTE0IDYtMTQgMTQtMTR6bS04IDExaDVjMS0zIDItNSAzLTctNCAwLTcgMy04IDd6bTExLTdjMSAyIDIgNCAzIDdoNWMtMS00LTQtNy04LTd6bS0xMSAxM2MxIDQgNCA3IDggNy0xLTItMi00LTMtN2gtNXptMTEgN2M0IDAgNy0zIDgtN2gtNWMtMSAzLTIgNS0zIDd6bTEzIDUgNSA1IDExLTEzIDUgNC0xNiAxOS0xMC0xMCA1LTV6Ii8+PC9zdmc+");
+/* VALIDÉS — passeport et coche */
+
+.mmic-icon-drawing.mmic-icon-approved,
+.mmic-icon-approved .mmic-icon-drawing {
+  --mmic-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M9 5h40c4 0 7 3 7 7v27h-7V12H17v40h20v7H9V5zm17 14a14 14 0 1 1 0 28 14 14 0 0 1 0-28zm-7 11h5c0-2 1-5 2-7-4 0-7 3-7 7zm12-7c1 2 2 5 2 7h5c0-4-3-7-7-7zM19 36c0 4 3 7 7 7-1-2-2-5-2-7h-5zm12 7c4 0 7-3 7-7h-5c0 2-1 5-2 7zm12 4 5 5 11-13 5 4-16 19-10-10 5-5z'/%3E%3C/svg%3E") !important;
+
+  -webkit-mask-image: var(--mmic-icon) !important;
+  mask-image: var(--mmic-icon) !important;
 }
 
-/* =========================================================
-   PASSEPORTS — EN DANGER
-   ========================================================= */
 
-.mmic-icon-danger {
-  --mmic-icon: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHBhdGggZD0iTTEwIDVoMzZ2N2gtNGMtMSA5LTQgMTUtMTAgMjAgNiA1IDkgMTEgMTAgMjBoNHY3SDEwdi03aDRjMS05IDQtMTUgMTAtMjAtNi01LTktMTEtMTAtMjBoLTRWNXptMTEgN2MxIDcgNCAxMSA3IDE0IDMtMyA2LTcgNy0xNEgyMXptNyAyNmMtMyAzLTYgNy03IDE0aDE0Yy0xLTctNC0xMS03LTE0em0yMi0xN2g3djIxaC03VjIxem0wIDI2aDd2N2gtN3YtN3oiLz48L3N2Zz4=");
+/* EN DANGER — sablier et alerte */
+
+.mmic-icon-drawing.mmic-icon-danger,
+.mmic-icon-danger .mmic-icon-drawing {
+  --mmic-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M7 5h38v7h-4c-1 8-4 15-10 20 6 5 9 12 10 20h4v7H7v-7h4c1-8 4-15 10-20-6-5-9-12-10-20H7V5zm11 7c1 6 4 11 7 14 4-3 6-8 8-14H18zm7 26c-3 3-6 8-7 14h15c-2-6-4-11-8-14zm25-19h7v23h-7V19zm0 28h7v7h-7v-7z'/%3E%3C/svg%3E") !important;
+
+  -webkit-mask-image: var(--mmic-icon) !important;
+  mask-image: var(--mmic-icon) !important;
 }
+
+
 /* CONTENU CENTRAL */
 
 .mmic-forum-content {
@@ -2916,26 +2931,4 @@ font-family: 'Lobster', cursive;
 font-size:18px;
 color:#3D6D8C !important;
 }
-/* =========================================================
-   PASSEPORTS — EN COURS
-   ========================================================= */
 
-.mmic-icon-in-progress {
-  --mmic-icon: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHBhdGggZD0iTTEwIDZoMzFsMTMgMTN2MTlsLTcgN1YyNEgzNlYxM0gxN3YzOGgxOGwtNyA3SDEwVjZ6bTMyIDl2M2gzbC0zLTN6TTUzIDM1bDYgNi0yMCAyMEgyOVY1MWwyMC0yMCA0IDR6bS0xOCAxOHYzaDNsMTUtMTUtMy0zLTE1IDE1ek0yMiAyNWgxOHY1SDIyem0wIDEwaDE0djVIMjJ6Ii8+PC9zdmc+");
-}
-
-/* =========================================================
-   PASSEPORTS — VALIDÉS
-   ========================================================= */
-
-.mmic-icon-approved {
-  --mmic-icon: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHBhdGggZD0iTTEwIDVoMzljNCAwIDcgMyA3IDd2MjdoLTdWMTJIMTh2NDBoMTl2N0gxMFY1em0xNyAxNGM4IDAgMTQgNiAxNCAxNHMtNiAxNC0xNCAxNC0xNC02LTE0LTE0IDYtMTQgMTQtMTR6bS04IDExaDVjMS0zIDItNSAzLTctNCAwLTcgMy04IDd6bTExLTdjMSAyIDIgNCAzIDdoNWMtMS00LTQtNy04LTd6bS0xMSAxM2MxIDQgNCA3IDggNy0xLTItMi00LTMtN2gtNXptMTEgN2M0IDAgNy0zIDgtN2gtNWMtMSAzLTIgNS0zIDd6bTEzIDUgNSA1IDExLTEzIDUgNC0xNiAxOS0xMC0xMCA1LTV6Ii8+PC9zdmc+");
-}
-
-/* =========================================================
-   PASSEPORTS — EN DANGER
-   ========================================================= */
-
-.mmic-icon-danger {
-  --mmic-icon: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHBhdGggZD0iTTEwIDVoMzZ2N2gtNGMtMSA5LTQgMTUtMTAgMjAgNiA1IDkgMTEgMTAgMjBoNHY3SDEwdi03aDRjMS05IDQtMTUgMTAtMjAtNi01LTktMTEtMTAtMjBoLTRWNXptMTEgN2MxIDcgNCAxMSA3IDE0IDMtMyA2LTcgNy0xNEgyMXptNyAyNmMtMyAzLTYgNy03IDE0aDE0Yy0xLTctNC0xMS03LTE0em0yMi0xN2g3djIxaC03VjIxem0wIDI2aDd2N2gtN3YtN3oiLz48L3N2Zz4=");
-}
