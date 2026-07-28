@@ -615,38 +615,6 @@
   --mmic-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath fill='black' d='M7 5h38v8h-4c-1 8-4 14-10 19 6 5 9 11 10 19h4v8H7v-8h4c1-8 4-14 10-19-6-5-9-11-10-19H7V5zm12 8c1 6 3 10 7 13 4-3 6-7 7-13H19zm7 25c-4 3-6 7-7 13h14c-1-6-3-10-7-13zm24-20h8v25h-8V18zm0 30h8v8h-8v-8z'/%3E%3C/svg%3E");
 }
 
-/* =========================================================
-   PASSEPORTS — ICÔNES FORCÉES
-   ========================================================= */
-
-
-/* EN COURS — feuille et crayon */
-
-.mmic-icon-in-progress {
-  --mmic-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='22' fill='black'/%3E%3C/svg%3E");
-}
-
-
-/* VALIDÉS — passeport et coche */
-
-.mmic-icon-drawing.mmic-icon-approved,
-.mmic-icon-approved .mmic-icon-drawing {
-  --mmic-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M9 5h40c4 0 7 3 7 7v27h-7V12H17v40h20v7H9V5zm17 14a14 14 0 1 1 0 28 14 14 0 0 1 0-28zm-7 11h5c0-2 1-5 2-7-4 0-7 3-7 7zm12-7c1 2 2 5 2 7h5c0-4-3-7-7-7zM19 36c0 4 3 7 7 7-1-2-2-5-2-7h-5zm12 7c4 0 7-3 7-7h-5c0 2-1 5-2 7zm12 4 5 5 11-13 5 4-16 19-10-10 5-5z'/%3E%3C/svg%3E") !important;
-
-  -webkit-mask-image: var(--mmic-icon) !important;
-  mask-image: var(--mmic-icon) !important;
-}
-
-
-/* EN DANGER — sablier et alerte */
-
-.mmic-icon-drawing.mmic-icon-danger,
-.mmic-icon-danger .mmic-icon-drawing {
-  --mmic-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M7 5h38v7h-4c-1 8-4 15-10 20 6 5 9 12 10 20h4v7H7v-7h4c1-8 4-15 10-20-6-5-9-12-10-20H7V5zm11 7c1 6 4 11 7 14 4-3 6-8 8-14H18zm7 26c-3 3-6 8-7 14h15c-2-6-4-11-8-14zm25-19h7v23h-7V19zm0 28h7v7h-7v-7z'/%3E%3C/svg%3E") !important;
-
-  -webkit-mask-image: var(--mmic-icon) !important;
-  mask-image: var(--mmic-icon) !important;
-}
 
 
 /* CONTENU CENTRAL */
@@ -2957,3 +2925,24 @@ font-size:18px;
 color:#3D6D8C !important;
 }
 
+/* Icônes SVG insérées directement dans le template */
+
+.mmic-icon-drawing.mmic-inline-svg {
+  background-color: transparent !important;
+
+  -webkit-mask: none !important;
+  mask: none !important;
+
+  -webkit-mask-image: none !important;
+  mask-image: none !important;
+}
+
+.mmic-icon-drawing.mmic-inline-svg svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.mmic-icon-drawing.mmic-inline-svg path {
+  fill: #fbf8f3;
+}
