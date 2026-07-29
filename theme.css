@@ -657,6 +657,21 @@
   overflow: visible;
   transition: transform 0.28s ease;
 }
+
+.mmic-custom-icon.mmic-icon-river-north .mmic-icon-drawing::before,
+.mmic-custom-icon.mmic-icon-streeterville .mmic-icon-drawing::before,
+.mmic-custom-icon.mmic-icon-south-loop .mmic-icon-drawing::before{
+    content:none!important;
+    display:none!important;
+}
+
+.mmic-custom-icon.mmic-icon-river-north .mmic-icon-drawing svg,
+.mmic-custom-icon.mmic-icon-streeterville .mmic-icon-drawing svg,
+.mmic-custom-icon.mmic-icon-south-loop .mmic-icon-drawing svg{
+    display:block;
+    width:31px;
+    height:31px;
+}
 /* CONTENU CENTRAL */
 
 .mmic-forum-content {
