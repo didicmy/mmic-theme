@@ -716,6 +716,27 @@
     overflow: visible;
     transition: transform .28s ease;
 }
+
+/* =========================================================
+   TÉLÉPHONIE — SVG DIRECTS
+   ========================================================= */
+
+.mmic-custom-icon.mmic-icon-sms .mmic-icon-drawing::before,
+.mmic-custom-icon.mmic-icon-instagram .mmic-icon-drawing::before,
+.mmic-custom-icon.mmic-icon-facebook .mmic-icon-drawing::before {
+    content:none!important;
+    display:none!important;
+}
+
+.mmic-custom-icon.mmic-icon-sms .mmic-icon-drawing svg,
+.mmic-custom-icon.mmic-icon-instagram .mmic-icon-drawing svg,
+.mmic-custom-icon.mmic-icon-facebook .mmic-icon-drawing svg {
+    display:block;
+    width:31px;
+    height:31px;
+    overflow:visible;
+    transition:transform .28s ease;
+}
 /* CONTENU CENTRAL */
 
 .mmic-forum-content {
