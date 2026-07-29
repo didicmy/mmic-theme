@@ -672,6 +672,27 @@
     width:31px;
     height:31px;
 }
+
+/* =========================================================
+   WEST SIDE — SVG DIRECTS
+   ========================================================= */
+
+.mmic-custom-icon.mmic-icon-west-town .mmic-icon-drawing::before,
+.mmic-custom-icon.mmic-icon-wicker-park .mmic-icon-drawing::before,
+.mmic-custom-icon.mmic-icon-humboldt-park .mmic-icon-drawing::before {
+  content: none !important;
+  display: none !important;
+}
+
+.mmic-custom-icon.mmic-icon-west-town .mmic-icon-drawing svg,
+.mmic-custom-icon.mmic-icon-wicker-park .mmic-icon-drawing svg,
+.mmic-custom-icon.mmic-icon-humboldt-park .mmic-icon-drawing svg {
+  display: block;
+  width: 31px;
+  height: 31px;
+  overflow: visible;
+  transition: transform 0.28s ease;
+}
 /* CONTENU CENTRAL */
 
 .mmic-forum-content {
