@@ -632,6 +632,31 @@
   overflow: visible;
   transition: transform 0.28s ease;
 }
+
+/* =========================================================
+   NORTH SIDE — SVG DIRECTS
+   ========================================================= */
+
+.mmic-custom-icon.mmic-icon-edgewater .mmic-icon-drawing::before,
+.mmic-custom-icon.mmic-icon-lincoln-park .mmic-icon-drawing::before,
+.mmic-custom-icon.mmic-icon-lakeview .mmic-icon-drawing::before,
+.mmic-custom-icon.mmic-icon-boystown .mmic-icon-drawing::before,
+.mmic-custom-icon.mmic-icon-habitations .mmic-icon-drawing::before {
+  content: none !important;
+  display: none !important;
+}
+
+.mmic-custom-icon.mmic-icon-edgewater .mmic-icon-drawing svg,
+.mmic-custom-icon.mmic-icon-lincoln-park .mmic-icon-drawing svg,
+.mmic-custom-icon.mmic-icon-lakeview .mmic-icon-drawing svg,
+.mmic-custom-icon.mmic-icon-boystown .mmic-icon-drawing svg,
+.mmic-custom-icon.mmic-icon-habitations .mmic-icon-drawing svg {
+  display: block;
+  width: 31px;
+  height: 31px;
+  overflow: visible;
+  transition: transform 0.28s ease;
+}
 /* CONTENU CENTRAL */
 
 .mmic-forum-content {
