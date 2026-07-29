@@ -693,6 +693,29 @@
   overflow: visible;
   transition: transform 0.28s ease;
 }
+
+/* =========================================================
+   SOUTH SIDE — SVG DIRECTS
+   ========================================================= */
+
+.mmic-custom-icon.mmic-icon-hyde-park .mmic-icon-drawing::before,
+.mmic-custom-icon.mmic-icon-chinatown .mmic-icon-drawing::before,
+.mmic-custom-icon.mmic-icon-kenwood .mmic-icon-drawing::before,
+.mmic-custom-icon.mmic-icon-south-shore .mmic-icon-drawing::before {
+    content: none !important;
+    display: none !important;
+}
+
+.mmic-custom-icon.mmic-icon-hyde-park .mmic-icon-drawing svg,
+.mmic-custom-icon.mmic-icon-chinatown .mmic-icon-drawing svg,
+.mmic-custom-icon.mmic-icon-kenwood .mmic-icon-drawing svg,
+.mmic-custom-icon.mmic-icon-south-shore .mmic-icon-drawing svg {
+    display: block;
+    width: 31px;
+    height: 31px;
+    overflow: visible;
+    transition: transform .28s ease;
+}
 /* CONTENU CENTRAL */
 
 .mmic-forum-content {
