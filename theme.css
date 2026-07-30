@@ -586,19 +586,27 @@
   --mmic-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath fill='black' d='M35 29c-5 0-9 4-9 9s4 9 9 9 9-4 9-9-4-9-9-9zm0-6c8 0 15 7 15 15s-7 15-15 15-15-7-15-15 7-15 15-15zM42 7h15v15h-6v-5l-9 9-4-4 9-9h-5V7zM10 48l2 5 5 2-5 2-2 5-2-5-5-2 5-2z'/%3E%3C/svg%3E");
 }
 
-/* Empêche les anciens pseudo-éléments d’apparaître
-   par-dessus les SVG intégrés par JavaScript */
+/* =========================================================
+   SVG DIRECTS — RÈGLES COMMUNES
+   Le JavaScript ajoute automatiquement .mmic-svg-icon.
+   Il n’est donc plus nécessaire de répéter chaque classe.
+   ========================================================= */
 
-.mmic-custom-icon.mmic-icon-in-progress .mmic-icon-drawing::before,
-.mmic-custom-icon.mmic-icon-approved .mmic-icon-drawing::before,
-.mmic-custom-icon.mmic-icon-danger .mmic-icon-drawing::before {
+.mmic-custom-icon.mmic-svg-icon .mmic-icon-drawing {
+  -webkit-mask: none !important;
+  mask: none !important;
+  background: transparent !important;
+  display: block !important;
+  width: 31px !important;
+  height: 31px !important;
+}
+
+.mmic-custom-icon.mmic-svg-icon .mmic-icon-drawing::before {
   content: none !important;
   display: none !important;
 }
 
-.mmic-custom-icon.mmic-icon-in-progress .mmic-icon-drawing svg,
-.mmic-custom-icon.mmic-icon-approved .mmic-icon-drawing svg,
-.mmic-custom-icon.mmic-icon-danger .mmic-icon-drawing svg {
+.mmic-custom-icon.mmic-svg-icon .mmic-icon-drawing svg {
   display: block;
   width: 31px;
   height: 31px;
@@ -607,135 +615,9 @@
 }
 
 .mmic-category .blocCate:hover
-.mmic-custom-icon
+.mmic-custom-icon.mmic-svg-icon
 .mmic-icon-drawing svg {
   transform: scale(1.07) rotate(-4deg);
-}
-
-/* =========================================================
-   GESTION DU PERSONNAGE — SVG DIRECTS
-   ========================================================= */
-
-.mmic-custom-icon.mmic-icon-relationships .mmic-icon-drawing::before,
-.mmic-custom-icon.mmic-icon-rps .mmic-icon-drawing::before,
-.mmic-custom-icon.mmic-icon-searches .mmic-icon-drawing::before {
-  content: none !important;
-  display: none !important;
-}
-
-.mmic-custom-icon.mmic-icon-relationships .mmic-icon-drawing svg,
-.mmic-custom-icon.mmic-icon-rps .mmic-icon-drawing svg,
-.mmic-custom-icon.mmic-icon-searches .mmic-icon-drawing svg {
-  display: block;
-  width: 31px;
-  height: 31px;
-  overflow: visible;
-  transition: transform 0.28s ease;
-}
-
-/* =========================================================
-   NORTH SIDE — SVG DIRECTS
-   ========================================================= */
-
-.mmic-custom-icon.mmic-icon-edgewater .mmic-icon-drawing::before,
-.mmic-custom-icon.mmic-icon-lincoln-park .mmic-icon-drawing::before,
-.mmic-custom-icon.mmic-icon-lakeview .mmic-icon-drawing::before,
-.mmic-custom-icon.mmic-icon-boystown .mmic-icon-drawing::before,
-.mmic-custom-icon.mmic-icon-habitations .mmic-icon-drawing::before {
-  content: none !important;
-  display: none !important;
-}
-
-.mmic-custom-icon.mmic-icon-edgewater .mmic-icon-drawing svg,
-.mmic-custom-icon.mmic-icon-lincoln-park .mmic-icon-drawing svg,
-.mmic-custom-icon.mmic-icon-lakeview .mmic-icon-drawing svg,
-.mmic-custom-icon.mmic-icon-boystown .mmic-icon-drawing svg,
-.mmic-custom-icon.mmic-icon-habitations .mmic-icon-drawing svg {
-  display: block;
-  width: 31px;
-  height: 31px;
-  overflow: visible;
-  transition: transform 0.28s ease;
-}
-
-.mmic-custom-icon.mmic-icon-river-north .mmic-icon-drawing::before,
-.mmic-custom-icon.mmic-icon-streeterville .mmic-icon-drawing::before,
-.mmic-custom-icon.mmic-icon-south-loop .mmic-icon-drawing::before{
-    content:none!important;
-    display:none!important;
-}
-
-.mmic-custom-icon.mmic-icon-river-north .mmic-icon-drawing svg,
-.mmic-custom-icon.mmic-icon-streeterville .mmic-icon-drawing svg,
-.mmic-custom-icon.mmic-icon-south-loop .mmic-icon-drawing svg{
-    display:block;
-    width:31px;
-    height:31px;
-}
-
-/* =========================================================
-   WEST SIDE — SVG DIRECTS
-   ========================================================= */
-
-.mmic-custom-icon.mmic-icon-west-town .mmic-icon-drawing::before,
-.mmic-custom-icon.mmic-icon-wicker-park .mmic-icon-drawing::before,
-.mmic-custom-icon.mmic-icon-humboldt-park .mmic-icon-drawing::before {
-  content: none !important;
-  display: none !important;
-}
-
-.mmic-custom-icon.mmic-icon-west-town .mmic-icon-drawing svg,
-.mmic-custom-icon.mmic-icon-wicker-park .mmic-icon-drawing svg,
-.mmic-custom-icon.mmic-icon-humboldt-park .mmic-icon-drawing svg {
-  display: block;
-  width: 31px;
-  height: 31px;
-  overflow: visible;
-  transition: transform 0.28s ease;
-}
-
-/* =========================================================
-   SOUTH SIDE — SVG DIRECTS
-   ========================================================= */
-
-.mmic-custom-icon.mmic-icon-hyde-park .mmic-icon-drawing::before,
-.mmic-custom-icon.mmic-icon-chinatown .mmic-icon-drawing::before,
-.mmic-custom-icon.mmic-icon-kenwood .mmic-icon-drawing::before,
-.mmic-custom-icon.mmic-icon-south-shore .mmic-icon-drawing::before {
-    content: none !important;
-    display: none !important;
-}
-
-.mmic-custom-icon.mmic-icon-hyde-park .mmic-icon-drawing svg,
-.mmic-custom-icon.mmic-icon-chinatown .mmic-icon-drawing svg,
-.mmic-custom-icon.mmic-icon-kenwood .mmic-icon-drawing svg,
-.mmic-custom-icon.mmic-icon-south-shore .mmic-icon-drawing svg {
-    display: block;
-    width: 31px;
-    height: 31px;
-    overflow: visible;
-    transition: transform .28s ease;
-}
-
-/* =========================================================
-   TÉLÉPHONIE — SVG DIRECTS
-   ========================================================= */
-
-.mmic-custom-icon.mmic-icon-sms .mmic-icon-drawing::before,
-.mmic-custom-icon.mmic-icon-instagram .mmic-icon-drawing::before,
-.mmic-custom-icon.mmic-icon-facebook .mmic-icon-drawing::before {
-    content:none!important;
-    display:none!important;
-}
-
-.mmic-custom-icon.mmic-icon-sms .mmic-icon-drawing svg,
-.mmic-custom-icon.mmic-icon-instagram .mmic-icon-drawing svg,
-.mmic-custom-icon.mmic-icon-facebook .mmic-icon-drawing svg {
-    display:block;
-    width:31px;
-    height:31px;
-    overflow:visible;
-    transition:transform .28s ease;
 }
 /* CONTENU CENTRAL */
 
