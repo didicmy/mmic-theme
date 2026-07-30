@@ -2948,3 +2948,46 @@ color:#3D6D8C !important;
 .mmic-icon-drawing.mmic-inline-svg path {
   fill: #fbf8f3;
 }
+
+/* =========================================================
+   CORRECTION SVG DIRECTS — À LA TOUTE FIN DU CSS
+   ========================================================= */
+
+.mmic-custom-icon.mmic-svg-icon .mmic-icon-drawing {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  width: 31px !important;
+  height: 31px !important;
+
+  background: transparent !important;
+  background-color: transparent !important;
+
+  -webkit-mask: none !important;
+  mask: none !important;
+
+  -webkit-mask-image: none !important;
+  mask-image: none !important;
+}
+
+.mmic-custom-icon.mmic-svg-icon .mmic-icon-drawing::before,
+.mmic-custom-icon.mmic-svg-icon .mmic-icon-drawing::after {
+  content: none !important;
+  display: none !important;
+}
+
+.mmic-custom-icon.mmic-svg-icon .mmic-icon-drawing svg {
+  position: relative !important;
+  z-index: 10 !important;
+
+  display: block !important;
+  width: 31px !important;
+  height: 31px !important;
+
+  opacity: 1 !important;
+  visibility: visible !important;
+  overflow: visible !important;
+
+  fill: #fbf8f3 !important;
+}
