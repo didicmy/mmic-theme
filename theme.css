@@ -2991,3 +2991,142 @@ color:#3D6D8C !important;
 
   fill: #fbf8f3 !important;
 }
+/* =========================================================
+   MINI-BOUTONS DES LIEUX SUR L’ACCUEIL
+   ========================================================= */
+
+.mmic-home-places {
+  display: none;
+  margin-top: 13px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(185, 122, 86, 0.22);
+}
+
+.mmic-home-places.mmic-home-places-loaded {
+  display: block;
+}
+
+.mmic-home-places-title {
+  margin-bottom: 7px;
+  color: #9a6548;
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+
+.mmic-home-places-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.mmic-home-place-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+
+  min-height: 23px;
+  padding: 3px 8px 3px 5px;
+
+  border: 1px solid #dccfc2;
+  border-radius: 12px;
+
+  background: #f7f1e9;
+  color: #70665e;
+
+  font-size: 8px;
+  font-weight: 600;
+  letter-spacing: 0.25px;
+  line-height: 1.2;
+  text-decoration: none;
+
+  transition:
+    color 0.2s ease,
+    border-color 0.2s ease,
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.mmic-home-place-link:hover {
+  border-color: #b97a56;
+  background: #102438;
+  color: #fbf8f3;
+  transform: translateY(-1px);
+}
+
+.mmic-home-place-icon {
+  display: inline-flex;
+  flex: 0 0 15px;
+  align-items: center;
+  justify-content: center;
+
+  width: 15px;
+  height: 15px;
+}
+
+.mmic-home-place-drawing {
+  display: block;
+  width: 13px;
+  height: 13px;
+
+  background-color: #b97a56;
+
+  -webkit-mask-image: var(--mmic-icon);
+  mask-image: var(--mmic-icon);
+
+  -webkit-mask-position: center;
+  mask-position: center;
+
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+
+  -webkit-mask-size: contain;
+  mask-size: contain;
+}
+
+.mmic-home-place-svg .mmic-home-place-drawing {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: transparent;
+
+  -webkit-mask: none;
+  mask: none;
+}
+
+.mmic-home-place-svg .mmic-home-place-drawing svg {
+  display: block;
+  width: 13px;
+  height: 13px;
+}
+
+.mmic-home-place-svg .mmic-home-place-drawing svg path,
+.mmic-home-place-svg .mmic-home-place-drawing svg circle {
+  fill: #b97a56;
+  transition: fill 0.2s ease;
+}
+
+.mmic-home-place-link:hover
+.mmic-home-place-drawing {
+  background-color: #fbf8f3;
+}
+
+.mmic-home-place-link:hover
+.mmic-home-place-drawing svg path,
+.mmic-home-place-link:hover
+.mmic-home-place-drawing svg circle {
+  fill: #fbf8f3;
+}
+
+@media (max-width: 700px) {
+  .mmic-home-places-list {
+    gap: 4px;
+  }
+
+  .mmic-home-place-link {
+    padding-right: 7px;
+    font-size: 7.5px;
+  }
+}
