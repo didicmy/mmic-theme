@@ -3217,3 +3217,67 @@ color:#3D6D8C !important;
     font-size: 7px;
   }
 }
+/* =========================================================
+   ICÔNES SVG DES MINI-LIENS
+   ========================================================= */
+
+/* Retire le petit point précédent. */
+.mmic-home-place-link::before {
+  content: none !important;
+  display: none !important;
+}
+
+.mmic-home-place-link {
+  gap: 5px;
+  padding-left: 6px;
+}
+
+.mmic-home-place-icon {
+  display: inline-flex;
+  flex: 0 0 14px;
+  align-items: center;
+  justify-content: center;
+
+  width: 14px;
+  height: 14px;
+
+  color: #b97a56;
+}
+
+.mmic-home-place-icon:empty::before {
+  content: "";
+  display: block;
+
+  width: 4px;
+  height: 4px;
+
+  border-radius: 50%;
+  background: #b97a56;
+}
+
+.mmic-home-place-icon-svg svg {
+  display: block !important;
+
+  width: 13px !important;
+  height: 13px !important;
+
+  overflow: visible !important;
+}
+
+.mmic-home-place-icon-svg svg path,
+.mmic-home-place-icon-svg svg circle {
+  fill: #b97a56 !important;
+  transition: fill 0.2s ease;
+}
+
+.mmic-home-place-link:hover
+.mmic-home-place-icon-svg svg path,
+.mmic-home-place-link:hover
+.mmic-home-place-icon-svg svg circle {
+  fill: #fbf8f3 !important;
+}
+
+.mmic-home-place-link:hover
+.mmic-home-place-icon:empty::before {
+  background: #fbf8f3;
+}
