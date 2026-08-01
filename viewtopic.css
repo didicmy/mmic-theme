@@ -1917,3 +1917,222 @@ span.usr_grp_clr strong {
   color: #d8b08c !important;
   text-shadow: 0 0 8px rgba(216, 176, 140, 0.18) !important;
 }
+/* =========================================================
+   ACTIONS DU MESSAGE — BOUTONS PERSONNALISÉS
+   ========================================================= */
+
+.mmic-vt-post-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 6px;
+
+  min-height: 28px;
+}
+
+
+/* Capsule générale */
+
+.mmic-vt-action {
+  position: relative;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+
+  min-width: 28px;
+  height: 25px;
+  padding: 0 9px;
+
+  overflow: hidden;
+
+  border: 1px solid #d8c8b9;
+  border-radius: 6px;
+
+  background: #fbf8f3;
+  color: #102438;
+
+  box-shadow: 0 1px 3px rgba(16, 36, 56, 0.08);
+
+  font-family: Arial, sans-serif;
+  font-size: 7px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  line-height: 1;
+  text-transform: uppercase;
+
+  box-sizing: border-box;
+
+  transition:
+    transform 0.18s ease,
+    border-color 0.18s ease,
+    background-color 0.18s ease,
+    color 0.18s ease,
+    box-shadow 0.18s ease;
+}
+
+
+/* Les liens et images Forumactif restent cliquables,
+   mais deviennent invisibles */
+
+.mmic-vt-action > a,
+.mmic-vt-action > img,
+.mmic-vt-action a img {
+  position: absolute !important;
+  inset: 0;
+
+  z-index: 3;
+
+  display: block !important;
+
+  width: 100% !important;
+  max-width: none !important;
+  height: 100% !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  border: 0 !important;
+
+  opacity: 0 !important;
+
+  cursor: pointer;
+}
+
+
+/* Icône commune */
+
+.mmic-vt-action::before {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 14px;
+  height: 14px;
+
+  border-radius: 50%;
+
+  background: #102438;
+  color: #d8b08c;
+
+  font-family: Arial, sans-serif;
+  font-size: 9px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+
+/* Textes et icônes */
+
+.mmic-vt-action-multiquote::before {
+  content: "＋";
+}
+
+.mmic-vt-action-multiquote::after {
+  content: "Multiple";
+}
+
+.mmic-vt-action-quote::before {
+  content: "“";
+}
+
+.mmic-vt-action-quote::after {
+  content: "Citer";
+}
+
+.mmic-vt-action-edit::before {
+  content: "✎";
+}
+
+.mmic-vt-action-edit::after {
+  content: "Éditer";
+}
+
+.mmic-vt-action-delete::before {
+  content: "×";
+}
+
+.mmic-vt-action-delete::after {
+  content: "";
+}
+
+.mmic-vt-action-ip::before {
+  content: "i";
+}
+
+.mmic-vt-action-ip::after {
+  content: "IP";
+}
+
+.mmic-vt-action-report::before {
+  content: "!";
+}
+
+.mmic-vt-action-report::after {
+  content: "";
+}
+
+.mmic-vt-action-thank::before {
+  content: "♥";
+}
+
+.mmic-vt-action-thank::after {
+  content: "Merci";
+}
+
+
+/* Survol */
+
+.mmic-vt-action:hover {
+  transform: translateY(-1px);
+
+  border-color: #b97a56;
+
+  background: #102438;
+  color: #fbf8f3;
+
+  box-shadow: 0 3px 7px rgba(16, 36, 56, 0.14);
+}
+
+.mmic-vt-action:hover::before {
+  background: #d8b08c;
+  color: #102438;
+}
+
+
+/* Boutons courts */
+
+.mmic-vt-action-delete,
+.mmic-vt-action-report {
+  width: 28px;
+  min-width: 28px;
+  padding: 0;
+}
+
+
+/* Suppression des éventuels espaces produits
+   par les variables vides */
+
+.mmic-vt-action:empty {
+  display: none;
+}
+
+
+/* Version étroite */
+
+@media (max-width: 700px) {
+  .mmic-vt-action {
+    min-width: 27px;
+    padding: 0 6px;
+  }
+
+  .mmic-vt-action-multiquote::after,
+  .mmic-vt-action-quote::after,
+  .mmic-vt-action-edit::after,
+  .mmic-vt-action-ip::after,
+  .mmic-vt-action-thank::after {
+    display: none;
+  }
+}
