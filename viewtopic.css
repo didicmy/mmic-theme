@@ -3488,7 +3488,7 @@ html body .mmic-vt-message pre {
 
 }
 /* =========================================================
-   BOUTONS DE PROFIL PERSONNALISÉS
+   BOUTONS PROFIL PERSONNALISÉS — VERSION CORRIGÉE
    ========================================================= */
 
 html body .mmic-vt-profile-links {
@@ -3498,7 +3498,10 @@ html body .mmic-vt-profile-links {
   margin-top: 13px !important;
 }
 
-html body .mmic-vt-profile-link {
+
+/* Base commune */
+
+html body .mmic-vt-profile-links a.profile-icon {
   position: relative !important;
 
   display: inline-flex !important;
@@ -3506,8 +3509,11 @@ html body .mmic-vt-profile-link {
   justify-content: center !important;
   gap: 6px !important;
 
+  min-width: 0 !important;
   min-height: 29px !important;
   padding: 0 8px !important;
+
+  overflow: hidden !important;
 
   border: 1px solid rgba(216, 176, 140, 0.62) !important;
   border-radius: 6px !important;
@@ -3539,13 +3545,17 @@ html body .mmic-vt-profile-link {
     box-shadow 0.18s ease !important;
 }
 
-/* Cache les anciennes images Forumactif */
-html body .mmic-vt-profile-link img {
+
+/* Cache les images Forumactif */
+
+html body .mmic-vt-profile-links a.profile-icon img {
   display: none !important;
 }
 
-/* Petite icône ronde */
-html body .mmic-vt-profile-link::before {
+
+/* Icône ronde commune */
+
+html body .mmic-vt-profile-links a.profile-icon::before {
   display: inline-flex !important;
   align-items: center !important;
   justify-content: center !important;
@@ -3564,44 +3574,38 @@ html body .mmic-vt-profile-link::before {
   line-height: 14px !important;
 }
 
-/* Texte et icône selon le lien */
-html body .mmic-vt-profile-link[href*="/u"]::before {
-  content: "●" !important;
+
+/* =========================================================
+   PROFIL
+   ========================================================= */
+
+html body .mmic-vt-profile-links a.profile-icon[href^="/u"]::before {
+  content: "◆" !important;
 }
 
-html body .mmic-vt-profile-link[href*="privmsg"]::before {
-  content: "✦" !important;
-}
-
-html body .mmic-vt-profile-link[href^="mailto:"]::before,
-html body .mmic-vt-profile-link[href*="email"]::before {
-  content: "✉" !important;
-}
-
-html body .mmic-vt-profile-link[href^="http"]::before {
-  content: "↗" !important;
-}
-
-/* Texte automatique */
-html body .mmic-vt-profile-link[href*="/u"]::after {
+html body .mmic-vt-profile-links a.profile-icon[href^="/u"]::after {
   content: "Profil" !important;
 }
 
-html body .mmic-vt-profile-link[href*="privmsg"]::after {
+
+/* =========================================================
+   MESSAGE PRIVÉ
+   ========================================================= */
+
+html body .mmic-vt-profile-links a.profile-icon[href*="/privmsg"]::before {
+  content: "✦" !important;
+}
+
+html body .mmic-vt-profile-links a.profile-icon[href*="/privmsg"]::after {
   content: "MP" !important;
 }
 
-html body .mmic-vt-profile-link[href^="mailto:"]::after,
-html body .mmic-vt-profile-link[href*="email"]::after {
-  content: "Email" !important;
-}
 
-html body .mmic-vt-profile-link[href^="http"]::after {
-  content: "Site" !important;
-}
+/* =========================================================
+   SURVOL
+   ========================================================= */
 
-/* Survol */
-html body .mmic-vt-profile-link:hover {
+html body .mmic-vt-profile-links a.profile-icon:hover {
   transform: translateY(-2px) !important;
 
   border-color: #d8b08c !important;
@@ -3620,7 +3624,7 @@ html body .mmic-vt-profile-link:hover {
     inset 0 1px 0 rgba(255, 255, 255, 0.07) !important;
 }
 
-html body .mmic-vt-profile-link:hover::before {
+html body .mmic-vt-profile-links a.profile-icon:hover::before {
   background: #fbf8f3 !important;
   color: #102438 !important;
 }
