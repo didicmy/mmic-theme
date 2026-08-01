@@ -4151,3 +4151,52 @@ html body .mmic-vt-profile-links a:hover {
     0 5px 10px rgba(0, 0, 0, 0.17),
     inset 0 1px 0 rgba(255, 255, 255, 0.07) !important;
 }
+/*==================================================
+  BADGE EN LIGNE
+==================================================*/
+
+html body .mmic-vt-online {
+    margin-top: 14px !important;
+
+    display: flex;
+    justify-content: center;
+}
+
+html body .mmic-vt-online img {
+    display: none !important;
+}
+
+html body .mmic-vt-online::before {
+    content: "● En ligne";
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+
+    padding: 5px 12px;
+
+    font-family: var(--font-body);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+
+    color: #d8b08c;
+
+    border: 1px solid rgba(216,176,140,.45);
+    border-radius: 999px;
+
+    background: rgba(255,255,255,.04);
+
+    transition: .25s;
+}
+
+html body .mmic-vt-online::before {
+    text-shadow: 0 0 8px rgba(98,212,121,.45);
+}
+
+html body .mmic-vt-online:hover::before {
+    border-color: #d8b08c;
+    background: rgba(216,176,140,.08);
+}
