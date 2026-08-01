@@ -953,3 +953,617 @@
     width: 100%;
   }
 }
+/* =========================================================
+   VIEWTOPIC — FINITIONS VISUELLES
+   À AJOUTER À LA FIN DE viewtopic.css
+   ========================================================= */
+
+
+/* =========================================================
+   CARTE GÉNÉRALE DU MESSAGE
+   ========================================================= */
+
+.mmic-vt-post {
+  align-items: stretch;
+
+  margin-bottom: 18px;
+
+  border-color: #d8c9bb;
+  border-radius: 10px;
+
+  background: #fbf8f3;
+
+  box-shadow:
+    0 7px 18px rgba(16, 36, 56, 0.08),
+    0 1px 2px rgba(16, 36, 56, 0.05);
+}
+
+
+/* =========================================================
+   PROFIL
+   ========================================================= */
+
+.mmic-vt-profile {
+  display: flex;
+  flex-direction: column;
+
+  padding: 16px 14px 14px;
+
+  border-right: 2px solid #b97a56;
+
+  background:
+    linear-gradient(
+      165deg,
+      #102438 0%,
+      #16304a 53%,
+      #102438 100%
+    );
+}
+
+
+/* NOM ET RANG */
+
+.mmic-vt-profile-top {
+  padding-bottom: 10px;
+
+  border-bottom: 1px solid rgba(251, 248, 243, 0.13);
+
+  text-align: center;
+}
+
+.mmic-vt-username {
+  margin: 0;
+
+  color: #fbf8f3;
+
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 18px;
+  font-weight: normal;
+  letter-spacing: 0.5px;
+  line-height: 1.25;
+}
+
+.mmic-vt-username a {
+  color: #fbf8f3 !important;
+}
+
+.mmic-vt-rank {
+  margin-top: 5px;
+
+  color: #d79770;
+
+  font-size: 7px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  line-height: 1.3;
+  text-transform: uppercase;
+}
+
+
+/* AVATAR */
+
+.mmic-vt-avatar {
+  width: calc(100% - 6px);
+  margin: 14px auto 0;
+
+  border: 1px solid #d79770;
+  border-radius: 8px;
+
+  background: #eee4d9;
+
+  box-shadow:
+    0 4px 12px rgba(0, 0, 0, 0.22),
+    0 0 0 3px rgba(215, 151, 112, 0.08);
+}
+
+.mmic-vt-avatar img {
+  display: block;
+
+  width: 100% !important;
+  height: auto !important;
+  max-width: none !important;
+
+  border-radius: 7px;
+
+  object-fit: cover;
+}
+
+
+/* CHAMPS DU PROFIL */
+
+.mmic-vt-profile-fields {
+  margin-top: 13px;
+  padding-top: 3px;
+
+  border-top: 0;
+}
+
+.mmic-vt-profile-field {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px;
+
+  padding: 7px 2px;
+
+  border-bottom: 1px solid rgba(251, 248, 243, 0.1);
+
+  color: #e6dfd8;
+
+  font-size: 7px;
+  line-height: 1.35;
+}
+
+.mmic-vt-profile-field:first-child {
+  border-top: 1px solid rgba(251, 248, 243, 0.1);
+}
+
+.mmic-vt-profile-field .label,
+.mmic-vt-profile-field strong {
+  flex: 0 0 auto;
+
+  color: #d79770;
+
+  font-size: 6px;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+}
+
+
+/* LIENS PROFIL */
+
+.mmic-vt-profile-links {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 6px;
+
+  margin-top: 13px;
+}
+
+.mmic-vt-profile-link {
+  min-width: 0;
+  min-height: 29px;
+  padding: 3px 5px;
+
+  border: 1px solid rgba(215, 151, 112, 0.58);
+  border-radius: 5px;
+
+  background: rgba(251, 248, 243, 0.06);
+
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.mmic-vt-profile-link:hover {
+  border-color: #d79770;
+
+  background: rgba(251, 248, 243, 0.13);
+
+  transform: translateY(-1px);
+}
+
+.mmic-vt-profile-link img {
+  max-width: 100%;
+  max-height: 22px;
+}
+
+
+/* EN LIGNE */
+
+.mmic-vt-online {
+  margin-top: 10px;
+  padding-top: 8px;
+
+  border-top: 1px solid rgba(251, 248, 243, 0.1);
+
+  text-align: center;
+}
+
+
+/* =========================================================
+   PARTIE MESSAGE
+   ========================================================= */
+
+.mmic-vt-content {
+  min-width: 0;
+
+  background: #fbf8f3;
+}
+
+
+/* EN-TÊTE DU MESSAGE */
+
+.mmic-vt-post-header {
+  min-height: 43px;
+  padding: 8px 12px;
+
+  border-bottom: 1px solid #ded2c7;
+
+  background:
+    linear-gradient(
+      90deg,
+      #f7f1e9 0%,
+      #fbf8f3 100%
+    );
+}
+
+.mmic-vt-post-date {
+  color: #6f655e;
+
+  font-size: 7px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+
+.mmic-vt-post-date-icon {
+  width: 20px;
+  height: 20px;
+
+  background: #102438;
+  color: #d79770;
+
+  box-shadow: 0 2px 5px rgba(16, 36, 56, 0.12);
+}
+
+
+/* ACTIONS DU MESSAGE */
+
+.mmic-vt-post-actions {
+  gap: 5px;
+}
+
+.mmic-vt-post-action {
+  min-width: 25px;
+  min-height: 24px;
+  padding: 2px 4px;
+
+  border-color: #d8cbbf;
+  border-radius: 5px;
+
+  background: #fbf8f3;
+
+  box-shadow: 0 1px 3px rgba(16, 36, 56, 0.05);
+}
+
+.mmic-vt-post-action img {
+  width: auto !important;
+  height: auto !important;
+  max-width: 90px;
+  max-height: 20px;
+}
+
+.mmic-vt-post-action:hover {
+  border-color: #b97a56;
+
+  background: #eee4d9;
+
+  transform: translateY(-1px);
+}
+
+
+/* =========================================================
+   CORPS DU MESSAGE
+   ========================================================= */
+
+.mmic-vt-message {
+  min-height: 220px;
+  padding: 18px 22px 24px;
+
+  background: #fbf8f3;
+  color: #4e4945;
+
+  font-size: 12px;
+  line-height: 1.75;
+}
+
+
+/* On neutralise l’ancien fond jaune du thème */
+
+.mmic-vt-message .message,
+.mmic-vt-message .message > div,
+.mmic-vt-message .message > table,
+.mmic-vt-message .message td {
+  background-color: transparent;
+}
+
+
+/* Le vrai contenu du message */
+
+.mmic-vt-message .message {
+  min-height: 170px;
+  padding: 16px 18px;
+
+  border: 1px solid #e2d7cd;
+  border-radius: 7px;
+
+  background: #fffdf9;
+
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.8),
+    0 2px 6px rgba(16, 36, 56, 0.035);
+
+  box-sizing: border-box;
+}
+
+
+/* Paragraphes */
+
+.mmic-vt-message .message p {
+  margin: 0 0 14px;
+}
+
+.mmic-vt-message .message p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* Images dans les messages */
+
+.mmic-vt-message .message img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* Citations */
+
+.mmic-vt-message blockquote {
+  position: relative;
+
+  margin: 17px 0;
+  padding: 14px 16px 14px 18px;
+
+  border: 1px solid #dfd3c8;
+  border-left: 3px solid #b97a56;
+  border-radius: 0 7px 7px 0;
+
+  background: #f4ede5;
+  color: #625951;
+
+  box-shadow: 0 2px 6px rgba(16, 36, 56, 0.04);
+}
+
+.mmic-vt-message blockquote cite {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #a06d50;
+
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+
+/* Codes */
+
+.mmic-vt-message code {
+  padding: 2px 5px;
+
+  border: 1px solid #e1d5ca;
+  border-radius: 4px;
+
+  background: #f2ebe3;
+  color: #513f34;
+}
+
+
+/* =========================================================
+   SIGNATURE
+   ========================================================= */
+
+.mmic-vt-signature {
+  margin-top: 28px;
+  padding-top: 0;
+}
+
+.mmic-vt-signature-line {
+  margin-bottom: 12px;
+
+  color: #b97a56;
+
+  font-size: 6px;
+  letter-spacing: 1.6px;
+}
+
+.mmic-vt-signature .signature {
+  max-height: 400px;
+  padding: 4px 10px 0;
+
+  overflow: auto;
+
+  color: #82776f;
+
+  font-size: 9px;
+  line-height: 1.55;
+  text-align: center;
+}
+
+
+/* =========================================================
+   PIED DU MESSAGE
+   ========================================================= */
+
+.mmic-vt-post-footer {
+  min-height: 29px;
+  padding: 6px 12px;
+
+  border-top: 1px solid #ded2c7;
+
+  background: #f7f1e9;
+}
+
+.mmic-vt-post-anchor {
+  color: #a06d50 !important;
+
+  font-size: 7px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+
+/* =========================================================
+   BARRE BAS DU SUJET
+   ========================================================= */
+
+.mmic-vt-topic-bottom {
+  min-height: 38px;
+  padding: 8px 12px;
+
+  border-color: #ddd1c6;
+  border-radius: 7px;
+
+  background: #f7f1e9;
+
+  box-shadow: 0 2px 5px rgba(16, 36, 56, 0.035);
+}
+
+.mmic-vt-watch-topic a {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+
+  color: #102438 !important;
+
+  font-size: 7px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+
+/* =========================================================
+   BOUTONS SUPÉRIEURS
+   ========================================================= */
+
+.mmic-vt-top-actions {
+  margin-top: 14px;
+  margin-bottom: 8px;
+}
+
+.mmic-vt-main-button {
+  min-height: 31px;
+  padding: 0 12px;
+
+  border-radius: 6px;
+}
+
+.mmic-vt-main-button-icon {
+  width: 17px;
+  height: 17px;
+
+  font-size: 10px;
+}
+
+
+/* =========================================================
+   RÉPONSE RAPIDE
+   ========================================================= */
+
+.mmic-vt-quick-reply {
+  padding: 15px;
+
+  border-radius: 9px;
+
+  background: #fbf8f3;
+
+  box-shadow: 0 3px 8px rgba(16, 36, 56, 0.04);
+}
+
+.mmic-vt-quick-reply textarea {
+  width: 100% !important;
+
+  border: 1px solid #d8cbbf !important;
+  border-radius: 6px !important;
+
+  background: #fffdf9 !important;
+  color: #4e4945 !important;
+
+  box-sizing: border-box !important;
+}
+
+
+/* Boutons prévisualisation et envoyer */
+
+.mmic-vt-quick-reply input[type="submit"],
+.mmic-vt-quick-reply input[type="button"] {
+  min-height: 28px;
+  padding: 0 10px;
+
+  border: 1px solid #b97a56;
+  border-radius: 5px;
+
+  background: #102438;
+  color: #fbf8f3;
+
+  font-size: 7px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+
+  cursor: pointer;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 750px) {
+  .mmic-vt-post {
+    grid-template-columns: 185px minmax(0, 1fr);
+  }
+
+  .mmic-vt-profile {
+    padding: 13px 11px;
+  }
+
+  .mmic-vt-message {
+    padding: 15px;
+  }
+
+  .mmic-vt-message .message {
+    padding: 14px;
+  }
+}
+
+@media (max-width: 600px) {
+  .mmic-vt-post {
+    display: block;
+  }
+
+  .mmic-vt-profile {
+    border-right: 0;
+    border-bottom: 2px solid #b97a56;
+  }
+
+  .mmic-vt-avatar {
+    width: 180px;
+  }
+
+  .mmic-vt-profile-fields {
+    max-width: 300px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .mmic-vt-profile-links {
+    max-width: 240px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .mmic-vt-message {
+    min-height: 180px;
+  }
+
+  .mmic-vt-message .message {
+    min-height: 130px;
+  }
+}
