@@ -3852,3 +3852,37 @@ html body .mmic-vt-profile-links a.profile-icon:focus-visible {
   outline: 2px solid rgba(216, 176, 140, 0.75) !important;
   outline-offset: 2px !important;
 }
+/* =========================================================
+   CORRECTION DES BOUTONS PROFIL ET MP
+   ========================================================= */
+
+/* On neutralise les textes basés sur nth-of-type */
+
+html body .mmic-vt-profile-links a.profile-icon:nth-of-type(1)::after,
+html body .mmic-vt-profile-links a.profile-icon:nth-of-type(2)::after,
+html body .mmic-vt-profile-links a.profile-icon:nth-of-type(3)::after,
+html body .mmic-vt-profile-links a.profile-icon:nth-of-type(4)::after {
+  content: none !important;
+}
+
+
+/* PROFIL */
+
+html body .mmic-vt-profile-links a.profile-icon[href^="/u"]::before {
+  content: "person" !important;
+}
+
+html body .mmic-vt-profile-links a.profile-icon[href^="/u"]::after {
+  content: "Profil" !important;
+}
+
+
+/* MESSAGE PRIVÉ */
+
+html body .mmic-vt-profile-links a.profile-icon[href*="privmsg"]::before {
+  content: "chat_bubble" !important;
+}
+
+html body .mmic-vt-profile-links a.profile-icon[href*="privmsg"]::after {
+  content: "Message" !important;
+}
