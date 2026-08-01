@@ -6197,3 +6197,958 @@ color:#3D6D8C !important;
 .mmic-new-topic-button > img{
     display:none !important;
 }
+/* =========================================================
+   VUE D’UN SUJET — MEET ME IN CHICAGO
+   ========================================================= */
+
+.mmic-vt-top-actions,
+.mmic-vt-navigation,
+.mmic-vt-topic-heading,
+.mmic-vt-posts,
+.mmic-vt-topic-bottom,
+.mmic-vt-quick-reply,
+.mmic-vt-permissions,
+.mmic-vt-bottom-tools,
+.mmic-vt-moderation-panel,
+.mmic-vt-admin-tools {
+  width: calc(100% - 24px);
+  max-width: 1100px;
+  margin-right: auto;
+  margin-left: auto;
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   BOUTONS PRINCIPAUX
+   ========================================================= */
+
+.mmic-vt-top-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 7px;
+  margin-top: 12px;
+  margin-bottom: 8px;
+}
+
+.mmic-vt-main-button,
+.mmic-vt-small-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+
+  min-height: 31px;
+  padding: 0 12px;
+
+  border: 1px solid #b97a56;
+  border-radius: 6px;
+
+  background: #102438;
+  color: #fbf8f3 !important;
+
+  box-shadow: 0 3px 8px rgba(16, 36, 56, 0.12);
+
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  text-decoration: none !important;
+  text-transform: uppercase;
+
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.mmic-vt-main-button-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 17px;
+  height: 17px;
+
+  border-radius: 50%;
+
+  background: #b97a56;
+  color: #fbf8f3;
+
+  font-size: 11px;
+  line-height: 1;
+}
+
+.mmic-vt-main-button:hover,
+.mmic-vt-small-button:hover {
+  border-color: #102438;
+
+  background: #b97a56;
+  color: #fbf8f3 !important;
+
+  box-shadow: 0 5px 12px rgba(16, 36, 56, 0.17);
+
+  transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   FIL D’ARIANE
+   ========================================================= */
+
+.mmic-vt-navigation {
+  margin-bottom: 12px;
+  padding: 8px 11px;
+
+  border: 1px solid #ddd1c6;
+  border-radius: 7px;
+
+  background: #f7f1e9;
+}
+
+.mmic-vt-breadcrumb {
+  color: #766a61;
+
+  font-size: 8px;
+  line-height: 1.5;
+}
+
+.mmic-vt-breadcrumb a {
+  color: #102438 !important;
+
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.mmic-vt-breadcrumb a:hover {
+  color: #b97a56 !important;
+}
+
+
+/* =========================================================
+   TITRE DU SUJET
+   ========================================================= */
+
+.mmic-vt-topic-heading {
+  margin-bottom: 13px;
+}
+
+.mmic-vt-heading-line,
+.mmic-vt-section-title,
+.mmic-vt-signature-line {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  color: #b97a56;
+
+  font-size: 7px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.mmic-vt-heading-line::before,
+.mmic-vt-heading-line::after,
+.mmic-vt-section-title::before,
+.mmic-vt-section-title::after,
+.mmic-vt-signature-line::before,
+.mmic-vt-signature-line::after {
+  content: "";
+
+  flex: 1 1 auto;
+
+  height: 1px;
+
+  background: #d7ad91;
+}
+
+.mmic-vt-heading-line span,
+.mmic-vt-section-title span,
+.mmic-vt-signature-line span {
+  flex: 0 0 auto;
+}
+
+.mmic-vt-topic-heading h1 {
+  margin: 10px 0 0;
+
+  color: #102438;
+
+  font: 21px Georgia, "Times New Roman", serif;
+  font-weight: normal;
+  letter-spacing: 0.6px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.mmic-vt-pagination {
+  margin-top: 7px;
+
+  color: #887b72;
+
+  font-size: 7px;
+  text-align: right;
+}
+
+
+/* =========================================================
+   CARTE DU MESSAGE
+   ========================================================= */
+
+.mmic-vt-post {
+  display: grid;
+  grid-template-columns: 220px minmax(0, 1fr);
+
+  width: 100%;
+  margin-bottom: 16px;
+
+  overflow: hidden;
+
+  border: 1px solid #d8cbbd;
+  border-radius: 11px;
+
+  background: #fbf8f3;
+
+  box-shadow: 0 6px 16px rgba(16, 36, 56, 0.08);
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   PROFIL BLEU NUIT
+   ========================================================= */
+
+.mmic-vt-profile {
+  position: relative;
+
+  padding: 15px;
+
+  border-right: 3px solid #b97a56;
+
+  background:
+    linear-gradient(
+      165deg,
+      #102438 0%,
+      #172f47 60%,
+      #102438 100%
+    );
+
+  color: #fbf8f3;
+
+  box-sizing: border-box;
+}
+
+.mmic-vt-profile-top {
+  text-align: center;
+}
+
+.mmic-vt-username {
+  margin: 0;
+
+  color: #fbf8f3;
+
+  font: 17px Georgia, "Times New Roman", serif;
+  font-weight: normal;
+  letter-spacing: 0.6px;
+}
+
+.mmic-vt-username a {
+  color: #fbf8f3 !important;
+  text-decoration: none;
+}
+
+.mmic-vt-rank {
+  margin-top: 4px;
+
+  color: #d19168;
+
+  font-size: 7px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.mmic-vt-rank-image {
+  margin-top: 5px;
+  text-align: center;
+}
+
+.mmic-vt-rank-image img {
+  max-width: 100%;
+}
+
+
+/* AVATAR */
+
+.mmic-vt-avatar {
+  width: 180px;
+  max-width: 100%;
+  margin: 13px auto 0;
+
+  overflow: hidden;
+
+  border: 2px solid #d19168;
+  border-radius: 8px;
+
+  background: #f7f1e9;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.22);
+}
+
+.mmic-vt-avatar img {
+  display: block;
+
+  width: 100% !important;
+  height: auto !important;
+  max-width: 100% !important;
+
+  object-fit: cover;
+}
+
+
+/* INFORMATIONS DU PROFIL */
+
+.mmic-vt-profile-fields {
+  margin-top: 13px;
+  padding-top: 9px;
+
+  border-top: 1px solid rgba(251, 248, 243, 0.16);
+}
+
+.mmic-vt-profile-field {
+  padding: 6px 2px;
+
+  border-bottom: 1px solid rgba(251, 248, 243, 0.1);
+
+  color: #ded7cf;
+
+  font-size: 7px;
+  line-height: 1.45;
+}
+
+.mmic-vt-profile-field .label,
+.mmic-vt-profile-field strong {
+  color: #d19168;
+
+  font-size: 6px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+}
+
+
+/* LIENS DU PROFIL */
+
+.mmic-vt-profile-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5px;
+
+  margin-top: 12px;
+}
+
+.mmic-vt-profile-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 27px;
+  min-height: 25px;
+  padding: 2px 5px;
+
+  border: 1px solid rgba(209, 145, 104, 0.65);
+  border-radius: 5px;
+
+  background: rgba(251, 248, 243, 0.06);
+
+  box-sizing: border-box;
+}
+
+.mmic-vt-profile-link:empty {
+  display: none;
+}
+
+.mmic-vt-profile-link img {
+  display: block;
+
+  max-width: 60px;
+  max-height: 20px;
+}
+
+.mmic-vt-online {
+  margin-top: 10px;
+
+  font-size: 7px;
+  text-align: center;
+}
+
+.mmic-vt-online:empty {
+  display: none;
+}
+
+
+/* =========================================================
+   CONTENU DU MESSAGE
+   ========================================================= */
+
+.mmic-vt-content {
+  min-width: 0;
+
+  background: #fbf8f3;
+}
+
+.mmic-vt-post-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+
+  min-height: 42px;
+  padding: 7px 13px;
+
+  border-bottom: 1px solid #e2d7cd;
+
+  background: #f7f1e9;
+
+  box-sizing: border-box;
+}
+
+.mmic-vt-post-date {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+
+  color: #766a61;
+
+  font-size: 7px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+
+.mmic-vt-post-date-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 19px;
+  height: 19px;
+
+  border-radius: 50%;
+
+  background: #102438;
+  color: #d19168;
+
+  font-size: 8px;
+}
+
+
+/* ACTIONS DU MESSAGE */
+
+.mmic-vt-post-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.mmic-vt-post-action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 23px;
+
+  overflow: hidden;
+
+  border: 1px solid #ddd1c6;
+  border-radius: 5px;
+
+  background: #fbf8f3;
+
+  transition:
+    border-color 0.2s ease,
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.mmic-vt-post-action:empty {
+  display: none;
+}
+
+.mmic-vt-post-action img {
+  display: block;
+
+  max-height: 19px;
+}
+
+.mmic-vt-post-action:hover {
+  border-color: #b97a56;
+
+  background: #eee4d9;
+
+  transform: translateY(-1px);
+}
+
+
+/* TEXTE DU MESSAGE */
+
+.mmic-vt-message {
+  position: relative;
+
+  min-height: 340px;
+  padding: 22px 24px;
+
+  color: #4e4945;
+
+  font-size: 12px;
+  line-height: 1.75;
+
+  box-sizing: border-box;
+}
+
+.mmic-vt-message .message {
+  overflow-wrap: anywhere;
+}
+
+.mmic-vt-message p {
+  margin: 0 0 14px;
+}
+
+.mmic-vt-message blockquote {
+  margin: 16px 0;
+  padding: 12px 15px;
+
+  border-left: 3px solid #b97a56;
+
+  background: #f3ece4;
+  color: #625951;
+}
+
+.mmic-vt-message code {
+  padding: 2px 4px;
+
+  border-radius: 4px;
+
+  background: #eee4d9;
+}
+
+
+/* =========================================================
+   SIGNATURE
+   ========================================================= */
+
+.mmic-vt-signature {
+  margin-top: 35px;
+  padding-top: 12px;
+}
+
+.mmic-vt-signature-line {
+  margin-bottom: 12px;
+
+  font-size: 6px;
+}
+
+.mmic-vt-signature .signature {
+  max-height: 400px;
+
+  overflow: auto;
+
+  color: #82776f;
+
+  font-size: 9px;
+  line-height: 1.55;
+  text-align: center;
+}
+
+
+/* =========================================================
+   PIED DU MESSAGE
+   ========================================================= */
+
+.mmic-vt-post-footer {
+  display: flex;
+  justify-content: flex-end;
+
+  padding: 6px 12px;
+
+  border-top: 1px solid #e2d7cd;
+
+  background: #f7f1e9;
+}
+
+.mmic-vt-post-anchor {
+  color: #a06d50 !important;
+
+  font-size: 7px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+
+/* =========================================================
+   VOTES
+   ========================================================= */
+
+.mmic-vt-vote {
+  position: absolute;
+  z-index: 3;
+  right: 10px;
+
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.mmic-vt-vote-button a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 20px;
+  height: 20px;
+
+  border-radius: 50%;
+
+  background: #102438;
+  color: #fbf8f3 !important;
+
+  text-decoration: none;
+}
+
+
+/* =========================================================
+   PIÈCES JOINTES
+   ========================================================= */
+
+.mmic-vt-attachments {
+  margin: 20px 0 0;
+  padding: 12px;
+
+  border: 1px solid #ddd1c6;
+  border-radius: 7px;
+
+  background: #f7f1e9;
+}
+
+.mmic-vt-attachments > dt {
+  color: #a06d50;
+
+  font-size: 7px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+
+/* =========================================================
+   BAS DU SUJET
+   ========================================================= */
+
+.mmic-vt-topic-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+
+  margin-bottom: 13px;
+  padding: 8px 11px;
+
+  border: 1px solid #ddd1c6;
+  border-radius: 7px;
+
+  background: #f7f1e9;
+
+  color: #766a61;
+
+  font-size: 8px;
+}
+
+.mmic-vt-watch-topic a {
+  color: #102438 !important;
+
+  font-weight: 700;
+  text-decoration: none;
+}
+
+
+/* =========================================================
+   RÉPONSE RAPIDE
+   ========================================================= */
+
+.mmic-vt-quick-reply {
+  margin-bottom: 13px;
+  padding: 14px;
+
+  border: 1px solid #ddd1c6;
+  border-radius: 9px;
+
+  background: #fbf8f3;
+
+  box-sizing: border-box;
+}
+
+.mmic-vt-section-title {
+  margin-bottom: 13px;
+}
+
+
+/* =========================================================
+   PERMISSIONS
+   ========================================================= */
+
+.mmic-vt-permissions {
+  display: grid;
+  grid-template-columns: 160px minmax(0, 1fr);
+
+  margin-bottom: 13px;
+
+  overflow: hidden;
+
+  border: 1px solid #ddd1c6;
+  border-radius: 8px;
+
+  background: #f7f1e9;
+}
+
+.mmic-vt-permissions-title {
+  padding: 12px;
+
+  border-right: 1px solid #ddd1c6;
+
+  color: #a06d50;
+
+  font-size: 7px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+
+.mmic-vt-permissions-content {
+  padding: 12px;
+
+  color: #766a61;
+
+  font-size: 8px;
+  line-height: 1.6;
+}
+
+
+/* =========================================================
+   OUTILS INFÉRIEURS
+   ========================================================= */
+
+.mmic-vt-bottom-tools {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+
+  margin-bottom: 13px;
+  padding: 10px;
+
+  border: 1px solid #ddd1c6;
+  border-radius: 8px;
+
+  background: #fbf8f3;
+}
+
+.mmic-vt-bottom-actions {
+  display: flex;
+  gap: 6px;
+}
+
+.mmic-vt-small-button {
+  min-height: 28px;
+  padding: 0 9px;
+
+  font-size: 7px;
+}
+
+.mmic-vt-jumpbox {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  color: #766a61;
+
+  font-size: 7px;
+}
+
+.mmic-vt-jumpbox select {
+  max-width: 180px;
+  height: 28px;
+
+  border: 1px solid #ddd1c6;
+  border-radius: 5px;
+
+  background: #f7f1e9;
+  color: #625951;
+
+  font-size: 7px;
+}
+
+.mmic-vt-submit {
+  min-height: 27px;
+  padding: 0 9px;
+
+  border: 1px solid #b97a56;
+  border-radius: 5px;
+
+  background: #102438;
+  color: #fbf8f3;
+
+  font-size: 7px;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  cursor: pointer;
+}
+
+
+/* =========================================================
+   MODÉRATION
+   ========================================================= */
+
+.mmic-vt-moderation-panel,
+.mmic-vt-admin-tools {
+  margin-bottom: 13px;
+  padding: 11px;
+
+  border: 1px solid #ddd1c6;
+  border-radius: 8px;
+
+  background: #f7f1e9;
+
+  color: #766a61;
+
+  font-size: 8px;
+}
+
+.mmic-vt-admin-tools-content {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 7px;
+
+  margin-top: 7px;
+}
+
+
+/* =========================================================
+   MESSAGE MASQUÉ OU ABSENT
+   ========================================================= */
+
+.mmic-vt-hidden-post,
+.mmic-vt-no-post {
+  margin-bottom: 12px;
+  padding: 18px;
+
+  border: 1px solid #ddd1c6;
+  border-radius: 8px;
+
+  background: #f7f1e9;
+
+  color: #766a61;
+
+  text-align: center;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 750px) {
+  .mmic-vt-post {
+    grid-template-columns: 170px minmax(0, 1fr);
+  }
+
+  .mmic-vt-avatar {
+    width: 140px;
+  }
+
+  .mmic-vt-message {
+    padding: 18px;
+  }
+}
+
+@media (max-width: 600px) {
+  .mmic-vt-top-actions,
+  .mmic-vt-navigation,
+  .mmic-vt-topic-heading,
+  .mmic-vt-posts,
+  .mmic-vt-topic-bottom,
+  .mmic-vt-quick-reply,
+  .mmic-vt-permissions,
+  .mmic-vt-bottom-tools,
+  .mmic-vt-moderation-panel,
+  .mmic-vt-admin-tools {
+    width: calc(100% - 12px);
+  }
+
+  .mmic-vt-top-actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .mmic-vt-main-button {
+    width: 100%;
+
+    box-sizing: border-box;
+  }
+
+  .mmic-vt-post {
+    display: block;
+  }
+
+  .mmic-vt-profile {
+    border-right: 0;
+    border-bottom: 3px solid #b97a56;
+  }
+
+  .mmic-vt-avatar {
+    width: 180px;
+  }
+
+  .mmic-vt-post-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .mmic-vt-post-actions {
+    justify-content: flex-start;
+  }
+
+  .mmic-vt-message {
+    min-height: 200px;
+  }
+
+  .mmic-vt-topic-bottom,
+  .mmic-vt-bottom-tools {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .mmic-vt-permissions {
+    display: block;
+  }
+
+  .mmic-vt-permissions-title {
+    border-right: 0;
+    border-bottom: 1px solid #ddd1c6;
+  }
+
+  .mmic-vt-jumpbox {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .mmic-vt-jumpbox select {
+    max-width: none;
+    width: 100%;
+  }
+}
