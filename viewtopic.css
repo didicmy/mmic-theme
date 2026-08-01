@@ -1902,3 +1902,9 @@ span.usr_grp_clr strong {
   color: #d8b08c !important;
   text-shadow: 0 0 8px rgba(216, 176, 140, 0.18) !important;
 }
+/* Couleur du pseudo dans les messages */
+.mmic-vt-username-color span.usr_grp_clr,
+.mmic-vt-username-color span.usr_grp_clr strong {
+  color: #d8b08c !important;
+  text-shadow: 0 0 8px rgba(216, 176, 140, 0.18) !important;
+}
