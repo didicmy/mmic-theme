@@ -1877,3 +1877,14 @@ html body .mmic-vt-post .mmic-vt-profile .mmic-vt-username strong {
   color: #d8b08c !important;
   text-shadow: 0 0 8px rgba(216, 176, 140, 0.18) !important;
 }
+/* =========================================================
+   PSEUDO — ÉCRASEMENT DE LA COULEUR DU GROUPE
+   ========================================================= */
+
+.mmic-vt-username-color .usr_grp_clr,
+.mmic-vt-username-color .usr_grp_clr *,
+.mmic-vt-username-color a,
+.mmic-vt-username-color strong {
+  color: #d8b08c !important;
+  text-shadow: 0 0 8px rgba(216, 176, 140, 0.18) !important;
+}
