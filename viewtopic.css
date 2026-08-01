@@ -1846,18 +1846,6 @@ html body .mmic-vt-profile .mmic-vt-username a:hover,
 html body .mmic-vt-profile .mmic-vt-username a:active,
 html body .mmic-vt-profile h2.mmic-vt-username,
 html body .mmic-vt-profile h2.mmic-vt-username * {
-  color: #fbf8f3 !important;
-  text-shadow: none !important;
-}
-/* =========================================================
-   PSEUDO — NEUTRALISATION DE LA COULEUR DU GROUPE
-   ========================================================= */
-
-html body .mmic-vt-profile .mmic-vt-username,
-html body .mmic-vt-profile .mmic-vt-username *,
-html body .mmic-vt-profile .mmic-vt-username span[style],
-html body .mmic-vt-profile .mmic-vt-username strong,
-html body .mmic-vt-profile .mmic-vt-username a {
-  color: #fbf8f3 !important;
+  color: #d8b08c !important;
   text-shadow: none !important;
 }
