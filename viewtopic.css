@@ -1918,72 +1918,52 @@ span.usr_grp_clr strong {
   text-shadow: 0 0 8px rgba(216, 176, 140, 0.18) !important;
 }
 /* =========================================================
-   ACTIONS DU MESSAGE — BOUTONS PERSONNALISÉS
+   ACTIONS DU MESSAGE — VERSION FINALE
    ========================================================= */
 
-.mmic-vt-post-actions {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  flex-wrap: wrap;
-  gap: 6px;
-
-  min-height: 28px;
+html body .mmic-vt-post-actions {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-end !important;
+  flex-wrap: wrap !important;
+  gap: 6px !important;
 }
 
+html body .mmic-vt-post-actions .mmic-vt-action {
+  position: relative !important;
 
-/* Capsule générale */
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 5px !important;
 
-.mmic-vt-action {
-  position: relative;
+  min-width: 30px !important;
+  height: 26px !important;
+  padding: 0 9px !important;
 
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 5px;
+  overflow: hidden !important;
 
-  min-width: 28px;
-  height: 25px;
-  padding: 0 9px;
+  border: 1px solid #d8c8b9 !important;
+  border-radius: 6px !important;
 
-  overflow: hidden;
+  background: #fbf8f3 !important;
+  color: #102438 !important;
 
-  border: 1px solid #d8c8b9;
-  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(16, 36, 56, 0.08) !important;
 
-  background: #fbf8f3;
-  color: #102438;
+  font: 700 7px Arial, sans-serif !important;
+  letter-spacing: 0.6px !important;
+  line-height: 1 !important;
+  text-transform: uppercase !important;
 
-  box-shadow: 0 1px 3px rgba(16, 36, 56, 0.08);
-
-  font-family: Arial, sans-serif;
-  font-size: 7px;
-  font-weight: 700;
-  letter-spacing: 0.6px;
-  line-height: 1;
-  text-transform: uppercase;
-
-  box-sizing: border-box;
-
-  transition:
-    transform 0.18s ease,
-    border-color 0.18s ease,
-    background-color 0.18s ease,
-    color 0.18s ease,
-    box-shadow 0.18s ease;
+  box-sizing: border-box !important;
 }
 
-
-/* Les liens et images Forumactif restent cliquables,
-   mais deviennent invisibles */
-
-.mmic-vt-action > a,
-.mmic-vt-action > img,
-.mmic-vt-action a img {
+html body .mmic-vt-post-actions .mmic-vt-action a,
+html body .mmic-vt-post-actions .mmic-vt-action img {
   position: absolute !important;
-  inset: 0;
-
-  z-index: 3;
+  inset: 0 !important;
+  z-index: 5 !important;
 
   display: block !important;
 
@@ -1995,39 +1975,38 @@ span.usr_grp_clr strong {
   padding: 0 !important;
 
   border: 0 !important;
+  background: transparent !important;
 
   opacity: 0 !important;
-
-  cursor: pointer;
+  cursor: pointer !important;
 }
 
+html body .mmic-vt-action::before {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
 
-/* Icône commune */
+  width: 14px !important;
+  height: 14px !important;
 
-.mmic-vt-action::before {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  border-radius: 50% !important;
 
-  width: 14px;
-  height: 14px;
+  background: #102438 !important;
+  color: #d8b08c !important;
 
-  border-radius: 50%;
-
-  background: #102438;
-  color: #d8b08c;
-
-  font-family: Arial, sans-serif;
-  font-size: 9px;
-  font-weight: 700;
-  line-height: 1;
+  font: 700 9px Arial, sans-serif !important;
 }
 
+.mmic-vt-action-thank::before {
+  content: "♥";
+}
 
-/* Textes et icônes */
+.mmic-vt-action-thank::after {
+  content: "Merci";
+}
 
 .mmic-vt-action-multiquote::before {
-  content: "＋";
+  content: "+";
 }
 
 .mmic-vt-action-multiquote::after {
@@ -2074,67 +2053,26 @@ span.usr_grp_clr strong {
   content: "";
 }
 
-.mmic-vt-action-thank::before {
-  content: "♥";
+html body .mmic-vt-action-delete,
+html body .mmic-vt-action-report {
+  width: 30px !important;
+  min-width: 30px !important;
+  padding: 0 !important;
 }
 
-.mmic-vt-action-thank::after {
-  content: "Merci";
+html body .mmic-vt-action:hover {
+  transform: translateY(-1px) !important;
+
+  border-color: #b97a56 !important;
+  background: #102438 !important;
+  color: #fbf8f3 !important;
+
+  box-shadow: 0 3px 7px rgba(16, 36, 56, 0.14) !important;
 }
 
-
-/* Survol */
-
-.mmic-vt-action:hover {
-  transform: translateY(-1px);
-
-  border-color: #b97a56;
-
-  background: #102438;
-  color: #fbf8f3;
-
-  box-shadow: 0 3px 7px rgba(16, 36, 56, 0.14);
-}
-
-.mmic-vt-action:hover::before {
-  background: #d8b08c;
-  color: #102438;
-}
-
-
-/* Boutons courts */
-
-.mmic-vt-action-delete,
-.mmic-vt-action-report {
-  width: 28px;
-  min-width: 28px;
-  padding: 0;
-}
-
-
-/* Suppression des éventuels espaces produits
-   par les variables vides */
-
-.mmic-vt-action:empty {
-  display: none;
-}
-
-
-/* Version étroite */
-
-@media (max-width: 700px) {
-  .mmic-vt-action {
-    min-width: 27px;
-    padding: 0 6px;
-  }
-
-  .mmic-vt-action-multiquote::after,
-  .mmic-vt-action-quote::after,
-  .mmic-vt-action-edit::after,
-  .mmic-vt-action-ip::after,
-  .mmic-vt-action-thank::after {
-    display: none;
-  }
+html body .mmic-vt-action:hover::before {
+  background: #d8b08c !important;
+  color: #102438 !important;
 }
 /* =========================================================
    CORRECTION FORCÉE — ACTIONS DU MESSAGE
