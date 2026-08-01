@@ -1600,3 +1600,63 @@
 .mmic-vt-message .message {
   background-color: #fffdf9 !important;
 }
+/* =========================================================
+   NEUTRALISATION DU VIEUX BLOC DE MESSAGE
+   ========================================================= */
+
+.mmic-vt-message,
+.mmic-vt-message .message {
+  width: auto !important;
+  max-width: none !important;
+  height: auto !important;
+  min-height: 0 !important;
+
+  margin: 0 !important;
+
+  background-image: none !important;
+
+  box-sizing: border-box !important;
+}
+
+.mmic-vt-message {
+  padding: 18px 20px 22px !important;
+
+  background: #fbf8f3 !important;
+}
+
+.mmic-vt-message .message {
+  display: block !important;
+
+  padding: 18px 20px !important;
+
+  border: 1px solid #ddd1c6 !important;
+  border-radius: 7px !important;
+
+  background: #fffdf9 !important;
+  color: #4e4945 !important;
+
+  box-shadow: 0 3px 8px rgba(16, 36, 56, 0.05) !important;
+}
+
+/* Forumactif ou l’ancien thème ajoute manifestement
+   un conteneur beige à l’intérieur du message */
+.mmic-vt-message .message > div,
+.mmic-vt-message .message > span,
+.mmic-vt-message .message > table,
+.mmic-vt-message .message > table td {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+}
+
+/* On retire aussi les dimensions héritées du vieux thème,
+   uniquement sur le premier conteneur intérieur */
+.mmic-vt-message .message > div:first-child {
+  width: auto !important;
+  max-width: none !important;
+  height: auto !important;
+  min-height: 0 !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+}
