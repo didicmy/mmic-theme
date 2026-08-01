@@ -1706,3 +1706,46 @@ html body .mmic-vt-post .mmic-vt-content .mmic-vt-message {
 
   box-sizing: border-box !important;
 }
+/* =========================================================
+   MESSAGE — CORRECTION DÉFINITIVE
+   ========================================================= */
+
+html body .mmic-vt-post .mmic-vt-content .mmic-vt-message {
+  width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+
+  margin: 0 !important;
+  padding: 18px 20px 22px !important;
+
+  background: #fbf8f3 !important;
+
+  box-sizing: border-box !important;
+}
+
+html body .mmic-vt-post .mmic-vt-content .mmic-vt-message > .message {
+  display: block !important;
+
+  width: 100% !important;
+  max-width: 100% !important;
+
+  height: auto !important;
+  min-height: 140px !important;
+  max-height: none !important;
+
+  margin: 0 !important;
+  padding: 18px 20px !important;
+
+  border: 1px solid #ddd1c6 !important;
+  border-radius: 7px !important;
+
+  background: #fffdf9 !important;
+  background-color: #fffdf9 !important;
+  background-image: none !important;
+
+  color: #4e4945 !important;
+
+  box-shadow: 0 3px 8px rgba(16, 36, 56, 0.05) !important;
+
+  box-sizing: border-box !important;
+}
