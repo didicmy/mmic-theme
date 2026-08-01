@@ -3181,3 +3181,309 @@ html body .mmic-vt-post-number {
   }
 
 }
+/* =========================================================
+   VIEWTOPIC — BOUTONS DU PROFIL + FOND DU MESSAGE
+   ========================================================= */
+
+
+/* =========================================================
+   1. BOUTONS PROFIL / MP / EMAIL / WWW
+   ========================================================= */
+
+html body .mmic-vt-profile-links {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 7px !important;
+
+  margin-top: 13px !important;
+}
+
+
+html body .mmic-vt-profile-link {
+  position: relative !important;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  min-height: 30px !important;
+  padding: 4px 7px !important;
+
+  overflow: hidden !important;
+
+  border: 1px solid rgba(216, 176, 140, 0.62) !important;
+  border-radius: 6px !important;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.08) 0%,
+      rgba(255, 255, 255, 0.025) 100%
+    ) !important;
+
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.06),
+    0 2px 5px rgba(0, 0, 0, 0.12) !important;
+
+  transition:
+    transform 0.18s ease,
+    border-color 0.18s ease,
+    background 0.18s ease,
+    box-shadow 0.18s ease !important;
+}
+
+
+/* Léger éclat cuivre */
+
+html body .mmic-vt-profile-link::after {
+  position: absolute !important;
+  inset: 0 !important;
+
+  content: "" !important;
+  pointer-events: none !important;
+
+  background:
+    linear-gradient(
+      110deg,
+      transparent 0%,
+      rgba(216, 176, 140, 0.12) 45%,
+      transparent 75%
+    ) !important;
+
+  transform: translateX(-120%) !important;
+  transition: transform 0.35s ease !important;
+}
+
+
+html body .mmic-vt-profile-link:hover {
+  transform: translateY(-2px) !important;
+
+  border-color: #d8b08c !important;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(216, 176, 140, 0.18) 0%,
+      rgba(216, 176, 140, 0.08) 100%
+    ) !important;
+
+  box-shadow:
+    0 5px 12px rgba(0, 0, 0, 0.18),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08) !important;
+}
+
+
+html body .mmic-vt-profile-link:hover::after {
+  transform: translateX(120%) !important;
+}
+
+
+html body .mmic-vt-profile-link img {
+  position: relative !important;
+  z-index: 1 !important;
+
+  display: block !important;
+
+  width: auto !important;
+  max-width: 100% !important;
+  max-height: 20px !important;
+
+  filter:
+    drop-shadow(0 1px 0 rgba(255, 255, 255, 0.18))
+    drop-shadow(0 1px 2px rgba(0, 0, 0, 0.18)) !important;
+
+  transition: transform 0.18s ease !important;
+}
+
+
+html body .mmic-vt-profile-link:hover img {
+  transform: scale(1.04) !important;
+}
+
+
+/* =========================================================
+   2. ENVELOPPE DU MESSAGE
+   ========================================================= */
+
+html body .mmic-vt-message {
+  position: relative !important;
+
+  padding: 18px !important;
+
+  background:
+    linear-gradient(
+      180deg,
+      #fbf7f2 0%,
+      #f8f2ec 100%
+    ) !important;
+}
+
+
+/* Petit détail décoratif très discret */
+
+html body .mmic-vt-message::before {
+  position: absolute !important;
+  top: 18px !important;
+  left: 50% !important;
+
+  width: 44px !important;
+  height: 1px !important;
+
+  content: "" !important;
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      rgba(216, 176, 140, 0.65),
+      transparent
+    ) !important;
+
+  transform: translateX(-50%) !important;
+}
+
+
+/* =========================================================
+   3. FEUILLE DU MESSAGE
+   ========================================================= */
+
+html body .mmic-vt-message > .message,
+html body .mmic-vt-message .message {
+  position: relative !important;
+
+  min-height: 180px !important;
+  padding: 28px 28px 30px !important;
+
+  border: 1px solid rgba(207, 190, 175, 0.82) !important;
+  border-radius: 8px !important;
+
+  background:
+    linear-gradient(
+      180deg,
+      #fffefb 0%,
+      #fffdf9 58%,
+      #fcf8f3 100%
+    ) !important;
+
+  color: #453d37 !important;
+
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 12px !important;
+  line-height: 1.8 !important;
+  text-align: justify !important;
+
+  box-shadow:
+    0 5px 16px rgba(77, 55, 41, 0.055),
+    inset 0 1px 0 rgba(255, 255, 255, 0.95),
+    inset 0 0 24px rgba(216, 176, 140, 0.035) !important;
+}
+
+
+/* Fine bordure intérieure */
+
+html body .mmic-vt-message > .message::before,
+html body .mmic-vt-message .message::before {
+  position: absolute !important;
+  inset: 7px !important;
+
+  content: "" !important;
+  pointer-events: none !important;
+
+  border: 1px solid rgba(216, 176, 140, 0.08) !important;
+  border-radius: 5px !important;
+}
+
+
+/* =========================================================
+   4. TEXTE DU MESSAGE
+   ========================================================= */
+
+html body .mmic-vt-message .message p {
+  margin: 0 0 15px !important;
+}
+
+
+html body .mmic-vt-message .message p:last-child {
+  margin-bottom: 0 !important;
+}
+
+
+html body .mmic-vt-message .message a {
+  color: #b36f4b !important;
+  font-weight: 700 !important;
+  text-decoration: none !important;
+}
+
+
+html body .mmic-vt-message .message a:hover {
+  color: #102438 !important;
+  text-decoration: underline !important;
+}
+
+
+/* Sélections dans le texte */
+
+html body .mmic-vt-message .message ::selection {
+  background: rgba(216, 176, 140, 0.38) !important;
+  color: #102438 !important;
+}
+
+
+/* =========================================================
+   5. CITATIONS ET CODE
+   ========================================================= */
+
+html body .mmic-vt-message blockquote {
+  margin: 18px 0 !important;
+  padding: 15px 18px !important;
+
+  border: 1px solid #e1d3c7 !important;
+  border-left: 3px solid #d8b08c !important;
+  border-radius: 0 6px 6px 0 !important;
+
+  background:
+    linear-gradient(
+      180deg,
+      #faf4ee 0%,
+      #f7efe8 100%
+    ) !important;
+
+  color: #5a4f47 !important;
+
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.72) !important;
+}
+
+
+html body .mmic-vt-message code,
+html body .mmic-vt-message pre {
+  border: 1px solid #dfd0c3 !important;
+  border-radius: 5px !important;
+
+  background: #f6efe8 !important;
+  color: #102438 !important;
+}
+
+
+/* =========================================================
+   6. VERSION ÉTROITE
+   ========================================================= */
+
+@media (max-width: 800px) {
+
+  html body .mmic-vt-message {
+    padding: 11px !important;
+  }
+
+  html body .mmic-vt-message::before {
+    top: 11px !important;
+  }
+
+  html body .mmic-vt-message > .message,
+  html body .mmic-vt-message .message {
+    min-height: 140px !important;
+    padding: 20px 18px !important;
+
+    text-align: left !important;
+  }
+
+}
