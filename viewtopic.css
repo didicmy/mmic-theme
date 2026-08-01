@@ -1849,3 +1849,14 @@ html body .mmic-vt-profile h2.mmic-vt-username * {
   color: #d8b08c !important;
   text-shadow: none !important;
 }
+/* =========================================================
+   PSEUDO DU PROFIL — COULEUR FINALE
+   ========================================================= */
+
+html body .mmic-vt-post .mmic-vt-profile h2.mmic-vt-username,
+html body .mmic-vt-post .mmic-vt-profile h2.mmic-vt-username *,
+html body .mmic-vt-post .mmic-vt-profile h2.mmic-vt-username a,
+html body .mmic-vt-post .mmic-vt-profile h2.mmic-vt-username span {
+  color: #d8b08c !important;
+  text-shadow: 0 0 8px rgba(216, 176, 140, 0.18) !important;
+}
