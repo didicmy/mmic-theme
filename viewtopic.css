@@ -1767,3 +1767,22 @@ html body .mmic-vt-post .mmic-vt-content .mmic-vt-message > .message {
 html body .mmic-vt-post .mmic-vt-content .mmic-vt-message > .message {
   flex: 1 1 auto !important;
 }
+/* Texte réel du message */
+.mmic-vt-message-text {
+  overflow-wrap: anywhere;
+  font-size: 12px;
+  line-height: 1.75;
+}
+
+.mmic-vt-message-text p {
+  margin: 0 0 14px;
+}
+
+.mmic-vt-message-text p:last-child {
+  margin-bottom: 0;
+}
+
+.mmic-vt-message-text img {
+  max-width: 100%;
+  height: auto;
+}
