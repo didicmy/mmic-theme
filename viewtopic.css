@@ -1749,3 +1749,21 @@ html body .mmic-vt-post .mmic-vt-content .mmic-vt-message > .message {
 
   box-sizing: border-box !important;
 }
+/* =========================================================
+   LE PAPIER DU MESSAGE OCCUPE LA HAUTEUR DISPONIBLE
+   ========================================================= */
+
+.mmic-vt-content {
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.mmic-vt-message {
+  display: flex !important;
+  flex: 1 1 auto !important;
+  flex-direction: column !important;
+}
+
+html body .mmic-vt-post .mmic-vt-content .mmic-vt-message > .message {
+  flex: 1 1 auto !important;
+}
