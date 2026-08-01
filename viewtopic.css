@@ -4033,3 +4033,14 @@ html body .mmic-vt-profile-links a:has(img[src*="icon_www"]):hover::before {
   color: #102438 !important;
   transform: scale(1.06) !important;
 }
+/* ==========================================
+   Suppression du double encadrement
+   ========================================== */
+
+html body .mmic-vt-profile-links {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    gap: 8px !important;
+}
