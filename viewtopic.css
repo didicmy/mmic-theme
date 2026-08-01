@@ -2260,3 +2260,102 @@ html body .mmic-vt-action:hover::before {
   background: #d8b08c !important;
   color: #102438 !important;
 }
+/* =========================================================
+   ACTIONS DU MESSAGE — ALIGNEMENT FINAL
+   ========================================================= */
+
+/* Barre contenant la date et les boutons */
+html body .mmic-vt-post-header {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 12px !important;
+  min-height: 42px !important;
+  padding: 6px 12px !important;
+}
+
+/* Zone des boutons */
+html body .mmic-vt-post-actions {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-end !important;
+  flex-wrap: wrap !important;
+  gap: 6px !important;
+  margin-left: auto !important;
+}
+
+/* Aspect commun de tous les boutons */
+html body .mmic-vt-post-actions .mmic-vt-action {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 6px !important;
+
+  width: auto !important;
+  min-width: 48px !important;
+  height: 27px !important;
+  padding: 0 9px !important;
+
+  border: 1px solid #ddc9b8 !important;
+  border-radius: 6px !important;
+
+  background: #fbf8f3 !important;
+  color: #102438 !important;
+
+  font-size: 7px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.7px !important;
+  line-height: 1 !important;
+  text-transform: uppercase !important;
+
+  box-shadow: none !important;
+  transition: 0.2s ease !important;
+}
+
+/* Petit cercle placé devant le nom du bouton */
+html body .mmic-vt-post-actions .mmic-vt-action::before {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  flex: 0 0 14px !important;
+
+  width: 14px !important;
+  height: 14px !important;
+
+  border-radius: 50% !important;
+  background: #102438 !important;
+  color: #d8b08c !important;
+
+  font-size: 8px !important;
+  line-height: 14px !important;
+}
+
+/* Boutons courts : suppression, IP et signalement */
+html body .mmic-vt-action-delete,
+html body .mmic-vt-action-ip,
+html body .mmic-vt-action-report {
+  min-width: 30px !important;
+  width: 30px !important;
+  padding: 0 !important;
+  gap: 0 !important;
+}
+
+/* Survol */
+html body .mmic-vt-post-actions .mmic-vt-action:hover {
+  transform: translateY(-1px) !important;
+  border-color: #b97a56 !important;
+  background: #102438 !important;
+  color: #fbf8f3 !important;
+  box-shadow: 0 3px 7px rgba(16, 36, 56, 0.14) !important;
+}
+
+html body .mmic-vt-post-actions .mmic-vt-action:hover::before {
+  background: #d8b08c !important;
+  color: #102438 !important;
+}
+
+/* Suppression du petit point cuivre parasite devant la date */
+html body .mmic-vt-post-date::before {
+  display: none !important;
+  content: none !important;
+}
