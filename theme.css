@@ -6189,4 +6189,11 @@ color:#3D6D8C !important;
 
 .mmic-viewforum-option:hover a {
   color: #fbf8f3 !important;
+   }
+.mmic-new-topic-button::before{
+    display:none !important;
+}
+
+.mmic-new-topic-button > img{
+    display:none !important;
 }
