@@ -2765,3 +2765,419 @@ html body .mmic-vt-post-number {
   }
 
 }
+/* =========================================================
+   VIEWTOPIC — FINITIONS PROFIL ET MESSAGE
+   ========================================================= */
+
+
+/* =========================================================
+   1. PROFIL — PLUS DE PROFONDEUR
+   ========================================================= */
+
+html body .mmic-vt-profile {
+  background:
+    linear-gradient(
+      180deg,
+      #102438 0%,
+      #142c43 48%,
+      #0d2032 100%
+    ) !important;
+
+  box-shadow:
+    0 8px 22px rgba(16, 36, 56, 0.14),
+    inset -1px 0 0 rgba(216, 176, 140, 0.25) !important;
+}
+
+
+/* Partie supérieure : pseudo et rang */
+
+html body .mmic-vt-profile-top {
+  padding: 10px 10px 13px !important;
+  margin-bottom: 12px !important;
+
+  border-bottom: 1px solid rgba(216, 176, 140, 0.18) !important;
+}
+
+
+html body .mmic-vt-username {
+  margin: 0 !important;
+
+  font-size: 20px !important;
+  line-height: 1.1 !important;
+  letter-spacing: 0.4px !important;
+}
+
+
+html body .mmic-vt-rank {
+  margin-top: 5px !important;
+
+  color: #d8b08c !important;
+
+  font-size: 6px !important;
+  font-weight: 700 !important;
+  letter-spacing: 2px !important;
+  text-transform: uppercase !important;
+}
+
+
+/* =========================================================
+   2. AVATAR
+   ========================================================= */
+
+html body .mmic-vt-avatar {
+  margin: 0 auto 14px !important;
+}
+
+
+html body .mmic-vt-avatar img {
+  display: block !important;
+
+  width: 100% !important;
+  height: auto !important;
+
+  border: 1px solid #d8b08c !important;
+  border-radius: 7px !important;
+
+  box-shadow:
+    0 7px 18px rgba(0, 0, 0, 0.24),
+    0 0 0 3px rgba(216, 176, 140, 0.07) !important;
+}
+
+
+/* =========================================================
+   3. INFORMATIONS DU PROFIL
+   ========================================================= */
+
+html body .mmic-vt-profile-fields {
+  margin-top: 8px !important;
+
+  border-top: 1px solid rgba(216, 176, 140, 0.13) !important;
+}
+
+
+html body .mmic-vt-profile-fields > div {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 10px !important;
+
+  min-height: 31px !important;
+  padding: 6px 2px !important;
+
+  border-bottom: 1px solid rgba(216, 176, 140, 0.13) !important;
+
+  color: #f3e8de !important;
+
+  font-size: 7px !important;
+  line-height: 1.3 !important;
+}
+
+
+/* Nom du champ */
+
+html body .mmic-vt-profile-fields .label,
+html body .mmic-vt-profile-fields .field-label,
+html body .mmic-vt-profile-fields strong {
+  color: #d8b08c !important;
+
+  font-size: 6px !important;
+  font-weight: 700 !important;
+  letter-spacing: 1.15px !important;
+  text-transform: uppercase !important;
+}
+
+
+/* Valeur du champ */
+
+html body .mmic-vt-profile-fields > div > span:last-child,
+html body .mmic-vt-profile-fields > div > div:last-child {
+  color: #fbf8f3 !important;
+  text-align: right !important;
+}
+
+
+/* =========================================================
+   4. BOUTONS DU PROFIL
+   ========================================================= */
+
+html body .mmic-vt-profile-links {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+
+  gap: 6px !important;
+  margin-top: 13px !important;
+}
+
+
+html body .mmic-vt-profile-link {
+  min-height: 29px !important;
+
+  border: 1px solid rgba(216, 176, 140, 0.55) !important;
+  border-radius: 5px !important;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.07),
+      rgba(255, 255, 255, 0.025)
+    ) !important;
+
+  transition:
+    transform 0.18s ease,
+    border-color 0.18s ease,
+    background 0.18s ease,
+    box-shadow 0.18s ease !important;
+}
+
+
+html body .mmic-vt-profile-link:hover {
+  transform: translateY(-2px) !important;
+
+  border-color: #d8b08c !important;
+  background: rgba(216, 176, 140, 0.14) !important;
+
+  box-shadow: 0 4px 9px rgba(0, 0, 0, 0.16) !important;
+}
+
+
+html body .mmic-vt-profile-link img {
+  max-height: 20px !important;
+  width: auto !important;
+}
+
+
+/* Statut en ligne */
+
+html body .mmic-vt-online {
+  margin-top: 13px !important;
+  padding-top: 10px !important;
+
+  border-top: 1px solid rgba(216, 176, 140, 0.13) !important;
+
+  text-align: center !important;
+}
+
+
+/* =========================================================
+   5. BARRE DATE ET ACTIONS
+   ========================================================= */
+
+html body .mmic-vt-post-header {
+  min-height: 43px !important;
+  padding: 6px 10px !important;
+
+  background: #f8f2eb !important;
+  border-bottom: 1px solid #e5d7ca !important;
+}
+
+
+html body .mmic-vt-post-date {
+  display: inline-flex !important;
+  align-items: center !important;
+
+  gap: 7px !important;
+
+  color: #786a60 !important;
+
+  font-size: 7px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.4px !important;
+}
+
+
+html body .mmic-vt-post-date::before {
+  display: inline-block !important;
+  content: "" !important;
+
+  width: 5px !important;
+  height: 5px !important;
+
+  border-radius: 50% !important;
+  background: #d8b08c !important;
+
+  box-shadow: 0 0 0 2px rgba(216, 176, 140, 0.15) !important;
+}
+
+
+/* Boutons légèrement affinés */
+
+html body .mmic-vt-post-actions {
+  gap: 5px !important;
+}
+
+
+html body .mmic-vt-post-actions .mmic-vt-action {
+  min-width: 43px !important;
+  height: 25px !important;
+  padding: 0 7px !important;
+
+  font-size: 6px !important;
+  letter-spacing: 0.7px !important;
+}
+
+
+html body .mmic-vt-post-actions .mmic-vt-action::before {
+  width: 12px !important;
+  height: 12px !important;
+  flex: 0 0 12px !important;
+
+  font-size: 7px !important;
+  line-height: 12px !important;
+}
+
+
+/* =========================================================
+   6. ZONE DU MESSAGE — EFFET FEUILLE
+   ========================================================= */
+
+html body .mmic-vt-message {
+  padding: 16px 18px 18px !important;
+
+  background:
+    linear-gradient(
+      180deg,
+      #fbf7f2 0%,
+      #f9f4ee 100%
+    ) !important;
+}
+
+
+html body .mmic-vt-message > .message,
+html body .mmic-vt-message .message {
+  min-height: 180px !important;
+  padding: 24px 26px !important;
+
+  border: 1px solid #dfd0c3 !important;
+  border-radius: 7px !important;
+
+  background:
+    linear-gradient(
+      180deg,
+      #fffefa 0%,
+      #fffdf9 100%
+    ) !important;
+
+  color: #433b36 !important;
+
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 12px !important;
+  line-height: 1.8 !important;
+  text-align: justify !important;
+
+  box-shadow:
+    0 4px 12px rgba(65, 48, 36, 0.055),
+    inset 0 1px 0 rgba(255, 255, 255, 0.95),
+    inset 0 0 18px rgba(216, 176, 140, 0.035) !important;
+}
+
+
+/* Paragraphes */
+
+html body .mmic-vt-message .message p {
+  margin: 0 0 14px !important;
+}
+
+
+html body .mmic-vt-message .message p:last-child {
+  margin-bottom: 0 !important;
+}
+
+
+/* Liens */
+
+html body .mmic-vt-message .message a {
+  color: #b36f4b !important;
+  font-weight: 700 !important;
+  text-decoration: none !important;
+}
+
+
+html body .mmic-vt-message .message a:hover {
+  color: #102438 !important;
+  text-decoration: underline !important;
+}
+
+
+/* Citations */
+
+html body .mmic-vt-message blockquote {
+  margin: 18px 0 !important;
+  padding: 14px 18px !important;
+
+  border-left: 3px solid #d8b08c !important;
+  border-radius: 0 5px 5px 0 !important;
+
+  background: #f8f1ea !important;
+  color: #5d5148 !important;
+}
+
+
+/* Code */
+
+html body .mmic-vt-message code,
+html body .mmic-vt-message pre {
+  border: 1px solid #dfd0c3 !important;
+  border-radius: 5px !important;
+
+  background: #f6efe8 !important;
+  color: #102438 !important;
+}
+
+
+/* =========================================================
+   7. BAS DU MESSAGE
+   ========================================================= */
+
+html body .mmic-vt-post-footer {
+  min-height: 31px !important;
+  padding: 7px 11px !important;
+
+  border-top: 1px solid #eadfd5 !important;
+
+  background:
+    linear-gradient(
+      180deg,
+      #f8f2eb 0%,
+      #f5eee7 100%
+    ) !important;
+}
+
+
+html body .mmic-vt-post-number {
+  color: #b97a56 !important;
+
+  font-size: 7px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.5px !important;
+}
+
+
+/* =========================================================
+   8. VERSION PLUS ÉTROITE
+   ========================================================= */
+
+@media (max-width: 800px) {
+
+  html body .mmic-vt-message {
+    padding: 10px !important;
+  }
+
+  html body .mmic-vt-message > .message,
+  html body .mmic-vt-message .message {
+    min-height: 140px !important;
+    padding: 17px !important;
+
+    text-align: left !important;
+  }
+
+  html body .mmic-vt-post-header {
+    align-items: flex-start !important;
+    flex-direction: column !important;
+  }
+
+  html body .mmic-vt-post-actions {
+    width: 100% !important;
+    justify-content: flex-start !important;
+  }
+
+}
