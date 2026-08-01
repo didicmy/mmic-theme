@@ -1786,3 +1786,42 @@ html body .mmic-vt-post .mmic-vt-content .mmic-vt-message > .message {
   max-width: 100%;
   height: auto;
 }
+/* =========================================================
+   PROFIL — COULEURS ET LIENS
+   ========================================================= */
+
+.mmic-vt-username,
+.mmic-vt-username a {
+  color: #fbf8f3 !important;
+  text-shadow: none !important;
+}
+
+.mmic-vt-profile a {
+  color: #fbf8f3 !important;
+}
+
+.mmic-vt-profile a:hover {
+  color: #d79770 !important;
+}
+
+.mmic-vt-profile-link a {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  width: 100% !important;
+  min-height: 24px !important;
+
+  color: #fbf8f3 !important;
+  text-decoration: none !important;
+}
+
+.mmic-vt-profile-link img {
+  display: block !important;
+  max-width: 100% !important;
+  max-height: 22px !important;
+}
+
+.mmic-vt-online img {
+  max-width: 100% !important;
+}
