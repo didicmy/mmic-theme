@@ -2206,3 +2206,57 @@ html body .mmic-vt-action:hover::before {
   background: #d8b08c !important;
   color: #102438 !important;
 }
+/* =========================================================
+   ACTIONS DU MESSAGE — PETITE FINITION
+   ========================================================= */
+
+html body .mmic-vt-post-actions {
+  gap: 7px !important;
+  min-height: 30px !important;
+}
+
+html body .mmic-vt-post-actions .mmic-vt-action {
+  height: 28px !important;
+  min-width: 31px !important;
+  padding: 0 10px !important;
+
+  border-radius: 6px !important;
+
+  font-size: 8px !important;
+  letter-spacing: 0.7px !important;
+}
+
+html body .mmic-vt-action::before {
+  width: 15px !important;
+  height: 15px !important;
+  flex-basis: 15px !important;
+
+  font-size: 9px !important;
+}
+
+html body .mmic-vt-action-delete,
+html body .mmic-vt-action-report {
+  width: 30px !important;
+  min-width: 30px !important;
+  padding: 0 !important;
+}
+
+html body .mmic-vt-action-ip {
+  min-width: 42px !important;
+  padding: 0 8px !important;
+}
+
+html body .mmic-vt-action:hover {
+  transform: translateY(-1px) !important;
+
+  border-color: #b97a56 !important;
+  background: #102438 !important;
+  color: #fbf8f3 !important;
+
+  box-shadow: 0 3px 7px rgba(16, 36, 56, 0.14) !important;
+}
+
+html body .mmic-vt-action:hover::before {
+  background: #d8b08c !important;
+  color: #102438 !important;
+}
