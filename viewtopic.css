@@ -1888,3 +1888,18 @@ html body .mmic-vt-post .mmic-vt-profile .mmic-vt-username strong {
   color: #d8b08c !important;
   text-shadow: 0 0 8px rgba(216, 176, 140, 0.18) !important;
 }
+/* =========================================================
+   COULEUR DU PSEUDO DANS LES MESSAGES
+   ========================================================= */
+
+html body .mmic-vt-post
+.mmic-vt-profile
+.mmic-vt-username-color
+span.usr_grp_clr,
+html body .mmic-vt-post
+.mmic-vt-profile
+.mmic-vt-username-color
+span.usr_grp_clr strong {
+  color: #d8b08c !important;
+  text-shadow: 0 0 8px rgba(216, 176, 140, 0.18) !important;
+}
