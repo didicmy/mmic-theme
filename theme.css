@@ -2649,3 +2649,3544 @@ color:#3D6D8C !important;
 .mmic-home-place-icon:empty::before {
   background: #fbf8f3;
 }
+
+/* =========================================================
+   MINI-LIENS DES LIEUX — PAGE D’ACCUEIL
+   ========================================================= */
+
+.mmic-home-places {
+  display: none;
+  margin-top: 11px;
+  padding-top: 9px;
+  border-top: 1px solid rgba(185, 122, 86, 0.22);
+}
+
+.mmic-home-places.mmic-home-places-loaded {
+  display: block;
+}
+
+.mmic-home-places-title {
+  margin: 0 0 7px;
+  color: #a06d50;
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 1.1px;
+  text-transform: uppercase;
+}
+
+.mmic-home-places-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.mmic-home-place-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 20px;
+  padding: 3px 8px;
+  border: 1px solid #ded2c6;
+  border-radius: 10px;
+  background: #f7f1e9;
+  color: #766b63 !important;
+  font-size: 7.5px;
+  font-weight: 700;
+  letter-spacing: 0.35px;
+  line-height: 1.2;
+  text-decoration: none !important;
+  text-transform: uppercase;
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.mmic-home-place-link::before {
+  content: "";
+  width: 4px;
+  height: 4px;
+  margin-right: 5px;
+  border-radius: 50%;
+  background: #b97a56;
+}
+
+.mmic-home-place-link:hover {
+  border-color: #b97a56;
+  background: #102438;
+  color: #fbf8f3 !important;
+  transform: translateY(-1px);
+}
+
+.mmic-home-place-link:hover::before {
+  background: #fbf8f3;
+}
+/* =========================================================
+   ICÔNES SVG DES MINI-LIENS
+   ========================================================= */
+
+/* Retire le petit point précédent. */
+.mmic-home-place-link::before {
+  content: none !important;
+  display: none !important;
+}
+
+.mmic-home-place-link {
+  gap: 5px;
+  padding-left: 6px;
+}
+
+.mmic-home-place-icon {
+  display: inline-flex;
+  flex: 0 0 14px;
+  align-items: center;
+  justify-content: center;
+
+  width: 14px;
+  height: 14px;
+
+  color: #b97a56;
+}
+
+.mmic-home-place-icon:empty::before {
+  content: "";
+  display: block;
+
+  width: 4px;
+  height: 4px;
+
+  border-radius: 50%;
+  background: #b97a56;
+}
+
+.mmic-home-place-icon-svg svg {
+  display: block !important;
+
+  width: 13px !important;
+  height: 13px !important;
+
+  overflow: visible !important;
+}
+
+.mmic-home-place-icon-svg svg path,
+.mmic-home-place-icon-svg svg circle {
+  fill: #b97a56 !important;
+  transition: fill 0.2s ease;
+}
+
+.mmic-home-place-link:hover
+.mmic-home-place-icon-svg svg path,
+.mmic-home-place-link:hover
+.mmic-home-place-icon-svg svg circle {
+  fill: #fbf8f3 !important;
+}
+
+.mmic-home-place-link:hover
+.mmic-home-place-icon:empty::before {
+  background: #fbf8f3;
+}
+/* =========================================================
+   MINI-ICÔNES SVG DES LIENS DE LIEUX
+   À ajouter dans le CSS direct de Forumactif.
+   ========================================================= */
+
+.mmic-home-place-link::before {
+  content: none !important;
+  display: none !important;
+}
+
+.mmic-home-place-link {
+  gap: 5px !important;
+  padding-left: 6px !important;
+}
+
+.mmic-home-place-mini-icon {
+  display: inline-flex;
+  flex: 0 0 13px;
+  align-items: center;
+  justify-content: center;
+  width: 13px;
+  height: 13px;
+}
+
+.mmic-home-place-mini-icon svg {
+  display: block !important;
+  width: 12px !important;
+  height: 12px !important;
+  overflow: visible !important;
+}
+
+.mmic-home-place-mini-icon svg path {
+  fill: #b97a56 !important;
+  transition: fill 0.2s ease;
+}
+
+.mmic-home-place-link:hover .mmic-home-place-mini-icon svg path {
+  fill: #fbf8f3 !important;
+}
+
+/* Garde un petit point uniquement si aucune icône n’est prévue. */
+.mmic-home-place-link.mmic-mini-icon-missing::before {
+  content: "" !important;
+  display: block !important;
+  flex: 0 0 4px;
+  width: 4px;
+  height: 4px;
+  margin-right: 1px;
+  border-radius: 50%;
+  background: #b97a56;
+}
+
+.mmic-home-place-link.mmic-mini-icon-missing:hover::before {
+  background: #fbf8f3;
+}
+/* =========================================================
+   PANNEAU DES PARTENAIRES — PAGE D’ACCUEIL
+   ========================================================= */
+
+.mmic-partners-toggle {
+  cursor: pointer;
+}
+
+/* Empêche le navigateur de déplacer brutalement la page. */
+.mmic-partners-toggle:focus {
+  outline: none;
+}
+
+.mmic-partners-panel {
+  display: none;
+
+  margin: 13px 12px 4px;
+  padding: 12px 14px;
+
+  border: 1px solid #ddcfc1;
+  border-radius: 8px;
+
+  background: #f8f3ed;
+  box-shadow: 0 5px 14px rgba(12, 24, 39, 0.08);
+
+  animation: mmicPartnersOpen 0.22s ease;
+}
+
+.mmic-partners-panel.is-open {
+  display: block;
+}
+
+.mmic-partners-heading {
+  margin-bottom: 9px;
+
+  color: #a06d50;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.mmic-partners-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px;
+}
+
+.mmic-partners-list a {
+  display: inline-flex;
+  align-items: center;
+
+  padding: 5px 9px;
+
+  border: 1px solid #ded2c6;
+  border-radius: 12px;
+
+  background: #fffaf4;
+  color: #6f625a !important;
+
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 0.35px;
+  line-height: 1.2;
+  text-decoration: none !important;
+  text-transform: uppercase;
+
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.mmic-partners-list a::before {
+  content: "◇";
+  margin-right: 5px;
+  color: #b97a56;
+  font-size: 9px;
+}
+
+.mmic-partners-list a:hover {
+  border-color: #b97a56;
+  background: #102438;
+  color: #fbf8f3 !important;
+  transform: translateY(-1px);
+}
+
+.mmic-partners-list a:hover::before {
+  color: #fbf8f3;
+}
+
+.mmic-partners-all {
+  display: block;
+
+  width: max-content;
+  margin: 11px auto 0;
+
+  color: #a06d50 !important;
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+  text-decoration: none !important;
+  text-transform: uppercase;
+}
+
+.mmic-partners-all:hover {
+  color: #102438 !important;
+}
+
+.mmic-partners-toggle.is-open {
+  color: #b97a56 !important;
+}
+
+.mmic-partners-toggle.is-open .mmic-icon {
+  transform: rotate(45deg);
+}
+
+.mmic-partners-toggle .mmic-icon {
+  transition: transform 0.22s ease;
+}
+
+@keyframes mmicPartnersOpen {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 700px) {
+  .mmic-partners-panel {
+    margin-right: 4px;
+    margin-left: 4px;
+    padding: 10px;
+  }
+
+  .mmic-partners-list {
+    gap: 5px;
+  }
+
+  .mmic-partners-list a {
+    font-size: 7.5px;
+  }
+}
+/* =========================================================
+   LISTE SIMPLE DES LIEUX — COLONNE LATÉRALE
+   ========================================================= */
+
+/* Organisation :
+   icône principale / description / lieux / dernier message */
+.mmic-category .blocCate:has(.mmic-home-places-loaded) {
+  grid-template-columns:
+    64px
+    minmax(0, 1fr)
+    185px
+    115px;
+}
+
+/* L’avatar est masqué uniquement sur les catégories
+   possédant une liste de lieux. */
+.mmic-category
+.blocCate:has(.mmic-home-places-loaded)
+.avatarCate {
+  display: none !important;
+}
+
+/* Colonne des lieux */
+.mmic-category .mmic-home-places {
+  display: none;
+  align-self: stretch;
+  min-width: 0;
+
+  margin: 0;
+  padding: 12px 12px;
+
+  border-top: 0;
+  border-right: 1px solid #e0d4c9;
+
+  flex-direction: column;
+  justify-content: center;
+}
+
+.mmic-category
+.mmic-home-places.mmic-home-places-loaded {
+  display: flex;
+}
+
+/* Titre */
+.mmic-category .mmic-home-places-title {
+  margin: 0 0 7px;
+
+  color: #a06d50;
+  font-size: 7px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 1.2;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+/* Liste verticale avec défilement */
+.mmic-category .mmic-home-places-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+
+  /* Hauteur de la zone réellement défilable */
+  height: 240px;
+  min-height: 240px;
+  max-height: 240px;
+
+  padding-right: 5px;
+
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  overscroll-behavior: contain;
+  touch-action: pan-y;
+
+  scrollbar-width: thin;
+  scrollbar-color: #c9997c transparent;
+}
+.mmic-category .mmic-home-places {
+  min-height: 0;
+}
+
+.mmic-category .mmic-home-places-list::-webkit-scrollbar {
+  width: 4px;
+}
+
+.mmic-category .mmic-home-places-list::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background: #c9997c;
+}
+
+.mmic-category .mmic-home-places-list::-webkit-scrollbar-track {
+  background: transparent;
+}
+/* Barre de défilement discrète */
+.mmic-category
+.mmic-home-places-list::-webkit-scrollbar {
+  width: 3px;
+}
+
+.mmic-category
+.mmic-home-places-list::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background: #c9997c;
+}
+
+.mmic-category
+.mmic-home-places-list::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Les anciens boutons deviennent de simples lignes de texte */
+.mmic-category .mmic-home-place-link {
+  display: block !important;
+
+  width: 100%;
+  min-width: 0;
+  min-height: 0;
+
+  margin: 0;
+  padding: 4px 2px !important;
+
+  border: 0 !important;
+  border-bottom: 1px solid rgba(185, 122, 86, 0.13) !important;
+  border-radius: 0 !important;
+
+  background: transparent !important;
+  box-shadow: none !important;
+
+  color: #6f625a !important;
+
+  font-size: 7px;
+  font-weight: 600;
+  letter-spacing: 0.25px;
+  line-height: 1.15;
+  text-align: left;
+  text-decoration: none !important;
+  text-transform: uppercase;
+  white-space: nowrap;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  transform: none !important;
+  transition:
+    color 0.18s ease,
+    padding-left 0.18s ease;
+}
+
+/* Aucun point ni symbole ajouté */
+.mmic-category .mmic-home-place-link::before,
+.mmic-category
+.mmic-home-place-link.mmic-mini-icon-missing::before {
+  content: none !important;
+  display: none !important;
+}
+
+/* On masque les petites icônes générées par le JavaScript */
+.mmic-category .mmic-home-place-mini-icon {
+  display: none !important;
+}
+
+/* Survol simple */
+.mmic-category .mmic-home-place-link:hover {
+  border-color: rgba(185, 122, 86, 0.3) !important;
+  background: transparent !important;
+  color: #b97a56 !important;
+  padding-left: 6px !important;
+}
+
+/* Dernier élément sans bordure */
+.mmic-category
+.mmic-home-place-link:last-child {
+  border-bottom: 0 !important;
+}
+
+/* Colonne du dernier message */
+.mmic-category
+.blocCate:has(.mmic-home-places-loaded)
+.blocDernierPost {
+  grid-column: auto;
+
+  min-width: 0;
+  padding-right: 7px;
+  padding-left: 9px;
+}
+
+.mmic-category
+.blocCate:has(.mmic-home-places-loaded)
+.mmic-lastpost-title {
+  font-size: 6.5px;
+  letter-spacing: 0.7px;
+}
+
+.mmic-category
+.blocCate:has(.mmic-home-places-loaded)
+.dernierPost {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+/* =========================================================
+   ÉCRANS INTERMÉDIAIRES
+   ========================================================= */
+
+@media (max-width: 1050px) {
+  .mmic-category .blocCate:has(.mmic-home-places-loaded) {
+    grid-template-columns:
+      58px
+      minmax(0, 1fr)
+      165px
+      105px;
+  }
+
+  .mmic-category .mmic-home-places {
+    padding-right: 9px;
+    padding-left: 9px;
+  }
+
+  .mmic-category .mmic-home-place-link {
+    font-size: 6.5px;
+  }
+}
+
+/* =========================================================
+   TÉLÉPHONE
+   ========================================================= */
+
+@media (max-width: 760px) {
+  .mmic-category .blocCate:has(.mmic-home-places-loaded) {
+    grid-template-columns:
+      50px
+      minmax(0, 1fr);
+  }
+
+  .mmic-category .mmic-home-places {
+    grid-column: 2;
+
+    margin-top: 8px;
+    padding: 8px 0 0;
+
+    border-top: 1px solid rgba(185, 122, 86, 0.22);
+    border-right: 0;
+  }
+
+  .mmic-category .mmic-home-places-list {
+    max-height: 90px;
+    padding-right: 5px;
+  }
+
+  .mmic-category .mmic-home-place-link {
+    padding: 5px 2px !important;
+    font-size: 7px;
+  }
+
+  .mmic-category
+  .blocCate:has(.mmic-home-places-loaded)
+  .blocDernierPost {
+    grid-column: 2;
+
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+/* =========================================================
+   DÉFILEMENT INTERNE DES LIEUX
+   ========================================================= */
+
+.mmic-category .mmic-home-places-list {
+  overscroll-behavior: contain;
+  scrollbar-gutter: stable;
+  touch-action: pan-y;
+  cursor: default;
+}
+/* =========================================================
+   QUEEL — MEET ME IN CHICAGO
+   ========================================================= */
+
+.mmic-qeel {
+  width: calc(100% - 24px);
+  max-width: 1100px;
+  margin: 24px auto;
+
+  overflow: hidden;
+
+  border: 1px solid #d8cbbd;
+  border-radius: 13px;
+
+  background: #f4eee5;
+
+  box-shadow: 0 7px 20px rgba(12, 24, 39, 0.1);
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* EN-TÊTE */
+
+.mmic-qeel-header {
+  position: relative;
+
+  padding: 22px 30px 24px;
+  overflow: hidden;
+
+  border-bottom: 3px solid #b97a56;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(12, 24, 39, 0.99),
+      rgba(22, 42, 63, 0.97),
+      rgba(12, 24, 39, 0.99)
+    );
+
+  color: #fbf8f3;
+  text-align: center;
+}
+
+.mmic-qeel-header::after {
+  content: "";
+
+  position: absolute;
+  right: 0;
+  bottom: -3px;
+  left: 0;
+
+  height: 55px;
+
+  opacity: 0.1;
+  pointer-events: none;
+
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='700' height='80' viewBox='0 0 700 80'%3E%3Cpath fill='%23ffffff' d='M0 80V60h18V42h18v38h12V30h22v50h15V50h20v30h12V22h30v58h10V44h18v36h14V12h34v68h12V38h24v42h16V28h36v52h12V48h22v32h14V18h29v62h13V36h22v44h16V8h38v72h12V46h22v34h14V24h34v56h16V52h20v28h14V32h28v48h18V42h25v38h15V56h18v24z'/%3E%3C/svg%3E");
+
+  background-position: center bottom;
+  background-repeat: repeat-x;
+  background-size: auto 55px;
+}
+
+.mmic-qeel-eyebrow {
+  position: relative;
+  z-index: 2;
+
+  display: block;
+  margin-bottom: 5px;
+
+  color: #d19168;
+
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 2.2px;
+  text-transform: uppercase;
+}
+
+.mmic-qeel-header h2 {
+  position: relative;
+  z-index: 2;
+
+  margin: 0;
+
+  color: #fbf8f3;
+
+  font: 22px Georgia, "Times New Roman", serif;
+  font-weight: normal;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.mmic-qeel-header p {
+  position: relative;
+  z-index: 2;
+
+  margin: 7px 0 0;
+
+  color: rgba(251, 248, 243, 0.72);
+
+  font-size: 8px;
+  font-style: italic;
+  letter-spacing: 0.5px;
+}
+
+
+/* GRILLE */
+
+.mmic-qeel-content {
+  display: grid;
+  grid-template-columns:
+    minmax(0, 1fr)
+    minmax(220px, 0.85fr)
+    minmax(0, 1fr);
+
+  gap: 12px;
+
+  padding: 12px;
+}
+
+
+/* CARTES */
+
+.mmic-qeel-card {
+  position: relative;
+
+  min-width: 0;
+  min-height: 210px;
+
+  padding: 17px;
+
+  border: 1px solid #d8cbbd;
+  border-radius: 10px;
+
+  background: #fbf8f3;
+
+  box-shadow: 0 3px 9px rgba(12, 24, 39, 0.06);
+}
+
+.mmic-qeel-card-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  margin-bottom: 14px;
+  padding-bottom: 9px;
+
+  border-bottom: 1px solid rgba(185, 122, 86, 0.28);
+
+  color: #102438;
+  text-transform: uppercase;
+}
+
+.mmic-qeel-card-title strong {
+  font: 11px Georgia, "Times New Roman", serif;
+  letter-spacing: 1px;
+}
+
+.mmic-qeel-title-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 23px;
+  height: 23px;
+
+  border: 1px solid #d19168;
+  border-radius: 50%;
+
+  background: #102438;
+  color: #fbf8f3;
+
+  font-size: 11px;
+}
+
+.mmic-qeel-card-intro {
+  margin: -4px 0 13px;
+
+  color: #877b72;
+
+  font-size: 8px;
+  font-style: italic;
+  line-height: 1.5;
+  text-align: center;
+}
+
+
+/* STATISTIQUES */
+
+.mmic-qeel-stat-line {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+
+  margin-bottom: 7px;
+  padding: 7px 9px;
+
+  border: 1px solid #e3d9cf;
+  border-radius: 6px;
+
+  background: #f7f1e9;
+
+  color: #71675f;
+
+  font-size: 8px;
+  line-height: 1.45;
+}
+
+.mmic-qeel-stat-icon {
+  display: inline-flex;
+  flex: 0 0 20px;
+  align-items: center;
+  justify-content: center;
+
+  width: 20px;
+  height: 20px;
+
+  border-radius: 5px;
+
+  background: #102438;
+  color: #d19168;
+
+  font-size: 9px;
+}
+
+.mmic-qeel-newest {
+  margin-top: 11px;
+  padding: 9px 10px;
+
+  border-left: 3px solid #b97a56;
+
+  background: rgba(185, 122, 86, 0.08);
+
+  color: #71675f;
+
+  font-size: 8px;
+  line-height: 1.5;
+}
+
+.mmic-qeel-small-title {
+  display: block;
+  margin-bottom: 3px;
+
+  color: #a06d50;
+
+  font-size: 7px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.mmic-qeel-current-users {
+  margin-top: 10px;
+
+  color: #7d7269;
+
+  font-size: 7.5px;
+  line-height: 1.5;
+}
+
+.mmic-qeel a {
+  color: #b06f4d;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.mmic-qeel a:hover {
+  color: #102438;
+}
+
+
+/* GROUPES */
+
+.mmic-qeel-groups-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+
+}
+
+.mmic-qeel-group {
+  position: relative;
+
+  display: inline-flex;
+  align-items: center;
+
+  width: 138px;
+  min-height: 27px;
+
+  margin: 0 auto 8px;
+  padding: 0 10px 0 15px;
+
+  overflow: hidden;
+
+  border: 1px solid #ddd1c6;
+  border-radius: 6px;
+
+  background: #f7f1e9;
+
+  color: #625951 !important;
+
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  box-sizing: border-box;
+
+  transition:
+    padding-left 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.mmic-qeel-group::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+
+  width: 5px;
+
+  background: var(--mmic-group-color);
+}
+
+.mmic-qeel-group:hover {
+  padding-left: 20px;
+
+  border-color: var(--mmic-group-color);
+
+  background: #102438;
+  color: #fbf8f3 !important;
+}
+
+.mmic-qeel-group-1 {
+  --mmic-group-color: #a76452;
+}
+
+.mmic-qeel-group-2 {
+  --mmic-group-color: #c89358;
+}
+
+.mmic-qeel-group-3 {
+  --mmic-group-color: #718a91;
+}
+
+.mmic-qeel-group-4 {
+  --mmic-group-color: #8b758e;
+}
+
+.mmic-qeel-group-5 {
+  --mmic-group-color: #667454;
+}
+
+.mmic-qeel-city-mark {
+  margin-top: 15px;
+
+  color: rgba(16, 36, 56, 0.12);
+
+  font: 25px Georgia, "Times New Roman", serif;
+  font-weight: 700;
+  letter-spacing: 5px;
+  text-align: center;
+}
+
+
+/* MEMBRES DES DERNIÈRES 24H */
+
+.mmic-qeel-recent-list {
+  max-height: 150px;
+  padding: 11px;
+
+  overflow-y: auto;
+
+  border: 1px solid #e3d9cf;
+  border-radius: 7px;
+
+  background: #f7f1e9;
+
+  color: #776c64;
+
+  font-size: 8px;
+  line-height: 1.7;
+
+  scrollbar-width: thin;
+  scrollbar-color: #c9997c transparent;
+}
+
+.mmic-qeel-recent-list::-webkit-scrollbar {
+  width: 4px;
+}
+
+.mmic-qeel-recent-list::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background: #c9997c;
+}
+
+.mmic-qeel-recent-list table,
+.mmic-qeel-recent-list tbody,
+.mmic-qeel-recent-list tr,
+.mmic-qeel-recent-list td {
+  display: block;
+
+  width: 100% !important;
+  margin: 0;
+  padding: 0;
+
+  border: 0;
+  background: transparent;
+}
+
+.mmic-qeel-recent-list .gensmall {
+  color: #776c64;
+  font-size: 8px;
+  line-height: 1.7;
+}
+
+
+/* CHATBOX */
+
+.mmic-qeel-chatbox {
+  margin: 0 12px 12px;
+  padding: 10px 13px;
+
+  border: 1px solid #d8cbbd;
+  border-radius: 8px;
+
+  background: #fbf8f3;
+
+  color: #776c64;
+  text-align: center;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 850px) {
+  .mmic-qeel-content {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .mmic-qeel-recent {
+    grid-column: 1 / -1;
+    min-height: 0;
+  }
+}
+
+@media (max-width: 620px) {
+  .mmic-qeel {
+    width: calc(100% - 12px);
+  }
+
+  .mmic-qeel-header {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .mmic-qeel-header h2 {
+    font-size: 17px;
+  }
+
+  .mmic-qeel-content {
+    grid-template-columns: 1fr;
+  }
+
+  .mmic-qeel-recent {
+    grid-column: auto;
+  }
+
+  .mmic-qeel-card {
+    min-height: 0;
+  }
+}
+/* =========================================================
+   GROUPES-OISEAUX DU QUEEL
+   ========================================================= */
+
+.mmic-qeel-group {
+  gap: 8px;
+}
+
+/* On remplace les anciennes couleurs numérotées */
+.mmic-qeel-group-colibris {
+  --mmic-group-color: #70988f;
+}
+
+.mmic-qeel-group-inseparables {
+  --mmic-group-color: #b97870;
+}
+
+.mmic-qeel-group-corbeaux {
+  --mmic-group-color: #526171;
+}
+
+.mmic-qeel-group-faucons {
+  --mmic-group-color: #b58a4e;
+}
+
+.mmic-qeel-group-hirondelles {
+  --mmic-group-color: #81789d;
+}
+/* =========================================================
+   MINI-ICÔNES DES GROUPES — OISEAUX
+   ========================================================= */
+
+.mmic-qeel-group {
+  gap: 7px;
+}
+
+/* Conteneur commun */
+.mmic-qeel-bird-icon {
+  display: inline-flex;
+  flex: 0 0 17px;
+  align-items: center;
+  justify-content: center;
+
+  width: 17px;
+  height: 17px;
+
+  color: var(--mmic-group-color);
+
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.mmic-qeel-bird-icon::before {
+  content: "";
+
+  display: block;
+  width: 16px;
+  height: 16px;
+
+  background-color: currentColor;
+
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-mask-size: contain;
+
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+}
+
+/* Petit mouvement au survol */
+.mmic-qeel-group:hover .mmic-qeel-bird-icon {
+  color: #fbf8f3;
+  transform: translateX(2px) scale(1.06);
+}
+
+
+/* =========================================================
+   COLIBRI
+   ========================================================= */
+
+.mmic-bird-colibri::before {
+  -webkit-mask-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M4 34c10-1 18-5 25-12 4-5 8-9 15-12-1 5-4 9-8 13 8-3 15-3 24 1-9 2-16 6-22 11-6 6-13 10-23 12 5-4 9-8 12-14-8 3-15 3-23 1zm40-19 7-8 2 9 8 4-9 2-4 9-2-9-9-4z'/%3E%3C/svg%3E");
+
+  mask-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M4 34c10-1 18-5 25-12 4-5 8-9 15-12-1 5-4 9-8 13 8-3 15-3 24 1-9 2-16 6-22 11-6 6-13 10-23 12 5-4 9-8 12-14-8 3-15 3-23 1zm40-19 7-8 2 9 8 4-9 2-4 9-2-9-9-4z'/%3E%3C/svg%3E");
+}
+
+
+/* =========================================================
+   INSÉPARABLES — DEUX OISEAUX FACE À FACE
+   ========================================================= */
+
+.mmic-bird-inseparables::before {
+  -webkit-mask-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M14 17c8 0 13 6 13 14 0 4-2 8-5 11l10 10 10-10c-3-3-5-7-5-11 0-8 5-14 13-14 7 0 12 5 12 12 0 6-4 11-9 13L32 61 11 42C6 40 2 35 2 29c0-7 5-12 12-12zm0 7c-3 0-5 2-5 5s2 5 5 5 5-2 5-5-2-5-5-5zm36 0c-3 0-5 2-5 5s2 5 5 5 5-2 5-5-2-5-5-5zM27 19l5 5 5-5-5 12z'/%3E%3C/svg%3E");
+
+  mask-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M14 17c8 0 13 6 13 14 0 4-2 8-5 11l10 10 10-10c-3-3-5-7-5-11 0-8 5-14 13-14 7 0 12 5 12 12 0 6-4 11-9 13L32 61 11 42C6 40 2 35 2 29c0-7 5-12 12-12zm0 7c-3 0-5 2-5 5s2 5 5 5 5-2 5-5-2-5-5-5zm36 0c-3 0-5 2-5 5s2 5 5 5 5-2 5-5-2-5-5-5zM27 19l5 5 5-5-5 12z'/%3E%3C/svg%3E");
+}
+
+
+/* =========================================================
+   CORBEAU — PROFIL POSÉ
+   ========================================================= */
+
+.mmic-bird-corbeau::before {
+  -webkit-mask-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M12 49c7-8 10-17 9-28 8 2 14 6 19 12 4-4 10-7 19-8-4 6-9 10-15 13 6 3 11 7 15 12-9-1-17-3-23-7-4 7-10 12-18 17 2-6 2-11 1-16-2 2-5 4-7 5zm29-35c4 0 7 3 7 7s-3 7-7 7-7-3-7-7 3-7 7-7zm-22 39h29v5H19z'/%3E%3C/svg%3E");
+
+  mask-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M12 49c7-8 10-17 9-28 8 2 14 6 19 12 4-4 10-7 19-8-4 6-9 10-15 13 6 3 11 7 15 12-9-1-17-3-23-7-4 7-10 12-18 17 2-6 2-11 1-16-2 2-5 4-7 5zm29-35c4 0 7 3 7 7s-3 7-7 7-7-3-7-7 3-7 7-7zm-22 39h29v5H19z'/%3E%3C/svg%3E");
+}
+
+
+/* =========================================================
+   FAUCON — AILES DÉPLOYÉES
+   ========================================================= */
+
+.mmic-bird-faucon::before {
+  -webkit-mask-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M32 6c7 10 16 16 29 20-8 3-15 4-22 2 5 7 10 12 18 17-11-1-19-5-25-13-6 8-14 12-25 13 8-5 13-10 18-17-7 2-14 1-22-2C16 22 25 16 32 6zm-5 25h10l-5 27z'/%3E%3C/svg%3E");
+
+  mask-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M32 6c7 10 16 16 29 20-8 3-15 4-22 2 5 7 10 12 18 17-11-1-19-5-25-13-6 8-14 12-25 13 8-5 13-10 18-17-7 2-14 1-22-2C16 22 25 16 32 6zm-5 25h10l-5 27z'/%3E%3C/svg%3E");
+}
+
+
+/* =========================================================
+   HIRONDELLE — SILHOUETTE EN VOL
+   ========================================================= */
+
+.mmic-bird-hirondelle::before {
+  -webkit-mask-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M3 27c12-3 22-1 30 7 8-8 18-10 28-7-7 3-13 7-18 12l14 16-24-10L9 55l14-16C17 34 10 30 3 27zm25 10 5 5 5-5-5 14z'/%3E%3C/svg%3E");
+
+  mask-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M3 27c12-3 22-1 30 7 8-8 18-10 28-7-7 3-13 7-18 12l14 16-24-10L9 55l14-16C17 34 10 30 3 27zm25 10 5 5 5-5-5 14z'/%3E%3C/svg%3E");
+}
+/* =========================================================
+   AJUSTEMENTS FINAUX DES GROUPES — QUEEL
+   ========================================================= */
+
+/* COULEURS DOUCES DES CINQ GROUPES */
+
+.mmic-qeel-group-colibris {
+  --mmic-group-color: #7faf9e;
+}
+
+.mmic-qeel-group-inseparables {
+  --mmic-group-color: #c88a84;
+}
+
+.mmic-qeel-group-corbeaux {
+  --mmic-group-color: #5e6c7f;
+}
+
+.mmic-qeel-group-faucons {
+  --mmic-group-color: #b88c4d;
+}
+
+.mmic-qeel-group-hirondelles {
+  --mmic-group-color: #8e82b5;
+}
+
+
+/* ICÔNES PLUS FINES ET PLUS PETITES */
+
+.mmic-qeel-bird-icon {
+  flex: 0 0 15px;
+
+  width: 15px;
+  height: 15px;
+
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.mmic-qeel-bird-icon::before {
+  width: 14px;
+  height: 14px;
+}
+
+
+/* SURVOL PLUS VIVANT MAIS DISCRET */
+
+.mmic-qeel-group:hover .mmic-qeel-bird-icon {
+  color: #fbf8f3;
+
+  transform:
+    translateX(2px)
+    scale(1.02);
+}
+
+/* Le bouton complet bouge très légèrement */
+
+.mmic-qeel-group {
+  transition:
+    padding-left 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease,
+    background-color 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.mmic-qeel-group:hover {
+  transform: translateX(2px);
+
+  box-shadow:
+    0 3px 7px
+    rgba(16, 36, 56, 0.12);
+}
+
+
+/* CHICAGO EN FILIGRANE PLUS DISCRET */
+
+.mmic-qeel-city-mark {
+  color: rgba(16, 36, 56, 0.05);
+}
+/* =========================================================
+   OUTILS AU-DESSUS DU QUEEL
+   ========================================================= */
+
+.mmic-index-tools {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+
+  width: calc(100% - 24px);
+  margin: 18px auto;
+}
+
+.mmic-index-tool {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+
+  min-height: 30px;
+  padding: 0 12px;
+
+  border: 1px solid #d8cbbd;
+  border-radius: 6px;
+
+  background: #fbf8f3;
+  color: #625951 !important;
+
+  box-shadow: 0 2px 5px rgba(16, 36, 56, 0.05);
+
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+  text-decoration: none !important;
+  text-transform: uppercase;
+
+  transition:
+    color 0.2s ease,
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.mmic-index-tool-icon {
+  display: inline-flex;
+  flex: 0 0 18px;
+  align-items: center;
+  justify-content: center;
+
+  width: 18px;
+  height: 18px;
+
+  border-radius: 50%;
+
+  background: #102438;
+  color: #d19168;
+
+  font-size: 9px;
+
+  transition:
+    color 0.2s ease,
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.mmic-index-tool:hover {
+  border-color: #b97a56;
+
+  background: #102438;
+  color: #fbf8f3 !important;
+
+  box-shadow: 0 4px 9px rgba(16, 36, 56, 0.14);
+
+  transform: translateY(-2px);
+}
+
+.mmic-index-tool:hover .mmic-index-tool-icon {
+  background: #b97a56;
+  color: #fbf8f3;
+
+  transform: rotate(5deg);
+}
+
+
+/* =========================================================
+   LÉGENDE DES MESSAGES SOUS LE QUEEL
+   ========================================================= */
+
+.mmic-forum-legend {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  width: calc(100% - 24px);
+  margin: 15px auto 10px;
+}
+
+.mmic-legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+
+  min-height: 28px;
+  padding: 3px 10px 3px 5px;
+
+  border: 1px solid #ddd1c6;
+  border-radius: 20px;
+
+  background: #fbf8f3;
+  color: #625951;
+
+  box-shadow: 0 2px 5px rgba(16, 36, 56, 0.05);
+
+  font-size: 7px;
+  font-weight: 700;
+  letter-spacing: 0.35px;
+  text-transform: uppercase;
+
+  transition:
+    border-color 0.2s ease,
+    background-color 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.mmic-legend-icon {
+  display: inline-flex;
+  flex: 0 0 22px;
+  align-items: center;
+  justify-content: center;
+
+  width: 22px;
+  height: 22px;
+
+  overflow: hidden;
+
+  border: 1px solid #d19168;
+  border-radius: 50%;
+
+  background: #102438;
+}
+
+.mmic-legend-icon img {
+  display: block;
+
+  width: 14px !important;
+  height: 14px !important;
+  max-width: 14px !important;
+
+  object-fit: contain;
+}
+
+.mmic-legend-item:hover {
+  border-color: #b97a56;
+
+  background: #102438;
+  color: #fbf8f3;
+
+  transform: translateY(-2px);
+}
+
+.mmic-legend-new {
+  box-shadow: inset 0 0 0 2px rgba(185, 122, 86, 0.22);
+}
+
+.mmic-legend-none {
+  opacity: 0.82;
+}
+
+.mmic-legend-locked {
+  background: #596979;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 620px) {
+  .mmic-index-tools {
+    gap: 5px;
+  }
+
+  .mmic-index-tool {
+    flex: 1 1 calc(50% - 5px);
+
+    min-width: 135px;
+    padding-right: 8px;
+    padding-left: 8px;
+
+    font-size: 7px;
+  }
+
+  .mmic-forum-legend {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .mmic-legend-item {
+    justify-content: flex-start;
+    width: 100%;
+
+    box-sizing: border-box;
+  }
+}
+/* =========================================================
+   CORRECTION DU BOUTON SUPPRIMER LES COOKIES
+   ========================================================= */
+
+#mmic-delete-cookies {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+
+  min-height: 30px;
+  padding: 0 12px;
+
+  border: 1px solid #d8cbbd !important;
+  border-radius: 6px;
+
+  background: #fbf8f3 !important;
+  color: #625951 !important;
+
+  box-shadow: 0 2px 5px rgba(16, 36, 56, 0.05);
+
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+  line-height: 1;
+  text-decoration: none !important;
+  text-transform: uppercase;
+
+  box-sizing: border-box;
+}
+
+#mmic-delete-cookies:hover {
+  border-color: #b97a56 !important;
+
+  background: #102438 !important;
+  color: #fbf8f3 !important;
+
+  box-shadow: 0 4px 9px rgba(16, 36, 56, 0.14);
+
+  transform: translateY(-2px);
+}
+/* =========================================================
+   LISTE DES SUJETS — MEET ME IN CHICAGO
+   ========================================================= */
+
+.mmic-viewforum-actions,
+.mmic-viewforum-navigation,
+.mmic-topics,
+.mmic-viewforum-footer {
+  width: calc(100% - 24px);
+  max-width: 1100px;
+  margin-right: auto;
+  margin-left: auto;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   BOUTON NOUVEAU SUJET
+   ========================================================= */
+
+.mmic-viewforum-actions {
+  display: flex;
+  justify-content: flex-end;
+
+  margin-top: 14px;
+  margin-bottom: 9px;
+}
+
+.mmic-new-topic-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  min-height: 34px;
+  padding: 0 14px;
+
+  border: 1px solid #b97a56;
+  border-radius: 7px;
+
+  background: #102438;
+  color: #fbf8f3 !important;
+
+  box-shadow: 0 3px 8px rgba(16, 36, 56, 0.13);
+
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  text-decoration: none !important;
+  text-transform: uppercase;
+
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.mmic-new-topic-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 19px;
+  height: 19px;
+
+  border-radius: 50%;
+
+  background: #b97a56;
+  color: #fbf8f3;
+
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1;
+}
+
+.mmic-new-topic-button:hover {
+  border-color: #102438;
+
+  background: #b97a56;
+
+  box-shadow: 0 5px 12px rgba(16, 36, 56, 0.18);
+
+  transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   FIL D’ARIANE
+   ========================================================= */
+
+.mmic-viewforum-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+
+  margin-bottom: 10px;
+  padding: 10px 13px;
+
+  border: 1px solid #ddd1c6;
+  border-radius: 7px;
+
+  background: #f7f1e9;
+
+  color: #766a61;
+
+  font-size: 8px;
+  line-height: 1.5;
+}
+
+.mmic-viewforum-breadcrumb a {
+  color: #102438;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.mmic-viewforum-breadcrumb a:hover {
+  color: #b97a56;
+}
+
+.mmic-viewforum-more {
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.mmic-viewforum-more-label {
+  color: #a06d50;
+
+  font-size: 7px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+
+/* =========================================================
+   CONTENEUR PRINCIPAL
+   ========================================================= */
+
+.mmic-topics {
+  overflow: hidden;
+
+  border: 1px solid #d8cbbd;
+  border-radius: 12px;
+
+  background: #f4eee5;
+
+  box-shadow: 0 6px 18px rgba(16, 36, 56, 0.09);
+}
+
+
+/* HEADER DU FORUM */
+
+.mmic-topics-header{
+
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+
+    gap:18px;
+
+    margin-bottom:30px;
+
+    padding:0;
+
+    background:none;
+    border:none;
+    box-shadow:none;
+
+}
+
+.mmic-topics-header::after {
+  content: "";
+
+  position: absolute;
+  right: 0;
+  bottom: -3px;
+  left: 0;
+
+  height: 48px;
+
+  opacity: 0.11;
+  pointer-events: none;
+
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='700' height='80' viewBox='0 0 700 80'%3E%3Cpath fill='%23ffffff' d='M0 80V60h18V42h18v38h12V30h22v50h15V50h20v30h12V22h30v58h10V44h18v36h14V12h34v68h12V38h24v42h16V28h36v52h12V48h22v32h14V18h29v62h13V36h22v44h16V8h38v72h12V46h22v34h14V24h34v56h16V52h20v28h14V32h28v48h18V42h25v38h15V56h18v24z'/%3E%3C/svg%3E");
+
+  background-position: center bottom;
+  background-repeat: repeat-x;
+  background-size: auto 48px;
+}
+
+.mmic-topics-header-text,
+.mmic-topics-pagination {
+  position: relative;
+  z-index: 2;
+}
+
+.mmic-topics-eyebrow {
+  display: block;
+  margin-bottom: 4px;
+
+  color: #d19168;
+
+  font-size: 7px;
+  font-weight: 700;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+}
+
+.mmic-topics-header h1 {
+  margin: 0;
+
+  color: #fbf8f3;
+
+  font: 19px Georgia, "Times New Roman", serif;
+  font-weight: normal;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+}
+
+.mmic-topics-pagination {
+  color: #fbf8f3;
+  font-size: 8px;
+}
+
+.mmic-topics-pagination a {
+  color: #fbf8f3 !important;
+}
+
+.mmic-topics-divider{
+
+    display:flex;
+    align-items:center;
+
+    width:100%;
+
+    gap:18px;
+
+}
+.mmic-topics-divider::before,
+.mmic-topics-divider::after{
+
+    content:"";
+
+    flex:1;
+
+    height:1px;
+
+    background:#d8b49a;
+
+}
+.mmic-topics-divider span{
+
+    color:#bc8b65;
+
+    font-size:10px;
+
+    letter-spacing:3px;
+
+    text-transform:uppercase;
+
+    font-weight:700;
+
+}
+.mmic-topics-title{
+
+    margin:0;
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:44px;
+
+    font-weight:600;
+
+    color:#223247;
+
+    letter-spacing:1px;
+
+    line-height:1;
+
+}
+.mmic-topics-pagination{
+
+    align-self:flex-end;
+
+    margin-top:-10px;
+
+    font-size:11px;
+
+    color:#7c7066;
+
+}
+/* TITRES DE SECTIONS */
+
+.mmic-topics-section-title {
+  padding: 8px 16px;
+
+  border-bottom: 1px solid #ddd1c6;
+
+  background: #eee4d9;
+  color: #a06d50;
+
+  font-size: 7px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+
+/* =========================================================
+   CARTE D’UN SUJET
+   ========================================================= */
+
+.mmic-topics-list {
+  padding: 10px;
+}
+
+.mmic-topic {
+  position: relative;
+
+  display: grid;
+  grid-template-columns:
+    44px
+    minmax(0, 1fr)
+    115px
+    190px;
+
+  align-items: center;
+
+  min-height: 92px;
+  margin-bottom: 8px;
+  padding:22px 28px;
+  min-height:92px;
+
+  border: 1px solid #ddd1c6;
+  border-radius: 9px;
+
+  background: #fbf8f3;
+
+  box-shadow: 0 2px 7px rgba(16, 36, 56, 0.04);
+
+  box-sizing: border-box;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+}
+
+.mmic-topic:last-child {
+  margin-bottom: 0;
+}
+
+.mmic-topic:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:0 8px 18px rgba(0,0,0,.05);
+
+}
+
+
+/* STATUT DU SUJET */
+
+.mmic-topic-status {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 32px;
+  height: 32px;
+  margin: 0 auto;
+
+  border: 1px solid #b97a56;
+  border-radius: 8px;
+
+  background: #102438;
+
+  box-shadow: 0 2px 5px rgba(16, 36, 56, 0.13);
+}
+
+.mmic-topic-status-icon::before {
+  content: "✎";
+
+  color: #fbf8f3;
+
+  font-size: 13px;
+}
+
+.mmic-topic-original-folder {
+  display: none;
+}
+
+
+/* TITRE ET DESCRIPTION */
+
+.mmic-topic-main {
+  min-width: 0;
+  padding: 0 13px;
+
+  border-right: 1px solid #e3d9cf;
+}
+
+.mmic-topic-heading {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.mmic-topic-title {
+  color: #102438 !important;
+
+  font: 13px Georgia, "Times New Roman", serif;
+  font-weight: normal;
+  line-height: 1.3;
+  text-decoration: none !important;
+}
+
+.mmic-topic-title:hover {
+  color: #b97a56 !important;
+}
+
+.mmic-topic-type:empty {
+  display: none;
+}
+
+.mmic-topic-type:not(:empty) {
+  padding: 3px 6px;
+
+  border-radius: 4px;
+
+  background: #102438;
+  color: #fbf8f3;
+
+  font-size: 6px;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+}
+
+.mmic-topic-description {
+  margin-top: 5px;
+
+  color: #988b81;
+
+  font-size: 8px;
+  font-style: italic;
+  line-height: 1.5;
+}
+
+.mmic-topic-navigation,
+.mmic-topic-dates {
+  margin-top: 5px;
+
+  color: #a06d50;
+
+  font-size: 7px;
+  line-height: 1.4;
+}
+
+.mmic-topic-navigation:empty,
+.mmic-topic-dates:empty {
+  display: none;
+}
+
+
+
+/* AUTEUR ET COMPTEURS */
+
+.mmic-topic-meta {
+  padding: 0 12px;
+
+  border-right: 1px solid #e3d9cf;
+
+  color: #766a61;
+
+  font-size: 7px;
+  text-align: center;
+}
+
+.mmic-topic-meta-label {
+  display: block;
+  margin-bottom: 3px;
+
+  color: #a06d50;
+
+  font-size: 6px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+
+.mmic-topic-author {
+  margin-bottom: 8px;
+}
+
+.mmic-topic-numbers {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+}
+
+.mmic-topic-number {
+  min-width: 36px;
+  padding: 5px;
+
+  border: 1px solid #e3d9cf;
+  border-radius: 5px;
+
+  background: #f7f1e9;
+}
+
+.mmic-topic-number strong {
+  display: block;
+
+  color: #102438;
+
+  font-size: 9px;
+}
+
+.mmic-topic-number span {
+  color: #998d84;
+
+  font-size: 5px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+}
+
+
+/* DERNIER MESSAGE */
+
+.mmic-topic-last {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+
+  min-width: 0;
+  padding-left: 12px;
+}
+
+.mmic-topic-last-avatar {
+  flex: 0 0 38px;
+
+  width: 38px;
+  height: 38px;
+
+  overflow: hidden;
+
+  border: 1px solid #b97a56;
+  border-radius: 7px;
+
+  background: #eee4d9;
+}
+
+.mmic-topic-last-avatar img {
+  width: 100% !important;
+  height: 100% !important;
+
+  object-fit: cover;
+}
+
+.mmic-topic-last-content {
+  min-width: 0;
+
+  color: #766a61;
+
+  font-size: 7px;
+  line-height: 1.5;
+}
+
+.mmic-topic-last-time {
+  overflow: hidden;
+
+  color: #887b72;
+
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.mmic-topic-last-author a {
+  color: #102438 !important;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+
+/* ICÔNES SECONDAIRES */
+
+.mmic-topic-pre-icons img,
+.mmic-topic-special-icon img {
+  max-width: 13px;
+  max-height: 13px;
+}
+
+.mmic-topic-selection,
+.mmic-topic-multiselect {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+
+/* AUCUN SUJET */
+
+.mmic-topics-empty {
+  padding: 40px 20px;
+
+  color: #766a61;
+  text-align: center;
+}
+
+.mmic-topics-empty-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 36px;
+  height: 36px;
+  margin: 0 auto 10px;
+
+  border-radius: 50%;
+
+  background: #102438;
+  color: #d19168;
+
+  font-size: 15px;
+}
+
+.mmic-topics-empty strong {
+  display: block;
+
+  color: #102438;
+
+  font: 14px Georgia, "Times New Roman", serif;
+}
+
+.mmic-topics-empty p {
+  margin: 5px 0 0;
+
+  font-size: 8px;
+}
+
+
+/* PIED DE LA LISTE */
+
+.mmic-topics-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 10px 14px;
+
+  border-top: 1px solid #d8cbbd;
+
+  background: #f7f1e9;
+}
+
+.mmic-topics-backtop {
+  color: #a06d50 !important;
+
+  font-size: 7px;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+  text-decoration: none !important;
+  text-transform: uppercase;
+}
+
+
+/* =========================================================
+   BAS DU FORUM
+   ========================================================= */
+
+.mmic-viewforum-footer {
+  margin-top: 12px;
+  margin-bottom: 20px;
+}
+
+.mmic-viewforum-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+
+  padding: 10px 13px;
+
+  border: 1px solid #ddd1c6;
+  border-radius: 8px;
+
+  background: #fbf8f3;
+}
+
+.mmic-viewforum-footer-title {
+  display: block;
+  margin-bottom: 4px;
+
+  color: #a06d50;
+
+  font-size: 6px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+
+.mmic-viewforum-moderators {
+  color: #766a61;
+
+  font-size: 8px;
+}
+
+.mmic-viewforum-options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 6px;
+}
+
+.mmic-viewforum-option {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+
+  min-height: 25px;
+  padding: 0 9px;
+
+  border: 1px solid #ddd1c6;
+  border-radius: 5px;
+
+  background: #f7f1e9;
+  color: #625951 !important;
+
+  font-size: 7px;
+  font-weight: 700;
+  text-decoration: none !important;
+  text-transform: uppercase;
+}
+
+.mmic-viewforum-option > span:first-child {
+  color: #b97a56;
+}
+
+.mmic-viewforum-option:hover {
+  border-color: #b97a56;
+
+  background: #102438;
+  color: #fbf8f3 !important;
+}
+
+.mmic-viewforum-watch a {
+  color: inherit !important;
+  text-decoration: none;
+}
+
+
+/* UTILISATEURS PRÉSENTS */
+
+.mmic-viewforum-users {
+  margin-top: 8px;
+  padding: 11px 13px;
+
+  border: 1px solid #c8d3dc;
+  border-radius: 8px;
+
+  background: #e7edf1;
+}
+
+.mmic-viewforum-users-title {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  margin-bottom: 6px;
+
+  color: #102438;
+
+  font: 10px Georgia, "Times New Roman", serif;
+}
+
+.mmic-viewforum-users-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 20px;
+  height: 20px;
+
+  border-radius: 50%;
+
+  background: #102438;
+  color: #d19168;
+
+  font-size: 8px;
+}
+
+.mmic-viewforum-users-list {
+  color: #687681;
+
+  font-size: 8px;
+  line-height: 1.5;
+}
+
+
+/* PERMISSIONS */
+
+.mmic-viewforum-permissions {
+  margin-top: 8px;
+  padding: 11px 13px;
+
+  border: 1px solid #ddd1c6;
+  border-radius: 8px;
+
+  background: #f7f1e9;
+}
+
+.mmic-viewforum-permissions-list {
+  color: #766a61;
+
+  font-size: 8px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 900px) {
+  .mmic-topic {
+    grid-template-columns:
+      40px
+      minmax(0, 1fr)
+      105px;
+  }
+
+  .mmic-topic-last {
+    grid-column: 2 / -1;
+
+    margin-top: 9px;
+    padding-top: 9px;
+    padding-left: 13px;
+
+    border-top: 1px solid #e3d9cf;
+  }
+
+  .mmic-topic-meta {
+    border-right: 0;
+  }
+}
+
+@media (max-width: 650px) {
+  .mmic-viewforum-actions,
+  .mmic-viewforum-navigation,
+  .mmic-topics,
+  .mmic-viewforum-footer {
+    width: calc(100% - 12px);
+  }
+
+  .mmic-viewforum-navigation,
+  .mmic-viewforum-links {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .mmic-viewforum-options {
+    justify-content: flex-start;
+  }
+
+  .mmic-topics-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .mmic-topic {
+    grid-template-columns:
+      35px
+      minmax(0, 1fr);
+  }
+
+  .mmic-topic-main {
+    border-right: 0;
+  }
+
+  .mmic-topic-meta,
+  .mmic-topic-last {
+    grid-column: 2;
+
+    margin-top: 8px;
+    padding-top: 8px;
+    padding-left: 0;
+
+    border-top: 1px solid #e3d9cf;
+    border-right: 0;
+  }
+
+  .mmic-topic-meta {
+    text-align: left;
+  }
+
+  .mmic-topic-numbers {
+    justify-content: flex-start;
+  }
+}
+
+
+/* =========================================================
+   ADAPTATION AUX ÉCRANS PLUS PETITS
+   ========================================================= */
+
+@media (max-width: 900px) {
+  .mmic-topic {
+    grid-template-columns:
+      42px
+      minmax(220px, 1fr)
+      105px !important;
+
+    grid-template-areas:
+      "status main meta"
+      "status last last";
+  }
+
+  .mmic-topic-main {
+    border-right: 1px solid #e3d9cf;
+  }
+
+  .mmic-topic-meta {
+    border-right: 0;
+  }
+
+  .mmic-topic-last {
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-left: 16px;
+
+    border-top: 1px solid #e3d9cf;
+  }
+}
+
+@media (max-width: 650px) {
+  .mmic-topic {
+    grid-template-columns:
+      38px
+      minmax(0, 1fr) !important;
+
+    grid-template-areas:
+      "status main"
+      "status meta"
+      "status last";
+  }
+
+  .mmic-topic-main,
+  .mmic-topic-meta,
+  .mmic-topic-last {
+    padding-right: 0;
+    padding-left: 12px;
+
+    border-right: 0;
+  }
+
+  .mmic-topic-meta,
+  .mmic-topic-last {
+    margin-top: 8px;
+    padding-top: 8px;
+
+    border-top: 1px solid #e3d9cf;
+  }
+
+  .mmic-topic-meta {
+    text-align: left;
+  }
+
+  .mmic-topic-numbers {
+    justify-content: flex-start;
+  }
+}
+/* =========================================================
+   LISTE DES SUJETS — VERSION ADAPTÉE AU FORUM
+   ========================================================= */
+
+.mmic-topics-list {
+  padding: 10px;
+}
+
+.mmic-topic {
+  position: relative;
+
+  display: grid !important;
+  grid-template-columns: 44px minmax(0, 1fr) 175px !important;
+  grid-template-areas:
+    "status main last"
+    "status meta last";
+
+  align-items: center !important;
+  column-gap: 0;
+
+  width: 100% !important;
+  min-height: 96px;
+  margin: 0 0 8px;
+  padding: 11px 12px;
+
+  border: 1px solid #ddd1c6;
+  border-radius: 9px;
+
+  background: #fbf8f3;
+
+  box-shadow: 0 2px 7px rgba(16, 36, 56, 0.04);
+
+  box-sizing: border-box !important;
+  float: none !important;
+  clear: both;
+}
+
+.mmic-topic:last-child {
+  margin-bottom: 0;
+}
+
+
+/* STATUT */
+
+.mmic-topic-status {
+  grid-area: status;
+
+  position: relative !important;
+  float: none !important;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 32px;
+  height: 32px;
+  margin: 0 auto;
+
+  border: 1px solid #b97a56;
+  border-radius: 8px;
+
+  background: #102438;
+}
+
+.mmic-topic-status-icon::before {
+  content: "✎";
+
+  color: #fbf8f3;
+  font-size: 13px;
+}
+
+.mmic-topic-original-folder {
+  display: none !important;
+}
+
+
+/* TITRE ET DESCRIPTION */
+
+.mmic-topic-main {
+  grid-area: main;
+
+  position: relative !important;
+  float: none !important;
+
+  min-width: 0;
+  width: auto !important;
+  margin: 0 !important;
+  padding: 0 14px 5px;
+
+  border-right: 1px solid #e3d9cf;
+
+  box-sizing: border-box;
+}
+
+.mmic-topic-heading {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.mmic-topic-title {
+  display: inline-block;
+
+  max-width: 100%;
+
+  color: #102438 !important;
+
+  font: 13px Georgia, "Times New Roman", serif;
+  line-height: 1.3;
+  text-decoration: none !important;
+
+  overflow-wrap: anywhere;
+}
+
+.mmic-topic-description {
+  margin-top: 4px;
+
+  color: #988b81;
+
+  font-size: 8px;
+  font-style: italic;
+  line-height: 1.45;
+}
+
+
+/* AUTEUR ET COMPTEURS SUR UNE SEULE LIGNE */
+
+.mmic-topic-meta {
+  grid-area: meta;
+
+  position: relative !important;
+  float: none !important;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  min-width: 0;
+  width: auto !important;
+  margin: 0 !important;
+  padding: 5px 14px 0;
+
+  border-right: 1px solid #e3d9cf;
+
+  color: #766a61;
+  font-size: 7px;
+  text-align: left;
+
+  box-sizing: border-box;
+}
+
+.mmic-topic-author {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+
+  margin: 0;
+}
+
+.mmic-topic-meta-label {
+  display: inline;
+
+  margin: 0;
+
+  color: #a06d50;
+
+  font-size: 6px;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+}
+
+.mmic-topic-numbers {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.mmic-topic-number {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+
+  min-width: 0;
+  padding: 3px 6px;
+
+  border: 1px solid #e3d9cf;
+  border-radius: 4px;
+
+  background: #f7f1e9;
+}
+
+.mmic-topic-number strong,
+.mmic-topic-number span {
+  display: inline;
+
+  font-size: 6px;
+}
+
+.mmic-topic-number strong {
+  color: #102438;
+}
+
+.mmic-topic-number span {
+  color: #998d84;
+  text-transform: uppercase;
+}
+
+
+/* DERNIER MESSAGE */
+
+.mmic-topic-last {
+  grid-area: last;
+
+  position: relative !important;
+  float: none !important;
+
+  display: flex;
+  align-items: center;
+  gap: 9px;
+
+  min-width: 0;
+  width: auto !important;
+  height: auto !important;
+  margin: 0 !important;
+  padding-left: 12px;
+
+  box-sizing: border-box;
+}
+
+.mmic-topic-last-avatar {
+  flex: 0 0 42px;
+
+  width: 42px;
+  height: 42px;
+
+  overflow: hidden;
+
+  border: 1px solid #b97a56;
+  border-radius: 7px;
+
+  background: #eee4d9;
+}
+
+.mmic-topic-last-avatar img {
+  display: block;
+
+  width: 100% !important;
+  height: 100% !important;
+
+  object-fit: cover;
+}
+
+.mmic-topic-last-content {
+  min-width: 0;
+
+  color: #766a61;
+
+  font-size: 7px;
+  line-height: 1.5;
+}
+
+.mmic-topic-last-time {
+  overflow: hidden;
+
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+
+/* ÉLÉMENTS SECONDAIRES */
+
+.mmic-topic-special-icon,
+.mmic-topic-selection,
+.mmic-topic-multiselect {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+
+/* =========================================================
+   FORMAT ÉTROIT
+   ========================================================= */
+
+@media (max-width: 700px) {
+  .mmic-topic {
+    grid-template-columns: 38px minmax(0, 1fr) !important;
+    grid-template-areas:
+      "status main"
+      "status meta"
+      "status last";
+  }
+
+  .mmic-topic-main,
+  .mmic-topic-meta,
+  .mmic-topic-last {
+    border-right: 0;
+  }
+
+  .mmic-topic-meta {
+    flex-wrap: wrap;
+  }
+
+  .mmic-topic-last {
+    margin-top: 8px !important;
+    padding-top: 8px;
+    padding-left: 14px;
+
+    border-top: 1px solid #e3d9cf;
+  }
+}
+/* =========================================================
+   CORRECTION FINALE — EN-TÊTE SIMPLE DE LA LISTE DES SUJETS
+   À COLLER TOUT À LA FIN DU CSS
+   ========================================================= */
+
+/* On neutralise l’ancien grand cadre beige */
+.mmic-topics {
+  display: block !important;
+
+  width: calc(100% - 24px) !important;
+  max-width: 1100px !important;
+  margin: 10px auto 0 !important;
+
+  overflow: visible !important;
+
+  border: 0 !important;
+  border-radius: 0 !important;
+
+  background: transparent !important;
+
+  box-shadow: none !important;
+
+  box-sizing: border-box !important;
+}
+
+
+/* =========================================================
+   PETIT EN-TÊTE AVEC LIGNES CUIVRÉES
+   ========================================================= */
+
+.mmic-topics-header {
+  position: relative !important;
+
+  display: block !important;
+
+  width: 100% !important;
+  min-height: 0 !important;
+
+  margin: 0 0 12px !important;
+  padding: 0 !important;
+
+  overflow: visible !important;
+
+  border: 0 !important;
+
+  background: transparent !important;
+  color: inherit !important;
+
+  box-shadow: none !important;
+
+  box-sizing: border-box !important;
+}
+
+/* On retire définitivement l’ancienne skyline */
+.mmic-topics-header::before,
+.mmic-topics-header::after {
+  content: none !important;
+  display: none !important;
+}
+
+
+/* Ligne décorative */
+
+.mmic-topics-divider {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 14px !important;
+
+  width: 100% !important;
+  margin: 0 0 9px !important;
+
+  color: #b97a56 !important;
+
+  font-size: 7px !important;
+  font-weight: 700 !important;
+  letter-spacing: 2px !important;
+  line-height: 1.2 !important;
+  text-align: center !important;
+  text-transform: uppercase !important;
+}
+
+.mmic-topics-divider::before,
+.mmic-topics-divider::after {
+  content: "" !important;
+
+  display: block !important;
+  flex: 1 1 auto !important;
+
+  height: 1px !important;
+
+  background: #d7ad91 !important;
+}
+
+.mmic-topics-divider span {
+  display: inline-block !important;
+  flex: 0 0 auto !important;
+
+  color: #b97a56 !important;
+
+  white-space: nowrap !important;
+}
+
+
+/* Titre du forum */
+
+.mmic-topics-title,
+.mmic-topics-header h1 {
+  display: block !important;
+
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 2px !important;
+
+  color: #102438 !important;
+
+  font-family: Georgia, "Times New Roman", serif !important;
+  font-size: 19px !important;
+  font-weight: normal !important;
+  letter-spacing: 0.5px !important;
+  line-height: 1.25 !important;
+  text-align: left !important;
+  text-transform: uppercase !important;
+
+  box-sizing: border-box !important;
+}
+
+
+/* Pagination éventuelle */
+
+.mmic-topics-header .mmic-topics-pagination {
+  display: block !important;
+
+  width: 100% !important;
+  margin: 5px 0 0 !important;
+
+  color: #8c7e74 !important;
+
+  font-size: 7px !important;
+  line-height: 1.4 !important;
+  text-align: right !important;
+}
+
+.mmic-topics-header .mmic-topics-pagination a {
+  color: #a06d50 !important;
+}
+
+
+/* =========================================================
+   LISTE ET CARTE DES SUJETS
+   ========================================================= */
+
+.mmic-topics-list {
+  display: block !important;
+
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+
+  background: transparent !important;
+
+  box-sizing: border-box !important;
+}
+
+.mmic-topic {
+  width: 100% !important;
+  max-width: none !important;
+
+  margin: 0 0 8px !important;
+  padding: 12px !important;
+
+  box-sizing: border-box !important;
+}
+
+
+/* Le pied de pagination ne doit plus recréer un gros bloc */
+.mmic-topics-footer {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+
+  width: 100% !important;
+  margin: 5px 0 0 !important;
+  padding: 6px 2px !important;
+
+  border: 0 !important;
+
+  background: transparent !important;
+
+  box-sizing: border-box !important;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 650px) {
+  .mmic-topics {
+    width: calc(100% - 12px) !important;
+  }
+
+  .mmic-topics-divider {
+    gap: 8px !important;
+
+    font-size: 6px !important;
+    letter-spacing: 1.2px !important;
+  }
+
+  .mmic-topics-title,
+  .mmic-topics-header h1 {
+    font-size: 16px !important;
+  }
+}
+/* =========================================================
+   FIL D’ARIANE COMPACT
+   ========================================================= */
+
+.mmic-viewforum-navigation {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 12px !important;
+
+  width: calc(100% - 24px) !important;
+  min-height: 34px !important;
+  margin: 8px auto 12px !important;
+  padding: 6px 11px !important;
+
+  border: 1px solid #ddd1c6 !important;
+  border-radius: 7px !important;
+
+  background: #f7f1e9 !important;
+
+  box-sizing: border-box !important;
+}
+
+
+/* Navigation sur une seule ligne */
+
+.mmic-viewforum-breadcrumb {
+  display: flex !important;
+  align-items: center !important;
+  flex-wrap: wrap !important;
+  gap: 4px !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  color: #766a61 !important;
+
+  font-size: 8px !important;
+  line-height: 1.4 !important;
+}
+
+.mmic-viewforum-breadcrumb a {
+  display: inline !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  color: #102438 !important;
+
+  font-weight: 700 !important;
+  text-decoration: none !important;
+}
+
+
+/* Le bouton Plus reste compact à droite */
+
+.mmic-viewforum-more {
+  display: flex !important;
+  flex: 0 0 auto !important;
+  align-items: center !important;
+
+  position: relative !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.mmic-viewforum-more-label {
+  margin: 0 !important;
+
+  color: #a06d50 !important;
+
+  font-size: 7px !important;
+  font-weight: 700 !important;
+  letter-spacing: 1px !important;
+  line-height: 1 !important;
+  text-transform: uppercase !important;
+}
+
+
+/* Le menu généré par Forumactif */
+
+.mmic-viewforum-more-menu {
+  display: inline-block !important;
+
+  margin-left: 5px !important;
+
+  font-size: 7px !important;
+  line-height: 1 !important;
+}
+
+
+/* Mobile */
+
+@media (max-width: 650px) {
+  .mmic-viewforum-navigation {
+    align-items: flex-start !important;
+    flex-direction: column !important;
+
+    min-height: 0 !important;
+  }
+}
+/* =========================================================
+   BOUTONS DE LA PAGE FORUM
+   ========================================================= */
+
+/* ---------------------------------------------------------
+   NOUVEAU SUJET
+   --------------------------------------------------------- */
+
+.mmic-new-topic-button,
+.mmic-viewforum-actions a,
+.lsuj_newpost a {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 7px !important;
+
+  min-height: 32px !important;
+  padding: 0 13px !important;
+
+  border: 1px solid #b97a56 !important;
+  border-radius: 6px !important;
+
+  background: #102438 !important;
+  color: #fbf8f3 !important;
+
+  box-shadow: 0 3px 8px rgba(16, 36, 56, 0.12) !important;
+
+  font-size: 8px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.8px !important;
+  line-height: 1 !important;
+  text-decoration: none !important;
+  text-transform: uppercase !important;
+
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease !important;
+}
+
+/* On neutralise l’ancien symbole rond ajouté par Forumactif */
+.mmic-new-topic-button::before,
+.mmic-viewforum-actions a::before,
+.lsuj_newpost a::before {
+  content: "+" !important;
+
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  width: 17px !important;
+  height: 17px !important;
+
+  border-radius: 50% !important;
+
+  background: #b97a56 !important;
+  color: #fbf8f3 !important;
+
+  font-size: 12px !important;
+  font-weight: 400 !important;
+  line-height: 1 !important;
+}
+
+.mmic-new-topic-button:hover,
+.mmic-viewforum-actions a:hover,
+.lsuj_newpost a:hover {
+  border-color: #102438 !important;
+
+  background: #b97a56 !important;
+  color: #fbf8f3 !important;
+
+  box-shadow: 0 5px 12px rgba(16, 36, 56, 0.17) !important;
+
+  transform: translateY(-2px) !important;
+}
+
+.mmic-new-topic-button:hover::before,
+.mmic-viewforum-actions a:hover::before,
+.lsuj_newpost a:hover::before {
+  background: #102438 !important;
+}
+
+
+/* ---------------------------------------------------------
+   OPTIONS SOUS LA LISTE
+   --------------------------------------------------------- */
+
+.mmic-viewforum-options {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-end !important;
+  flex-wrap: wrap !important;
+  gap: 7px !important;
+}
+
+.mmic-viewforum-option,
+.mmic-viewforum-option a,
+.mmic-viewforum-watch,
+.mmic-viewforum-watch a {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 6px !important;
+
+  min-height: 28px !important;
+  padding: 0 10px !important;
+
+  border: 1px solid #ddd1c6 !important;
+  border-radius: 6px !important;
+
+  background: #f7f1e9 !important;
+  color: #625951 !important;
+
+  box-shadow: 0 2px 5px rgba(16, 36, 56, 0.04) !important;
+
+  font-size: 7px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.6px !important;
+  line-height: 1 !important;
+  text-decoration: none !important;
+  text-transform: uppercase !important;
+
+  box-sizing: border-box !important;
+
+  transition:
+    color 0.2s ease,
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease !important;
+}
+
+/* Empêche le texte de "Marquer..." de rester énorme */
+.mmic-viewforum-option {
+  font-size: 7px !important;
+}
+
+.mmic-viewforum-option > span:first-child {
+  color: #b97a56 !important;
+  font-size: 9px !important;
+}
+
+.mmic-viewforum-option:hover,
+.mmic-viewforum-option:hover a,
+.mmic-viewforum-watch:hover,
+.mmic-viewforum-watch:hover a {
+  border-color: #b97a56 !important;
+
+  background: #102438 !important;
+  color: #fbf8f3 !important;
+
+  box-shadow: 0 4px 9px rgba(16, 36, 56, 0.12) !important;
+
+  transform: translateY(-1px) !important;
+}
+
+
+/* ---------------------------------------------------------
+   RETOUR EN HAUT
+   --------------------------------------------------------- */
+
+.mmic-topics-backtop {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  width: 24px !important;
+  height: 24px !important;
+  padding: 0 !important;
+
+  border: 1px solid #ddd1c6 !important;
+  border-radius: 50% !important;
+
+  background: #f7f1e9 !important;
+  color: #b97a56 !important;
+
+  font-size: 0 !important;
+  text-decoration: none !important;
+
+  transition:
+    color 0.2s ease,
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease !important;
+}
+
+.mmic-topics-backtop::before {
+  content: "↑" !important;
+
+  font-size: 11px !important;
+  line-height: 1 !important;
+}
+
+.mmic-topics-backtop:hover {
+  border-color: #102438 !important;
+
+  background: #102438 !important;
+  color: #fbf8f3 !important;
+
+  transform: translateY(-2px) !important;
+}
+
+
+/* ---------------------------------------------------------
+   BLOC SOUS LA LISTE PLUS ÉQUILIBRÉ
+   --------------------------------------------------------- */
+
+.mmic-viewforum-links {
+  min-height: 42px !important;
+  padding: 8px 11px !important;
+}
+
+.mmic-viewforum-moderators {
+  flex: 1 1 auto !important;
+}
+
+.mmic-viewforum-options {
+  flex: 0 1 auto !important;
+}
+
+
+/* ---------------------------------------------------------
+   MOBILE
+   --------------------------------------------------------- */
+
+@media (max-width: 650px) {
+  .mmic-viewforum-actions {
+    justify-content: stretch !important;
+  }
+
+  .mmic-new-topic-button,
+  .mmic-viewforum-actions a,
+  .lsuj_newpost a {
+    width: 100% !important;
+
+    box-sizing: border-box !important;
+  }
+
+  .mmic-viewforum-options {
+    justify-content: flex-start !important;
+  }
+}
+/* =========================================================
+   CORRECTION DES BOUTONS DU VIEWFORUM
+   ========================================================= */
+
+.mmic-viewforum-actions {
+  display: flex !important;
+  justify-content: flex-end !important;
+
+  width: calc(100% - 24px) !important;
+  margin: 12px auto 8px !important;
+}
+
+.mmic-new-topic-button {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 7px !important;
+
+  min-height: 32px !important;
+  padding: 0 13px !important;
+
+  border: 1px solid #b97a56 !important;
+  border-radius: 6px !important;
+
+  background: #102438 !important;
+  color: #fbf8f3 !important;
+
+  box-shadow: 0 3px 8px rgba(16, 36, 56, 0.12) !important;
+
+  font-size: 8px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.8px !important;
+  line-height: 1 !important;
+  text-decoration: none !important;
+  text-transform: uppercase !important;
+}
+
+.mmic-new-topic-icon {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  width: 17px !important;
+  height: 17px !important;
+
+  border-radius: 50% !important;
+
+  background: #b97a56 !important;
+  color: #fbf8f3 !important;
+
+  font-size: 12px !important;
+  line-height: 1 !important;
+}
+
+.mmic-new-topic-button:hover {
+  border-color: #102438 !important;
+
+  background: #b97a56 !important;
+
+  transform: translateY(-2px) !important;
+}
+
+.mmic-viewforum-options {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-end !important;
+  flex-wrap: wrap !important;
+  gap: 7px !important;
+}
+
+.mmic-viewforum-option {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 6px !important;
+
+  min-height: 27px !important;
+  padding: 0 10px !important;
+
+  border: 1px solid #ddd1c6 !important;
+  border-radius: 6px !important;
+
+  background: #f7f1e9 !important;
+  color: #625951 !important;
+
+  font-size: 7px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.5px !important;
+  line-height: 1 !important;
+  text-decoration: none !important;
+  text-transform: uppercase !important;
+
+  box-sizing: border-box !important;
+}
+
+.mmic-viewforum-option span {
+  font-size: inherit !important;
+  line-height: inherit !important;
+}
+
+.mmic-viewforum-watch a {
+  color: inherit !important;
+  font-size: inherit !important;
+  font-weight: inherit !important;
+  letter-spacing: inherit !important;
+  line-height: inherit !important;
+  text-decoration: none !important;
+  text-transform: inherit !important;
+}
+
+.mmic-viewforum-option:hover {
+  border-color: #b97a56 !important;
+
+  background: #102438 !important;
+  color: #fbf8f3 !important;
+
+  transform: translateY(-1px) !important;
+}
+
+.mmic-viewforum-option:hover a {
+  color: #fbf8f3 !important;
+}
