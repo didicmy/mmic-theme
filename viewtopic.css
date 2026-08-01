@@ -1796,14 +1796,13 @@ color: #D8B08C !important;
   text-shadow: none !important;
 }
 
-.mmic-vt-username{
-    font-family: "Cormorant Garamond", serif;
-    font-size: 32px;
-    font-weight: 700;
-    letter-spacing: .5px;
-    color:#F8F4EE !important;
-    text-shadow:
-        0 0 8px rgba(216,176,140,.20);
+.mmic-vt-username {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: #d8b08c !important;
+  text-shadow: 0 0 8px rgba(216, 176, 140, 0.20);
 }
 .mmic-vt-profile a {
   color: #fbf8f3 !important;
