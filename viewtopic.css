@@ -2359,3 +2359,409 @@ html body .mmic-vt-post-date::before {
   display: none !important;
   content: none !important;
 }
+/* =========================================================
+   VIEWTOPIC — FINITIONS VISUELLES
+   ========================================================= */
+
+
+/* =========================================================
+   1. BARRE SUPÉRIEURE DU MESSAGE
+   ========================================================= */
+
+html body .mmic-vt-post-header {
+  min-height: 42px !important;
+  padding: 6px 10px !important;
+
+  background: #f7f1ea !important;
+  border-bottom: 1px solid #e4d6c9 !important;
+}
+
+
+/* Date du message */
+
+html body .mmic-vt-post-date {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 7px !important;
+
+  color: #6f6258 !important;
+
+  font-size: 8px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.35px !important;
+}
+
+
+/* Petite pastille devant la date */
+
+html body .mmic-vt-post-date::before {
+  display: inline-block !important;
+  content: "" !important;
+
+  width: 6px !important;
+  height: 6px !important;
+
+  border-radius: 50% !important;
+  background: #d8b08c !important;
+
+  box-shadow: 0 0 0 3px rgba(216, 176, 140, 0.15) !important;
+}
+
+
+/* =========================================================
+   2. BOUTONS D’ACTION
+   ========================================================= */
+
+html body .mmic-vt-post-actions {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-end !important;
+  flex-wrap: wrap !important;
+
+  gap: 5px !important;
+  margin-left: auto !important;
+}
+
+
+html body .mmic-vt-post-actions .mmic-vt-action {
+  min-width: 44px !important;
+  height: 26px !important;
+  padding: 0 8px !important;
+
+  border: 1px solid #ddc9b8 !important;
+  border-radius: 6px !important;
+
+  background: linear-gradient(
+    180deg,
+    #fffdf9 0%,
+    #f7f0e9 100%
+  ) !important;
+
+  color: #102438 !important;
+
+  font-size: 7px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.65px !important;
+  text-transform: uppercase !important;
+
+  box-shadow:
+    0 1px 2px rgba(16, 36, 56, 0.06),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8) !important;
+
+  transition:
+    transform 0.18s ease,
+    background 0.18s ease,
+    border-color 0.18s ease,
+    box-shadow 0.18s ease !important;
+}
+
+
+html body .mmic-vt-post-actions .mmic-vt-action::before {
+  width: 13px !important;
+  height: 13px !important;
+  flex: 0 0 13px !important;
+
+  background: #102438 !important;
+  color: #d8b08c !important;
+
+  font-size: 7px !important;
+  line-height: 13px !important;
+
+  box-shadow: inset 0 0 0 1px rgba(216, 176, 140, 0.18) !important;
+}
+
+
+/* Boutons courts */
+
+html body .mmic-vt-action-delete,
+html body .mmic-vt-action-report {
+  width: 28px !important;
+  min-width: 28px !important;
+  padding: 0 !important;
+}
+
+
+html body .mmic-vt-action-ip {
+  min-width: 38px !important;
+  padding: 0 7px !important;
+}
+
+
+/* Survol premium */
+
+html body .mmic-vt-post-actions .mmic-vt-action:hover {
+  transform: translateY(-2px) !important;
+
+  border-color: #b97a56 !important;
+  background: #102438 !important;
+  color: #fbf8f3 !important;
+
+  box-shadow:
+    0 4px 10px rgba(16, 36, 56, 0.18),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08) !important;
+}
+
+
+html body .mmic-vt-post-actions .mmic-vt-action:hover::before {
+  background: #d8b08c !important;
+  color: #102438 !important;
+
+  box-shadow: none !important;
+}
+
+
+/* =========================================================
+   3. PROFIL DU MEMBRE
+   ========================================================= */
+
+html body .mmic-vt-profile {
+  background:
+    linear-gradient(
+      165deg,
+      #102438 0%,
+      #102438 55%,
+      #0d2032 100%
+    ) !important;
+}
+
+
+/* Ligne sous le pseudo */
+
+html body .mmic-vt-profile-top {
+  position: relative !important;
+  padding-bottom: 12px !important;
+  margin-bottom: 10px !important;
+}
+
+
+html body .mmic-vt-profile-top::after {
+  display: block !important;
+  content: "" !important;
+
+  width: 42px !important;
+  height: 1px !important;
+  margin: 10px auto 0 !important;
+
+  background: linear-gradient(
+    90deg,
+    transparent,
+    #d8b08c,
+    transparent
+  ) !important;
+}
+
+
+/* Rang */
+
+html body .mmic-vt-rank {
+  margin-top: 3px !important;
+
+  color: #d8b08c !important;
+
+  font-size: 7px !important;
+  font-weight: 700 !important;
+  letter-spacing: 1.7px !important;
+  text-transform: uppercase !important;
+}
+
+
+/* Avatar */
+
+html body .mmic-vt-avatar {
+  margin-bottom: 12px !important;
+}
+
+
+html body .mmic-vt-avatar img {
+  display: block !important;
+
+  border: 1px solid #d8b08c !important;
+  border-radius: 7px !important;
+
+  box-shadow:
+    0 5px 16px rgba(0, 0, 0, 0.25),
+    0 0 0 3px rgba(216, 176, 140, 0.08) !important;
+}
+
+
+/* Champs du profil */
+
+html body .mmic-vt-profile-fields {
+  margin-top: 10px !important;
+}
+
+
+html body .mmic-vt-profile-fields > div {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+
+  min-height: 27px !important;
+  padding: 5px 2px !important;
+
+  border-top: 1px solid rgba(216, 176, 140, 0.14) !important;
+
+  color: #f3e8de !important;
+
+  font-size: 7px !important;
+  letter-spacing: 0.45px !important;
+}
+
+
+/* Étiquettes des champs */
+
+html body .mmic-vt-profile-fields .label,
+html body .mmic-vt-profile-fields .field-label {
+  color: #d8b08c !important;
+
+  font-size: 6px !important;
+  font-weight: 700 !important;
+  letter-spacing: 1px !important;
+  text-transform: uppercase !important;
+}
+
+
+/* =========================================================
+   4. BOUTONS DU PROFIL
+   ========================================================= */
+
+html body .mmic-vt-profile-links {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 6px !important;
+
+  margin-top: 12px !important;
+}
+
+
+html body .mmic-vt-profile-link {
+  min-height: 28px !important;
+
+  border: 1px solid rgba(216, 176, 140, 0.55) !important;
+  border-radius: 5px !important;
+
+  background: rgba(255, 255, 255, 0.04) !important;
+
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05) !important;
+
+  transition:
+    transform 0.18s ease,
+    background 0.18s ease,
+    border-color 0.18s ease !important;
+}
+
+
+html body .mmic-vt-profile-link:hover {
+  transform: translateY(-1px) !important;
+
+  border-color: #d8b08c !important;
+  background: rgba(216, 176, 140, 0.12) !important;
+}
+
+
+html body .mmic-vt-profile-link img {
+  max-height: 20px !important;
+  width: auto !important;
+}
+
+
+/* Statut en ligne */
+
+html body .mmic-vt-online {
+  margin-top: 12px !important;
+  text-align: center !important;
+}
+
+
+html body .mmic-vt-online img {
+  max-height: 17px !important;
+}
+
+
+/* =========================================================
+   5. CONTENU DU MESSAGE
+   ========================================================= */
+
+html body .mmic-vt-message {
+  padding: 16px 18px 18px !important;
+}
+
+
+html body .mmic-vt-message > .message,
+html body .mmic-vt-message .message {
+  min-height: 160px !important;
+  padding: 22px 24px !important;
+
+  border: 1px solid #dfd0c3 !important;
+  border-radius: 7px !important;
+
+  background: #fffdf9 !important;
+
+  color: #463d37 !important;
+
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 12px !important;
+  line-height: 1.75 !important;
+  text-align: justify !important;
+
+  box-shadow:
+    0 3px 10px rgba(64, 46, 34, 0.05),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8) !important;
+}
+
+
+/* Liens dans les messages */
+
+html body .mmic-vt-message .message a {
+  color: #b36f4b !important;
+  font-weight: 700 !important;
+  text-decoration: none !important;
+}
+
+
+html body .mmic-vt-message .message a:hover {
+  color: #102438 !important;
+  text-decoration: underline !important;
+}
+
+
+/* Numéro du message */
+
+html body .mmic-vt-post-number {
+  padding: 5px 12px 7px !important;
+
+  color: #b97a56 !important;
+
+  font-size: 8px !important;
+  font-weight: 700 !important;
+}
+
+
+/* =========================================================
+   6. RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 800px) {
+
+  html body .mmic-vt-post-header {
+    align-items: flex-start !important;
+    flex-direction: column !important;
+  }
+
+  html body .mmic-vt-post-actions {
+    width: 100% !important;
+    justify-content: flex-start !important;
+    margin-left: 0 !important;
+  }
+
+  html body .mmic-vt-message {
+    padding: 10px !important;
+  }
+
+  html body .mmic-vt-message > .message,
+  html body .mmic-vt-message .message {
+    padding: 16px !important;
+    text-align: left !important;
+  }
+
+}
