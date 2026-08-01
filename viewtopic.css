@@ -1825,3 +1825,18 @@ html body .mmic-vt-post .mmic-vt-content .mmic-vt-message > .message {
 .mmic-vt-online img {
   max-width: 100% !important;
 }
+/* =========================================================
+   PSEUDO DU PROFIL — CORRECTION FORCÉE
+   ========================================================= */
+
+html body .mmic-vt-profile .mmic-vt-username,
+html body .mmic-vt-profile .mmic-vt-username a,
+html body .mmic-vt-profile .mmic-vt-username a:link,
+html body .mmic-vt-profile .mmic-vt-username a:visited,
+html body .mmic-vt-profile .mmic-vt-username a:hover,
+html body .mmic-vt-profile .mmic-vt-username a:active,
+html body .mmic-vt-profile h2.mmic-vt-username,
+html body .mmic-vt-profile h2.mmic-vt-username * {
+  color: #fbf8f3 !important;
+  text-shadow: none !important;
+}
