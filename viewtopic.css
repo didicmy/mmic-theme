@@ -1872,3 +1872,8 @@ html body .mmic-vt-post .mmic-vt-profile .mmic-vt-username strong {
   color: #d8b08c !important;
   text-shadow: 0 0 8px rgba(216, 176, 140, 0.18) !important;
 }
+.mmic-vt-username-color,
+.mmic-vt-username-color * {
+  color: #d8b08c !important;
+  text-shadow: 0 0 8px rgba(216, 176, 140, 0.18) !important;
+}
