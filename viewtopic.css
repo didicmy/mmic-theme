@@ -4460,3 +4460,67 @@ footer.mmic-vt-post-footer {
   border-top: 1px solid rgba(216, 176, 140, 0.14) !important;
   background: transparent !important;
 }
+/* =========================================================
+   MESSAGE — SUPPRESSION RÉELLE DE LA BOÎTE INTÉRIEURE
+   ========================================================= */
+
+html body section.mmic-vt-content
+div.mmic-vt-message.postbody {
+  min-height: 0 !important;
+
+  margin: 0 !important;
+  padding: 18px 10px 22px !important;
+
+  border: 0 !important;
+  border-radius: 0 !important;
+
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+
+/* Élément qui crée encore la grande boîte */
+html body section.mmic-vt-content
+div.mmic-vt-message.postbody > div:first-child,
+
+html body section.mmic-vt-content
+div.mmic-vt-message.postbody > .message {
+  min-height: 0 !important;
+  height: auto !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  border: 0 !important;
+  border-radius: 0 !important;
+
+  background: transparent !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+
+/* Le texte ne doit plus être étiré sur toute la hauteur */
+html body section.mmic-vt-content
+div.mmic-vt-message.postbody > div:first-child:empty {
+  display: none !important;
+}
+
+
+/* On garde une vraie zone respirante, sans faux grand rectangle */
+html body section.mmic-vt-content
+div.mmic-vt-message.postbody {
+  display: block !important;
+  align-self: start !important;
+}
+
+
+/* Le contenu réel du message */
+html body section.mmic-vt-content
+div.mmic-vt-message.postbody,
+html body section.mmic-vt-content
+div.mmic-vt-message.postbody p {
+  color: #2f3945 !important;
+  font-size: 13px !important;
+  line-height: 1.85 !important;
+}
