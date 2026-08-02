@@ -4524,3 +4524,60 @@ div.mmic-vt-message.postbody p {
   font-size: 13px !important;
   line-height: 1.85 !important;
 }
+/* =========================================================
+   MESSAGE — SUPPRESSION DU DERNIER PETIT CADRE
+   ========================================================= */
+
+html body section.mmic-vt-content
+div.mmic-vt-message.postbody {
+  display: block !important;
+
+  width: 100% !important;
+  max-width: none !important;
+  min-width: 0 !important;
+  min-height: 0 !important;
+  height: auto !important;
+
+  align-self: stretch !important;
+  flex: 1 1 auto !important;
+
+  margin: 0 !important;
+  padding: 20px 10px 24px !important;
+
+  border: none !important;
+  border-width: 0 !important;
+  border-style: none !important;
+  border-radius: 0 !important;
+
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+
+  box-shadow: none !important;
+  outline: none !important;
+
+  overflow: visible !important;
+}
+
+
+/* Neutralisation des pseudo-éléments éventuels */
+html body section.mmic-vt-content
+div.mmic-vt-message.postbody::before,
+
+html body section.mmic-vt-content
+div.mmic-vt-message.postbody::after {
+  content: none !important;
+  display: none !important;
+}
+
+
+/* Le texte réel */
+html body section.mmic-vt-content
+div.mmic-vt-message.postbody > *:first-child {
+  margin-top: 0 !important;
+}
+
+html body section.mmic-vt-content
+div.mmic-vt-message.postbody > *:last-child {
+  margin-bottom: 0 !important;
+}
