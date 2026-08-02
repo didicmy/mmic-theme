@@ -4798,3 +4798,210 @@ html body .mmic-vt-quick-reply input[type="button"]:hover {
     0 5px 10px rgba(16, 36, 56, 0.16),
     inset 0 1px 0 rgba(255, 255, 255, 0.1) !important;
 }
+/* =========================================================
+   RÉPONSE RAPIDE — CORRECTIF FORUMACTIF
+   ========================================================= */
+
+/* On garde le vrai titre du template */
+html body .mmic-vt-quick-reply::before {
+  content: none !important;
+  display: none !important;
+}
+
+
+/* Conteneur intérieur de l’éditeur */
+html body .mmic-vt-quick-reply form,
+html body .mmic-vt-quick-reply table,
+html body .mmic-vt-quick-reply tbody,
+html body .mmic-vt-quick-reply tr,
+html body .mmic-vt-quick-reply td {
+  width: 100% !important;
+  max-width: 100% !important;
+
+  border: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+
+/* Éditeur visible */
+html body .mmic-vt-quick-reply .sceditor-container {
+  width: 100% !important;
+  max-width: 100% !important;
+
+  margin: 0 auto 14px !important;
+
+  border: 1px solid rgba(216, 176, 140, 0.42) !important;
+  border-radius: 7px !important;
+
+  background: #fffdf9 !important;
+  overflow: hidden !important;
+
+  box-shadow: 0 3px 9px rgba(16, 36, 56, 0.045) !important;
+}
+
+
+/* Barre d’outils */
+html body .mmic-vt-quick-reply .sceditor-toolbar {
+  padding: 7px 9px !important;
+
+  border: 0 !important;
+  border-bottom: 1px solid rgba(216, 176, 140, 0.28) !important;
+
+  background: linear-gradient(
+    180deg,
+    #fbf8f4 0%,
+    #f3eee8 100%
+  ) !important;
+}
+
+
+/* Zone blanche d’écriture */
+html body .mmic-vt-quick-reply .sceditor-container iframe,
+html body .mmic-vt-quick-reply .sceditor-container textarea {
+  width: 100% !important;
+  min-height: 145px !important;
+
+  border: 0 !important;
+  background: #fffdf9 !important;
+  box-shadow: none !important;
+}
+
+
+/* Boutons natifs Forumactif */
+html body .mmic-vt-quick-reply input.button,
+html body .mmic-vt-quick-reply input.mainoption,
+html body .mmic-vt-quick-reply input[type="submit"] {
+  min-height: 31px !important;
+  padding: 0 15px !important;
+
+  border: 1px solid rgba(216, 176, 140, 0.72) !important;
+  border-radius: 6px !important;
+
+  background: linear-gradient(
+    180deg,
+    #173149 0%,
+    #102438 100%
+  ) !important;
+
+  color: #fffaf5 !important;
+
+  font-size: 8px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.09em !important;
+  text-transform: uppercase !important;
+
+  box-shadow:
+    0 3px 7px rgba(16, 36, 56, 0.13),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08) !important;
+
+  cursor: pointer !important;
+}
+
+
+/* Espacement entre les deux boutons */
+html body .mmic-vt-quick-reply input.button + input.button,
+html body .mmic-vt-quick-reply input[type="submit"] + input[type="submit"] {
+  margin-left: 7px !important;
+}
+
+
+/* Survol */
+html body .mmic-vt-quick-reply input.button:hover,
+html body .mmic-vt-quick-reply input.mainoption:hover,
+html body .mmic-vt-quick-reply input[type="submit"]:hover {
+  transform: translateY(-1px) !important;
+
+  border-color: #d8b08c !important;
+
+  background: linear-gradient(
+    180deg,
+    #1d3b56 0%,
+    #142d43 100%
+  ) !important;
+}
+/* =========================================================
+   RÉPONSE RAPIDE — VERSION SÉCURISÉE
+   Ne touche pas aux boutons du profil
+   ========================================================= */
+
+/* Éditeur uniquement */
+html body .mmic-vt-quick-reply .sceditor-container {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 auto 14px !important;
+
+  border: 1px solid rgba(216, 176, 140, 0.42) !important;
+  border-radius: 7px !important;
+  background: #fffdf9 !important;
+
+  box-shadow: 0 3px 9px rgba(16, 36, 56, 0.045) !important;
+  overflow: hidden !important;
+}
+
+html body .mmic-vt-quick-reply .sceditor-toolbar {
+  padding: 7px 9px !important;
+  border: 0 !important;
+  border-bottom: 1px solid rgba(216, 176, 140, 0.28) !important;
+
+  background: linear-gradient(
+    180deg,
+    #fbf8f4 0%,
+    #f3eee8 100%
+  ) !important;
+
+  box-shadow: none !important;
+}
+
+html body .mmic-vt-quick-reply .sceditor-container iframe,
+html body .mmic-vt-quick-reply .sceditor-container textarea {
+  width: 100% !important;
+  min-height: 145px !important;
+
+  border: 0 !important;
+  background: #fffdf9 !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+/* Seulement les deux boutons placés dans le formulaire rapide */
+html body .mmic-vt-quick-reply form[name="post"] input[name="preview"],
+html body .mmic-vt-quick-reply form[name="post"] input[name="post"] {
+  min-height: 31px !important;
+  padding: 0 15px !important;
+  margin: 0 3px !important;
+
+  border: 1px solid rgba(216, 176, 140, 0.72) !important;
+  border-radius: 6px !important;
+
+  background: linear-gradient(
+    180deg,
+    #173149 0%,
+    #102438 100%
+  ) !important;
+
+  color: #fffaf5 !important;
+  font-size: 8px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.09em !important;
+  text-transform: uppercase !important;
+
+  box-shadow:
+    0 3px 7px rgba(16, 36, 56, 0.13),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08) !important;
+
+  cursor: pointer !important;
+  transition: 0.2s ease !important;
+}
+
+html body .mmic-vt-quick-reply form[name="post"] input[name="preview"]:hover,
+html body .mmic-vt-quick-reply form[name="post"] input[name="post"]:hover {
+  transform: translateY(-1px) !important;
+  border-color: #d8b08c !important;
+
+  background: linear-gradient(
+    180deg,
+    #1d3b56 0%,
+    #142d43 100%
+  ) !important;
+}
