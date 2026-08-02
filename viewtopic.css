@@ -4342,3 +4342,121 @@ html body .mmic-vt-post-number {
   position: relative !important;
   z-index: 2 !important;
 }
+/* =========================================================
+   MESSAGE — CORRECTION AVEC LES VRAIES CLASSES
+   ========================================================= */
+
+/* Conteneur général du côté message */
+html body section.mmic-vt-content {
+  position: relative !important;
+  padding: 18px 24px 20px 28px !important;
+
+  border: 0 !important;
+  border-radius: 0 !important;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.84) 0%,
+      rgba(255, 252, 248, 0.97) 100%
+    ) !important;
+
+  box-shadow: none !important;
+  overflow: hidden !important;
+}
+
+
+/* Fine ligne cuivre entre le profil et le contenu */
+html body section.mmic-vt-content::before {
+  content: "" !important;
+
+  position: absolute !important;
+  top: 18px !important;
+  bottom: 18px !important;
+  left: 0 !important;
+
+  width: 2px !important;
+
+  border-radius: 999px !important;
+
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    rgba(216, 176, 140, 0.75) 16%,
+    #d8b08c 50%,
+    rgba(216, 176, 140, 0.75) 84%,
+    transparent 100%
+  ) !important;
+
+  box-shadow: 0 0 7px rgba(216, 176, 140, 0.18) !important;
+  pointer-events: none !important;
+}
+
+
+/* La vraie boîte intérieure du message */
+html body section.mmic-vt-content
+div.mmic-vt-message.postbody {
+  position: relative !important;
+  z-index: 1 !important;
+
+  width: auto !important;
+  min-width: 0 !important;
+  min-height: 0 !important;
+
+  margin: 0 !important;
+  padding: 22px 10px !important;
+
+  border: 0 !important;
+  border-radius: 0 !important;
+
+  background: transparent !important;
+  box-shadow: none !important;
+  outline: none !important;
+
+  color: #2f3945 !important;
+  font-size: 13px !important;
+  line-height: 1.85 !important;
+}
+
+
+/* Neutralise une éventuelle boîte ajoutée autour du texte */
+html body section.mmic-vt-content
+div.mmic-vt-message.postbody > .message,
+
+html body section.mmic-vt-content
+div.mmic-vt-message.postbody > div {
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+
+/* Barre supérieure */
+html body section.mmic-vt-content
+header.mmic-vt-post-header {
+  position: relative !important;
+  z-index: 2 !important;
+
+  margin: 0 !important;
+  padding: 0 0 11px !important;
+
+  border-bottom: 1px solid rgba(216, 176, 140, 0.22) !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+
+/* Pied du message avec le numéro */
+html body section.mmic-vt-content
+footer.mmic-vt-post-footer {
+  position: relative !important;
+  z-index: 2 !important;
+
+  margin: 0 !important;
+  padding: 9px 0 0 !important;
+
+  border-top: 1px solid rgba(216, 176, 140, 0.14) !important;
+  background: transparent !important;
+}
