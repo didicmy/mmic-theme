@@ -5252,3 +5252,111 @@ html body .mmic-vt-message-text .codebox code::-webkit-scrollbar-thumb:hover {
 .mmic-vt-message-text .codebox code *{
     color:#f4eee7!important;
 }
+/* =========================================================
+   BLOC CODE — CORRECTION FINALE FORCÉE
+   À LAISSER TOUT EN BAS DU FICHIER
+   ========================================================= */
+
+/* En-tête */
+html body .mmic-vt-message-text dl.codebox > dt,
+html body .mmic-vt-message-text .codebox > dt {
+  display: flex !important;
+  align-items: center !important;
+
+  min-height: 36px !important;
+  height: 36px !important;
+
+  margin: 0 !important;
+  padding: 0 14px !important;
+
+  border: 0 !important;
+  border-bottom: 1px solid rgba(216, 176, 140, 0.24) !important;
+
+  background: rgba(255, 255, 255, 0.035) !important;
+
+  /* Masque le texte natif « CODE: » */
+  color: transparent !important;
+  font-size: 0 !important;
+  line-height: 0 !important;
+  text-shadow: none !important;
+}
+
+
+/* Nouveau titre à gauche */
+html body .mmic-vt-message-text dl.codebox > dt::before,
+html body .mmic-vt-message-text .codebox > dt::before {
+  content: "</>  CODE" !important;
+
+  display: inline-block !important;
+  flex: 0 0 auto !important;
+
+  width: auto !important;
+  min-width: 0 !important;
+  height: auto !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  border: 0 !important;
+  border-radius: 0 !important;
+
+  background: transparent !important;
+  box-shadow: none !important;
+
+  color: #d8b08c !important;
+
+  font-family: Consolas, Monaco, "Courier New", monospace !important;
+  font-size: 10px !important;
+  font-weight: 700 !important;
+  line-height: 1 !important;
+  letter-spacing: 0.14em !important;
+}
+
+
+/* Futur bouton « Sélectionner » à droite */
+html body .mmic-vt-message-text dl.codebox > dt a,
+html body .mmic-vt-message-text .codebox > dt a {
+  display: inline-flex !important;
+  align-items: center !important;
+
+  margin-left: auto !important;
+  padding: 0 !important;
+
+  border: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+
+  color: #f0ddca !important;
+
+  font-size: 8px !important;
+  font-weight: 700 !important;
+  line-height: 1 !important;
+  letter-spacing: 0.13em !important;
+  text-decoration: none !important;
+  text-transform: uppercase !important;
+}
+
+html body .mmic-vt-message-text dl.codebox > dt a:hover,
+html body .mmic-vt-message-text .codebox > dt a:hover {
+  color: #d8b08c !important;
+}
+
+
+/* Texte du code : neutralise aussi les couleurs internes */
+html body .mmic-vt-message-text dl.codebox code,
+html body .mmic-vt-message-text dl.codebox code *,
+html body .mmic-vt-message-text .codebox code,
+html body .mmic-vt-message-text .codebox code *,
+html body .mmic-vt-message-text .codebox .cont_code,
+html body .mmic-vt-message-text .codebox .cont_code * {
+  color: #f4eee7 !important;
+  text-shadow: none !important;
+}
+
+
+/* Fond intérieur */
+html body .mmic-vt-message-text dl.codebox code,
+html body .mmic-vt-message-text .codebox code,
+html body .mmic-vt-message-text .codebox .cont_code {
+  background: transparent !important;
+}
