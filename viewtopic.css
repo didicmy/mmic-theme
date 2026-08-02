@@ -5205,26 +5205,18 @@ html body .mmic-vt-message-text .codebox code::-webkit-scrollbar-thumb:hover {
     text-transform:uppercase!important;
 }
 .mmic-vt-message-text .codebox dt::before{
-    content:"</>  CODE";
-
+    content:"</> CODE";
+    font-family:Consolas, monospace!important;
+    font-size:10px!important;
+    font-weight:700!important;
+    letter-spacing:.18em!important;
     color:#d8b08c!important;
 
-    font-family:"Courier New",monospace!important;
-
-    font-size:10px!important;
-
-    letter-spacing:.15em!important;
-
     border:none!important;
-
     background:none!important;
-
-    margin:0!important;
-
     padding:0!important;
-
+    margin:0!important;
     width:auto!important;
-
     height:auto!important;
 }
 .mmic-vt-message-text .codebox dt a{
@@ -5249,4 +5241,14 @@ html body .mmic-vt-message-text .codebox code::-webkit-scrollbar-thumb:hover {
 
 .mmic-vt-message-text .codebox dt a:hover{
     color:#d8b08c!important;
+}
+.mmic-vt-message-text .codebox dt{
+    color:transparent!important;
+}
+.mmic-vt-message-text .codebox dt{
+    color:transparent!important;
+}
+.mmic-vt-message-text .codebox code,
+.mmic-vt-message-text .codebox code *{
+    color:#f4eee7!important;
 }
