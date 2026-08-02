@@ -5360,3 +5360,25 @@ html body .mmic-vt-message-text .codebox code,
 html body .mmic-vt-message-text .codebox .cont_code {
   background: transparent !important;
 }
+/* =========================================================
+   BLOC CODE — MASQUER LE TITRE NATIF À DROITE
+   ========================================================= */
+
+html body .mmic-vt-message-text .codebox > dt {
+  text-indent: -9999px !important;
+  overflow: hidden !important;
+}
+
+/* On réaffiche proprement notre faux titre */
+html body .mmic-vt-message-text .codebox > dt::before {
+  text-indent: 0 !important;
+  position: relative !important;
+  z-index: 2 !important;
+}
+
+/* Préparation du futur bouton Sélectionner */
+html body .mmic-vt-message-text .codebox > dt a {
+  text-indent: 0 !important;
+  position: relative !important;
+  z-index: 2 !important;
+}
