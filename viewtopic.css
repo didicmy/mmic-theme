@@ -4607,3 +4607,27 @@ html body .mmic-vt-message-text {
 
   box-sizing: border-box !important;
 }
+/* =========================================================
+   SUPPRESSION DU DÉCOR DERRIÈRE LE TEXTE
+   ========================================================= */
+
+html body .mmic-vt-message-text::before,
+html body .mmic-vt-message-text::after {
+  content: none !important;
+  display: none !important;
+
+  width: 0 !important;
+  height: 0 !important;
+
+  border: 0 !important;
+  background: none !important;
+  box-shadow: none !important;
+}
+html body .mmic-vt-message.postbody::before,
+html body .mmic-vt-message.postbody::after {
+  content: none !important;
+  display: none !important;
+  background: none !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
