@@ -4581,3 +4581,29 @@ html body section.mmic-vt-content
 div.mmic-vt-message.postbody > *:last-child {
   margin-bottom: 0 !important;
 }
+/* =========================================================
+   TEXTE DU MESSAGE — VERSION SANS CADRE
+   ========================================================= */
+
+html body .mmic-vt-message-text {
+  display: block !important;
+  width: 100% !important;
+  height: auto !important;
+  min-height: 140px !important;
+
+  margin: 0 !important;
+  padding: 20px 10px 24px !important;
+
+  border: 0 !important;
+  border-radius: 0 !important;
+
+  background: transparent !important;
+  background-image: none !important;
+
+  color: #4e4945 !important;
+
+  box-shadow: none !important;
+  outline: none !important;
+
+  box-sizing: border-box !important;
+}
