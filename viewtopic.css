@@ -4225,3 +4225,120 @@ html body .mmic-vt-content {
 
     transition: .25s;
 }
+/* =========================================================
+   CONTENU DU MESSAGE — VERSION ÉPURÉE
+   ========================================================= */
+
+/* Grand conteneur du contenu */
+html body .mmic-vt-content {
+  position: relative !important;
+
+  padding: 24px 28px 26px 30px !important;
+
+  border: 0 !important;
+  border-radius: 0 !important;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.88) 0%,
+      rgba(255, 252, 248, 0.98) 100%
+    ),
+    repeating-linear-gradient(
+      90deg,
+      transparent 0,
+      transparent 28px,
+      rgba(216, 176, 140, 0.02) 29px,
+      transparent 30px
+    ) !important;
+
+  box-shadow: none !important;
+  overflow: hidden !important;
+}
+
+
+/* Ligne verticale entre le profil et le message */
+html body .mmic-vt-content::before {
+  content: "" !important;
+
+  position: absolute !important;
+  top: 18px !important;
+  bottom: 18px !important;
+  left: 0 !important;
+
+  width: 2px !important;
+
+  border-radius: 999px !important;
+
+  background:
+    linear-gradient(
+      180deg,
+      transparent 0%,
+      rgba(216, 176, 140, 0.9) 18%,
+      rgba(216, 176, 140, 0.65) 82%,
+      transparent 100%
+    ) !important;
+
+  box-shadow:
+    0 0 8px rgba(216, 176, 140, 0.18) !important;
+
+  pointer-events: none !important;
+}
+
+
+/* Neutralisation de la boîte blanche intérieure */
+html body .mmic-vt-message,
+html body .mmic-vt-message .message,
+html body .mmic-vt-content .message,
+html body .mmic-vt-content > .message {
+  position: relative !important;
+  z-index: 1 !important;
+
+  width: auto !important;
+  min-height: 0 !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  border: 0 !important;
+  border-radius: 0 !important;
+
+  background: transparent !important;
+  box-shadow: none !important;
+  outline: 0 !important;
+}
+
+
+/* Texte du message */
+html body .mmic-vt-message,
+html body .mmic-vt-message .message,
+html body .mmic-vt-content .message {
+  color: #2f3945 !important;
+
+  font-size: 13px !important;
+  line-height: 1.85 !important;
+  text-align: justify !important;
+}
+
+
+/* La barre supérieure se rapproche du contenu */
+html body .mmic-vt-post-header {
+  margin-bottom: 0 !important;
+  padding-bottom: 10px !important;
+
+  border-bottom: 1px solid rgba(216, 176, 140, 0.2) !important;
+}
+
+
+/* On réduit l’espace sous les actions */
+html body .mmic-vt-post-actions {
+  margin-top: -2px !important;
+  margin-bottom: 0 !important;
+}
+
+
+/* Numéro du message */
+html body .mmic-vt-post-number {
+  position: relative !important;
+  z-index: 2 !important;
+}
