@@ -5005,3 +5005,179 @@ html body .mmic-vt-quick-reply form[name="post"] input[name="post"]:hover {
     #142d43 100%
   ) !important;
 }
+/* =========================================================
+   BLOC CODE — MEET ME IN CHICAGO
+   ========================================================= */
+
+/* Conteneur principal */
+html body .mmic-vt-message-text dl.codebox,
+html body .mmic-vt-message-text .codebox {
+  position: relative !important;
+
+  margin: 18px 0 !important;
+  padding: 0 !important;
+
+  border: 1px solid rgba(216, 176, 140, 0.55) !important;
+  border-radius: 8px !important;
+
+  background:
+    linear-gradient(
+      145deg,
+      #102438 0%,
+      #142d43 58%,
+      #102438 100%
+    ) !important;
+
+  color: #f6eee6 !important;
+
+  box-shadow:
+    0 6px 16px rgba(16, 36, 56, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05) !important;
+
+  overflow: hidden !important;
+}
+
+
+/* En-tête du bloc */
+html body .mmic-vt-message-text dl.codebox > dt,
+html body .mmic-vt-message-text .codebox > dt {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+
+  min-height: 34px !important;
+  margin: 0 !important;
+  padding: 0 12px !important;
+
+  border: 0 !important;
+  border-bottom: 1px solid rgba(216, 176, 140, 0.28) !important;
+
+  background: rgba(255, 255, 255, 0.035) !important;
+
+  color: #d8b08c !important;
+
+  font-size: 8px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.18em !important;
+  line-height: 1 !important;
+  text-transform: uppercase !important;
+}
+
+
+/* Petit symbole décoratif */
+html body .mmic-vt-message-text dl.codebox > dt::before,
+html body .mmic-vt-message-text .codebox > dt::before {
+  content: "</>" !important;
+
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  min-width: 25px !important;
+  height: 20px !important;
+  margin-right: 8px !important;
+
+  border: 1px solid rgba(216, 176, 140, 0.42) !important;
+  border-radius: 5px !important;
+
+  color: #d8b08c !important;
+
+  font-family: Consolas, Monaco, monospace !important;
+  font-size: 8px !important;
+  letter-spacing: 0 !important;
+}
+
+
+/* Bouton « Sélectionner » généré par Forumactif */
+html body .mmic-vt-message-text dl.codebox > dt a,
+html body .mmic-vt-message-text .codebox > dt a {
+  margin-left: auto !important;
+  padding: 5px 8px !important;
+
+  border: 1px solid rgba(216, 176, 140, 0.38) !important;
+  border-radius: 5px !important;
+
+  background: rgba(255, 255, 255, 0.04) !important;
+
+  color: #f5dfca !important;
+
+  font-size: 7px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.1em !important;
+  text-decoration: none !important;
+  text-transform: uppercase !important;
+
+  transition: 0.2s ease !important;
+}
+
+html body .mmic-vt-message-text dl.codebox > dt a:hover,
+html body .mmic-vt-message-text .codebox > dt a:hover {
+  border-color: #d8b08c !important;
+  background: #d8b08c !important;
+  color: #102438 !important;
+
+  transform: translateY(-1px) !important;
+}
+
+
+/* Zone contenant le code */
+html body .mmic-vt-message-text dl.codebox > dd,
+html body .mmic-vt-message-text .codebox > dd {
+  margin: 0 !important;
+  padding: 0 !important;
+
+  border: 0 !important;
+  background: transparent !important;
+}
+
+
+/* Texte du code */
+html body .mmic-vt-message-text dl.codebox code,
+html body .mmic-vt-message-text .codebox code {
+  display: block !important;
+
+  width: 100% !important;
+  max-height: 320px !important;
+
+  margin: 0 !important;
+  padding: 18px 20px !important;
+
+  border: 0 !important;
+  background: transparent !important;
+
+  color: #f3e9df !important;
+
+  font-family:
+    Consolas,
+    "Courier New",
+    monospace !important;
+
+  font-size: 12px !important;
+  line-height: 1.7 !important;
+  text-align: left !important;
+  white-space: pre-wrap !important;
+  overflow-wrap: anywhere !important;
+
+  overflow: auto !important;
+  box-sizing: border-box !important;
+}
+
+
+/* Barre de défilement */
+html body .mmic-vt-message-text .codebox code::-webkit-scrollbar {
+  width: 7px !important;
+  height: 7px !important;
+}
+
+html body .mmic-vt-message-text .codebox code::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.035) !important;
+}
+
+html body .mmic-vt-message-text .codebox code::-webkit-scrollbar-thumb {
+  border-radius: 999px !important;
+  background: rgba(216, 176, 140, 0.55) !important;
+}
+
+html body .mmic-vt-message-text .codebox code::-webkit-scrollbar-thumb:hover {
+  background: #d8b08c !important;
+}
