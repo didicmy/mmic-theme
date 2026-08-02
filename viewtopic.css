@@ -4582,17 +4582,17 @@ div.mmic-vt-message.postbody > *:last-child {
   margin-bottom: 0 !important;
 }
 /* =========================================================
-   TEXTE DU MESSAGE — VERSION SANS CADRE
+   TEXTE DU MESSAGE — ESPACEMENT FINAL
    ========================================================= */
 
 html body .mmic-vt-message-text {
   display: block !important;
   width: 100% !important;
-  height: auto !important;
   min-height: 140px !important;
+  height: auto !important;
 
   margin: 0 !important;
-  padding: 20px 10px 24px !important;
+  padding: 24px 14px 28px !important;
 
   border: 0 !important;
   border-radius: 0 !important;
@@ -4601,10 +4601,11 @@ html body .mmic-vt-message-text {
   background-image: none !important;
 
   color: #4e4945 !important;
+  font-size: 13px !important;
+  line-height: 1.85 !important;
 
   box-shadow: none !important;
   outline: none !important;
-
   box-sizing: border-box !important;
 }
 /* =========================================================
