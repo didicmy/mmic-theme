@@ -4200,3 +4200,28 @@ html body .mmic-vt-online:hover::before {
     border-color: #d8b08c;
     background: rgba(216,176,140,.08);
 }
+/*==================================================
+  CONTENU DU MESSAGE
+==================================================*/
+
+html body .mmic-vt-content {
+    position: relative;
+
+    padding: 28px 34px !important;
+
+    border: 1px solid rgba(216,176,140,.35) !important;
+    border-radius: 10px;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(255,255,255,.78),
+            rgba(255,252,248,.96)
+        );
+
+    box-shadow:
+        inset 0 1px 0 rgba(255,255,255,.65),
+        0 6px 16px rgba(16,36,56,.05);
+
+    transition: .25s;
+}
