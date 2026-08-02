@@ -5382,3 +5382,33 @@ html body .mmic-vt-message-text .codebox > dt a {
   position: relative !important;
   z-index: 2 !important;
 }
+/* =========================================================
+   ACTIONS DU MESSAGE — EMPÊCHER LE RETOUR À LA LIGNE
+   ========================================================= */
+
+html body .mmic-vt-post-actions {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-end !important;
+  flex-wrap: nowrap !important;
+
+  gap: 5px !important;
+  min-width: 0 !important;
+  white-space: nowrap !important;
+}
+
+html body .mmic-vt-post-actions .mmic-vt-action {
+  flex: 0 0 auto !important;
+  min-width: 0 !important;
+  padding-left: 7px !important;
+  padding-right: 7px !important;
+}
+
+/* Les boutons courts restent vraiment compacts */
+html body .mmic-vt-post-actions .mmic-vt-action-delete,
+html body .mmic-vt-post-actions .mmic-vt-action-report,
+html body .mmic-vt-post-actions .mmic-vt-action-ip {
+  width: 28px !important;
+  min-width: 28px !important;
+  padding: 0 !important;
+}
