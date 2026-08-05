@@ -63,102 +63,7 @@ html body .mmic-posting-feedback .catBottom {
 }
 
 
-/* =========================================================
-   FIL D’ARIANE
-   ========================================================= */
 
-html body .mmic-posting-navigation {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 6px;
-
-  margin-bottom: 13px;
-  padding: 9px 12px;
-
-  border: 1px solid #ddd1c6;
-  border-radius: 7px;
-
-  background: #f7f1e9;
-
-  color: #766a61;
-
-  font-size: 8px;
-  line-height: 1.5;
-
-  box-sizing: border-box;
-}
-
-html body .mmic-posting-navigation a {
-  color: #102438 !important;
-
-  font-weight: 700;
-  text-decoration: none;
-}
-
-html body .mmic-posting-navigation a:hover {
-  color: #b97a56 !important;
-}
-
-html body .mmic-posting-navigation-separator {
-  color: #d8b08c;
-
-  font-size: 11px;
-  font-weight: 700;
-}
-
-html body .mmic-posting-navigation-current {
-  color: #766a61;
-}
-
-
-/* =========================================================
-   RESPONSIVE
-   ========================================================= */
-
-@media (max-width: 600px) {
-  html body .mmic-posting-page {
-    width: calc(100% - 12px);
-    margin-top: 10px;
-  }
-}
-/* =========================================================
-   FIL D'ARIANE
-   ========================================================= */
-
-.mmic-posting-navigation{
-
-    padding:10px 16px;
-
-    font-size:9px;
-    font-weight:600;
-
-    background:#fbf8f4;
-
-    border:1px solid rgba(216,176,140,.35);
-
-    color:#756a61;
-}
-
-.mmic-posting-navigation *{
-    display:inline !important;
-    float:none !important;
-}
-
-.mmic-posting-navigation a{
-    color:#102438;
-    font-weight:600;
-    text-decoration:none;
-}
-
-.mmic-posting-navigation a:hover{
-    color:#b97a56;
-}
-
-.mmic-posting-navigation .nav{
-    display:inline !important;
-    white-space:nowrap;
-}
 /* =========================================================
    POSTING BODY — MEET ME IN CHICAGO
    ========================================================= */
@@ -225,127 +130,14 @@ html body .mmic-posting-feedback .catBottom {
 
 
 /* =========================================================
-   FIL D’ARIANE
+   FIL D’ARIANE — STRUCTURE RÉELLE FORUMACTIF
    ========================================================= */
 
-html body .mmic-posting-navigation {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 6px;
-
-  margin-bottom: 13px;
-  padding: 9px 12px;
-
-  border: 1px solid #ddd1c6;
-  border-radius: 7px;
-
-  background: #f7f1e9;
-
-  color: #766a61;
-
-  font-size: 8px;
-  line-height: 1.5;
-
-  box-sizing: border-box;
-}
-
-html body .mmic-posting-navigation a {
-  color: #102438 !important;
-
-  font-weight: 700;
-  text-decoration: none;
-}
-
-html body .mmic-posting-navigation a:hover {
-  color: #b97a56 !important;
-}
-
-html body .mmic-posting-navigation-separator {
-  color: #d8b08c;
-
-  font-size: 11px;
-  font-weight: 700;
-}
-
-html body .mmic-posting-navigation-current {
-  color: #766a61;
-}
-
-
-/* =========================================================
-   RESPONSIVE
-   ========================================================= */
-
-@media (max-width: 600px) {
-  html body .mmic-posting-page {
-    width: calc(100% - 12px);
-    margin-top: 10px;
-  }
-}
-/* =========================================================
-   FIL D'ARIANE
-   ========================================================= */
-
-.mmic-posting-navigation{
-
-    padding:10px 16px;
-
-    font-size:9px;
-    font-weight:600;
-
-    background:#fbf8f4;
-
-    border:1px solid rgba(216,176,140,.35);
-
-    color:#756a61;
-}
-
-.mmic-posting-navigation *{
-    display:inline !important;
-    float:none !important;
-}
-
-.mmic-posting-navigation a{
-    color:#102438;
-    font-weight:600;
-    text-decoration:none;
-}
-
-.mmic-posting-navigation a:hover{
-    color:#b97a56;
-}
-
-.mmic-posting-navigation .nav{
-    display:inline !important;
-    white-space:nowrap;
-}
-/* Séparateurs phpBB */
-
-.mmic-posting-navigation .gensmall{
-    display:inline;
-}
-
-.mmic-posting-navigation .gensmall::before,
-.mmic-posting-navigation .gensmall::after{
-    content:none !important;
-}
-.mmic-posting-navigation a{
-    position:relative;
-}
-
-.mmic-posting-navigation a:not(:last-of-type)::after{
-    content:"›";
-    margin:0 8px;
-    color:#d8b08c;
-    font-weight:700;
-}
-/* =========================================================
-   FIL D’ARIANE — VERSION STABLE
-   ========================================================= */
-
-html body .mmic-posting-navigation {
-  display: block !important;
+html body nav.mmic-posting-navigation {
+  display: flex !important;
+  align-items: center !important;
+  flex-wrap: wrap !important;
+  gap: 0 !important;
 
   margin: 0 0 14px !important;
   padding: 10px 14px !important;
@@ -355,52 +147,66 @@ html body .mmic-posting-navigation {
 
   background: #fbf8f4 !important;
 
-  /* Masque uniquement les anciens :: en texte brut */
+  /*
+   * Cache les anciens "::" qui sont de simples textes
+   * directement placés dans la navigation.
+   */
   color: transparent !important;
   font-size: 0 !important;
+  line-height: 1.5 !important;
 
   box-sizing: border-box !important;
 }
 
-/* Conteneurs éventuellement injectés par Forumactif */
 
-html body .mmic-posting-navigation span.nav,
-html body .mmic-posting-navigation span.gensmall {
-  display: inline !important;
+/* Chaque étape est injectée par Forumactif dans un H1 */
 
-  color: transparent !important;
-  font-size: 0 !important;
-}
-
-/* Liens visibles */
-
-html body .mmic-posting-navigation a,
-html body .mmic-posting-navigation a.nav {
-  position: relative !important;
-
+html body nav.mmic-posting-navigation > h1 {
   display: inline-flex !important;
   align-items: center !important;
 
-  margin-right: 8px !important;
+  width: auto !important;
+  max-width: none !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
 
   color: #102438 !important;
 
+  font-family: Verdana, Arial, Helvetica, sans-serif !important;
   font-size: 9px !important;
   font-weight: 700 !important;
   line-height: 1.5 !important;
+  letter-spacing: 0 !important;
+  text-transform: none !important;
 
-  text-decoration: none !important;
   white-space: nowrap !important;
 }
 
-/* Séparateur placé après chaque lien */
 
-html body .mmic-posting-navigation a::after {
+/* Liens contenus dans les H1 */
+
+html body nav.mmic-posting-navigation > h1 a,
+html body nav.mmic-posting-navigation > h1 a.nav {
+  display: inline !important;
+
+  color: #102438 !important;
+
+  font-size: inherit !important;
+  font-weight: inherit !important;
+
+  text-decoration: none !important;
+}
+
+
+/* Nouveau séparateur avant chaque étape sauf la première */
+
+html body nav.mmic-posting-navigation > h1:not(:first-of-type)::before {
   content: "›" !important;
 
   display: inline-block !important;
 
-  margin-left: 8px !important;
+  margin: 0 9px !important;
 
   color: #d8b08c !important;
 
@@ -409,15 +215,9 @@ html body .mmic-posting-navigation a::after {
   line-height: 1 !important;
 }
 
-/* Pas de flèche après le dernier lien */
-
-html body .mmic-posting-navigation a:last-of-type::after {
-  content: none !important;
-  display: none !important;
-}
 
 /* Survol */
 
-html body .mmic-posting-navigation a:hover {
+html body nav.mmic-posting-navigation > h1 a:hover {
   color: #b97a56 !important;
 }
