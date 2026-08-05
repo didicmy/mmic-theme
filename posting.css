@@ -159,6 +159,167 @@ html body .mmic-posting-navigation-current {
     display:inline !important;
     white-space:nowrap;
 }
+/* =========================================================
+   POSTING BODY — MEET ME IN CHICAGO
+   ========================================================= */
+
+html body .mmic-posting-page {
+  width: calc(100% - 24px);
+  max-width: 1100px;
+  margin: 18px auto 30px;
+
+  color: #4e4945;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   PRÉVISUALISATION ET ERREURS
+   ========================================================= */
+
+html body .mmic-posting-feedback:empty,
+html body .mmic-posting-preview:empty,
+html body .mmic-posting-errors:empty {
+  display: none !important;
+}
+
+html body .mmic-posting-preview,
+html body .mmic-posting-errors {
+  margin-bottom: 14px;
+}
+
+
+/* On prépare déjà la neutralisation du vieux bleu phpBB */
+
+html body .mmic-posting-feedback .forumline {
+  width: 100% !important;
+
+  overflow: hidden !important;
+
+  border: 1px solid rgba(216, 176, 140, 0.4) !important;
+  border-radius: 9px !important;
+
+  background: #fbf8f3 !important;
+
+  box-shadow: 0 4px 12px rgba(16, 36, 56, 0.05) !important;
+}
+
+html body .mmic-posting-feedback th,
+html body .mmic-posting-feedback .thHead,
+html body .mmic-posting-feedback .catHead,
+html body .mmic-posting-feedback .catBottom {
+  padding: 10px 14px !important;
+
+  border: 0 !important;
+  border-bottom: 1px solid rgba(216, 176, 140, 0.3) !important;
+
+  background: #102438 !important;
+  color: #d8b08c !important;
+
+  font-size: 8px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.16em !important;
+  text-transform: uppercase !important;
+}
+
+
+/* =========================================================
+   FIL D’ARIANE
+   ========================================================= */
+
+html body .mmic-posting-navigation {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+
+  margin-bottom: 13px;
+  padding: 9px 12px;
+
+  border: 1px solid #ddd1c6;
+  border-radius: 7px;
+
+  background: #f7f1e9;
+
+  color: #766a61;
+
+  font-size: 8px;
+  line-height: 1.5;
+
+  box-sizing: border-box;
+}
+
+html body .mmic-posting-navigation a {
+  color: #102438 !important;
+
+  font-weight: 700;
+  text-decoration: none;
+}
+
+html body .mmic-posting-navigation a:hover {
+  color: #b97a56 !important;
+}
+
+html body .mmic-posting-navigation-separator {
+  color: #d8b08c;
+
+  font-size: 11px;
+  font-weight: 700;
+}
+
+html body .mmic-posting-navigation-current {
+  color: #766a61;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 600px) {
+  html body .mmic-posting-page {
+    width: calc(100% - 12px);
+    margin-top: 10px;
+  }
+}
+/* =========================================================
+   FIL D'ARIANE
+   ========================================================= */
+
+.mmic-posting-navigation{
+
+    padding:10px 16px;
+
+    font-size:9px;
+    font-weight:600;
+
+    background:#fbf8f4;
+
+    border:1px solid rgba(216,176,140,.35);
+
+    color:#756a61;
+}
+
+.mmic-posting-navigation *{
+    display:inline !important;
+    float:none !important;
+}
+
+.mmic-posting-navigation a{
+    color:#102438;
+    font-weight:600;
+    text-decoration:none;
+}
+
+.mmic-posting-navigation a:hover{
+    color:#b97a56;
+}
+
+.mmic-posting-navigation .nav{
+    display:inline !important;
+    white-space:nowrap;
+}
 /* Séparateurs phpBB */
 
 .mmic-posting-navigation .gensmall{
@@ -178,4 +339,79 @@ html body .mmic-posting-navigation-current {
     margin:0 8px;
     color:#d8b08c;
     font-weight:700;
+}
+/* =========================================================
+   FIL D’ARIANE — CORRECTION FORUMACTIF
+   ========================================================= */
+
+html body .mmic-posting-navigation {
+  display: flex !important;
+  align-items: center !important;
+  flex-wrap: wrap !important;
+  gap: 0 !important;
+
+  margin: 0 0 14px !important;
+  padding: 10px 14px !important;
+
+  border: 1px solid rgba(216, 176, 140, 0.35) !important;
+  border-radius: 7px !important;
+
+  background: #fbf8f4 !important;
+  color: #756a61 !important;
+
+  /*
+   * Masque les séparateurs :: injectés sous forme
+   * de texte brut par Forumactif.
+   */
+  font-size: 0 !important;
+  line-height: 1.5 !important;
+
+  box-sizing: border-box !important;
+}
+
+/* Neutralise les anciens conteneurs éventuels */
+html body .mmic-posting-navigation span,
+html body .mmic-posting-navigation .nav,
+html body .mmic-posting-navigation .gensmall {
+  display: contents !important;
+  float: none !important;
+
+  font-size: 0 !important;
+}
+
+/* Réaffiche uniquement les liens */
+html body .mmic-posting-navigation a {
+  position: relative !important;
+
+  display: inline-flex !important;
+  align-items: center !important;
+
+  color: #102438 !important;
+
+  font-size: 9px !important;
+  font-weight: 700 !important;
+  line-height: 1.5 !important;
+
+  text-decoration: none !important;
+  white-space: nowrap !important;
+}
+
+/* Notre séparateur entre deux liens */
+html body .mmic-posting-navigation a + a::before {
+  content: "›" !important;
+
+  display: inline-block !important;
+
+  margin: 0 8px !important;
+
+  color: #d8b08c !important;
+
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  line-height: 1 !important;
+}
+
+/* Survol */
+html body .mmic-posting-navigation a:hover {
+  color: #b97a56 !important;
 }
