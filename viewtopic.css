@@ -5584,3 +5584,37 @@ html body .mmic-vt-post
     flex-wrap: wrap !important;
   }
 }
+/* =========================================================
+   DATE DU MESSAGE — AFFICHAGE COMPLET
+   ========================================================= */
+
+/* Supprime la petite pastille cuivre en double */
+html body .mmic-vt-post
+.mmic-vt-post-header
+.mmic-vt-post-date::before {
+  content: none !important;
+  display: none !important;
+}
+
+/* La date peut utiliser davantage de place */
+html body .mmic-vt-post
+.mmic-vt-post-header
+.mmic-vt-post-date {
+  max-width: none !important;
+  overflow: visible !important;
+  text-overflow: clip !important;
+
+  gap: 5px !important;
+  white-space: nowrap !important;
+
+  font-size: 7px !important;
+  letter-spacing: 0.2px !important;
+}
+
+/* Header : un peu plus de place donnée à la date */
+html body .mmic-vt-post
+.mmic-vt-content
+header.mmic-vt-post-header {
+  grid-template-columns: max-content minmax(0, 1fr) !important;
+  column-gap: 8px !important;
+}
