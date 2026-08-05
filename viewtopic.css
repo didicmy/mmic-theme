@@ -5750,3 +5750,145 @@ html body .mmic-vt-message-text
 .mmic-code-select.is-copied::before {
   content: "check" !important;
 }
+/* =========================================================
+   BLOC CODE — TITRE ET BOUTON COPIER DÉFINITIFS
+   À CONSERVER À LA FIN ABSOLUE DU FICHIER
+   ========================================================= */
+
+/* Neutralise tous les anciens faux titres */
+html body .mmic-vt-message-text dl.codebox > dt::before,
+html body .mmic-vt-message-text .codebox > dt::before,
+html body .mmic-vt-message-text dl.codebox > dt::after,
+html body .mmic-vt-message-text .codebox > dt::after {
+  content: none !important;
+  display: none !important;
+}
+
+
+/* En-tête reconstruit par JavaScript */
+html body .mmic-vt-message-text dl.codebox > dt,
+html body .mmic-vt-message-text .codebox > dt {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 12px !important;
+
+  width: 100% !important;
+  min-height: 36px !important;
+  height: 36px !important;
+
+  margin: 0 !important;
+  padding: 0 11px 0 14px !important;
+
+  overflow: visible !important;
+
+  border: 0 !important;
+  border-bottom: 1px solid rgba(216, 176, 140, 0.24) !important;
+
+  background: rgba(255, 255, 255, 0.035) !important;
+
+  color: inherit !important;
+  font-size: initial !important;
+  line-height: normal !important;
+  letter-spacing: normal !important;
+  text-indent: 0 !important;
+  text-shadow: none !important;
+
+  box-sizing: border-box !important;
+}
+
+
+/* Titre réel */
+html body .mmic-vt-message-text .mmic-code-title {
+  display: inline-flex !important;
+  align-items: center !important;
+  flex: 0 0 auto !important;
+
+  color: #d8b08c !important;
+
+  font-family: Consolas, Monaco, "Courier New", monospace !important;
+  font-size: 10px !important;
+  font-weight: 700 !important;
+  line-height: 1 !important;
+  letter-spacing: 0.14em !important;
+  text-transform: uppercase !important;
+  text-indent: 0 !important;
+}
+
+
+/* Bouton Copier */
+html body .mmic-vt-message-text .mmic-code-copy {
+  position: relative !important;
+
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 5px !important;
+  flex: 0 0 auto !important;
+
+  min-height: 24px !important;
+  margin: 0 0 0 auto !important;
+  padding: 0 8px !important;
+
+  border: 1px solid rgba(216, 176, 140, 0.42) !important;
+  border-radius: 5px !important;
+
+  background: rgba(255, 255, 255, 0.045) !important;
+  color: #f0ddca !important;
+
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 7px !important;
+  font-weight: 700 !important;
+  line-height: 1 !important;
+  letter-spacing: 0.11em !important;
+  text-indent: 0 !important;
+  text-transform: uppercase !important;
+
+  box-shadow: none !important;
+  cursor: pointer !important;
+
+  transition:
+    transform 0.18s ease,
+    border-color 0.18s ease,
+    background-color 0.18s ease,
+    color 0.18s ease !important;
+}
+
+
+/* Icône */
+html body .mmic-vt-message-text
+.mmic-code-copy .material-symbols-outlined {
+  color: inherit !important;
+
+  font-family: "Material Symbols Outlined" !important;
+  font-size: 11px !important;
+  font-weight: normal !important;
+  font-style: normal !important;
+  line-height: 1 !important;
+  letter-spacing: normal !important;
+  text-transform: none !important;
+
+  font-variation-settings:
+    "FILL" 0,
+    "wght" 500,
+    "GRAD" 0,
+    "opsz" 20 !important;
+}
+
+
+/* Survol */
+html body .mmic-vt-message-text .mmic-code-copy:hover,
+html body .mmic-vt-message-text .mmic-code-copy.is-copied {
+  transform: translateY(-1px) !important;
+
+  border-color: #d8b08c !important;
+  background: #d8b08c !important;
+  color: #102438 !important;
+}
+
+
+/* Focus clavier */
+html body .mmic-vt-message-text .mmic-code-copy:focus-visible {
+  outline: 2px solid rgba(216, 176, 140, 0.72) !important;
+  outline-offset: 2px !important;
+}
