@@ -2459,3 +2459,26 @@ html body .mmic-posting-page .sceditor-group[style*="display: none"],
 html body .mmic-posting-page .sceditor-group[style*="display:none"] {
   display: none !important;
 }
+/* =========================================================
+   SCEDITOR — CENTRAGE DES ICÔNES
+   ========================================================= */
+
+html body .mmic-posting-page .sceditor-group{
+    display:flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+
+    float:left !important;
+
+    min-height:30px !important;
+}
+
+html body .mmic-posting-page .sceditor-button{
+    display:flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+}
+
+html body .mmic-posting-page .sceditor-button div{
+    margin:0 !important;
+}
