@@ -536,8 +536,45 @@
 
   background: #eee4d9;
 }
+/* =========================================================
+   HEADER DU MESSAGE
+   ========================================================= */
 
+html body .mmic-vt-post-header{
+    display:grid !important;
+    grid-template-columns:auto 1fr auto;
+    align-items:center;
+    column-gap:18px;
 
+    padding:0 0 14px;
+    margin:0 0 18px;
+    border-bottom:1px solid #ece4dc;
+}
+html body .mmic-vt-post-date{
+    display:flex !important;
+    align-items:center;
+    gap:8px;
+
+    white-space:nowrap;
+    min-width:max-content;
+}
+html body .mmic-vt-post-actions{
+
+    display:flex !important;
+    justify-content:flex-end;
+    align-items:center;
+
+    gap:6px;
+
+    flex-wrap:nowrap !important;
+
+    white-space:nowrap;
+}
+html body .mmic-vt-post-actions>*{
+
+    flex:0 0 auto;
+
+}
 /* =========================================================
    SIGNATURE
    ========================================================= */
