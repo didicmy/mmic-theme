@@ -244,7 +244,7 @@ html body .mmic-navigation-member-menu {
     top: calc(100% + 14px);
     left: 0;
     z-index: 10000;
-
+display: none;
     width: 250px;
     padding: 8px;
 
@@ -261,8 +261,8 @@ html body .mmic-navigation-member-menu {
 }
 
 
-html body .mmic-navigation-member-menu[hidden] {
-    display: none !important;
+html body .mmic-navigation-member-menu.is-open {
+    display: block !important;
 }
 
 
