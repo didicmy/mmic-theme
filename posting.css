@@ -573,3 +573,265 @@ html body .mmic-posting-submit-card input[type="submit"]:hover {
     overflow-y: auto !important;
   }
 }
+/* =========================================================
+   POSTING — FINITIONS ÉDITEUR ET SMILEYS
+   ========================================================= */
+
+
+/* =========================================================
+   COLONNE DES SMILEYS
+   ========================================================= */
+
+html body .mmic-posting-editor-row > td:first-child {
+  position: relative !important;
+
+  padding: 18px 16px 16px !important;
+
+  background:
+    linear-gradient(
+      180deg,
+      #f8f2eb 0%,
+      #f3ece4 100%
+    ) !important;
+}
+
+
+/* Petit titre décoratif */
+
+html body .mmic-posting-smileys::before {
+  content: "SMILEYS" !important;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  margin: 0 0 10px !important;
+
+  color: #b97a56 !important;
+
+  font-size: 7px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.22em !important;
+  text-transform: uppercase !important;
+}
+
+
+/* Cadre intérieur */
+
+html body .mmic-posting-smileys {
+  position: relative !important;
+
+  margin: 8px 0 0 !important;
+  padding: 12px 10px 14px !important;
+
+  border: 1px solid rgba(216, 176, 140, 0.34) !important;
+  border-radius: 8px !important;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.7) 0%,
+      rgba(255, 253, 249, 0.94) 100%
+    ) !important;
+
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.8),
+    0 3px 8px rgba(16, 36, 56, 0.035) !important;
+}
+
+
+/* Sélecteur des smileys */
+
+html body .mmic-posting-smileys select {
+  width: 100% !important;
+  min-height: 29px !important;
+
+  margin: 0 0 10px !important;
+  padding: 0 8px !important;
+
+  border: 1px solid #d8cbbf !important;
+  border-radius: 5px !important;
+
+  background: #fffdf9 !important;
+  color: #625951 !important;
+
+  font-size: 8px !important;
+
+  outline: none !important;
+}
+
+
+/* Images */
+
+html body .mmic-posting-smileys img {
+  margin: 2px !important;
+
+  vertical-align: middle !important;
+
+  transition:
+    transform 0.16s ease,
+    filter 0.16s ease !important;
+}
+
+html body .mmic-posting-smileys img:hover {
+  transform: scale(1.14) !important;
+
+  filter:
+    drop-shadow(0 2px 3px rgba(16, 36, 56, 0.15)) !important;
+}
+
+
+/* =========================================================
+   PARTIE ÉDITEUR
+   ========================================================= */
+
+html body .mmic-posting-editor-row > td:last-child {
+  padding: 18px 14px !important;
+
+  background:
+    linear-gradient(
+      180deg,
+      #fbf8f3 0%,
+      #f9f4ee 100%
+    ) !important;
+}
+
+
+/* Conteneur SCEditor */
+
+html body .mmic-posting-editor-row .sceditor-container {
+  border: 1px solid rgba(216, 176, 140, 0.42) !important;
+  border-radius: 8px !important;
+
+  background: #fffdf9 !important;
+
+  box-shadow:
+    0 4px 12px rgba(16, 36, 56, 0.05),
+    inset 0 1px 0 rgba(255, 255, 255, 0.85) !important;
+}
+
+
+/* Barre d’outils */
+
+html body .mmic-posting-editor-row .sceditor-toolbar {
+  display: flex !important;
+  align-items: center !important;
+  flex-wrap: wrap !important;
+
+  padding: 8px 9px !important;
+
+  border-bottom: 1px solid rgba(216, 176, 140, 0.3) !important;
+
+  background:
+    linear-gradient(
+      180deg,
+      #faf7f3 0%,
+      #f2ece6 100%
+    ) !important;
+}
+
+
+/* Groupes de boutons */
+
+html body .mmic-posting-editor-row .sceditor-group {
+  margin: 2px 4px 2px 0 !important;
+  padding: 2px !important;
+
+  border: 1px solid rgba(16, 36, 56, 0.08) !important;
+  border-radius: 5px !important;
+
+  background: rgba(255, 255, 255, 0.62) !important;
+
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.75) !important;
+}
+
+
+/* Boutons individuels */
+
+html body .mmic-posting-editor-row .sceditor-button {
+  border-radius: 4px !important;
+
+  transition:
+    background-color 0.16s ease,
+    transform 0.16s ease !important;
+}
+
+html body .mmic-posting-editor-row .sceditor-button:hover {
+  background: rgba(216, 176, 140, 0.16) !important;
+
+  transform: translateY(-1px) !important;
+}
+
+
+/* Zone d’écriture */
+
+html body .mmic-posting-editor-row .sceditor-container iframe,
+html body .mmic-posting-editor-row .sceditor-container textarea,
+html body .mmic-posting-editor-row #text_editor_textarea {
+  min-height: 300px !important;
+
+  padding: 18px !important;
+
+  background: #fffdf9 !important;
+  color: #4e4945 !important;
+
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 12px !important;
+  line-height: 1.7 !important;
+
+  box-sizing: border-box !important;
+}
+
+
+/* =========================================================
+   CHAMP DU TITRE + COULEUR
+   ========================================================= */
+
+html body .mmic-posting-subject-row .row2 > span.gen {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) 95px !important;
+  align-items: center !important;
+  gap: 9px !important;
+}
+
+
+html body .mmic-posting-subject-row input[name="subject"] {
+  width: 100% !important;
+}
+
+
+html body .mmic-posting-subject-row select[name="topic_color"] {
+  width: 95px !important;
+  min-height: 34px !important;
+
+  margin: 0 !important;
+  padding: 0 8px !important;
+
+  border: 1px solid #d8cbbf !important;
+  border-radius: 6px !important;
+
+  background: #fffdf9 !important;
+  color: #625951 !important;
+
+  font-size: 8px !important;
+
+  box-sizing: border-box !important;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+  html body .mmic-posting-subject-row .row2 > span.gen {
+    grid-template-columns: 1fr !important;
+  }
+
+  html body .mmic-posting-subject-row select[name="topic_color"] {
+    width: 100% !important;
+  }
+
+}
