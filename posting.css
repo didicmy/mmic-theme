@@ -127,17 +127,17 @@ html body .mmic-posting-navigation-current {
    ========================================================= */
 
 .mmic-posting-navigation{
-    display:flex;
-    flex-wrap:wrap;
-    align-items:center;
-    gap:4px;
 
-    margin-bottom:18px;
-    padding:12px 16px;
+    padding:10px 16px;
 
-    background:#f8f5f0;
+    font-size:9px;
+    font-weight:600;
+
+    background:#fbf8f4;
+
     border:1px solid rgba(216,176,140,.35);
-    border-radius:8px;
+
+    color:#756a61;
 }
 
 .mmic-posting-navigation *{
@@ -158,4 +158,24 @@ html body .mmic-posting-navigation-current {
 .mmic-posting-navigation .nav{
     display:inline !important;
     white-space:nowrap;
+}
+/* Séparateurs phpBB */
+
+.mmic-posting-navigation .gensmall{
+    display:inline;
+}
+
+.mmic-posting-navigation .gensmall::before,
+.mmic-posting-navigation .gensmall::after{
+    content:none !important;
+}
+.mmic-posting-navigation a{
+    position:relative;
+}
+
+.mmic-posting-navigation a:not(:last-of-type)::after{
+    content:"›";
+    margin:0 8px;
+    color:#d8b08c;
+    font-weight:700;
 }
