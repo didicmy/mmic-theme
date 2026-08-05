@@ -638,3 +638,96 @@ html body .mmic-navigation-guest-links a {
     }
 
 }
+/* =========================================================
+   CORRECTION RECHERCHE
+   ========================================================= */
+
+html body .mmic-navigation-search {
+    position: relative !important;
+
+    display: block !important;
+
+    width: 190px !important;
+    margin: 0 !important;
+}
+
+
+html body .mmic-navigation-search-label {
+    position: absolute !important;
+
+    width: 1px !important;
+    height: 1px !important;
+
+    padding: 0 !important;
+    margin: -1px !important;
+
+    border: 0 !important;
+
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    clip-path: inset(50%) !important;
+
+    white-space: nowrap !important;
+}
+
+
+html body .mmic-navigation-search-field {
+    display: flex !important;
+    align-items: center !important;
+
+    width: 100% !important;
+    height: 36px !important;
+
+    border: 1px solid rgba(216, 176, 140, 0.6) !important;
+    border-radius: 7px !important;
+
+    background: rgba(255, 250, 244, 0.08) !important;
+
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+}
+
+
+html body .mmic-navigation-search-field input {
+    display: block !important;
+    flex: 1 1 auto !important;
+
+    width: auto !important;
+    min-width: 0 !important;
+    height: 34px !important;
+
+    margin: 0 !important;
+    padding: 0 8px 0 11px !important;
+
+    border: 0 !important;
+    outline: 0 !important;
+
+    background: transparent !important;
+    color: #fffaf4 !important;
+
+    box-shadow: none !important;
+    box-sizing: border-box !important;
+}
+
+
+html body .mmic-navigation-search-field button {
+    display: flex !important;
+    flex: 0 0 36px !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    width: 36px !important;
+    height: 34px !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    border: 0 !important;
+    border-left: 1px solid rgba(216, 176, 140, 0.38) !important;
+
+    background: transparent !important;
+    color: #d8b08c !important;
+
+    box-shadow: none !important;
+    box-sizing: border-box !important;
+}
