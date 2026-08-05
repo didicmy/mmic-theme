@@ -1,0 +1,124 @@
+/* =========================================================
+   POSTING BODY — MEET ME IN CHICAGO
+   ========================================================= */
+
+html body .mmic-posting-page {
+  width: calc(100% - 24px);
+  max-width: 1100px;
+  margin: 18px auto 30px;
+
+  color: #4e4945;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   PRÉVISUALISATION ET ERREURS
+   ========================================================= */
+
+html body .mmic-posting-feedback:empty,
+html body .mmic-posting-preview:empty,
+html body .mmic-posting-errors:empty {
+  display: none !important;
+}
+
+html body .mmic-posting-preview,
+html body .mmic-posting-errors {
+  margin-bottom: 14px;
+}
+
+
+/* On prépare déjà la neutralisation du vieux bleu phpBB */
+
+html body .mmic-posting-feedback .forumline {
+  width: 100% !important;
+
+  overflow: hidden !important;
+
+  border: 1px solid rgba(216, 176, 140, 0.4) !important;
+  border-radius: 9px !important;
+
+  background: #fbf8f3 !important;
+
+  box-shadow: 0 4px 12px rgba(16, 36, 56, 0.05) !important;
+}
+
+html body .mmic-posting-feedback th,
+html body .mmic-posting-feedback .thHead,
+html body .mmic-posting-feedback .catHead,
+html body .mmic-posting-feedback .catBottom {
+  padding: 10px 14px !important;
+
+  border: 0 !important;
+  border-bottom: 1px solid rgba(216, 176, 140, 0.3) !important;
+
+  background: #102438 !important;
+  color: #d8b08c !important;
+
+  font-size: 8px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.16em !important;
+  text-transform: uppercase !important;
+}
+
+
+/* =========================================================
+   FIL D’ARIANE
+   ========================================================= */
+
+html body .mmic-posting-navigation {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+
+  margin-bottom: 13px;
+  padding: 9px 12px;
+
+  border: 1px solid #ddd1c6;
+  border-radius: 7px;
+
+  background: #f7f1e9;
+
+  color: #766a61;
+
+  font-size: 8px;
+  line-height: 1.5;
+
+  box-sizing: border-box;
+}
+
+html body .mmic-posting-navigation a {
+  color: #102438 !important;
+
+  font-weight: 700;
+  text-decoration: none;
+}
+
+html body .mmic-posting-navigation a:hover {
+  color: #b97a56 !important;
+}
+
+html body .mmic-posting-navigation-separator {
+  color: #d8b08c;
+
+  font-size: 11px;
+  font-weight: 700;
+}
+
+html body .mmic-posting-navigation-current {
+  color: #766a61;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 600px) {
+  html body .mmic-posting-page {
+    width: calc(100% - 12px);
+    margin-top: 10px;
+  }
+}
