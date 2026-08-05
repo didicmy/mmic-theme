@@ -829,3 +829,19 @@ html body .mmic-navigation-username {
 
     font-size: 13px !important;
 }
+/* =========================================================
+   MASQUER LA TOOLBAR NATIVE FORUMACTIF
+   ========================================================= */
+
+html body #fa_toolbar,
+html body #fa_toolbar_hidden,
+html body .fa_toolbar_XL_Sized,
+html body #fa_toolbar_container {
+    display: none !important;
+}
+html body .mmic-main-navigation {
+    top: 0 !important;
+}
+html body {
+    padding-top: 64px !important;
+}
