@@ -5618,3 +5618,18 @@ header.mmic-vt-post-header {
   grid-template-columns: max-content minmax(0, 1fr) !important;
   column-gap: 8px !important;
 }
+html body .mmic-vt-post
+.mmic-vt-post-actions {
+  gap: 3px !important;
+}
+
+html body .mmic-vt-post
+.mmic-vt-post-actions
+.mmic-vt-action {
+  height: 24px !important;
+  padding-right: 5px !important;
+  padding-left: 5px !important;
+
+  font-size: 6px !important;
+  letter-spacing: 0.4px !important;
+}
