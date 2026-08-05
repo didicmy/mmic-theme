@@ -1394,3 +1394,18 @@ html body .mmic-posting-smileys {
   max-height: 350px !important;
   box-sizing: border-box !important;
 }
+/* Fond derrière le menu des smileys */
+
+html body .mmic-posting-smileys table,
+html body .mmic-posting-smileys tbody,
+html body .mmic-posting-smileys tr,
+html body .mmic-posting-smileys td {
+    background: #fbf8f4 !important;
+    border: 0 !important;
+}
+
+/* La cellule qui contient le select */
+
+html body .mmic-posting-smileys td[align="center"]{
+    background:#fbf8f4 !important;
+}
