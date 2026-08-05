@@ -2723,19 +2723,39 @@ html body .mmic-posting-page
 }
 
 
-/* Texte OPTIONS */
+/* La barre devient le repère */
+html body .mmic-posting-page
+#optionsitems .thHead {
+    position: relative !important;
+}
+
+/* Le titre OPTIONS parfaitement centré */
 html body .mmic-posting-page
 #optionsitems .thHead .gen,
 html body .mmic-posting-page
 #optionsitems .thHead span,
 html body .mmic-posting-page
 #optionsitems .thHead b {
-  color: #d8b08c !important;
+    position: absolute !important;
+    left: 50% !important;
+    top: 50% !important;
+    transform: translate(-50%, -50%) !important;
 
-  font-size: 8px !important;
-  font-weight: 700 !important;
-  letter-spacing: 0.2em !important;
-  text-transform: uppercase !important;
+    margin: 0 !important;
+
+    color: #d8b08c !important;
+    font-size: 8px !important;
+    font-weight: 700 !important;
+    letter-spacing: .20em !important;
+    text-transform: uppercase !important;
+
+    white-space: nowrap !important;
+}
+/* Le bouton reste collé à droite */
+html body .mmic-posting-page
+#optionsitems .thHead td:last-child {
+    position: relative !important;
+    z-index: 2 !important;
 }
 
 
