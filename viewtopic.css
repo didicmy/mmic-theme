@@ -5449,3 +5449,138 @@ html body .mmic-vt-post-actions .mmic-vt-action-ip {
   min-width: 28px !important;
   padding: 0 !important;
 }
+/* =========================================================
+   HEADER DU MESSAGE — GRILLE DÉFINITIVE
+   À CONSERVER TOUT EN BAS DU FICHIER
+   ========================================================= */
+
+html body .mmic-vt-post .mmic-vt-content {
+  min-width: 0 !important;
+  box-sizing: border-box !important;
+}
+
+/* Deux éléments seulement :
+   1. la date
+   2. les actions */
+html body .mmic-vt-post
+.mmic-vt-content
+header.mmic-vt-post-header {
+  display: grid !important;
+  grid-template-columns: minmax(0, auto) minmax(0, 1fr) !important;
+  align-items: center !important;
+  column-gap: 10px !important;
+
+  width: 100% !important;
+  min-width: 0 !important;
+  min-height: 36px !important;
+
+  margin: 0 !important;
+  padding: 0 0 10px !important;
+
+  border-bottom: 1px solid rgba(216, 176, 140, 0.22) !important;
+  background: transparent !important;
+  box-shadow: none !important;
+
+  box-sizing: border-box !important;
+}
+
+/* Date */
+html body .mmic-vt-post
+.mmic-vt-post-header
+.mmic-vt-post-date {
+  grid-column: 1 !important;
+
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+
+  min-width: 0 !important;
+  max-width: 120px !important;
+
+  overflow: hidden !important;
+  white-space: nowrap !important;
+  text-overflow: ellipsis !important;
+
+  font-size: 7px !important;
+}
+
+/* Actions */
+html body .mmic-vt-post
+.mmic-vt-post-header
+.mmic-vt-post-actions {
+  grid-column: 2 !important;
+  justify-self: end !important;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-end !important;
+  flex-wrap: nowrap !important;
+
+  width: auto !important;
+  min-width: 0 !important;
+  margin: 0 !important;
+  gap: 4px !important;
+
+  white-space: nowrap !important;
+}
+
+/* Tous les boutons restent indivisibles */
+html body .mmic-vt-post
+.mmic-vt-post-actions
+.mmic-vt-action {
+  flex: 0 0 auto !important;
+
+  min-width: 0 !important;
+  height: 25px !important;
+  padding-right: 6px !important;
+  padding-left: 6px !important;
+
+  font-size: 6px !important;
+  letter-spacing: 0.55px !important;
+}
+
+/* Boutons sans texte */
+html body .mmic-vt-post
+.mmic-vt-post-actions
+.mmic-vt-action-delete,
+
+html body .mmic-vt-post
+.mmic-vt-post-actions
+.mmic-vt-action-report {
+  width: 27px !important;
+  min-width: 27px !important;
+  padding: 0 !important;
+}
+
+/* Bouton IP */
+html body .mmic-vt-post
+.mmic-vt-post-actions
+.mmic-vt-action-ip {
+  width: 35px !important;
+  min-width: 35px !important;
+  padding: 0 5px !important;
+}
+@media (max-width: 800px) {
+  html body .mmic-vt-post
+  .mmic-vt-content
+  header.mmic-vt-post-header {
+    grid-template-columns: 1fr !important;
+    row-gap: 8px !important;
+  }
+
+  html body .mmic-vt-post
+  .mmic-vt-post-header
+  .mmic-vt-post-date {
+    grid-column: 1 !important;
+    max-width: none !important;
+  }
+
+  html body .mmic-vt-post
+  .mmic-vt-post-header
+  .mmic-vt-post-actions {
+    grid-column: 1 !important;
+    justify-self: start !important;
+    justify-content: flex-start !important;
+    flex-wrap: wrap !important;
+  }
+}
