@@ -1114,3 +1114,198 @@ html body .mmic-posting-topic-review td {
 
   background: #fffdf9 !important;
 }
+/* =========================================================
+   REVUE DU SUJET — FINITIONS VISUELLES
+   ========================================================= */
+
+/* Titre principal */
+
+html body .mmic-posting-topic-review .catHead,
+html body .mmic-posting-topic-review .catHead *,
+html body .mmic-posting-topic-review .thHead,
+html body .mmic-posting-topic-review .thHead * {
+  color: #d8b08c !important;
+  text-decoration: none !important;
+}
+
+
+/* Titres Auteur / Message */
+
+html body .mmic-posting-topic-review th,
+html body .mmic-posting-topic-review th *,
+html body .mmic-posting-topic-review .thCornerL,
+html body .mmic-posting-topic-review .thCornerR {
+  color: #d8b08c !important;
+
+  font-size: 7px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.16em !important;
+  text-transform: uppercase !important;
+}
+
+
+/* Colonnes */
+
+html body .mmic-posting-topic-review td {
+  vertical-align: top !important;
+}
+
+html body .mmic-posting-topic-review td:first-child {
+  width: 145px !important;
+
+  background:
+    linear-gradient(
+      180deg,
+      #f7f1e9 0%,
+      #f3ece5 100%
+    ) !important;
+}
+
+html body .mmic-posting-topic-review td:last-child {
+  background: #fffdf9 !important;
+}
+
+
+/* Pseudos */
+
+html body .mmic-posting-topic-review td:first-child a,
+html body .mmic-posting-topic-review td:first-child strong,
+html body .mmic-posting-topic-review .name,
+html body .mmic-posting-topic-review .name * {
+  color: #b97a56 !important;
+
+  font-family: Georgia, "Times New Roman", serif !important;
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  text-decoration: none !important;
+}
+
+
+/* Date et sujet */
+
+html body .mmic-posting-topic-review .postdetails,
+html body .mmic-posting-topic-review .gensmall,
+html body .mmic-posting-topic-review .genmed {
+  color: #746960 !important;
+
+  font-size: 8px !important;
+  line-height: 1.6 !important;
+}
+
+
+/* Texte du message */
+
+html body .mmic-posting-topic-review .postbody {
+  color: #453d37 !important;
+
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 11px !important;
+  line-height: 1.75 !important;
+}
+
+
+/* Suppression des vieilles lignes grises trop fortes */
+
+html body .mmic-posting-topic-review hr {
+  height: 1px !important;
+
+  margin: 10px 0 !important;
+
+  border: 0 !important;
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      rgba(216, 176, 140, 0.45),
+      transparent
+    ) !important;
+}
+
+
+/* =========================================================
+   BLOC CODE DANS LA REVUE
+   ========================================================= */
+
+html body .mmic-posting-topic-review .codebox {
+  margin: 12px 0 !important;
+  padding: 0 !important;
+
+  overflow: hidden !important;
+
+  border: 1px solid rgba(216, 176, 140, 0.5) !important;
+  border-radius: 7px !important;
+
+  background:
+    linear-gradient(
+      145deg,
+      #102438 0%,
+      #142d43 60%,
+      #102438 100%
+    ) !important;
+
+  box-shadow:
+    0 4px 10px rgba(16, 36, 56, 0.1) !important;
+}
+
+
+/* Titre CODE */
+
+html body .mmic-posting-topic-review .codebox dt {
+  min-height: 30px !important;
+  margin: 0 !important;
+  padding: 0 12px !important;
+
+  display: flex !important;
+  align-items: center !important;
+
+  border: 0 !important;
+  border-bottom: 1px solid rgba(216, 176, 140, 0.25) !important;
+
+  background: rgba(255, 255, 255, 0.035) !important;
+  color: #d8b08c !important;
+
+  font-size: 8px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.14em !important;
+  text-transform: uppercase !important;
+}
+
+
+/* Contenu */
+
+html body .mmic-posting-topic-review .codebox dd {
+  margin: 0 !important;
+  padding: 0 !important;
+
+  border: 0 !important;
+  background: transparent !important;
+}
+
+html body .mmic-posting-topic-review .codebox code,
+html body .mmic-posting-topic-review .codebox .cont_code {
+  display: block !important;
+
+  width: 100% !important;
+  padding: 14px 16px !important;
+
+  border: 0 !important;
+  background: transparent !important;
+  color: #f4eee7 !important;
+
+  font-family: Consolas, "Courier New", monospace !important;
+  font-size: 10px !important;
+  line-height: 1.65 !important;
+  white-space: pre-wrap !important;
+
+  box-sizing: border-box !important;
+}
+
+
+/* Neutralisation de la bordure verte native */
+
+html body .mmic-posting-topic-review .codebox *,
+html body .mmic-posting-topic-review code,
+html body .mmic-posting-topic-review .cont_code {
+  border-color: transparent !important;
+}
