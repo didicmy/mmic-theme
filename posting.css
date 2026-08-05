@@ -1259,3 +1259,629 @@ html body .mmic-posting-page .sceditor-button > div {
   margin: 0 !important;
   position: static !important;
 }
+/* =========================================================
+   POSTING BODY — FINITIONS GÉNÉRALES
+   MEET ME IN CHICAGO
+   À PLACER TOUT EN BAS DE posting.css
+   ========================================================= */
+
+
+/* =========================================================
+   1. CHAMPS ET MENUS DÉROULANTS
+   ========================================================= */
+
+html body .mmic-posting-page input[type="text"],
+html body .mmic-posting-page input[type="password"],
+html body .mmic-posting-page input[type="email"],
+html body .mmic-posting-page select,
+html body .mmic-posting-page textarea {
+  border: 1px solid rgba(216, 176, 140, 0.48) !important;
+  border-radius: 7px !important;
+
+  background: #fffdf9 !important;
+  color: #4e4945 !important;
+
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.82),
+    0 2px 5px rgba(16, 36, 56, 0.035) !important;
+
+  box-sizing: border-box !important;
+  outline: none !important;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    background-color 0.2s ease !important;
+}
+
+html body .mmic-posting-page input[type="text"]:focus,
+html body .mmic-posting-page input[type="password"]:focus,
+html body .mmic-posting-page input[type="email"]:focus,
+html body .mmic-posting-page select:focus,
+html body .mmic-posting-page textarea:focus {
+  border-color: #b97a56 !important;
+  background: #ffffff !important;
+
+  box-shadow:
+    0 0 0 3px rgba(216, 176, 140, 0.13),
+    0 3px 8px rgba(16, 36, 56, 0.045) !important;
+}
+
+
+/* Menus déroulants */
+
+html body .mmic-posting-page select {
+  min-height: 31px !important;
+  padding: 0 30px 0 10px !important;
+
+  color: #625951 !important;
+
+  font-size: 8px !important;
+  font-weight: 600 !important;
+
+  cursor: pointer !important;
+}
+
+
+/* Champ du titre */
+
+html body .mmic-posting-page input[name="subject"] {
+  min-height: 34px !important;
+  padding: 0 12px !important;
+
+  font-size: 10px !important;
+}
+
+
+/* =========================================================
+   2. BOUTONS GÉNÉRAUX
+   ========================================================= */
+
+html body .mmic-posting-page input[type="submit"],
+html body .mmic-posting-page input[type="button"],
+html body .mmic-posting-page button {
+  transition:
+    transform 0.18s ease,
+    border-color 0.18s ease,
+    background 0.18s ease,
+    box-shadow 0.18s ease !important;
+}
+
+html body .mmic-posting-page input[type="submit"]:hover,
+html body .mmic-posting-page input[type="button"]:hover,
+html body .mmic-posting-page button:hover {
+  transform: translateY(-2px) !important;
+
+  border-color: #d8b08c !important;
+
+  box-shadow:
+    0 5px 11px rgba(16, 36, 56, 0.18),
+    inset 0 1px 0 rgba(255, 255, 255, 0.09) !important;
+}
+
+html body .mmic-posting-page input[type="submit"]:active,
+html body .mmic-posting-page input[type="button"]:active,
+html body .mmic-posting-page button:active {
+  transform: translateY(0) !important;
+
+  box-shadow:
+    inset 0 2px 4px rgba(0, 0, 0, 0.15) !important;
+}
+
+
+/* =========================================================
+   3. BLOC OPTIONS
+   ========================================================= */
+
+/* Barre « Options » */
+
+html body .mmic-posting-page .mmic-posting-options-title,
+html body .mmic-posting-page #optionsitems + table .catHead,
+html body .mmic-posting-page #optionsitems + table th,
+html body .mmic-posting-page table:has(#optionsitems) .catHead {
+  border: 0 !important;
+  border-radius: 8px !important;
+
+  background:
+    linear-gradient(
+      180deg,
+      #173149 0%,
+      #102438 100%
+    ) !important;
+
+  color: #d8b08c !important;
+
+  font-size: 7px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.22em !important;
+  text-transform: uppercase !important;
+
+  box-shadow:
+    0 3px 8px rgba(16, 36, 56, 0.09),
+    inset 0 1px 0 rgba(255, 255, 255, 0.06) !important;
+}
+
+
+/* Contenu des options */
+
+html body .mmic-posting-page #optionsitems {
+  margin: 0 0 13px !important;
+  padding: 14px 16px !important;
+
+  border: 1px solid rgba(216, 176, 140, 0.4) !important;
+  border-radius: 8px !important;
+
+  background:
+    linear-gradient(
+      180deg,
+      #fffdf9 0%,
+      #f8f2eb 100%
+    ) !important;
+
+  color: #625951 !important;
+
+  box-shadow:
+    0 3px 9px rgba(16, 36, 56, 0.04),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8) !important;
+
+  box-sizing: border-box !important;
+}
+
+html body .mmic-posting-page #optionsitems table,
+html body .mmic-posting-page #optionsitems tbody,
+html body .mmic-posting-page #optionsitems tr,
+html body .mmic-posting-page #optionsitems td {
+  border: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+html body .mmic-posting-page #optionsitems td {
+  padding: 5px 7px !important;
+
+  color: #625951 !important;
+
+  font-size: 8px !important;
+  line-height: 1.5 !important;
+}
+
+
+/* Cases à cocher */
+
+html body .mmic-posting-page input[type="checkbox"],
+html body .mmic-posting-page input[type="radio"] {
+  width: 14px !important;
+  height: 14px !important;
+  margin: 0 7px 0 0 !important;
+
+  accent-color: #b97a56 !important;
+
+  vertical-align: middle !important;
+  cursor: pointer !important;
+}
+
+
+/* Bouton d’ouverture des options */
+
+html body .mmic-posting-page a[href*="options"],
+html body .mmic-posting-page .mmic-posting-options-toggle {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  width: 23px !important;
+  height: 23px !important;
+
+  border: 1px solid rgba(216, 176, 140, 0.62) !important;
+  border-radius: 5px !important;
+
+  background: rgba(255, 255, 255, 0.06) !important;
+  color: #d8b08c !important;
+
+  text-decoration: none !important;
+}
+
+
+/* =========================================================
+   4. SAUTER VERS UN FORUM
+   ========================================================= */
+
+html body .mmic-posting-page .mmic-posting-jumpbox,
+html body .mmic-posting-page table:has(select[name="selected_id"]) {
+  margin: 12px 0 !important;
+
+  border: 1px solid rgba(216, 176, 140, 0.4) !important;
+  border-radius: 8px !important;
+
+  background:
+    linear-gradient(
+      180deg,
+      #fffdf9 0%,
+      #f7f1e9 100%
+    ) !important;
+
+  box-shadow: 0 3px 8px rgba(16, 36, 56, 0.035) !important;
+}
+
+html body .mmic-posting-page
+table:has(select[name="selected_id"]) td {
+  padding: 10px 12px !important;
+
+  border: 0 !important;
+  background: transparent !important;
+
+  color: #766a61 !important;
+
+  font-size: 8px !important;
+}
+
+
+/* =========================================================
+   5. REVUE DU SUJET — CONTENEUR
+   ========================================================= */
+
+html body .mmic-posting-page .mmic-posting-topic-review,
+html body .mmic-posting-page #topicreview {
+  margin-top: 14px !important;
+  padding: 12px !important;
+
+  border: 1px solid rgba(216, 176, 140, 0.42) !important;
+  border-radius: 9px !important;
+
+  background:
+    linear-gradient(
+      180deg,
+      #fffdf9 0%,
+      #faf5ef 100%
+    ) !important;
+
+  box-shadow:
+    0 5px 14px rgba(16, 36, 56, 0.045),
+    inset 0 1px 0 rgba(255, 255, 255, 0.78) !important;
+
+  box-sizing: border-box !important;
+}
+
+
+/* Titre « Revue du sujet » */
+
+html body .mmic-posting-page .mmic-posting-topic-review-title,
+html body .mmic-posting-page #topicreview > h2,
+html body .mmic-posting-page #topicreview > .catHead {
+  margin: 0 0 12px !important;
+  padding: 2px 0 10px !important;
+
+  border: 0 !important;
+  border-bottom: 1px solid rgba(216, 176, 140, 0.25) !important;
+
+  background: transparent !important;
+  color: #b97a56 !important;
+
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 10px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.16em !important;
+  text-align: center !important;
+  text-transform: uppercase !important;
+}
+
+
+/* Tableau principal */
+
+html body .mmic-posting-page #topicreview table {
+  width: 100% !important;
+
+  border-collapse: separate !important;
+  border-spacing: 0 !important;
+
+  overflow: hidden !important;
+
+  border: 1px solid rgba(216, 176, 140, 0.32) !important;
+  border-radius: 8px !important;
+
+  background: #fffdf9 !important;
+}
+
+
+/* En-tête Auteur / Message */
+
+html body .mmic-posting-page #topicreview th {
+  height: 36px !important;
+  padding: 0 12px !important;
+
+  border: 0 !important;
+
+  background:
+    linear-gradient(
+      180deg,
+      #173149 0%,
+      #102438 100%
+    ) !important;
+
+  color: #d8b08c !important;
+
+  font-size: 7px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.18em !important;
+  text-transform: uppercase !important;
+}
+
+
+/* Cellules */
+
+html body .mmic-posting-page #topicreview td {
+  padding: 14px 12px !important;
+
+  border: 0 !important;
+  border-bottom: 1px solid rgba(216, 176, 140, 0.18) !important;
+
+  background: #fffdf9 !important;
+  color: #4e4945 !important;
+
+  vertical-align: top !important;
+}
+
+
+/* Colonne auteur */
+
+html body .mmic-posting-page #topicreview td:first-child {
+  width: 125px !important;
+
+  border-right: 1px solid rgba(216, 176, 140, 0.2) !important;
+
+  background:
+    linear-gradient(
+      180deg,
+      #f8f2eb 0%,
+      #f5ede5 100%
+    ) !important;
+
+  color: #b97a56 !important;
+
+  font-family: Georgia, "Times New Roman", serif !important;
+  font-size: 13px !important;
+  font-weight: 700 !important;
+}
+
+
+/* Liens et pseudos */
+
+html body .mmic-posting-page #topicreview td:first-child a,
+html body .mmic-posting-page #topicreview td:first-child strong,
+html body .mmic-posting-page #topicreview .name a {
+  color: #b97a56 !important;
+  text-decoration: none !important;
+}
+
+
+/* Date du message */
+
+html body .mmic-posting-page #topicreview .postdetails,
+html body .mmic-posting-page #topicreview .gensmall {
+  color: #81756c !important;
+
+  font-size: 7px !important;
+  line-height: 1.5 !important;
+}
+
+
+/* Contenu */
+
+html body .mmic-posting-page #topicreview .postbody {
+  color: #443c37 !important;
+
+  font-size: 10px !important;
+  line-height: 1.7 !important;
+}
+
+
+/* Lignes parasites du vieux thème */
+
+html body .mmic-posting-page #topicreview hr {
+  height: 1px !important;
+  margin: 12px 0 !important;
+
+  border: 0 !important;
+  background: rgba(216, 176, 140, 0.2) !important;
+}
+
+
+/* =========================================================
+   6. CODE DANS LA REVUE DU SUJET
+   ========================================================= */
+
+html body .mmic-posting-page #topicreview .codebox {
+  margin: 14px 0 !important;
+
+  overflow: hidden !important;
+
+  border: 1px solid rgba(216, 176, 140, 0.48) !important;
+  border-radius: 7px !important;
+
+  background:
+    linear-gradient(
+      145deg,
+      #102438 0%,
+      #15314b 100%
+    ) !important;
+
+  color: #f4eee7 !important;
+
+  box-shadow: 0 4px 10px rgba(16, 36, 56, 0.1) !important;
+}
+
+html body .mmic-posting-page #topicreview .codebox dt {
+  min-height: 31px !important;
+  margin: 0 !important;
+  padding: 0 11px !important;
+
+  border: 0 !important;
+  border-bottom: 1px solid rgba(216, 176, 140, 0.22) !important;
+
+  background: rgba(255, 255, 255, 0.035) !important;
+  color: #d8b08c !important;
+
+  font-size: 7px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.15em !important;
+  line-height: 31px !important;
+  text-transform: uppercase !important;
+}
+
+html body .mmic-posting-page #topicreview .codebox dd {
+  margin: 0 !important;
+  padding: 0 !important;
+
+  border: 0 !important;
+  background: transparent !important;
+}
+
+html body .mmic-posting-page #topicreview .codebox code,
+html body .mmic-posting-page #topicreview .codebox .cont_code {
+  display: block !important;
+
+  margin: 0 !important;
+  padding: 15px 17px !important;
+
+  border: 0 !important;
+  background: transparent !important;
+  color: #f4eee7 !important;
+
+  font-family: Consolas, Monaco, "Courier New", monospace !important;
+  font-size: 10px !important;
+  line-height: 1.65 !important;
+  text-align: left !important;
+  white-space: pre-wrap !important;
+}
+
+
+/* =========================================================
+   7. CITATIONS DANS LA REVUE DU SUJET
+   ========================================================= */
+
+html body .mmic-posting-page #topicreview blockquote {
+  margin: 14px 0 !important;
+  padding: 13px 16px !important;
+
+  border: 1px solid #e1d3c7 !important;
+  border-left: 3px solid #d8b08c !important;
+  border-radius: 0 6px 6px 0 !important;
+
+  background:
+    linear-gradient(
+      180deg,
+      #faf4ee 0%,
+      #f7efe8 100%
+    ) !important;
+
+  color: #5a4f47 !important;
+}
+
+
+/* =========================================================
+   8. ERREURS ET MESSAGES D’INFORMATION
+   ========================================================= */
+
+html body .mmic-posting-page .mmic-posting-errors:not(:empty),
+html body .mmic-posting-page .error,
+html body .mmic-posting-page .error-message {
+  position: relative !important;
+
+  margin: 0 0 14px !important;
+  padding: 14px 16px 14px 43px !important;
+
+  border: 1px solid rgba(185, 122, 86, 0.48) !important;
+  border-left: 4px solid #b97a56 !important;
+  border-radius: 8px !important;
+
+  background:
+    linear-gradient(
+      180deg,
+      #fff8f1 0%,
+      #f8eee5 100%
+    ) !important;
+
+  color: #694e3e !important;
+
+  font-size: 9px !important;
+  line-height: 1.6 !important;
+
+  box-shadow: 0 4px 10px rgba(94, 59, 39, 0.06) !important;
+}
+
+html body .mmic-posting-page .mmic-posting-errors:not(:empty)::before,
+html body .mmic-posting-page .error::before,
+html body .mmic-posting-page .error-message::before {
+  content: "!" !important;
+
+  position: absolute !important;
+  top: 50% !important;
+  left: 14px !important;
+
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  width: 19px !important;
+  height: 19px !important;
+
+  border-radius: 50% !important;
+
+  background: #b97a56 !important;
+  color: #fffdf9 !important;
+
+  font-size: 11px !important;
+  font-weight: 700 !important;
+
+  transform: translateY(-50%) !important;
+}
+
+
+/* Liens des alertes */
+
+html body .mmic-posting-page .mmic-posting-errors a,
+html body .mmic-posting-page .error a {
+  color: #102438 !important;
+  font-weight: 700 !important;
+}
+
+
+/* =========================================================
+   9. RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+  html body .mmic-posting-page #topicreview th:first-child,
+  html body .mmic-posting-page #topicreview td:first-child {
+    width: 95px !important;
+  }
+
+  html body .mmic-posting-page #topicreview td {
+    padding: 11px 9px !important;
+  }
+}
+
+@media (max-width: 520px) {
+
+  html body .mmic-posting-page #topicreview table,
+  html body .mmic-posting-page #topicreview tbody,
+  html body .mmic-posting-page #topicreview tr,
+  html body .mmic-posting-page #topicreview td {
+    display: block !important;
+    width: 100% !important;
+
+    box-sizing: border-box !important;
+  }
+
+  html body .mmic-posting-page #topicreview th {
+    display: none !important;
+  }
+
+  html body .mmic-posting-page #topicreview td:first-child {
+    width: 100% !important;
+
+    border-right: 0 !important;
+    border-bottom: 1px solid rgba(216, 176, 140, 0.2) !important;
+  }
+}
