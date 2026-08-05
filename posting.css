@@ -1885,3 +1885,170 @@ html body .mmic-posting-page .error a {
     border-bottom: 1px solid rgba(216, 176, 140, 0.2) !important;
   }
 }
+/* =========================================================
+   POSTING BODY — MICROFINITIONS FINALES
+   ========================================================= */
+
+
+/* =========================================================
+   1. BLOC « SAUTER VERS »
+   Réduit le grand vide autour du formulaire
+   ========================================================= */
+
+html body .mmic-posting-page
+table:has(select[name="selected_id"]) {
+  width: 100% !important;
+
+  margin: 12px 0 !important;
+  padding: 0 !important;
+
+  border: 1px solid rgba(216, 176, 140, 0.4) !important;
+  border-radius: 8px !important;
+
+  background:
+    linear-gradient(
+      180deg,
+      #fffdf9 0%,
+      #f8f2eb 100%
+    ) !important;
+
+  box-shadow: 0 3px 8px rgba(16, 36, 56, 0.035) !important;
+
+  box-sizing: border-box !important;
+}
+
+
+html body .mmic-posting-page
+table:has(select[name="selected_id"]) td {
+  height: auto !important;
+  min-height: 0 !important;
+
+  padding: 10px 12px !important;
+
+  border: 0 !important;
+  background: transparent !important;
+
+  vertical-align: middle !important;
+}
+
+
+/* Le formulaire lui-même reste compact à droite */
+
+html body .mmic-posting-page
+table:has(select[name="selected_id"]) form {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-end !important;
+  gap: 7px !important;
+
+  width: auto !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+
+html body .mmic-posting-page
+table:has(select[name="selected_id"]) select {
+  min-width: 210px !important;
+  max-width: 290px !important;
+}
+
+
+html body .mmic-posting-page
+table:has(select[name="selected_id"]) input[type="submit"] {
+  min-height: 31px !important;
+  margin: 0 !important;
+}
+
+
+/* =========================================================
+   2. TITRE « REVUE DU SUJET »
+   Rapproche le titre du tableau
+   ========================================================= */
+
+html body .mmic-posting-page .mmic-posting-topic-review,
+html body .mmic-posting-page #topicreview {
+  padding-top: 10px !important;
+}
+
+
+html body .mmic-posting-page .mmic-posting-topic-review-title,
+html body .mmic-posting-page #topicreview > h2,
+html body .mmic-posting-page #topicreview > .catHead {
+  margin: 0 0 8px !important;
+  padding: 2px 0 6px !important;
+}
+
+
+/* Réduit l’espace entre le titre et le tableau */
+
+html body .mmic-posting-page #topicreview table {
+  margin-top: 0 !important;
+}
+
+
+/* =========================================================
+   3. MESSAGES COURTS DANS LA REVUE
+   Réduit les grands espaces verticaux inutiles
+   ========================================================= */
+
+html body .mmic-posting-page #topicreview tr,
+html body .mmic-posting-page #topicreview td {
+  height: auto !important;
+  min-height: 0 !important;
+}
+
+
+html body .mmic-posting-page #topicreview td {
+  padding-top: 11px !important;
+  padding-bottom: 11px !important;
+}
+
+
+/* Colonne du contenu */
+
+html body .mmic-posting-page #topicreview td:nth-child(2) {
+  padding-top: 11px !important;
+  padding-bottom: 13px !important;
+}
+
+
+/* Neutralise les hauteurs héritées des vieux blocs Forumactif */
+
+html body .mmic-posting-page #topicreview .postbody,
+html body .mmic-posting-page #topicreview .postbody > div,
+html body .mmic-posting-page #topicreview .postbody > span,
+html body .mmic-posting-page #topicreview .postbody > table {
+  height: auto !important;
+  min-height: 0 !important;
+
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+
+/* Les paragraphes courts ne créent plus de grande marge */
+
+html body .mmic-posting-page #topicreview .postbody p {
+  margin: 0 0 8px !important;
+}
+
+
+html body .mmic-posting-page #topicreview .postbody p:last-child {
+  margin-bottom: 0 !important;
+}
+
+
+/* Les séparateurs restent fins et compacts */
+
+html body .mmic-posting-page #topicreview hr {
+  margin: 9px 0 !important;
+}
+
+
+/* Le bloc code ne gonfle pas inutilement le message */
+
+html body .mmic-posting-page #topicreview .codebox {
+  margin-top: 10px !important;
+  margin-bottom: 5px !important;
+}
