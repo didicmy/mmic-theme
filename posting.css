@@ -2052,3 +2052,96 @@ html body .mmic-posting-page #topicreview .codebox {
   margin-top: 10px !important;
   margin-bottom: 5px !important;
 }
+/* =========================================================
+   SAUTER VERS — SUPPRESSION DU GRAND CADRE VIDE
+   ========================================================= */
+
+/* Grand conteneur extérieur */
+html body .mmic-posting-page .mmic-posting-footer-tools {
+  width: 100% !important;
+  margin: 12px 0 !important;
+  padding: 0 !important;
+
+  border: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+
+/* Véritable bloc « Sauter vers » */
+html body .mmic-posting-page .mmic-posting-jumpbox {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-end !important;
+
+  width: 100% !important;
+  min-height: 0 !important;
+
+  margin: 0 !important;
+  padding: 10px 12px !important;
+
+  border: 1px solid rgba(216, 176, 140, 0.4) !important;
+  border-radius: 8px !important;
+
+  background: linear-gradient(
+    180deg,
+    #fffdf9 0%,
+    #f8f2eb 100%
+  ) !important;
+
+  box-shadow: 0 3px 8px rgba(16, 36, 56, 0.035) !important;
+  box-sizing: border-box !important;
+}
+
+
+/* Formulaire intérieur */
+html body .mmic-posting-page .mmic-posting-jumpbox form {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-end !important;
+  gap: 7px !important;
+
+  width: auto !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+
+/* Vieux tableau Forumactif neutralisé */
+html body .mmic-posting-page .mmic-posting-jumpbox table,
+html body .mmic-posting-page .mmic-posting-jumpbox tbody,
+html body .mmic-posting-page .mmic-posting-jumpbox tr,
+html body .mmic-posting-page .mmic-posting-jumpbox td {
+  width: auto !important;
+  height: auto !important;
+  min-height: 0 !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  border: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+
+/* Aligne les éléments du formulaire */
+html body .mmic-posting-page .mmic-posting-jumpbox td {
+  vertical-align: middle !important;
+  white-space: nowrap !important;
+}
+
+
+/* Menu déroulant */
+html body .mmic-posting-page .mmic-posting-jumpbox select {
+  width: 250px !important;
+  min-width: 250px !important;
+  margin: 0 7px !important;
+}
+
+
+/* Bouton Aller */
+html body .mmic-posting-page .mmic-posting-jumpbox input[type="submit"] {
+  min-height: 31px !important;
+  margin: 0 !important;
+}
