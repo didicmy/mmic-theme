@@ -1409,3 +1409,33 @@ html body .mmic-posting-smileys td {
 html body .mmic-posting-smileys td[align="center"]{
     background:#fbf8f4 !important;
 }
+/* =========================================================
+   SMILEYS
+   ========================================================= */
+
+/* Cache le menu "Voir plus de smileys" */
+
+html body .mmic-posting-smileys form {
+    display: none !important;
+}
+
+/* Les smileys remontent naturellement */
+
+html body .mmic-posting-smileys iframe {
+    display: block;
+    width: 100% !important;
+    border: 0 !important;
+    background: transparent !important;
+}
+
+/* Centre légèrement la grille */
+
+html body .mmic-posting-smileys {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+html body .mmic-posting-smileys iframe{
+    margin-top: -8px;
+}
