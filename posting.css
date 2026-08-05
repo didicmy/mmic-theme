@@ -221,3 +221,355 @@ html body nav.mmic-posting-navigation > h1:not(:first-of-type)::before {
 html body nav.mmic-posting-navigation > h1 a:hover {
   color: #b97a56 !important;
 }
+/* =========================================================
+   FORMULAIRE PRINCIPAL DE PUBLICATION
+   ========================================================= */
+
+html body .mmic-posting-editor-card {
+  width: 100% !important;
+  margin: 0 !important;
+
+  overflow: hidden !important;
+
+  border: 1px solid rgba(216, 176, 140, 0.42) !important;
+  border-radius: 10px !important;
+
+  background: #fbf8f3 !important;
+
+  box-shadow:
+    0 6px 18px rgba(16, 36, 56, 0.055),
+    inset 0 1px 0 rgba(255, 255, 255, 0.7) !important;
+
+  border-spacing: 0 !important;
+}
+
+
+/* =========================================================
+   TITRE DU FORMULAIRE
+   ========================================================= */
+
+html body .mmic-posting-editor-title {
+  height: auto !important;
+  padding: 13px 16px !important;
+
+  border: 0 !important;
+  border-bottom: 1px solid rgba(216, 176, 140, 0.28) !important;
+
+  background:
+    linear-gradient(
+      180deg,
+      #173149 0%,
+      #102438 100%
+    ) !important;
+
+  color: #d8b08c !important;
+
+  text-align: center !important;
+}
+
+html body .mmic-posting-editor-title span {
+  color: #d8b08c !important;
+
+  font-size: 9px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.2em !important;
+  text-transform: uppercase !important;
+}
+
+
+/* =========================================================
+   LIGNES ET CELLULES NATIVES
+   ========================================================= */
+
+html body .mmic-posting-editor-card > tbody > tr > td {
+  border: 0 !important;
+
+  background: transparent !important;
+
+  box-sizing: border-box !important;
+}
+
+html body .mmic-posting-editor-card .row1 {
+  padding: 10px 12px !important;
+
+  color: #102438 !important;
+
+  font-size: 8px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.04em !important;
+}
+
+html body .mmic-posting-editor-card .row2 {
+  padding: 10px 13px !important;
+
+  background: rgba(255, 255, 255, 0.32) !important;
+}
+
+
+/* Lignes séparées */
+
+html body .mmic-posting-subject-row > td,
+html body .mmic-posting-description-row > td {
+  border-bottom: 1px solid rgba(216, 176, 140, 0.2) !important;
+}
+
+
+/* =========================================================
+   CHAMPS TITRE ET DESCRIPTION
+   ========================================================= */
+
+html body .mmic-posting-editor-card input.post[type="text"] {
+  width: 100% !important;
+  max-width: none !important;
+  min-height: 34px !important;
+
+  margin: 0 !important;
+  padding: 0 11px !important;
+
+  border: 1px solid #d8cbbf !important;
+  border-radius: 6px !important;
+
+  background: #fffdf9 !important;
+  color: #4e4945 !important;
+
+  font-size: 11px !important;
+
+  box-shadow:
+    inset 0 1px 2px rgba(16, 36, 56, 0.035) !important;
+
+  box-sizing: border-box !important;
+  outline: none !important;
+}
+
+html body .mmic-posting-editor-card input.post[type="text"]:focus {
+  border-color: #d8b08c !important;
+
+  box-shadow:
+    0 0 0 3px rgba(216, 176, 140, 0.13),
+    inset 0 1px 2px rgba(16, 36, 56, 0.03) !important;
+}
+
+
+/* Sélecteur de couleur du titre */
+
+html body .mmic-posting-subject-row select {
+  min-height: 34px !important;
+  margin-left: 7px !important;
+  padding: 0 8px !important;
+
+  border: 1px solid #d8cbbf !important;
+  border-radius: 6px !important;
+
+  background: #fffdf9 !important;
+  color: #625951 !important;
+
+  font-size: 9px !important;
+}
+
+
+/* =========================================================
+   ZONE ÉDITEUR + SMILEYS
+   ========================================================= */
+
+html body .mmic-posting-editor-row > td {
+  vertical-align: top !important;
+}
+
+html body .mmic-posting-editor-row > td:first-child {
+  width: 190px !important;
+  padding: 14px !important;
+
+  border-right: 1px solid rgba(216, 176, 140, 0.24) !important;
+
+  background:
+    linear-gradient(
+      180deg,
+      #f7f1e9 0%,
+      #f3ece4 100%
+    ) !important;
+}
+
+html body .mmic-posting-editor-row > td:last-child {
+  width: auto !important;
+  padding: 14px !important;
+
+  background: #fbf8f3 !important;
+}
+
+
+/* =========================================================
+   SMILEYS
+   ========================================================= */
+
+html body .mmic-posting-smileys {
+  margin-top: 10px !important;
+  padding: 9px !important;
+
+  border: 1px solid rgba(216, 176, 140, 0.32) !important;
+  border-radius: 7px !important;
+
+  background: rgba(255, 255, 255, 0.56) !important;
+
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.65) !important;
+}
+
+html body .mmic-posting-smileys select {
+  width: 100% !important;
+  min-height: 27px !important;
+  margin-bottom: 7px !important;
+
+  border: 1px solid #d8cbbf !important;
+  border-radius: 5px !important;
+
+  background: #fffdf9 !important;
+
+  font-size: 8px !important;
+}
+
+
+/* On masque le doublon de smileys */
+
+html body .mmic-posting-secondary-smileys {
+  display: none !important;
+}
+
+
+/* =========================================================
+   SCEDITOR
+   ========================================================= */
+
+html body .mmic-posting-editor-row .sceditor-container {
+  width: 100% !important;
+  max-width: 100% !important;
+
+  border: 1px solid rgba(216, 176, 140, 0.42) !important;
+  border-radius: 7px !important;
+
+  background: #fffdf9 !important;
+
+  box-shadow:
+    0 3px 10px rgba(16, 36, 56, 0.045) !important;
+
+  overflow: hidden !important;
+}
+
+html body .mmic-posting-editor-row .sceditor-toolbar {
+  padding: 7px 8px !important;
+
+  border: 0 !important;
+  border-bottom: 1px solid rgba(216, 176, 140, 0.28) !important;
+
+  background:
+    linear-gradient(
+      180deg,
+      #fbf8f4 0%,
+      #f2ece6 100%
+    ) !important;
+}
+
+html body .mmic-posting-editor-row .sceditor-container iframe,
+html body .mmic-posting-editor-row .sceditor-container textarea,
+html body .mmic-posting-editor-row #text_editor_textarea {
+  width: 100% !important;
+  min-height: 290px !important;
+
+  border: 0 !important;
+
+  background: #fffdf9 !important;
+  color: #4e4945 !important;
+
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+
+/* =========================================================
+   BOUTONS DU FORMULAIRE
+   ========================================================= */
+
+html body .mmic-posting-submit-card {
+  width: 100% !important;
+  margin: 12px 0 0 !important;
+
+  border: 0 !important;
+  border-spacing: 0 !important;
+
+  background: transparent !important;
+}
+
+html body .mmic-posting-submit-card .catBottom {
+  padding: 12px !important;
+
+  border: 1px solid rgba(216, 176, 140, 0.35) !important;
+  border-radius: 8px !important;
+
+  background: #f7f1e9 !important;
+}
+
+html body .mmic-posting-submit-card input[type="submit"] {
+  min-height: 31px !important;
+  padding: 0 14px !important;
+  margin: 3px !important;
+
+  border: 1px solid rgba(216, 176, 140, 0.72) !important;
+  border-radius: 6px !important;
+
+  background:
+    linear-gradient(
+      180deg,
+      #173149 0%,
+      #102438 100%
+    ) !important;
+
+  color: #fffaf5 !important;
+
+  font-size: 8px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.09em !important;
+  text-transform: uppercase !important;
+
+  box-shadow:
+    0 3px 7px rgba(16, 36, 56, 0.13),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08) !important;
+
+  cursor: pointer !important;
+  transition: 0.2s ease !important;
+}
+
+html body .mmic-posting-submit-card input[type="submit"]:hover {
+  transform: translateY(-1px) !important;
+
+  border-color: #d8b08c !important;
+
+  background:
+    linear-gradient(
+      180deg,
+      #1d3b56 0%,
+      #142d43 100%
+    ) !important;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 700px) {
+  html body .mmic-posting-editor-row,
+  html body .mmic-posting-editor-row > td {
+    display: block !important;
+
+    width: 100% !important;
+  }
+
+  html body .mmic-posting-editor-row > td:first-child {
+    border-right: 0 !important;
+    border-bottom: 1px solid rgba(216, 176, 140, 0.24) !important;
+  }
+
+  html body .mmic-posting-smileys {
+    max-height: 190px !important;
+    overflow-y: auto !important;
+  }
+}
