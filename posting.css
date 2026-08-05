@@ -1495,36 +1495,46 @@ html body .mmic-posting-page .mmic-posting-options-toggle {
 
 
 /* =========================================================
-   4. SAUTER VERS UN FORUM
+   4. SAUTER VERS UN FORUM — SÉLECTEURS CORRIGÉS
    ========================================================= */
 
-html body .mmic-posting-page .mmic-posting-jumpbox,
-html body .mmic-posting-page table:has(select[name="selected_id"]) {
+html body .mmic-posting-page .mmic-posting-footer-tools {
   margin: 12px 0 !important;
+  padding: 10px 12px !important;
 
   border: 1px solid rgba(216, 176, 140, 0.4) !important;
   border-radius: 8px !important;
 
-  background:
-    linear-gradient(
-      180deg,
-      #fffdf9 0%,
-      #f7f1e9 100%
-    ) !important;
+  background: linear-gradient(
+    180deg,
+    #fffdf9 0%,
+    #f7f1e9 100%
+  ) !important;
 
   box-shadow: 0 3px 8px rgba(16, 36, 56, 0.035) !important;
+  box-sizing: border-box !important;
 }
 
-html body .mmic-posting-page
-table:has(select[name="selected_id"]) td {
-  padding: 10px 12px !important;
-
+html body .mmic-posting-page .mmic-posting-footer-tools table,
+html body .mmic-posting-page .mmic-posting-footer-tools tbody,
+html body .mmic-posting-page .mmic-posting-footer-tools tr,
+html body .mmic-posting-page .mmic-posting-footer-tools td {
   border: 0 !important;
   background: transparent !important;
+  box-shadow: none !important;
+}
 
+html body .mmic-posting-page .mmic-posting-footer-tools td {
+  padding: 0 !important;
   color: #766a61 !important;
-
   font-size: 8px !important;
+}
+
+html body .mmic-posting-page .mmic-posting-jumpbox {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-end !important;
+  gap: 6px !important;
 }
 
 
@@ -1907,8 +1917,7 @@ html body .mmic-posting-page .error a {
    Réduit le grand vide autour du formulaire
    ========================================================= */
 
-html body .mmic-posting-page
-table:has(select[name="selected_id"]) {
+html body .mmic-posting-page .mmic-posting-jumpbox {
   width: 100% !important;
 
   margin: 12px 0 !important;
@@ -1930,8 +1939,7 @@ table:has(select[name="selected_id"]) {
 }
 
 
-html body .mmic-posting-page
-table:has(select[name="selected_id"]) td {
+html body .mmic-posting-page .mmic-posting-jumpbox td {
   height: auto !important;
   min-height: 0 !important;
 
@@ -1946,8 +1954,7 @@ table:has(select[name="selected_id"]) td {
 
 /* Le formulaire lui-même reste compact à droite */
 
-html body .mmic-posting-page
-table:has(select[name="selected_id"]) form {
+html body .mmic-posting-page .mmic-posting-jumpbox form {
   display: flex !important;
   align-items: center !important;
   justify-content: flex-end !important;
@@ -1959,15 +1966,13 @@ table:has(select[name="selected_id"]) form {
 }
 
 
-html body .mmic-posting-page
-table:has(select[name="selected_id"]) select {
+html body .mmic-posting-page .mmic-posting-jumpbox select {
   min-width: 210px !important;
   max-width: 290px !important;
 }
 
 
-html body .mmic-posting-page
-table:has(select[name="selected_id"]) input[type="submit"] {
+html body .mmic-posting-page .mmic-posting-jumpbox input[type="submit"] {
   min-height: 31px !important;
   margin: 0 !important;
 }
@@ -2199,7 +2204,7 @@ html body .mmic-posting-page .mmic-posting-jumpbox form {
 
 /* Seul le tableau intérieur conserve le petit cadre */
 html body .mmic-posting-page
-.mmic-posting-jumpbox table:has(select[name="selected_id"]) {
+.mmic-posting-jumpbox table {
   width: auto !important;
   max-width: 100% !important;
 
@@ -2228,10 +2233,10 @@ html body .mmic-posting-page
 
 /* Neutralise seulement la structure interne */
 html body .mmic-posting-page
-.mmic-posting-jumpbox table:has(select[name="selected_id"]) tbody,
+.mmic-posting-jumpbox table tbody,
 
 html body .mmic-posting-page
-.mmic-posting-jumpbox table:has(select[name="selected_id"]) tr {
+.mmic-posting-jumpbox table tr {
   width: auto !important;
   height: auto !important;
 
@@ -2243,7 +2248,7 @@ html body .mmic-posting-page
 
 /* Espacement intérieur du petit bloc */
 html body .mmic-posting-page
-.mmic-posting-jumpbox table:has(select[name="selected_id"]) td {
+.mmic-posting-jumpbox table td {
   width: auto !important;
   height: auto !important;
   min-height: 0 !important;
@@ -2584,4 +2589,53 @@ html body .mmic-posting-page .mmic-posting-panel-card tr.thHead b{
     font-size:8px !important;
     letter-spacing:.18em !important;
     text-transform:uppercase !important;
+}
+
+
+/* =========================================================
+   RESTAURATION DÉFINITIVE DE LA BARRE OPTIONS
+   ========================================================= */
+
+html body .mmic-posting-page
+ table.mmic-posting-panel-card > tbody > tr:first-child > th.thHead {
+  padding: 0 !important;
+  border: 0 !important;
+
+  background: linear-gradient(
+    180deg,
+    #173149 0%,
+    #102438 100%
+  ) !important;
+
+  color: #d8b08c !important;
+}
+
+html body .mmic-posting-page
+ table.mmic-posting-panel-card > tbody > tr:first-child > th.thHead > table,
+html body .mmic-posting-page
+ table.mmic-posting-panel-card > tbody > tr:first-child > th.thHead > table > tbody,
+html body .mmic-posting-page
+ table.mmic-posting-panel-card > tbody > tr:first-child > th.thHead > table > tbody > tr,
+html body .mmic-posting-page
+ table.mmic-posting-panel-card > tbody > tr:first-child > th.thHead > table > tbody > tr > td {
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+html body .mmic-posting-page
+ table.mmic-posting-panel-card > tbody > tr:first-child > th.thHead td {
+  height: 38px !important;
+  color: #d8b08c !important;
+}
+
+html body .mmic-posting-page
+ table.mmic-posting-panel-card > tbody > tr:first-child > th.thHead .gen,
+html body .mmic-posting-page
+ table.mmic-posting-panel-card > tbody > tr:first-child > th.thHead b {
+  color: #d8b08c !important;
+  font-size: 8px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.18em !important;
+  text-transform: uppercase !important;
 }
