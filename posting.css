@@ -763,6 +763,18 @@ html body .mmic-posting-smileys iframe[name="smilies"] {
 html body .mmic-posting-page .mmic-posting-title-row {
   align-items: center !important;
 }
+/* On restaure l'entête OPTIONS */
+
+html body .mmic-posting-page #options-panel h3,
+html body .mmic-posting-page .mmic-posting-options-title {
+    background: linear-gradient(
+        180deg,
+        #1b344c 0%,
+        #102438 100%
+    ) !important;
+
+    color:#d8b08c !important;
+}
 
 html body .mmic-posting-page input[name="subject"], html body .mmic-posting-page input.post, html body .mmic-posting-page input.inputbox[type="text"] {
   min-height: 34px !important;
