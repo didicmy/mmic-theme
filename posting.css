@@ -867,3 +867,250 @@ html body .mmic-posting-smileys::-webkit-scrollbar-thumb {
 html body .mmic-posting-smileys::-webkit-scrollbar-thumb:hover {
   background: #d8b08c !important;
 }
+/* =========================================================
+   PANNEAUX INFÉRIEURS DU FORMULAIRE
+   ========================================================= */
+
+html body .mmic-posting-panel {
+  width: 100% !important;
+  margin: 12px 0 0 !important;
+}
+
+html body .mmic-posting-panel-card {
+  width: 100% !important;
+
+  overflow: hidden !important;
+
+  border: 1px solid rgba(216, 176, 140, 0.38) !important;
+  border-radius: 8px !important;
+
+  background: #fbf8f3 !important;
+
+  border-spacing: 0 !important;
+
+  box-shadow:
+    0 4px 11px rgba(16, 36, 56, 0.045),
+    inset 0 1px 0 rgba(255, 255, 255, 0.72) !important;
+}
+
+
+/* En-tête des panneaux */
+
+html body .mmic-posting-panel-card > tbody > tr > th,
+html body .mmic-posting-panel-card .thHead {
+  height: auto !important;
+  padding: 0 !important;
+
+  border: 0 !important;
+
+  background:
+    linear-gradient(
+      180deg,
+      #173149 0%,
+      #102438 100%
+    ) !important;
+}
+
+html body .mmic-posting-panel-card .thHead > table {
+  width: 100% !important;
+  border-spacing: 0 !important;
+}
+
+html body .mmic-posting-panel-card .thHead td {
+  height: 38px !important;
+  padding: 0 12px !important;
+
+  border: 0 !important;
+  background: transparent !important;
+}
+
+html body .mmic-posting-panel-card .thHead .gen,
+html body .mmic-posting-panel-card .thHead b {
+  color: #d8b08c !important;
+
+  font-size: 8px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.18em !important;
+  text-transform: uppercase !important;
+}
+
+
+/* Icône ouvrir ou fermer */
+
+html body .mmic-posting-panel-card .thHead a {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  width: 22px !important;
+  height: 22px !important;
+
+  border: 1px solid rgba(216, 176, 140, 0.48) !important;
+  border-radius: 5px !important;
+
+  background: rgba(255, 255, 255, 0.045) !important;
+
+  transition:
+    background 0.18s ease,
+    border-color 0.18s ease,
+    transform 0.18s ease !important;
+}
+
+html body .mmic-posting-panel-card .thHead a:hover {
+  transform: translateY(-1px) !important;
+
+  border-color: #d8b08c !important;
+  background: rgba(216, 176, 140, 0.14) !important;
+}
+
+html body .mmic-posting-panel-card .thHead a img {
+  max-width: 12px !important;
+  max-height: 12px !important;
+}
+
+
+/* Corps du panneau ouvert */
+
+html body .mmic-posting-options-show .row1,
+html body .mmic-posting-options-show .row2 {
+  padding: 13px 15px !important;
+
+  border: 0 !important;
+  border-bottom: 1px solid rgba(216, 176, 140, 0.18) !important;
+
+  background: transparent !important;
+  color: #5f554e !important;
+
+  font-size: 9px !important;
+  line-height: 1.6 !important;
+}
+
+html body .mmic-posting-options-show .row1 {
+  width: 28% !important;
+
+  background: rgba(247, 241, 233, 0.62) !important;
+}
+
+html body .mmic-posting-options-show .row2 {
+  background: #fffdf9 !important;
+}
+
+
+/* Cases à cocher */
+
+html body .mmic-posting-options-show input[type="checkbox"],
+html body .mmic-posting-options-show input[type="radio"] {
+  accent-color: #b97a56 !important;
+
+  margin-right: 7px !important;
+
+  vertical-align: middle !important;
+}
+
+html body .mmic-posting-options-show label,
+html body .mmic-posting-options-show .gen,
+html body .mmic-posting-options-show .gensmall {
+  color: #5f554e !important;
+
+  font-size: 9px !important;
+}
+
+
+/* Champs éventuels */
+
+html body .mmic-posting-options-show input[type="text"],
+html body .mmic-posting-options-show select {
+  min-height: 31px !important;
+  padding: 0 9px !important;
+
+  border: 1px solid #d8cbbf !important;
+  border-radius: 5px !important;
+
+  background: #fffdf9 !important;
+  color: #4e4945 !important;
+
+  box-sizing: border-box !important;
+}
+/* =========================================================
+   OUTILS ET REVUE DU SUJET
+   ========================================================= */
+
+html body .mmic-posting-footer-tools {
+  width: 100% !important;
+  margin: 14px 0 !important;
+  padding: 10px 12px !important;
+
+  border: 1px solid rgba(216, 176, 140, 0.35) !important;
+  border-radius: 8px !important;
+
+  background: #f7f1e9 !important;
+
+  box-sizing: border-box !important;
+}
+
+html body .mmic-posting-jumpbox {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-end !important;
+}
+
+html body .mmic-posting-jumpbox select {
+  min-height: 29px !important;
+
+  border: 1px solid #d8cbbf !important;
+  border-radius: 5px !important;
+
+  background: #fffdf9 !important;
+  color: #625951 !important;
+
+  font-size: 8px !important;
+}
+
+
+/* Revue du sujet */
+
+html body .mmic-posting-topic-review {
+  width: 100% !important;
+  margin: 14px 0 0 !important;
+}
+
+html body .mmic-posting-topic-review .forumline {
+  width: 100% !important;
+
+  overflow: hidden !important;
+
+  border: 1px solid rgba(216, 176, 140, 0.38) !important;
+  border-radius: 9px !important;
+
+  background: #fbf8f3 !important;
+
+  border-spacing: 0 !important;
+
+  box-shadow:
+    0 5px 14px rgba(16, 36, 56, 0.045) !important;
+}
+
+html body .mmic-posting-topic-review th,
+html body .mmic-posting-topic-review .thHead,
+html body .mmic-posting-topic-review .catHead {
+  padding: 10px 13px !important;
+
+  border: 0 !important;
+
+  background: #102438 !important;
+  color: #d8b08c !important;
+
+  font-size: 8px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.16em !important;
+  text-transform: uppercase !important;
+}
+
+html body .mmic-posting-topic-review td {
+  padding: 11px 13px !important;
+
+  border: 0 !important;
+  border-bottom: 1px solid rgba(216, 176, 140, 0.18) !important;
+
+  background: #fffdf9 !important;
+}
