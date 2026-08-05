@@ -341,7 +341,7 @@ html body .mmic-posting-navigation-current {
     font-weight:700;
 }
 /* =========================================================
-   FIL D’ARIANE — VERSION CORRIGÉE
+   FIL D’ARIANE — VERSION STABLE
    ========================================================= */
 
 html body .mmic-posting-navigation {
@@ -355,19 +355,14 @@ html body .mmic-posting-navigation {
 
   background: #fbf8f4 !important;
 
-  /*
-   * Masque uniquement les :: écrits directement
-   * dans le conteneur par Forumactif.
-   */
+  /* Masque uniquement les anciens :: en texte brut */
   color: transparent !important;
   font-size: 0 !important;
-  line-height: 1.5 !important;
 
   box-sizing: border-box !important;
 }
 
-
-/* Conteneur natif du fil d’Ariane */
+/* Conteneurs éventuellement injectés par Forumactif */
 
 html body .mmic-posting-navigation span.nav,
 html body .mmic-posting-navigation span.gensmall {
@@ -377,8 +372,7 @@ html body .mmic-posting-navigation span.gensmall {
   font-size: 0 !important;
 }
 
-
-/* Réaffichage des liens */
+/* Liens visibles */
 
 html body .mmic-posting-navigation a,
 html body .mmic-posting-navigation a.nav {
@@ -386,6 +380,8 @@ html body .mmic-posting-navigation a.nav {
 
   display: inline-flex !important;
   align-items: center !important;
+
+  margin-right: 8px !important;
 
   color: #102438 !important;
 
@@ -397,15 +393,14 @@ html body .mmic-posting-navigation a.nav {
   white-space: nowrap !important;
 }
 
+/* Séparateur placé après chaque lien */
 
-/* Nouveau séparateur entre les liens */
-
-html body .mmic-posting-navigation a + a::before {
+html body .mmic-posting-navigation a::after {
   content: "›" !important;
 
   display: inline-block !important;
 
-  margin: 0 8px !important;
+  margin-left: 8px !important;
 
   color: #d8b08c !important;
 
@@ -414,10 +409,15 @@ html body .mmic-posting-navigation a + a::before {
   line-height: 1 !important;
 }
 
+/* Pas de flèche après le dernier lien */
+
+html body .mmic-posting-navigation a:last-of-type::after {
+  content: none !important;
+  display: none !important;
+}
 
 /* Survol */
 
-html body .mmic-posting-navigation a:hover,
-html body .mmic-posting-navigation a.nav:hover {
+html body .mmic-posting-navigation a:hover {
   color: #b97a56 !important;
 }
