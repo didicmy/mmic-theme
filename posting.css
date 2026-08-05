@@ -2559,3 +2559,29 @@ html body .mmic-posting-page #topicreview hr {
   }
 
 }
+/* =====================================================
+   CORRECTION BARRE OPTIONS
+   ===================================================== */
+
+html body .mmic-posting-page .mmic-posting-panel-card .thHead,
+html body .mmic-posting-page .mmic-posting-panel-card tr.thHead,
+html body .mmic-posting-page .mmic-posting-panel-card th.thHead{
+    background: linear-gradient(
+        180deg,
+        #173149 0%,
+        #102438 100%
+    ) !important;
+}
+
+html body .mmic-posting-page .mmic-posting-panel-card tr.thHead td{
+    background: transparent !important;
+}
+
+html body .mmic-posting-page .mmic-posting-panel-card tr.thHead .gen,
+html body .mmic-posting-page .mmic-posting-panel-card tr.thHead b{
+    color:#d8b08c !important;
+
+    font-size:8px !important;
+    letter-spacing:.18em !important;
+    text-transform:uppercase !important;
+}
