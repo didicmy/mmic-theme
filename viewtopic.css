@@ -5633,3 +5633,120 @@ html body .mmic-vt-post
   font-size: 6px !important;
   letter-spacing: 0.4px !important;
 }
+/* =========================================================
+   VIEWTOPIC — FINITIONS DU HEADER + BOUTON SÉLECTIONNER
+   À LAISSER TOUT EN BAS DU FICHIER
+   ========================================================= */
+
+
+/* =========================================================
+   1. FINITIONS DE LA DATE ET DES ACTIONS
+   ========================================================= */
+
+html body .mmic-vt-post
+.mmic-vt-post-header
+.mmic-vt-post-date {
+  align-self: center !important;
+}
+
+html body .mmic-vt-post
+.mmic-vt-post-header
+.mmic-vt-post-actions {
+  align-self: center !important;
+
+  gap: 3px !important;
+  margin-left: 8px !important;
+}
+
+
+/* =========================================================
+   2. BOUTON SÉLECTIONNER DU BLOC CODE
+   ========================================================= */
+
+/* L’en-tête doit pouvoir accueillir le bouton */
+html body .mmic-vt-message-text
+.codebox > dt {
+  display: flex !important;
+  align-items: center !important;
+
+  text-indent: 0 !important;
+}
+
+
+/* Bouton ajouté par le script */
+html body .mmic-vt-message-text
+.codebox > dt
+.mmic-code-select {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 5px !important;
+
+  margin-left: auto !important;
+  padding: 5px 8px !important;
+
+  border: 1px solid rgba(216, 176, 140, 0.42) !important;
+  border-radius: 5px !important;
+
+  background: rgba(255, 255, 255, 0.045) !important;
+  color: #f0ddca !important;
+
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 7px !important;
+  font-weight: 700 !important;
+  line-height: 1 !important;
+  letter-spacing: 0.12em !important;
+  text-transform: uppercase !important;
+
+  box-shadow: none !important;
+
+  cursor: pointer !important;
+  transition:
+    color 0.18s ease,
+    background 0.18s ease,
+    border-color 0.18s ease,
+    transform 0.18s ease !important;
+}
+
+html body .mmic-vt-message-text
+.codebox > dt
+.mmic-code-select::before {
+  content: "content_copy" !important;
+
+  font-family: "Material Symbols Outlined" !important;
+  font-size: 11px !important;
+  font-weight: normal !important;
+  line-height: 1 !important;
+  letter-spacing: normal !important;
+  text-transform: none !important;
+
+  font-variation-settings:
+    "FILL" 0,
+    "wght" 500,
+    "GRAD" 0,
+    "opsz" 20 !important;
+}
+
+html body .mmic-vt-message-text
+.codebox > dt
+.mmic-code-select:hover {
+  transform: translateY(-1px) !important;
+
+  border-color: #d8b08c !important;
+  background: #d8b08c !important;
+  color: #102438 !important;
+}
+
+html body .mmic-vt-message-text
+.codebox > dt
+.mmic-code-select.is-copied {
+  border-color: #d8b08c !important;
+  background: #d8b08c !important;
+  color: #102438 !important;
+}
+
+html body .mmic-vt-message-text
+.codebox > dt
+.mmic-code-select.is-copied::before {
+  content: "check" !important;
+}
