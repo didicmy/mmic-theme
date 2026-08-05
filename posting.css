@@ -835,3 +835,35 @@ html body .mmic-posting-subject-row select[name="topic_color"] {
   }
 
 }
+/* =========================================================
+   SMILEYS — VERSION PLUS COMPACTE
+   ========================================================= */
+
+html body .mmic-posting-smileys {
+  max-height: 315px !important;
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+
+  scrollbar-width: thin !important;
+  scrollbar-color:
+    rgba(216, 176, 140, 0.65)
+    rgba(16, 36, 56, 0.04) !important;
+}
+
+html body .mmic-posting-smileys::-webkit-scrollbar {
+  width: 6px !important;
+}
+
+html body .mmic-posting-smileys::-webkit-scrollbar-track {
+  background: rgba(16, 36, 56, 0.04) !important;
+  border-radius: 999px !important;
+}
+
+html body .mmic-posting-smileys::-webkit-scrollbar-thumb {
+  background: rgba(216, 176, 140, 0.62) !important;
+  border-radius: 999px !important;
+}
+
+html body .mmic-posting-smileys::-webkit-scrollbar-thumb:hover {
+  background: #d8b08c !important;
+}
