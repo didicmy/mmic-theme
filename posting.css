@@ -1,299 +1,140 @@
 /* =========================================================
    POSTING BODY — MEET ME IN CHICAGO
+   VERSION NETTOYÉE ET CONSOLIDÉE
+   Les règles répétées ont été fusionnées en conservant
+   la valeur réellement prioritaire dans la cascade.
    ========================================================= */
 
 html body .mmic-posting-page {
   width: calc(100% - 24px);
   max-width: 1100px;
   margin: 18px auto 30px;
-
   color: #4e4945;
-
   box-sizing: border-box;
 }
 
-
-/* =========================================================
-   PRÉVISUALISATION ET ERREURS
-   ========================================================= */
-
-html body .mmic-posting-feedback:empty,
-html body .mmic-posting-preview:empty,
-html body .mmic-posting-errors:empty {
+html body .mmic-posting-feedback:empty, html body .mmic-posting-preview:empty, html body .mmic-posting-errors:empty {
   display: none !important;
 }
 
-html body .mmic-posting-preview,
-html body .mmic-posting-errors {
+html body .mmic-posting-preview, html body .mmic-posting-errors {
   margin-bottom: 14px;
 }
 
-
-/* On prépare déjà la neutralisation du vieux bleu phpBB */
-
 html body .mmic-posting-feedback .forumline {
   width: 100% !important;
-
   overflow: hidden !important;
-
   border: 1px solid rgba(216, 176, 140, 0.4) !important;
   border-radius: 9px !important;
-
   background: #fbf8f3 !important;
-
   box-shadow: 0 4px 12px rgba(16, 36, 56, 0.05) !important;
 }
 
-html body .mmic-posting-feedback th,
-html body .mmic-posting-feedback .thHead,
-html body .mmic-posting-feedback .catHead,
-html body .mmic-posting-feedback .catBottom {
+html body .mmic-posting-feedback th, html body .mmic-posting-feedback .thHead, html body .mmic-posting-feedback .catHead, html body .mmic-posting-feedback .catBottom {
   padding: 10px 14px !important;
-
   border: 0 !important;
   border-bottom: 1px solid rgba(216, 176, 140, 0.3) !important;
-
   background: #102438 !important;
   color: #d8b08c !important;
-
   font-size: 8px !important;
   font-weight: 700 !important;
   letter-spacing: 0.16em !important;
   text-transform: uppercase !important;
 }
-
-
-
-/* =========================================================
-   POSTING BODY — MEET ME IN CHICAGO
-   ========================================================= */
-
-html body .mmic-posting-page {
-  width: calc(100% - 24px);
-  max-width: 1100px;
-  margin: 18px auto 30px;
-
-  color: #4e4945;
-
-  box-sizing: border-box;
-}
-
-
-/* =========================================================
-   PRÉVISUALISATION ET ERREURS
-   ========================================================= */
-
-html body .mmic-posting-feedback:empty,
-html body .mmic-posting-preview:empty,
-html body .mmic-posting-errors:empty {
-  display: none !important;
-}
-
-html body .mmic-posting-preview,
-html body .mmic-posting-errors {
-  margin-bottom: 14px;
-}
-
-
-/* On prépare déjà la neutralisation du vieux bleu phpBB */
-
-html body .mmic-posting-feedback .forumline {
-  width: 100% !important;
-
-  overflow: hidden !important;
-
-  border: 1px solid rgba(216, 176, 140, 0.4) !important;
-  border-radius: 9px !important;
-
-  background: #fbf8f3 !important;
-
-  box-shadow: 0 4px 12px rgba(16, 36, 56, 0.05) !important;
-}
-
-html body .mmic-posting-feedback th,
-html body .mmic-posting-feedback .thHead,
-html body .mmic-posting-feedback .catHead,
-html body .mmic-posting-feedback .catBottom {
-  padding: 10px 14px !important;
-
-  border: 0 !important;
-  border-bottom: 1px solid rgba(216, 176, 140, 0.3) !important;
-
-  background: #102438 !important;
-  color: #d8b08c !important;
-
-  font-size: 8px !important;
-  font-weight: 700 !important;
-  letter-spacing: 0.16em !important;
-  text-transform: uppercase !important;
-}
-
-
-/* =========================================================
-   FIL D’ARIANE — STRUCTURE RÉELLE FORUMACTIF
-   ========================================================= */
 
 html body nav.mmic-posting-navigation {
   display: flex !important;
   align-items: center !important;
   flex-wrap: wrap !important;
   gap: 0 !important;
-
   margin: 0 0 14px !important;
   padding: 10px 14px !important;
-
   border: 1px solid rgba(216, 176, 140, 0.35) !important;
   border-radius: 7px !important;
-
   background: #fbf8f4 !important;
-
-  /*
-   * Cache les anciens "::" qui sont de simples textes
-   * directement placés dans la navigation.
-   */
   color: transparent !important;
   font-size: 0 !important;
   line-height: 1.5 !important;
-
   box-sizing: border-box !important;
 }
-
-
-/* Chaque étape est injectée par Forumactif dans un H1 */
 
 html body nav.mmic-posting-navigation > h1 {
   display: inline-flex !important;
   align-items: center !important;
-
   width: auto !important;
   max-width: none !important;
-
   margin: 0 !important;
   padding: 0 !important;
-
   color: #102438 !important;
-
   font-family: Verdana, Arial, Helvetica, sans-serif !important;
   font-size: 9px !important;
   font-weight: 700 !important;
   line-height: 1.5 !important;
   letter-spacing: 0 !important;
   text-transform: none !important;
-
   white-space: nowrap !important;
 }
 
-
-/* Liens contenus dans les H1 */
-
-html body nav.mmic-posting-navigation > h1 a,
-html body nav.mmic-posting-navigation > h1 a.nav {
+html body nav.mmic-posting-navigation > h1 a, html body nav.mmic-posting-navigation > h1 a.nav {
   display: inline !important;
-
   color: #102438 !important;
-
   font-size: inherit !important;
   font-weight: inherit !important;
-
   text-decoration: none !important;
 }
 
-
-/* Nouveau séparateur avant chaque étape sauf la première */
-
 html body nav.mmic-posting-navigation > h1:not(:first-of-type)::before {
   content: "›" !important;
-
   display: inline-block !important;
-
   margin: 0 9px !important;
-
   color: #d8b08c !important;
-
   font-size: 11px !important;
   font-weight: 700 !important;
   line-height: 1 !important;
 }
 
-
-/* Survol */
-
 html body nav.mmic-posting-navigation > h1 a:hover {
   color: #b97a56 !important;
 }
-/* =========================================================
-   FORMULAIRE PRINCIPAL DE PUBLICATION
-   ========================================================= */
 
 html body .mmic-posting-editor-card {
   width: 100% !important;
   margin: 0 !important;
-
   overflow: hidden !important;
-
   border: 1px solid rgba(216, 176, 140, 0.42) !important;
   border-radius: 10px !important;
-
   background: #fbf8f3 !important;
-
-  box-shadow:
-    0 6px 18px rgba(16, 36, 56, 0.055),
-    inset 0 1px 0 rgba(255, 255, 255, 0.7) !important;
-
+  box-shadow: 0 6px 18px rgba(16, 36, 56, 0.055), inset 0 1px 0 rgba(255, 255, 255, 0.7) !important;
   border-spacing: 0 !important;
 }
-
-
-/* =========================================================
-   TITRE DU FORMULAIRE
-   ========================================================= */
 
 html body .mmic-posting-editor-title {
   height: auto !important;
   padding: 13px 16px !important;
-
   border: 0 !important;
   border-bottom: 1px solid rgba(216, 176, 140, 0.28) !important;
-
-  background:
-    linear-gradient(
-      180deg,
-      #173149 0%,
-      #102438 100%
-    ) !important;
-
+  background: linear-gradient( 180deg, #173149 0%, #102438 100% ) !important;
   color: #d8b08c !important;
-
   text-align: center !important;
 }
 
 html body .mmic-posting-editor-title span {
   color: #d8b08c !important;
-
   font-size: 9px !important;
   font-weight: 700 !important;
   letter-spacing: 0.2em !important;
   text-transform: uppercase !important;
 }
 
-
-/* =========================================================
-   LIGNES ET CELLULES NATIVES
-   ========================================================= */
-
 html body .mmic-posting-editor-card > tbody > tr > td {
   border: 0 !important;
-
   background: transparent !important;
-
   box-sizing: border-box !important;
 }
 
 html body .mmic-posting-editor-card .row1 {
   padding: 10px 12px !important;
-
   color: #102438 !important;
-
   font-size: 8px !important;
   font-weight: 700 !important;
   letter-spacing: 0.04em !important;
@@ -301,209 +142,65 @@ html body .mmic-posting-editor-card .row1 {
 
 html body .mmic-posting-editor-card .row2 {
   padding: 10px 13px !important;
-
   background: rgba(255, 255, 255, 0.32) !important;
 }
 
-
-/* Lignes séparées */
-
-html body .mmic-posting-subject-row > td,
-html body .mmic-posting-description-row > td {
+html body .mmic-posting-subject-row > td, html body .mmic-posting-description-row > td {
   border-bottom: 1px solid rgba(216, 176, 140, 0.2) !important;
 }
-
-
-/* =========================================================
-   CHAMPS TITRE ET DESCRIPTION
-   ========================================================= */
 
 html body .mmic-posting-editor-card input.post[type="text"] {
   width: 100% !important;
   max-width: none !important;
   min-height: 34px !important;
-
   margin: 0 !important;
   padding: 0 11px !important;
-
   border: 1px solid #d8cbbf !important;
   border-radius: 6px !important;
-
   background: #fffdf9 !important;
   color: #4e4945 !important;
-
   font-size: 11px !important;
-
-  box-shadow:
-    inset 0 1px 2px rgba(16, 36, 56, 0.035) !important;
-
+  box-shadow: inset 0 1px 2px rgba(16, 36, 56, 0.035) !important;
   box-sizing: border-box !important;
   outline: none !important;
 }
 
 html body .mmic-posting-editor-card input.post[type="text"]:focus {
   border-color: #d8b08c !important;
-
-  box-shadow:
-    0 0 0 3px rgba(216, 176, 140, 0.13),
-    inset 0 1px 2px rgba(16, 36, 56, 0.03) !important;
+  box-shadow: 0 0 0 3px rgba(216, 176, 140, 0.13), inset 0 1px 2px rgba(16, 36, 56, 0.03) !important;
 }
-
-
-/* Sélecteur de couleur du titre */
 
 html body .mmic-posting-subject-row select {
   min-height: 34px !important;
   margin-left: 7px !important;
   padding: 0 8px !important;
-
   border: 1px solid #d8cbbf !important;
   border-radius: 6px !important;
-
   background: #fffdf9 !important;
   color: #625951 !important;
-
   font-size: 9px !important;
 }
-
-
-/* =========================================================
-   ZONE ÉDITEUR + SMILEYS
-   ========================================================= */
 
 html body .mmic-posting-editor-row > td {
   vertical-align: top !important;
 }
 
-html body .mmic-posting-editor-row > td:first-child {
-  width: 190px !important;
-  padding: 14px !important;
-
-  border-right: 1px solid rgba(216, 176, 140, 0.24) !important;
-
-  background:
-    linear-gradient(
-      180deg,
-      #f7f1e9 0%,
-      #f3ece4 100%
-    ) !important;
-}
-
-html body .mmic-posting-editor-row > td:last-child {
-  width: auto !important;
-  padding: 14px !important;
-
-  background: #fbf8f3 !important;
-}
-
-
-/* =========================================================
-   SMILEYS
-   ========================================================= */
-
-html body .mmic-posting-smileys {
-  margin-top: 10px !important;
-  padding: 9px !important;
-
-  border: 1px solid rgba(216, 176, 140, 0.32) !important;
-  border-radius: 7px !important;
-
-  background: rgba(255, 255, 255, 0.56) !important;
-
-  box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.65) !important;
-}
-
-html body .mmic-posting-smileys select {
-  width: 100% !important;
-  min-height: 27px !important;
-  margin-bottom: 7px !important;
-
-  border: 1px solid #d8cbbf !important;
-  border-radius: 5px !important;
-
-  background: #fffdf9 !important;
-
-  font-size: 8px !important;
-}
-
-
-/* On masque le doublon de smileys */
-
 html body .mmic-posting-secondary-smileys {
   display: none !important;
 }
 
-
-/* =========================================================
-   SCEDITOR
-   ========================================================= */
-
-html body .mmic-posting-editor-row .sceditor-container {
-  width: 100% !important;
-  max-width: 100% !important;
-
-  border: 1px solid rgba(216, 176, 140, 0.42) !important;
-  border-radius: 7px !important;
-
-  background: #fffdf9 !important;
-
-  box-shadow:
-    0 3px 10px rgba(16, 36, 56, 0.045) !important;
-
-  overflow: hidden !important;
-}
-
-html body .mmic-posting-editor-row .sceditor-toolbar {
-  padding: 7px 8px !important;
-
-  border: 0 !important;
-  border-bottom: 1px solid rgba(216, 176, 140, 0.28) !important;
-
-  background:
-    linear-gradient(
-      180deg,
-      #fbf8f4 0%,
-      #f2ece6 100%
-    ) !important;
-}
-
-html body .mmic-posting-editor-row .sceditor-container iframe,
-html body .mmic-posting-editor-row .sceditor-container textarea,
-html body .mmic-posting-editor-row #text_editor_textarea {
-  width: 100% !important;
-  min-height: 290px !important;
-
-  border: 0 !important;
-
-  background: #fffdf9 !important;
-  color: #4e4945 !important;
-
-  box-shadow: none !important;
-  outline: none !important;
-}
-
-
-/* =========================================================
-   BOUTONS DU FORMULAIRE
-   ========================================================= */
-
 html body .mmic-posting-submit-card {
   width: 100% !important;
   margin: 12px 0 0 !important;
-
   border: 0 !important;
   border-spacing: 0 !important;
-
   background: transparent !important;
 }
 
 html body .mmic-posting-submit-card .catBottom {
   padding: 12px !important;
-
   border: 1px solid rgba(216, 176, 140, 0.35) !important;
   border-radius: 8px !important;
-
   background: #f7f1e9 !important;
 }
 
@@ -511,55 +208,28 @@ html body .mmic-posting-submit-card input[type="submit"] {
   min-height: 31px !important;
   padding: 0 14px !important;
   margin: 3px !important;
-
   border: 1px solid rgba(216, 176, 140, 0.72) !important;
   border-radius: 6px !important;
-
-  background:
-    linear-gradient(
-      180deg,
-      #173149 0%,
-      #102438 100%
-    ) !important;
-
+  background: linear-gradient( 180deg, #173149 0%, #102438 100% ) !important;
   color: #fffaf5 !important;
-
   font-size: 8px !important;
   font-weight: 700 !important;
   letter-spacing: 0.09em !important;
   text-transform: uppercase !important;
-
-  box-shadow:
-    0 3px 7px rgba(16, 36, 56, 0.13),
-    inset 0 1px 0 rgba(255, 255, 255, 0.08) !important;
-
+  box-shadow: 0 3px 7px rgba(16, 36, 56, 0.13), inset 0 1px 0 rgba(255, 255, 255, 0.08) !important;
   cursor: pointer !important;
   transition: 0.2s ease !important;
 }
 
 html body .mmic-posting-submit-card input[type="submit"]:hover {
   transform: translateY(-1px) !important;
-
   border-color: #d8b08c !important;
-
-  background:
-    linear-gradient(
-      180deg,
-      #1d3b56 0%,
-      #142d43 100%
-    ) !important;
+  background: linear-gradient( 180deg, #1d3b56 0%, #142d43 100% ) !important;
 }
 
-
-/* =========================================================
-   RESPONSIVE
-   ========================================================= */
-
 @media (max-width: 700px) {
-  html body .mmic-posting-editor-row,
-  html body .mmic-posting-editor-row > td {
+  html body .mmic-posting-editor-row, html body .mmic-posting-editor-row > td {
     display: block !important;
-
     width: 100% !important;
   }
 
@@ -573,220 +243,81 @@ html body .mmic-posting-submit-card input[type="submit"]:hover {
     overflow-y: auto !important;
   }
 }
-/* =========================================================
-   POSTING — FINITIONS ÉDITEUR ET SMILEYS
-   ========================================================= */
-
-
-/* =========================================================
-   COLONNE DES SMILEYS
-   ========================================================= */
 
 html body .mmic-posting-editor-row > td:first-child {
+  width: 190px !important;
+  border-right: 1px solid rgba(216, 176, 140, 0.24) !important;
   position: relative !important;
-
   padding: 18px 16px 16px !important;
-
-  background:
-    linear-gradient(
-      180deg,
-      #f8f2eb 0%,
-      #f3ece4 100%
-    ) !important;
+  background: linear-gradient( 180deg, #f8f2eb 0%, #f3ece4 100% ) !important;
 }
-
-
-/* Petit titre décoratif */
 
 html body .mmic-posting-smileys::before {
   content: "SMILEYS" !important;
-
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
-
   margin: 0 0 10px !important;
-
   color: #b97a56 !important;
-
   font-size: 7px !important;
   font-weight: 700 !important;
   letter-spacing: 0.22em !important;
   text-transform: uppercase !important;
 }
 
-
-/* Cadre intérieur */
-
-html body .mmic-posting-smileys {
-  position: relative !important;
-
-  margin: 8px 0 0 !important;
-  padding: 12px 10px 14px !important;
-
-  border: 1px solid rgba(216, 176, 140, 0.34) !important;
-  border-radius: 8px !important;
-
-  background:
-    linear-gradient(
-      180deg,
-      rgba(255, 255, 255, 0.7) 0%,
-      rgba(255, 253, 249, 0.94) 100%
-    ) !important;
-
-  box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.8),
-    0 3px 8px rgba(16, 36, 56, 0.035) !important;
-}
-
-
-/* Sélecteur des smileys */
-
 html body .mmic-posting-smileys select {
+  margin-bottom: 7px !important;
   width: 100% !important;
   min-height: 29px !important;
-
   margin: 0 0 10px !important;
   padding: 0 8px !important;
-
   border: 1px solid #d8cbbf !important;
   border-radius: 5px !important;
-
   background: #fffdf9 !important;
   color: #625951 !important;
-
   font-size: 8px !important;
-
   outline: none !important;
 }
 
-
-/* Images */
-
 html body .mmic-posting-smileys img {
   margin: 2px !important;
-
   vertical-align: middle !important;
-
-  transition:
-    transform 0.16s ease,
-    filter 0.16s ease !important;
+  transition: transform 0.16s ease, filter 0.16s ease !important;
 }
 
 html body .mmic-posting-smileys img:hover {
   transform: scale(1.14) !important;
-
-  filter:
-    drop-shadow(0 2px 3px rgba(16, 36, 56, 0.15)) !important;
+  filter: drop-shadow(0 2px 3px rgba(16, 36, 56, 0.15)) !important;
 }
-
-
-/* =========================================================
-   PARTIE ÉDITEUR
-   ========================================================= */
-
-html body .mmic-posting-editor-row > td:last-child {
-  padding: 18px 14px !important;
-
-  background:
-    linear-gradient(
-      180deg,
-      #fbf8f3 0%,
-      #f9f4ee 100%
-    ) !important;
-}
-
-
-/* Conteneur SCEditor */
-
-html body .mmic-posting-editor-row .sceditor-container {
-  border: 1px solid rgba(216, 176, 140, 0.42) !important;
-  border-radius: 8px !important;
-
-  background: #fffdf9 !important;
-
-  box-shadow:
-    0 4px 12px rgba(16, 36, 56, 0.05),
-    inset 0 1px 0 rgba(255, 255, 255, 0.85) !important;
-}
-
-
-/* Barre d’outils */
 
 html body .mmic-posting-editor-row .sceditor-toolbar {
+  border: 0 !important;
   display: flex !important;
   align-items: center !important;
   flex-wrap: wrap !important;
-
   padding: 8px 9px !important;
-
   border-bottom: 1px solid rgba(216, 176, 140, 0.3) !important;
-
-  background:
-    linear-gradient(
-      180deg,
-      #faf7f3 0%,
-      #f2ece6 100%
-    ) !important;
+  background: linear-gradient( 180deg, #faf7f3 0%, #f2ece6 100% ) !important;
 }
-
-
-/* Groupes de boutons */
 
 html body .mmic-posting-editor-row .sceditor-group {
   margin: 2px 4px 2px 0 !important;
   padding: 2px !important;
-
   border: 1px solid rgba(16, 36, 56, 0.08) !important;
   border-radius: 5px !important;
-
   background: rgba(255, 255, 255, 0.62) !important;
-
-  box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.75) !important;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.75) !important;
 }
-
-
-/* Boutons individuels */
 
 html body .mmic-posting-editor-row .sceditor-button {
   border-radius: 4px !important;
-
-  transition:
-    background-color 0.16s ease,
-    transform 0.16s ease !important;
+  transition: background-color 0.16s ease, transform 0.16s ease !important;
 }
 
 html body .mmic-posting-editor-row .sceditor-button:hover {
   background: rgba(216, 176, 140, 0.16) !important;
-
   transform: translateY(-1px) !important;
 }
-
-
-/* Zone d’écriture */
-
-html body .mmic-posting-editor-row .sceditor-container iframe,
-html body .mmic-posting-editor-row .sceditor-container textarea,
-html body .mmic-posting-editor-row #text_editor_textarea {
-  min-height: 300px !important;
-
-  padding: 18px !important;
-
-  background: #fffdf9 !important;
-  color: #4e4945 !important;
-
-  font-family: Arial, Helvetica, sans-serif !important;
-  font-size: 12px !important;
-  line-height: 1.7 !important;
-
-  box-sizing: border-box !important;
-}
-
-
-/* =========================================================
-   CHAMP DU TITRE + COULEUR
-   ========================================================= */
 
 html body .mmic-posting-subject-row .row2 > span.gen {
   display: grid !important;
@@ -795,37 +326,24 @@ html body .mmic-posting-subject-row .row2 > span.gen {
   gap: 9px !important;
 }
 
-
 html body .mmic-posting-subject-row input[name="subject"] {
   width: 100% !important;
 }
 
-
 html body .mmic-posting-subject-row select[name="topic_color"] {
   width: 95px !important;
   min-height: 34px !important;
-
   margin: 0 !important;
   padding: 0 8px !important;
-
   border: 1px solid #d8cbbf !important;
   border-radius: 6px !important;
-
   background: #fffdf9 !important;
   color: #625951 !important;
-
   font-size: 8px !important;
-
   box-sizing: border-box !important;
 }
 
-
-/* =========================================================
-   MOBILE
-   ========================================================= */
-
 @media (max-width: 700px) {
-
   html body .mmic-posting-subject-row .row2 > span.gen {
     grid-template-columns: 1fr !important;
   }
@@ -833,21 +351,6 @@ html body .mmic-posting-subject-row select[name="topic_color"] {
   html body .mmic-posting-subject-row select[name="topic_color"] {
     width: 100% !important;
   }
-
-}
-/* =========================================================
-   SMILEYS — VERSION PLUS COMPACTE
-   ========================================================= */
-
-html body .mmic-posting-smileys {
-  max-height: 315px !important;
-  overflow-y: auto !important;
-  overflow-x: hidden !important;
-
-  scrollbar-width: thin !important;
-  scrollbar-color:
-    rgba(216, 176, 140, 0.65)
-    rgba(16, 36, 56, 0.04) !important;
 }
 
 html body .mmic-posting-smileys::-webkit-scrollbar {
@@ -867,9 +370,6 @@ html body .mmic-posting-smileys::-webkit-scrollbar-thumb {
 html body .mmic-posting-smileys::-webkit-scrollbar-thumb:hover {
   background: #d8b08c !important;
 }
-/* =========================================================
-   PANNEAUX INFÉRIEURS DU FORMULAIRE
-   ========================================================= */
 
 html body .mmic-posting-panel {
   width: 100% !important;
@@ -878,37 +378,19 @@ html body .mmic-posting-panel {
 
 html body .mmic-posting-panel-card {
   width: 100% !important;
-
   overflow: hidden !important;
-
   border: 1px solid rgba(216, 176, 140, 0.38) !important;
   border-radius: 8px !important;
-
   background: #fbf8f3 !important;
-
   border-spacing: 0 !important;
-
-  box-shadow:
-    0 4px 11px rgba(16, 36, 56, 0.045),
-    inset 0 1px 0 rgba(255, 255, 255, 0.72) !important;
+  box-shadow: 0 4px 11px rgba(16, 36, 56, 0.045), inset 0 1px 0 rgba(255, 255, 255, 0.72) !important;
 }
 
-
-/* En-tête des panneaux */
-
-html body .mmic-posting-panel-card > tbody > tr > th,
-html body .mmic-posting-panel-card .thHead {
+html body .mmic-posting-panel-card > tbody > tr > th, html body .mmic-posting-panel-card .thHead {
   height: auto !important;
   padding: 0 !important;
-
   border: 0 !important;
-
-  background:
-    linear-gradient(
-      180deg,
-      #173149 0%,
-      #102438 100%
-    ) !important;
+  background: linear-gradient( 180deg, #173149 0%, #102438 100% ) !important;
 }
 
 html body .mmic-posting-panel-card .thHead > table {
@@ -919,46 +401,32 @@ html body .mmic-posting-panel-card .thHead > table {
 html body .mmic-posting-panel-card .thHead td {
   height: 38px !important;
   padding: 0 12px !important;
-
   border: 0 !important;
   background: transparent !important;
 }
 
-html body .mmic-posting-panel-card .thHead .gen,
-html body .mmic-posting-panel-card .thHead b {
+html body .mmic-posting-panel-card .thHead .gen, html body .mmic-posting-panel-card .thHead b {
   color: #d8b08c !important;
-
   font-size: 8px !important;
   font-weight: 700 !important;
   letter-spacing: 0.18em !important;
   text-transform: uppercase !important;
 }
 
-
-/* Icône ouvrir ou fermer */
-
 html body .mmic-posting-panel-card .thHead a {
   display: inline-flex !important;
   align-items: center !important;
   justify-content: center !important;
-
   width: 22px !important;
   height: 22px !important;
-
   border: 1px solid rgba(216, 176, 140, 0.48) !important;
   border-radius: 5px !important;
-
   background: rgba(255, 255, 255, 0.045) !important;
-
-  transition:
-    background 0.18s ease,
-    border-color 0.18s ease,
-    transform 0.18s ease !important;
+  transition: background 0.18s ease, border-color 0.18s ease, transform 0.18s ease !important;
 }
 
 html body .mmic-posting-panel-card .thHead a:hover {
   transform: translateY(-1px) !important;
-
   border-color: #d8b08c !important;
   background: rgba(216, 176, 140, 0.14) !important;
 }
@@ -968,26 +436,18 @@ html body .mmic-posting-panel-card .thHead a img {
   max-height: 12px !important;
 }
 
-
-/* Corps du panneau ouvert */
-
-html body .mmic-posting-options-show .row1,
-html body .mmic-posting-options-show .row2 {
+html body .mmic-posting-options-show .row1, html body .mmic-posting-options-show .row2 {
   padding: 13px 15px !important;
-
   border: 0 !important;
   border-bottom: 1px solid rgba(216, 176, 140, 0.18) !important;
-
   background: transparent !important;
   color: #5f554e !important;
-
   font-size: 9px !important;
   line-height: 1.6 !important;
 }
 
 html body .mmic-posting-options-show .row1 {
   width: 28% !important;
-
   background: rgba(247, 241, 233, 0.62) !important;
 }
 
@@ -995,56 +455,34 @@ html body .mmic-posting-options-show .row2 {
   background: #fffdf9 !important;
 }
 
-
-/* Cases à cocher */
-
-html body .mmic-posting-options-show input[type="checkbox"],
-html body .mmic-posting-options-show input[type="radio"] {
+html body .mmic-posting-options-show input[type="checkbox"], html body .mmic-posting-options-show input[type="radio"] {
   accent-color: #b97a56 !important;
-
   margin-right: 7px !important;
-
   vertical-align: middle !important;
 }
 
-html body .mmic-posting-options-show label,
-html body .mmic-posting-options-show .gen,
-html body .mmic-posting-options-show .gensmall {
+html body .mmic-posting-options-show label, html body .mmic-posting-options-show .gen, html body .mmic-posting-options-show .gensmall {
   color: #5f554e !important;
-
   font-size: 9px !important;
 }
 
-
-/* Champs éventuels */
-
-html body .mmic-posting-options-show input[type="text"],
-html body .mmic-posting-options-show select {
+html body .mmic-posting-options-show input[type="text"], html body .mmic-posting-options-show select {
   min-height: 31px !important;
   padding: 0 9px !important;
-
   border: 1px solid #d8cbbf !important;
   border-radius: 5px !important;
-
   background: #fffdf9 !important;
   color: #4e4945 !important;
-
   box-sizing: border-box !important;
 }
-/* =========================================================
-   OUTILS ET REVUE DU SUJET
-   ========================================================= */
 
 html body .mmic-posting-footer-tools {
   width: 100% !important;
   margin: 14px 0 !important;
   padding: 10px 12px !important;
-
   border: 1px solid rgba(216, 176, 140, 0.35) !important;
   border-radius: 8px !important;
-
   background: #f7f1e9 !important;
-
   box-sizing: border-box !important;
 }
 
@@ -1056,18 +494,12 @@ html body .mmic-posting-jumpbox {
 
 html body .mmic-posting-jumpbox select {
   min-height: 29px !important;
-
   border: 1px solid #d8cbbf !important;
   border-radius: 5px !important;
-
   background: #fffdf9 !important;
   color: #625951 !important;
-
   font-size: 8px !important;
 }
-
-
-/* Revue du sujet */
 
 html body .mmic-posting-topic-review {
   width: 100% !important;
@@ -1076,31 +508,33 @@ html body .mmic-posting-topic-review {
 
 html body .mmic-posting-topic-review .forumline {
   width: 100% !important;
-
   overflow: hidden !important;
-
   border: 1px solid rgba(216, 176, 140, 0.38) !important;
   border-radius: 9px !important;
-
   background: #fbf8f3 !important;
-
   border-spacing: 0 !important;
-
-  box-shadow:
-    0 5px 14px rgba(16, 36, 56, 0.045) !important;
+  box-shadow: 0 5px 14px rgba(16, 36, 56, 0.045) !important;
 }
 
-html body .mmic-posting-topic-review th,
-html body .mmic-posting-topic-review .thHead,
-html body .mmic-posting-topic-review .catHead {
+html body .mmic-posting-topic-review th, html body .mmic-posting-topic-review .thHead, html body .mmic-posting-topic-review .catHead {
   padding: 10px 13px !important;
-
   border: 0 !important;
-
   background: #102438 !important;
   color: #d8b08c !important;
-
   font-size: 8px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.16em !important;
+  text-transform: uppercase !important;
+}
+
+html body .mmic-posting-topic-review .catHead, html body .mmic-posting-topic-review .catHead *, html body .mmic-posting-topic-review .thHead, html body .mmic-posting-topic-review .thHead * {
+  color: #d8b08c !important;
+  text-decoration: none !important;
+}
+
+html body .mmic-posting-topic-review th, html body .mmic-posting-topic-review th *, html body .mmic-posting-topic-review .thCornerL, html body .mmic-posting-topic-review .thCornerR {
+  color: #d8b08c !important;
+  font-size: 7px !important;
   font-weight: 700 !important;
   letter-spacing: 0.16em !important;
   text-transform: uppercase !important;
@@ -1108,924 +542,422 @@ html body .mmic-posting-topic-review .catHead {
 
 html body .mmic-posting-topic-review td {
   padding: 11px 13px !important;
-
   border: 0 !important;
   border-bottom: 1px solid rgba(216, 176, 140, 0.18) !important;
-
   background: #fffdf9 !important;
-}
-/* =========================================================
-   REVUE DU SUJET — FINITIONS VISUELLES
-   ========================================================= */
-
-/* Titre principal */
-
-html body .mmic-posting-topic-review .catHead,
-html body .mmic-posting-topic-review .catHead *,
-html body .mmic-posting-topic-review .thHead,
-html body .mmic-posting-topic-review .thHead * {
-  color: #d8b08c !important;
-  text-decoration: none !important;
-}
-
-
-/* Titres Auteur / Message */
-
-html body .mmic-posting-topic-review th,
-html body .mmic-posting-topic-review th *,
-html body .mmic-posting-topic-review .thCornerL,
-html body .mmic-posting-topic-review .thCornerR {
-  color: #d8b08c !important;
-
-  font-size: 7px !important;
-  font-weight: 700 !important;
-  letter-spacing: 0.16em !important;
-  text-transform: uppercase !important;
-}
-
-
-/* Colonnes */
-
-html body .mmic-posting-topic-review td {
   vertical-align: top !important;
 }
 
 html body .mmic-posting-topic-review td:first-child {
   width: 145px !important;
-
-  background:
-    linear-gradient(
-      180deg,
-      #f7f1e9 0%,
-      #f3ece5 100%
-    ) !important;
+  background: linear-gradient( 180deg, #f7f1e9 0%, #f3ece5 100% ) !important;
 }
 
 html body .mmic-posting-topic-review td:last-child {
   background: #fffdf9 !important;
 }
 
-
-/* Pseudos */
-
-html body .mmic-posting-topic-review td:first-child a,
-html body .mmic-posting-topic-review td:first-child strong,
-html body .mmic-posting-topic-review .name,
-html body .mmic-posting-topic-review .name * {
+html body .mmic-posting-topic-review td:first-child a, html body .mmic-posting-topic-review td:first-child strong, html body .mmic-posting-topic-review .name, html body .mmic-posting-topic-review .name * {
   color: #b97a56 !important;
-
   font-family: Georgia, "Times New Roman", serif !important;
   font-size: 13px !important;
   font-weight: 700 !important;
   text-decoration: none !important;
 }
 
-
-/* Date et sujet */
-
-html body .mmic-posting-topic-review .postdetails,
-html body .mmic-posting-topic-review .gensmall,
-html body .mmic-posting-topic-review .genmed {
+html body .mmic-posting-topic-review .postdetails, html body .mmic-posting-topic-review .gensmall, html body .mmic-posting-topic-review .genmed {
   color: #746960 !important;
-
   font-size: 8px !important;
   line-height: 1.6 !important;
 }
 
-
-/* Texte du message */
-
 html body .mmic-posting-topic-review .postbody {
   color: #453d37 !important;
-
   font-family: Arial, Helvetica, sans-serif !important;
   font-size: 11px !important;
   line-height: 1.75 !important;
 }
 
-
-/* Suppression des vieilles lignes grises trop fortes */
-
 html body .mmic-posting-topic-review hr {
   height: 1px !important;
-
   margin: 10px 0 !important;
-
   border: 0 !important;
-
-  background:
-    linear-gradient(
-      90deg,
-      transparent,
-      rgba(216, 176, 140, 0.45),
-      transparent
-    ) !important;
+  background: linear-gradient( 90deg, transparent, rgba(216, 176, 140, 0.45), transparent ) !important;
 }
-
-
-/* =========================================================
-   BLOC CODE DANS LA REVUE
-   ========================================================= */
 
 html body .mmic-posting-topic-review .codebox {
   margin: 12px 0 !important;
   padding: 0 !important;
-
   overflow: hidden !important;
-
   border: 1px solid rgba(216, 176, 140, 0.5) !important;
   border-radius: 7px !important;
-
-  background:
-    linear-gradient(
-      145deg,
-      #102438 0%,
-      #142d43 60%,
-      #102438 100%
-    ) !important;
-
-  box-shadow:
-    0 4px 10px rgba(16, 36, 56, 0.1) !important;
+  background: linear-gradient( 145deg, #102438 0%, #142d43 60%, #102438 100% ) !important;
+  box-shadow: 0 4px 10px rgba(16, 36, 56, 0.1) !important;
 }
-
-
-/* Titre CODE */
 
 html body .mmic-posting-topic-review .codebox dt {
   min-height: 30px !important;
   margin: 0 !important;
   padding: 0 12px !important;
-
   display: flex !important;
   align-items: center !important;
-
   border: 0 !important;
   border-bottom: 1px solid rgba(216, 176, 140, 0.25) !important;
-
   background: rgba(255, 255, 255, 0.035) !important;
   color: #d8b08c !important;
-
   font-size: 8px !important;
   font-weight: 700 !important;
   letter-spacing: 0.14em !important;
   text-transform: uppercase !important;
 }
 
-
-/* Contenu */
-
 html body .mmic-posting-topic-review .codebox dd {
   margin: 0 !important;
   padding: 0 !important;
-
   border: 0 !important;
   background: transparent !important;
 }
 
-html body .mmic-posting-topic-review .codebox code,
-html body .mmic-posting-topic-review .codebox .cont_code {
+html body .mmic-posting-topic-review .codebox code, html body .mmic-posting-topic-review .codebox .cont_code {
   display: block !important;
-
   width: 100% !important;
   padding: 14px 16px !important;
-
   border: 0 !important;
   background: transparent !important;
   color: #f4eee7 !important;
-
   font-family: Consolas, "Courier New", monospace !important;
   font-size: 10px !important;
   line-height: 1.65 !important;
   white-space: pre-wrap !important;
-
   box-sizing: border-box !important;
 }
 
-
-/* Neutralisation de la bordure verte native */
-
-html body .mmic-posting-topic-review .codebox *,
-html body .mmic-posting-topic-review code,
-html body .mmic-posting-topic-review .cont_code {
+html body .mmic-posting-topic-review .codebox *, html body .mmic-posting-topic-review code, html body .mmic-posting-topic-review .cont_code {
   border-color: transparent !important;
 }
-/* =========================================================
-   SMILEYS — SÉLECTEUR AUX COULEURS DU FORUM
-   ========================================================= */
 
-html body .mmic-posting-smileys select,
-html body .mmic-posting-smileys select.inputbox {
+html body .mmic-posting-smileys select, html body .mmic-posting-smileys select.inputbox {
   width: calc(100% - 10px) !important;
   min-height: 29px !important;
-
   margin: 0 5px 10px !important;
   padding: 0 28px 0 10px !important;
-
   border: 1px solid rgba(216, 176, 140, 0.55) !important;
   border-radius: 5px !important;
-
   background-color: #fffdf9 !important;
   color: #625951 !important;
-
   font-family: Arial, Helvetica, sans-serif !important;
   font-size: 8px !important;
   font-weight: 600 !important;
-
-  box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.85),
-    0 1px 3px rgba(16, 36, 56, 0.04) !important;
-
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.85), 0 1px 3px rgba(16, 36, 56, 0.04) !important;
   outline: none !important;
   cursor: pointer !important;
 }
 
-html body .mmic-posting-smileys select:hover,
-html body .mmic-posting-smileys select:focus {
+html body .mmic-posting-smileys select:hover, html body .mmic-posting-smileys select:focus {
   border-color: #b97a56 !important;
   background-color: #f8f1ea !important;
 }
 
-
-/* Neutralise aussi le bleu du conteneur natif autour du menu */
-
-html body .mmic-posting-smileys .row1,
-html body .mmic-posting-smileys .row2,
-html body .mmic-posting-smileys td,
-html body .mmic-posting-smileys form {
+html body .mmic-posting-smileys .row1, html body .mmic-posting-smileys .row2, html body .mmic-posting-smileys td, html body .mmic-posting-smileys form {
   border-color: transparent !important;
   background: transparent !important;
   box-shadow: none !important;
 }
 
-
-/* =========================================================
-   ÉDITEUR — PLUS HAUT ET ALIGNÉ SUR LE BAS
-   ========================================================= */
-
 html body .mmic-posting-editor-row > td:last-child {
+  width: auto !important;
+  padding: 18px 14px !important;
+  background: linear-gradient( 180deg, #fbf8f3 0%, #f9f4ee 100% ) !important;
   vertical-align: stretch !important;
 }
 
 html body .mmic-posting-editor-row .sceditor-container {
+  width: 100% !important;
+  max-width: 100% !important;
+  overflow: hidden !important;
+  border: 1px solid rgba(216, 176, 140, 0.42) !important;
+  border-radius: 8px !important;
+  background: #fffdf9 !important;
+  box-shadow: 0 4px 12px rgba(16, 36, 56, 0.05), inset 0 1px 0 rgba(255, 255, 255, 0.85) !important;
   min-height: 365px !important;
 }
 
-html body .mmic-posting-editor-row .sceditor-container iframe,
-html body .mmic-posting-editor-row .sceditor-container textarea,
-html body .mmic-posting-editor-row #text_editor_textarea {
+html body .mmic-posting-editor-row .sceditor-container iframe, html body .mmic-posting-editor-row .sceditor-container textarea, html body .mmic-posting-editor-row #text_editor_textarea {
+  width: 100% !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  outline: none !important;
+  padding: 18px !important;
+  background: #fffdf9 !important;
+  color: #4e4945 !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 12px !important;
+  line-height: 1.7 !important;
+  box-sizing: border-box !important;
   min-height: 305px !important;
   height: 305px !important;
 }
 
-
-/* Même hauteur visuelle pour les deux colonnes */
-
-html body .mmic-posting-editor-row > td:first-child,
-html body .mmic-posting-editor-row > td:last-child {
+html body .mmic-posting-editor-row > td:first-child, html body .mmic-posting-editor-row > td:last-child {
   height: 390px !important;
   box-sizing: border-box !important;
 }
 
+html body .mmic-posting-smileys table, html body .mmic-posting-smileys tbody, html body .mmic-posting-smileys tr, html body .mmic-posting-smileys td {
+  background: #fbf8f4 !important;
+  border: 0 !important;
+}
 
-/* La boîte de smileys s’étire proprement sans dépasser */
+html body .mmic-posting-smileys td[align="center"] {
+  background: #fbf8f4 !important;
+}
+
+html body .mmic-posting-smileys form {
+  display: none !important;
+}
 
 html body .mmic-posting-smileys {
+  margin-top: 10px !important;
+  position: relative !important;
+  margin: 8px 0 0 !important;
+  padding: 12px 10px 14px !important;
+  border: 1px solid rgba(216, 176, 140, 0.34) !important;
+  border-radius: 8px !important;
+  background: linear-gradient( 180deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 253, 249, 0.94) 100% ) !important;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), 0 3px 8px rgba(16, 36, 56, 0.035) !important;
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+  scrollbar-width: thin !important;
+  scrollbar-color: rgba(216, 176, 140, 0.65) rgba(16, 36, 56, 0.04) !important;
   height: 100% !important;
   max-height: 350px !important;
   box-sizing: border-box !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
 }
-/* Fond derrière le menu des smileys */
-
-html body .mmic-posting-smileys table,
-html body .mmic-posting-smileys tbody,
-html body .mmic-posting-smileys tr,
-html body .mmic-posting-smileys td {
-    background: #fbf8f4 !important;
-    border: 0 !important;
-}
-
-/* La cellule qui contient le select */
-
-html body .mmic-posting-smileys td[align="center"]{
-    background:#fbf8f4 !important;
-}
-/* =========================================================
-   SMILEYS
-   ========================================================= */
-
-/* Cache le menu "Voir plus de smileys" */
-
-html body .mmic-posting-smileys form {
-    display: none !important;
-}
-
-/* Les smileys remontent naturellement */
 
 html body .mmic-posting-smileys iframe {
-    display: block;
-    width: 100% !important;
-    border: 0 !important;
-    background: transparent !important;
+  display: block;
+  width: 100% !important;
+  border: 0 !important;
+  background: transparent !important;
+  margin-top: -8px;
 }
-
-/* Centre légèrement la grille */
-
-html body .mmic-posting-smileys {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-}
-html body .mmic-posting-smileys iframe{
-    margin-top: -8px;
-}
-/* =========================================================
-   IFRAME DES SMILEYS — INTÉGRATION AU FOND
-   ========================================================= */
 
 html body .mmic-posting-smileys iframe[name="smilies"] {
   display: block !important;
-
   width: 100% !important;
   margin: 0 !important;
-
   border: 0 !important;
   background: transparent !important;
 }
-/* =========================================================
-   POSTING BODY — FINITIONS GÉNÉRALES
-   MEET ME IN CHICAGO
-   À PLACER TOUT EN BAS DE posting.css
-   ========================================================= */
-
-
-/* =========================================================
-   1. CHAMPS DU TITRE DU MESSAGE
-   ========================================================= */
-
-/* Ligne complète du titre */
 
 html body .mmic-posting-page .mmic-posting-title-row {
   align-items: center !important;
 }
 
-
-/* Champ du titre */
-
-html body .mmic-posting-page input[name="subject"],
-html body .mmic-posting-page input.post,
-html body .mmic-posting-page input.inputbox[type="text"] {
+html body .mmic-posting-page input[name="subject"], html body .mmic-posting-page input.post, html body .mmic-posting-page input.inputbox[type="text"] {
   min-height: 34px !important;
   padding: 0 12px !important;
-
   border: 1px solid rgba(216, 176, 140, 0.48) !important;
   border-radius: 7px !important;
-
-  background:
-    linear-gradient(
-      180deg,
-      #fffefa 0%,
-      #fffaf5 100%
-    ) !important;
-
+  background: linear-gradient( 180deg, #fffefa 0%, #fffaf5 100% ) !important;
   color: #4e4945 !important;
-
   font-family: Arial, Helvetica, sans-serif !important;
   font-size: 10px !important;
-
-  box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.92),
-    0 2px 5px rgba(16, 36, 56, 0.035) !important;
-
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.92), 0 2px 5px rgba(16, 36, 56, 0.035) !important;
   outline: none !important;
   box-sizing: border-box !important;
-
-  transition:
-    border-color 0.2s ease,
-    box-shadow 0.2s ease,
-    background 0.2s ease !important;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease !important;
 }
 
-
-/* Focus */
-
-html body .mmic-posting-page input[name="subject"]:focus,
-html body .mmic-posting-page input.post:focus,
-html body .mmic-posting-page input.inputbox[type="text"]:focus {
+html body .mmic-posting-page input[name="subject"]:focus, html body .mmic-posting-page input.post:focus, html body .mmic-posting-page input.inputbox[type="text"]:focus {
   border-color: #b97a56 !important;
-
   background: #fffdf9 !important;
-
-  box-shadow:
-    0 0 0 3px rgba(216, 176, 140, 0.12),
-    inset 0 1px 0 rgba(255, 255, 255, 0.92) !important;
+  box-shadow: 0 0 0 3px rgba(216, 176, 140, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.92) !important;
 }
-
-
-/* Menu déroulant de l’icône du sujet */
 
 html body .mmic-posting-page select {
   min-height: 34px !important;
   padding: 0 30px 0 10px !important;
-
   border: 1px solid rgba(216, 176, 140, 0.48) !important;
   border-radius: 7px !important;
-
   background-color: #fffdf9 !important;
   color: #625951 !important;
-
   font-family: Arial, Helvetica, sans-serif !important;
   font-size: 8px !important;
-
   outline: none !important;
   cursor: pointer !important;
   box-sizing: border-box !important;
 }
 
-html body .mmic-posting-page select:hover,
-html body .mmic-posting-page select:focus {
+html body .mmic-posting-page select:hover, html body .mmic-posting-page select:focus {
   border-color: #b97a56 !important;
 }
 
-
-/* =========================================================
-   2. ÉDITEUR — PLUS HAUT
-   ========================================================= */
-
-/* Conteneur principal */
-
-html body .mmic-posting-page .sceditor-container {
-  width: 100% !important;
-  min-height: 455px !important;
-
-  border: 1px solid rgba(216, 176, 140, 0.44) !important;
-  border-radius: 8px !important;
-
-  background: #fffdf9 !important;
-
-  box-shadow:
-    0 5px 14px rgba(16, 36, 56, 0.05),
-    inset 0 1px 0 rgba(255, 255, 255, 0.85) !important;
-
-  overflow: hidden !important;
-  box-sizing: border-box !important;
-}
-
-
-/* Zone réelle d’écriture */
-
-html body .mmic-posting-page .sceditor-container iframe,
-html body .mmic-posting-page .sceditor-container textarea,
-html body .mmic-posting-page #text_editor_textarea {
-  width: 100% !important;
-  min-height: 385px !important;
-  height: 385px !important;
-
-  border: 0 !important;
-
-  background:
-    linear-gradient(
-      180deg,
-      #fffefa 0%,
-      #fffdf9 100%
-    ) !important;
-
-  color: #4e4945 !important;
-
-  box-shadow: none !important;
-  outline: none !important;
-
-  box-sizing: border-box !important;
-}
-
-
-/* =========================================================
-   3. BARRE D’OUTILS SCEDITOR
-   ========================================================= */
-
-html body .mmic-posting-page .sceditor-toolbar {
-  display: flex !important;
-  align-items: center !important;
-  flex-wrap: wrap !important;
-  gap: 4px !important;
-
-  min-height: 58px !important;
-  padding: 8px 9px !important;
-
-  border: 0 !important;
-  border-bottom: 1px solid rgba(216, 176, 140, 0.26) !important;
-
-  background:
-    linear-gradient(
-      180deg,
-      #fbf8f4 0%,
-      #f4ede6 100%
-    ) !important;
-
-  box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.9) !important;
-}
-
-
-/* Groupes de boutons */
-
-html body .mmic-posting-page .sceditor-group {
-  display: inline-flex !important;
-  align-items: center !important;
-
-  min-height: 30px !important;
-  margin: 0 !important;
-  padding: 2px !important;
-
-  border: 1px solid rgba(16, 36, 56, 0.08) !important;
-  border-radius: 6px !important;
-
-  background:
-    linear-gradient(
-      180deg,
-      rgba(255, 255, 255, 0.76) 0%,
-      rgba(255, 255, 255, 0.42) 100%
-    ) !important;
-
-  box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.8),
-    0 1px 3px rgba(16, 36, 56, 0.035) !important;
-}
-
-
-/* Boutons individuels */
-
-html body .mmic-posting-page .sceditor-button {
-  width: 26px !important;
-  height: 26px !important;
-  margin: 0 1px !important;
-
-  border: 0 !important;
-  border-radius: 5px !important;
-
-  background-color: transparent !important;
-
-  transition:
-    transform 0.16s ease,
-    background-color 0.16s ease,
-    box-shadow 0.16s ease !important;
-}
-
-
-/* Survol */
-
-html body .mmic-posting-page .sceditor-button:hover {
-  transform: translateY(-1px) !important;
-
-  background-color: rgba(216, 176, 140, 0.18) !important;
-
-  box-shadow:
-    inset 0 0 0 1px rgba(185, 122, 86, 0.16) !important;
-}
-
-
-/* Bouton sélectionné */
-
-html body .mmic-posting-page .sceditor-button.active,
-html body .mmic-posting-page .sceditor-button:active {
+html body .mmic-posting-page .sceditor-button.active, html body .mmic-posting-page .sceditor-button:active {
   transform: translateY(0) !important;
-
   background-color: rgba(16, 36, 56, 0.1) !important;
-
-  box-shadow:
-    inset 0 1px 3px rgba(16, 36, 56, 0.14) !important;
+  box-shadow: inset 0 1px 3px rgba(16, 36, 56, 0.14) !important;
 }
 
-
-/* =========================================================
-   4. COLONNE SMILEYS ET ÉDITEUR ALIGNÉS
-   ========================================================= */
-
-/* Les deux cellules doivent descendre à la même hauteur */
-
-html body .mmic-posting-page .mmic-posting-editor-row > td,
-html body .mmic-posting-page .mmic-posting-editor-row > th {
+html body .mmic-posting-page .mmic-posting-editor-row > td, html body .mmic-posting-page .mmic-posting-editor-row > th {
   vertical-align: top !important;
 }
-
-
-/* Carte smileys */
 
 html body .mmic-posting-page .mmic-posting-smileys {
   min-height: 455px !important;
   max-height: 455px !important;
-
   padding: 16px 10px !important;
-
   overflow-y: auto !important;
   overflow-x: hidden !important;
-
   border: 1px solid rgba(216, 176, 140, 0.4) !important;
   border-radius: 8px !important;
-
-  background:
-    linear-gradient(
-      180deg,
-      #fffdf9 0%,
-      #fbf7f2 100%
-    ) !important;
-
-  box-shadow:
-    0 4px 12px rgba(16, 36, 56, 0.04),
-    inset 0 1px 0 rgba(255, 255, 255, 0.82) !important;
-
+  background: linear-gradient( 180deg, #fffdf9 0%, #fbf7f2 100% ) !important;
+  box-shadow: 0 4px 12px rgba(16, 36, 56, 0.04), inset 0 1px 0 rgba(255, 255, 255, 0.82) !important;
   box-sizing: border-box !important;
 }
 
-
-/* Iframe des smileys */
-
-html body .mmic-posting-page
-.mmic-posting-smileys iframe[name="smilies"] {
+html body .mmic-posting-page .mmic-posting-smileys iframe[name="smilies"] {
   display: block !important;
-
   width: 100% !important;
   min-height: 380px !important;
   height: 380px !important;
-
   margin: 0 !important;
-
   border: 0 !important;
   background: transparent !important;
 }
 
-
-/* Scrollbar smileys */
-
-html body .mmic-posting-page
-.mmic-posting-smileys::-webkit-scrollbar {
+html body .mmic-posting-page .mmic-posting-smileys::-webkit-scrollbar {
   width: 6px !important;
 }
 
-html body .mmic-posting-page
-.mmic-posting-smileys::-webkit-scrollbar-track {
+html body .mmic-posting-page .mmic-posting-smileys::-webkit-scrollbar-track {
   border-radius: 999px !important;
   background: rgba(16, 36, 56, 0.035) !important;
 }
 
-html body .mmic-posting-page
-.mmic-posting-smileys::-webkit-scrollbar-thumb {
+html body .mmic-posting-page .mmic-posting-smileys::-webkit-scrollbar-thumb {
   border-radius: 999px !important;
   background: rgba(216, 176, 140, 0.62) !important;
 }
 
-html body .mmic-posting-page
-.mmic-posting-smileys::-webkit-scrollbar-thumb:hover {
+html body .mmic-posting-page .mmic-posting-smileys::-webkit-scrollbar-thumb:hover {
   background: #d8b08c !important;
 }
 
-
-/* =========================================================
-   5. BOUTONS PRÉVISUALISER / ENVOYER
-   ========================================================= */
-
-html body .mmic-posting-page input[name="preview"],
-html body .mmic-posting-page input[name="post"],
-html body .mmic-posting-page .mmic-posting-submit-button {
+html body .mmic-posting-page input[name="preview"], html body .mmic-posting-page input[name="post"], html body .mmic-posting-page .mmic-posting-submit-button {
   min-height: 34px !important;
   padding: 0 16px !important;
-
   border: 1px solid rgba(216, 176, 140, 0.68) !important;
   border-radius: 6px !important;
-
-  background:
-    linear-gradient(
-      180deg,
-      #18334c 0%,
-      #102438 100%
-    ) !important;
-
+  background: linear-gradient( 180deg, #18334c 0%, #102438 100% ) !important;
   color: #fffaf5 !important;
-
   font-family: Arial, Helvetica, sans-serif !important;
   font-size: 8px !important;
   font-weight: 700 !important;
   letter-spacing: 0.11em !important;
   text-transform: uppercase !important;
-
-  box-shadow:
-    0 4px 9px rgba(16, 36, 56, 0.14),
-    inset 0 1px 0 rgba(255, 255, 255, 0.08) !important;
-
+  box-shadow: 0 4px 9px rgba(16, 36, 56, 0.14), inset 0 1px 0 rgba(255, 255, 255, 0.08) !important;
   cursor: pointer !important;
-
-  transition:
-    transform 0.18s ease,
-    border-color 0.18s ease,
-    background 0.18s ease,
-    box-shadow 0.18s ease !important;
+  transition: transform 0.18s ease, border-color 0.18s ease, background 0.18s ease, box-shadow 0.18s ease !important;
 }
 
-
-html body .mmic-posting-page input[name="preview"]:hover,
-html body .mmic-posting-page input[name="post"]:hover,
-html body .mmic-posting-page .mmic-posting-submit-button:hover {
+html body .mmic-posting-page input[name="preview"]:hover, html body .mmic-posting-page input[name="post"]:hover, html body .mmic-posting-page .mmic-posting-submit-button:hover {
   transform: translateY(-2px) !important;
-
   border-color: #d8b08c !important;
-
-  background:
-    linear-gradient(
-      180deg,
-      #1e3e5a 0%,
-      #163149 100%
-    ) !important;
-
-  box-shadow:
-    0 6px 13px rgba(16, 36, 56, 0.18),
-    inset 0 1px 0 rgba(255, 255, 255, 0.1) !important;
+  background: linear-gradient( 180deg, #1e3e5a 0%, #163149 100% ) !important;
+  box-shadow: 0 6px 13px rgba(16, 36, 56, 0.18), inset 0 1px 0 rgba(255, 255, 255, 0.1) !important;
 }
 
-
-html body .mmic-posting-page input[name="preview"]:active,
-html body .mmic-posting-page input[name="post"]:active,
-html body .mmic-posting-page .mmic-posting-submit-button:active {
+html body .mmic-posting-page input[name="preview"]:active, html body .mmic-posting-page input[name="post"]:active, html body .mmic-posting-page .mmic-posting-submit-button:active {
   transform: translateY(0) !important;
 }
 
-
-/* =========================================================
-   6. PANNEAU OPTIONS
-   ========================================================= */
-
-/* Barre supérieure */
-
 html body .mmic-posting-page .mmic-posting-panel-card {
   overflow: hidden !important;
-
   border: 1px solid rgba(216, 176, 140, 0.4) !important;
   border-radius: 8px !important;
-
   background: #fbf8f3 !important;
-
   border-spacing: 0 !important;
-
-  box-shadow:
-    0 4px 11px rgba(16, 36, 56, 0.045) !important;
+  box-shadow: 0 4px 11px rgba(16, 36, 56, 0.045) !important;
 }
 
-
-/* Titre */
-
-html body .mmic-posting-page
-.mmic-posting-panel-card .thHead {
+html body .mmic-posting-page .mmic-posting-panel-card .thHead {
   min-height: 38px !important;
   padding: 0 !important;
-
   border: 0 !important;
-
-  background:
-    linear-gradient(
-      180deg,
-      #173149 0%,
-      #102438 100%
-    ) !important;
+  background: linear-gradient( 180deg, #173149 0%, #102438 100% ) !important;
 }
 
-
-/* Corps ouvert */
-
-html body .mmic-posting-page
-.mmic-posting-options-show .row1,
-html body .mmic-posting-page
-.mmic-posting-options-show .row2 {
+html body .mmic-posting-page .mmic-posting-options-show .row1, html body .mmic-posting-page .mmic-posting-options-show .row2 {
   padding: 13px 15px !important;
-
   border: 0 !important;
   border-bottom: 1px solid rgba(216, 176, 140, 0.17) !important;
-
   color: #5f554e !important;
-
   font-size: 9px !important;
   line-height: 1.55 !important;
 }
 
-
-html body .mmic-posting-page
-.mmic-posting-options-show .row1 {
+html body .mmic-posting-page .mmic-posting-options-show .row1 {
   background: #f7f1e9 !important;
 }
 
-
-html body .mmic-posting-page
-.mmic-posting-options-show .row2 {
+html body .mmic-posting-page .mmic-posting-options-show .row2 {
   background: #fffdf9 !important;
 }
 
-
-/* Cases à cocher */
-
-html body .mmic-posting-page
-.mmic-posting-options-show input[type="checkbox"],
-html body .mmic-posting-page
-.mmic-posting-options-show input[type="radio"] {
+html body .mmic-posting-page .mmic-posting-options-show input[type="checkbox"], html body .mmic-posting-page .mmic-posting-options-show input[type="radio"] {
   width: 14px !important;
   height: 14px !important;
   margin: 0 7px 0 0 !important;
-
   accent-color: #b97a56 !important;
-
   vertical-align: middle !important;
 }
 
-
-/* =========================================================
-   7. JUMPBOX
-   ========================================================= */
-
 html body .mmic-posting-page .mmic-posting-footer-tools {
   padding: 10px 12px !important;
-
   border: 1px solid rgba(216, 176, 140, 0.36) !important;
   border-radius: 8px !important;
-
-  background:
-    linear-gradient(
-      180deg,
-      #fbf8f3 0%,
-      #f7f1e9 100%
-    ) !important;
-
-  box-shadow:
-    0 3px 8px rgba(16, 36, 56, 0.035) !important;
+  background: linear-gradient( 180deg, #fbf8f3 0%, #f7f1e9 100% ) !important;
+  box-shadow: 0 3px 8px rgba(16, 36, 56, 0.035) !important;
 }
 
-
-html body .mmic-posting-page
-.mmic-posting-jumpbox {
+html body .mmic-posting-page .mmic-posting-jumpbox {
   display: flex !important;
   align-items: center !important;
   justify-content: flex-end !important;
   gap: 6px !important;
 }
 
-
-/* Bouton Aller */
-
-html body .mmic-posting-page
-.mmic-posting-jumpbox input[type="submit"],
-html body .mmic-posting-page
-.mmic-posting-jumpbox input[type="button"] {
+html body .mmic-posting-page .mmic-posting-jumpbox input[type="submit"], html body .mmic-posting-page .mmic-posting-jumpbox input[type="button"] {
   min-height: 32px !important;
   padding: 0 11px !important;
-
   border: 1px solid rgba(216, 176, 140, 0.66) !important;
   border-radius: 6px !important;
-
   background: #102438 !important;
   color: #fffaf5 !important;
-
   font-size: 8px !important;
   font-weight: 700 !important;
   text-transform: uppercase !important;
-
   cursor: pointer !important;
 }
 
-
-/* =========================================================
-   8. REVUE DU SUJET — POLISH FINAL
-   ========================================================= */
-
-html body .mmic-posting-page
-.mmic-posting-topic-review {
+html body .mmic-posting-page .mmic-posting-topic-review {
   padding: 0 !important;
-
   border: 1px solid rgba(216, 176, 140, 0.38) !important;
   border-radius: 9px !important;
-
-  background:
-    linear-gradient(
-      180deg,
-      #fffdf9 0%,
-      #fbf7f2 100%
-    ) !important;
-
-  box-shadow:
-    0 5px 14px rgba(16, 36, 56, 0.045) !important;
-
+  background: linear-gradient( 180deg, #fffdf9 0%, #fbf7f2 100% ) !important;
+  box-shadow: 0 5px 14px rgba(16, 36, 56, 0.045) !important;
   overflow: hidden !important;
 }
 
-
-/* Titre Revue du sujet */
-
-html body .mmic-posting-page
-.mmic-posting-topic-review > h1,
-html body .mmic-posting-page
-.mmic-posting-topic-review > h2,
-html body .mmic-posting-page
-.mmic-posting-topic-review > h3 {
+html body .mmic-posting-page .mmic-posting-topic-review > h1, html body .mmic-posting-page .mmic-posting-topic-review > h2, html body .mmic-posting-page .mmic-posting-topic-review > h3 {
   margin: 0 !important;
   padding: 13px !important;
-
   color: #b97a56 !important;
-
   font-size: 11px !important;
   font-weight: 700 !important;
   letter-spacing: 0.12em !important;
@@ -2033,152 +965,73 @@ html body .mmic-posting-page
   text-transform: uppercase !important;
 }
 
-
-/* Tableau intérieur */
-
-html body .mmic-posting-page
-.mmic-posting-topic-review .forumline {
+html body .mmic-posting-page .mmic-posting-topic-review .forumline {
   width: calc(100% - 24px) !important;
   margin: 0 12px 12px !important;
-
   border: 1px solid rgba(216, 176, 140, 0.3) !important;
   border-radius: 8px !important;
-
   background: #fffdf9 !important;
-
   border-spacing: 0 !important;
   overflow: hidden !important;
 }
 
-
-/* En-têtes Auteur / Message */
-
-html body .mmic-posting-page
-.mmic-posting-topic-review th {
+html body .mmic-posting-page .mmic-posting-topic-review th {
   min-height: 38px !important;
   padding: 11px 13px !important;
-
   border: 0 !important;
-
-  background:
-    linear-gradient(
-      180deg,
-      #173149 0%,
-      #102438 100%
-    ) !important;
-
+  background: linear-gradient( 180deg, #173149 0%, #102438 100% ) !important;
   color: #d8b08c !important;
-
   font-size: 7px !important;
   font-weight: 700 !important;
   letter-spacing: 0.17em !important;
   text-transform: uppercase !important;
 }
 
-
-/* Colonne auteur */
-
-html body .mmic-posting-page
-.mmic-posting-topic-review td:first-child {
+html body .mmic-posting-page .mmic-posting-topic-review td:first-child {
   width: 145px !important;
   padding: 14px 12px !important;
-
-  background:
-    linear-gradient(
-      180deg,
-      #f7f1e9 0%,
-      #f2ebe4 100%
-    ) !important;
+  background: linear-gradient( 180deg, #f7f1e9 0%, #f2ebe4 100% ) !important;
 }
 
-
-/* Colonne message */
-
-html body .mmic-posting-page
-.mmic-posting-topic-review td:last-child {
+html body .mmic-posting-page .mmic-posting-topic-review td:last-child {
   padding: 14px 20px !important;
-
   background: #fffdf9 !important;
 }
 
-
-/* Pseudo */
-
-html body .mmic-posting-page
-.mmic-posting-topic-review .name,
-html body .mmic-posting-page
-.mmic-posting-topic-review .name *,
-html body .mmic-posting-page
-.mmic-posting-topic-review td:first-child a,
-html body .mmic-posting-page
-.mmic-posting-topic-review td:first-child strong {
+html body .mmic-posting-page .mmic-posting-topic-review .name, html body .mmic-posting-page .mmic-posting-topic-review .name *, html body .mmic-posting-page .mmic-posting-topic-review td:first-child a, html body .mmic-posting-page .mmic-posting-topic-review td:first-child strong {
   color: #b97a56 !important;
-
   font-family: Georgia, "Times New Roman", serif !important;
   font-size: 14px !important;
   font-weight: 700 !important;
-
   text-decoration: none !important;
 }
 
-
-/* Date */
-
-html body .mmic-posting-page
-.mmic-posting-topic-review .postdetails,
-html body .mmic-posting-page
-.mmic-posting-topic-review .gensmall {
+html body .mmic-posting-page .mmic-posting-topic-review .postdetails, html body .mmic-posting-page .mmic-posting-topic-review .gensmall {
   color: #746960 !important;
-
   font-size: 8px !important;
   line-height: 1.6 !important;
 }
 
-
-/* Corps */
-
-html body .mmic-posting-page
-.mmic-posting-topic-review .postbody {
+html body .mmic-posting-page .mmic-posting-topic-review .postbody {
   color: #453d37 !important;
-
   font-family: Arial, Helvetica, sans-serif !important;
   font-size: 11px !important;
   line-height: 1.8 !important;
 }
 
-
-/* Séparateurs */
-
-html body .mmic-posting-page
-.mmic-posting-topic-review hr {
+html body .mmic-posting-page .mmic-posting-topic-review hr {
   height: 1px !important;
   margin: 12px 0 !important;
-
   border: 0 !important;
-
-  background:
-    linear-gradient(
-      90deg,
-      transparent,
-      rgba(216, 176, 140, 0.42),
-      transparent
-    ) !important;
+  background: linear-gradient( 90deg, transparent, rgba(216, 176, 140, 0.42), transparent ) !important;
 }
 
-
-/* =========================================================
-   9. RESPONSIVE
-   ========================================================= */
-
 @media (max-width: 800px) {
-
   html body .mmic-posting-page .sceditor-container {
     min-height: 370px !important;
   }
 
-  html body .mmic-posting-page .sceditor-container iframe,
-  html body .mmic-posting-page .sceditor-container textarea,
-  html body .mmic-posting-page #text_editor_textarea {
+  html body .mmic-posting-page .sceditor-container iframe, html body .mmic-posting-page .sceditor-container textarea, html body .mmic-posting-page #text_editor_textarea {
     min-height: 300px !important;
     height: 300px !important;
   }
@@ -2188,297 +1041,141 @@ html body .mmic-posting-page
     max-height: 300px !important;
   }
 
-  html body .mmic-posting-page
-  .mmic-posting-smileys iframe[name="smilies"] {
+  html body .mmic-posting-page .mmic-posting-smileys iframe[name="smilies"] {
     min-height: 250px !important;
     height: 250px !important;
   }
 
-  html body .mmic-posting-page
-  .mmic-posting-topic-review td:first-child {
+  html body .mmic-posting-page .mmic-posting-topic-review td:first-child {
     width: 105px !important;
   }
-
 }
 
-
 @media (max-width: 600px) {
-
-  html body .mmic-posting-page
-  .mmic-posting-editor-row {
+  html body .mmic-posting-page .mmic-posting-editor-row {
     display: block !important;
   }
 
-  html body .mmic-posting-page
-  .mmic-posting-editor-row > td {
+  html body .mmic-posting-page .mmic-posting-editor-row > td {
     display: block !important;
     width: 100% !important;
   }
 
-  html body .mmic-posting-page
-  .mmic-posting-smileys {
+  html body .mmic-posting-page .mmic-posting-smileys {
     min-height: 230px !important;
     max-height: 230px !important;
     margin-bottom: 12px !important;
   }
 
-  html body .mmic-posting-page
-  .mmic-posting-smileys iframe[name="smilies"] {
+  html body .mmic-posting-page .mmic-posting-smileys iframe[name="smilies"] {
     min-height: 190px !important;
     height: 190px !important;
   }
 
-  html body .mmic-posting-page
-  .mmic-posting-jumpbox {
+  html body .mmic-posting-page .mmic-posting-jumpbox {
     align-items: stretch !important;
     flex-direction: column !important;
   }
 
-  html body .mmic-posting-page
-  .mmic-posting-jumpbox select {
+  html body .mmic-posting-page .mmic-posting-jumpbox select {
     width: 100% !important;
   }
-
 }
-/* =========================================================
-   SCEDITOR — CORRECTION DU RENDU
-   ========================================================= */
-
-/* On laisse la barre gérer naturellement ses lignes */
-
-html body .mmic-posting-page .sceditor-toolbar {
-  display: block !important;
-
-  min-height: 0 !important;
-  height: auto !important;
-
-  padding: 7px 8px !important;
-
-  border: 0 !important;
-  border-bottom: 1px solid rgba(216, 176, 140, 0.26) !important;
-
-  background:
-    linear-gradient(
-      180deg,
-      #fbf8f4 0%,
-      #f4ede6 100%
-    ) !important;
-
-  overflow: visible !important;
-}
-
-
-/* Groupes compacts */
-
-html body .mmic-posting-page .sceditor-group {
-  display: inline-block !important;
-
-  min-height: 0 !important;
-  height: 28px !important;
-
-  margin: 1px 3px 1px 0 !important;
-  padding: 1px 2px !important;
-
-  vertical-align: top !important;
-
-  border: 1px solid rgba(16, 36, 56, 0.08) !important;
-  border-radius: 5px !important;
-
-  background: rgba(255, 255, 255, 0.58) !important;
-
-  box-sizing: border-box !important;
-}
-
-
-/* Boutons à leur taille normale */
-
-html body .mmic-posting-page .sceditor-button {
-  display: inline-block !important;
-  float: left !important;
-
-  width: 24px !important;
-  height: 24px !important;
-
-  margin: 0 !important;
-  padding: 0 !important;
-
-  border-radius: 4px !important;
-
-  background-color: transparent !important;
-
-  box-sizing: border-box !important;
-}
-
-
-/* L’icône interne reste centrée */
-
-html body .mmic-posting-page .sceditor-button div {
-  width: 24px !important;
-  height: 24px !important;
-
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
-
-/* Survol discret */
-
-html body .mmic-posting-page .sceditor-button:hover {
-  transform: none !important;
-
-  background-color: rgba(216, 176, 140, 0.18) !important;
-
-  box-shadow:
-    inset 0 0 0 1px rgba(185, 122, 86, 0.14) !important;
-}
-
-
-/* L’éditeur garde sa grande hauteur */
 
 html body .mmic-posting-page .sceditor-container {
+  width: 100% !important;
+  border: 1px solid rgba(216, 176, 140, 0.44) !important;
+  border-radius: 8px !important;
+  background: #fffdf9 !important;
+  box-shadow: 0 5px 14px rgba(16, 36, 56, 0.05), inset 0 1px 0 rgba(255, 255, 255, 0.85) !important;
+  overflow: hidden !important;
+  box-sizing: border-box !important;
   min-height: 455px !important;
 }
 
-html body .mmic-posting-page .sceditor-container iframe,
-html body .mmic-posting-page .sceditor-container textarea,
-html body .mmic-posting-page #text_editor_textarea {
+html body .mmic-posting-page .sceditor-container iframe, html body .mmic-posting-page .sceditor-container textarea, html body .mmic-posting-page #text_editor_textarea {
+  width: 100% !important;
+  border: 0 !important;
+  background: linear-gradient( 180deg, #fffefa 0%, #fffdf9 100% ) !important;
+  color: #4e4945 !important;
+  box-shadow: none !important;
+  outline: none !important;
+  box-sizing: border-box !important;
   min-height: 385px !important;
   height: 385px !important;
 }
-/* =========================================================
-   SCEDITOR — RESTAURATION DES ICÔNES ET DE L’ALIGNEMENT
-   À LAISSER TOUT EN BAS DE posting.css
-   ========================================================= */
 
 html body .mmic-posting-page .sceditor-toolbar {
+  align-items: center !important;
+  flex-wrap: wrap !important;
+  gap: 4px !important;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.9) !important;
   display: block !important;
-
   width: 100% !important;
   min-height: 0 !important;
   height: auto !important;
-
   padding: 7px 8px !important;
-
   border: 0 !important;
   border-bottom: 1px solid rgba(216, 176, 140, 0.26) !important;
-
-  background: linear-gradient(
-    180deg,
-    #fbf8f4 0%,
-    #f4ede6 100%
-  ) !important;
-
+  background: linear-gradient( 180deg, #fbf8f4 0%, #f4ede6 100% ) !important;
   line-height: normal !important;
   white-space: normal !important;
-
   overflow: hidden !important;
   box-sizing: border-box !important;
 }
 
+html body .mmic-posting-page .sceditor-button:hover {
+  transform: none !important;
+  background-color: rgba(216, 176, 140, 0.18) !important;
+  box-shadow: inset 0 0 0 1px rgba(185, 122, 86, 0.15) !important;
+}
 
-/* Groupes de boutons */
+html body .mmic-posting-page .sceditor-group[style*="display: none"], html body .mmic-posting-page .sceditor-group[style*="display:none"] {
+  display: none !important;
+}
 
 html body .mmic-posting-page .sceditor-group {
-  display: inline-block !important;
-  float: none !important;
-
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), 0 1px 3px rgba(16, 36, 56, 0.035) !important;
   width: auto !important;
   min-width: 0 !important;
-
   height: auto !important;
-  min-height: 26px !important;
-
   margin: 1px 3px 1px 0 !important;
   padding: 1px 2px !important;
-
   vertical-align: top !important;
   white-space: nowrap !important;
-
   border: 1px solid rgba(16, 36, 56, 0.08) !important;
   border-radius: 5px !important;
-
   background: rgba(255, 255, 255, 0.58) !important;
-
   box-sizing: border-box !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  float: left !important;
+  min-height: 30px !important;
 }
-
-
-/* Dimensions natives des boutons */
 
 html body .mmic-posting-page .sceditor-button {
-  display: block !important;
+  transition: transform 0.16s ease, background-color 0.16s ease, box-shadow 0.16s ease !important;
   float: left !important;
-
   width: 26px !important;
   height: 24px !important;
-
   margin: 0 !important;
   padding: 0 !important;
-
   border: 0 !important;
   border-radius: 4px !important;
-
   background-color: transparent !important;
-
   line-height: normal !important;
   box-sizing: border-box !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
 }
-
-
-/* Très important :
-   on restaure la taille réelle de la sprite des icônes */
 
 html body .mmic-posting-page .sceditor-button div {
   display: block !important;
-
   width: 16px !important;
   height: 16px !important;
-
-  margin: 4px 5px !important;
   padding: 0 !important;
-
   box-sizing: content-box !important;
-}
-
-
-/* Survol propre, sans déplacer les icônes */
-
-html body .mmic-posting-page .sceditor-button:hover {
-  transform: none !important;
-
-  background-color: rgba(216, 176, 140, 0.18) !important;
-
-  box-shadow:
-    inset 0 0 0 1px rgba(185, 122, 86, 0.15) !important;
-}
-
-
-/* Évite qu’un groupe masqué conserve une place */
-
-html body .mmic-posting-page .sceditor-group[style*="display: none"],
-html body .mmic-posting-page .sceditor-group[style*="display:none"] {
-  display: none !important;
-}
-/* =========================================================
-   SCEDITOR — CENTRAGE DES ICÔNES
-   ========================================================= */
-
-html body .mmic-posting-page .sceditor-group{
-    display:flex !important;
-    align-items:center !important;
-    justify-content:center !important;
-
-    float:left !important;
-
-    min-height:30px !important;
-}
-
-html body .mmic-posting-page .sceditor-button{
-    display:flex !important;
-    align-items:center !important;
-    justify-content:center !important;
-}
-
-html body .mmic-posting-page .sceditor-button div{
-    margin:0 !important;
+  margin: 0 !important;
 }
