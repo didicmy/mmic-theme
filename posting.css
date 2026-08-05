@@ -1439,3 +1439,16 @@ html body .mmic-posting-smileys {
 html body .mmic-posting-smileys iframe{
     margin-top: -8px;
 }
+/* =========================================================
+   IFRAME DES SMILEYS — INTÉGRATION AU FOND
+   ========================================================= */
+
+html body .mmic-posting-smileys iframe[name="smilies"] {
+  display: block !important;
+
+  width: 100% !important;
+  margin: 0 !important;
+
+  border: 0 !important;
+  background: transparent !important;
+}
