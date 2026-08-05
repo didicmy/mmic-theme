@@ -2345,3 +2345,117 @@ html body .mmic-posting-page #text_editor_textarea {
   min-height: 385px !important;
   height: 385px !important;
 }
+/* =========================================================
+   SCEDITOR — RESTAURATION DES ICÔNES ET DE L’ALIGNEMENT
+   À LAISSER TOUT EN BAS DE posting.css
+   ========================================================= */
+
+html body .mmic-posting-page .sceditor-toolbar {
+  display: block !important;
+
+  width: 100% !important;
+  min-height: 0 !important;
+  height: auto !important;
+
+  padding: 7px 8px !important;
+
+  border: 0 !important;
+  border-bottom: 1px solid rgba(216, 176, 140, 0.26) !important;
+
+  background: linear-gradient(
+    180deg,
+    #fbf8f4 0%,
+    #f4ede6 100%
+  ) !important;
+
+  line-height: normal !important;
+  white-space: normal !important;
+
+  overflow: hidden !important;
+  box-sizing: border-box !important;
+}
+
+
+/* Groupes de boutons */
+
+html body .mmic-posting-page .sceditor-group {
+  display: inline-block !important;
+  float: none !important;
+
+  width: auto !important;
+  min-width: 0 !important;
+
+  height: auto !important;
+  min-height: 26px !important;
+
+  margin: 1px 3px 1px 0 !important;
+  padding: 1px 2px !important;
+
+  vertical-align: top !important;
+  white-space: nowrap !important;
+
+  border: 1px solid rgba(16, 36, 56, 0.08) !important;
+  border-radius: 5px !important;
+
+  background: rgba(255, 255, 255, 0.58) !important;
+
+  box-sizing: border-box !important;
+}
+
+
+/* Dimensions natives des boutons */
+
+html body .mmic-posting-page .sceditor-button {
+  display: block !important;
+  float: left !important;
+
+  width: 26px !important;
+  height: 24px !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  border: 0 !important;
+  border-radius: 4px !important;
+
+  background-color: transparent !important;
+
+  line-height: normal !important;
+  box-sizing: border-box !important;
+}
+
+
+/* Très important :
+   on restaure la taille réelle de la sprite des icônes */
+
+html body .mmic-posting-page .sceditor-button div {
+  display: block !important;
+
+  width: 16px !important;
+  height: 16px !important;
+
+  margin: 4px 5px !important;
+  padding: 0 !important;
+
+  box-sizing: content-box !important;
+}
+
+
+/* Survol propre, sans déplacer les icônes */
+
+html body .mmic-posting-page .sceditor-button:hover {
+  transform: none !important;
+
+  background-color: rgba(216, 176, 140, 0.18) !important;
+
+  box-shadow:
+    inset 0 0 0 1px rgba(185, 122, 86, 0.15) !important;
+}
+
+
+/* Évite qu’un groupe masqué conserve une place */
+
+html body .mmic-posting-page .sceditor-group[style*="display: none"],
+html body .mmic-posting-page .sceditor-group[style*="display:none"] {
+  display: none !important;
+}
