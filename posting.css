@@ -2145,3 +2145,122 @@ html body .mmic-posting-page .mmic-posting-jumpbox input[type="submit"] {
   min-height: 31px !important;
   margin: 0 !important;
 }
+/* =========================================================
+   SAUTER VERS — CORRECTION RÉELLE DU DOUBLE CADRE
+   ========================================================= */
+
+/* Aucun cadre sur les deux conteneurs extérieurs */
+html body .mmic-posting-page .mmic-posting-footer-tools,
+html body .mmic-posting-page .mmic-posting-jumpbox {
+  display: block !important;
+
+  width: 100% !important;
+  min-height: 0 !important;
+
+  margin: 12px 0 !important;
+  padding: 0 !important;
+
+  border: 0 !important;
+  border-radius: 0 !important;
+
+  background: transparent !important;
+  box-shadow: none !important;
+  outline: 0 !important;
+}
+
+
+/* Le formulaire est aligné à droite */
+html body .mmic-posting-page .mmic-posting-jumpbox form {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-end !important;
+
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+
+  border: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+
+/* Seul le tableau intérieur conserve le petit cadre */
+html body .mmic-posting-page
+.mmic-posting-jumpbox table:has(select[name="selected_id"]) {
+  width: auto !important;
+  max-width: 100% !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  border: 1px solid rgba(216, 176, 140, 0.4) !important;
+  border-radius: 8px !important;
+
+  background:
+    linear-gradient(
+      180deg,
+      #fffdf9 0%,
+      #f8f2eb 100%
+    ) !important;
+
+  box-shadow:
+    0 3px 8px rgba(16, 36, 56, 0.04) !important;
+
+  border-collapse: separate !important;
+  border-spacing: 0 !important;
+
+  overflow: hidden !important;
+}
+
+
+/* Neutralise seulement la structure interne */
+html body .mmic-posting-page
+.mmic-posting-jumpbox table:has(select[name="selected_id"]) tbody,
+
+html body .mmic-posting-page
+.mmic-posting-jumpbox table:has(select[name="selected_id"]) tr {
+  width: auto !important;
+  height: auto !important;
+
+  border: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+
+/* Espacement intérieur du petit bloc */
+html body .mmic-posting-page
+.mmic-posting-jumpbox table:has(select[name="selected_id"]) td {
+  width: auto !important;
+  height: auto !important;
+  min-height: 0 !important;
+
+  padding: 9px 10px !important;
+
+  border: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+
+  vertical-align: middle !important;
+  white-space: nowrap !important;
+}
+
+
+/* Menu */
+html body .mmic-posting-page
+.mmic-posting-jumpbox select[name="selected_id"] {
+  width: 250px !important;
+  min-width: 250px !important;
+  max-width: 250px !important;
+
+  margin: 0 7px !important;
+}
+
+
+/* Bouton Aller */
+html body .mmic-posting-page
+.mmic-posting-jumpbox input[type="submit"] {
+  min-height: 31px !important;
+  margin: 0 !important;
+}
