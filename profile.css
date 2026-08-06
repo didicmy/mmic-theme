@@ -2108,113 +2108,7 @@ html body .mmic-profile-business-contact
         grid-template-columns: 1fr !important;
     }
 }
-/* =========================================================
-   PROFIL — EN-TÊTE PLUS COMPACT
-   ========================================================= */
 
-html body .mmic-profile-hero {
-    min-height: 0 !important;
-}
-
-html body .mmic-profile-hero-city {
-    padding: 10px 20px 8px !important;
-    font-size: 9px !important;
-    letter-spacing: 3px !important;
-}
-
-html body .mmic-profile-hero-city span {
-    width: 38px !important;
-}
-
-html body .mmic-profile-hero-content {
-    min-height: 0 !important;
-    padding: 14px 28px 16px !important;
-    gap: 22px !important;
-}
-
-/* Losange de l’avatar */
-
-html body .mmic-profile-hero-avatar {
-    flex: 0 0 108px !important;
-}
-
-html body .mmic-profile-avatar-diamond {
-    width: 92px !important;
-    height: 92px !important;
-}
-
-html body .mmic-profile-avatar-image {
-    inset: 6px !important;
-}
-
-html body .mmic-profile-avatar-image img {
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: cover !important;
-}
-
-/* Identité */
-
-html body .mmic-profile-identity {
-    gap: 5px !important;
-}
-
-html body .mmic-profile-eyebrow {
-    font-size: 8px !important;
-    letter-spacing: 2.4px !important;
-}
-
-html body .mmic-profile-username {
-    margin: 0 !important;
-    font-size: 34px !important;
-    line-height: 1 !important;
-}
-
-html body .mmic-profile-rank {
-    font-size: 9px !important;
-    letter-spacing: 2px !important;
-}
-
-html body .mmic-profile-status-line {
-    margin-top: 4px !important;
-    gap: 20px !important;
-    font-size: 9px !important;
-}
-
-html body .mmic-profile-status-dot {
-    width: 8px !important;
-    height: 8px !important;
-}
-html body .mmic-profile-business-header {
-    min-height: 0 !important;
-    padding: 15px 18px !important;
-}
-
-html body .mmic-profile-business-header > div:first-child > span {
-    font-size: 8px !important;
-    letter-spacing: 2px !important;
-}
-
-html body .mmic-profile-business-header h2 {
-    margin: 3px 0 0 !important;
-    font-size: 23px !important;
-    line-height: 1.15 !important;
-}
-/* =========================================================
-   FILIGRANE CHICAGO PLUS DISCRET
-   ========================================================= */
-
-html body .mmic-profile-business-mark {
-    right: 20px !important;
-
-    font-size: 32px !important;
-    letter-spacing: 3px !important;
-
-    opacity: 0.045 !important;
-    transform: none !important;
-
-    pointer-events: none !important;
-}
 /* =========================================================
    PROFIL — BOUTONS DE CONTACT MODERNES
    ========================================================= */
@@ -2364,384 +2258,60 @@ html body .mmic-profile-business-subtitle strong {
     letter-spacing: 1.7px !important;
 }
 
+
 /* =========================================================
-   PROFIL — COMPRESSION RÉELLE DU HEADER
+   PROFIL — FINITIONS PROPRES ET UNIQUES
+   Ce bloc remplace les anciens correctifs répétés du header.
    ========================================================= */
 
+/* En-tête compact */
 html body .mmic-profile-hero {
     height: auto !important;
     min-height: 0 !important;
     padding: 0 !important;
+    overflow: visible !important;
 }
-
-html body .mmic-profile-hero-content {
-    display: flex !important;
-    align-items: center !important;
-
-    height: auto !important;
-    min-height: 0 !important;
-
-    padding: 10px 28px 12px !important;
-    gap: 16px !important;
-}
-
-/* On retire toute hauteur héritée sur les blocs internes */
-
-html body .mmic-profile-hero-avatar,
-html body .mmic-profile-identity,
-html body .mmic-profile-hero-actions {
-    height: auto !important;
-    min-height: 0 !important;
-}
-
-/* Avatar encore un peu mieux ajusté */
-
-html body .mmic-profile-hero-avatar {
-    flex: 0 0 94px !important;
-    width: 94px !important;
-}
-
-html body .mmic-profile-avatar-diamond {
-    width: 82px !important;
-    height: 82px !important;
-}
-
-/* Identité plus compacte */
-
-html body .mmic-profile-identity {
-    display: flex !important;
-    flex-direction: column !important;
-    justify-content: center !important;
-
-    padding: 0 !important;
-    margin: 0 !important;
-    gap: 3px !important;
-}
-
-html body .mmic-profile-eyebrow {
-    margin: 0 !important;
-    font-size: 7px !important;
-    line-height: 1 !important;
-}
-
-html body .mmic-profile-username {
-    margin: 0 !important;
-    padding: 0 !important;
-
-    font-size: 31px !important;
-    line-height: 0.95 !important;
-}
-
-html body .mmic-profile-rank {
-    margin: 1px 0 0 !important;
-    line-height: 1 !important;
-}
-
-html body .mmic-profile-status-line {
-    margin-top: 4px !important;
-    line-height: 1 !important;
-}
-
-/* Bandeau Chicago plus fin */
 
 html body .mmic-profile-hero-city {
+    min-height: 0 !important;
+    padding: 7px 20px 6px !important;
+
+    font-size: 8px !important;
+    letter-spacing: 3px !important;
+}
+
+html body .mmic-profile-hero-city span {
+    width: 38px !important;
+}
+
+/*
+ * Deux colonnes seulement :
+ * avatar à gauche et identité sur toute la largeur restante.
+ */
+html body .mmic-profile-hero-content {
+    position: relative !important;
+
+    display: grid !important;
+    grid-template-columns: 112px minmax(0, 1fr) !important;
+    align-items: center !important;
+    gap: 14px !important;
+
+    width: 100% !important;
     height: auto !important;
     min-height: 0 !important;
 
-    padding: 7px 20px 6px !important;
-    line-height: 1 !important;
-}
-/* =========================================================
-   PROFIL — FINITIONS DU HEADER COMPACT
-   ========================================================= */
+    padding: 12px 28px 14px 18px !important;
 
-/* Masquer le deuxième "Admin" correspondant au rang */
-html body .mmic-profile-hero .mmic-profile-rank {
-    display: none !important;
+    box-sizing: border-box !important;
 }
 
-/* Le losange conserve sa taille actuelle */
-html body .mmic-profile-avatar-diamond {
-    width: 82px !important;
-    height: 82px !important;
-}
-
-/* Agrandir la photo à l’intérieur du losange */
-html body .mmic-profile-avatar-image {
-    inset: 3px !important;
-}
-
-html body .mmic-profile-avatar-image img {
-    width: 100% !important;
-    height: 100% !important;
-    max-width: none !important;
-    max-height: none !important;
-    object-fit: cover !important;
-    object-position: center !important;
-}
-
-/* Plus d’espace entre le losange et les informations */
-html body .mmic-profile-hero-content {
-    padding: 12px 30px 14px !important;
-    gap: 26px !important;
-}
-
-/* La zone du texte peut respirer davantage */
-html body .mmic-profile-identity {
-    flex: 1 1 auto !important;
-    width: auto !important;
-    min-width: 0 !important;
-    gap: 5px !important;
-}
-
-/* Nom légèrement moins tassé */
-html body .mmic-profile-username {
-    font-size: 31px !important;
-    line-height: 1.05 !important;
-}
-
-/* Statut et dernière visite plus espacés */
-html body .mmic-profile-status-line {
-    display: flex !important;
-    align-items: center !important;
-    justify-content: flex-start !important;
-    flex-wrap: wrap !important;
-
-    width: 100% !important;
-    margin-top: 6px !important;
-    gap: 12px 32px !important;
-}
-
-/* Chaque information garde son propre espace */
-html body .mmic-profile-status,
-html body .mmic-profile-last-visit {
-    display: inline-flex !important;
-    align-items: center !important;
-    gap: 7px !important;
-
-    margin: 0 !important;
-    white-space: nowrap !important;
-}
-
-/* Libellé "Dernière visite" séparé de la date */
-html body .mmic-profile-last-visit strong {
-    margin-right: 5px !important;
-}
-
-/* On neutralise l’ancienne zone vide située à droite */
+/* L’ancienne colonne d’actions du header ne sert plus ici. */
 html body .mmic-profile-hero-actions {
     display: none !important;
 }
-/* =========================================================
-   PROFIL — AVATAR PLUS GRAND + TEXTE VRAIMENT À GAUCHE
-   ========================================================= */
-
-/* On garde le header compact */
-html body .mmic-profile-hero-content {
-    position: relative !important;
-    display: flex !important;
-    align-items: center !important;
-
-    padding: 12px 24px 14px 18px !important;
-    gap: 14px !important;
-}
-
-/* Zone avatar plus large */
-html body .mmic-profile-hero-avatar {
-    flex: 0 0 112px !important;
-    width: 112px !important;
-    min-width: 112px !important;
-    max-width: 112px !important;
-
-    margin: 0 !important;
-    padding: 0 !important;
-}
-
-/* Losange un peu plus grand */
-html body .mmic-profile-avatar-diamond {
-    width: 96px !important;
-    height: 96px !important;
-    margin: 0 !important;
-}
-
-/* L’image remplit réellement le losange */
-html body .mmic-profile-avatar-image {
-    position: absolute !important;
-    inset: 2px !important;
-    overflow: hidden !important;
-}
-
-html body .mmic-profile-avatar-image img {
-    display: block !important;
-
-    width: 100% !important;
-    height: 100% !important;
-
-    min-width: 100% !important;
-    min-height: 100% !important;
-    max-width: none !important;
-    max-height: none !important;
-
-    object-fit: cover !important;
-    object-position: center 25% !important;
-}
-
-/* Texte repoussé le moins possible */
-html body .mmic-profile-identity {
-    flex: 1 1 auto !important;
-    width: auto !important;
-    min-width: 0 !important;
-
-    margin: 0 !important;
-    padding: 0 !important;
-
-    text-align: left !important;
-    align-items: flex-start !important;
-}
-
-/* Tout le contenu interne est bien aligné à gauche */
-html body .mmic-profile-eyebrow,
-html body .mmic-profile-username,
-html body .mmic-profile-status-line,
-html body .mmic-profile-status,
-html body .mmic-profile-last-visit {
-    text-align: left !important;
-    justify-content: flex-start !important;
-}
-
-/* Nom moins collé au libellé */
-html body .mmic-profile-username {
-    margin: 2px 0 0 !important;
-}
-
-/* Ligne d’état vraiment étalée vers la gauche */
-html body .mmic-profile-status-line {
-    display: flex !important;
-    align-items: center !important;
-    justify-content: flex-start !important;
-
-    width: 100% !important;
-    margin: 7px 0 0 !important;
-
-    gap: 10px 24px !important;
-}
-
-/* Dernière visite moins tassée */
-html body .mmic-profile-last-visit {
-    gap: 10px !important;
-}
-
-html body .mmic-profile-last-visit strong {
-    margin: 0 !important;
-}
-/* =========================================================
-   PROFIL — AVATAR À GAUCHE, IDENTITÉ À DROITE
-   ========================================================= */
-
-html body .mmic-profile-hero-content {
-    display: flex !important;
-    align-items: center !important;
-    justify-content: space-between !important;
-
-    width: 100% !important;
-    padding: 12px 30px 14px 18px !important;
-    gap: 30px !important;
-}
-
-/* Avatar maintenu à gauche */
-
-html body .mmic-profile-hero-avatar {
-    flex: 0 0 112px !important;
-    width: 112px !important;
-    min-width: 112px !important;
-
-    margin: 0 !important;
-}
-
-/* Bloc d’identité envoyé vers le bord droit */
-
-html body .mmic-profile-identity {
-    flex: 0 1 390px !important;
-    width: 390px !important;
-    max-width: 390px !important;
-
-    margin: 0 0 0 auto !important;
-    padding: 0 !important;
-
-    align-items: flex-start !important;
-    text-align: left !important;
-}
-
-/* Statut et dernière visite utilisent toute la largeur disponible */
-
-html body .mmic-profile-status-line {
-    display: flex !important;
-    align-items: center !important;
-    justify-content: flex-start !important;
-    flex-wrap: wrap !important;
-
-    width: 100% !important;
-    margin-top: 7px !important;
-    gap: 12px 28px !important;
-}
-
-html body .mmic-profile-status,
-html body .mmic-profile-last-visit {
-    display: inline-flex !important;
-    align-items: center !important;
-    justify-content: flex-start !important;
-
-    margin: 0 !important;
-    white-space: nowrap !important;
-}
 
 /* =========================================================
-   PROFIL — IMAGE DU LOSANGE BIEN AJUSTÉE
-   ========================================================= */
-
-html body .mmic-profile-avatar-diamond {
-    position: relative !important;
-
-    width: 96px !important;
-    height: 96px !important;
-
-    overflow: hidden !important;
-}
-
-html body .mmic-profile-avatar-image {
-    position: absolute !important;
-    inset: 4px !important;
-
-    overflow: hidden !important;
-
-    transform: rotate(-45deg) !important;
-}
-
-html body .mmic-profile-avatar-image img {
-    position: absolute !important;
-
-    top: 50% !important;
-    left: 50% !important;
-
-    width: 142% !important;
-    height: 142% !important;
-
-    min-width: 142% !important;
-    min-height: 142% !important;
-    max-width: none !important;
-    max-height: none !important;
-
-    object-fit: cover !important;
-    object-position: center !important;
-
-    transform:
-        translate(-50%, -50%)
-        rotate(45deg) !important;
-
-    transform-origin: center !important;
-}
-/* =========================================================
-   CORRECTION AVATAR DU HEADER PROFIL
+   AVATAR DU HEADER
    ========================================================= */
 
 html body .mmic-profile-hero-avatar {
@@ -2749,16 +2319,16 @@ html body .mmic-profile-hero-avatar {
     align-items: center !important;
     justify-content: center !important;
 
-    width: 118px !important;
-    min-width: 118px !important;
-    height: 118px !important;
+    width: 112px !important;
+    min-width: 112px !important;
+    height: 108px !important;
+    min-height: 0 !important;
 
     margin: 0 !important;
     padding: 0 !important;
 
     overflow: visible !important;
 }
-
 
 html body .mmic-profile-avatar-diamond {
     position: relative !important;
@@ -2783,38 +2353,44 @@ html body .mmic-profile-avatar-diamond {
     box-shadow:
         0 4px 12px rgba(12, 29, 47, 0.24),
         inset 0 0 0 2px rgba(216, 176, 140, 0.35) !important;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease !important;
 }
 
+html body .mmic-profile-avatar-diamond:hover {
+    transform: rotate(45deg) scale(1.06) !important;
+
+    box-shadow:
+        0 8px 18px rgba(12, 29, 47, 0.34),
+        inset 0 0 0 2px rgba(216, 176, 140, 0.45) !important;
+}
 
 html body .mmic-profile-avatar-image {
     position: absolute !important;
 
-    top: 4px !important;
-    right: 4px !important;
-    bottom: 4px !important;
-    left: 4px !important;
+    inset: 4px !important;
 
     width: auto !important;
     height: auto !important;
 
     overflow: hidden !important;
-
     transform: none !important;
 }
 
-
 html body .mmic-profile-avatar-image img {
     position: absolute !important;
-
     top: 50% !important;
     left: 50% !important;
 
     display: block !important;
 
     width: 116px !important;
-    max-width: none !important;
-
     height: 116px !important;
+    min-width: 116px !important;
+    min-height: 116px !important;
+    max-width: none !important;
     max-height: none !important;
 
     margin: 0 !important;
@@ -2828,4 +2404,172 @@ html body .mmic-profile-avatar-image img {
         rotate(-45deg) !important;
 
     transform-origin: center center !important;
+}
+
+/* =========================================================
+   IDENTITÉ ET DERNIÈRE VISITE
+   ========================================================= */
+
+html body .mmic-profile-identity {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    justify-content: center !important;
+
+    width: 100% !important;
+    min-width: 0 !important;
+    height: auto !important;
+    min-height: 0 !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    text-align: left !important;
+}
+
+/* Le pseudo reste près de l’avatar. */
+html body .mmic-profile-eyebrow {
+    margin: 0 0 3px !important;
+
+    font-size: 7px !important;
+    line-height: 1 !important;
+    letter-spacing: 2.3px !important;
+}
+
+html body .mmic-profile-username {
+    margin: 0 !important;
+    padding: 0 !important;
+
+    font-size: 31px !important;
+    line-height: 1 !important;
+}
+
+/* On retire le second nom correspondant au rang. */
+html body .mmic-profile-hero .mmic-profile-rank {
+    display: none !important;
+}
+
+/*
+ * Le statut reste sous le pseudo.
+ * La dernière visite est poussée vers le coin droit.
+ */
+html body .mmic-profile-status-line {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    flex-wrap: nowrap !important;
+    gap: 14px !important;
+
+    width: 100% !important;
+    margin: 7px 0 0 !important;
+
+    line-height: 1 !important;
+}
+
+html body .mmic-profile-status,
+html body .mmic-profile-last-visit {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 7px !important;
+
+    margin: 0 !important;
+
+    white-space: nowrap !important;
+}
+
+html body .mmic-profile-status {
+    flex: 0 0 auto !important;
+}
+
+/* C’est cette règle qui envoie la date complètement à droite. */
+html body .mmic-profile-last-visit {
+    flex: 0 0 auto !important;
+    margin-left: auto !important;
+
+    text-align: right !important;
+}
+
+html body .mmic-profile-last-visit strong {
+    margin: 0 5px 0 0 !important;
+}
+
+/* =========================================================
+   CARTE DE VISITE — EN-TÊTE ET FILIGRANE
+   ========================================================= */
+
+html body .mmic-profile-business-header {
+    min-height: 0 !important;
+    padding: 15px 18px !important;
+}
+
+html body .mmic-profile-business-header > div:first-child > span {
+    font-size: 8px !important;
+    letter-spacing: 2px !important;
+}
+
+html body .mmic-profile-business-header h2 {
+    margin: 3px 0 0 !important;
+
+    font-size: 23px !important;
+    line-height: 1.15 !important;
+}
+
+html body .mmic-profile-business-mark {
+    right: 20px !important;
+
+    font-size: 32px !important;
+    letter-spacing: 3px !important;
+
+    opacity: 0.045 !important;
+    transform: none !important;
+
+    pointer-events: none !important;
+}
+
+/* =========================================================
+   RESPONSIVE DU HEADER
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    html body .mmic-profile-hero-content {
+        grid-template-columns: 92px minmax(0, 1fr) !important;
+        gap: 12px !important;
+
+        padding: 12px 16px 14px !important;
+    }
+
+    html body .mmic-profile-hero-avatar {
+        width: 92px !important;
+        min-width: 92px !important;
+    }
+
+    html body .mmic-profile-status-line {
+        flex-wrap: wrap !important;
+        gap: 8px 14px !important;
+    }
+
+    html body .mmic-profile-last-visit {
+        margin-left: 0 !important;
+        text-align: left !important;
+    }
+}
+
+@media (max-width: 480px) {
+
+    html body .mmic-profile-hero-content {
+        display: flex !important;
+        flex-direction: column !important;
+
+        text-align: center !important;
+    }
+
+    html body .mmic-profile-identity {
+        align-items: center !important;
+        text-align: center !important;
+    }
+
+    html body .mmic-profile-status-line {
+        justify-content: center !important;
+    }
 }
