@@ -2451,3 +2451,84 @@ html body .mmic-profile-hero-city {
     padding: 7px 20px 6px !important;
     line-height: 1 !important;
 }
+/* =========================================================
+   PROFIL — FINITIONS DU HEADER COMPACT
+   ========================================================= */
+
+/* Masquer le deuxième "Admin" correspondant au rang */
+html body .mmic-profile-hero .mmic-profile-rank {
+    display: none !important;
+}
+
+/* Le losange conserve sa taille actuelle */
+html body .mmic-profile-avatar-diamond {
+    width: 82px !important;
+    height: 82px !important;
+}
+
+/* Agrandir la photo à l’intérieur du losange */
+html body .mmic-profile-avatar-image {
+    inset: 3px !important;
+}
+
+html body .mmic-profile-avatar-image img {
+    width: 100% !important;
+    height: 100% !important;
+    max-width: none !important;
+    max-height: none !important;
+    object-fit: cover !important;
+    object-position: center !important;
+}
+
+/* Plus d’espace entre le losange et les informations */
+html body .mmic-profile-hero-content {
+    padding: 12px 30px 14px !important;
+    gap: 26px !important;
+}
+
+/* La zone du texte peut respirer davantage */
+html body .mmic-profile-identity {
+    flex: 1 1 auto !important;
+    width: auto !important;
+    min-width: 0 !important;
+    gap: 5px !important;
+}
+
+/* Nom légèrement moins tassé */
+html body .mmic-profile-username {
+    font-size: 31px !important;
+    line-height: 1.05 !important;
+}
+
+/* Statut et dernière visite plus espacés */
+html body .mmic-profile-status-line {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    flex-wrap: wrap !important;
+
+    width: 100% !important;
+    margin-top: 6px !important;
+    gap: 12px 32px !important;
+}
+
+/* Chaque information garde son propre espace */
+html body .mmic-profile-status,
+html body .mmic-profile-last-visit {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 7px !important;
+
+    margin: 0 !important;
+    white-space: nowrap !important;
+}
+
+/* Libellé "Dernière visite" séparé de la date */
+html body .mmic-profile-last-visit strong {
+    margin-right: 5px !important;
+}
+
+/* On neutralise l’ancienne zone vide située à droite */
+html body .mmic-profile-hero-actions {
+    display: none !important;
+}
