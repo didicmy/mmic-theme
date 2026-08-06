@@ -2696,33 +2696,47 @@ html body .mmic-profile-last-visit {
 }
 
 /* =========================================================
-   ZOOM RÉEL DE LA PHOTO DANS LE LOSANGE
+   PROFIL — IMAGE DU LOSANGE BIEN AJUSTÉE
    ========================================================= */
 
 html body .mmic-profile-avatar-diamond {
+    position: relative !important;
+
     width: 96px !important;
     height: 96px !important;
+
+    overflow: hidden !important;
 }
 
 html body .mmic-profile-avatar-image {
     position: absolute !important;
-    inset: 3px !important;
+    inset: 4px !important;
+
     overflow: hidden !important;
+
+    transform: rotate(-45deg) !important;
 }
 
 html body .mmic-profile-avatar-image img {
     position: absolute !important;
+
     top: 50% !important;
     left: 50% !important;
 
-    width: 100% !important;
-    height: 100% !important;
+    width: 142% !important;
+    height: 142% !important;
+
+    min-width: 142% !important;
+    min-height: 142% !important;
     max-width: none !important;
     max-height: none !important;
 
     object-fit: cover !important;
-    object-position: center 30% !important;
+    object-position: center !important;
 
-    transform: translate(-50%, -50%) scale(2.70) !important;
+    transform:
+        translate(-50%, -50%)
+        rotate(45deg) !important;
+
     transform-origin: center !important;
 }
