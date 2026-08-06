@@ -1,0 +1,1628 @@
+/* =========================================================
+   MEET ME IN CHICAGO — LISTE DES SUJETS
+   =========================================================
+
+   Cette feuille contient uniquement la page listant les sujets :
+   - actions et navigation de la page forum ;
+   - fil d’Ariane ;
+   - en-tête et titre du forum ;
+   - cartes des sujets ;
+   - statuts, auteurs, compteurs et dernier message ;
+   - pied de liste ;
+   - utilisateurs présents et permissions ;
+   - responsive ;
+   - correctifs finaux de mise en page.
+
+   Sont volontairement exclus :
+   - les styles visuels des boutons -> buttons.css ;
+   - la vue interne d’un sujet -> vue-sujet-profil.css.
+   ========================================================= */
+
+/* =========================================================
+   LISTE DES SUJETS — MEET ME IN CHICAGO
+   ========================================================= */
+
+.mmic-viewforum-actions,
+.mmic-viewforum-navigation,
+.mmic-topics,
+.mmic-viewforum-footer {
+  width: calc(100% - 24px);
+  max-width: 1100px;
+  margin-right: auto;
+  margin-left: auto;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   BOUTON NOUVEAU SUJET
+   ========================================================= */
+
+.mmic-viewforum-actions {
+  display: flex;
+  justify-content: flex-end;
+
+  margin-top: 14px;
+  margin-bottom: 9px;
+}
+
+.mmic-new-topic-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  min-height: 34px;
+  padding: 0 14px;
+
+  border: 1px solid #b97a56;
+  border-radius: 7px;
+
+  background: #102438;
+  color: #fbf8f3 !important;
+
+  box-shadow: 0 3px 8px rgba(16, 36, 56, 0.13);
+
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  text-decoration: none !important;
+  text-transform: uppercase;
+
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.mmic-new-topic-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 19px;
+  height: 19px;
+
+  border-radius: 50%;
+
+  background: #b97a56;
+  color: #fbf8f3;
+
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1;
+}
+
+.mmic-new-topic-button:hover {
+  border-color: #102438;
+
+  background: #b97a56;
+
+  box-shadow: 0 5px 12px rgba(16, 36, 56, 0.18);
+
+  transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   FIL D’ARIANE
+   ========================================================= */
+
+.mmic-viewforum-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+
+  margin-bottom: 10px;
+  padding: 10px 13px;
+
+  border: 1px solid #ddd1c6;
+  border-radius: 7px;
+
+  background: #f7f1e9;
+
+  color: #766a61;
+
+  font-size: 8px;
+  line-height: 1.5;
+}
+
+.mmic-viewforum-breadcrumb a {
+  color: #102438;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.mmic-viewforum-breadcrumb a:hover {
+  color: #b97a56;
+}
+
+.mmic-viewforum-more {
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.mmic-viewforum-more-label {
+  color: #a06d50;
+
+  font-size: 7px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+
+/* =========================================================
+   CONTENEUR PRINCIPAL
+   ========================================================= */
+
+.mmic-topics {
+  overflow: hidden;
+
+  border: 1px solid #d8cbbd;
+  border-radius: 12px;
+
+  background: #f4eee5;
+
+  box-shadow: 0 6px 18px rgba(16, 36, 56, 0.09);
+}
+
+
+/* HEADER DU FORUM */
+
+.mmic-topics-header{
+
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+
+    gap:18px;
+
+    margin-bottom:30px;
+
+    padding:0;
+
+    background:none;
+    border:none;
+    box-shadow:none;
+
+}
+
+.mmic-topics-header::after {
+  content: "";
+
+  position: absolute;
+  right: 0;
+  bottom: -3px;
+  left: 0;
+
+  height: 48px;
+
+  opacity: 0.11;
+  pointer-events: none;
+
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='700' height='80' viewBox='0 0 700 80'%3E%3Cpath fill='%23ffffff' d='M0 80V60h18V42h18v38h12V30h22v50h15V50h20v30h12V22h30v58h10V44h18v36h14V12h34v68h12V38h24v42h16V28h36v52h12V48h22v32h14V18h29v62h13V36h22v44h16V8h38v72h12V46h22v34h14V24h34v56h16V52h20v28h14V32h28v48h18V42h25v38h15V56h18v24z'/%3E%3C/svg%3E");
+
+  background-position: center bottom;
+  background-repeat: repeat-x;
+  background-size: auto 48px;
+}
+
+.mmic-topics-header-text,
+.mmic-topics-pagination {
+  position: relative;
+  z-index: 2;
+}
+
+.mmic-topics-eyebrow {
+  display: block;
+  margin-bottom: 4px;
+
+  color: #d19168;
+
+  font-size: 7px;
+  font-weight: 700;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+}
+
+.mmic-topics-header h1 {
+  margin: 0;
+
+  color: #fbf8f3;
+
+  font: 19px Georgia, "Times New Roman", serif;
+  font-weight: normal;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+}
+
+.mmic-topics-pagination {
+  color: #fbf8f3;
+  font-size: 8px;
+}
+
+.mmic-topics-pagination a {
+  color: #fbf8f3 !important;
+}
+
+.mmic-topics-divider{
+
+    display:flex;
+    align-items:center;
+
+    width:100%;
+
+    gap:18px;
+
+}
+.mmic-topics-divider::before,
+.mmic-topics-divider::after{
+
+    content:"";
+
+    flex:1;
+
+    height:1px;
+
+    background:#d8b49a;
+
+}
+.mmic-topics-divider span{
+
+    color:#bc8b65;
+
+    font-size:10px;
+
+    letter-spacing:3px;
+
+    text-transform:uppercase;
+
+    font-weight:700;
+
+}
+.mmic-topics-title{
+
+    margin:0;
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:44px;
+
+    font-weight:600;
+
+    color:#223247;
+
+    letter-spacing:1px;
+
+    line-height:1;
+
+}
+.mmic-topics-pagination{
+
+    align-self:flex-end;
+
+    margin-top:-10px;
+
+    font-size:11px;
+
+    color:#7c7066;
+
+}
+/* TITRES DE SECTIONS */
+
+.mmic-topics-section-title {
+  padding: 8px 16px;
+
+  border-bottom: 1px solid #ddd1c6;
+
+  background: #eee4d9;
+  color: #a06d50;
+
+  font-size: 7px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+
+/* =========================================================
+   CARTE D’UN SUJET
+   ========================================================= */
+
+.mmic-topics-list {
+  padding: 10px;
+}
+
+.mmic-topic {
+  position: relative;
+
+  display: grid;
+  grid-template-columns:
+    44px
+    minmax(0, 1fr)
+    115px
+    190px;
+
+  align-items: center;
+
+  min-height: 92px;
+  margin-bottom: 8px;
+  padding:22px 28px;
+  min-height:92px;
+
+  border: 1px solid #ddd1c6;
+  border-radius: 9px;
+
+  background: #fbf8f3;
+
+  box-shadow: 0 2px 7px rgba(16, 36, 56, 0.04);
+
+  box-sizing: border-box;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+}
+
+.mmic-topic:last-child {
+  margin-bottom: 0;
+}
+
+.mmic-topic:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:0 8px 18px rgba(0,0,0,.05);
+
+}
+
+
+/* STATUT DU SUJET */
+
+.mmic-topic-status {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 32px;
+  height: 32px;
+  margin: 0 auto;
+
+  border: 1px solid #b97a56;
+  border-radius: 8px;
+
+  background: #102438;
+
+  box-shadow: 0 2px 5px rgba(16, 36, 56, 0.13);
+}
+
+.mmic-topic-status-icon::before {
+  content: "✎";
+
+  color: #fbf8f3;
+
+  font-size: 13px;
+}
+
+.mmic-topic-original-folder {
+  display: none;
+}
+
+
+/* TITRE ET DESCRIPTION */
+
+.mmic-topic-main {
+  min-width: 0;
+  padding: 0 13px;
+
+  border-right: 1px solid #e3d9cf;
+}
+
+.mmic-topic-heading {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.mmic-topic-title {
+  color: #102438 !important;
+
+  font: 13px Georgia, "Times New Roman", serif;
+  font-weight: normal;
+  line-height: 1.3;
+  text-decoration: none !important;
+}
+
+.mmic-topic-title:hover {
+  color: #b97a56 !important;
+}
+
+.mmic-topic-type:empty {
+  display: none;
+}
+
+.mmic-topic-type:not(:empty) {
+  padding: 3px 6px;
+
+  border-radius: 4px;
+
+  background: #102438;
+  color: #fbf8f3;
+
+  font-size: 6px;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+}
+
+.mmic-topic-description {
+  margin-top: 5px;
+
+  color: #988b81;
+
+  font-size: 8px;
+  font-style: italic;
+  line-height: 1.5;
+}
+
+.mmic-topic-navigation,
+.mmic-topic-dates {
+  margin-top: 5px;
+
+  color: #a06d50;
+
+  font-size: 7px;
+  line-height: 1.4;
+}
+
+.mmic-topic-navigation:empty,
+.mmic-topic-dates:empty {
+  display: none;
+}
+
+
+
+/* AUTEUR ET COMPTEURS */
+
+.mmic-topic-meta {
+  padding: 0 12px;
+
+  border-right: 1px solid #e3d9cf;
+
+  color: #766a61;
+
+  font-size: 7px;
+  text-align: center;
+}
+
+.mmic-topic-meta-label {
+  display: block;
+  margin-bottom: 3px;
+
+  color: #a06d50;
+
+  font-size: 6px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+
+.mmic-topic-author {
+  margin-bottom: 8px;
+}
+
+.mmic-topic-numbers {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+}
+
+.mmic-topic-number {
+  min-width: 36px;
+  padding: 5px;
+
+  border: 1px solid #e3d9cf;
+  border-radius: 5px;
+
+  background: #f7f1e9;
+}
+
+.mmic-topic-number strong {
+  display: block;
+
+  color: #102438;
+
+  font-size: 9px;
+}
+
+.mmic-topic-number span {
+  color: #998d84;
+
+  font-size: 5px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+}
+
+
+/* DERNIER MESSAGE */
+
+.mmic-topic-last {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+
+  min-width: 0;
+  padding-left: 12px;
+}
+
+.mmic-topic-last-avatar {
+  flex: 0 0 38px;
+
+  width: 38px;
+  height: 38px;
+
+  overflow: hidden;
+
+  border: 1px solid #b97a56;
+  border-radius: 7px;
+
+  background: #eee4d9;
+}
+
+.mmic-topic-last-avatar img {
+  width: 100% !important;
+  height: 100% !important;
+
+  object-fit: cover;
+}
+
+.mmic-topic-last-content {
+  min-width: 0;
+
+  color: #766a61;
+
+  font-size: 7px;
+  line-height: 1.5;
+}
+
+.mmic-topic-last-time {
+  overflow: hidden;
+
+  color: #887b72;
+
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.mmic-topic-last-author a {
+  color: #102438 !important;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+
+/* ICÔNES SECONDAIRES */
+
+.mmic-topic-pre-icons img,
+.mmic-topic-special-icon img {
+  max-width: 13px;
+  max-height: 13px;
+}
+
+.mmic-topic-selection,
+.mmic-topic-multiselect {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+
+/* AUCUN SUJET */
+
+.mmic-topics-empty {
+  padding: 40px 20px;
+
+  color: #766a61;
+  text-align: center;
+}
+
+.mmic-topics-empty-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 36px;
+  height: 36px;
+  margin: 0 auto 10px;
+
+  border-radius: 50%;
+
+  background: #102438;
+  color: #d19168;
+
+  font-size: 15px;
+}
+
+.mmic-topics-empty strong {
+  display: block;
+
+  color: #102438;
+
+  font: 14px Georgia, "Times New Roman", serif;
+}
+
+.mmic-topics-empty p {
+  margin: 5px 0 0;
+
+  font-size: 8px;
+}
+
+
+/* PIED DE LA LISTE */
+
+.mmic-topics-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 10px 14px;
+
+  border-top: 1px solid #d8cbbd;
+
+  background: #f7f1e9;
+}
+
+.mmic-topics-backtop {
+  color: #a06d50 !important;
+
+  font-size: 7px;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+  text-decoration: none !important;
+  text-transform: uppercase;
+}
+
+
+/* =========================================================
+   BAS DU FORUM
+   ========================================================= */
+
+.mmic-viewforum-footer {
+  margin-top: 12px;
+  margin-bottom: 20px;
+}
+
+.mmic-viewforum-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+
+  padding: 10px 13px;
+
+  border: 1px solid #ddd1c6;
+  border-radius: 8px;
+
+  background: #fbf8f3;
+}
+
+.mmic-viewforum-footer-title {
+  display: block;
+  margin-bottom: 4px;
+
+  color: #a06d50;
+
+  font-size: 6px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+
+.mmic-viewforum-moderators {
+  color: #766a61;
+
+  font-size: 8px;
+}
+
+.mmic-viewforum-options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 6px;
+}
+
+.mmic-viewforum-option {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+
+  min-height: 25px;
+  padding: 0 9px;
+
+  border: 1px solid #ddd1c6;
+  border-radius: 5px;
+
+  background: #f7f1e9;
+  color: #625951 !important;
+
+  font-size: 7px;
+  font-weight: 700;
+  text-decoration: none !important;
+  text-transform: uppercase;
+}
+
+.mmic-viewforum-option > span:first-child {
+  color: #b97a56;
+}
+
+.mmic-viewforum-option:hover {
+  border-color: #b97a56;
+
+  background: #102438;
+  color: #fbf8f3 !important;
+}
+
+.mmic-viewforum-watch a {
+  color: inherit !important;
+  text-decoration: none;
+}
+
+
+/* UTILISATEURS PRÉSENTS */
+
+.mmic-viewforum-users {
+  margin-top: 8px;
+  padding: 11px 13px;
+
+  border: 1px solid #c8d3dc;
+  border-radius: 8px;
+
+  background: #e7edf1;
+}
+
+.mmic-viewforum-users-title {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  margin-bottom: 6px;
+
+  color: #102438;
+
+  font: 10px Georgia, "Times New Roman", serif;
+}
+
+.mmic-viewforum-users-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 20px;
+  height: 20px;
+
+  border-radius: 50%;
+
+  background: #102438;
+  color: #d19168;
+
+  font-size: 8px;
+}
+
+.mmic-viewforum-users-list {
+  color: #687681;
+
+  font-size: 8px;
+  line-height: 1.5;
+}
+
+
+/* PERMISSIONS */
+
+.mmic-viewforum-permissions {
+  margin-top: 8px;
+  padding: 11px 13px;
+
+  border: 1px solid #ddd1c6;
+  border-radius: 8px;
+
+  background: #f7f1e9;
+}
+
+.mmic-viewforum-permissions-list {
+  color: #766a61;
+
+  font-size: 8px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 900px) {
+  .mmic-topic {
+    grid-template-columns:
+      40px
+      minmax(0, 1fr)
+      105px;
+  }
+
+  .mmic-topic-last {
+    grid-column: 2 / -1;
+
+    margin-top: 9px;
+    padding-top: 9px;
+    padding-left: 13px;
+
+    border-top: 1px solid #e3d9cf;
+  }
+
+  .mmic-topic-meta {
+    border-right: 0;
+  }
+}
+
+@media (max-width: 650px) {
+  .mmic-viewforum-actions,
+  .mmic-viewforum-navigation,
+  .mmic-topics,
+  .mmic-viewforum-footer {
+    width: calc(100% - 12px);
+  }
+
+  .mmic-viewforum-navigation,
+  .mmic-viewforum-links {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .mmic-viewforum-options {
+    justify-content: flex-start;
+  }
+
+  .mmic-topics-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .mmic-topic {
+    grid-template-columns:
+      35px
+      minmax(0, 1fr);
+  }
+
+  .mmic-topic-main {
+    border-right: 0;
+  }
+
+  .mmic-topic-meta,
+  .mmic-topic-last {
+    grid-column: 2;
+
+    margin-top: 8px;
+    padding-top: 8px;
+    padding-left: 0;
+
+    border-top: 1px solid #e3d9cf;
+    border-right: 0;
+  }
+
+  .mmic-topic-meta {
+    text-align: left;
+  }
+
+  .mmic-topic-numbers {
+    justify-content: flex-start;
+  }
+}
+
+
+/* =========================================================
+   ADAPTATION AUX ÉCRANS PLUS PETITS
+   ========================================================= */
+
+@media (max-width: 900px) {
+  .mmic-topic {
+    grid-template-columns:
+      42px
+      minmax(220px, 1fr)
+      105px !important;
+
+    grid-template-areas:
+      "status main meta"
+      "status last last";
+  }
+
+  .mmic-topic-main {
+    border-right: 1px solid #e3d9cf;
+  }
+
+  .mmic-topic-meta {
+    border-right: 0;
+  }
+
+  .mmic-topic-last {
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-left: 16px;
+
+    border-top: 1px solid #e3d9cf;
+  }
+}
+
+@media (max-width: 650px) {
+  .mmic-topic {
+    grid-template-columns:
+      38px
+      minmax(0, 1fr) !important;
+
+    grid-template-areas:
+      "status main"
+      "status meta"
+      "status last";
+  }
+
+  .mmic-topic-main,
+  .mmic-topic-meta,
+  .mmic-topic-last {
+    padding-right: 0;
+    padding-left: 12px;
+
+    border-right: 0;
+  }
+
+  .mmic-topic-meta,
+  .mmic-topic-last {
+    margin-top: 8px;
+    padding-top: 8px;
+
+    border-top: 1px solid #e3d9cf;
+  }
+
+  .mmic-topic-meta {
+    text-align: left;
+  }
+
+  .mmic-topic-numbers {
+    justify-content: flex-start;
+  }
+}
+/* =========================================================
+   LISTE DES SUJETS — VERSION ADAPTÉE AU FORUM
+   ========================================================= */
+
+.mmic-topics-list {
+  padding: 10px;
+}
+
+.mmic-topic {
+  position: relative;
+
+  display: grid !important;
+  grid-template-columns: 44px minmax(0, 1fr) 175px !important;
+  grid-template-areas:
+    "status main last"
+    "status meta last";
+
+  align-items: center !important;
+  column-gap: 0;
+
+  width: 100% !important;
+  min-height: 96px;
+  margin: 0 0 8px;
+  padding: 11px 12px;
+
+  border: 1px solid #ddd1c6;
+  border-radius: 9px;
+
+  background: #fbf8f3;
+
+  box-shadow: 0 2px 7px rgba(16, 36, 56, 0.04);
+
+  box-sizing: border-box !important;
+  float: none !important;
+  clear: both;
+}
+
+.mmic-topic:last-child {
+  margin-bottom: 0;
+}
+
+
+/* STATUT */
+
+.mmic-topic-status {
+  grid-area: status;
+
+  position: relative !important;
+  float: none !important;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 32px;
+  height: 32px;
+  margin: 0 auto;
+
+  border: 1px solid #b97a56;
+  border-radius: 8px;
+
+  background: #102438;
+}
+
+.mmic-topic-status-icon::before {
+  content: "✎";
+
+  color: #fbf8f3;
+  font-size: 13px;
+}
+
+.mmic-topic-original-folder {
+  display: none !important;
+}
+
+
+/* TITRE ET DESCRIPTION */
+
+.mmic-topic-main {
+  grid-area: main;
+
+  position: relative !important;
+  float: none !important;
+
+  min-width: 0;
+  width: auto !important;
+  margin: 0 !important;
+  padding: 0 14px 5px;
+
+  border-right: 1px solid #e3d9cf;
+
+  box-sizing: border-box;
+}
+
+.mmic-topic-heading {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.mmic-topic-title {
+  display: inline-block;
+
+  max-width: 100%;
+
+  color: #102438 !important;
+
+  font: 13px Georgia, "Times New Roman", serif;
+  line-height: 1.3;
+  text-decoration: none !important;
+
+  overflow-wrap: anywhere;
+}
+
+.mmic-topic-description {
+  margin-top: 4px;
+
+  color: #988b81;
+
+  font-size: 8px;
+  font-style: italic;
+  line-height: 1.45;
+}
+
+
+/* AUTEUR ET COMPTEURS SUR UNE SEULE LIGNE */
+
+.mmic-topic-meta {
+  grid-area: meta;
+
+  position: relative !important;
+  float: none !important;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  min-width: 0;
+  width: auto !important;
+  margin: 0 !important;
+  padding: 5px 14px 0;
+
+  border-right: 1px solid #e3d9cf;
+
+  color: #766a61;
+  font-size: 7px;
+  text-align: left;
+
+  box-sizing: border-box;
+}
+
+.mmic-topic-author {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+
+  margin: 0;
+}
+
+.mmic-topic-meta-label {
+  display: inline;
+
+  margin: 0;
+
+  color: #a06d50;
+
+  font-size: 6px;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+}
+
+.mmic-topic-numbers {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.mmic-topic-number {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+
+  min-width: 0;
+  padding: 3px 6px;
+
+  border: 1px solid #e3d9cf;
+  border-radius: 4px;
+
+  background: #f7f1e9;
+}
+
+.mmic-topic-number strong,
+.mmic-topic-number span {
+  display: inline;
+
+  font-size: 6px;
+}
+
+.mmic-topic-number strong {
+  color: #102438;
+}
+
+.mmic-topic-number span {
+  color: #998d84;
+  text-transform: uppercase;
+}
+
+
+/* DERNIER MESSAGE */
+
+.mmic-topic-last {
+  grid-area: last;
+
+  position: relative !important;
+  float: none !important;
+
+  display: flex;
+  align-items: center;
+  gap: 9px;
+
+  min-width: 0;
+  width: auto !important;
+  height: auto !important;
+  margin: 0 !important;
+  padding-left: 12px;
+
+  box-sizing: border-box;
+}
+
+.mmic-topic-last-avatar {
+  flex: 0 0 42px;
+
+  width: 42px;
+  height: 42px;
+
+  overflow: hidden;
+
+  border: 1px solid #b97a56;
+  border-radius: 7px;
+
+  background: #eee4d9;
+}
+
+.mmic-topic-last-avatar img {
+  display: block;
+
+  width: 100% !important;
+  height: 100% !important;
+
+  object-fit: cover;
+}
+
+.mmic-topic-last-content {
+  min-width: 0;
+
+  color: #766a61;
+
+  font-size: 7px;
+  line-height: 1.5;
+}
+
+.mmic-topic-last-time {
+  overflow: hidden;
+
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+
+/* ÉLÉMENTS SECONDAIRES */
+
+.mmic-topic-special-icon,
+.mmic-topic-selection,
+.mmic-topic-multiselect {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+
+/* =========================================================
+   FORMAT ÉTROIT
+   ========================================================= */
+
+@media (max-width: 700px) {
+  .mmic-topic {
+    grid-template-columns: 38px minmax(0, 1fr) !important;
+    grid-template-areas:
+      "status main"
+      "status meta"
+      "status last";
+  }
+
+  .mmic-topic-main,
+  .mmic-topic-meta,
+  .mmic-topic-last {
+    border-right: 0;
+  }
+
+  .mmic-topic-meta {
+    flex-wrap: wrap;
+  }
+
+  .mmic-topic-last {
+    margin-top: 8px !important;
+    padding-top: 8px;
+    padding-left: 14px;
+
+    border-top: 1px solid #e3d9cf;
+  }
+}
+/* =========================================================
+   CORRECTION FINALE — EN-TÊTE SIMPLE DE LA LISTE DES SUJETS
+   À COLLER TOUT À LA FIN DU CSS
+   ========================================================= */
+
+/* On neutralise l’ancien grand cadre beige */
+.mmic-topics {
+  display: block !important;
+
+  width: calc(100% - 24px) !important;
+  max-width: 1100px !important;
+  margin: 10px auto 0 !important;
+
+  overflow: visible !important;
+
+  border: 0 !important;
+  border-radius: 0 !important;
+
+  background: transparent !important;
+
+  box-shadow: none !important;
+
+  box-sizing: border-box !important;
+}
+
+
+/* =========================================================
+   PETIT EN-TÊTE AVEC LIGNES CUIVRÉES
+   ========================================================= */
+
+.mmic-topics-header {
+  position: relative !important;
+
+  display: block !important;
+
+  width: 100% !important;
+  min-height: 0 !important;
+
+  margin: 0 0 12px !important;
+  padding: 0 !important;
+
+  overflow: visible !important;
+
+  border: 0 !important;
+
+  background: transparent !important;
+  color: inherit !important;
+
+  box-shadow: none !important;
+
+  box-sizing: border-box !important;
+}
+
+/* On retire définitivement l’ancienne skyline */
+.mmic-topics-header::before,
+.mmic-topics-header::after {
+  content: none !important;
+  display: none !important;
+}
+
+
+/* Ligne décorative */
+
+.mmic-topics-divider {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 14px !important;
+
+  width: 100% !important;
+  margin: 0 0 9px !important;
+
+  color: #b97a56 !important;
+
+  font-size: 7px !important;
+  font-weight: 700 !important;
+  letter-spacing: 2px !important;
+  line-height: 1.2 !important;
+  text-align: center !important;
+  text-transform: uppercase !important;
+}
+
+.mmic-topics-divider::before,
+.mmic-topics-divider::after {
+  content: "" !important;
+
+  display: block !important;
+  flex: 1 1 auto !important;
+
+  height: 1px !important;
+
+  background: #d7ad91 !important;
+}
+
+.mmic-topics-divider span {
+  display: inline-block !important;
+  flex: 0 0 auto !important;
+
+  color: #b97a56 !important;
+
+  white-space: nowrap !important;
+}
+
+
+/* Titre du forum */
+
+.mmic-topics-title,
+.mmic-topics-header h1 {
+  display: block !important;
+
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 2px !important;
+
+  color: #102438 !important;
+
+  font-family: Georgia, "Times New Roman", serif !important;
+  font-size: 19px !important;
+  font-weight: normal !important;
+  letter-spacing: 0.5px !important;
+  line-height: 1.25 !important;
+  text-align: left !important;
+  text-transform: uppercase !important;
+
+  box-sizing: border-box !important;
+}
+
+
+/* Pagination éventuelle */
+
+.mmic-topics-header .mmic-topics-pagination {
+  display: block !important;
+
+  width: 100% !important;
+  margin: 5px 0 0 !important;
+
+  color: #8c7e74 !important;
+
+  font-size: 7px !important;
+  line-height: 1.4 !important;
+  text-align: right !important;
+}
+
+.mmic-topics-header .mmic-topics-pagination a {
+  color: #a06d50 !important;
+}
+
+
+/* =========================================================
+   LISTE ET CARTE DES SUJETS
+   ========================================================= */
+
+.mmic-topics-list {
+  display: block !important;
+
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+
+  background: transparent !important;
+
+  box-sizing: border-box !important;
+}
+
+.mmic-topic {
+  width: 100% !important;
+  max-width: none !important;
+
+  margin: 0 0 8px !important;
+  padding: 12px !important;
+
+  box-sizing: border-box !important;
+}
+
+
+/* Le pied de pagination ne doit plus recréer un gros bloc */
+.mmic-topics-footer {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+
+  width: 100% !important;
+  margin: 5px 0 0 !important;
+  padding: 6px 2px !important;
+
+  border: 0 !important;
+
+  background: transparent !important;
+
+  box-sizing: border-box !important;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 650px) {
+  .mmic-topics {
+    width: calc(100% - 12px) !important;
+  }
+
+  .mmic-topics-divider {
+    gap: 8px !important;
+
+    font-size: 6px !important;
+    letter-spacing: 1.2px !important;
+  }
+
+  .mmic-topics-title,
+  .mmic-topics-header h1 {
+    font-size: 16px !important;
+  }
+}
+/* =========================================================
+   FIL D’ARIANE COMPACT
+   ========================================================= */
+
+.mmic-viewforum-navigation {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 12px !important;
+
+  width: calc(100% - 24px) !important;
+  min-height: 34px !important;
+  margin: 8px auto 12px !important;
+  padding: 6px 11px !important;
+
+  border: 1px solid #ddd1c6 !important;
+  border-radius: 7px !important;
+
+  background: #f7f1e9 !important;
+
+  box-sizing: border-box !important;
+}
+
+
+/* Navigation sur une seule ligne */
+
+.mmic-viewforum-breadcrumb {
+  display: flex !important;
+  align-items: center !important;
+  flex-wrap: wrap !important;
+  gap: 4px !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  color: #766a61 !important;
+
+  font-size: 8px !important;
+  line-height: 1.4 !important;
+}
+
+.mmic-viewforum-breadcrumb a {
+  display: inline !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  color: #102438 !important;
+
+  font-weight: 700 !important;
+  text-decoration: none !important;
+}
+
+
+/* Le bouton Plus reste compact à droite */
+
+.mmic-viewforum-more {
+  display: flex !important;
+  flex: 0 0 auto !important;
+  align-items: center !important;
+
+  position: relative !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.mmic-viewforum-more-label {
+  margin: 0 !important;
+
+  color: #a06d50 !important;
+
+  font-size: 7px !important;
+  font-weight: 700 !important;
+  letter-spacing: 1px !important;
+  line-height: 1 !important;
+  text-transform: uppercase !important;
+}
+
+
+/* Le menu généré par Forumactif */
+
+.mmic-viewforum-more-menu {
+  display: inline-block !important;
+
+  margin-left: 5px !important;
+
+  font-size: 7px !important;
+  line-height: 1 !important;
+}
+
+
+/* Mobile */
+
+@media (max-width: 650px) {
+  .mmic-viewforum-navigation {
+    align-items: flex-start !important;
+    flex-direction: column !important;
+
+    min-height: 0 !important;
+  }
+}
