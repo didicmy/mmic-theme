@@ -1331,3 +1331,28 @@ html body .mmic-navigation-chevron {
 #fa_usermenu .usr_grp_clr:hover {
     color: #d8b08c !important;
 }
+/* ==========================================================
+   TEXTE DU MEMBRE DANS LA NAVIGATION
+   ========================================================== */
+
+.mmic-navigation-welcome{
+    color:#f6efe7 !important;
+    font-size:11px;
+    font-weight:600;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+
+    display:flex;
+    align-items:center;
+    gap:4px;
+}
+
+.mmic-navigation-welcome strong,
+.mmic-navigation-welcome span,
+.mmic-navigation-welcome a{
+    color:#f6efe7 !important;
+}
+
+.mmic-navigation-account:hover .mmic-navigation-welcome{
+    color:#d8b08c !important;
+}
