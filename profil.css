@@ -1900,3 +1900,39 @@ html body
         border-bottom: 1px solid rgba(216, 176, 140, 0.3);
     }
 }
+/* =========================================================
+   SÉCURISATION DE LA CARTE DE VISITE
+   ========================================================= */
+
+html body .mmic-profile-business-card,
+html body .mmic-profile-business-right,
+html body .mmic-profile-business-fields,
+html body .mmic-profile-field,
+html body .mmic-profile-field-value,
+html body .mmic-profile-field-content {
+    min-width: 0 !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+}
+
+html body .mmic-profile-field-content,
+html body .mmic-profile-field-content * {
+    max-width: 100% !important;
+    overflow-wrap: anywhere !important;
+    word-break: break-word !important;
+}
+
+html body .mmic-profile-field-content img {
+    height: auto !important;
+}
+
+html body .mmic-profile-business-fields {
+    align-items: stretch !important;
+}
+
+html body .mmic-profile-business-fields:empty,
+html body .mmic-profile-business-contact:has(
+    .mmic-profile-contact-list:empty
+) {
+    display: none !important;
+}
