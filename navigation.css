@@ -1356,3 +1356,49 @@ html body .mmic-navigation-chevron {
 .mmic-navigation-account:hover .mmic-navigation-welcome{
     color:#d8b08c !important;
 }
+/* =========================================================
+   NOM DU MEMBRE DANS LA NAVIGATION
+   ========================================================= */
+
+html body .mmic-navigation-welcome {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    justify-content: center !important;
+
+    min-width: 0 !important;
+
+    color: #f6efe7 !important;
+    text-align: left !important;
+}
+
+html body .mmic-navigation-welcome-small {
+    display: block !important;
+
+    color: #d8b08c !important;
+
+    font-size: 7px !important;
+    font-weight: 700 !important;
+    line-height: 1 !important;
+    letter-spacing: 1.8px !important;
+    text-transform: uppercase !important;
+}
+
+html body .mmic-navigation-username {
+    display: block !important;
+
+    margin-top: 3px !important;
+
+    color: #fffaf4 !important;
+
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    line-height: 1 !important;
+    letter-spacing: 0 !important;
+    text-transform: none !important;
+}
+
+html body .mmic-navigation-account:hover
+.mmic-navigation-username {
+    color: #d8b08c !important;
+}
