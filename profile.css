@@ -2585,7 +2585,7 @@ html body .mmic-profile-business-contact {
 
     gap: 10px !important;
 
-    margin-top: 14px !important;
+    margin-top:-8px !important;
 }
 
 /* Chaque bouton */
@@ -2678,23 +2678,19 @@ html body .mmic-profile-business-contact a::before {
 }
 
 /* Message privé */
-html body .mmic-profile-business-contact > div:nth-child(1) a::before {
-    content: "✉" !important;
+.mmic-profile-business-contact a[href*="privmsg"]::before{
+    content:"✉";
 }
 
 /* Email */
-html body .mmic-profile-business-contact > div:nth-child(2) a::before {
-    content: "@" !important;
-
-    font-size: 14px !important;
-    font-weight: 700 !important;
+.mmic-profile-business-contact a[href^="mailto"]::before{
+    content:"@";
+    font-weight:700;
 }
 
 /* Site web */
-html body .mmic-profile-business-contact > div:nth-child(3) a::before {
-    content: "⌂" !important;
-
-    font-size: 15px !important;
+.mmic-profile-business-contact a[href*="http"]::before{
+    content:"⌂";
 }
 
 /* Survol */
