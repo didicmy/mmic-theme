@@ -1,0 +1,721 @@
+/* =========================================================
+   MEET ME IN CHICAGO — QEEL
+   =========================================================
+
+   Cette feuille contient uniquement le QUEEL :
+   - structure générale ;
+   - en-tête ;
+   - statistiques ;
+   - groupes ;
+   - membres connectés / dernières 24h ;
+   - chatbox ;
+   - icônes des groupes-oiseaux ;
+   - ajustements finaux et responsive.
+
+   Sont volontairement exclus :
+   - les outils au-dessus du QEEL -> buttons.css ;
+   - la légende sous le QEEL -> categories-lieux-bas.css.
+   ========================================================= */
+
+/* =========================================================
+   QUEEL — MEET ME IN CHICAGO
+   ========================================================= */
+
+.mmic-qeel {
+  width: calc(100% - 24px);
+  max-width: 1100px;
+  margin: 24px auto;
+
+  overflow: hidden;
+
+  border: 1px solid #d8cbbd;
+  border-radius: 13px;
+
+  background: #f4eee5;
+
+  box-shadow: 0 7px 20px rgba(12, 24, 39, 0.1);
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* EN-TÊTE */
+
+.mmic-qeel-header {
+  position: relative;
+
+  padding: 22px 30px 24px;
+  overflow: hidden;
+
+  border-bottom: 3px solid #b97a56;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(12, 24, 39, 0.99),
+      rgba(22, 42, 63, 0.97),
+      rgba(12, 24, 39, 0.99)
+    );
+
+  color: #fbf8f3;
+  text-align: center;
+}
+
+.mmic-qeel-header::after {
+  content: "";
+
+  position: absolute;
+  right: 0;
+  bottom: -3px;
+  left: 0;
+
+  height: 55px;
+
+  opacity: 0.1;
+  pointer-events: none;
+
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='700' height='80' viewBox='0 0 700 80'%3E%3Cpath fill='%23ffffff' d='M0 80V60h18V42h18v38h12V30h22v50h15V50h20v30h12V22h30v58h10V44h18v36h14V12h34v68h12V38h24v42h16V28h36v52h12V48h22v32h14V18h29v62h13V36h22v44h16V8h38v72h12V46h22v34h14V24h34v56h16V52h20v28h14V32h28v48h18V42h25v38h15V56h18v24z'/%3E%3C/svg%3E");
+
+  background-position: center bottom;
+  background-repeat: repeat-x;
+  background-size: auto 55px;
+}
+
+.mmic-qeel-eyebrow {
+  position: relative;
+  z-index: 2;
+
+  display: block;
+  margin-bottom: 5px;
+
+  color: #d19168;
+
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 2.2px;
+  text-transform: uppercase;
+}
+
+.mmic-qeel-header h2 {
+  position: relative;
+  z-index: 2;
+
+  margin: 0;
+
+  color: #fbf8f3;
+
+  font: 22px Georgia, "Times New Roman", serif;
+  font-weight: normal;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.mmic-qeel-header p {
+  position: relative;
+  z-index: 2;
+
+  margin: 7px 0 0;
+
+  color: rgba(251, 248, 243, 0.72);
+
+  font-size: 8px;
+  font-style: italic;
+  letter-spacing: 0.5px;
+}
+
+
+/* GRILLE */
+
+.mmic-qeel-content {
+  display: grid;
+  grid-template-columns:
+    minmax(0, 1fr)
+    minmax(220px, 0.85fr)
+    minmax(0, 1fr);
+
+  gap: 12px;
+
+  padding: 12px;
+}
+
+
+/* CARTES */
+
+.mmic-qeel-card {
+  position: relative;
+
+  min-width: 0;
+  min-height: 210px;
+
+  padding: 17px;
+
+  border: 1px solid #d8cbbd;
+  border-radius: 10px;
+
+  background: #fbf8f3;
+
+  box-shadow: 0 3px 9px rgba(12, 24, 39, 0.06);
+}
+
+.mmic-qeel-card-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  margin-bottom: 14px;
+  padding-bottom: 9px;
+
+  border-bottom: 1px solid rgba(185, 122, 86, 0.28);
+
+  color: #102438;
+  text-transform: uppercase;
+}
+
+.mmic-qeel-card-title strong {
+  font: 11px Georgia, "Times New Roman", serif;
+  letter-spacing: 1px;
+}
+
+.mmic-qeel-title-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 23px;
+  height: 23px;
+
+  border: 1px solid #d19168;
+  border-radius: 50%;
+
+  background: #102438;
+  color: #fbf8f3;
+
+  font-size: 11px;
+}
+
+.mmic-qeel-card-intro {
+  margin: -4px 0 13px;
+
+  color: #877b72;
+
+  font-size: 8px;
+  font-style: italic;
+  line-height: 1.5;
+  text-align: center;
+}
+
+
+/* STATISTIQUES */
+
+.mmic-qeel-stat-line {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+
+  margin-bottom: 7px;
+  padding: 7px 9px;
+
+  border: 1px solid #e3d9cf;
+  border-radius: 6px;
+
+  background: #f7f1e9;
+
+  color: #71675f;
+
+  font-size: 8px;
+  line-height: 1.45;
+}
+
+.mmic-qeel-stat-icon {
+  display: inline-flex;
+  flex: 0 0 20px;
+  align-items: center;
+  justify-content: center;
+
+  width: 20px;
+  height: 20px;
+
+  border-radius: 5px;
+
+  background: #102438;
+  color: #d19168;
+
+  font-size: 9px;
+}
+
+.mmic-qeel-newest {
+  margin-top: 11px;
+  padding: 9px 10px;
+
+  border-left: 3px solid #b97a56;
+
+  background: rgba(185, 122, 86, 0.08);
+
+  color: #71675f;
+
+  font-size: 8px;
+  line-height: 1.5;
+}
+
+.mmic-qeel-small-title {
+  display: block;
+  margin-bottom: 3px;
+
+  color: #a06d50;
+
+  font-size: 7px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.mmic-qeel-current-users {
+  margin-top: 10px;
+
+  color: #7d7269;
+
+  font-size: 7.5px;
+  line-height: 1.5;
+}
+
+.mmic-qeel a {
+  color: #b06f4d;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.mmic-qeel a:hover {
+  color: #102438;
+}
+
+
+/* GROUPES */
+
+.mmic-qeel-groups-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+
+}
+
+.mmic-qeel-group {
+  position: relative;
+
+  display: inline-flex;
+  align-items: center;
+
+  width: 138px;
+  min-height: 27px;
+
+  margin: 0 auto 8px;
+  padding: 0 10px 0 15px;
+
+  overflow: hidden;
+
+  border: 1px solid #ddd1c6;
+  border-radius: 6px;
+
+  background: #f7f1e9;
+
+  color: #625951 !important;
+
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  box-sizing: border-box;
+
+  transition:
+    padding-left 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.mmic-qeel-group::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+
+  width: 5px;
+
+  background: var(--mmic-group-color);
+}
+
+.mmic-qeel-group:hover {
+  padding-left: 20px;
+
+  border-color: var(--mmic-group-color);
+
+  background: #102438;
+  color: #fbf8f3 !important;
+}
+
+.mmic-qeel-group-1 {
+  --mmic-group-color: #a76452;
+}
+
+.mmic-qeel-group-2 {
+  --mmic-group-color: #c89358;
+}
+
+.mmic-qeel-group-3 {
+  --mmic-group-color: #718a91;
+}
+
+.mmic-qeel-group-4 {
+  --mmic-group-color: #8b758e;
+}
+
+.mmic-qeel-group-5 {
+  --mmic-group-color: #667454;
+}
+
+.mmic-qeel-city-mark {
+  margin-top: 15px;
+
+  color: rgba(16, 36, 56, 0.12);
+
+  font: 25px Georgia, "Times New Roman", serif;
+  font-weight: 700;
+  letter-spacing: 5px;
+  text-align: center;
+}
+
+
+/* MEMBRES DES DERNIÈRES 24H */
+
+.mmic-qeel-recent-list {
+  max-height: 150px;
+  padding: 11px;
+
+  overflow-y: auto;
+
+  border: 1px solid #e3d9cf;
+  border-radius: 7px;
+
+  background: #f7f1e9;
+
+  color: #776c64;
+
+  font-size: 8px;
+  line-height: 1.7;
+
+  scrollbar-width: thin;
+  scrollbar-color: #c9997c transparent;
+}
+
+.mmic-qeel-recent-list::-webkit-scrollbar {
+  width: 4px;
+}
+
+.mmic-qeel-recent-list::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background: #c9997c;
+}
+
+.mmic-qeel-recent-list table,
+.mmic-qeel-recent-list tbody,
+.mmic-qeel-recent-list tr,
+.mmic-qeel-recent-list td {
+  display: block;
+
+  width: 100% !important;
+  margin: 0;
+  padding: 0;
+
+  border: 0;
+  background: transparent;
+}
+
+.mmic-qeel-recent-list .gensmall {
+  color: #776c64;
+  font-size: 8px;
+  line-height: 1.7;
+}
+
+
+/* CHATBOX */
+
+.mmic-qeel-chatbox {
+  margin: 0 12px 12px;
+  padding: 10px 13px;
+
+  border: 1px solid #d8cbbd;
+  border-radius: 8px;
+
+  background: #fbf8f3;
+
+  color: #776c64;
+  text-align: center;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 850px) {
+  .mmic-qeel-content {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .mmic-qeel-recent {
+    grid-column: 1 / -1;
+    min-height: 0;
+  }
+}
+
+@media (max-width: 620px) {
+  .mmic-qeel {
+    width: calc(100% - 12px);
+  }
+
+  .mmic-qeel-header {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .mmic-qeel-header h2 {
+    font-size: 17px;
+  }
+
+  .mmic-qeel-content {
+    grid-template-columns: 1fr;
+  }
+
+  .mmic-qeel-recent {
+    grid-column: auto;
+  }
+
+  .mmic-qeel-card {
+    min-height: 0;
+  }
+}
+/* =========================================================
+   GROUPES-OISEAUX DU QUEEL
+   ========================================================= */
+
+.mmic-qeel-group {
+  gap: 8px;
+}
+
+/* On remplace les anciennes couleurs numérotées */
+.mmic-qeel-group-colibris {
+  --mmic-group-color: #70988f;
+}
+
+.mmic-qeel-group-inseparables {
+  --mmic-group-color: #b97870;
+}
+
+.mmic-qeel-group-corbeaux {
+  --mmic-group-color: #526171;
+}
+
+.mmic-qeel-group-faucons {
+  --mmic-group-color: #b58a4e;
+}
+
+.mmic-qeel-group-hirondelles {
+  --mmic-group-color: #81789d;
+}
+/* =========================================================
+   MINI-ICÔNES DES GROUPES — OISEAUX
+   ========================================================= */
+
+.mmic-qeel-group {
+  gap: 7px;
+}
+
+/* Conteneur commun */
+.mmic-qeel-bird-icon {
+  display: inline-flex;
+  flex: 0 0 17px;
+  align-items: center;
+  justify-content: center;
+
+  width: 17px;
+  height: 17px;
+
+  color: var(--mmic-group-color);
+
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.mmic-qeel-bird-icon::before {
+  content: "";
+
+  display: block;
+  width: 16px;
+  height: 16px;
+
+  background-color: currentColor;
+
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-mask-size: contain;
+
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+}
+
+/* Petit mouvement au survol */
+.mmic-qeel-group:hover .mmic-qeel-bird-icon {
+  color: #fbf8f3;
+  transform: translateX(2px) scale(1.06);
+}
+
+
+/* =========================================================
+   COLIBRI
+   ========================================================= */
+
+.mmic-bird-colibri::before {
+  -webkit-mask-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M4 34c10-1 18-5 25-12 4-5 8-9 15-12-1 5-4 9-8 13 8-3 15-3 24 1-9 2-16 6-22 11-6 6-13 10-23 12 5-4 9-8 12-14-8 3-15 3-23 1zm40-19 7-8 2 9 8 4-9 2-4 9-2-9-9-4z'/%3E%3C/svg%3E");
+
+  mask-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M4 34c10-1 18-5 25-12 4-5 8-9 15-12-1 5-4 9-8 13 8-3 15-3 24 1-9 2-16 6-22 11-6 6-13 10-23 12 5-4 9-8 12-14-8 3-15 3-23 1zm40-19 7-8 2 9 8 4-9 2-4 9-2-9-9-4z'/%3E%3C/svg%3E");
+}
+
+
+/* =========================================================
+   INSÉPARABLES — DEUX OISEAUX FACE À FACE
+   ========================================================= */
+
+.mmic-bird-inseparables::before {
+  -webkit-mask-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M14 17c8 0 13 6 13 14 0 4-2 8-5 11l10 10 10-10c-3-3-5-7-5-11 0-8 5-14 13-14 7 0 12 5 12 12 0 6-4 11-9 13L32 61 11 42C6 40 2 35 2 29c0-7 5-12 12-12zm0 7c-3 0-5 2-5 5s2 5 5 5 5-2 5-5-2-5-5-5zm36 0c-3 0-5 2-5 5s2 5 5 5 5-2 5-5-2-5-5-5zM27 19l5 5 5-5-5 12z'/%3E%3C/svg%3E");
+
+  mask-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M14 17c8 0 13 6 13 14 0 4-2 8-5 11l10 10 10-10c-3-3-5-7-5-11 0-8 5-14 13-14 7 0 12 5 12 12 0 6-4 11-9 13L32 61 11 42C6 40 2 35 2 29c0-7 5-12 12-12zm0 7c-3 0-5 2-5 5s2 5 5 5 5-2 5-5-2-5-5-5zm36 0c-3 0-5 2-5 5s2 5 5 5 5-2 5-5-2-5-5-5zM27 19l5 5 5-5-5 12z'/%3E%3C/svg%3E");
+}
+
+
+/* =========================================================
+   CORBEAU — PROFIL POSÉ
+   ========================================================= */
+
+.mmic-bird-corbeau::before {
+  -webkit-mask-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M12 49c7-8 10-17 9-28 8 2 14 6 19 12 4-4 10-7 19-8-4 6-9 10-15 13 6 3 11 7 15 12-9-1-17-3-23-7-4 7-10 12-18 17 2-6 2-11 1-16-2 2-5 4-7 5zm29-35c4 0 7 3 7 7s-3 7-7 7-7-3-7-7 3-7 7-7zm-22 39h29v5H19z'/%3E%3C/svg%3E");
+
+  mask-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M12 49c7-8 10-17 9-28 8 2 14 6 19 12 4-4 10-7 19-8-4 6-9 10-15 13 6 3 11 7 15 12-9-1-17-3-23-7-4 7-10 12-18 17 2-6 2-11 1-16-2 2-5 4-7 5zm29-35c4 0 7 3 7 7s-3 7-7 7-7-3-7-7 3-7 7-7zm-22 39h29v5H19z'/%3E%3C/svg%3E");
+}
+
+
+/* =========================================================
+   FAUCON — AILES DÉPLOYÉES
+   ========================================================= */
+
+.mmic-bird-faucon::before {
+  -webkit-mask-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M32 6c7 10 16 16 29 20-8 3-15 4-22 2 5 7 10 12 18 17-11-1-19-5-25-13-6 8-14 12-25 13 8-5 13-10 18-17-7 2-14 1-22-2C16 22 25 16 32 6zm-5 25h10l-5 27z'/%3E%3C/svg%3E");
+
+  mask-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M32 6c7 10 16 16 29 20-8 3-15 4-22 2 5 7 10 12 18 17-11-1-19-5-25-13-6 8-14 12-25 13 8-5 13-10 18-17-7 2-14 1-22-2C16 22 25 16 32 6zm-5 25h10l-5 27z'/%3E%3C/svg%3E");
+}
+
+
+/* =========================================================
+   HIRONDELLE — SILHOUETTE EN VOL
+   ========================================================= */
+
+.mmic-bird-hirondelle::before {
+  -webkit-mask-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M3 27c12-3 22-1 30 7 8-8 18-10 28-7-7 3-13 7-18 12l14 16-24-10L9 55l14-16C17 34 10 30 3 27zm25 10 5 5 5-5-5 14z'/%3E%3C/svg%3E");
+
+  mask-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M3 27c12-3 22-1 30 7 8-8 18-10 28-7-7 3-13 7-18 12l14 16-24-10L9 55l14-16C17 34 10 30 3 27zm25 10 5 5 5-5-5 14z'/%3E%3C/svg%3E");
+}
+/* =========================================================
+   AJUSTEMENTS FINAUX DES GROUPES — QUEEL
+   ========================================================= */
+
+/* COULEURS DOUCES DES CINQ GROUPES */
+
+.mmic-qeel-group-colibris {
+  --mmic-group-color: #7faf9e;
+}
+
+.mmic-qeel-group-inseparables {
+  --mmic-group-color: #c88a84;
+}
+
+.mmic-qeel-group-corbeaux {
+  --mmic-group-color: #5e6c7f;
+}
+
+.mmic-qeel-group-faucons {
+  --mmic-group-color: #b88c4d;
+}
+
+.mmic-qeel-group-hirondelles {
+  --mmic-group-color: #8e82b5;
+}
+
+
+/* ICÔNES PLUS FINES ET PLUS PETITES */
+
+.mmic-qeel-bird-icon {
+  flex: 0 0 15px;
+
+  width: 15px;
+  height: 15px;
+
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.mmic-qeel-bird-icon::before {
+  width: 14px;
+  height: 14px;
+}
+
+
+/* SURVOL PLUS VIVANT MAIS DISCRET */
+
+.mmic-qeel-group:hover .mmic-qeel-bird-icon {
+  color: #fbf8f3;
+
+  transform:
+    translateX(2px)
+    scale(1.02);
+}
+
+/* Le bouton complet bouge très légèrement */
+
+.mmic-qeel-group {
+  transition:
+    padding-left 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease,
+    background-color 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.mmic-qeel-group:hover {
+  transform: translateX(2px);
+
+  box-shadow:
+    0 3px 7px
+    rgba(16, 36, 56, 0.12);
+}
+
+
+/* CHICAGO EN FILIGRANE PLUS DISCRET */
+
+.mmic-qeel-city-mark {
+  color: rgba(16, 36, 56, 0.05);
+}
+/* =========================================================
