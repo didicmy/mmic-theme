@@ -2708,3 +2708,111 @@ html body .mmic-profile-business-contact a:hover {
 html body .mmic-profile-business-contact > div:not(:has(a)) {
     opacity: 0.55 !important;
 }
+/* =========================================================
+   PROFIL — ALIGNEMENT DES COORDONNÉES ET SUPPRESSION
+   DU CADRE EXTÉRIEUR EN TROP
+   ========================================================= */
+
+/* Partie droite de la carte */
+html body .mmic-profile-business-right {
+    display: flex !important;
+    flex-direction: column !important;
+
+    min-height: 0 !important;
+    height: auto !important;
+
+    padding: 0 !important;
+}
+
+/* Zone des champs */
+html body .mmic-profile-business-fields {
+    flex: 0 0 auto !important;
+}
+
+/* Bloc complet des coordonnées */
+html body .mmic-profile-business-contact {
+    position: static !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+
+    width: 100% !important;
+
+    margin-top: 70px !important;
+    padding: 0 16px !important;
+
+    border: 0 !important;
+    border-radius: 0 !important;
+
+    background: transparent !important;
+    box-shadow: none !important;
+
+    box-sizing: border-box !important;
+}
+
+/* Titre "Coordonnées et liens" */
+html body .mmic-profile-business-contact-title {
+    position: static !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    width: 100% !important;
+    margin: 0 0 16px !important;
+    padding: 0 !important;
+}
+
+/* Conteneur des trois boutons */
+html body .mmic-profile-business-contact-links {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex-wrap: wrap !important;
+
+    width: 100% !important;
+    gap: 12px !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    border: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+/* Suppression du grand cadre horizontal en trop */
+html body .mmic-profile-business-contact-links > div {
+    margin: 0 !important;
+}
+
+/* Sécurité si le cadre extérieur vient directement
+   du premier enfant générique */
+html body .mmic-profile-business-contact > div:not(
+    .mmic-profile-business-contact-title
+):not(
+    .mmic-profile-business-contact-links
+) {
+    border: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+}
+/* Correction générale du cadre extérieur */
+html body .mmic-profile-business-contact {
+    border: none !important;
+    background: none !important;
+    box-shadow: none !important;
+}
+
+/* Les boutons eux-mêmes gardent leur cadre individuel */
+html body .mmic-profile-business-contact > div > div {
+    border: 1px solid rgba(216, 176, 140, 0.55) !important;
+    border-radius: 7px !important;
+    background: linear-gradient(
+        180deg,
+        #fffdf9 0%,
+        #f8f2eb 100%
+    ) !important;
+}
