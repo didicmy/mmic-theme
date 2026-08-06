@@ -1073,3 +1073,225 @@ html body .mmic-forum-bottom-actions a:hover {
     }
 
 }
+/* =========================================================
+   VIEWFORUM — ACTIONS DU BAS
+   Correction définitive du double cadre Forumactif
+   ========================================================= */
+
+
+/* ---------------------------------------------------------
+   ZONE DES DEUX ACTIONS
+   --------------------------------------------------------- */
+
+html body .mmic-viewforum-options {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-end !important;
+    gap: 10px !important;
+}
+
+
+/* =========================================================
+   1. MARQUER TOUS LES SUJETS COMME LUS
+   Celui-ci EST directement le bouton
+   ========================================================= */
+
+html body .mmic-viewforum-options > a.mmic-viewforum-option {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 8px !important;
+
+    min-height: 30px !important;
+    padding: 0 13px !important;
+
+    border: 1px solid rgba(216, 176, 140, .58) !important;
+    border-radius: 7px !important;
+
+    background:
+        linear-gradient(
+            180deg,
+            #fffdf9 0%,
+            #f7f0e8 100%
+        ) !important;
+
+    color: #443d38 !important;
+
+    font-size: 7px !important;
+    font-weight: 700 !important;
+    letter-spacing: .7px !important;
+    line-height: 1 !important;
+
+    text-decoration: none !important;
+    text-transform: uppercase !important;
+
+    box-shadow:
+        0 2px 5px rgba(16, 36, 56, .05),
+        inset 0 1px 0 rgba(255,255,255,.9) !important;
+
+    box-sizing: border-box !important;
+
+    transition:
+        transform .17s ease,
+        border-color .17s ease,
+        box-shadow .17s ease !important;
+}
+
+
+/* Icône check */
+
+html body .mmic-viewforum-options
+> a.mmic-viewforum-option::before {
+    content: "✓" !important;
+
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    width: 17px !important;
+    height: 17px !important;
+
+    flex: 0 0 17px !important;
+
+    border-radius: 50% !important;
+
+    background: #102438 !important;
+    color: #e4b184 !important;
+
+    font-size: 9px !important;
+    font-weight: 700 !important;
+}
+
+
+/* =========================================================
+   2. SURVEILLER LES SUJETS
+   Ici le DIV Forumactif ne doit PLUS ressembler à un bouton
+   ========================================================= */
+
+html body .mmic-viewforum-options
+.mmic-viewforum-watch {
+    display: inline-flex !important;
+    align-items: center !important;
+
+    min-height: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+
+    border: 0 !important;
+    border-radius: 0 !important;
+
+    background: transparent !important;
+
+    box-shadow: none !important;
+}
+
+
+/* On masque le petit symbole séparé ajouté par Forumactif */
+
+html body .mmic-viewforum-watch > span {
+    display: none !important;
+}
+
+
+/* Et SEUL le lien devient le bouton */
+
+html body .mmic-viewforum-watch > a {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 8px !important;
+
+    min-height: 30px !important;
+    padding: 0 13px !important;
+
+    border: 1px solid rgba(216, 176, 140, .58) !important;
+    border-radius: 7px !important;
+
+    background:
+        linear-gradient(
+            180deg,
+            #fffdf9 0%,
+            #f7f0e8 100%
+        ) !important;
+
+    color: #443d38 !important;
+
+    font-size: 7px !important;
+    font-weight: 700 !important;
+    letter-spacing: .7px !important;
+    line-height: 1 !important;
+
+    text-decoration: none !important;
+    text-transform: uppercase !important;
+
+    box-shadow:
+        0 2px 5px rgba(16, 36, 56, .05),
+        inset 0 1px 0 rgba(255,255,255,.9) !important;
+
+    box-sizing: border-box !important;
+
+    transition:
+        transform .17s ease,
+        border-color .17s ease,
+        box-shadow .17s ease !important;
+}
+
+
+/* Icône œil */
+
+html body .mmic-viewforum-watch > a::before {
+    content: "";
+
+    display: inline-block !important;
+
+    width: 17px !important;
+    height: 17px !important;
+
+    flex: 0 0 17px !important;
+
+    border-radius: 50% !important;
+
+    background-color: #102438 !important;
+
+    background-image:
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23e4b184' d='M12 5c-5 0-9 4.5-10 7 1 2.5 5 7 10 7s9-4.5 10-7c-1-2.5-5-7-10-7Zm0 12a5 5 0 1 1 0-10 5 5 0 0 1 0 10Zm0-8a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z'/%3E%3C/svg%3E") !important;
+
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: 9px 9px !important;
+}
+
+
+/* =========================================================
+   HOVER COMMUN
+   ========================================================= */
+
+html body .mmic-viewforum-options
+> a.mmic-viewforum-option:hover,
+
+html body .mmic-viewforum-watch
+> a:hover {
+    transform: translateY(-1px) !important;
+
+    border-color: #c78d68 !important;
+
+    color: #102438 !important;
+
+    box-shadow:
+        0 5px 10px rgba(16,36,56,.09),
+        inset 0 1px 0 rgba(255,255,255,.95) !important;
+}
+
+
+/* =========================================================
+   VERSION MOBILE
+   ========================================================= */
+
+@media (max-width: 650px) {
+
+    html body .mmic-viewforum-options {
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+    }
+
+}
