@@ -2274,7 +2274,7 @@ html body .mmic-profile-hero {
 
 html body .mmic-profile-hero-city {
     min-height: 0 !important;
-    padding: 7px 20px 6px !important;
+    padding: 4px 20px 3px !important;
 
     font-size: 8px !important;
     letter-spacing: 3px !important;
@@ -2292,15 +2292,15 @@ html body .mmic-profile-hero-content {
     position: relative !important;
 
     display: grid !important;
-    grid-template-columns: 112px minmax(0, 1fr) !important;
+    grid-template-columns: 96px minmax(0, 1fr) !important;
     align-items: center !important;
-    gap: 14px !important;
+    gap: 10px !important;
 
     width: 100% !important;
     height: auto !important;
     min-height: 0 !important;
 
-    padding: 12px 28px 14px 18px !important;
+    padding: 7px 24px 8px 14px !important;
 
     box-sizing: border-box !important;
 }
@@ -2319,9 +2319,9 @@ html body .mmic-profile-hero-avatar {
     align-items: center !important;
     justify-content: center !important;
 
-    width: 112px !important;
-    min-width: 112px !important;
-    height: 108px !important;
+    width: 96px !important;
+    min-width: 96px !important;
+    height: 88px !important;
     min-height: 0 !important;
 
     margin: 0 !important;
@@ -2333,8 +2333,8 @@ html body .mmic-profile-hero-avatar {
 html body .mmic-profile-avatar-diamond {
     position: relative !important;
 
-    width: 82px !important;
-    height: 82px !important;
+    width: 72px !important;
+    height: 72px !important;
 
     margin: 0 !important;
     padding: 4px !important;
@@ -2386,10 +2386,10 @@ html body .mmic-profile-avatar-image img {
 
     display: block !important;
 
-    width: 116px !important;
-    height: 116px !important;
-    min-width: 116px !important;
-    min-height: 116px !important;
+    width: 102px !important;
+    height: 102px !important;
+    min-width: 102px !important;
+    min-height: 102px !important;
     max-width: none !important;
     max-height: none !important;
 
