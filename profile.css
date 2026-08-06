@@ -2740,3 +2740,92 @@ html body .mmic-profile-avatar-image img {
 
     transform-origin: center !important;
 }
+/* =========================================================
+   CORRECTION AVATAR DU HEADER PROFIL
+   ========================================================= */
+
+html body .mmic-profile-hero-avatar {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    width: 118px !important;
+    min-width: 118px !important;
+    height: 118px !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    overflow: visible !important;
+}
+
+
+html body .mmic-profile-avatar-diamond {
+    position: relative !important;
+
+    width: 82px !important;
+    height: 82px !important;
+
+    margin: 0 !important;
+    padding: 4px !important;
+
+    border: 2px solid #b97a56 !important;
+    border-radius: 7px !important;
+
+    background: #f8f2eb !important;
+
+    transform: rotate(45deg) !important;
+    transform-origin: center center !important;
+
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+
+    box-shadow:
+        0 4px 12px rgba(12, 29, 47, 0.24),
+        inset 0 0 0 2px rgba(216, 176, 140, 0.35) !important;
+}
+
+
+html body .mmic-profile-avatar-image {
+    position: absolute !important;
+
+    top: 4px !important;
+    right: 4px !important;
+    bottom: 4px !important;
+    left: 4px !important;
+
+    width: auto !important;
+    height: auto !important;
+
+    overflow: hidden !important;
+
+    transform: none !important;
+}
+
+
+html body .mmic-profile-avatar-image img {
+    position: absolute !important;
+
+    top: 50% !important;
+    left: 50% !important;
+
+    display: block !important;
+
+    width: 116px !important;
+    max-width: none !important;
+
+    height: 116px !important;
+    max-height: none !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    object-fit: cover !important;
+    object-position: center center !important;
+
+    transform:
+        translate(-50%, -50%)
+        rotate(-45deg) !important;
+
+    transform-origin: center center !important;
+}
