@@ -1,0 +1,895 @@
+/* =========================================================
+   MEET ME IN CHICAGO — BOUTONS GLOBAUX
+   =========================================================
+
+   Cette feuille regroupe uniquement les vrais boutons
+   d’action du forum :
+   - boutons de la PA ;
+   - outils de l’index ;
+   - suppression des cookies ;
+   - boutons de la liste des sujets ;
+   - boutons de la vue d’un sujet ;
+   - actions des messages (citer, éditer, supprimer, IP…).
+
+   Les faux 'boutons' qui appartiennent à une mise en page
+   précise restent dans leur CSS d’origine :
+   - sous-forums et icônes de catégories -> categories-lieux-bas.css
+   - partenaires / cartes de PA -> pa.css
+   ========================================================= */
+
+/* =========================================================
+   PA — BOUTONS PRINCIPAUX
+   ========================================================= */
+
+.mmic-main-links a,
+.mmic-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 34px;
+  padding: 8px 15px;
+  border: 1px solid rgba(185, 122, 86, 0.8);
+  border-radius: 4px;
+  background: var(--navy);
+  color: #ffffff !important;
+  font-size: 10px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  transition: 0.2s;
+}
+
+.mmic-main-links a:hover,
+.mmic-button:hover {
+  background: var(--copper);
+  transform: translateY(-1px);
+}
+
+
+/* =========================================================
+   INDEX — OUTILS AU-DESSUS DU QEEL
+   ========================================================= */
+
+/* =========================================================
+   OUTILS AU-DESSUS DU QUEEL
+   ========================================================= */
+
+.mmic-index-tools {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+
+  width: calc(100% - 24px);
+  margin: 18px auto;
+}
+
+.mmic-index-tool {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+
+  min-height: 30px;
+  padding: 0 12px;
+
+  border: 1px solid #d8cbbd;
+  border-radius: 6px;
+
+  background: #fbf8f3;
+  color: #625951 !important;
+
+  box-shadow: 0 2px 5px rgba(16, 36, 56, 0.05);
+
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+  text-decoration: none !important;
+  text-transform: uppercase;
+
+  transition:
+    color 0.2s ease,
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.mmic-index-tool-icon {
+  display: inline-flex;
+  flex: 0 0 18px;
+  align-items: center;
+  justify-content: center;
+
+  width: 18px;
+  height: 18px;
+
+  border-radius: 50%;
+
+  background: #102438;
+  color: #d19168;
+
+  font-size: 9px;
+
+  transition:
+    color 0.2s ease,
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.mmic-index-tool:hover {
+  border-color: #b97a56;
+
+  background: #102438;
+  color: #fbf8f3 !important;
+
+  box-shadow: 0 4px 9px rgba(16, 36, 56, 0.14);
+
+  transform: translateY(-2px);
+}
+
+.mmic-index-tool:hover .mmic-index-tool-icon {
+  background: #b97a56;
+  color: #fbf8f3;
+
+  transform: rotate(5deg);
+}
+
+
+
+/* =========================================================
+   INDEX — SUPPRIMER LES COOKIES
+   ========================================================= */
+
+/* =========================================================
+   CORRECTION DU BOUTON SUPPRIMER LES COOKIES
+   ========================================================= */
+
+#mmic-delete-cookies {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+
+  min-height: 30px;
+  padding: 0 12px;
+
+  border: 1px solid #d8cbbd !important;
+  border-radius: 6px;
+
+  background: #fbf8f3 !important;
+  color: #625951 !important;
+
+  box-shadow: 0 2px 5px rgba(16, 36, 56, 0.05);
+
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+  line-height: 1;
+  text-decoration: none !important;
+  text-transform: uppercase;
+
+  box-sizing: border-box;
+}
+
+#mmic-delete-cookies:hover {
+  border-color: #b97a56 !important;
+
+  background: #102438 !important;
+  color: #fbf8f3 !important;
+
+  box-shadow: 0 4px 9px rgba(16, 36, 56, 0.14);
+
+  transform: translateY(-2px);
+}
+
+/* =========================================================
+   LISTE DES SUJETS — BOUTONS
+   ========================================================= */
+
+/* =========================================================
+   BOUTONS DE LA PAGE FORUM
+   ========================================================= */
+
+/* ---------------------------------------------------------
+   NOUVEAU SUJET
+   --------------------------------------------------------- */
+
+.mmic-new-topic-button,
+.mmic-viewforum-actions a,
+.lsuj_newpost a {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 7px !important;
+
+  min-height: 32px !important;
+  padding: 0 13px !important;
+
+  border: 1px solid #b97a56 !important;
+  border-radius: 6px !important;
+
+  background: #102438 !important;
+  color: #fbf8f3 !important;
+
+  box-shadow: 0 3px 8px rgba(16, 36, 56, 0.12) !important;
+
+  font-size: 8px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.8px !important;
+  line-height: 1 !important;
+  text-decoration: none !important;
+  text-transform: uppercase !important;
+
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease !important;
+}
+
+/* On neutralise l’ancien symbole rond ajouté par Forumactif */
+.mmic-new-topic-button::before,
+.mmic-viewforum-actions a::before,
+.lsuj_newpost a::before {
+  content: "+" !important;
+
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  width: 17px !important;
+  height: 17px !important;
+
+  border-radius: 50% !important;
+
+  background: #b97a56 !important;
+  color: #fbf8f3 !important;
+
+  font-size: 12px !important;
+  font-weight: 400 !important;
+  line-height: 1 !important;
+}
+
+.mmic-new-topic-button:hover,
+.mmic-viewforum-actions a:hover,
+.lsuj_newpost a:hover {
+  border-color: #102438 !important;
+
+  background: #b97a56 !important;
+  color: #fbf8f3 !important;
+
+  box-shadow: 0 5px 12px rgba(16, 36, 56, 0.17) !important;
+
+  transform: translateY(-2px) !important;
+}
+
+.mmic-new-topic-button:hover::before,
+.mmic-viewforum-actions a:hover::before,
+.lsuj_newpost a:hover::before {
+  background: #102438 !important;
+}
+
+
+/* ---------------------------------------------------------
+   OPTIONS SOUS LA LISTE
+   --------------------------------------------------------- */
+
+.mmic-viewforum-options {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-end !important;
+  flex-wrap: wrap !important;
+  gap: 7px !important;
+}
+
+.mmic-viewforum-option,
+.mmic-viewforum-option a,
+.mmic-viewforum-watch,
+.mmic-viewforum-watch a {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 6px !important;
+
+  min-height: 28px !important;
+  padding: 0 10px !important;
+
+  border: 1px solid #ddd1c6 !important;
+  border-radius: 6px !important;
+
+  background: #f7f1e9 !important;
+  color: #625951 !important;
+
+  box-shadow: 0 2px 5px rgba(16, 36, 56, 0.04) !important;
+
+  font-size: 7px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.6px !important;
+  line-height: 1 !important;
+  text-decoration: none !important;
+  text-transform: uppercase !important;
+
+  box-sizing: border-box !important;
+
+  transition:
+    color 0.2s ease,
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease !important;
+}
+
+/* Empêche le texte de "Marquer..." de rester énorme */
+.mmic-viewforum-option {
+  font-size: 7px !important;
+}
+
+.mmic-viewforum-option > span:first-child {
+  color: #b97a56 !important;
+  font-size: 9px !important;
+}
+
+.mmic-viewforum-option:hover,
+.mmic-viewforum-option:hover a,
+.mmic-viewforum-watch:hover,
+.mmic-viewforum-watch:hover a {
+  border-color: #b97a56 !important;
+
+  background: #102438 !important;
+  color: #fbf8f3 !important;
+
+  box-shadow: 0 4px 9px rgba(16, 36, 56, 0.12) !important;
+
+  transform: translateY(-1px) !important;
+}
+
+
+/* ---------------------------------------------------------
+   RETOUR EN HAUT
+   --------------------------------------------------------- */
+
+.mmic-topics-backtop {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  width: 24px !important;
+  height: 24px !important;
+  padding: 0 !important;
+
+  border: 1px solid #ddd1c6 !important;
+  border-radius: 50% !important;
+
+  background: #f7f1e9 !important;
+  color: #b97a56 !important;
+
+  font-size: 0 !important;
+  text-decoration: none !important;
+
+  transition:
+    color 0.2s ease,
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease !important;
+}
+
+.mmic-topics-backtop::before {
+  content: "↑" !important;
+
+  font-size: 11px !important;
+  line-height: 1 !important;
+}
+
+.mmic-topics-backtop:hover {
+  border-color: #102438 !important;
+
+  background: #102438 !important;
+  color: #fbf8f3 !important;
+
+  transform: translateY(-2px) !important;
+}
+
+
+/* ---------------------------------------------------------
+   BLOC SOUS LA LISTE PLUS ÉQUILIBRÉ
+   --------------------------------------------------------- */
+
+.mmic-viewforum-links {
+  min-height: 42px !important;
+  padding: 8px 11px !important;
+}
+
+.mmic-viewforum-moderators {
+  flex: 1 1 auto !important;
+}
+
+.mmic-viewforum-options {
+  flex: 0 1 auto !important;
+}
+
+
+/* ---------------------------------------------------------
+   MOBILE
+   --------------------------------------------------------- */
+
+@media (max-width: 650px) {
+  .mmic-viewforum-actions {
+    justify-content: stretch !important;
+  }
+
+  .mmic-new-topic-button,
+  .mmic-viewforum-actions a,
+  .lsuj_newpost a {
+    width: 100% !important;
+
+    box-sizing: border-box !important;
+  }
+
+  .mmic-viewforum-options {
+    justify-content: flex-start !important;
+  }
+}
+/* =========================================================
+   CORRECTION DES BOUTONS DU VIEWFORUM
+   ========================================================= */
+
+.mmic-viewforum-actions {
+  display: flex !important;
+  justify-content: flex-end !important;
+
+  width: calc(100% - 24px) !important;
+  margin: 12px auto 8px !important;
+}
+
+.mmic-new-topic-button {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 7px !important;
+
+  min-height: 32px !important;
+  padding: 0 13px !important;
+
+  border: 1px solid #b97a56 !important;
+  border-radius: 6px !important;
+
+  background: #102438 !important;
+  color: #fbf8f3 !important;
+
+  box-shadow: 0 3px 8px rgba(16, 36, 56, 0.12) !important;
+
+  font-size: 8px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.8px !important;
+  line-height: 1 !important;
+  text-decoration: none !important;
+  text-transform: uppercase !important;
+}
+
+.mmic-new-topic-icon {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  width: 17px !important;
+  height: 17px !important;
+
+  border-radius: 50% !important;
+
+  background: #b97a56 !important;
+  color: #fbf8f3 !important;
+
+  font-size: 12px !important;
+  line-height: 1 !important;
+}
+
+.mmic-new-topic-button:hover {
+  border-color: #102438 !important;
+
+  background: #b97a56 !important;
+
+  transform: translateY(-2px) !important;
+}
+
+.mmic-viewforum-options {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-end !important;
+  flex-wrap: wrap !important;
+  gap: 7px !important;
+}
+
+.mmic-viewforum-option {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 6px !important;
+
+  min-height: 27px !important;
+  padding: 0 10px !important;
+
+  border: 1px solid #ddd1c6 !important;
+  border-radius: 6px !important;
+
+  background: #f7f1e9 !important;
+  color: #625951 !important;
+
+  font-size: 7px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.5px !important;
+  line-height: 1 !important;
+  text-decoration: none !important;
+  text-transform: uppercase !important;
+
+  box-sizing: border-box !important;
+}
+
+.mmic-viewforum-option span {
+  font-size: inherit !important;
+  line-height: inherit !important;
+}
+
+.mmic-viewforum-watch a {
+  color: inherit !important;
+  font-size: inherit !important;
+  font-weight: inherit !important;
+  letter-spacing: inherit !important;
+  line-height: inherit !important;
+  text-decoration: none !important;
+  text-transform: inherit !important;
+}
+
+.mmic-viewforum-option:hover {
+  border-color: #b97a56 !important;
+
+  background: #102438 !important;
+  color: #fbf8f3 !important;
+
+  transform: translateY(-1px) !important;
+}
+
+.mmic-viewforum-option:hover a {
+  color: #fbf8f3 !important;
+   }
+.mmic-new-topic-button::before{
+    display:none !important;
+}
+
+.mmic-new-topic-button > img{
+    display:none !important;
+}
+
+/* =========================================================
+   VUE D’UN SUJET — BOUTONS PRINCIPAUX
+   ========================================================= */
+
+/* =========================================================
+   BOUTONS PRINCIPAUX
+   ========================================================= */
+
+.mmic-vt-top-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 7px;
+  margin-top: 12px;
+  margin-bottom: 8px;
+}
+
+.mmic-vt-main-button,
+.mmic-vt-small-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+
+  min-height: 31px;
+  padding: 0 12px;
+
+  border: 1px solid #b97a56;
+  border-radius: 6px;
+
+  background: #102438;
+  color: #fbf8f3 !important;
+
+  box-shadow: 0 3px 8px rgba(16, 36, 56, 0.12);
+
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  text-decoration: none !important;
+  text-transform: uppercase;
+
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.mmic-vt-main-button-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 17px;
+  height: 17px;
+
+  border-radius: 50%;
+
+  background: #b97a56;
+  color: #fbf8f3;
+
+  font-size: 11px;
+  line-height: 1;
+}
+
+.mmic-vt-main-button:hover,
+.mmic-vt-small-button:hover {
+  border-color: #102438;
+
+  background: #b97a56;
+  color: #fbf8f3 !important;
+
+  box-shadow: 0 5px 12px rgba(16, 36, 56, 0.17);
+
+  transform: translateY(-2px);
+}
+
+
+
+/* =========================================================
+   VUE D’UN SUJET — OUTILS INFÉRIEURS & MODÉRATION
+   ========================================================= */
+
+/* =========================================================
+   OUTILS INFÉRIEURS
+   ========================================================= */
+
+.mmic-vt-bottom-tools {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+
+  margin-bottom: 13px;
+  padding: 10px;
+
+  border: 1px solid #ddd1c6;
+  border-radius: 8px;
+
+  background: #fbf8f3;
+}
+
+.mmic-vt-bottom-actions {
+  display: flex;
+  gap: 6px;
+}
+
+.mmic-vt-small-button {
+  min-height: 28px;
+  padding: 0 9px;
+
+  font-size: 7px;
+}
+
+.mmic-vt-jumpbox {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  color: #766a61;
+
+  font-size: 7px;
+}
+
+.mmic-vt-jumpbox select {
+  max-width: 180px;
+  height: 28px;
+
+  border: 1px solid #ddd1c6;
+  border-radius: 5px;
+
+  background: #f7f1e9;
+  color: #625951;
+
+  font-size: 7px;
+}
+
+.mmic-vt-submit {
+  min-height: 27px;
+  padding: 0 9px;
+
+  border: 1px solid #b97a56;
+  border-radius: 5px;
+
+  background: #102438;
+  color: #fbf8f3;
+
+  font-size: 7px;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  cursor: pointer;
+}
+
+
+/* =========================================================
+   MODÉRATION
+   ========================================================= */
+
+.mmic-vt-moderation-panel,
+.mmic-vt-admin-tools {
+  margin-bottom: 13px;
+  padding: 11px;
+
+  border: 1px solid #ddd1c6;
+  border-radius: 8px;
+
+  background: #f7f1e9;
+
+  color: #766a61;
+
+  font-size: 8px;
+}
+
+.mmic-vt-admin-tools-content {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 7px;
+
+  margin-top: 7px;
+}
+
+
+
+/* =========================================================
+   VUE D’UN SUJET — ACTIONS DES MESSAGES
+   ========================================================= */
+
+/* =========================================================
+   ACTIONS DU MESSAGE
+   Citation, édition, suppression, IP…
+   ========================================================= */
+
+.mmic-vt-post-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 5px;
+
+  min-height: 28px;
+}
+
+
+/* Chaque lien ou bouton contenant une image Forumactif */
+
+.mmic-vt-post-actions a,
+.mmic-vt-post-actions span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* Transformation des images en petites capsules */
+
+.mmic-vt-post-actions img {
+  display: block;
+
+  max-width: none !important;
+  height: 22px !important;
+
+  padding: 0;
+
+  border: 1px solid #d8c8b9;
+  border-radius: 6px;
+
+  background: #fbf8f3;
+
+  box-shadow:
+    0 1px 3px rgba(16, 36, 56, 0.08),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.45);
+
+  opacity: 0.88;
+
+  transition:
+    transform 0.18s ease,
+    border-color 0.18s ease,
+    background-color 0.18s ease,
+    opacity 0.18s ease,
+    box-shadow 0.18s ease;
+}
+
+
+/* Survol */
+
+.mmic-vt-post-actions a:hover img,
+.mmic-vt-post-actions span:hover img {
+  transform: translateY(-1px);
+
+  border-color: #b97a56;
+
+  background: #f3e8dc;
+
+  box-shadow:
+    0 3px 7px rgba(16, 36, 56, 0.12),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.6);
+
+  opacity: 1;
+}
+
+
+/* Clic */
+
+.mmic-vt-post-actions a:active img {
+  transform: translateY(0);
+
+  box-shadow:
+    0 1px 2px rgba(16, 36, 56, 0.1);
+}
+
+
+/* Boutons sélectionnés, notamment citation multiple */
+
+.mmic-vt-post-actions img[src*="on"],
+.mmic-vt-post-actions img[alt*="désélectionner"],
+.mmic-vt-post-actions img[alt*="Désélectionner"] {
+  border-color: #b97a56;
+
+  background: #102438;
+
+  box-shadow:
+    0 2px 6px rgba(16, 36, 56, 0.18);
+
+  opacity: 1;
+}
+
+
+/* Séparation légère entre la date et les actions */
+
+.mmic-vt-post-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+
+  padding: 8px 10px;
+
+  border-bottom: 1px solid #e4d9cf;
+
+  background: #f7f1e9;
+}
+
+
+/* Date du message */
+
+.mmic-vt-post-date {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  color: #7b6d63;
+
+  font-size: 8px;
+  line-height: 1.3;
+}
+
+
+/* Petit point décoratif devant la date */
+
+.mmic-vt-post-date::before {
+  content: "";
+
+  flex: 0 0 7px;
+
+  width: 7px;
+  height: 7px;
+
+  border: 2px solid #b97a56;
+  border-radius: 50%;
+
+  background: #102438;
+}
