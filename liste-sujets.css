@@ -1626,3 +1626,284 @@
     min-height: 0 !important;
   }
 }
+/* =========================================================
+   LISTE DES SUJETS — FINITIONS VISUELLES
+   ========================================================= */
+
+
+/* ---------------------------------------------------------
+   CARTE DU SUJET
+   --------------------------------------------------------- */
+
+html body .mmic-topic {
+    position: relative !important;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fffdf9 0%,
+            #fbf7f1 100%
+        ) !important;
+
+    transition:
+        transform .18s ease,
+        box-shadow .18s ease,
+        border-color .18s ease !important;
+}
+
+
+/* Petit trait cuivre discret à gauche */
+
+html body .mmic-topic::before {
+    content: "";
+
+    position: absolute;
+    top: 13px;
+    bottom: 13px;
+    left: -1px;
+
+    width: 2px;
+
+    border-radius: 0 2px 2px 0;
+
+    background:
+        linear-gradient(
+            180deg,
+            transparent,
+            #b97a56 25%,
+            #d8b08c 50%,
+            #b97a56 75%,
+            transparent
+        );
+
+    opacity: 0;
+
+    transition: opacity .18s ease;
+}
+
+
+/* Hover général */
+
+html body .mmic-topic:hover {
+    transform: translateY(-2px);
+
+    border-color: rgba(185, 122, 86, .52) !important;
+
+    box-shadow:
+        0 7px 16px rgba(16, 36, 56, .09),
+        inset 0 1px 0 rgba(255,255,255,.9) !important;
+}
+
+html body .mmic-topic:hover::before {
+    opacity: 1;
+}
+
+
+/* ---------------------------------------------------------
+   ICÔNE / STATUT DU SUJET
+   --------------------------------------------------------- */
+
+html body .mmic-topic-status {
+    transition:
+        transform .18s ease,
+        filter .18s ease !important;
+}
+
+html body .mmic-topic:hover .mmic-topic-status {
+    transform: translateY(-1px) scale(1.04);
+
+    filter:
+        drop-shadow(0 3px 4px rgba(16,36,56,.14));
+}
+
+
+/* On donne un peu plus de relief au carré bleu */
+
+html body .mmic-topic-status-icon {
+    box-shadow:
+        inset 0 0 0 1px rgba(255,255,255,.08),
+        0 3px 7px rgba(16,36,56,.12) !important;
+
+    transition:
+        border-color .18s ease,
+        box-shadow .18s ease !important;
+}
+
+html body .mmic-topic:hover .mmic-topic-status-icon {
+    border-color: #d8b08c !important;
+
+    box-shadow:
+        inset 0 0 0 1px rgba(255,255,255,.10),
+        0 4px 9px rgba(16,36,56,.16) !important;
+}
+
+
+/* ---------------------------------------------------------
+   TITRE DU SUJET
+   --------------------------------------------------------- */
+
+html body .mmic-topic-title {
+    position: relative;
+
+    font-size: 14px !important;
+    font-weight: 500 !important;
+
+    transition:
+        color .18s ease,
+        letter-spacing .18s ease !important;
+}
+
+html body .mmic-topic-title:hover {
+    color: #b97a56 !important;
+}
+
+
+/* Petit soulignement cuivre élégant */
+
+html body .mmic-topic-title::after {
+    content: "";
+
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+    left: 0;
+
+    height: 1px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #b97a56,
+            transparent
+        );
+
+    transform: scaleX(0);
+    transform-origin: left center;
+
+    transition: transform .18s ease;
+}
+
+html body .mmic-topic-title:hover::after {
+    transform: scaleX(1);
+}
+
+
+/* ---------------------------------------------------------
+   AUTEUR + COMPTEURS
+   --------------------------------------------------------- */
+
+html body .mmic-topic-number {
+    background:
+        linear-gradient(
+            180deg,
+            #fffdf9,
+            #f6efe7
+        ) !important;
+
+    box-shadow:
+        inset 0 1px 0 rgba(255,255,255,.85) !important;
+
+    transition:
+        border-color .18s ease,
+        background .18s ease !important;
+}
+
+html body .mmic-topic:hover .mmic-topic-number {
+    border-color: rgba(185,122,86,.28) !important;
+}
+
+
+/* ---------------------------------------------------------
+   DERNIER PASSAGE
+   --------------------------------------------------------- */
+
+html body .mmic-topic-last {
+    margin: 0 0 0 8px !important;
+    padding: 8px 9px !important;
+
+    border: 1px solid rgba(216,176,140,.30);
+    border-radius: 8px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255,253,249,.88),
+            rgba(248,242,235,.72)
+        );
+
+    box-shadow:
+        inset 0 1px 0 rgba(255,255,255,.7);
+
+    transition:
+        border-color .18s ease,
+        background .18s ease !important;
+}
+
+html body .mmic-topic:hover .mmic-topic-last {
+    border-color: rgba(185,122,86,.40);
+
+    background:
+        linear-gradient(
+            135deg,
+            #fffdf9,
+            #f8f1e9
+        );
+}
+
+
+/* Avatar du dernier posteur */
+
+html body .mmic-topic-last-avatar {
+    box-shadow:
+        0 3px 7px rgba(16,36,56,.12) !important;
+
+    transition:
+        transform .18s ease,
+        box-shadow .18s ease !important;
+}
+
+html body .mmic-topic:hover .mmic-topic-last-avatar {
+    transform: scale(1.04);
+
+    box-shadow:
+        0 4px 9px rgba(16,36,56,.18) !important;
+}
+
+
+/* Label dernier passage */
+
+html body .mmic-topic-last-content::before {
+    content: "Dernier passage";
+
+    display: block;
+
+    margin-bottom: 2px;
+
+    color: #b97a56;
+
+    font-size: 5.5px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+
+/* ---------------------------------------------------------
+   MOBILE
+   --------------------------------------------------------- */
+
+@media (max-width: 700px) {
+
+    html body .mmic-topic-last {
+        margin:
+            9px 0 0 12px !important;
+
+        padding:
+            9px !important;
+    }
+
+    html body .mmic-topic::before {
+        top: 10px;
+        bottom: 10px;
+    }
+}
