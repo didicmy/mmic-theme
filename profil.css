@@ -1241,3 +1241,662 @@ html body .mmic-profile-page .mmic-profile-rpg-administration a {
         display: none;
     }
 }
+/* =========================================================
+   CARTE DE VISITE — PROFIL COMPACT
+   ========================================================= */
+
+html body .mmic-profile-business-card {
+    display: grid;
+    grid-template-columns: 255px minmax(0, 1fr);
+
+    margin-top: 16px;
+
+    border: 1px solid rgba(216, 176, 140, 0.52);
+    border-radius: 11px;
+
+    background: #fffdf9;
+
+    box-shadow:
+        0 8px 22px rgba(16, 36, 56, 0.09),
+        inset 0 1px 0 rgba(255, 255, 255, 0.9);
+
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   PARTIE GAUCHE
+   ========================================================= */
+
+html body .mmic-profile-business-left {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+    padding: 22px 18px;
+
+    border-right: 1px solid rgba(216, 176, 140, 0.34);
+
+    background:
+        linear-gradient(
+            180deg,
+            #f6eee6 0%,
+            #fbf8f3 55%,
+            #f3e9df 100%
+        );
+
+    box-sizing: border-box;
+}
+
+
+html body .mmic-profile-business-left::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    right: 18px;
+    left: 18px;
+
+    height: 2px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            #b97a56,
+            #d8b08c,
+            #b97a56,
+            transparent
+        );
+}
+
+
+/* Avatar principal de la carte */
+
+html body .mmic-profile-business-avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 180px;
+    height: 270px;
+
+    margin: 4px auto 18px;
+
+    border: 1px solid #d8b08c;
+    border-radius: 9px;
+
+    background: #fffaf4;
+
+    box-shadow:
+        0 8px 18px rgba(16, 36, 56, 0.14),
+        0 0 0 4px rgba(255, 250, 244, 0.95);
+
+    overflow: hidden;
+}
+
+
+html body .mmic-profile-business-avatar img {
+    display: block;
+
+    width: 100% !important;
+    height: 100% !important;
+    max-width: none !important;
+
+    object-fit: cover !important;
+    object-position: center top !important;
+
+    transition: transform 0.35s ease;
+}
+
+
+html body .mmic-profile-business-avatar:hover img {
+    transform: scale(1.05);
+}
+
+
+/* Nom sous l’avatar */
+
+html body .mmic-profile-business-name {
+    text-align: center;
+}
+
+
+html body .mmic-profile-business-name span {
+    display: block;
+
+    margin-bottom: 5px;
+
+    color: #b97a56;
+
+    font-size: 7px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+}
+
+
+html body .mmic-profile-business-name strong {
+    display: block;
+
+    color: #102438;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.15;
+}
+
+
+html body .mmic-profile-business-name small {
+    display: block;
+
+    margin-top: 6px;
+
+    color: #8a786a;
+
+    font-size: 7px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+}
+
+
+/* Présence */
+
+html body .mmic-profile-business-presence {
+    margin-top: 17px;
+
+    border-top: 1px solid rgba(216, 176, 140, 0.34);
+}
+
+
+html body .mmic-profile-business-presence-line {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+
+    padding: 10px 0;
+
+    border-bottom: 1px solid rgba(216, 176, 140, 0.28);
+}
+
+
+html body .mmic-profile-business-presence-line span,
+html body .mmic-profile-business-groups > span {
+    color: #b97a56;
+
+    font-size: 7px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+
+html body .mmic-profile-business-presence-line strong {
+    color: #102438;
+
+    font-size: 8px;
+    font-weight: 700;
+    line-height: 1.4;
+    text-align: right;
+}
+
+
+/* Groupes */
+
+html body .mmic-profile-business-groups {
+    padding: 11px 0;
+
+    border-bottom: 1px solid rgba(216, 176, 140, 0.28);
+}
+
+
+html body .mmic-profile-business-groups > div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+
+    margin-top: 8px;
+}
+
+
+html body .mmic-profile-business-groups a {
+    padding: 5px 8px;
+
+    border: 1px solid rgba(216, 176, 140, 0.45);
+    border-radius: 5px;
+
+    background: #fffaf4;
+    color: #102438 !important;
+
+    font-size: 7px;
+    font-weight: 700;
+    letter-spacing: 0.07em;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
+/* Actions */
+
+html body .mmic-profile-business-actions {
+    display: grid;
+    gap: 8px;
+
+    margin-top: 16px;
+}
+
+
+html body .mmic-profile-business-actions .mmic-profile-follow,
+html body .mmic-profile-business-actions
+.mmic-profile-private-message a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    min-height: 35px;
+
+    margin: 0;
+    padding: 8px 11px;
+
+    border: 1px solid rgba(216, 176, 140, 0.58);
+    border-radius: 6px;
+
+    background: #102438;
+    color: #fffaf4 !important;
+
+    font-size: 7px;
+    font-weight: 700;
+    letter-spacing: 0.11em;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    box-sizing: border-box;
+
+    transition:
+        background 0.22s ease,
+        color 0.22s ease,
+        transform 0.22s ease;
+}
+
+
+html body .mmic-profile-business-actions .mmic-profile-follow:hover,
+html body .mmic-profile-business-actions
+.mmic-profile-private-message a:hover {
+    background: #d8b08c;
+    color: #102438 !important;
+
+    transform: translateY(-2px);
+}
+
+
+html body .mmic-profile-business-admin {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 7px;
+
+    margin-top: 14px;
+}
+
+
+/* =========================================================
+   PARTIE DROITE
+   ========================================================= */
+
+html body .mmic-profile-business-right {
+    min-width: 0;
+
+    padding: 0;
+
+    background:
+        linear-gradient(
+            180deg,
+            #fffdf9 0%,
+            #fbf7f1 100%
+        );
+}
+
+
+/* En-tête de la carte */
+
+html body .mmic-profile-business-header {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+
+    min-height: 82px;
+
+    padding: 18px 22px;
+
+    border-bottom: 1px solid rgba(216, 176, 140, 0.36);
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(216, 176, 140, 0.09),
+            transparent
+        );
+
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+
+html body .mmic-profile-business-header > div:first-child {
+    position: relative;
+    z-index: 2;
+}
+
+
+html body .mmic-profile-business-header > div:first-child > span {
+    display: block;
+
+    margin-bottom: 4px;
+
+    color: #b97a56;
+
+    font-size: 7px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+}
+
+
+html body .mmic-profile-business-header h2 {
+    margin: 0;
+
+    color: #102438;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.15;
+}
+
+
+html body .mmic-profile-business-mark {
+    position: absolute;
+    right: 20px;
+
+    color: rgba(16, 36, 56, 0.055);
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   INFORMATIONS EN GRILLE
+   ========================================================= */
+
+html body .mmic-profile-business-fields {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-content: start;
+    gap: 9px;
+
+    padding: 18px 20px;
+
+    box-sizing: border-box;
+}
+
+
+html body .mmic-profile-business-fields .mmic-profile-field {
+    display: grid;
+    grid-template-columns: minmax(100px, 0.42fr) minmax(0, 1fr);
+    align-items: stretch;
+
+    min-height: 47px;
+    margin: 0;
+
+    border: 1px solid rgba(216, 176, 140, 0.34);
+    border-radius: 7px;
+
+    background: rgba(255, 250, 244, 0.76);
+
+    overflow: visible;
+    box-sizing: border-box;
+}
+
+
+html body
+.mmic-profile-business-fields
+.mmic-profile-field-label {
+    display: flex;
+    align-items: center;
+
+    min-height: 100%;
+    padding: 10px;
+
+    border-right: 1px solid rgba(216, 176, 140, 0.3);
+
+    background: rgba(216, 176, 140, 0.1);
+    color: #b97a56;
+
+    font-size: 7px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    line-height: 1.4;
+    text-transform: uppercase;
+
+    box-sizing: border-box;
+}
+
+
+html body
+.mmic-profile-business-fields
+.mmic-profile-field-value {
+    display: flex;
+    align-items: center;
+
+    min-width: 0;
+    padding: 10px 12px;
+
+    color: #514a44;
+
+    font-size: 9px;
+    line-height: 1.5;
+
+    box-sizing: border-box;
+}
+
+
+html body
+.mmic-profile-business-fields
+.mmic-profile-field-content {
+    width: 100%;
+
+    overflow-wrap: anywhere;
+}
+
+
+/* Champ occupant toute la largeur lorsqu’il contient beaucoup de texte */
+
+html body
+.mmic-profile-business-fields
+.mmic-profile-field.mmic-profile-field-wide {
+    grid-column: 1 / -1;
+}
+
+
+/* =========================================================
+   CONTACT
+   ========================================================= */
+
+html body .mmic-profile-business-contact {
+    padding: 0 20px 20px;
+}
+
+
+html body .mmic-profile-business-subtitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 11px;
+
+    margin: 1px 0 13px;
+}
+
+
+html body .mmic-profile-business-subtitle span {
+    width: 42px;
+    height: 1px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            #d8b08c
+        );
+}
+
+
+html body .mmic-profile-business-subtitle span:last-child {
+    background:
+        linear-gradient(
+            90deg,
+            #d8b08c,
+            transparent
+        );
+}
+
+
+html body .mmic-profile-business-subtitle strong {
+    color: #b97a56;
+
+    font-size: 7px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+}
+
+
+html body
+.mmic-profile-business-contact
+.mmic-profile-contact-list {
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    padding: 0;
+}
+
+
+html body
+.mmic-profile-business-contact
+.mmic-profile-contact-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    width: auto;
+    min-height: 35px;
+    padding: 7px 10px;
+
+    border: 1px solid rgba(216, 176, 140, 0.34);
+    border-radius: 6px;
+
+    background: #fffaf4;
+}
+
+
+html body
+.mmic-profile-business-contact
+.mmic-profile-contact-label {
+    color: #b97a56;
+
+    font-size: 7px;
+    font-weight: 700;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+}
+
+
+html body
+.mmic-profile-business-contact
+.mmic-profile-contact-content {
+    color: #102438;
+
+    font-size: 8px;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 800px) {
+
+    html body .mmic-profile-business-card {
+        grid-template-columns: 220px minmax(0, 1fr);
+    }
+
+    html body .mmic-profile-business-avatar {
+        width: 155px;
+        height: 235px;
+    }
+
+    html body .mmic-profile-business-fields {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    html body .mmic-profile-business-card {
+        grid-template-columns: 1fr;
+    }
+
+    html body .mmic-profile-business-left {
+        border-right: 0;
+        border-bottom: 1px solid rgba(216, 176, 140, 0.34);
+    }
+
+    html body .mmic-profile-business-avatar {
+        width: 170px;
+        height: 255px;
+    }
+
+    html body .mmic-profile-business-header {
+        padding-right: 18px;
+        padding-left: 18px;
+    }
+
+    html body .mmic-profile-business-mark {
+        display: none;
+    }
+
+    html body .mmic-profile-business-fields {
+        padding-right: 14px;
+        padding-left: 14px;
+    }
+
+    html body
+    .mmic-profile-business-fields
+    .mmic-profile-field {
+        grid-template-columns: 1fr;
+    }
+
+    html body
+    .mmic-profile-business-fields
+    .mmic-profile-field-label {
+        border-right: 0;
+        border-bottom: 1px solid rgba(216, 176, 140, 0.3);
+    }
+}
