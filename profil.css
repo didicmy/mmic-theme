@@ -1936,3 +1936,175 @@ html body .mmic-profile-business-contact:has(
 ) {
     display: none !important;
 }
+/* =========================================================
+   CORRECTION FINALE — CHAMPS DE LA CARTE
+   ========================================================= */
+
+html body .mmic-profile-business-card {
+    height: auto !important;
+    min-height: 0 !important;
+    align-items: stretch !important;
+}
+
+html body .mmic-profile-business-right {
+    display: flex !important;
+    flex-direction: column !important;
+
+    height: auto !important;
+    min-height: 0 !important;
+}
+
+html body .mmic-profile-business-fields {
+    display: grid !important;
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr)) !important;
+    align-items: stretch !important;
+    align-content: start !important;
+
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+
+    margin: 0 !important;
+    padding: 18px 20px !important;
+
+    box-sizing: border-box !important;
+}
+
+html body .mmic-profile-business-fields
+.mmic-profile-field {
+    position: relative !important;
+    float: none !important;
+    clear: none !important;
+
+    display: grid !important;
+    grid-template-columns:
+        minmax(105px, 0.42fr)
+        minmax(0, 1fr) !important;
+
+    grid-column: auto !important;
+
+    width: auto !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 48px !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    overflow: visible !important;
+
+    box-sizing: border-box !important;
+}
+
+html body .mmic-profile-business-fields
+.mmic-profile-field-wide {
+    grid-column: 1 / -1 !important;
+}
+
+html body .mmic-profile-business-fields
+.mmic-profile-field-label,
+html body .mmic-profile-business-fields
+.mmic-profile-field-value,
+html body .mmic-profile-business-fields
+.mmic-profile-field-content,
+html body .mmic-profile-business-fields
+.field_uneditable,
+html body .mmic-profile-business-fields
+.field_editable {
+    position: static !important;
+    float: none !important;
+    clear: none !important;
+
+    width: auto !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+
+    margin: 0 !important;
+
+    box-sizing: border-box !important;
+}
+
+html body .mmic-profile-business-fields
+.mmic-profile-field-label {
+    display: flex !important;
+    align-items: center !important;
+
+    padding: 10px 11px !important;
+}
+
+html body .mmic-profile-business-fields
+.mmic-profile-field-value {
+    display: flex !important;
+    align-items: center !important;
+
+    padding: 10px 12px !important;
+}
+
+html body .mmic-profile-business-fields
+.mmic-profile-field-content {
+    width: 100% !important;
+
+    overflow-wrap: anywhere !important;
+    word-break: break-word !important;
+}
+
+/*
+ * Sécurité supplémentaire :
+ * même avant le passage du JavaScript,
+ * le champ Messages ne doit plus former un bloc immense.
+ */
+html body .mmic-profile-business-fields
+.mmic-profile-field {
+    max-height: none !important;
+}
+
+/* Coordonnées */
+
+html body .mmic-profile-business-contact {
+    margin-top: auto !important;
+}
+
+html body .mmic-profile-business-contact
+.mmic-profile-contact-list {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    align-items: center !important;
+
+    width: 100% !important;
+}
+
+html body .mmic-profile-business-contact
+.mmic-profile-contact-item {
+    float: none !important;
+    clear: none !important;
+
+    width: auto !important;
+    height: auto !important;
+    min-height: 35px !important;
+
+    margin: 0 !important;
+}
+
+/* Tablettes */
+
+@media (max-width: 800px) {
+    html body .mmic-profile-business-fields {
+        grid-template-columns: 1fr !important;
+    }
+
+    html body .mmic-profile-business-fields
+    .mmic-profile-field-wide {
+        grid-column: auto !important;
+    }
+}
+
+/* Téléphones */
+
+@media (max-width: 600px) {
+    html body .mmic-profile-business-fields
+    .mmic-profile-field {
+        grid-template-columns: 1fr !important;
+    }
+}
