@@ -1256,3 +1256,61 @@ html body .mmic-navigation-account[aria-expanded="true"]
 .mmic-navigation-chevron {
     transform: rotate(180deg) !important;
 }
+/* =========================================================
+   CORRECTION POSITION AVATAR + TEXTE MEMBRE
+   ========================================================= */
+
+html body .mmic-navigation-inner {
+    grid-template-columns:
+        310px
+        minmax(0, 1fr)
+        210px !important;
+}
+
+/* On retire le décalage appliqué au conteneur extérieur */
+html body .mmic-navigation-member {
+    min-width: 310px !important;
+    padding-left: 0 !important;
+}
+
+/* C’est le bouton qui réserve réellement la place du losange */
+html body .mmic-navigation-account {
+    min-width: 310px !important;
+    padding:
+        0
+        20px
+        0
+        150px !important;
+}
+
+/* Losange placé sur le bord gauche */
+html body .mmic-navigation-avatar {
+    left: 42px !important;
+
+    width: 68px !important;
+    height: 68px !important;
+}
+
+/* Texte bien replacé à droite */
+html body .mmic-navigation-welcome {
+    position: relative !important;
+    z-index: 40 !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+
+    width: 120px !important;
+    min-width: 120px !important;
+    max-width: 120px !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    transform: none !important;
+}
+
+/* Flèche rapprochée du pseudo */
+html body .mmic-navigation-chevron {
+    margin-right: auto !important;
+    margin-left: 10px !important;
+}
