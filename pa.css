@@ -1,0 +1,604 @@
+/* =========================================================
+   MEET ME IN CHICAGO — PAGE D’ACCUEIL
+   =========================================================
+
+   Contient uniquement la mise en page de la PA :
+   - bloc Bienvenue ;
+   - Nouveautés ;
+   - Événement ;
+   - Staff ;
+   - Personnages recherchés ;
+   - Liens utiles ;
+   - panneau des partenaires ;
+   - responsive de la PA.
+
+   Les styles génériques des boutons sont volontairement
+   laissés de côté : ils seront regroupés dans buttons.css.
+   Les mini-liens de lieux restent dans categories-lieux-bas.css.
+   ========================================================= */
+
+/* =========================================================
+   PA MEET ME IN CHICAGO
+   À coller dans : Affichage > Couleurs > Feuille de style CSS
+   ========================================================= */
+
+.mmic-pa {
+  --navy: #0c1827;
+  --paper: #fbf8f3;
+  --cream: #f4eee5;
+  --copper: #b97a56;
+  --border: #d8cbbd;
+  --text: #252525;
+  --muted: #786f67;
+
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1100px;
+  margin: 18px auto;
+  padding: 12px;
+  color: var(--text);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.mmic-pa * {
+  box-sizing: border-box;
+}
+
+.mmic-pa a {
+  text-decoration: none;
+}
+
+.mmic-welcome {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 180px;
+  padding: 25px 30px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+
+  background-image:
+    linear-gradient(
+      rgba(8, 18, 31, 0.42),
+      rgba(8, 18, 31, 0.42)
+    ),
+    url("https://i.servimg.com/u/f28/15/72/31/14/ae6d9c10.png");
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  text-align: center;
+}
+
+.mmic-welcome-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 760px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.mmic-eyebrow {
+  display: block;
+  margin-bottom: 8px;
+  color: #ffffff;
+  font: 25px Georgia, "Times New Roman", serif;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.mmic-welcome p {
+  max-width: 700px;
+  margin: 0 auto 16px;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.mmic-main-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+
+/* ---------------------------------------------------------
+   STYLE DES BOUTONS DE LA PA
+   ---------------------------------------------------------
+   Les règles de .mmic-main-links a et .mmic-button
+   ont été volontairement déplacées vers le futur buttons.css.
+   --------------------------------------------------------- */
+
+.mmic-top-grid,
+.mmic-bottom-grid {
+  display: grid;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.mmic-top-grid {
+  grid-template-columns: 1.05fr 1.05fr 0.9fr;
+}
+
+.mmic-bottom-grid {
+  grid-template-columns: 1fr 1fr;
+}
+
+.mmic-card {
+  min-width: 0;
+  padding: 16px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--paper);
+}
+
+.mmic-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 14px;
+  color: var(--navy);
+  font: 17px Georgia, "Times New Roman", serif;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+}
+
+.mmic-title:before,
+.mmic-title:after {
+  content: "";
+  width: 26px;
+  height: 1px;
+  background: var(--copper);
+}
+
+.mmic-news-list {
+  display: grid;
+  gap: 9px;
+  margin-bottom: 13px;
+}
+
+.mmic-news-item {
+  display: grid;
+  grid-template-columns: 53px 1fr;
+  gap: 10px;
+}
+
+.mmic-news-date {
+  display: grid;
+  place-items: center;
+  min-height: 31px;
+  border-radius: 3px;
+  background: var(--navy);
+  color: #ffffff;
+  font-size: 10px;
+}
+
+.mmic-news-text strong {
+  display: block;
+  margin-bottom: 2px;
+  color: var(--navy);
+  font-size: 11px;
+  text-transform: uppercase;
+}
+
+.mmic-news-text p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.35;
+}
+
+.mmic-event,
+.mmic-staff,
+.mmic-wanted,
+.mmic-useful {
+  text-align: center;
+}
+
+.mmic-event-image {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  min-height: 105px;
+  margin-bottom: 10px;
+  padding: 12px;
+  overflow: hidden;
+  border-radius: 7px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #ffffff;
+}
+
+.mmic-event-image:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    transparent,
+    rgba(12, 24, 39, 0.82)
+  );
+}
+
+.mmic-event-image span {
+  position: relative;
+  z-index: 1;
+  font: 16px Georgia, "Times New Roman", serif;
+}
+
+.mmic-event > p {
+  margin: 0 0 12px;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.45;
+}
+
+.mmic-staff-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin: 4px 0 14px;
+}
+
+.mmic-staff-member {
+  color: var(--text) !important;
+}
+
+.mmic-staff-member img {
+  width: 68px;
+  height: 68px;
+  max-width: 100%;
+  object-fit: cover;
+  border: 3px solid var(--paper);
+  outline: 1px solid var(--copper);
+  border-radius: 50%;
+  transition: 0.2s;
+}
+
+.mmic-staff-member:hover img {
+  transform: translateY(-3px);
+}
+
+.mmic-staff-member span,
+.mmic-staff-member small {
+  display: block;
+}
+
+.mmic-staff-member span {
+  margin-top: 7px;
+  color: var(--navy);
+  font: 13px Georgia, "Times New Roman", serif;
+}
+
+.mmic-staff-member small {
+  margin-top: 2px;
+  color: var(--muted);
+  font-size: 8px;
+  text-transform: uppercase;
+}
+
+.mmic-wanted-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 9px;
+  margin-bottom: 13px;
+}
+
+.mmic-wanted-list a {
+  min-width: 0;
+  color: var(--text) !important;
+}
+
+.mmic-wanted-list img {
+  display: block;
+  width: 100%;
+  height: 72px;
+  object-fit: cover;
+  border-radius: 6px;
+  transition: 0.2s;
+}
+
+.mmic-wanted-list a:hover img {
+  transform: translateY(-2px);
+}
+
+.mmic-wanted-list strong,
+.mmic-wanted-list small {
+  display: block;
+}
+
+.mmic-wanted-list strong {
+  margin-top: 6px;
+  overflow: hidden;
+  color: var(--navy);
+  font-size: 9px;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.mmic-wanted-list small {
+  margin-top: 2px;
+  color: var(--muted);
+  font-size: 8px;
+  text-transform: uppercase;
+}
+
+.mmic-useful-list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 7px;
+}
+
+.mmic-useful-list a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 78px;
+  padding: 8px 4px;
+  border-right: 1px solid var(--border);
+  color: var(--navy) !important;
+  transition: 0.2s;
+}
+
+.mmic-useful-list a:last-child {
+  border-right: 0;
+}
+
+.mmic-useful-list a:hover {
+  color: var(--copper) !important;
+  transform: translateY(-2px);
+}
+
+.mmic-icon {
+  margin-bottom: 7px;
+  font: 27px Georgia, "Times New Roman", serif;
+}
+
+.mmic-useful-list strong {
+  font-size: 9px;
+  text-transform: uppercase;
+}
+
+.mmic-signature {
+  margin: 15px 0 0;
+  color: var(--copper);
+  font: italic 15px Georgia, "Times New Roman", serif;
+}
+
+.mmic-card > .mmic-button {
+  margin: 0 auto;
+}
+
+@media (max-width: 900px) {
+  .mmic-top-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .mmic-staff {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 700px) {
+  .mmic-top-grid,
+  .mmic-bottom-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .mmic-wanted-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .mmic-useful-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .mmic-pa {
+    padding: 6px;
+  }
+
+  .mmic-welcome {
+    padding: 20px;
+  }
+
+  .mmic-staff-list {
+    grid-template-columns: 1fr;
+  }
+
+  .mmic-useful-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+
+
+
+
+
+/* Icônes SVG insérées directement dans le template */
+
+.mmic-icon-drawing.mmic-inline-svg {
+  background-color: transparent !important;
+
+  -webkit-mask: none !important;
+  mask: none !important;
+
+  -webkit-mask-image: none !important;
+  mask-image: none !important;
+}
+
+.mmic-icon-drawing.mmic-inline-svg svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.mmic-icon-drawing.mmic-inline-svg path {
+  fill: #fbf8f3;
+}
+
+
+/* =========================================================
+   PANNEAU DES PARTENAIRES — PAGE D’ACCUEIL
+   ========================================================= */
+
+.mmic-partners-toggle {
+  cursor: pointer;
+}
+
+/* Empêche le navigateur de déplacer brutalement la page. */
+.mmic-partners-toggle:focus {
+  outline: none;
+}
+
+.mmic-partners-panel {
+  display: none;
+
+  margin: 13px 12px 4px;
+  padding: 12px 14px;
+
+  border: 1px solid #ddcfc1;
+  border-radius: 8px;
+
+  background: #f8f3ed;
+  box-shadow: 0 5px 14px rgba(12, 24, 39, 0.08);
+
+  animation: mmicPartnersOpen 0.22s ease;
+}
+
+.mmic-partners-panel.is-open {
+  display: block;
+}
+
+.mmic-partners-heading {
+  margin-bottom: 9px;
+
+  color: #a06d50;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.mmic-partners-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px;
+}
+
+.mmic-partners-list a {
+  display: inline-flex;
+  align-items: center;
+
+  padding: 5px 9px;
+
+  border: 1px solid #ded2c6;
+  border-radius: 12px;
+
+  background: #fffaf4;
+  color: #6f625a !important;
+
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 0.35px;
+  line-height: 1.2;
+  text-decoration: none !important;
+  text-transform: uppercase;
+
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.mmic-partners-list a::before {
+  content: "◇";
+  margin-right: 5px;
+  color: #b97a56;
+  font-size: 9px;
+}
+
+.mmic-partners-list a:hover {
+  border-color: #b97a56;
+  background: #102438;
+  color: #fbf8f3 !important;
+  transform: translateY(-1px);
+}
+
+.mmic-partners-list a:hover::before {
+  color: #fbf8f3;
+}
+
+.mmic-partners-all {
+  display: block;
+
+  width: max-content;
+  margin: 11px auto 0;
+
+  color: #a06d50 !important;
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+  text-decoration: none !important;
+  text-transform: uppercase;
+}
+
+.mmic-partners-all:hover {
+  color: #102438 !important;
+}
+
+.mmic-partners-toggle.is-open {
+  color: #b97a56 !important;
+}
+
+.mmic-partners-toggle.is-open .mmic-icon {
+  transform: rotate(45deg);
+}
+
+.mmic-partners-toggle .mmic-icon {
+  transition: transform 0.22s ease;
+}
+
+@keyframes mmicPartnersOpen {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 700px) {
+  .mmic-partners-panel {
+    margin-right: 4px;
+    margin-left: 4px;
+    padding: 10px;
+  }
+
+  .mmic-partners-list {
+    gap: 5px;
+  }
+
+  .mmic-partners-list a {
+    font-size: 7.5px;
+  }
+}
