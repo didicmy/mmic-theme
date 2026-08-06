@@ -2573,3 +2573,142 @@ html body .mmic-profile-business-mark {
         justify-content: center !important;
     }
 }
+/* =========================================================
+   PROFIL — BOUTONS DE CONTACT
+   ========================================================= */
+
+html body .mmic-profile-business-contact {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-wrap: wrap !important;
+
+    gap: 10px !important;
+
+    margin-top: 14px !important;
+}
+
+/* Chaque bouton */
+html body .mmic-profile-business-contact > div {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+
+    min-width: 125px !important;
+    height: 42px !important;
+
+    padding: 0 9px 0 12px !important;
+
+    border: 1px solid rgba(216, 176, 140, 0.55) !important;
+    border-radius: 7px !important;
+
+    background: linear-gradient(
+        180deg,
+        #fffdf9 0%,
+        #f8f2eb 100%
+    ) !important;
+
+    box-shadow:
+        0 3px 8px rgba(12, 29, 47, 0.05),
+        inset 0 1px 0 rgba(255, 255, 255, 0.85) !important;
+
+    box-sizing: border-box !important;
+}
+
+/* Libellés */
+html body .mmic-profile-business-contact > div > span,
+html body .mmic-profile-business-contact > div {
+    color: #b36f4c !important;
+
+    font-size: 7px !important;
+    font-weight: 700 !important;
+    letter-spacing: 1.1px !important;
+    text-transform: uppercase !important;
+}
+
+/* Lien rond */
+html body .mmic-profile-business-contact a {
+    position: relative !important;
+
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    flex: 0 0 28px !important;
+    width: 28px !important;
+    height: 28px !important;
+
+    margin-left: 10px !important;
+
+    border: 1px solid rgba(216, 176, 140, 0.75) !important;
+    border-radius: 50% !important;
+
+    background: #0d263b !important;
+    color: #f2c79d !important;
+
+    text-decoration: none !important;
+
+    box-shadow:
+        0 2px 5px rgba(12, 29, 47, 0.2),
+        inset 0 1px 0 rgba(255, 255, 255, 0.08) !important;
+
+    overflow: hidden !important;
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease,
+        box-shadow 0.2s ease !important;
+}
+
+/* On cache les vieux gifs Forumactif */
+html body .mmic-profile-business-contact a img {
+    display: none !important;
+}
+
+/* Icône commune */
+html body .mmic-profile-business-contact a::before {
+    display: block !important;
+
+    color: #f2c79d !important;
+
+    font-family: Arial, sans-serif !important;
+    font-size: 15px !important;
+    font-weight: 400 !important;
+    line-height: 1 !important;
+}
+
+/* Message privé */
+html body .mmic-profile-business-contact > div:nth-child(1) a::before {
+    content: "✉" !important;
+}
+
+/* Email */
+html body .mmic-profile-business-contact > div:nth-child(2) a::before {
+    content: "@" !important;
+
+    font-size: 14px !important;
+    font-weight: 700 !important;
+}
+
+/* Site web */
+html body .mmic-profile-business-contact > div:nth-child(3) a::before {
+    content: "⌂" !important;
+
+    font-size: 15px !important;
+}
+
+/* Survol */
+html body .mmic-profile-business-contact a:hover {
+    background: #173b58 !important;
+
+    transform: translateY(-2px) scale(1.06) !important;
+
+    box-shadow:
+        0 5px 10px rgba(12, 29, 47, 0.25),
+        0 0 0 2px rgba(216, 176, 140, 0.18) !important;
+}
+
+/* Bouton sans lien disponible */
+html body .mmic-profile-business-contact > div:not(:has(a)) {
+    opacity: 0.55 !important;
+}
