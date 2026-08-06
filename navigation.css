@@ -1314,3 +1314,20 @@ html body .mmic-navigation-chevron {
     margin-right: auto !important;
     margin-left: 10px !important;
 }
+/* =========================================================
+   PSEUDO UTILISATEUR DANS LA NAVIGATION
+   ========================================================= */
+
+#fa_usermenu,
+#fa_usermenu a,
+#fa_usermenu .usr_grp_clr,
+#fa_usermenu strong,
+#fa_usermenu span {
+    color: #f4e6d6 !important;
+    text-decoration: none !important;
+}
+
+#fa_usermenu a:hover,
+#fa_usermenu .usr_grp_clr:hover {
+    color: #d8b08c !important;
+}
