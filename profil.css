@@ -2634,3 +2634,95 @@ html body .mmic-profile-last-visit {
 html body .mmic-profile-last-visit strong {
     margin: 0 !important;
 }
+/* =========================================================
+   PROFIL — AVATAR À GAUCHE, IDENTITÉ À DROITE
+   ========================================================= */
+
+html body .mmic-profile-hero-content {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+
+    width: 100% !important;
+    padding: 12px 30px 14px 18px !important;
+    gap: 30px !important;
+}
+
+/* Avatar maintenu à gauche */
+
+html body .mmic-profile-hero-avatar {
+    flex: 0 0 112px !important;
+    width: 112px !important;
+    min-width: 112px !important;
+
+    margin: 0 !important;
+}
+
+/* Bloc d’identité envoyé vers le bord droit */
+
+html body .mmic-profile-identity {
+    flex: 0 1 390px !important;
+    width: 390px !important;
+    max-width: 390px !important;
+
+    margin: 0 0 0 auto !important;
+    padding: 0 !important;
+
+    align-items: flex-start !important;
+    text-align: left !important;
+}
+
+/* Statut et dernière visite utilisent toute la largeur disponible */
+
+html body .mmic-profile-status-line {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    flex-wrap: wrap !important;
+
+    width: 100% !important;
+    margin-top: 7px !important;
+    gap: 12px 28px !important;
+}
+
+html body .mmic-profile-status,
+html body .mmic-profile-last-visit {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+
+    margin: 0 !important;
+    white-space: nowrap !important;
+}
+
+/* =========================================================
+   ZOOM RÉEL DE LA PHOTO DANS LE LOSANGE
+   ========================================================= */
+
+html body .mmic-profile-avatar-diamond {
+    width: 96px !important;
+    height: 96px !important;
+}
+
+html body .mmic-profile-avatar-image {
+    position: absolute !important;
+    inset: 3px !important;
+    overflow: hidden !important;
+}
+
+html body .mmic-profile-avatar-image img {
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+
+    width: 100% !important;
+    height: 100% !important;
+    max-width: none !important;
+    max-height: none !important;
+
+    object-fit: cover !important;
+    object-position: center 30% !important;
+
+    transform: translate(-50%, -50%) scale(1.35) !important;
+    transform-origin: center !important;
+}
