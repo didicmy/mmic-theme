@@ -1,0 +1,680 @@
+/* =========================================================
+   MEET ME IN CHICAGO — LISTE DES MEMBRES
+   ========================================================= */
+
+
+/* ---------------------------------------------------------
+   PAGE
+   --------------------------------------------------------- */
+
+html body .mmic-memberlist-page {
+    width: calc(100% - 24px);
+    max-width: 1100px;
+
+    margin: 26px auto 40px;
+
+    color: #102438;
+
+    box-sizing: border-box;
+}
+
+
+/* ---------------------------------------------------------
+   HERO
+   --------------------------------------------------------- */
+
+html body .mmic-memberlist-hero {
+    position: relative;
+
+    padding: 26px 30px;
+
+    border: 1px solid rgba(216,176,140,.58);
+    border-radius: 10px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #0c1d2f 0%,
+            #132d45 52%,
+            #0c1d2f 100%
+        );
+
+    color: #fffaf4;
+
+    text-align: center;
+
+    box-shadow:
+        0 6px 18px rgba(16,36,56,.10),
+        inset 0 1px 0 rgba(255,255,255,.06);
+
+    overflow: hidden;
+}
+
+
+html body .mmic-memberlist-hero::after {
+    content: "CHICAGO";
+
+    position: absolute;
+    right: 28px;
+    bottom: -8px;
+
+    color: rgba(255,255,255,.035);
+
+    font-family: Georgia, serif;
+    font-size: 46px;
+    font-weight: 700;
+    letter-spacing: 5px;
+
+    pointer-events: none;
+}
+
+
+html body .mmic-memberlist-hero-kicker {
+    margin-bottom: 6px;
+
+    color: #d8b08c;
+
+    font-size: 7px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+
+html body .mmic-memberlist-hero h1 {
+    margin: 0;
+
+    color: #fffaf4;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+
+html body .mmic-memberlist-hero p {
+    max-width: 620px;
+
+    margin: 8px auto 0;
+
+    color: rgba(255,250,244,.72);
+
+    font-size: 9px;
+    line-height: 1.6;
+}
+
+
+/* ---------------------------------------------------------
+   RECHERCHE / TRI
+   --------------------------------------------------------- */
+
+html body .mmic-memberlist-filter {
+    margin-top: 14px;
+
+    padding: 18px;
+
+    border: 1px solid #e2d2c1;
+    border-radius: 10px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fffdf9 0%,
+            #faf5ee 100%
+        );
+
+    box-shadow:
+        0 4px 12px rgba(16,36,56,.05),
+        inset 0 1px 0 rgba(255,255,255,.85);
+}
+
+
+html body .mmic-memberlist-filter-title {
+    margin-bottom: 14px;
+
+    text-align: center;
+}
+
+
+html body .mmic-memberlist-filter-title span {
+    display: block;
+
+    margin-bottom: 3px;
+
+    color: #b97a56;
+
+    font-size: 6px;
+    font-weight: 700;
+    letter-spacing: 1.7px;
+    text-transform: uppercase;
+}
+
+
+html body .mmic-memberlist-filter-title strong {
+    color: #102438;
+
+    font-family: Georgia, serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+
+html body .mmic-memberlist-filter-grid {
+    display: grid;
+
+    grid-template-columns:
+        minmax(180px,1.4fr)
+        minmax(150px,1fr)
+        minmax(130px,.8fr)
+        auto;
+
+    gap: 10px;
+
+    align-items: end;
+}
+
+
+html body .mmic-memberlist-filter-field {
+    display: flex;
+    flex-direction: column;
+
+    gap: 5px;
+}
+
+
+html body .mmic-memberlist-filter-field > span {
+    color: #b97a56;
+
+    font-size: 6px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+
+html body .mmic-memberlist-filter input,
+html body .mmic-memberlist-filter select {
+    width: 100% !important;
+    height: 32px !important;
+
+    padding: 0 9px !important;
+
+    border: 1px solid #dfcdbc !important;
+    border-radius: 6px !important;
+
+    background: #fffdf9 !important;
+
+    color: #102438 !important;
+
+    font-size: 9px !important;
+
+    box-sizing: border-box !important;
+}
+
+
+html body .mmic-memberlist-filter input:focus,
+html body .mmic-memberlist-filter select:focus {
+    outline: none !important;
+
+    border-color: #c78d68 !important;
+
+    box-shadow:
+        0 0 0 2px rgba(185,122,86,.10) !important;
+}
+
+
+html body .mmic-memberlist-submit {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 7px;
+
+    height: 32px;
+
+    padding: 0 13px;
+
+    border: 1px solid #d8b08c;
+    border-radius: 6px;
+
+    background: #102438;
+
+    color: #fffaf4;
+
+    font-size: 7px;
+    font-weight: 700;
+
+    letter-spacing: .8px;
+    text-transform: uppercase;
+
+    cursor: pointer;
+
+    transition:
+        transform .16s ease,
+        background .16s ease,
+        color .16s ease;
+}
+
+
+html body .mmic-memberlist-submit span {
+    color: #e4b184;
+
+    font-size: 13px;
+}
+
+
+html body .mmic-memberlist-submit:hover {
+    transform: translateY(-1px);
+
+    background: #173751;
+}
+
+
+/* ---------------------------------------------------------
+   GRILLE
+   --------------------------------------------------------- */
+
+html body .mmic-memberlist-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(0,1fr));
+
+    gap: 14px;
+
+    margin-top: 16px;
+}
+
+
+/* ---------------------------------------------------------
+   CARTE MEMBRE
+   --------------------------------------------------------- */
+
+html body .mmic-member-card {
+    display: grid;
+
+    grid-template-columns: 138px minmax(0,1fr);
+
+    min-height: 230px;
+
+    border: 1px solid #e0cdbc;
+    border-radius: 10px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fffdf9 0%,
+            #faf5ee 100%
+        );
+
+    box-shadow:
+        0 4px 11px rgba(16,36,56,.05),
+        inset 0 1px 0 rgba(255,255,255,.8);
+
+    overflow: hidden;
+
+    transition:
+        transform .18s ease,
+        border-color .18s ease,
+        box-shadow .18s ease;
+}
+
+
+html body .mmic-member-card:hover {
+    transform: translateY(-2px);
+
+    border-color: rgba(185,122,86,.50);
+
+    box-shadow:
+        0 9px 20px rgba(16,36,56,.09),
+        inset 0 1px 0 rgba(255,255,255,.9);
+}
+
+
+/* ---------------------------------------------------------
+   AVATAR
+   --------------------------------------------------------- */
+
+html body .mmic-member-card-avatar {
+    position: relative;
+
+    padding: 12px;
+
+    border-right: 1px solid rgba(216,176,140,.38);
+
+    background:
+        linear-gradient(
+            180deg,
+            #f8efe5 0%,
+            #fbf6f0 100%
+        );
+
+    box-sizing: border-box;
+}
+
+
+html body .mmic-member-card-avatar a {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+}
+
+
+html body .mmic-member-card-avatar img {
+    width: 100% !important;
+    height: 100% !important;
+
+    min-height: 206px;
+
+    object-fit: cover !important;
+    object-position: center !important;
+
+    border: 1px solid #d8b08c;
+    border-radius: 7px;
+
+    box-shadow:
+        0 4px 10px rgba(16,36,56,.12);
+}
+
+
+html body .mmic-member-card-number {
+    position: absolute;
+
+    right: 18px;
+    bottom: 18px;
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-width: 24px;
+    height: 20px;
+
+    padding: 0 6px;
+
+    border: 1px solid #d8b08c;
+    border-radius: 999px;
+
+    background: #102438;
+
+    color: #e4b184;
+
+    font-size: 6px;
+    font-weight: 700;
+}
+
+
+/* ---------------------------------------------------------
+   CONTENU
+   --------------------------------------------------------- */
+
+html body .mmic-member-card-content {
+    display: flex;
+    flex-direction: column;
+
+    min-width: 0;
+
+    padding: 16px;
+
+    box-sizing: border-box;
+}
+
+
+html body .mmic-member-card-header {
+    padding-bottom: 10px;
+
+    border-bottom: 1px solid rgba(216,176,140,.38);
+}
+
+
+html body .mmic-member-card-eyebrow {
+    display: block;
+
+    margin-bottom: 3px;
+
+    color: #b97a56;
+
+    font-size: 6px;
+    font-weight: 700;
+
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+}
+
+
+html body .mmic-member-card-header h2 {
+    margin: 0;
+
+    font-family: Georgia, serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+html body .mmic-member-card-header h2 a {
+    color: #102438;
+
+    text-decoration: none;
+
+    transition: color .16s ease;
+}
+
+
+html body .mmic-member-card-header h2 a:hover {
+    color: #b97a56;
+}
+
+
+/* ---------------------------------------------------------
+   INFORMATIONS
+   --------------------------------------------------------- */
+
+html body .mmic-member-card-info {
+    display: grid;
+
+    grid-template-columns: repeat(2,minmax(0,1fr));
+
+    gap: 7px;
+
+    margin-top: 12px;
+}
+
+
+html body .mmic-member-card-info-row {
+    min-width: 0;
+
+    padding: 7px 8px;
+
+    border: 1px solid rgba(216,176,140,.28);
+    border-radius: 6px;
+
+    background: rgba(255,255,255,.38);
+}
+
+
+html body .mmic-member-card-info-row > span {
+    display: block;
+
+    margin-bottom: 2px;
+
+    color: #b97a56;
+
+    font-size: 5.5px;
+    font-weight: 700;
+
+    letter-spacing: .8px;
+    text-transform: uppercase;
+}
+
+
+html body .mmic-member-card-info-row > strong {
+    display: block;
+
+    color: #102438;
+
+    font-size: 8px;
+    font-weight: 600;
+
+    overflow-wrap: anywhere;
+}
+
+
+html body .mmic-member-card-interests {
+    grid-column: 1 / -1;
+}
+
+
+/* ---------------------------------------------------------
+   ACTIONS
+   --------------------------------------------------------- */
+
+html body .mmic-member-card-actions {
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    margin-top: auto;
+    padding-top: 12px;
+}
+
+
+html body .mmic-member-card-profile,
+html body .mmic-member-card-action {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-height: 26px;
+
+    border: 1px solid rgba(216,176,140,.52);
+    border-radius: 6px;
+
+    background: #fffaf4;
+
+    color: #102438;
+
+    text-decoration: none;
+
+    box-shadow:
+        0 2px 5px rgba(16,36,56,.05);
+}
+
+
+html body .mmic-member-card-profile {
+    padding: 0 10px;
+
+    font-size: 6px;
+    font-weight: 700;
+
+    letter-spacing: .8px;
+    text-transform: uppercase;
+}
+
+
+html body .mmic-member-card-action {
+    width: 28px;
+    height: 28px;
+}
+
+
+html body .mmic-member-card-action img {
+    max-width: 16px;
+    max-height: 16px;
+}
+
+
+/* ---------------------------------------------------------
+   PAGINATION
+   --------------------------------------------------------- */
+
+html body .mmic-memberlist-pagination {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 14px;
+
+    margin-top: 16px;
+
+    padding: 10px 14px;
+
+    border: 1px solid #e2d2c1;
+    border-radius: 8px;
+
+    background: #fbf8f3;
+}
+
+
+/* ---------------------------------------------------------
+   AUCUN MEMBRE
+   --------------------------------------------------------- */
+
+html body .mmic-memberlist-empty {
+    grid-column: 1 / -1;
+
+    padding: 30px;
+
+    border: 1px solid #e2d2c1;
+    border-radius: 10px;
+
+    background: #fbf8f3;
+
+    text-align: center;
+}
+
+
+/* ---------------------------------------------------------
+   RESPONSIVE
+   --------------------------------------------------------- */
+
+@media (max-width: 850px) {
+
+    html body .mmic-memberlist-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    html body .mmic-memberlist-filter-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+
+@media (max-width: 520px) {
+
+    html body .mmic-memberlist-page {
+        width: calc(100% - 14px);
+    }
+
+    html body .mmic-memberlist-filter-grid {
+        grid-template-columns: 1fr;
+    }
+
+    html body .mmic-member-card {
+        grid-template-columns: 110px minmax(0,1fr);
+    }
+
+    html body .mmic-member-card-avatar img {
+        min-height: 180px;
+    }
+
+    html body .mmic-member-card-info {
+        grid-template-columns: 1fr;
+    }
+
+    html body .mmic-member-card-interests {
+        grid-column: auto;
+    }
+
+}
