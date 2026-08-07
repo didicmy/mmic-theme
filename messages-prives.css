@@ -4798,3 +4798,158 @@ html body .mmic-pm-compose-page
 
     background: transparent !important;
 }
+/* =========================================================
+   MP — FINITIONS VISUELLES
+   ========================================================= */
+
+
+/* ---------------------------------------------------------
+   BOUTON RÉCEPTION EN BLEU NUIT
+   --------------------------------------------------------- */
+
+html body .mmic-pm-compose-return {
+    background: #102438 !important;
+    color: #fffaf4 !important;
+
+    border: 1px solid #d8b08c !important;
+
+    box-shadow:
+        inset 0 1px 0 rgba(255,255,255,.08),
+        0 3px 7px rgba(16,36,56,.08) !important;
+}
+
+html body .mmic-pm-compose-return .mmic-pm-compose-return-icon {
+    background: #e4b184 !important;
+}
+
+html body .mmic-pm-compose-return:hover {
+    background: #173149 !important;
+    color: #fffaf4 !important;
+
+    transform: translateY(-1px) !important;
+}
+
+
+/* ---------------------------------------------------------
+   PRÉVISUALISATION + ENVOYER
+   LES DEUX EN CRÈME
+   --------------------------------------------------------- */
+
+html body .mmic-pm-compose-actions input[name="preview"],
+html body .mmic-pm-compose-actions input[name="post"],
+html body .mmic-pm-compose-actions input[value="Envoyer"] {
+
+    min-width: 125px !important;
+    height: 34px !important;
+
+    margin: 0 6px !important;
+    padding: 0 15px !important;
+
+    border: 1px solid #d8b08c !important;
+    border-radius: 6px !important;
+
+    background: #fffaf4 !important;
+    color: #102438 !important;
+
+    font-family: Verdana, Arial, sans-serif !important;
+    font-size: 6px !important;
+    font-weight: 700 !important;
+
+    letter-spacing: .7px !important;
+
+    text-transform: uppercase !important;
+
+    box-shadow:
+        0 2px 5px rgba(16,36,56,.05) !important;
+
+    cursor: pointer !important;
+
+    transition:
+        transform .16s ease,
+        background .16s ease,
+        color .16s ease,
+        border-color .16s ease !important;
+}
+
+
+/* hover identique pour les deux */
+
+html body .mmic-pm-compose-actions input[name="preview"]:hover,
+html body .mmic-pm-compose-actions input[name="post"]:hover,
+html body .mmic-pm-compose-actions input[value="Envoyer"]:hover {
+
+    transform: translateY(-1px) !important;
+
+    background: #f5e9dc !important;
+    color: #102438 !important;
+
+    border-color: #c78d68 !important;
+}
+
+
+/* ---------------------------------------------------------
+   CENTRAGE DES ACTIONS
+   --------------------------------------------------------- */
+
+html body .mmic-pm-compose-actions td {
+    text-align: center !important;
+
+    padding: 14px !important;
+}
+
+
+/* ---------------------------------------------------------
+   COLONNE SMILEYS
+   --------------------------------------------------------- */
+
+html body .mmic-pm-compose-page
+#parent_editor_simple > td:first-child {
+
+    width: 180px !important;
+    min-width: 180px !important;
+    max-width: 180px !important;
+
+    padding: 12px 10px !important;
+
+    text-align: center !important;
+    vertical-align: top !important;
+
+    background: #fbf5ed !important;
+}
+
+
+/* titre centré */
+
+html body .mmic-pm-compose-page
+#parent_editor_simple > td:first-child b,
+html body .mmic-pm-compose-page
+#parent_editor_simple > td:first-child > span {
+
+    display: block !important;
+
+    width: 100% !important;
+
+    margin: 0 0 9px !important;
+
+    text-align: center !important;
+}
+
+
+/* iframe centrée dans sa colonne */
+
+html body .mmic-pm-compose-page
+#parent_editor_simple > td:first-child iframe {
+
+    display: block !important;
+
+    width: 150px !important;
+    max-width: 150px !important;
+
+    height: 245px !important;
+
+    margin: 0 auto !important;
+
+    border: 0 !important;
+
+    background: transparent !important;
+}
