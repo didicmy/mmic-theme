@@ -153,26 +153,71 @@ html body .mmic-memberlist-filter-field > span {
     text-transform: uppercase !important;
 }
 
-/* Nom d'utilisateur : titre + champ sur la même ligne */
+/* =========================================================
+   RECHERCHE D'UN HABITANT
+   ========================================================= */
+
 html body .mmic-memberlist-filter-user {
+    position: relative !important;
+
     display: flex !important;
-    flex-direction: row !important;
     align-items: center !important;
-    gap: 8px !important;
-    width: auto !important;
-    flex: 0 0 auto !important;
+
+    width: 190px !important;
+    flex: 0 0 190px !important;
+
+    margin: 10px 0 0 !important;
 }
 
-html body .mmic-memberlist-filter-user > span {
-    flex: 0 0 auto !important;
-    margin: 0 !important;
-    white-space: nowrap !important;
-}
+
+/* Champ */
 
 html body .mmic-memberlist-filter-user input[type="text"] {
-    width: 150px !important;
-    min-width: 150px !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    height: 32px !important;
+
     margin: 0 !important;
+    padding: 0 12px !important;
+
+    border: 1px solid #dfcdbc !important;
+    border-radius: 6px !important;
+
+    background: #fffdf9 !important;
+    color: #102438 !important;
+
+    font-family: Verdana, Arial, sans-serif !important;
+    font-size: 7px !important;
+
+    box-sizing: border-box !important;
+
+    outline: none !important;
+
+    transition:
+        border-color .16s ease,
+        box-shadow .16s ease !important;
+}
+
+
+/* Placeholder */
+
+html body .mmic-memberlist-filter-user input[type="text"]::placeholder {
+    color: rgba(16,36,56,.48) !important;
+
+    font-size: 7px !important;
+    font-style: italic !important;
+
+    opacity: 1 !important;
+}
+
+
+/* Focus */
+
+html body .mmic-memberlist-filter-user input[type="text"]:focus {
+    border-color: #c78d68 !important;
+
+    box-shadow:
+        0 0 0 2px rgba(185,122,86,.10) !important;
 }
 
 /* Tri */
