@@ -4671,3 +4671,130 @@ html body .mmic-pm-compose-page
 
     background: transparent !important;
 }
+/* =========================================================
+   COMPOSITION MP — RÉPARATION ÉDITEUR / SMILEYS
+   ========================================================= */
+
+/* On annule le flex dangereux sur la ligne Forumactif */
+html body .mmic-pm-compose-page
+#parent_editor_simple {
+    display: table-row !important;
+
+    width: auto !important;
+
+    padding: 0 !important;
+
+    background: transparent !important;
+}
+
+
+/* =========================================================
+   CELLULE ÉDITEUR
+   ========================================================= */
+
+html body .mmic-pm-compose-page
+#parent_editor_simple > td:nth-child(2) {
+    display: table-cell !important;
+
+    width: auto !important;
+    min-width: 0 !important;
+    max-width: none !important;
+
+    padding: 12px !important;
+
+    vertical-align: top !important;
+
+    background: transparent !important;
+}
+
+
+/* Le SCEditor reprend toute la largeur de sa cellule */
+html body .mmic-pm-compose-page
+#parent_editor_simple > td:nth-child(2)
+.sceditor-container {
+    display: block !important;
+
+    width: 100% !important;
+    max-width: none !important;
+
+    min-height: 360px !important;
+
+    margin: 0 !important;
+}
+
+
+/* Barre SCEditor horizontale */
+html body .mmic-pm-compose-page
+.sceditor-toolbar {
+    display: block !important;
+
+    width: 100% !important;
+
+    white-space: normal !important;
+}
+
+
+/* Les groupes restent côte à côte */
+html body .mmic-pm-compose-page
+.sceditor-group {
+    display: inline-block !important;
+
+    float: none !important;
+
+    vertical-align: middle !important;
+}
+
+
+/* zone de texte */
+html body .mmic-pm-compose-page
+.sceditor-container iframe,
+
+html body .mmic-pm-compose-page
+.sceditor-container textarea,
+
+html body .mmic-pm-compose-page
+#text_editor_textarea {
+    width: 100% !important;
+
+    min-height: 320px !important;
+}
+
+
+/* =========================================================
+   CELLULE SMILEYS
+   ========================================================= */
+
+html body .mmic-pm-compose-page
+#parent_editor_simple > td:first-child {
+    display: table-cell !important;
+
+    width: 180px !important;
+    min-width: 180px !important;
+    max-width: 180px !important;
+
+    padding: 12px !important;
+
+    vertical-align: top !important;
+
+    border-left: 1px solid #ead8c8 !important;
+
+    background: #fbf5ed !important;
+}
+
+
+/* iframe des smileys */
+html body .mmic-pm-compose-page
+#parent_editor_simple > td:first-child iframe {
+    display: block !important;
+
+    width: 155px !important;
+    max-width: 155px !important;
+
+    height: 260px !important;
+
+    margin: 0 auto !important;
+
+    border: 0 !important;
+
+    background: transparent !important;
+}
