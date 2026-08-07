@@ -1361,10 +1361,10 @@ html body .mmic-pm-read-contact {
 }
 
 html body .mmic-pm-contact-item {
-    display: block !important;
+    display: flex !important;
+    justify-content: center !important;
 
     width: 100% !important;
-    max-width: 128px !important;
 }
 
 html body .mmic-pm-contact-item:empty {
@@ -1372,42 +1372,35 @@ html body .mmic-pm-contact-item:empty {
 }
 
 html body .mmic-pm-contact-item a {
-    display: flex !important;
+    display: inline-flex !important;
 
     align-items: center !important;
-    justify-content: flex-start !important;
+    justify-content: center !important;
 
-    gap: 9px !important;
+    gap: 7px !important;
 
-    width: 100% !important;
-    height: 34px !important;
+    width: 96px !important;
+    height: 30px !important;
 
-    padding: 0 11px !important;
+    padding: 0 8px !important;
 
     border: 1px solid #d8b08c !important;
-    border-radius: 7px !important;
+    border-radius: 6px !important;
 
     background: #fffaf4 !important;
     color: #102438 !important;
 
     font-family: Verdana, Arial, sans-serif !important;
-    font-size: 7px !important;
+    font-size: 6.5px !important;
     font-weight: 700 !important;
 
-    letter-spacing: .7px !important;
+    letter-spacing: .6px !important;
 
     text-decoration: none !important;
     text-transform: uppercase !important;
 
     box-shadow:
-        0 2px 5px rgba(16,36,56,.06) !important;
-
-    transition:
-        transform .16s ease,
-        background .16s ease,
-        color .16s ease,
-        border-color .16s ease,
-        box-shadow .16s ease !important;
+        0 2px 4px rgba(16,36,56,.05) !important;
 }
 
 html body .mmic-pm-contact-item a:hover {
@@ -1420,6 +1413,10 @@ html body .mmic-pm-contact-item a:hover {
 
     box-shadow:
         0 4px 8px rgba(16,36,56,.12) !important;
+       flex: 0 0 12px !important;
+
+    width: 12px !important;
+    height: 12px !important;
 }
 
 
