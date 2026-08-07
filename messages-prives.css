@@ -1076,3 +1076,175 @@ html body .mmic-pm-message-title:hover {
     color: #b97a56 !important;
     letter-spacing: .15px !important;
 }
+/* =========================================================
+   MESSAGES PRIVÉS — ÉTATS LU / NON LU
+   ========================================================= */
+
+
+/* ---------------------------------------------------------
+   MESSAGE NON LU
+   Forumactif utilise folder_new.gif
+   --------------------------------------------------------- */
+
+html body .mmic-pm-message:has(
+    .mmic-pm-original-folder img[src*="folder_new"]
+) {
+    position: relative !important;
+
+    border-color: #d8b08c !important;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(228,177,132,.09) 0%,
+            #fffaf4 15%,
+            #fffdf9 100%
+        ) !important;
+
+    box-shadow:
+        0 4px 11px rgba(16,36,56,.07) !important;
+}
+
+
+/* Petit trait cuivre à gauche */
+
+html body .mmic-pm-message:has(
+    .mmic-pm-original-folder img[src*="folder_new"]
+)::before {
+    content: "" !important;
+
+    position: absolute !important;
+
+    left: -1px !important;
+    top: 12px !important;
+    bottom: 12px !important;
+
+    width: 3px !important;
+
+    border-radius: 0 3px 3px 0 !important;
+
+    background: #c78d68 !important;
+}
+
+
+/* Sujet non lu */
+
+html body .mmic-pm-message:has(
+    .mmic-pm-original-folder img[src*="folder_new"]
+)
+.mmic-pm-message-title {
+    color: #102438 !important;
+
+    font-weight: 700 !important;
+}
+
+
+/* Enveloppe non lue plus lumineuse */
+
+html body .mmic-pm-message:has(
+    .mmic-pm-original-folder img[src*="folder_new"]
+)
+.mmic-pm-status-icon {
+    border-color: #e4b184 !important;
+
+    background: #102438 !important;
+
+    box-shadow:
+        0 0 0 2px rgba(228,177,132,.10),
+        0 4px 9px rgba(16,36,56,.15) !important;
+}
+
+
+html body .mmic-pm-message:has(
+    .mmic-pm-original-folder img[src*="folder_new"]
+)
+.mmic-pm-status-icon::before {
+    background: #f0c79f !important;
+}
+
+
+/* Petit indicateur sur l'enveloppe */
+
+html body .mmic-pm-message:has(
+    .mmic-pm-original-folder img[src*="folder_new"]
+)
+.mmic-pm-status-icon::after {
+    content: "" !important;
+
+    position: absolute !important;
+
+    right: -3px !important;
+    top: -3px !important;
+
+    width: 7px !important;
+    height: 7px !important;
+
+    border: 2px solid #fffaf4 !important;
+    border-radius: 50% !important;
+
+    background: #c78d68 !important;
+}
+
+
+/* ---------------------------------------------------------
+   MESSAGE DÉJÀ LU
+   Forumactif utilise folder.gif
+   --------------------------------------------------------- */
+
+html body .mmic-pm-message:has(
+    .mmic-pm-original-folder img[src$="/folder.gif"]
+) {
+    border-color: #dfcdbc !important;
+
+    background:
+        linear-gradient(
+            90deg,
+            #fffaf4 0%,
+            #fffdf9 100%
+        ) !important;
+}
+
+
+/* Sujet lu légèrement plus doux */
+
+html body .mmic-pm-message:has(
+    .mmic-pm-original-folder img[src$="/folder.gif"]
+)
+.mmic-pm-message-title {
+    font-weight: 400 !important;
+}
+
+
+/* Icône lue plus discrète */
+
+html body .mmic-pm-message:has(
+    .mmic-pm-original-folder img[src$="/folder.gif"]
+)
+.mmic-pm-status-icon {
+    opacity: .82 !important;
+
+    box-shadow:
+        0 3px 6px rgba(16,36,56,.09) !important;
+}
+
+
+/* ---------------------------------------------------------
+   HOVER — LES DEUX ÉTATS
+   --------------------------------------------------------- */
+
+html body .mmic-pm-message:hover {
+    transform: translateY(-1px) !important;
+
+    border-color: #c78d68 !important;
+
+    box-shadow:
+        0 6px 14px rgba(16,36,56,.09) !important;
+}
+
+
+/* Le sujet prend la teinte cuivre */
+
+html body .mmic-pm-message:hover
+.mmic-pm-message-title {
+    color: #b97a56 !important;
+}
