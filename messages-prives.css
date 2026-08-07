@@ -2554,19 +2554,17 @@ html body .mmic-pm-history-pagination a:hover {
     }
 
 }
+
 /* =========================================================
    MEET ME IN CHICAGO
-   COMPOSITION D'UN MESSAGE PRIVÉ
+   COMPOSITION D'UN MESSAGE PRIVÉ — VERSION NETTOYÉE
    ========================================================= */
 
 html body .mmic-pm-compose-page {
     width: calc(100% - 24px);
     max-width: 1100px;
-
     margin: 26px auto 40px;
-
     color: #102438;
-
     box-sizing: border-box;
 }
 
@@ -2574,178 +2572,161 @@ html body .mmic-pm-compose-page * {
     box-sizing: border-box;
 }
 
-
-/* =========================================================
-   NAVIGATION
-   ========================================================= */
+/* ---------------------------------------------------------
+   NAVIGATION DES MESSAGES PRIVÉS
+   --------------------------------------------------------- */
 
 html body .mmic-pm-compose-toolbar {
     display: flex;
-
     align-items: center;
     justify-content: space-between;
-
     gap: 12px;
-
-    margin-bottom: 12px;
-    padding: 10px 12px;
-
+    width: 100%;
+    margin: 0 0 14px;
+    padding: 10px;
     border: 1px solid #dfcdbc;
     border-radius: 9px;
-
     background: #fffaf4;
-
-    box-shadow:
-        0 4px 10px rgba(16,36,56,.04);
+    box-shadow: 0 4px 10px rgba(16,36,56,.04);
 }
 
 html body .mmic-pm-compose-toolbar .mmic-pm-folders {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(125px, 1fr));
     flex: 1 1 auto;
+    gap: 7px;
+    min-width: 0;
+}
+
+html body .mmic-pm-compose-toolbar .mmic-pm-folder {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    min-width: 0;
+    min-height: 42px;
+    padding: 7px 10px;
+}
+
+html body .mmic-pm-compose-toolbar .mmic-pm-folder-link {
+    display: block;
+    min-width: 0;
+    color: #102438;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 6.5px;
+    font-weight: 700;
+    letter-spacing: .45px;
+    text-transform: uppercase;
+}
+
+html body .mmic-pm-compose-toolbar .mmic-pm-folder-link a {
+    color: #102438 !important;
+    text-decoration: none !important;
+}
+
+html body .mmic-pm-compose-toolbar-side {
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 5px;
+    padding-left: 12px;
+    border-left: 1px solid #ead8c8;
+}
+
+html body .mmic-pm-compose-toolbar-kicker {
+    color: #b97a56;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 5.5px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 html body .mmic-pm-compose-return {
     display: inline-flex;
-
     align-items: center;
     justify-content: center;
-
     gap: 7px;
-
-    flex: 0 0 auto;
-
+    min-width: 92px;
     height: 34px;
-
     padding: 0 13px;
-
     border: 1px solid #d8b08c;
     border-radius: 6px;
-
-    background: #102438;
+    background: #102438 !important;
     color: #fffaf4 !important;
-
     font-family: Verdana, Arial, sans-serif;
     font-size: 6px;
     font-weight: 700;
-
     letter-spacing: .7px;
-
     text-decoration: none !important;
     text-transform: uppercase;
-
-    transition:
-        transform .16s ease,
-        background .16s ease;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.08), 0 3px 7px rgba(16,36,56,.08);
+    transition: transform .16s ease, background .16s ease;
 }
 
 html body .mmic-pm-compose-return:hover {
     transform: translateY(-1px);
-
-    background: #173149;
+    background: #173149 !important;
 }
 
-html body .mmic-pm-compose-return > span {
+html body .mmic-pm-compose-return-icon {
     width: 12px;
     height: 12px;
-
-    background: #e4b184;
-
-    -webkit-mask:
-        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='m10 4 2 2-5 5h13v2H7l5 5-2 2-8-8 8-8Z'/%3E%3C/svg%3E")
-        center / contain no-repeat;
-
-    mask:
-        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='m10 4 2 2-5 5h13v2H7l5 5-2 2-8-8 8-8Z'/%3E%3C/svg%3E")
-        center / contain no-repeat;
+    background: #e4b184 !important;
+    -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='m10 4 2 2-5 5h13v2H7l5 5-2 2-8-8 8-8Z'/%3E%3C/svg%3E") center / contain no-repeat;
+    mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='m10 4 2 2-5 5h13v2H7l5 5-2 2-8-8 8-8Z'/%3E%3C/svg%3E") center / contain no-repeat;
 }
 
-
-/* =========================================================
-   PETIT FIL D'ARIANE NATIF
-   ========================================================= */
-
-html body .mmic-pm-compose-page
-.mmic-pm-compose-form > table:first-of-type {
+/* Petit fil d'Ariane natif */
+html body .mmic-pm-compose-page .mmic-pm-compose-form > table:first-of-type {
     display: none;
 }
 
-
-/* =========================================================
+/* ---------------------------------------------------------
    CARTE PRINCIPALE
-   ========================================================= */
+   --------------------------------------------------------- */
 
 html body .mmic-pm-compose-card {
     width: 100% !important;
-
     margin: 0 !important;
-
     overflow: hidden;
-
     border: 1px solid #dfcdbc !important;
     border-radius: 9px;
-
-    background:
-        linear-gradient(
-            110deg,
-            #fbf5ed 0%,
-            #fffdf9 45%,
-            #fffaf4 100%
-        ) !important;
-
+    background: linear-gradient(110deg, #fbf5ed 0%, #fffdf9 45%, #fffaf4 100%) !important;
     border-spacing: 0 !important;
-
-    box-shadow:
-        0 5px 14px rgba(16,36,56,.05);
+    box-shadow: 0 5px 14px rgba(16,36,56,.05);
 }
-
-
-/* =========================================================
-   TITRE "RÉPONDRE À UN MESSAGE PRIVÉ"
-   ========================================================= */
 
 html body .mmic-pm-compose-card > tbody > tr:first-child > th {
     position: relative;
-
     height: auto !important;
-
     padding: 22px 20px 18px !important;
-
     border: 0 !important;
     border-bottom: 1px solid #ead8c8 !important;
-
     background: #102438 !important;
     color: #fffaf4 !important;
-
     font-family: Georgia, "Times New Roman", serif !important;
     font-size: 20px !important;
     font-weight: normal !important;
-
     line-height: 1.15 !important;
-
     text-align: center;
 }
 
 html body .mmic-pm-compose-card > tbody > tr:first-child > th::before {
     content: "Correspondance privée";
-
     display: block;
-
     margin-bottom: 6px;
-
     color: #e4b184;
-
     font-family: Verdana, Arial, sans-serif;
     font-size: 5.5px;
     font-weight: 700;
-
     letter-spacing: 1.4px;
-
     text-transform: uppercase;
 }
 
-
-/* =========================================================
+/* ---------------------------------------------------------
    LIGNES DU FORMULAIRE
-   ========================================================= */
+   --------------------------------------------------------- */
 
 html body .mmic-pm-compose-card > tbody > tr:not(:first-child) {
     border-bottom: 1px solid #f0e3d7;
@@ -2754,2202 +2735,379 @@ html body .mmic-pm-compose-card > tbody > tr:not(:first-child) {
 html body .mmic-pm-compose-card td.row1,
 html body .mmic-pm-compose-card td.row2 {
     border: 0 !important;
-
     background: transparent !important;
 }
 
-
-/* colonne label */
-
-html body .mmic-pm-compose-card > tbody > tr:not(#parent_editor_simple)
-> td:first-child {
-    width: 160px !important;
-
-    padding: 13px 14px 13px 18px !important;
-
+html body .mmic-pm-compose-card > tbody > tr:not(#parent_editor_simple) > td:first-child {
+    width: 205px !important;
+    padding: 14px 18px !important;
     vertical-align: middle !important;
 }
 
-html body .mmic-pm-compose-card > tbody > tr:not(#parent_editor_simple)
-> td:first-child .gen,
-html body .mmic-pm-compose-card > tbody > tr:not(#parent_editor_simple)
-> td:first-child .genmed {
+html body .mmic-pm-compose-card > tbody > tr:not(#parent_editor_simple) > td:first-child .gen,
+html body .mmic-pm-compose-card > tbody > tr:not(#parent_editor_simple) > td:first-child .genmed {
     color: #b97a56 !important;
-
     font-family: Verdana, Arial, sans-serif !important;
     font-size: 6px !important;
     font-weight: 700 !important;
-
     letter-spacing: .8px;
-
     text-transform: uppercase;
 }
 
-
-/* colonne champ */
-
-html body .mmic-pm-compose-card > tbody > tr:not(#parent_editor_simple)
-> td:nth-child(2) {
-    padding: 9px 18px 9px 5px !important;
+html body .mmic-pm-compose-card > tbody > tr:not(#parent_editor_simple) > td:nth-child(2) {
+    width: auto !important;
+    padding: 9px 24px 9px 8px !important;
 }
 
-
-/* =========================================================
+/* ---------------------------------------------------------
    CHAMPS
-   ========================================================= */
+   --------------------------------------------------------- */
 
 html body .mmic-pm-compose-page input.post,
 html body .mmic-pm-compose-page select {
     height: 34px !important;
-
     padding: 0 10px !important;
-
     border: 1px solid #dfcdbc !important;
     border-radius: 6px !important;
-
     background: #fffdf9 !important;
     color: #102438 !important;
-
     font-family: Verdana, Arial, sans-serif !important;
     font-size: 9px !important;
-
     outline: none !important;
-
-    transition:
-        border-color .16s ease,
-        box-shadow .16s ease;
+    transition: border-color .16s ease, box-shadow .16s ease;
 }
 
 html body .mmic-pm-compose-page input.post:focus,
 html body .mmic-pm-compose-page select:focus {
     border-color: #c78d68 !important;
-
-    box-shadow:
-        0 0 0 2px rgba(185,122,86,.09) !important;
+    box-shadow: 0 0 0 2px rgba(185,122,86,.09) !important;
 }
-
-
-/* destinataire */
 
 html body .mmic-pm-compose-page input[name="username[]"],
-html body .mmic-pm-compose-page input[name="username"] {
-    width: min(100%, 330px) !important;
-}
-
-
-/* sujet */
-
+html body .mmic-pm-compose-page input[name="username"],
 html body .mmic-pm-compose-page input[name="subject"] {
     width: 100% !important;
     max-width: none !important;
 }
 
-
-/* recherche utilisateur */
-
 html body .mmic-pm-compose-page #find_user {
     appearance: none;
-
     height: 34px;
-
-    margin-left: 6px;
-
-    padding: 0 12px;
-
+    margin-top: 7px;
+    margin-left: 0;
+    padding: 0 14px;
     border: 1px solid #d8b08c;
     border-radius: 6px;
-
     background: #102438;
     color: #fffaf4;
-
     font-family: Verdana, Arial, sans-serif;
     font-size: 6px;
     font-weight: 700;
-
     letter-spacing: .5px;
-
     text-transform: uppercase;
-
     cursor: pointer;
 }
-
-
-/* petit bouton ajout destinataire */
 
 html body .mmic-pm-compose-page #add_username {
     width: 24px !important;
     height: 24px !important;
-
     margin: 0 5px !important;
-
     object-fit: contain;
-
     vertical-align: middle;
 }
 
-
-/* =========================================================
+/* ---------------------------------------------------------
    ÉDITEUR + SMILEYS
-   ========================================================= */
+   --------------------------------------------------------- */
 
 html body .mmic-pm-compose-page #parent_editor_simple {
-    display: flex !important;
-
-    align-items: stretch;
-
-    width: 100%;
+    display: table-row !important;
 }
 
-
-/* cellule smileys */
-
-html body .mmic-pm-compose-page
-#parent_editor_simple > td:first-child {
-    order: 2;
-
-    flex: 0 0 185px;
-
-    width: 185px !important;
-
-    padding: 14px 12px !important;
-
-    border-left: 1px solid #ead8c8 !important;
-
+html body .mmic-pm-compose-page .mmic-pm-compose-smilies {
+    width: 180px !important;
+    min-width: 180px !important;
+    max-width: 180px !important;
+    padding: 12px 10px !important;
+    vertical-align: top !important;
+    text-align: center !important;
+    border-right: 1px solid #ead8c8 !important;
     background: #fbf5ed !important;
 }
 
+html body .mmic-pm-compose-message-label {
+    display: block !important;
+    width: 100% !important;
+    margin: 0 0 10px !important;
+    color: #b97a56 !important;
+    font-family: Verdana, Arial, sans-serif !important;
+    font-size: 5.5px !important;
+    font-weight: 700 !important;
+    letter-spacing: .9px !important;
+    text-align: center !important;
+    text-transform: uppercase !important;
+}
 
-/* cellule éditeur */
+html body .mmic-pm-compose-page .mmic-pm-compose-smilies #smileyContainer {
+    display: block !important;
+    width: 150px !important;
+    max-width: 150px !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    text-align: center !important;
+}
 
-html body .mmic-pm-compose-page
-#parent_editor_simple > td:nth-child(2) {
-    order: 1;
-
-    flex: 1 1 auto;
-
-    min-width: 0;
-
-    padding: 14px !important;
-
+html body .mmic-pm-compose-page .mmic-pm-compose-smilies #smileyContainer iframe {
+    display: block !important;
+    width: 150px !important;
+    min-width: 150px !important;
+    max-width: 150px !important;
+    height: 245px !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    border: 0 !important;
     background: transparent !important;
 }
 
-
-/* titre "Corps du message" */
-
-html body .mmic-pm-compose-page
-#parent_editor_simple > td:first-child b {
-    display: block;
-
-    margin-bottom: 10px;
-
-    color: #b97a56 !important;
-
-    font-family: Verdana, Arial, sans-serif;
-    font-size: 6px;
-
-    letter-spacing: .8px;
-
-    text-transform: uppercase;
+html body .mmic-pm-compose-page .mmic-pm-compose-editor {
+    width: auto !important;
+    padding: 12px !important;
+    vertical-align: top !important;
+    background: transparent !important;
 }
-
-
-/* smileys */
-
-html body .mmic-pm-compose-page #smileyContainer {
-    text-align: center;
-}
-
-html body .mmic-pm-compose-page #smileyContainer img {
-    margin: 3px !important;
-
-    transition: transform .14s ease;
-}
-
-html body .mmic-pm-compose-page #smileyContainer img:hover {
-    transform: scale(1.18);
-}
-
-
-/* textarea simple */
 
 html body .mmic-pm-compose-page #text_editor_textarea {
     width: 100% !important;
     min-height: 320px !important;
-
     padding: 12px !important;
-
     border: 1px solid #dfcdbc !important;
     border-radius: 7px !important;
-
     background: #fffdf9 !important;
     color: #102438 !important;
-
     font-family: Verdana, Arial, sans-serif !important;
     font-size: 10px !important;
-
     line-height: 1.6 !important;
 }
 
-
-/* =========================================================
-   SCEDITOR
-   ========================================================= */
-
-html body .mmic-pm-compose-page .sceditor-container {
+/* SCEditor */
+html body .mmic-pm-compose-page .mmic-pm-compose-editor .sceditor-container {
+    display: block !important;
     width: 100% !important;
-
+    max-width: none !important;
+    min-height: 360px !important;
+    margin: 0 !important;
     overflow: hidden !important;
-
     border: 1px solid #dfcdbc !important;
     border-radius: 8px !important;
-
     background: #fffdf9 !important;
-
-    box-shadow:
-        0 4px 10px rgba(16,36,56,.04) !important;
+    box-shadow: 0 4px 10px rgba(16,36,56,.04) !important;
 }
 
-html body .mmic-pm-compose-page .sceditor-toolbar {
+html body .mmic-pm-compose-page .mmic-pm-compose-editor .sceditor-toolbar {
+    display: block !important;
+    width: 100% !important;
     padding: 7px !important;
-
     border: 0 !important;
     border-bottom: 1px solid #ead8c8 !important;
-
     background: #f5ece2 !important;
+    white-space: normal !important;
 }
 
-html body .mmic-pm-compose-page .sceditor-group {
+html body .mmic-pm-compose-page .mmic-pm-compose-editor .sceditor-group {
+    display: inline-block !important;
+    float: none !important;
     margin: 2px 3px !important;
-
+    vertical-align: middle !important;
     border: 1px solid #e3d2c2 !important;
     border-radius: 5px !important;
-
     background: #fffaf4 !important;
 }
 
-html body .mmic-pm-compose-page
-.sceditor-container iframe,
-html body .mmic-pm-compose-page
-.sceditor-container textarea {
+html body .mmic-pm-compose-page .mmic-pm-compose-editor .sceditor-container iframe,
+html body .mmic-pm-compose-page .mmic-pm-compose-editor .sceditor-container textarea,
+html body .mmic-pm-compose-page .mmic-pm-compose-editor #text_editor_textarea {
+    width: 100% !important;
     min-height: 320px !important;
-
+    box-sizing: border-box !important;
     background: #fffdf9 !important;
 }
 
-
-/* =========================================================
-   BOUTONS PREVIEW / ENVOYER
-   ========================================================= */
+/* ---------------------------------------------------------
+   ACTIONS PRÉVISUALISATION / ENVOYER
+   --------------------------------------------------------- */
 
 html body .mmic-pm-compose-actions {
     width: 100% !important;
-
     margin-top: 10px !important;
-
     border: 1px solid #dfcdbc !important;
     border-radius: 8px !important;
-
     background: #fffaf4 !important;
-
     border-spacing: 0 !important;
 }
 
 html body .mmic-pm-compose-actions td {
-    padding: 12px !important;
-
+    padding: 14px !important;
     border: 0 !important;
-
     background: transparent !important;
-
-    text-align: right !important;
+    text-align: center !important;
 }
 
 html body .mmic-pm-compose-actions input[type="submit"] {
     appearance: none !important;
-
+    min-width: 125px !important;
     height: 34px !important;
-
-    margin: 0 3px !important;
-    padding: 0 14px !important;
-
+    margin: 0 6px !important;
+    padding: 0 15px !important;
     border: 1px solid #d8b08c !important;
     border-radius: 6px !important;
-
     background: #fffaf4 !important;
     color: #102438 !important;
-
     font-family: Verdana, Arial, sans-serif !important;
     font-size: 6px !important;
     font-weight: 700 !important;
-
     letter-spacing: .7px !important;
-
-    text-transform: uppercase;
-
+    text-transform: uppercase !important;
+    box-shadow: 0 2px 5px rgba(16,36,56,.05) !important;
     cursor: pointer !important;
-
-    transition:
-        transform .16s ease,
-        background .16s ease,
-        color .16s ease !important;
-}
-
-html body .mmic-pm-compose-actions input[name="post"] {
-    min-width: 100px;
-
-    background: #102438 !important;
-    color: #fffaf4 !important;
+    transition: transform .16s ease, background .16s ease, color .16s ease, border-color .16s ease !important;
 }
 
 html body .mmic-pm-compose-actions input[type="submit"]:hover {
-    transform: translateY(-1px);
-
-    background: #102438 !important;
-    color: #fffaf4 !important;
+    transform: translateY(-1px) !important;
+    border-color: #c78d68 !important;
+    background: #f5e9dc !important;
+    color: #102438 !important;
 }
 
-
-/* =========================================================
+/* ---------------------------------------------------------
    OPTIONS
-   ========================================================= */
+   --------------------------------------------------------- */
 
 html body .mmic-pm-compose-page #optionsitems,
 html body .mmic-pm-compose-page #optionsitems_show {
     margin-top: 12px;
 }
 
-html body .mmic-pm-compose-page
-#optionsitems > table,
-html body .mmic-pm-compose-page
-#optionsitems_show > table {
+html body .mmic-pm-compose-page #optionsitems > table,
+html body .mmic-pm-compose-page #optionsitems_show > table {
     width: 100% !important;
-
     overflow: hidden;
-
     border: 1px solid #dfcdbc !important;
     border-radius: 8px !important;
-
     background: #fffaf4 !important;
-
     border-spacing: 0 !important;
 }
 
-html body .mmic-pm-compose-page
-#optionsitems th,
-html body .mmic-pm-compose-page
-#optionsitems_show th {
+html body .mmic-pm-compose-page #optionsitems th,
+html body .mmic-pm-compose-page #optionsitems_show th {
     padding: 11px !important;
-
     border: 0 !important;
     border-bottom: 1px solid #ead8c8 !important;
-
     background: #102438 !important;
     color: #fffaf4 !important;
-
     font-family: Georgia, "Times New Roman", serif !important;
     font-size: 14px !important;
 }
 
-html body .mmic-pm-compose-page
-#optionsitems_show td {
+html body .mmic-pm-compose-page #optionsitems_show td {
     padding: 10px 14px !important;
-
     border: 0 !important;
-
     background: #fffaf4 !important;
 }
 
-
-/* checkbox */
-
-html body .mmic-pm-compose-page
-#optionsitems_show input[type="checkbox"] {
+html body .mmic-pm-compose-page #optionsitems_show input[type="checkbox"] {
     width: 14px;
     height: 14px;
-
     accent-color: #102438;
-
     cursor: pointer;
 }
 
-
-/* textes */
-
-html body .mmic-pm-compose-page
-#optionsitems_show .gen,
-html body .mmic-pm-compose-page
-#optionsitems_show .gensmall {
+html body .mmic-pm-compose-page #optionsitems_show .gen,
+html body .mmic-pm-compose-page #optionsitems_show .gensmall {
     color: #102438 !important;
-
     font-family: Verdana, Arial, sans-serif !important;
     font-size: 8px !important;
-
     line-height: 1.6;
 }
 
-
-/* =========================================================
+/* ---------------------------------------------------------
    HISTORIQUE
-   ========================================================= */
+   --------------------------------------------------------- */
 
 html body .mmic-pm-compose-page + .mmic-pm-history,
 html body .mmic-pm-compose-page .mmic-pm-history {
     margin-top: 14px;
 }
 
-
-/* =========================================================
+/* ---------------------------------------------------------
    RESPONSIVE
-   ========================================================= */
+   --------------------------------------------------------- */
 
-@media (max-width: 800px) {
-
+@media (max-width: 850px) {
     html body .mmic-pm-compose-toolbar {
         flex-direction: column;
         align-items: stretch;
     }
 
-    html body .mmic-pm-compose-page #parent_editor_simple {
-        display: flex !important;
-        flex-direction: column;
-    }
-
-    html body .mmic-pm-compose-page
-    #parent_editor_simple > td:first-child {
-        order: 2;
-
-        width: 100% !important;
-        flex-basis: auto;
-
-        border-left: 0 !important;
-        border-top: 1px solid #ead8c8 !important;
-    }
-
-    html body .mmic-pm-compose-page
-    #parent_editor_simple > td:nth-child(2) {
-        order: 1;
-    }
-
-}
-/* =========================================================
-   COMPOSITION MP — FINITIONS
-   ========================================================= */
-
-
-/* =========================================================
-   BARRE DES DOSSIERS
-   ========================================================= */
-
-html body .mmic-pm-compose-toolbar {
-    display: flex !important;
-
-    align-items: center !important;
-    justify-content: space-between !important;
-
-    gap: 12px !important;
-
-    width: 100% !important;
-
-    margin: 0 0 12px !important;
-    padding: 10px !important;
-
-    border: 1px solid #dfcdbc !important;
-    border-radius: 9px !important;
-
-    background: #fffaf4 !important;
-
-    box-shadow:
-        0 4px 10px rgba(16,36,56,.04) !important;
-}
-
-
-html body .mmic-pm-compose-toolbar .mmic-pm-folders {
-    display: grid !important;
-
-    grid-template-columns: repeat(4, minmax(0,1fr)) !important;
-
-    flex: 1 1 auto !important;
-
-    gap: 7px !important;
-
-    min-width: 0 !important;
-}
-
-
-html body .mmic-pm-compose-toolbar .mmic-pm-folder {
-    min-width: 0 !important;
-}
-
-
-/* droite */
-
-html body .mmic-pm-compose-toolbar-side {
-    display: flex !important;
-    flex-direction: column !important;
-
-    align-items: flex-end !important;
-    justify-content: center !important;
-
-    gap: 4px !important;
-
-    flex: 0 0 auto !important;
-
-    padding-left: 12px !important;
-
-    border-left: 1px solid #ead8c8 !important;
-}
-
-
-html body .mmic-pm-compose-toolbar-kicker {
-    color: #b97a56 !important;
-
-    font-family: Verdana, Arial, sans-serif !important;
-    font-size: 5px !important;
-    font-weight: 700 !important;
-
-    letter-spacing: 1.1px !important;
-
-    text-transform: uppercase !important;
-}
-
-
-/* bouton retour */
-
-html body .mmic-pm-compose-return {
-    display: inline-flex !important;
-
-    align-items: center !important;
-    justify-content: center !important;
-
-    gap: 6px !important;
-
-    height: 32px !important;
-
-    padding: 0 12px !important;
-
-    border: 1px solid #d8b08c !important;
-    border-radius: 6px !important;
-
-    background: #fffaf4 !important;
-    color: #102438 !important;
-
-    font-family: Verdana, Arial, sans-serif !important;
-    font-size: 6px !important;
-    font-weight: 700 !important;
-
-    letter-spacing: .6px !important;
-
-    text-decoration: none !important;
-    text-transform: uppercase !important;
-
-    transition:
-        transform .16s ease,
-        background .16s ease,
-        color .16s ease !important;
-}
-
-
-html body .mmic-pm-compose-return:hover {
-    transform: translateY(-1px) !important;
-
-    background: #102438 !important;
-    color: #fffaf4 !important;
-}
-
-
-html body .mmic-pm-compose-return-icon {
-    display: block !important;
-
-    width: 12px !important;
-    height: 12px !important;
-
-    background: #c78d68 !important;
-
-    -webkit-mask:
-        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='m10 4 2 2-5 5h13v2H7l5 5-2 2-8-8 8-8Z'/%3E%3C/svg%3E")
-        center / contain no-repeat !important;
-
-    mask:
-        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='m10 4 2 2-5 5h13v2H7l5 5-2 2-8-8 8-8Z'/%3E%3C/svg%3E")
-        center / contain no-repeat !important;
-}
-
-
-html body .mmic-pm-compose-return:hover
-.mmic-pm-compose-return-icon {
-    background: #e4b184 !important;
-}
-
-
-/* =========================================================
-   DESTINATAIRE + SUJET
-   ON LEUR DONNE ENFIN DE LA PLACE POUR GRANDIR :P
-   ========================================================= */
-
-html body .mmic-pm-compose-card
-> tbody
-> tr:not(#parent_editor_simple)
-> td:first-child {
-
-    width: 145px !important;
-
-    padding-left: 20px !important;
-    padding-right: 14px !important;
-}
-
-
-html body .mmic-pm-compose-card
-> tbody
-> tr:not(#parent_editor_simple)
-> td:nth-child(2) {
-
-    width: auto !important;
-
-    padding:
-        10px 20px
-        10px 0 !important;
-}
-
-
-/* destinataire */
-
-html body .mmic-pm-compose-page
-input[name="username[]"],
-
-html body .mmic-pm-compose-page
-input[name="username"] {
-
-    width: calc(100% - 190px) !important;
-
-    max-width: none !important;
-
-    min-width: 320px !important;
-}
-
-
-/* recherche utilisateur */
-
-html body .mmic-pm-compose-page #find_user {
-
-    min-width: 175px !important;
-
-    margin-left: 8px !important;
-
-    vertical-align: middle !important;
-}
-
-
-/* sujet */
-
-html body .mmic-pm-compose-page
-input[name="subject"] {
-
-    display: block !important;
-
-    width: 100% !important;
-
-    min-width: 0 !important;
-    max-width: none !important;
-
-    margin: 0 !important;
-}
-
-
-/* =========================================================
-   ÉDITEUR + SMILEYS
-   ========================================================= */
-
-html body .mmic-pm-compose-page
-#parent_editor_simple {
-
-    display: flex !important;
-
-    align-items: stretch !important;
-
-    width: 100% !important;
-
-    padding: 12px !important;
-
-    background: transparent !important;
-}
-
-
-/* éditeur = grande zone */
-
-html body .mmic-pm-compose-page
-#parent_editor_simple > td:nth-child(2) {
-
-    order: 1 !important;
-
-    flex: 1 1 auto !important;
-
-    width: auto !important;
-    min-width: 0 !important;
-
-    padding: 0 !important;
-
-    background: transparent !important;
-}
-
-
-/* smileys = petite colonne à droite */
-
-html body .mmic-pm-compose-page
-#parent_editor_simple > td:first-child {
-
-    order: 2 !important;
-
-    flex: 0 0 205px !important;
-
-    width: 205px !important;
-    min-width: 205px !important;
-    max-width: 205px !important;
-
-    margin-left: 12px !important;
-
-    padding: 12px !important;
-
-    border: 1px solid #ead8c8 !important;
-    border-radius: 7px !important;
-
-    background: #fbf5ed !important;
-
-    vertical-align: top !important;
-}
-
-
-/* titre smileys */
-
-html body .mmic-pm-compose-page
-#parent_editor_simple > td:first-child b {
-
-    display: block !important;
-
-    margin: 0 0 10px !important;
-
-    color: #b97a56 !important;
-
-    font-family: Verdana, Arial, sans-serif !important;
-    font-size: 5.5px !important;
-    font-weight: 700 !important;
-
-    letter-spacing: .9px !important;
-
-    text-transform: uppercase !important;
-}
-
-
-/* conteneur des smileys */
-
-html body .mmic-pm-compose-page
-#smileyContainer {
-
-    display: flex !important;
-
-    flex-wrap: wrap !important;
-
-    align-content: flex-start !important;
-    justify-content: center !important;
-
-    gap: 3px !important;
-
-    width: 100% !important;
-    max-width: 175px !important;
-
-    margin: 0 auto !important;
-
-    padding: 0 !important;
-
-    text-align: center !important;
-}
-
-
-/* images */
-
-html body .mmic-pm-compose-page
-#smileyContainer img {
-
-    display: inline-block !important;
-
-    width: auto !important;
-    height: auto !important;
-
-    max-width: 24px !important;
-    max-height: 24px !important;
-
-    margin: 1px !important;
-
-    object-fit: contain !important;
-}
-
-
-/* les liens/autres wrappers éventuels */
-
-html body .mmic-pm-compose-page
-#smileyContainer a {
-
-    display: inline-flex !important;
-
-    align-items: center !important;
-    justify-content: center !important;
-
-    width: auto !important;
-    height: auto !important;
-
-    margin: 0 !important;
-    padding: 0 !important;
-}
-
-
-/* éditeur */
-
-html body .mmic-pm-compose-page
-.sceditor-container {
-
-    width: 100% !important;
-    max-width: none !important;
-
-    min-height: 360px !important;
-}
-
-
-html body .mmic-pm-compose-page
-.sceditor-container iframe,
-
-html body .mmic-pm-compose-page
-.sceditor-container textarea,
-
-html body .mmic-pm-compose-page
-#text_editor_textarea {
-
-    min-height: 315px !important;
-}
-
-
-/* =========================================================
-   ACTIONS
-   PRÉVISUALISATION + ENVOYER AU CENTRE
-   ========================================================= */
-
-html body .mmic-pm-compose-actions td {
-
-    padding: 13px !important;
-
-    text-align: center !important;
-}
-
-
-html body .mmic-pm-compose-actions input[type="submit"] {
-
-    display: inline-flex !important;
-
-    align-items: center !important;
-    justify-content: center !important;
-
-    min-width: 125px !important;
-
-    height: 34px !important;
-
-    margin: 0 5px !important;
-
-    padding: 0 15px !important;
-}
-
-
-/* aperçu clair */
-
-html body .mmic-pm-compose-actions
-input[name="preview"] {
-
-    border: 1px solid #d8b08c !important;
-
-    background: #fffaf4 !important;
-
-    color: #102438 !important;
-}
-
-
-/* ENVOYER = LE BLEU DU FORUM
-   NON, MONSIEUR, TU N'INVENTES PLUS TES COULEURS 😂 */
-
-html body .mmic-pm-compose-actions
-input[name="post"],
-
-html body .mmic-pm-compose-actions
-input[value="Envoyer"] {
-
-    border: 1px solid #d8b08c !important;
-
-    background: #102438 !important;
-
-    color: #fffaf4 !important;
-
-    box-shadow:
-        inset 0 1px 0 rgba(255,255,255,.08),
-        0 3px 7px rgba(16,36,56,.10) !important;
-}
-
-
-html body .mmic-pm-compose-actions
-input[name="post"]:hover,
-
-html body .mmic-pm-compose-actions
-input[value="Envoyer"]:hover {
-
-    border-color: #c78d68 !important;
-
-    background: #173149 !important;
-
-    color: #fffaf4 !important;
-
-    transform: translateY(-1px) !important;
-}
-
-
-/* aperçu hover */
-
-html body .mmic-pm-compose-actions
-input[name="preview"]:hover {
-
-    border-color: #c78d68 !important;
-
-    background: #f5e9dc !important;
-
-    color: #102438 !important;
-
-    transform: translateY(-1px) !important;
-}
-
-
-/* =========================================================
-   RESPONSIVE
-   ========================================================= */
-
-@media (max-width: 850px) {
-
-    html body .mmic-pm-compose-toolbar {
-        flex-direction: column !important;
-
-        align-items: stretch !important;
-    }
-
-    html body .mmic-pm-compose-toolbar
-    .mmic-pm-folders {
-
-        grid-template-columns:
-            repeat(2,minmax(0,1fr)) !important;
+    html body .mmic-pm-compose-toolbar .mmic-pm-folders {
+        grid-template-columns: repeat(2, minmax(0,1fr));
     }
 
     html body .mmic-pm-compose-toolbar-side {
-
-        align-items: stretch !important;
-
-        padding:
-            10px 0 0 !important;
-
-        border-left: 0 !important;
-        border-top:
-            1px solid #ead8c8 !important;
+        align-items: stretch;
+        padding: 10px 0 0;
+        border-left: 0;
+        border-top: 1px solid #ead8c8;
     }
 
     html body .mmic-pm-compose-return {
+        width: 100%;
+    }
 
+    html body .mmic-pm-compose-page .mmic-pm-compose-smilies {
+        width: 150px !important;
+        min-width: 150px !important;
+        max-width: 150px !important;
+        padding: 10px 6px !important;
+    }
+
+    html body .mmic-pm-compose-page .mmic-pm-compose-smilies #smileyContainer,
+    html body .mmic-pm-compose-page .mmic-pm-compose-smilies #smileyContainer iframe {
+        width: 135px !important;
+        min-width: 135px !important;
+        max-width: 135px !important;
+    }
+}
+
+@media (max-width: 650px) {
+    html body .mmic-pm-compose-card > tbody > tr:not(#parent_editor_simple) > td:first-child,
+    html body .mmic-pm-compose-card > tbody > tr:not(#parent_editor_simple) > td:nth-child(2) {
+        display: block !important;
         width: 100% !important;
+        padding: 8px 14px !important;
     }
 
-
-    html body .mmic-pm-compose-page
-    #parent_editor_simple {
-
-        flex-direction: column !important;
-    }
-
-    html body .mmic-pm-compose-page
-    #parent_editor_simple > td:first-child {
-
-        order: 2 !important;
-
+    html body .mmic-pm-compose-page #parent_editor_simple,
+    html body .mmic-pm-compose-page #parent_editor_simple > td {
+        display: block !important;
         width: 100% !important;
-        min-width: 0 !important;
-        max-width: none !important;
-
-        flex-basis: auto !important;
-
-        margin:
-            10px 0 0 !important;
-    }
-
-    html body .mmic-pm-compose-page
-    #smileyContainer {
-
         max-width: none !important;
     }
 
-}
-/* =========================================================
-   COMPOSITION MP — CORRECTIF PROPRE FINAL
-   ========================================================= */
-
-
-/* ---------------------------------------------------------
-   BARRE DOSSIERS
-   --------------------------------------------------------- */
-
-html body .mmic-pm-compose-page .mmic-pm-compose-toolbar {
-    display: flex !important;
-    align-items: center !important;
-    justify-content: space-between !important;
-
-    gap: 12px !important;
-
-    width: 100% !important;
-
-    margin: 0 0 14px !important;
-    padding: 10px !important;
-
-    border: 1px solid #dfcdbc !important;
-    border-radius: 9px !important;
-
-    background: #fffaf4 !important;
-}
-
-
-html body .mmic-pm-compose-page
-.mmic-pm-compose-toolbar .mmic-pm-folders {
-
-    display: grid !important;
-
-    grid-template-columns:
-        repeat(4, minmax(125px, 1fr)) !important;
-
-    flex: 1 1 auto !important;
-
-    gap: 7px !important;
-
-    min-width: 0 !important;
-}
-
-
-html body .mmic-pm-compose-page
-.mmic-pm-compose-toolbar .mmic-pm-folder {
-
-    display: flex !important;
-
-    align-items: center !important;
-
-    gap: 8px !important;
-
-    min-width: 0 !important;
-    min-height: 42px !important;
-
-    padding: 7px 10px !important;
-}
-
-
-html body .mmic-pm-compose-page
-.mmic-pm-compose-toolbar .mmic-pm-folder-link {
-
-    display: block !important;
-
-    min-width: 0 !important;
-
-    color: #102438 !important;
-
-    font-family: Verdana, Arial, sans-serif !important;
-    font-size: 6.5px !important;
-    font-weight: 700 !important;
-
-    letter-spacing: .45px !important;
-
-    text-transform: uppercase !important;
-}
-
-
-html body .mmic-pm-compose-page
-.mmic-pm-compose-toolbar .mmic-pm-folder-link a {
-
-    color: #102438 !important;
-
-    text-decoration: none !important;
-}
-
-
-/* ---------------------------------------------------------
-   DESTINATAIRE + SUJET
-   --------------------------------------------------------- */
-
-html body .mmic-pm-compose-card
-> tbody
-> tr:not(#parent_editor_simple)
-> td:first-child {
-
-    width: 150px !important;
-
-    padding:
-        14px 18px !important;
-}
-
-
-html body .mmic-pm-compose-card
-> tbody
-> tr:not(#parent_editor_simple)
-> td:nth-child(2) {
-
-    width: auto !important;
-
-    padding:
-        10px 20px
-        10px 0 !important;
-}
-
-
-html body .mmic-pm-compose-page
-input[name="username[]"],
-
-html body .mmic-pm-compose-page
-input[name="username"] {
-
-    width: 100% !important;
-    max-width: none !important;
-    min-width: 0 !important;
-
-    margin-bottom: 7px !important;
-}
-
-
-html body .mmic-pm-compose-page
-input[name="subject"] {
-
-    display: block !important;
-
-    width: 100% !important;
-    max-width: none !important;
-
-    margin: 0 !important;
-}
-
-
-/* bouton recherche sous le champ */
-
-html body .mmic-pm-compose-page #find_user {
-
-    display: inline-flex !important;
-
-    align-items: center !important;
-    justify-content: center !important;
-
-    min-width: 175px !important;
-
-    height: 34px !important;
-
-    margin: 0 !important;
-}
-
-
-/* petit + */
-
-html body .mmic-pm-compose-page #add_username {
-
-    width: 20px !important;
-    height: 20px !important;
-
-    margin: 0 6px 0 0 !important;
-
-    vertical-align: middle !important;
-}
-
-
-/* ---------------------------------------------------------
-   ZONE ÉDITEUR
-   --------------------------------------------------------- */
-
-html body .mmic-pm-compose-page #parent_editor_simple {
-
-    display: flex !important;
-
-    align-items: stretch !important;
-
-    width: 100% !important;
-
-    padding: 12px !important;
-
-    gap: 12px !important;
-
-    background: transparent !important;
-}
-
-
-/* ÉDITEUR À GAUCHE */
-
-html body .mmic-pm-compose-page
-#parent_editor_simple > td:nth-child(2) {
-
-    order: 1 !important;
-
-    display: block !important;
-
-    flex: 1 1 auto !important;
-
-    width: auto !important;
-    min-width: 0 !important;
-
-    margin: 0 !important;
-    padding: 0 !important;
-
-    background: transparent !important;
-}
-
-
-/* SMILEYS À DROITE */
-
-html body .mmic-pm-compose-page
-#parent_editor_simple > td:first-child {
-
-    order: 2 !important;
-
-    display: block !important;
-
-    flex: 0 0 190px !important;
-
-    width: 190px !important;
-    min-width: 190px !important;
-    max-width: 190px !important;
-
-    height: auto !important;
-    min-height: 0 !important;
-
-    margin: 0 !important;
-    padding: 12px !important;
-
-    border: 1px solid #ead8c8 !important;
-    border-radius: 7px !important;
-
-    background: #fbf5ed !important;
-
-    align-self: flex-start !important;
-}
-
-
-/* ---------------------------------------------------------
-   SMILEYS
-   --------------------------------------------------------- */
-
-html body .mmic-pm-compose-page #smileyContainer {
-
-    display: flex !important;
-
-    flex-wrap: wrap !important;
-
-    align-items: center !important;
-    align-content: flex-start !important;
-    justify-content: center !important;
-
-    gap: 2px !important;
-
-    width: 100% !important;
-    max-width: 165px !important;
-
-    height: auto !important;
-    min-height: 0 !important;
-
-    margin: 0 auto !important;
-    padding: 0 !important;
-}
-
-
-html body .mmic-pm-compose-page #smileyContainer img {
-
-    width: auto !important;
-    height: auto !important;
-
-    max-width: 22px !important;
-    max-height: 22px !important;
-
-    margin: 1px !important;
-
-    object-fit: contain !important;
-}
-
-
-/* ---------------------------------------------------------
-   SCEDITOR
-   --------------------------------------------------------- */
-
-html body .mmic-pm-compose-page .sceditor-container {
-
-    display: block !important;
-
-    width: 100% !important;
-    max-width: none !important;
-
-    min-height: 355px !important;
-
-    margin: 0 !important;
-}
-
-
-html body .mmic-pm-compose-page
-.sceditor-container iframe,
-
-html body .mmic-pm-compose-page
-.sceditor-container textarea,
-
-html body .mmic-pm-compose-page
-#text_editor_textarea {
-
-    min-height: 310px !important;
-}
-
-
-/* ---------------------------------------------------------
-   PRÉVISUALISATION + ENVOYER
-   --------------------------------------------------------- */
-
-html body .mmic-pm-compose-actions td {
-
-    padding: 14px !important;
-
-    text-align: center !important;
-}
-
-
-html body .mmic-pm-compose-actions input[type="submit"] {
-
-    min-width: 125px !important;
-
-    height: 34px !important;
-
-    margin: 0 5px !important;
-
-    border-radius: 6px !important;
-
-    font-family: Verdana, Arial, sans-serif !important;
-    font-size: 6px !important;
-    font-weight: 700 !important;
-
-    letter-spacing: .7px !important;
-
-    text-transform: uppercase !important;
-}
-
-
-/* prévisualisation */
-
-html body .mmic-pm-compose-actions input[name="preview"] {
-
-    border: 1px solid #d8b08c !important;
-
-    background: #fffaf4 !important;
-
-    color: #102438 !important;
-}
-
-
-/* envoyer */
-
-html body .mmic-pm-compose-actions input[name="post"] {
-
-    border: 1px solid #d8b08c !important;
-
-    background: #102438 !important;
-
-    color: #fffaf4 !important;
-}
-
-
-/* ---------------------------------------------------------
-   RESPONSIVE
-   --------------------------------------------------------- */
-
-@media (max-width: 850px) {
-
-    html body .mmic-pm-compose-page
-    .mmic-pm-compose-toolbar {
-
-        flex-direction: column !important;
-
-        align-items: stretch !important;
+    html body .mmic-pm-compose-page .mmic-pm-compose-editor {
+        padding: 12px !important;
     }
 
-
-    html body .mmic-pm-compose-page
-    .mmic-pm-compose-toolbar .mmic-pm-folders {
-
-        grid-template-columns:
-            repeat(2, minmax(0,1fr)) !important;
+    html body .mmic-pm-compose-page .mmic-pm-compose-smilies {
+        padding: 12px !important;
+        border-right: 0 !important;
+        border-top: 1px solid #ead8c8 !important;
     }
 
-
-    html body .mmic-pm-compose-page
-    #parent_editor_simple {
-
-        flex-direction: column !important;
+    html body .mmic-pm-compose-page .mmic-pm-compose-smilies #smileyContainer,
+    html body .mmic-pm-compose-page .mmic-pm-compose-smilies #smileyContainer iframe {
+        width: 150px !important;
+        min-width: 150px !important;
+        max-width: 150px !important;
     }
-
-
-    html body .mmic-pm-compose-page
-    #parent_editor_simple > td:first-child {
-
-        width: 100% !important;
-        min-width: 0 !important;
-        max-width: none !important;
-
-        flex-basis: auto !important;
-    }
-
-
-    html body .mmic-pm-compose-page
-    #smileyContainer {
-
-        max-width: none !important;
-    }
-
-}
-/* =========================================================
-   COMPOSITION MP — SMILEYS COMPACTS
-   ========================================================= */
-
-
-/* La colonne entière */
-html body .mmic-pm-compose-page
-#parent_editor_simple > td:first-child {
-
-    flex: 0 0 175px !important;
-
-    width: 175px !important;
-    min-width: 175px !important;
-    max-width: 175px !important;
-
-    padding: 10px 8px !important;
-
-    height: auto !important;
-    min-height: 0 !important;
-
-    align-self: flex-start !important;
-}
-
-
-/* Le conteneur natif Forumactif */
-html body .mmic-pm-compose-page
-#parent_editor_simple > td:first-child > table,
-
-html body .mmic-pm-compose-page
-#parent_editor_simple > td:first-child table {
-
-    width: 100% !important;
-    max-width: 155px !important;
-
-    height: auto !important;
-
-    margin: 0 auto !important;
-
-    border-spacing: 0 !important;
-    border-collapse: collapse !important;
-
-    table-layout: fixed !important;
-}
-
-
-/* tbody / lignes */
-html body .mmic-pm-compose-page
-#parent_editor_simple > td:first-child table tbody,
-
-html body .mmic-pm-compose-page
-#parent_editor_simple > td:first-child table tr {
-
-    width: 100% !important;
-
-    height: auto !important;
-}
-
-
-/* cellules contenant les smileys */
-html body .mmic-pm-compose-page
-#parent_editor_simple > td:first-child table td {
-
-    width: auto !important;
-    height: auto !important;
-
-    padding: 1px !important;
-
-    text-align: center !important;
-    vertical-align: middle !important;
-}
-
-
-/* conteneur */
-html body .mmic-pm-compose-page #smileyContainer {
-
-    width: 100% !important;
-    max-width: 155px !important;
-
-    height: auto !important;
-    min-height: 0 !important;
-
-    margin: 0 auto !important;
-    padding: 0 !important;
-
-    line-height: 1 !important;
-
-    text-align: center !important;
-}
-
-
-/* Chaque smiley */
-html body .mmic-pm-compose-page
-#parent_editor_simple > td:first-child img,
-
-html body .mmic-pm-compose-page
-#smileyContainer img {
-
-    display: inline-block !important;
-
-    width: auto !important;
-    height: auto !important;
-
-    max-width: 20px !important;
-    max-height: 20px !important;
-
-    margin: 1px !important;
-    padding: 0 !important;
-
-    vertical-align: middle !important;
-
-    object-fit: contain !important;
-}
-
-
-/* Liens autour des smileys */
-html body .mmic-pm-compose-page
-#parent_editor_simple > td:first-child a {
-
-    display: inline-block !important;
-
-    width: auto !important;
-    height: auto !important;
-
-    margin: 0 !important;
-    padding: 0 !important;
-
-    line-height: 1 !important;
-}
-
-
-/* Titre "Corps du message" */
-html body .mmic-pm-compose-page
-#parent_editor_simple > td:first-child b {
-
-    display: block !important;
-
-    margin: 0 0 8px !important;
-
-    line-height: 1.2 !important;
-}
-/* =========================================================
-   COMPOSITION MP — CADRE EXTÉRIEUR DES SMILEYS
-   ========================================================= */
-
-html body .mmic-pm-compose-page
-#parent_editor_simple > td:first-child {
-
-    flex: 0 0 180px !important;
-
-    width: 180px !important;
-    min-width: 180px !important;
-    max-width: 180px !important;
-
-    height: auto !important;
-    min-height: 0 !important;
-
-    margin: 0 !important;
-    padding: 10px !important;
-
-    align-self: flex-start !important;
-
-    border: 1px solid #ead8c8 !important;
-    border-radius: 7px !important;
-
-    background: #fbf5ed !important;
-}
-/* =========================================================
-   COMPOSITION MP — LARGEUR ÉDITEUR + SMILEYS
-   ========================================================= */
-
-/* Toute la ligne éditeur */
-html body .mmic-pm-compose-page
-#parent_editor_simple {
-    display: flex !important;
-    align-items: flex-start !important;
-
-    width: 100% !important;
-    max-width: none !important;
-
-    gap: 12px !important;
-
-    padding: 12px !important;
-
-    background: transparent !important;
-}
-
-
-/* =========================================================
-   ÉDITEUR
-   ========================================================= */
-
-html body .mmic-pm-compose-page
-#parent_editor_simple > td:nth-child(2) {
-    order: 1 !important;
-
-    display: block !important;
-
-    flex: 1 1 0 !important;
-
-    width: auto !important;
-    min-width: 0 !important;
-    max-width: none !important;
-
-    margin: 0 !important;
-    padding: 0 !important;
-
-    background: transparent !important;
-}
-
-
-/* SCEditor prend TOUTE la place disponible */
-
-html body .mmic-pm-compose-page
-#parent_editor_simple > td:nth-child(2)
-.sceditor-container {
-    width: 100% !important;
-    max-width: none !important;
-
-    margin: 0 !important;
-}
-
-
-/* zone d'écriture */
-
-html body .mmic-pm-compose-page
-#parent_editor_simple > td:nth-child(2)
-.sceditor-container iframe,
-
-html body .mmic-pm-compose-page
-#parent_editor_simple > td:nth-child(2)
-.sceditor-container textarea,
-
-html body .mmic-pm-compose-page
-#text_editor_textarea {
-    width: 100% !important;
-
-    min-height: 330px !important;
-}
-
-
-/* =========================================================
-   COLONNE SMILEYS
-   ========================================================= */
-
-html body .mmic-pm-compose-page
-#parent_editor_simple > td:first-child {
-    order: 2 !important;
-
-    display: flex !important;
-    flex-direction: column !important;
-
-    align-items: center !important;
-    justify-content: flex-start !important;
-
-    flex: 0 0 170px !important;
-
-    width: 170px !important;
-    min-width: 170px !important;
-    max-width: 170px !important;
-
-    height: auto !important;
-    min-height: 0 !important;
-
-    margin: 0 !important;
-    padding: 10px !important;
-
-    border: 1px solid #ead8c8 !important;
-    border-radius: 7px !important;
-
-    background: #fbf5ed !important;
-
-    align-self: flex-start !important;
-}
-
-
-/* Titre */
-
-html body .mmic-pm-compose-page
-#parent_editor_simple > td:first-child > span,
-html body .mmic-pm-compose-page
-#parent_editor_simple > td:first-child b {
-    width: 100% !important;
-
-    margin: 0 0 8px !important;
-
-    text-align: center !important;
-}
-
-
-/* =========================================================
-   IFRAME DES SMILEYS
-   ========================================================= */
-
-/*
- Forumactif donne à cette iframe sa propre largeur.
- On la force à rester centrée dans notre petit cadre.
-*/
-
-html body .mmic-pm-compose-page
-#parent_editor_simple > td:first-child iframe {
-    display: block !important;
-
-    width: 150px !important;
-    min-width: 150px !important;
-    max-width: 150px !important;
-
-    height: 255px !important;
-    min-height: 0 !important;
-
-    margin: 0 auto !important;
-    padding: 0 !important;
-
-    border: 0 !important;
-
-    background: transparent !important;
-}/* =========================================================
-   COMPOSITION MP — LARGEUR ÉDITEUR + SMILEYS
-   ========================================================= */
-
-/* Toute la ligne éditeur */
-html body .mmic-pm-compose-page
-#parent_editor_simple {
-    display: flex !important;
-    align-items: flex-start !important;
-
-    width: 100% !important;
-    max-width: none !important;
-
-    gap: 12px !important;
-
-    padding: 12px !important;
-
-    background: transparent !important;
-}
-
-
-/* =========================================================
-   ÉDITEUR
-   ========================================================= */
-
-html body .mmic-pm-compose-page
-#parent_editor_simple > td:nth-child(2) {
-    order: 1 !important;
-
-    display: block !important;
-
-    flex: 1 1 0 !important;
-
-    width: auto !important;
-    min-width: 0 !important;
-    max-width: none !important;
-
-    margin: 0 !important;
-    padding: 0 !important;
-
-    background: transparent !important;
-}
-
-
-/* SCEditor prend TOUTE la place disponible */
-
-html body .mmic-pm-compose-page
-#parent_editor_simple > td:nth-child(2)
-.sceditor-container {
-    width: 100% !important;
-    max-width: none !important;
-
-    margin: 0 !important;
-}
-
-
-/* zone d'écriture */
-
-html body .mmic-pm-compose-page
-#parent_editor_simple > td:nth-child(2)
-.sceditor-container iframe,
-
-html body .mmic-pm-compose-page
-#parent_editor_simple > td:nth-child(2)
-.sceditor-container textarea,
-
-html body .mmic-pm-compose-page
-#text_editor_textarea {
-    width: 100% !important;
-
-    min-height: 330px !important;
-}
-
-
-/* =========================================================
-   COLONNE SMILEYS
-   ========================================================= */
-
-html body .mmic-pm-compose-page
-#parent_editor_simple > td:first-child {
-    order: 2 !important;
-
-    display: flex !important;
-    flex-direction: column !important;
-
-    align-items: center !important;
-    justify-content: flex-start !important;
-
-    flex: 0 0 170px !important;
-
-    width: 170px !important;
-    min-width: 170px !important;
-    max-width: 170px !important;
-
-    height: auto !important;
-    min-height: 0 !important;
-
-    margin: 0 !important;
-    padding: 10px !important;
-
-    border: 1px solid #ead8c8 !important;
-    border-radius: 7px !important;
-
-    background: #fbf5ed !important;
-
-    align-self: flex-start !important;
-}
-
-
-/* Titre */
-
-html body .mmic-pm-compose-page
-#parent_editor_simple > td:first-child > span,
-html body .mmic-pm-compose-page
-#parent_editor_simple > td:first-child b {
-    width: 100% !important;
-
-    margin: 0 0 8px !important;
-
-    text-align: center !important;
-}
-
-
-/* =========================================================
-   IFRAME DES SMILEYS
-   ========================================================= */
-
-/*
- Forumactif donne à cette iframe sa propre largeur.
- On la force à rester centrée dans notre petit cadre.
-*/
-
-html body .mmic-pm-compose-page
-#parent_editor_simple > td:first-child iframe {
-    display: block !important;
-
-    width: 150px !important;
-    min-width: 150px !important;
-    max-width: 150px !important;
-
-    height: 255px !important;
-    min-height: 0 !important;
-
-    margin: 0 auto !important;
-    padding: 0 !important;
-
-    border: 0 !important;
-
-    background: transparent !important;
-}
-/* =========================================================
-   COMPOSITION MP — RÉPARATION ÉDITEUR / SMILEYS
-   ========================================================= */
-
-/* On annule le flex dangereux sur la ligne Forumactif */
-html body .mmic-pm-compose-page
-#parent_editor_simple {
-    display: table-row !important;
-
-    width: auto !important;
-
-    padding: 0 !important;
-
-    background: transparent !important;
-}
-
-
-/* =========================================================
-   CELLULE ÉDITEUR
-   ========================================================= */
-
-html body .mmic-pm-compose-page
-#parent_editor_simple > td:nth-child(2) {
-    display: table-cell !important;
-
-    width: auto !important;
-    min-width: 0 !important;
-    max-width: none !important;
-
-    padding: 12px !important;
-
-    vertical-align: top !important;
-
-    background: transparent !important;
-}
-
-
-/* Le SCEditor reprend toute la largeur de sa cellule */
-html body .mmic-pm-compose-page
-#parent_editor_simple > td:nth-child(2)
-.sceditor-container {
-    display: block !important;
-
-    width: 100% !important;
-    max-width: none !important;
-
-    min-height: 360px !important;
-
-    margin: 0 !important;
-}
-
-
-/* Barre SCEditor horizontale */
-html body .mmic-pm-compose-page
-.sceditor-toolbar {
-    display: block !important;
-
-    width: 100% !important;
-
-    white-space: normal !important;
-}
-
-
-/* Les groupes restent côte à côte */
-html body .mmic-pm-compose-page
-.sceditor-group {
-    display: inline-block !important;
-
-    float: none !important;
-
-    vertical-align: middle !important;
-}
-
-
-/* zone de texte */
-html body .mmic-pm-compose-page
-.sceditor-container iframe,
-
-html body .mmic-pm-compose-page
-.sceditor-container textarea,
-
-html body .mmic-pm-compose-page
-#text_editor_textarea {
-    width: 100% !important;
-
-    min-height: 320px !important;
-}
-
-
-/* =========================================================
-   CELLULE SMILEYS
-   ========================================================= */
-
-html body .mmic-pm-compose-page
-#parent_editor_simple > td:first-child {
-    display: table-cell !important;
-
-    width: 180px !important;
-    min-width: 180px !important;
-    max-width: 180px !important;
-
-    padding: 12px !important;
-
-    vertical-align: top !important;
-
-    border-left: 1px solid #ead8c8 !important;
-
-    background: #fbf5ed !important;
-}
-
-
-/* iframe des smileys */
-html body .mmic-pm-compose-page
-#parent_editor_simple > td:first-child iframe {
-    display: block !important;
-
-    width: 155px !important;
-    max-width: 155px !important;
-
-    height: 260px !important;
-
-    margin: 0 auto !important;
-
-    border: 0 !important;
-
-    background: transparent !important;
-}
-/* =========================================================
-   MP — FINITIONS VISUELLES
-   ========================================================= */
-
-
-/* ---------------------------------------------------------
-   BOUTON RÉCEPTION EN BLEU NUIT
-   --------------------------------------------------------- */
-
-html body .mmic-pm-compose-return {
-    background: #102438 !important;
-    color: #fffaf4 !important;
-
-    border: 1px solid #d8b08c !important;
-
-    box-shadow:
-        inset 0 1px 0 rgba(255,255,255,.08),
-        0 3px 7px rgba(16,36,56,.08) !important;
-}
-
-html body .mmic-pm-compose-return .mmic-pm-compose-return-icon {
-    background: #e4b184 !important;
-}
-
-html body .mmic-pm-compose-return:hover {
-    background: #173149 !important;
-    color: #fffaf4 !important;
-
-    transform: translateY(-1px) !important;
-}
-
-
-/* ---------------------------------------------------------
-   PRÉVISUALISATION + ENVOYER
-   LES DEUX EN CRÈME
-   --------------------------------------------------------- */
-
-html body .mmic-pm-compose-actions input[name="preview"],
-html body .mmic-pm-compose-actions input[name="post"],
-html body .mmic-pm-compose-actions input[value="Envoyer"] {
-
-    min-width: 125px !important;
-    height: 34px !important;
-
-    margin: 0 6px !important;
-    padding: 0 15px !important;
-
-    border: 1px solid #d8b08c !important;
-    border-radius: 6px !important;
-
-    background: #fffaf4 !important;
-    color: #102438 !important;
-
-    font-family: Verdana, Arial, sans-serif !important;
-    font-size: 6px !important;
-    font-weight: 700 !important;
-
-    letter-spacing: .7px !important;
-
-    text-transform: uppercase !important;
-
-    box-shadow:
-        0 2px 5px rgba(16,36,56,.05) !important;
-
-    cursor: pointer !important;
-
-    transition:
-        transform .16s ease,
-        background .16s ease,
-        color .16s ease,
-        border-color .16s ease !important;
-}
-
-
-/* hover identique pour les deux */
-
-html body .mmic-pm-compose-actions input[name="preview"]:hover,
-html body .mmic-pm-compose-actions input[name="post"]:hover,
-html body .mmic-pm-compose-actions input[value="Envoyer"]:hover {
-
-    transform: translateY(-1px) !important;
-
-    background: #f5e9dc !important;
-    color: #102438 !important;
-
-    border-color: #c78d68 !important;
-}
-
-
-/* ---------------------------------------------------------
-   CENTRAGE DES ACTIONS
-   --------------------------------------------------------- */
-
-html body .mmic-pm-compose-actions td {
-    text-align: center !important;
-
-    padding: 14px !important;
-}
-
-
-/* ---------------------------------------------------------
-   COLONNE SMILEYS
-   --------------------------------------------------------- */
-
-html body .mmic-pm-compose-page
-#parent_editor_simple > td:first-child {
-
-    width: 180px !important;
-    min-width: 180px !important;
-    max-width: 180px !important;
-
-    padding: 12px 10px !important;
-
-    text-align: center !important;
-    vertical-align: top !important;
-
-    background: #fbf5ed !important;
-}
-
-
-/* titre centré */
-
-html body .mmic-pm-compose-page
-#parent_editor_simple > td:first-child b,
-html body .mmic-pm-compose-page
-#parent_editor_simple > td:first-child > span {
-
-    display: block !important;
-
-    width: 100% !important;
-
-    margin: 0 0 9px !important;
-
-    text-align: center !important;
-}
-
-
-/* iframe centrée dans sa colonne */
-
-html body .mmic-pm-compose-page
-#parent_editor_simple > td:first-child iframe {
-
-    display: block !important;
-
-    width: 150px !important;
-    max-width: 150px !important;
-
-    height: 245px !important;
-
-    margin: 0 auto !important;
-
-    border: 0 !important;
-
-    background: transparent !important;
 }
