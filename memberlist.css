@@ -1,5 +1,6 @@
 /* =========================================================
    MEET ME IN CHICAGO — LISTE DES MEMBRES
+   Version nettoyée
    ========================================================= */
 
 
@@ -10,11 +11,8 @@
 html body .mmic-memberlist-page {
     width: calc(100% - 24px);
     max-width: 1100px;
-
     margin: 26px auto 40px;
-
     color: #102438;
-
     box-sizing: border-box;
 }
 
@@ -25,12 +23,9 @@ html body .mmic-memberlist-page {
 
 html body .mmic-memberlist-hero {
     position: relative;
-
     padding: 26px 30px;
-
     border: 1px solid rgba(216,176,140,.58);
     border-radius: 10px;
-
     background:
         linear-gradient(
             135deg,
@@ -38,238 +33,252 @@ html body .mmic-memberlist-hero {
             #132d45 52%,
             #0c1d2f 100%
         );
-
     color: #fffaf4;
-
     text-align: center;
-
     box-shadow:
         0 6px 18px rgba(16,36,56,.10),
         inset 0 1px 0 rgba(255,255,255,.06);
-
     overflow: hidden;
 }
 
-
 html body .mmic-memberlist-hero::after {
     content: "CHICAGO";
-
     position: absolute;
     right: 24px;
-    bottom: 4px;
-
-    color: rgba(255,255,255,.022);
-
+    bottom: 6px;
+    color: rgba(255,255,255,.018);
     font-family: Georgia, "Times New Roman", serif;
-    font-size: 30px;
+    font-size: 28px;
     font-weight: 700;
     letter-spacing: 4px;
-
     line-height: 1;
-
     pointer-events: none;
 }
 
-
 html body .mmic-memberlist-hero-kicker {
     margin-bottom: 6px;
-
     color: #d8b08c;
-
     font-size: 7px;
     font-weight: 700;
     letter-spacing: 2px;
     text-transform: uppercase;
 }
 
-
 html body .mmic-memberlist-hero h1 {
     margin: 0;
-
     color: #fffaf4;
-
     font-family: Georgia, "Times New Roman", serif;
     font-size: 25px;
     font-weight: 400;
 }
 
-
 html body .mmic-memberlist-hero p {
     max-width: 620px;
-
     margin: 8px auto 0;
-
     color: rgba(255,250,244,.72);
-
     font-size: 9px;
     line-height: 1.6;
 }
 
 
 /* ---------------------------------------------------------
-   RECHERCHE / TRI
+   RECHERCHE / TRI — VERSION COMPACTE
    --------------------------------------------------------- */
 
 html body .mmic-memberlist-filter {
-    margin-top: 14px;
-
-    padding: 18px;
-
-    border: 1px solid #e2d2c1;
-    border-radius: 10px;
-
+    margin-top: 14px !important;
+    padding: 14px 16px !important;
+    border: 1px solid #e2d2c1 !important;
+    border-radius: 10px !important;
     background:
         linear-gradient(
             135deg,
             #fffdf9 0%,
             #faf5ee 100%
-        );
-
+        ) !important;
     box-shadow:
         0 4px 12px rgba(16,36,56,.05),
-        inset 0 1px 0 rgba(255,255,255,.85);
+        inset 0 1px 0 rgba(255,255,255,.85) !important;
 }
 
-
-html body .mmic-memberlist-filter-title {
-    margin-bottom: 14px;
-
-    text-align: center;
-}
-
-
-html body .mmic-memberlist-filter-title span {
-    display: block;
-
-    margin-bottom: 3px;
-
-    color: #b97a56;
-
-    font-size: 6px;
-    font-weight: 700;
-    letter-spacing: 1.7px;
-    text-transform: uppercase;
-}
-
-
-html body .mmic-memberlist-filter-title strong {
-    color: #102438;
-
-    font-family: Georgia, serif;
-    font-size: 15px;
-    font-weight: 400;
-}
-
-
+html body .mmic-memberlist-filter-title,
 html body .mmic-memberlist-filter-grid {
-    display: grid;
-
-    grid-template-columns:
-        minmax(180px,1.4fr)
-        minmax(150px,1fr)
-        minmax(130px,.8fr)
-        auto;
-
-    gap: 10px;
-
-    align-items: end;
+    display: none !important;
 }
 
-
-html body .mmic-memberlist-filter-field {
-    display: flex;
-    flex-direction: column;
-
-    gap: 5px;
-}
-
-
-html body .mmic-memberlist-filter-field > span {
-    color: #b97a56;
-
-    font-size: 6px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-}
-
-
-html body .mmic-memberlist-filter input,
-html body .mmic-memberlist-filter select {
+html body .mmic-memberlist-filter-inline {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 14px !important;
     width: 100% !important;
-    height: 32px !important;
-
-    padding: 0 9px !important;
-
-    border: 1px solid #dfcdbc !important;
-    border-radius: 6px !important;
-
-    background: #fffdf9 !important;
-
-    color: #102438 !important;
-
-    font-size: 9px !important;
-
+    flex-wrap: nowrap !important;
     box-sizing: border-box !important;
 }
 
+html body .mmic-memberlist-filter-brand {
+    display: flex !important;
+    align-items: center !important;
+    min-height: 32px !important;
+    margin: 0 6px 0 0 !important;
+    padding: 0 !important;
+    flex: 0 0 auto !important;
+}
 
-html body .mmic-memberlist-filter input:focus,
-html body .mmic-memberlist-filter select:focus {
+html body .mmic-memberlist-filter-brand span {
+    color: #b97a56 !important;
+    font-size: 7px !important;
+    font-weight: 700 !important;
+    letter-spacing: 1.5px !important;
+    line-height: 1.2 !important;
+    text-transform: uppercase !important;
+    white-space: nowrap !important;
+}
+
+html body .mmic-memberlist-filter-field {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    gap: 5px !important;
+    min-width: 0 !important;
+    margin: 0 !important;
+}
+
+html body .mmic-memberlist-filter-field > span {
+    color: #b97a56 !important;
+    font-size: 6px !important;
+    font-weight: 700 !important;
+    letter-spacing: 1px !important;
+    line-height: 1 !important;
+    text-transform: uppercase !important;
+}
+
+/* Nom d'utilisateur : titre + champ sur la même ligne */
+html body .mmic-memberlist-filter-user {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    gap: 8px !important;
+    width: auto !important;
+    flex: 0 0 auto !important;
+}
+
+html body .mmic-memberlist-filter-user > span {
+    flex: 0 0 auto !important;
+    margin: 0 !important;
+    white-space: nowrap !important;
+}
+
+html body .mmic-memberlist-filter-user input[type="text"] {
+    width: 150px !important;
+    min-width: 150px !important;
+    margin: 0 !important;
+}
+
+/* Tri */
+html body .mmic-memberlist-filter-field select {
+    width: 170px !important;
+}
+
+/* Ordre */
+html body .mmic-memberlist-filter-field:nth-of-type(3) select {
+    width: 145px !important;
+}
+
+html body .mmic-memberlist-filter input[type="text"],
+html body .mmic-memberlist-filter select {
+    height: 32px !important;
+    padding: 0 10px !important;
+    border: 1px solid #dfcdbc !important;
+    border-radius: 6px !important;
+    background: #fffdf9 !important;
+    color: #102438 !important;
+    font-size: 8px !important;
+    box-sizing: border-box !important;
     outline: none !important;
+}
 
+html body .mmic-memberlist-filter input[type="text"]:focus,
+html body .mmic-memberlist-filter select:focus {
     border-color: #c78d68 !important;
-
-    box-shadow:
-        0 0 0 2px rgba(185,122,86,.10) !important;
+    box-shadow: 0 0 0 2px rgba(185,122,86,.10) !important;
 }
 
 
-html body .mmic-memberlist-submit {
-    display: inline-flex;
+/* ---------------------------------------------------------
+   BOUTON RECHERCHER — VERSION UNIQUE
+   --------------------------------------------------------- */
 
-    align-items: center;
-    justify-content: center;
-
-    gap: 7px;
-
-    height: 32px;
-
-    padding: 0 13px;
-
-    border: 1px solid #d8b08c;
-    border-radius: 6px;
-
-    background: #102438;
-
-    color: #fffaf4;
-
-    font-size: 7px;
-    font-weight: 700;
-
-    letter-spacing: .8px;
-    text-transform: uppercase;
-
-    cursor: pointer;
-
+html body .mmic-memberlist-filter-inline .mmic-memberlist-submit {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex: 0 0 108px !important;
+    width: 108px !important;
+    min-width: 108px !important;
+    max-width: 108px !important;
+    height: 32px !important;
+    min-height: 32px !important;
+    max-height: 32px !important;
+    margin: 10px 0 0 !important;
+    padding: 0 12px !important;
+    border: 1px solid #d8b08c !important;
+    border-radius: 6px !important;
+    background: #102438 !important;
+    color: #fffaf4 !important;
+    font-family: Verdana, Arial, sans-serif !important;
+    font-size: 7px !important;
+    font-weight: 700 !important;
+    letter-spacing: .7px !important;
+    line-height: 1 !important;
+    text-align: center !important;
+    text-transform: none !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+    box-shadow:
+        inset 0 1px 0 rgba(255,255,255,.08),
+        0 3px 7px rgba(16,36,56,.10) !important;
+    cursor: pointer !important;
     transition:
         transform .16s ease,
         background .16s ease,
-        color .16s ease;
+        border-color .16s ease,
+        box-shadow .16s ease !important;
 }
 
-
-html body .mmic-memberlist-submit span {
-    color: #e4b184;
-
-    font-size: 13px;
+/* La loupe est volontairement masquée */
+html body .mmic-memberlist-submit-icon {
+    display: none !important;
 }
 
+html body .mmic-memberlist-submit-text {
+    position: static !important;
+    display: inline-block !important;
+    width: auto !important;
+    height: auto !important;
+    min-width: 0 !important;
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    color: #fffaf4 !important;
+    font-family: Verdana, Arial, sans-serif !important;
+    font-size: 7px !important;
+    font-weight: 700 !important;
+    letter-spacing: .7px !important;
+    line-height: 1 !important;
+    text-transform: none !important;
+    white-space: nowrap !important;
+    transform: none !important;
+}
 
-html body .mmic-memberlist-submit:hover {
-    transform: translateY(-1px);
-
-    background: #173751;
+html body .mmic-memberlist-filter-inline .mmic-memberlist-submit:hover {
+    transform: translateY(-1px) !important;
+    background: #173751 !important;
+    border-color: #c78d68 !important;
+    box-shadow:
+        inset 0 1px 0 rgba(255,255,255,.09),
+        0 5px 10px rgba(16,36,56,.14) !important;
 }
 
 
@@ -279,11 +288,8 @@ html body .mmic-memberlist-submit:hover {
 
 html body .mmic-memberlist-grid {
     display: grid;
-
     grid-template-columns: repeat(2, minmax(0,1fr));
-
     gap: 14px;
-
     margin-top: 16px;
 }
 
@@ -294,39 +300,29 @@ html body .mmic-memberlist-grid {
 
 html body .mmic-member-card {
     display: grid;
-
     grid-template-columns: 138px minmax(0,1fr);
-
     min-height: 230px;
-
     border: 1px solid #e0cdbc;
     border-radius: 10px;
-
     background:
         linear-gradient(
             135deg,
             #fffdf9 0%,
             #faf5ee 100%
         );
-
     box-shadow:
         0 4px 11px rgba(16,36,56,.05),
         inset 0 1px 0 rgba(255,255,255,.8);
-
     overflow: hidden;
-
     transition:
         transform .18s ease,
         border-color .18s ease,
         box-shadow .18s ease;
 }
 
-
 html body .mmic-member-card:hover {
     transform: translateY(-2px);
-
     border-color: rgba(185,122,86,.50);
-
     box-shadow:
         0 9px 20px rgba(16,36,56,.09),
         inset 0 1px 0 rgba(255,255,255,.9);
@@ -339,70 +335,48 @@ html body .mmic-member-card:hover {
 
 html body .mmic-member-card-avatar {
     position: relative;
-
     padding: 12px;
-
     border-right: 1px solid rgba(216,176,140,.38);
-
     background:
         linear-gradient(
             180deg,
             #f8efe5 0%,
             #fbf6f0 100%
         );
-
     box-sizing: border-box;
 }
 
-
 html body .mmic-member-card-avatar a {
     display: block;
-
     width: 100%;
     height: 100%;
 }
 
-
 html body .mmic-member-card-avatar img {
     width: 100% !important;
     height: 100% !important;
-
     min-height: 206px;
-
     object-fit: cover !important;
     object-position: center !important;
-
     border: 1px solid #d8b08c;
     border-radius: 7px;
-
-    box-shadow:
-        0 4px 10px rgba(16,36,56,.12);
+    box-shadow: 0 4px 10px rgba(16,36,56,.12);
 }
-
 
 html body .mmic-member-card-number {
     position: absolute;
-
     right: 18px;
     bottom: 18px;
-
     display: inline-flex;
-
     align-items: center;
     justify-content: center;
-
     min-width: 24px;
     height: 20px;
-
     padding: 0 6px;
-
     border: 1px solid #d8b08c;
     border-radius: 999px;
-
     background: #102438;
-
     color: #e4b184;
-
     font-size: 6px;
     font-weight: 700;
 }
@@ -415,54 +389,38 @@ html body .mmic-member-card-number {
 html body .mmic-member-card-content {
     display: flex;
     flex-direction: column;
-
     min-width: 0;
-
     padding: 16px;
-
     box-sizing: border-box;
 }
 
-
 html body .mmic-member-card-header {
     padding-bottom: 10px;
-
     border-bottom: 1px solid rgba(216,176,140,.38);
 }
 
-
 html body .mmic-member-card-eyebrow {
     display: block;
-
     margin-bottom: 3px;
-
     color: #b97a56;
-
     font-size: 6px;
     font-weight: 700;
-
     letter-spacing: 1.4px;
     text-transform: uppercase;
 }
 
-
 html body .mmic-member-card-header h2 {
     margin: 0;
-
     font-family: Georgia, serif;
     font-size: 20px;
     font-weight: 400;
 }
 
-
 html body .mmic-member-card-header h2 a {
     color: #102438;
-
     text-decoration: none;
-
     transition: color .16s ease;
 }
-
 
 html body .mmic-member-card-header h2 a:hover {
     color: #b97a56;
@@ -475,53 +433,36 @@ html body .mmic-member-card-header h2 a:hover {
 
 html body .mmic-member-card-info {
     display: grid;
-
     grid-template-columns: repeat(2,minmax(0,1fr));
-
     gap: 7px;
-
     margin-top: 12px;
 }
 
-
 html body .mmic-member-card-info-row {
     min-width: 0;
-
     padding: 7px 8px;
-
     border: 1px solid rgba(216,176,140,.28);
     border-radius: 6px;
-
     background: rgba(255,255,255,.38);
 }
 
-
 html body .mmic-member-card-info-row > span {
     display: block;
-
     margin-bottom: 2px;
-
     color: #b97a56;
-
     font-size: 5.5px;
     font-weight: 700;
-
     letter-spacing: .8px;
     text-transform: uppercase;
 }
 
-
 html body .mmic-member-card-info-row > strong {
     display: block;
-
     color: #102438;
-
     font-size: 8px;
     font-weight: 600;
-
     overflow-wrap: anywhere;
 }
-
 
 html body .mmic-member-card-interests {
     grid-column: 1 / -1;
@@ -529,294 +470,203 @@ html body .mmic-member-card-interests {
 
 
 /* ---------------------------------------------------------
-   ACTIONS
+   ACTIONS — PROFIL / MP / SITE
    --------------------------------------------------------- */
-
-html body .mmic-member-card-actions {
-    display: flex;
-
-    align-items: center;
-
-    gap: 7px;
-
-    margin-top: auto;
-    padding-top: 12px;
-}
-
-
-html body .mmic-member-card-profile,
-html body .mmic-member-card-action {
-    display: inline-flex;
-
-    align-items: center;
-    justify-content: center;
-
-    min-height: 26px;
-
-    border: 1px solid rgba(216,176,140,.52);
-    border-radius: 6px;
-
-    background: #fffaf4;
-
-    color: #102438;
-
-    text-decoration: none;
-
-    box-shadow:
-        0 2px 5px rgba(16,36,56,.05);
-}
-
-
-html body .mmic-member-card-profile {
-    padding: 0 10px;
-
-    font-size: 6px;
-    font-weight: 700;
-
-    letter-spacing: .8px;
-    text-transform: uppercase;
-}
-
-
-html body .mmic-member-card-action {
-    width: 28px;
-    height: 28px;
-}
-
-
-html body .mmic-member-card-action img {
-    max-width: 16px;
-    max-height: 16px;
-}
-/* =========================================================
-   MEMBERLIST — ACTIONS DES CARTES
-   Profil / MP / Site
-   ========================================================= */
-
-
-/* Zone commune */
 
 html body .mmic-member-card-actions {
     display: flex !important;
+    flex-direction: row !important;
     align-items: center !important;
-
+    justify-content: flex-start !important;
     gap: 7px !important;
-
+    flex-wrap: nowrap !important;
     width: 100% !important;
-
     margin-top: auto !important;
-    padding-top: 11px !important;
-
+    padding-top: 10px !important;
     border-top: 1px solid rgba(216,176,140,.28) !important;
-
     box-sizing: border-box !important;
 }
 
+html body .mmic-member-card-actions > * {
+    float: none !important;
+    position: static !important;
+    display: inline-flex !important;
+    flex: 0 0 auto !important;
+    flex-shrink: 0 !important;
+    margin: 0 !important;
+}
 
-/* ---------------------------------------------------------
-   PROFIL
-   --------------------------------------------------------- */
+
+/* Profil */
 
 html body .mmic-member-card-profile {
+    position: relative !important;
     display: inline-flex !important;
     align-items: center !important;
     justify-content: center !important;
-
-    min-width: 64px !important;
+    gap: 6px !important;
+    flex: 0 0 auto !important;
+    width: 72px !important;
+    min-width: 72px !important;
     height: 28px !important;
-
-    padding: 0 11px !important;
-
-    border: 1px solid rgba(216,176,140,.58) !important;
+    margin: 0 !important;
+    padding: 0 10px !important;
+    border: 1px solid #d8b08c !important;
     border-radius: 6px !important;
-
-    background:
-        linear-gradient(
-            180deg,
-            #fffdf9 0%,
-            #f7f0e8 100%
-        ) !important;
-
-    color: #102438 !important;
-
+    background: #102438 !important;
+    color: #fffaf4 !important;
     font-family: Verdana, Arial, sans-serif !important;
-    font-size: 6.5px !important;
+    font-size: 6px !important;
     font-weight: 700 !important;
-
-    letter-spacing: .8px !important;
+    letter-spacing: .7px !important;
+    line-height: 1 !important;
     text-decoration: none !important;
     text-transform: uppercase !important;
-
-    box-shadow:
-        0 2px 5px rgba(16,36,56,.05),
-        inset 0 1px 0 rgba(255,255,255,.9) !important;
-
     box-sizing: border-box !important;
-
+    box-shadow:
+        inset 0 1px 0 rgba(255,255,255,.08),
+        0 3px 7px rgba(16,36,56,.09) !important;
     transition:
         transform .16s ease,
+        background .16s ease,
         border-color .16s ease,
-        color .16s ease,
         box-shadow .16s ease !important;
 }
 
+html body .mmic-member-card-profile::before {
+    content: "" !important;
+    display: block !important;
+    width: 10px !important;
+    height: 10px !important;
+    flex: 0 0 10px !important;
+    background: #e4b184 !important;
+    -webkit-mask-image:
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10Zm0 2c-5 0-9 2.5-9 5.5V22h18v-2.5C21 16.5 17 14 12 14Z'/%3E%3C/svg%3E") !important;
+    mask-image:
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10Zm0 2c-5 0-9 2.5-9 5.5V22h18v-2.5C21 16.5 17 14 12 14Z'/%3E%3C/svg%3E") !important;
+    -webkit-mask-repeat: no-repeat !important;
+    mask-repeat: no-repeat !important;
+    -webkit-mask-position: center !important;
+    mask-position: center !important;
+    -webkit-mask-size: contain !important;
+    mask-size: contain !important;
+}
 
-/* ---------------------------------------------------------
-   WRAPPERS MP + SITE
-   --------------------------------------------------------- */
+html body .mmic-member-card-profile > span {
+    display: inline-block !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    color: #fffaf4 !important;
+    font-size: inherit !important;
+    line-height: 1 !important;
+}
+
+html body .mmic-member-card-profile:hover {
+    transform: translateY(-2px) !important;
+    background: #173751 !important;
+    color: #fffaf4 !important;
+    border-color: #c78d68 !important;
+    box-shadow:
+        inset 0 1px 0 rgba(255,255,255,.09),
+        0 5px 10px rgba(16,36,56,.14) !important;
+}
+
+
+/* MP + Site */
 
 html body .mmic-member-card-action {
     display: inline-flex !important;
     align-items: center !important;
     justify-content: center !important;
-
     width: 28px !important;
-    height: 28px !important;
-
     min-width: 28px !important;
+    height: 28px !important;
     min-height: 28px !important;
-
-    padding: 0 !important;
     margin: 0 !important;
-
+    padding: 0 !important;
     border: 0 !important;
-    border-radius: 50% !important;
-
     background: transparent !important;
-
     box-shadow: none !important;
-
-    overflow: visible !important;
-   width: 100% !important;
-    gap: 7px !important;
-}
-html body .mmic-member-card-actions > * {
-    flex-shrink: 0 !important;
+    line-height: 1 !important;
 }
 
-html body .mmic-member-card-profile {
-    margin-right: 2px !important;
+html body .mmic-member-card-action:empty {
+    display: none !important;
 }
 
-/* Le lien généré par Forumactif devient le vrai bouton */
-
-html body .mmic-member-card-action > a {
+html body .mmic-member-card-action > a,
+html body .mmic-member-card-action a {
     position: relative !important;
-
     display: inline-flex !important;
     align-items: center !important;
     justify-content: center !important;
-
     width: 28px !important;
-    height: 28px !important;
-
     min-width: 28px !important;
-
-    padding: 0 !important;
+    height: 28px !important;
+    min-height: 28px !important;
     margin: 0 !important;
-
+    padding: 0 !important;
     border: 1px solid #d8b08c !important;
     border-radius: 50% !important;
-
     background: #102438 !important;
-
+    box-sizing: border-box !important;
+    line-height: 1 !important;
     text-decoration: none !important;
-
     box-shadow:
         inset 0 1px 0 rgba(255,255,255,.08),
         0 3px 7px rgba(16,36,56,.10) !important;
-
-    box-sizing: border-box !important;
-
     transition:
         transform .16s ease,
         background .16s ease,
         box-shadow .16s ease !important;
 }
 
-
-/* On enterre dignement les vieux boutons GIF Forumactif */
-
 html body .mmic-member-card-action img {
     display: none !important;
 }
 
-
-/* Icône commune */
-
-html body .mmic-member-card-action > a::before {
+html body .mmic-member-card-action > a::before,
+html body .mmic-member-card-action a::before {
     content: "" !important;
-
     display: block !important;
-
     width: 11px !important;
     height: 11px !important;
-
     background: #e4b184 !important;
-
     -webkit-mask-repeat: no-repeat !important;
     mask-repeat: no-repeat !important;
-
     -webkit-mask-position: center !important;
     mask-position: center !important;
-
     -webkit-mask-size: contain !important;
     mask-size: contain !important;
 }
 
-
-/* ---------------------------------------------------------
-   MP — ENVELOPPE
-   --------------------------------------------------------- */
-
-html body .mmic-member-card-pm > a::before {
+/* MP — enveloppe */
+html body .mmic-member-card-pm > a::before,
+html body .mmic-member-card-pm a::before {
     -webkit-mask-image:
         url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M3 5h18v14H3V5Zm2 2v1l7 5 7-5V7l-7 5-7-5Zm14 10V10l-7 5-7-5v7h14Z'/%3E%3C/svg%3E") !important;
-
     mask-image:
         url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M3 5h18v14H3V5Zm2 2v1l7 5 7-5V7l-7 5-7-5Zm14 10V10l-7 5-7-5v7h14Z'/%3E%3C/svg%3E") !important;
 }
 
-
-/* ---------------------------------------------------------
-   SITE WEB — MAISON
-   --------------------------------------------------------- */
-
-html body .mmic-member-card-www > a::before {
+/* Site — maison */
+html body .mmic-member-card-www > a::before,
+html body .mmic-member-card-www a::before {
     -webkit-mask-image:
         url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='m12 3 9 8h-2v9h-5v-6h-4v6H5v-9H3l9-8Z'/%3E%3C/svg%3E") !important;
-
     mask-image:
         url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='m12 3 9 8h-2v9h-5v-6h-4v6H5v-9H3l9-8Z'/%3E%3C/svg%3E") !important;
 }
 
-
-/* ---------------------------------------------------------
-   HOVER
-   --------------------------------------------------------- */
-
-html body .mmic-member-card-profile:hover {
-    transform: translateY(-1px) !important;
-
-    color: #b97a56 !important;
-
-    border-color: #c78d68 !important;
-
-    box-shadow:
-        0 5px 10px rgba(16,36,56,.09),
-        inset 0 1px 0 rgba(255,255,255,.95) !important;
-}
-
-
-html body .mmic-member-card-action > a:hover {
+html body .mmic-member-card-action > a:hover,
+html body .mmic-member-card-action a:hover {
     transform: translateY(-2px) scale(1.04) !important;
-
     background: #173751 !important;
-
     box-shadow:
         inset 0 1px 0 rgba(255,255,255,.09),
         0 5px 10px rgba(16,36,56,.15) !important;
 }
+
 
 /* ---------------------------------------------------------
    PAGINATION
@@ -824,19 +674,13 @@ html body .mmic-member-card-action > a:hover {
 
 html body .mmic-memberlist-pagination {
     display: flex;
-
     align-items: center;
     justify-content: space-between;
-
     gap: 14px;
-
     margin-top: 16px;
-
     padding: 10px 14px;
-
     border: 1px solid #e2d2c1;
     border-radius: 8px;
-
     background: #fbf8f3;
 }
 
@@ -847,14 +691,10 @@ html body .mmic-memberlist-pagination {
 
 html body .mmic-memberlist-empty {
     grid-column: 1 / -1;
-
     padding: 30px;
-
     border: 1px solid #e2d2c1;
     border-radius: 10px;
-
     background: #fbf8f3;
-
     text-align: center;
 }
 
@@ -863,32 +703,59 @@ html body .mmic-memberlist-empty {
    RESPONSIVE
    --------------------------------------------------------- */
 
-@media (max-width: 850px) {
+@media (max-width: 900px) {
+    html body .mmic-memberlist-filter-inline {
+        flex-wrap: wrap !important;
+    }
+}
 
+@media (max-width: 850px) {
     html body .mmic-memberlist-grid {
         grid-template-columns: 1fr;
     }
-
 }
 
-
-@media (max-width: 700px) {
-
-    html body .mmic-memberlist-filter-grid {
-        grid-template-columns: 1fr 1fr;
+@media (max-width: 650px) {
+    html body .mmic-memberlist-filter-inline {
+        align-items: stretch !important;
     }
 
-}
+    html body .mmic-memberlist-filter-brand {
+        width: 100% !important;
+        justify-content: center !important;
+        margin-right: 0 !important;
+    }
 
+    html body .mmic-memberlist-filter-field,
+    html body .mmic-memberlist-filter-user {
+        width: 100% !important;
+        flex: 1 1 100% !important;
+    }
+
+    html body .mmic-memberlist-filter-user {
+        flex-direction: column !important;
+        align-items: stretch !important;
+    }
+
+    html body .mmic-memberlist-filter-user input[type="text"],
+    html body .mmic-memberlist-filter select,
+    html body .mmic-memberlist-filter-field select {
+        width: 100% !important;
+        min-width: 0 !important;
+    }
+
+    html body .mmic-memberlist-filter-inline .mmic-memberlist-submit {
+        width: 100% !important;
+        min-width: 100% !important;
+        max-width: 100% !important;
+        flex-basis: 100% !important;
+        margin-top: 0 !important;
+    }
+}
 
 @media (max-width: 520px) {
-
     html body .mmic-memberlist-page {
         width: calc(100% - 14px);
-    }
-
-    html body .mmic-memberlist-filter-grid {
-        grid-template-columns: 1fr;
     }
 
     html body .mmic-member-card {
@@ -906,1161 +773,4 @@ html body .mmic-memberlist-empty {
     html body .mmic-member-card-interests {
         grid-column: auto;
     }
-
-}
-/* =========================================================
-   MEMBERLIST — BOUTON DE RECHERCHE / TRI
-   ========================================================= */
-
-html body .mmic-memberlist-filter .mmic-memberlist-submit,
-html body .mmic-memberlist-filter input[type="submit"] {
-    display: inline-flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-
-    gap: 7px !important;
-
-    min-width: 72px !important;
-    width: auto !important;
-    height: 32px !important;
-
-    margin: 0 !important;
-    padding: 0 13px !important;
-
-    border: 1px solid #d8b08c !important;
-    border-radius: 6px !important;
-
-    background: #102438 !important;
-    color: #fffaf4 !important;
-
-    font-family: Verdana, Arial, sans-serif !important;
-    font-size: 7px !important;
-    font-weight: 700 !important;
-
-    letter-spacing: .8px !important;
-    line-height: 1 !important;
-    text-transform: uppercase !important;
-
-    box-shadow:
-        inset 0 1px 0 rgba(255,255,255,.08),
-        0 3px 7px rgba(16,36,56,.09) !important;
-
-    cursor: pointer !important;
-
-    box-sizing: border-box !important;
-
-    transition:
-        transform .17s ease,
-        background .17s ease,
-        border-color .17s ease,
-        box-shadow .17s ease !important;
-}
-
-html body .mmic-memberlist-filter .mmic-memberlist-submit:hover,
-html body .mmic-memberlist-filter input[type="submit"]:hover {
-    transform: translateY(-1px) !important;
-
-    background: #173751 !important;
-    border-color: #c78d68 !important;
-
-    box-shadow:
-        inset 0 1px 0 rgba(255,255,255,.09),
-        0 5px 10px rgba(16,36,56,.13) !important;
-}
-
-
-/* Loupe de notre bouton */
-
-html body .mmic-memberlist-submit > span {
-    display: inline-flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-
-    width: 15px !important;
-    height: 15px !important;
-
-    color: #e4b184 !important;
-
-    font-size: 11px !important;
-    line-height: 1 !important;
-}
-/* =========================================================
-   MEMBERLIST — ALIGNEMENT FINAL DES ACTIONS
-   Profil / MP / Site
-   ========================================================= */
-
-
-/* La zone devient une vraie ligne */
-html body .mmic-member-card-actions {
-    display: flex !important;
-    flex-direction: row !important;
-    align-items: center !important;
-    justify-content: flex-start !important;
-
-    gap: 7px !important;
-
-    width: 100% !important;
-
-    margin-top: auto !important;
-    padding-top: 11px !important;
-
-    border-top: 1px solid rgba(216,176,140,.28) !important;
-
-    box-sizing: border-box !important;
-}
-
-
-/* Tous les enfants restent dans la rangée */
-html body .mmic-member-card-actions > * {
-    position: static !important;
-
-    display: inline-flex !important;
-
-    flex: 0 0 auto !important;
-
-    margin: 0 !important;
-}
-
-
-/* =========================================================
-   PROFIL
-   ========================================================= */
-
-html body .mmic-member-card-profile {
-    display: inline-flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-
-    width: auto !important;
-    min-width: 64px !important;
-    height: 28px !important;
-
-    margin: 0 !important;
-    padding: 0 11px !important;
-
-    border: 1px solid rgba(216,176,140,.58) !important;
-    border-radius: 6px !important;
-
-    background:
-        linear-gradient(
-            180deg,
-            #fffdf9 0%,
-            #f7f0e8 100%
-        ) !important;
-
-    color: #102438 !important;
-
-    font-family: Verdana, Arial, sans-serif !important;
-    font-size: 6.5px !important;
-    font-weight: 700 !important;
-
-    letter-spacing: .8px !important;
-    line-height: 1 !important;
-
-    text-decoration: none !important;
-    text-transform: uppercase !important;
-
-    box-sizing: border-box !important;
-}
-
-
-/* =========================================================
-   MP + SITE
-   ========================================================= */
-
-html body .mmic-member-card-action {
-    display: inline-flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-
-    width: 28px !important;
-    min-width: 28px !important;
-    height: 28px !important;
-    min-height: 28px !important;
-
-    margin: 0 !important;
-    padding: 0 !important;
-
-    border: 0 !important;
-    background: transparent !important;
-
-    box-shadow: none !important;
-
-    line-height: 1 !important;
-}
-
-
-/* Le lien interne devient le bouton rond */
-html body .mmic-member-card-action a {
-    display: inline-flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-
-    width: 28px !important;
-    min-width: 28px !important;
-    height: 28px !important;
-    min-height: 28px !important;
-
-    margin: 0 !important;
-    padding: 0 !important;
-
-    border: 1px solid #d8b08c !important;
-    border-radius: 50% !important;
-
-    background: #102438 !important;
-
-    box-sizing: border-box !important;
-
-    line-height: 1 !important;
-
-    text-decoration: none !important;
-
-    box-shadow:
-        inset 0 1px 0 rgba(255,255,255,.08),
-        0 3px 7px rgba(16,36,56,.10) !important;
-}
-
-
-/* On retire définitivement les vieux GIF */
-html body .mmic-member-card-action img {
-    display: none !important;
-}
-
-
-/* =========================================================
-   ICÔNES
-   ========================================================= */
-
-html body .mmic-member-card-action a::before {
-    content: "" !important;
-
-    display: block !important;
-
-    width: 11px !important;
-    height: 11px !important;
-
-    background: #e4b184 !important;
-
-    -webkit-mask-repeat: no-repeat !important;
-    mask-repeat: no-repeat !important;
-
-    -webkit-mask-position: center !important;
-    mask-position: center !important;
-
-    -webkit-mask-size: contain !important;
-    mask-size: contain !important;
-}
-
-
-/* MP */
-
-html body .mmic-member-card-pm a::before {
-    -webkit-mask-image:
-        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M3 5h18v14H3V5Zm2 2v1l7 5 7-5V7l-7 5-7-5Zm14 10V10l-7 5-7-5v7h14Z'/%3E%3C/svg%3E") !important;
-
-    mask-image:
-        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M3 5h18v14H3V5Zm2 2v1l7 5 7-5V7l-7 5-7-5Zm14 10V10l-7 5-7-5v7h14Z'/%3E%3C/svg%3E") !important;
-}
-
-
-/* SITE */
-
-html body .mmic-member-card-www a::before {
-    -webkit-mask-image:
-        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='m12 3 9 8h-2v9h-5v-6h-4v6H5v-9H3l9-8Z'/%3E%3C/svg%3E") !important;
-
-    mask-image:
-        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='m12 3 9 8h-2v9h-5v-6h-4v6H5v-9H3l9-8Z'/%3E%3C/svg%3E") !important;
-}
-
-
-/* =========================================================
-   HOVER
-   ========================================================= */
-
-html body .mmic-member-card-profile:hover {
-    transform: translateY(-1px) !important;
-
-    border-color: #c78d68 !important;
-
-    color: #b97a56 !important;
-}
-
-
-html body .mmic-member-card-action a:hover {
-    transform: translateY(-2px) scale(1.04) !important;
-
-    background: #173751 !important;
-}
-/* Wrapper vide = disparu */
-html body .mmic-member-card-action:empty {
-    display: none !important;
-}
-/* =========================================================
-   MEMBERLIST — FILTRE COMPACT SUR UNE SEULE LIGNE
-   ========================================================= */
-
-html body .mmic-memberlist-filter {
-    margin-top: 14px !important;
-
-    padding: 14px 16px !important;
-
-    border: 1px solid #e2d2c1 !important;
-    border-radius: 10px !important;
-
-    background:
-        linear-gradient(
-            135deg,
-            #fffdf9 0%,
-            #faf5ee 100%
-        ) !important;
-
-    box-shadow:
-        0 4px 12px rgba(16,36,56,.05),
-        inset 0 1px 0 rgba(255,255,255,.85) !important;
-}
-
-
-/* Ancien titre devenu inutile */
-
-html body .mmic-memberlist-filter-title {
-    display: none !important;
-}
-
-
-/* ---------------------------------------------------------
-   LIGNE PRINCIPALE
-   --------------------------------------------------------- */
-
-html body .mmic-memberlist-filter-inline {
-    display: flex !important;
-
-    align-items: flex-end !important;
-    justify-content: center !important;
-
-    gap: 12px !important;
-
-    width: 100% !important;
-
-    box-sizing: border-box !important;
-}
-
-
-/* ---------------------------------------------------------
-   PETIT TITRE À GAUCHE
-   --------------------------------------------------------- */
-
-html body .mmic-memberlist-filter-brand {
-    display: flex !important;
-    align-items: center !important;
-
-    min-height: 32px !important;
-
-    margin-right: 4px !important;
-    padding-bottom: 2px !important;
-}
-
-
-html body .mmic-memberlist-filter-brand span {
-    color: #b97a56 !important;
-
-    font-size: 7px !important;
-    font-weight: 700 !important;
-
-    letter-spacing: 1.5px !important;
-    line-height: 1.2 !important;
-
-    text-transform: uppercase !important;
-
-    white-space: nowrap !important;
-}
-
-
-/* ---------------------------------------------------------
-   CHAMPS
-   --------------------------------------------------------- */
-
-html body .mmic-memberlist-filter-field {
-    display: flex !important;
-    flex-direction: column !important;
-
-    gap: 5px !important;
-
-    min-width: 0 !important;
-
-    margin: 0 !important;
-}
-
-
-html body .mmic-memberlist-filter-field > span {
-    color: #b97a56 !important;
-
-    font-size: 6px !important;
-    font-weight: 700 !important;
-
-    letter-spacing: 1px !important;
-    line-height: 1 !important;
-
-    text-transform: uppercase !important;
-}
-
-
-/* Nom d'utilisateur un peu plus large */
-
-html body .mmic-memberlist-filter-user {
-    width: 185px !important;
-    flex: 0 0 185px !important;
-}
-
-
-/* Tri */
-
-html body .mmic-memberlist-filter-field select {
-    width: 170px !important;
-}
-
-
-/* Ordre un peu moins large */
-
-html body .mmic-memberlist-filter-field:nth-of-type(3) select {
-    width: 145px !important;
-}
-
-
-/* Inputs et select */
-
-html body .mmic-memberlist-filter input[type="text"],
-html body .mmic-memberlist-filter select {
-    height: 32px !important;
-
-    padding: 0 10px !important;
-
-    border: 1px solid #dfcdbc !important;
-    border-radius: 6px !important;
-
-    background: #fffdf9 !important;
-    color: #102438 !important;
-
-    font-size: 8px !important;
-
-    box-sizing: border-box !important;
-
-    outline: none !important;
-}
-
-
-html body .mmic-memberlist-filter input[type="text"]:focus,
-html body .mmic-memberlist-filter select:focus {
-    border-color: #c78d68 !important;
-
-    box-shadow:
-        0 0 0 2px rgba(185,122,86,.10) !important;
-}
-
-
-/* =========================================================
-   BOUTON RECHERCHER
-   ========================================================= */
-
-html body .mmic-memberlist-submit {
-    display: inline-flex !important;
-
-    align-items: center !important;
-    justify-content: center !important;
-
-    gap: 7px !important;
-
-    width: auto !important;
-    min-width: 100px !important;
-
-    height: 32px !important;
-
-    margin: 0 !important;
-    padding: 0 12px !important;
-
-    border: 1px solid #d8b08c !important;
-    border-radius: 6px !important;
-
-    background: #102438 !important;
-    color: #fffaf4 !important;
-
-    font-family: Verdana, Arial, sans-serif !important;
-    font-size: 6.5px !important;
-    font-weight: 700 !important;
-
-    letter-spacing: .8px !important;
-    line-height: 1 !important;
-
-    text-transform: uppercase !important;
-
-    box-shadow:
-        inset 0 1px 0 rgba(255,255,255,.08),
-        0 3px 7px rgba(16,36,56,.09) !important;
-
-    cursor: pointer !important;
-
-    box-sizing: border-box !important;
-
-    transition:
-        transform .16s ease,
-        background .16s ease,
-        border-color .16s ease,
-        box-shadow .16s ease !important;
-}
-
-
-/* Loupe SVG */
-
-html body .mmic-memberlist-submit-icon {
-    display: block !important;
-
-    width: 11px !important;
-    height: 11px !important;
-
-    background: #e4b184 !important;
-
-    -webkit-mask-image:
-        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M10 4a6 6 0 1 0 0 12 6 6 0 0 0 0-12Zm0-2a8 8 0 1 1 4.9 14.3L21.6 23 20 24.6l-6.7-6.7A8 8 0 0 1 10 2Z'/%3E%3C/svg%3E") !important;
-
-    mask-image:
-        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M10 4a6 6 0 1 0 0 12 6 6 0 0 0 0-12Zm0-2a8 8 0 1 1 4.9 14.3L21.6 23 20 24.6l-6.7-6.7A8 8 0 0 1 10 2Z'/%3E%3C/svg%3E") !important;
-
-    -webkit-mask-repeat: no-repeat !important;
-    mask-repeat: no-repeat !important;
-
-    -webkit-mask-position: center !important;
-    mask-position: center !important;
-
-    -webkit-mask-size: contain !important;
-    mask-size: contain !important;
-}
-
-
-html body .mmic-memberlist-submit:hover {
-    transform: translateY(-1px) !important;
-
-    background: #173751 !important;
-    border-color: #c78d68 !important;
-
-    box-shadow:
-        inset 0 1px 0 rgba(255,255,255,.09),
-        0 5px 10px rgba(16,36,56,.13) !important;
-}
-
-
-/* =========================================================
-   CHICAGO DE FOND — PLUS DISCRET
-   ========================================================= */
-
-html body .mmic-memberlist-hero::after {
-    content: "CHICAGO" !important;
-
-    position: absolute !important;
-
-    right: 24px !important;
-    bottom: 6px !important;
-
-    color: rgba(255,255,255,.018) !important;
-
-    font-family: Georgia, "Times New Roman", serif !important;
-
-    font-size: 28px !important;
-    font-weight: 700 !important;
-
-    letter-spacing: 4px !important;
-    line-height: 1 !important;
-
-    pointer-events: none !important;
-}
-
-
-/* =========================================================
-   RESPONSIVE
-   ========================================================= */
-
-@media (max-width: 900px) {
-
-    html body .mmic-memberlist-filter-inline {
-        flex-wrap: wrap !important;
-    }
-
-}
-
-
-@media (max-width: 650px) {
-
-    html body .mmic-memberlist-filter-inline {
-        align-items: stretch !important;
-    }
-
-    html body .mmic-memberlist-filter-brand {
-        width: 100% !important;
-
-        justify-content: center !important;
-
-        margin-right: 0 !important;
-    }
-
-    html body .mmic-memberlist-filter-field,
-    html body .mmic-memberlist-filter-user {
-        width: 100% !important;
-        flex: 1 1 100% !important;
-    }
-
-    html body .mmic-memberlist-filter input[type="text"],
-    html body .mmic-memberlist-filter select,
-    html body .mmic-memberlist-filter-field select {
-        width: 100% !important;
-    }
-
-    html body .mmic-memberlist-submit {
-        width: 100% !important;
-    }
-
-}
-/* =========================================================
-   MEMBERLIST — FILTRE FINAL
-   ========================================================= */
-
-
-/* La ligne entière */
-html body .mmic-memberlist-filter-inline {
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-
-    gap: 14px !important;
-
-    width: 100% !important;
-
-    flex-wrap: nowrap !important;
-}
-
-
-/* Annuaire */
-html body .mmic-memberlist-filter-brand {
-    display: flex !important;
-    align-items: center !important;
-
-    min-height: 32px !important;
-
-    margin: 0 6px 0 0 !important;
-    padding: 0 !important;
-
-    flex: 0 0 auto !important;
-}
-
-
-/* =========================================================
-   NOM D'UTILISATEUR — LABEL + CHAMP SUR UNE LIGNE
-   ========================================================= */
-
-html body .mmic-memberlist-filter-user {
-    display: flex !important;
-    flex-direction: row !important;
-    align-items: center !important;
-
-    gap: 8px !important;
-
-    width: auto !important;
-    flex: 0 0 auto !important;
-
-    margin: 0 !important;
-}
-
-
-html body .mmic-memberlist-filter-user > span {
-    flex: 0 0 auto !important;
-
-    margin: 0 !important;
-
-    white-space: nowrap !important;
-}
-
-
-html body .mmic-memberlist-filter-user input[type="text"] {
-    width: 150px !important;
-    min-width: 150px !important;
-
-    margin: 0 !important;
-}
-
-
-/* =========================================================
-   TRI + ORDRE
-   On garde leur petit titre au-dessus
-   ========================================================= */
-
-html body .mmic-memberlist-filter-field:not(.mmic-memberlist-filter-user) {
-    display: flex !important;
-    flex-direction: column !important;
-
-    justify-content: center !important;
-
-    gap: 5px !important;
-
-    margin: 0 !important;
-}
-
-
-/* =========================================================
-   BOUTON RECHERCHER
-   ========================================================= */
-
-html body button.mmic-memberlist-submit {
-    position: relative !important;
-
-    display: inline-flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-
-    gap: 7px !important;
-
-    flex: 0 0 auto !important;
-
-    width: auto !important;
-    min-width: 105px !important;
-    height: 32px !important;
-
-    margin: 10px 0 0 !important;
-    padding: 0 13px !important;
-
-    border: 1px solid #d8b08c !important;
-    border-radius: 6px !important;
-
-    background: #102438 !important;
-    color: #fffaf4 !important;
-
-    font-family: Verdana, Arial, sans-serif !important;
-    font-size: 6.5px !important;
-    font-weight: 700 !important;
-
-    letter-spacing: .8px !important;
-    line-height: 1 !important;
-
-    text-transform: uppercase !important;
-
-    box-shadow:
-        inset 0 1px 0 rgba(255,255,255,.08),
-        0 3px 7px rgba(16,36,56,.11) !important;
-
-    cursor: pointer !important;
-
-    box-sizing: border-box !important;
-
-    transition:
-        transform .17s ease,
-        background .17s ease,
-        border-color .17s ease,
-        box-shadow .17s ease !important;
-}
-
-
-html body button.mmic-memberlist-submit:hover {
-    transform: translateY(-1px) !important;
-
-    background: #173751 !important;
-    border-color: #c78d68 !important;
-
-    box-shadow:
-        inset 0 1px 0 rgba(255,255,255,.09),
-        0 5px 10px rgba(16,36,56,.15) !important;
-}
-
-
-/* Icône loupe */
-
-html body .mmic-memberlist-submit-icon {
-    display: block !important;
-
-    width: 11px !important;
-    height: 11px !important;
-
-    flex: 0 0 11px !important;
-
-    background: #e4b184 !important;
-
-    -webkit-mask-image:
-        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M10 3a7 7 0 1 0 4.9 12L20 20.1 21.1 19l-5.2-5.1A7 7 0 0 0 10 3Zm0 2a5 5 0 1 1 0 10 5 5 0 0 1 0-10Z'/%3E%3C/svg%3E") !important;
-
-    mask-image:
-        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M10 3a7 7 0 1 0 4.9 12L20 20.1 21.1 19l-5.2-5.1A7 7 0 0 0 10 3Zm0 2a5 5 0 1 1 0 10 5 5 0 0 1 0-10Z'/%3E%3C/svg%3E") !important;
-
-    -webkit-mask-repeat: no-repeat !important;
-    mask-repeat: no-repeat !important;
-
-    -webkit-mask-position: center !important;
-    mask-position: center !important;
-
-    -webkit-mask-size: contain !important;
-    mask-size: contain !important;
-}
-
-
-html body .mmic-memberlist-submit-text {
-    display: inline-block !important;
-
-    color: #fffaf4 !important;
-
-    line-height: 1 !important;
-}
-
-
-/* =========================================================
-   ÉCRANS PLUS ÉTROITS
-   ========================================================= */
-
-@media (max-width: 900px) {
-
-    html body .mmic-memberlist-filter-inline {
-        flex-wrap: wrap !important;
-    }
-
-}
-/* =========================================================
-   MEMBERLIST — OVERRIDE FINAL
-   RECHERCHER + PROFIL
-   ========================================================= */
-
-
-/* =========================================================
-   BOUTON RECHERCHER — ON LE DOMPTE POUR DE BON
-   ========================================================= */
-
-html body .mmic-memberlist-filter-inline
-button.mmic-memberlist-submit {
-    display: inline-flex !important;
-    flex-direction: row !important;
-    align-items: center !important;
-    justify-content: center !important;
-
-    gap: 6px !important;
-
-    flex: 0 0 112px !important;
-
-    width: 112px !important;
-    min-width: 112px !important;
-    max-width: 112px !important;
-
-    height: 32px !important;
-    min-height: 32px !important;
-    max-height: 32px !important;
-
-    margin: 10px 0 0 0 !important;
-    padding: 0 10px !important;
-
-    border: 1px solid #d8b08c !important;
-    border-radius: 6px !important;
-
-    background: #102438 !important;
-
-    color: #fffaf4 !important;
-
-    font-family: Verdana, Arial, sans-serif !important;
-    font-size: 6px !important;
-    font-weight: 700 !important;
-
-    letter-spacing: .7px !important;
-    line-height: 1 !important;
-
-    text-align: center !important;
-    text-transform: uppercase !important;
-    white-space: nowrap !important;
-
-    overflow: hidden !important;
-
-    box-sizing: border-box !important;
-
-    box-shadow:
-        inset 0 1px 0 rgba(255,255,255,.08),
-        0 3px 7px rgba(16,36,56,.10) !important;
-
-    cursor: pointer !important;
-}
-
-
-/* Les deux spans du bouton */
-html body .mmic-memberlist-submit > span {
-    position: static !important;
-
-    display: inline-flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-
-    margin: 0 !important;
-    padding: 0 !important;
-
-    line-height: 1 !important;
-
-    flex: 0 0 auto !important;
-}
-
-
-/* Texte */
-html body .mmic-memberlist-submit-text {
-    width: auto !important;
-    max-width: none !important;
-
-    color: #fffaf4 !important;
-
-    font-family: Verdana, Arial, sans-serif !important;
-    font-size: 6px !important;
-    font-weight: 700 !important;
-
-    letter-spacing: .7px !important;
-    line-height: 1 !important;
-
-    white-space: nowrap !important;
-}
-
-
-/* Loupe */
-html body .mmic-memberlist-submit-icon {
-    width: 10px !important;
-    height: 10px !important;
-
-    min-width: 10px !important;
-
-    background: #e4b184 !important;
-}
-
-
-html body .mmic-memberlist-submit:hover {
-    transform: translateY(-1px) !important;
-
-    background: #173751 !important;
-
-    border-color: #c78d68 !important;
-}
-
-
-/* =========================================================
-   PROFIL — MÊME FAMILLE QUE LES BOUTONS RONDS
-   ========================================================= */
-
-html body .mmic-member-card-profile {
-    position: relative !important;
-
-    display: inline-flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-
-    gap: 6px !important;
-
-    flex: 0 0 auto !important;
-
-    width: 72px !important;
-    min-width: 72px !important;
-    height: 28px !important;
-
-    margin: 0 !important;
-    padding: 0 10px !important;
-
-    border: 1px solid #d8b08c !important;
-    border-radius: 6px !important;
-
-    background: #102438 !important;
-
-    color: #fffaf4 !important;
-
-    font-family: Verdana, Arial, sans-serif !important;
-    font-size: 6px !important;
-    font-weight: 700 !important;
-
-    letter-spacing: .7px !important;
-    line-height: 1 !important;
-
-    text-decoration: none !important;
-    text-transform: uppercase !important;
-
-    box-sizing: border-box !important;
-
-    box-shadow:
-        inset 0 1px 0 rgba(255,255,255,.08),
-        0 3px 7px rgba(16,36,56,.09) !important;
-
-    transition:
-        transform .16s ease,
-        background .16s ease,
-        border-color .16s ease,
-        box-shadow .16s ease !important;
-}
-
-
-/* Petite icône profil avant le texte */
-html body .mmic-member-card-profile::before {
-    content: "" !important;
-
-    display: block !important;
-
-    width: 10px !important;
-    height: 10px !important;
-
-    flex: 0 0 10px !important;
-
-    background: #e4b184 !important;
-
-    -webkit-mask-image:
-        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10Zm0 2c-5 0-9 2.5-9 5.5V22h18v-2.5C21 16.5 17 14 12 14Z'/%3E%3C/svg%3E") !important;
-
-    mask-image:
-        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10Zm0 2c-5 0-9 2.5-9 5.5V22h18v-2.5C21 16.5 17 14 12 14Z'/%3E%3C/svg%3E") !important;
-
-    -webkit-mask-repeat: no-repeat !important;
-    mask-repeat: no-repeat !important;
-
-    -webkit-mask-position: center !important;
-    mask-position: center !important;
-
-    -webkit-mask-size: contain !important;
-    mask-size: contain !important;
-}
-
-
-html body .mmic-member-card-profile > span {
-    display: inline-block !important;
-
-    margin: 0 !important;
-    padding: 0 !important;
-
-    color: #fffaf4 !important;
-
-    font-size: inherit !important;
-    line-height: 1 !important;
-}
-
-
-html body .mmic-member-card-profile:hover {
-    transform: translateY(-2px) !important;
-
-    background: #173751 !important;
-
-    color: #fffaf4 !important;
-
-    border-color: #c78d68 !important;
-
-    box-shadow:
-        inset 0 1px 0 rgba(255,255,255,.09),
-        0 5px 10px rgba(16,36,56,.14) !important;
-}
-
-
-/* =========================================================
-   ACTIONS — UNE SEULE RANGÉE, AUCUNE RÉBELLION
-   ========================================================= */
-
-html body .mmic-member-card-actions {
-    display: flex !important;
-    flex-direction: row !important;
-
-    align-items: center !important;
-    justify-content: flex-start !important;
-
-    gap: 7px !important;
-
-    flex-wrap: nowrap !important;
-
-    width: 100% !important;
-
-    margin-top: auto !important;
-    padding-top: 10px !important;
-}
-
-
-html body .mmic-member-card-actions > * {
-    float: none !important;
-    position: static !important;
-
-    flex-shrink: 0 !important;
-
-    margin: 0 !important;
-}
-/* =========================================================
-   MEMBERLIST — FIX FINAL DU BOUTON RECHERCHER
-   ========================================================= */
-
-html body .mmic-memberlist-submit {
-    display: inline-grid !important;
-
-    grid-template-columns: 12px auto !important;
-    align-items: center !important;
-    justify-content: center !important;
-
-    column-gap: 8px !important;
-
-    width: 118px !important;
-    min-width: 118px !important;
-    max-width: 118px !important;
-
-    padding: 0 12px !important;
-
-    overflow: visible !important;
-}
-
-
-/* Loupe : sa propre colonne, pas touche au texte */
-html body .mmic-memberlist-submit-icon {
-    display: block !important;
-
-    grid-column: 1 !important;
-
-    width: 10px !important;
-    height: 10px !important;
-
-    min-width: 10px !important;
-    max-width: 10px !important;
-
-    margin: 0 !important;
-    padding: 0 !important;
-
-    transform: none !important;
-}
-
-
-/* Texte : sa propre colonne */
-html body .mmic-memberlist-submit-text {
-    display: block !important;
-
-    grid-column: 2 !important;
-
-    width: auto !important;
-
-    margin: 0 !important;
-    padding: 0 !important;
-
-    color: #fffaf4 !important;
-
-    font-size: 6px !important;
-    font-weight: 700 !important;
-
-    letter-spacing: .7px !important;
-    line-height: 1 !important;
-
-    white-space: nowrap !important;
-
-    transform: none !important;
-}
-/* Bye bye la loupe rebelle */
-.mmic-memberlist-submit-icon{
-    display:none !important;
-}
-.mmic-memberlist-submit{
-    width:110px !important;
-    min-width:110px !important;
-
-    display:flex !important;
-    justify-content:center !important;
-    align-items:center !important;
-
-    padding:0 14px !important;
-}
-
-.mmic-memberlist-submit-text{
-    margin:0 !important;
-    padding:0 !important;
-
-    position:static !important;
-    transform:none !important;
-
-    display:block !important;
 }
