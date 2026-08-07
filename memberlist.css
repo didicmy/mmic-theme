@@ -2040,3 +2040,27 @@ html body .mmic-memberlist-submit-text {
 
     transform: none !important;
 }
+/* Bye bye la loupe rebelle */
+.mmic-memberlist-submit-icon{
+    display:none !important;
+}
+.mmic-memberlist-submit{
+    width:110px !important;
+    min-width:110px !important;
+
+    display:flex !important;
+    justify-content:center !important;
+    align-items:center !important;
+
+    padding:0 14px !important;
+}
+
+.mmic-memberlist-submit-text{
+    margin:0 !important;
+    padding:0 !important;
+
+    position:static !important;
+    transform:none !important;
+
+    display:block !important;
+}
