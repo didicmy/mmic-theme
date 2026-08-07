@@ -663,29 +663,30 @@ html body .mmic-pm-status-icon {
 }
 
 
-html body .mmic-pm-status-icon::before {
-    content: "";
+/* =========================================================
+   ICÔNE ENVELOPPE
+   ========================================================= */
 
-    width: 14px;
-    height: 14px;
-
-    background: #e4b184;
-
-    -webkit-mask-image:
-        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Zm0 4v10h16V8l-8 5L4 8Z'/%3E%3C/svg%3E");
-
-    mask-image:
-        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Zm0 4v10h16V8l-8 5L4 8Z'/%3E%3C/svg%3E");
-
-    -webkit-mask-repeat: no-repeat;
-    mask-repeat: no-repeat;
-
-    -webkit-mask-position: center;
-    mask-position: center;
-
-    -webkit-mask-size: contain;
-    mask-size: contain;
+html body .mmic-pm-status-icon{
+    position:relative !important;
 }
+
+html body .mmic-pm-status-icon::before{
+    content:"✉" !important;
+
+    position:absolute !important;
+
+    left:50%;
+    top:50%;
+
+    transform:translate(-50%,-50%);
+
+    font-size:16px !important;
+    line-height:1 !important;
+
+    color:#f4dcc1 !important;
+}
+
 
 
 /* sujet */
@@ -1104,7 +1105,19 @@ html body .mmic-pm-message:has(
     box-shadow:
         0 4px 11px rgba(16,36,56,.07) !important;
 }
+/* Message non lu */
 
+html body .mmic-pm-message:has(
+.mmic-pm-original-folder img[src*="folder_new"]
+)
+.mmic-pm-status-icon::before{
+
+    content:"📩" !important;
+
+    color:#f0c79f !important;
+
+    transform:translate(-50%,-50%) scale(1.05);
+}
 
 /* Petit trait cuivre à gauche */
 
@@ -1203,7 +1216,17 @@ html body .mmic-pm-message:has(
             #fffdf9 100%
         ) !important;
 }
+/* Message lu */
 
+html body .mmic-pm-message:has(
+.mmic-pm-original-folder img[src$="/folder.gif"]
+)
+.mmic-pm-status-icon::before{
+
+    content:"✉" !important;
+
+    color:#dfcdbc !important;
+}
 
 /* Sujet lu légèrement plus doux */
 
