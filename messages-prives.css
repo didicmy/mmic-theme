@@ -120,7 +120,7 @@ html body .mmic-pm-hero-word {
     right: 25px;
     bottom: -12px;
 
-    color: rgba(255,255,255,.018);
+    color: rgba(255,255,255,.014);
 
     font-family: Georgia, serif;
     font-size: 58px;
@@ -1059,4 +1059,20 @@ html body .mmic-pm-jumpbox {
         width: 100%;
     }
 
+}
+/* =========================================================
+   MESSAGES PRIVÉS — FINITIONS
+   ========================================================= */
+
+/* Sujet au survol */
+
+html body .mmic-pm-message-title {
+    transition:
+        color .16s ease,
+        letter-spacing .16s ease !important;
+}
+
+html body .mmic-pm-message-title:hover {
+    color: #b97a56 !important;
+    letter-spacing: .15px !important;
 }
