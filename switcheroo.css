@@ -12,7 +12,7 @@
 html body .mmic-switcheroo {
     position: fixed !important;
 
-    left: 6px !important;
+    left: 16px !important;
     top: 95px !important;
 
     transform: none !important;
