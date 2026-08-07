@@ -1,0 +1,215 @@
+/* =========================================================
+   MEET ME IN CHICAGO
+   SWITCHEROO
+   ========================================================= */
+
+
+/* ---------------------------------------------------------
+   BARRE PRINCIPALE
+   --------------------------------------------------------- */
+
+html body .mmic-switcheroo {
+    position: fixed !important;
+
+    left: 14px !important;
+    top: 50% !important;
+
+    transform: translateY(-50%) !important;
+
+    z-index: 9999 !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+
+    align-items: center !important;
+
+    gap: 8px !important;
+
+    width: 54px !important;
+
+    padding: 9px 7px !important;
+
+    border: 1px solid rgba(216,176,140,.60) !important;
+    border-radius: 10px !important;
+
+    background:
+        linear-gradient(
+            180deg,
+            #102438 0%,
+            #0c1d2f 100%
+        ) !important;
+
+    box-shadow:
+        0 8px 22px rgba(16,36,56,.18),
+        inset 0 1px 0 rgba(255,255,255,.06) !important;
+
+    box-sizing: border-box !important;
+}
+
+
+/* ---------------------------------------------------------
+   ÉLÉMENTS
+   --------------------------------------------------------- */
+
+html body .mmic-switcheroo * {
+    box-sizing: border-box !important;
+}
+
+
+/* ---------------------------------------------------------
+   AVATARS DES COMPTES
+   --------------------------------------------------------- */
+
+html body .mmic-switcheroo img {
+    display: block !important;
+
+    width: 38px !important;
+    height: 38px !important;
+
+    object-fit: cover !important;
+    object-position: center !important;
+
+    border: 1px solid #d8b08c !important;
+    border-radius: 50% !important;
+
+    background: #f8efe5 !important;
+
+    box-shadow:
+        0 3px 8px rgba(0,0,0,.18) !important;
+
+    transition:
+        transform .16s ease,
+        border-color .16s ease,
+        box-shadow .16s ease !important;
+}
+
+
+html body .mmic-switcheroo img:hover {
+    transform: scale(1.07) !important;
+
+    border-color: #e4b184 !important;
+
+    box-shadow:
+        0 4px 10px rgba(0,0,0,.25),
+        0 0 0 2px rgba(228,177,132,.12) !important;
+}
+
+
+/* ---------------------------------------------------------
+   BOUTONS GÉNÉRAUX
+   --------------------------------------------------------- */
+
+html body .mmic-switcheroo button,
+html body .mmic-switcheroo a {
+    text-decoration: none !important;
+
+    cursor: pointer !important;
+}
+
+
+/* ---------------------------------------------------------
+   BOUTON AJOUTER
+   --------------------------------------------------------- */
+
+html body .mmic-switcheroo [class*="add"],
+html body .mmic-switcheroo [data-action="add"] {
+    display: inline-flex !important;
+
+    align-items: center !important;
+    justify-content: center !important;
+
+    width: 32px !important;
+    height: 32px !important;
+
+    margin-top: 3px !important;
+
+    padding: 0 !important;
+
+    border: 1px solid #d8b08c !important;
+    border-radius: 50% !important;
+
+    background: #102438 !important;
+    color: #e4b184 !important;
+
+    font-family: Georgia, serif !important;
+
+    font-size: 18px !important;
+    line-height: 1 !important;
+
+    box-shadow:
+        inset 0 1px 0 rgba(255,255,255,.08),
+        0 3px 7px rgba(0,0,0,.12) !important;
+}
+
+
+/* ---------------------------------------------------------
+   ÉTAT ACTIF
+   --------------------------------------------------------- */
+
+html body .mmic-switcheroo .active img,
+html body .mmic-switcheroo [class*="active"] img {
+    border-color: #e4b184 !important;
+
+    box-shadow:
+        0 0 0 2px #102438,
+        0 0 0 3px #d8b08c,
+        0 4px 9px rgba(0,0,0,.18) !important;
+}
+
+
+/* ---------------------------------------------------------
+   MODALE DE CONNEXION
+   --------------------------------------------------------- */
+
+html body [class*="switcheroo"][class*="modal"],
+html body [class*="switcheroo"] [class*="modal"] {
+    color: #102438 !important;
+
+    font-family: Verdana, Arial, sans-serif !important;
+}
+
+
+html body [class*="switcheroo"] input[type="text"],
+html body [class*="switcheroo"] input[type="password"] {
+    height: 34px !important;
+
+    padding: 0 10px !important;
+
+    border: 1px solid #dfcdbc !important;
+    border-radius: 6px !important;
+
+    background: #fffdf9 !important;
+    color: #102438 !important;
+
+    outline: none !important;
+}
+
+
+html body [class*="switcheroo"] input:focus {
+    border-color: #c78d68 !important;
+
+    box-shadow:
+        0 0 0 2px rgba(185,122,86,.10) !important;
+}
+
+
+/* ---------------------------------------------------------
+   RESPONSIVE
+   --------------------------------------------------------- */
+
+@media (max-width: 900px) {
+
+    html body .mmic-switcheroo {
+        left: 8px !important;
+
+        width: 48px !important;
+
+        padding: 7px 5px !important;
+    }
+
+    html body .mmic-switcheroo img {
+        width: 34px !important;
+        height: 34px !important;
+    }
+
+}
