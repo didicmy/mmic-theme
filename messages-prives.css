@@ -2036,3 +2036,107 @@ input.mmic-pm-read-button--delete:hover {
     background: #7c4545 !important;
     color: #fffaf4 !important;
 }
+/* =========================================================
+   LECTURE MP — ANTI CACHE-CACHE DES BOUTONS
+   ========================================================= */
+
+html body .mmic-pm-read-card
+.mmic-pm-read-footer
+.mmic-pm-read-management {
+    display: flex !important;
+
+    flex-wrap: wrap !important;
+
+    align-items: center !important;
+    justify-content: flex-end !important;
+
+    gap: 7px !important;
+
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+
+html body .mmic-pm-read-card
+.mmic-pm-read-footer
+.mmic-pm-read-management
+input[type="submit"].mmic-pm-read-button {
+
+    appearance: none !important;
+    -webkit-appearance: none !important;
+
+    position: static !important;
+
+    display: inline-block !important;
+
+    visibility: visible !important;
+    opacity: 1 !important;
+
+    float: none !important;
+
+    width: auto !important;
+    min-width: 125px !important;
+    max-width: none !important;
+
+    height: 32px !important;
+    min-height: 32px !important;
+
+    margin: 0 !important;
+    padding: 0 12px !important;
+
+    overflow: visible !important;
+
+    border: 1px solid #d8b08c !important;
+    border-radius: 6px !important;
+
+    background: #fffaf4 !important;
+    color: #102438 !important;
+
+    font-family: Verdana, Arial, sans-serif !important;
+    font-size: 6px !important;
+    font-weight: 700 !important;
+
+    letter-spacing: .6px !important;
+    line-height: 30px !important;
+
+    text-align: center !important;
+    text-indent: 0 !important;
+    text-transform: uppercase !important;
+
+    white-space: nowrap !important;
+
+    box-shadow:
+        0 3px 7px rgba(16,36,56,.08) !important;
+
+    cursor: pointer !important;
+
+    pointer-events: auto !important;
+}
+
+
+html body .mmic-pm-read-card
+.mmic-pm-read-footer
+.mmic-pm-read-management
+input[type="submit"].mmic-pm-read-button:hover {
+
+    transform: translateY(-1px) !important;
+
+    border-color: #c78d68 !important;
+
+    background: #102438 !important;
+    color: #fffaf4 !important;
+}
+
+
+/* suppression */
+
+html body .mmic-pm-read-card
+.mmic-pm-read-footer
+.mmic-pm-read-management
+input[type="submit"].mmic-pm-read-button--delete:hover {
+
+    border-color: #915858 !important;
+
+    background: #7c4545 !important;
+    color: #fffaf4 !important;
+}
