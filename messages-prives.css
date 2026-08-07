@@ -1341,43 +1341,93 @@ html body .mmic-pm-contact-item:empty {
     display: none !important;
 }
 
+/* =========================================================
+   LECTURE MP — BOUTONS CONTACT SOUS L'AVATAR
+   ========================================================= */
 
-/* liens */
+html body .mmic-pm-read-contact {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    gap: 7px;
+
+    width: 100%;
+
+    margin-top: 14px;
+    padding-top: 12px;
+
+    border-top: 1px solid #ead8c8;
+}
+
+html body .mmic-pm-contact-item:empty {
+    display: none !important;
+}
 
 html body .mmic-pm-contact-item a {
     display: inline-flex !important;
-
     align-items: center !important;
     justify-content: center !important;
 
-    width: 28px !important;
-    height: 28px !important;
+    width: 31px !important;
+    height: 31px !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
 
     overflow: hidden !important;
 
     border: 1px solid #d8b08c !important;
-    border-radius: 50% !important;
+    border-radius: 7px !important;
 
-    background: #102438 !important;
-
-    color: #e4b184 !important;
+    background: #fffaf4 !important;
+    color: #102438 !important;
 
     text-decoration: none !important;
 
     box-shadow:
-        0 2px 5px rgba(16,36,56,.12) !important;
+        0 2px 5px rgba(16,36,56,.07) !important;
 
     transition:
         transform .16s ease,
-        background .16s ease !important;
+        background .16s ease,
+        border-color .16s ease,
+        box-shadow .16s ease !important;
 }
-
 
 html body .mmic-pm-contact-item a:hover {
     transform: translateY(-1px) !important;
 
-    background: #173751 !important;
+    border-color: #c78d68 !important;
+
+    background: #102438 !important;
+
+    box-shadow:
+        0 4px 8px rgba(16,36,56,.12) !important;
 }
+
+/* anciennes images Forumactif */
+
+html body .mmic-pm-contact-item img {
+    display: block !important;
+
+    max-width: 14px !important;
+    max-height: 14px !important;
+
+    margin: 0 !important;
+
+    opacity: .82 !important;
+
+    transition:
+        opacity .16s ease,
+        filter .16s ease !important;
+}
+
+html body .mmic-pm-contact-item a:hover img {
+    opacity: 1 !important;
+}
+
 
 
 /* anciennes images Forumactif */
