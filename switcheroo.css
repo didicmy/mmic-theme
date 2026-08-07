@@ -6,15 +6,16 @@
 
 /* ---------------------------------------------------------
    BARRE PRINCIPALE
+   Placée en haut à gauche, sous la navigation
    --------------------------------------------------------- */
 
 html body .mmic-switcheroo {
     position: fixed !important;
 
-    left: 14px !important;
-    top: 50% !important;
+    left: 26px !important;
+    top: 185px !important;
 
-    transform: translateY(-50%) !important;
+    transform: none !important;
 
     z-index: 9999 !important;
 
@@ -23,13 +24,13 @@ html body .mmic-switcheroo {
 
     align-items: center !important;
 
-    gap: 8px !important;
+    gap: 7px !important;
 
-    width: 54px !important;
+    width: 58px !important;
 
-    padding: 9px 7px !important;
+    padding: 8px 6px !important;
 
-    border: 1px solid rgba(216,176,140,.60) !important;
+    border: 1px solid rgba(216,176,140,.58) !important;
     border-radius: 10px !important;
 
     background:
@@ -57,52 +58,122 @@ html body .mmic-switcheroo * {
 
 
 /* ---------------------------------------------------------
+   LISTE DU SWITCHEROO
+   --------------------------------------------------------- */
+
+html body .mmic-switcheroo ul {
+    display: flex !important;
+    flex-direction: column !important;
+
+    align-items: center !important;
+
+    gap: 7px !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    list-style: none !important;
+}
+
+
+html body .mmic-switcheroo li {
+    position: relative !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    list-style: none !important;
+}
+
+
+/* ---------------------------------------------------------
+   MINI-CARTES / SQUIRCLES
+   --------------------------------------------------------- */
+
+html body .mmic-switcheroo .switcheroo__squircle {
+    position: relative !important;
+
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    width: 42px !important;
+    height: 42px !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    border: 1px solid #d8b08c !important;
+    border-radius: 11px !important;
+
+    background: #102438 !important;
+
+    overflow: hidden !important;
+
+    box-shadow:
+        inset 0 1px 0 rgba(255,255,255,.06),
+        0 3px 8px rgba(0,0,0,.14) !important;
+
+    transition:
+        transform .17s ease,
+        border-color .17s ease,
+        background .17s ease,
+        box-shadow .17s ease !important;
+}
+
+
+html body .mmic-switcheroo .switcheroo__squircle:hover {
+    transform: translateY(-2px) scale(1.04) !important;
+
+    border-color: #e4b184 !important;
+
+    box-shadow:
+        inset 0 1px 0 rgba(255,255,255,.08),
+        0 6px 12px rgba(0,0,0,.20) !important;
+}
+
+
+/* ---------------------------------------------------------
    AVATARS DES COMPTES
    --------------------------------------------------------- */
 
 html body .mmic-switcheroo img {
     display: block !important;
 
-    width: 38px !important;
-    height: 38px !important;
+    width: 100% !important;
+    height: 100% !important;
 
     object-fit: cover !important;
     object-position: center !important;
 
-    border: 1px solid #d8b08c !important;
-    border-radius: 50% !important;
+    border: 0 !important;
+    border-radius: 10px !important;
 
     background: #f8efe5 !important;
 
-    box-shadow:
-        0 3px 8px rgba(0,0,0,.18) !important;
+    box-shadow: none !important;
 
     transition:
-        transform .16s ease,
-        border-color .16s ease,
-        box-shadow .16s ease !important;
+        transform .17s ease !important;
 }
 
 
-html body .mmic-switcheroo img:hover {
-    transform: scale(1.07) !important;
-
-    border-color: #e4b184 !important;
-
-    box-shadow:
-        0 4px 10px rgba(0,0,0,.25),
-        0 0 0 2px rgba(228,177,132,.12) !important;
+html body .mmic-switcheroo .switcheroo__squircle:hover img {
+    transform: scale(1.05) !important;
 }
 
 
 /* ---------------------------------------------------------
-   BOUTONS GÉNÉRAUX
+   LIENS / BOUTONS
    --------------------------------------------------------- */
 
 html body .mmic-switcheroo button,
 html body .mmic-switcheroo a {
     text-decoration: none !important;
-
     cursor: pointer !important;
 }
 
@@ -111,34 +182,141 @@ html body .mmic-switcheroo a {
    BOUTON AJOUTER
    --------------------------------------------------------- */
 
-html body .mmic-switcheroo [class*="add"],
+html body .mmic-switcheroo .switcheroo__squircle--button,
+html body .mmic-switcheroo [data-action="open-login"],
 html body .mmic-switcheroo [data-action="add"] {
     display: inline-flex !important;
 
     align-items: center !important;
     justify-content: center !important;
 
-    width: 32px !important;
-    height: 32px !important;
+    width: 42px !important;
+    height: 42px !important;
 
-    margin-top: 3px !important;
-
+    margin: 0 !important;
     padding: 0 !important;
 
     border: 1px solid #d8b08c !important;
-    border-radius: 50% !important;
+    border-radius: 11px !important;
 
     background: #102438 !important;
     color: #e4b184 !important;
 
-    font-family: Georgia, serif !important;
+    font-family: Georgia, "Times New Roman", serif !important;
+    font-size: 22px !important;
+    font-weight: 400 !important;
 
-    font-size: 18px !important;
     line-height: 1 !important;
+
+    overflow: hidden !important;
+
+    box-shadow:
+        inset 0 1px 0 rgba(255,255,255,.06),
+        0 3px 8px rgba(0,0,0,.14) !important;
+
+    transition:
+        transform .17s ease,
+        background .17s ease,
+        color .17s ease,
+        border-color .17s ease,
+        box-shadow .17s ease !important;
+}
+
+
+html body .mmic-switcheroo .switcheroo__squircle--button:hover,
+html body .mmic-switcheroo [data-action="open-login"]:hover,
+html body .mmic-switcheroo [data-action="add"]:hover {
+    transform: translateY(-2px) scale(1.04) !important;
+
+    background: #173751 !important;
+    color: #fffaf4 !important;
+
+    border-color: #e4b184 !important;
 
     box-shadow:
         inset 0 1px 0 rgba(255,255,255,.08),
-        0 3px 7px rgba(0,0,0,.12) !important;
+        0 6px 12px rgba(0,0,0,.20) !important;
+}
+
+
+/* ---------------------------------------------------------
+   TOOLTIP / TEXTE "ASSOCIER UN PERSONNAGE"
+   Caché par défaut, visible seulement au hover
+   --------------------------------------------------------- */
+
+html body .mmic-switcheroo .switcheroo__popper {
+    position: absolute !important;
+
+    left: 52px !important;
+    top: 50% !important;
+
+    transform:
+        translateY(-50%)
+        translateX(-4px) !important;
+
+    display: block !important;
+
+    width: max-content !important;
+    max-width: 170px !important;
+
+    padding: 7px 9px !important;
+
+    border: 1px solid #d8b08c !important;
+    border-radius: 6px !important;
+
+    background: #102438 !important;
+
+    color: #fffaf4 !important;
+
+    font-family: Verdana, Arial, sans-serif !important;
+    font-size: 7px !important;
+    font-weight: 600 !important;
+
+    letter-spacing: .3px !important;
+    line-height: 1.4 !important;
+
+    white-space: nowrap !important;
+
+    opacity: 0 !important;
+    visibility: hidden !important;
+
+    pointer-events: none !important;
+
+    box-shadow:
+        0 5px 12px rgba(16,36,56,.20) !important;
+
+    transition:
+        opacity .16s ease,
+        transform .16s ease,
+        visibility .16s ease !important;
+}
+
+
+/* Apparition du tooltip */
+
+html body .mmic-switcheroo li:hover .switcheroo__popper {
+    opacity: 1 !important;
+    visibility: visible !important;
+
+    transform:
+        translateY(-50%)
+        translateX(0) !important;
+}
+
+
+/* Texte interne */
+
+html body .mmic-switcheroo .switcheroo__popper-text {
+    display: block !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    color: inherit !important;
+
+    font: inherit !important;
+
+    white-space: nowrap !important;
 }
 
 
@@ -146,6 +324,8 @@ html body .mmic-switcheroo [data-action="add"] {
    ÉTAT ACTIF
    --------------------------------------------------------- */
 
+html body .mmic-switcheroo .active .switcheroo__squircle,
+html body .mmic-switcheroo [class*="active"] .switcheroo__squircle,
 html body .mmic-switcheroo .active img,
 html body .mmic-switcheroo [class*="active"] img {
     border-color: #e4b184 !important;
@@ -195,21 +375,39 @@ html body [class*="switcheroo"] input:focus {
 
 /* ---------------------------------------------------------
    RESPONSIVE
+   Ici ce n'est PAS un doublon :
+   on adapte simplement le placement/taille.
    --------------------------------------------------------- */
 
 @media (max-width: 900px) {
 
     html body .mmic-switcheroo {
-        left: 8px !important;
+        left: 10px !important;
+        top: 175px !important;
 
-        width: 48px !important;
+        width: 50px !important;
 
-        padding: 7px 5px !important;
+        padding: 7px 4px !important;
     }
+
+
+    html body .mmic-switcheroo .switcheroo__squircle,
+    html body .mmic-switcheroo .switcheroo__squircle--button,
+    html body .mmic-switcheroo [data-action="open-login"],
+    html body .mmic-switcheroo [data-action="add"] {
+        width: 36px !important;
+        height: 36px !important;
+
+        border-radius: 9px !important;
+    }
+
 
     html body .mmic-switcheroo img {
-        width: 34px !important;
-        height: 34px !important;
+        border-radius: 8px !important;
     }
 
+
+    html body .mmic-switcheroo .switcheroo__popper {
+        left: 44px !important;
+    }
 }
