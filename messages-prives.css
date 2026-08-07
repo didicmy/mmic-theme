@@ -4372,3 +4372,302 @@ html body .mmic-pm-compose-page
 
     background: #fbf5ed !important;
 }
+/* =========================================================
+   COMPOSITION MP — LARGEUR ÉDITEUR + SMILEYS
+   ========================================================= */
+
+/* Toute la ligne éditeur */
+html body .mmic-pm-compose-page
+#parent_editor_simple {
+    display: flex !important;
+    align-items: flex-start !important;
+
+    width: 100% !important;
+    max-width: none !important;
+
+    gap: 12px !important;
+
+    padding: 12px !important;
+
+    background: transparent !important;
+}
+
+
+/* =========================================================
+   ÉDITEUR
+   ========================================================= */
+
+html body .mmic-pm-compose-page
+#parent_editor_simple > td:nth-child(2) {
+    order: 1 !important;
+
+    display: block !important;
+
+    flex: 1 1 0 !important;
+
+    width: auto !important;
+    min-width: 0 !important;
+    max-width: none !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    background: transparent !important;
+}
+
+
+/* SCEditor prend TOUTE la place disponible */
+
+html body .mmic-pm-compose-page
+#parent_editor_simple > td:nth-child(2)
+.sceditor-container {
+    width: 100% !important;
+    max-width: none !important;
+
+    margin: 0 !important;
+}
+
+
+/* zone d'écriture */
+
+html body .mmic-pm-compose-page
+#parent_editor_simple > td:nth-child(2)
+.sceditor-container iframe,
+
+html body .mmic-pm-compose-page
+#parent_editor_simple > td:nth-child(2)
+.sceditor-container textarea,
+
+html body .mmic-pm-compose-page
+#text_editor_textarea {
+    width: 100% !important;
+
+    min-height: 330px !important;
+}
+
+
+/* =========================================================
+   COLONNE SMILEYS
+   ========================================================= */
+
+html body .mmic-pm-compose-page
+#parent_editor_simple > td:first-child {
+    order: 2 !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+
+    align-items: center !important;
+    justify-content: flex-start !important;
+
+    flex: 0 0 170px !important;
+
+    width: 170px !important;
+    min-width: 170px !important;
+    max-width: 170px !important;
+
+    height: auto !important;
+    min-height: 0 !important;
+
+    margin: 0 !important;
+    padding: 10px !important;
+
+    border: 1px solid #ead8c8 !important;
+    border-radius: 7px !important;
+
+    background: #fbf5ed !important;
+
+    align-self: flex-start !important;
+}
+
+
+/* Titre */
+
+html body .mmic-pm-compose-page
+#parent_editor_simple > td:first-child > span,
+html body .mmic-pm-compose-page
+#parent_editor_simple > td:first-child b {
+    width: 100% !important;
+
+    margin: 0 0 8px !important;
+
+    text-align: center !important;
+}
+
+
+/* =========================================================
+   IFRAME DES SMILEYS
+   ========================================================= */
+
+/*
+ Forumactif donne à cette iframe sa propre largeur.
+ On la force à rester centrée dans notre petit cadre.
+*/
+
+html body .mmic-pm-compose-page
+#parent_editor_simple > td:first-child iframe {
+    display: block !important;
+
+    width: 150px !important;
+    min-width: 150px !important;
+    max-width: 150px !important;
+
+    height: 255px !important;
+    min-height: 0 !important;
+
+    margin: 0 auto !important;
+    padding: 0 !important;
+
+    border: 0 !important;
+
+    background: transparent !important;
+}/* =========================================================
+   COMPOSITION MP — LARGEUR ÉDITEUR + SMILEYS
+   ========================================================= */
+
+/* Toute la ligne éditeur */
+html body .mmic-pm-compose-page
+#parent_editor_simple {
+    display: flex !important;
+    align-items: flex-start !important;
+
+    width: 100% !important;
+    max-width: none !important;
+
+    gap: 12px !important;
+
+    padding: 12px !important;
+
+    background: transparent !important;
+}
+
+
+/* =========================================================
+   ÉDITEUR
+   ========================================================= */
+
+html body .mmic-pm-compose-page
+#parent_editor_simple > td:nth-child(2) {
+    order: 1 !important;
+
+    display: block !important;
+
+    flex: 1 1 0 !important;
+
+    width: auto !important;
+    min-width: 0 !important;
+    max-width: none !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    background: transparent !important;
+}
+
+
+/* SCEditor prend TOUTE la place disponible */
+
+html body .mmic-pm-compose-page
+#parent_editor_simple > td:nth-child(2)
+.sceditor-container {
+    width: 100% !important;
+    max-width: none !important;
+
+    margin: 0 !important;
+}
+
+
+/* zone d'écriture */
+
+html body .mmic-pm-compose-page
+#parent_editor_simple > td:nth-child(2)
+.sceditor-container iframe,
+
+html body .mmic-pm-compose-page
+#parent_editor_simple > td:nth-child(2)
+.sceditor-container textarea,
+
+html body .mmic-pm-compose-page
+#text_editor_textarea {
+    width: 100% !important;
+
+    min-height: 330px !important;
+}
+
+
+/* =========================================================
+   COLONNE SMILEYS
+   ========================================================= */
+
+html body .mmic-pm-compose-page
+#parent_editor_simple > td:first-child {
+    order: 2 !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+
+    align-items: center !important;
+    justify-content: flex-start !important;
+
+    flex: 0 0 170px !important;
+
+    width: 170px !important;
+    min-width: 170px !important;
+    max-width: 170px !important;
+
+    height: auto !important;
+    min-height: 0 !important;
+
+    margin: 0 !important;
+    padding: 10px !important;
+
+    border: 1px solid #ead8c8 !important;
+    border-radius: 7px !important;
+
+    background: #fbf5ed !important;
+
+    align-self: flex-start !important;
+}
+
+
+/* Titre */
+
+html body .mmic-pm-compose-page
+#parent_editor_simple > td:first-child > span,
+html body .mmic-pm-compose-page
+#parent_editor_simple > td:first-child b {
+    width: 100% !important;
+
+    margin: 0 0 8px !important;
+
+    text-align: center !important;
+}
+
+
+/* =========================================================
+   IFRAME DES SMILEYS
+   ========================================================= */
+
+/*
+ Forumactif donne à cette iframe sa propre largeur.
+ On la force à rester centrée dans notre petit cadre.
+*/
+
+html body .mmic-pm-compose-page
+#parent_editor_simple > td:first-child iframe {
+    display: block !important;
+
+    width: 150px !important;
+    min-width: 150px !important;
+    max-width: 150px !important;
+
+    height: 255px !important;
+    min-height: 0 !important;
+
+    margin: 0 auto !important;
+    padding: 0 !important;
+
+    border: 0 !important;
+
+    background: transparent !important;
+}
