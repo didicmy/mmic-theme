@@ -984,3 +984,215 @@ html body .mmic-memberlist-submit > span {
     font-size: 11px !important;
     line-height: 1 !important;
 }
+/* =========================================================
+   MEMBERLIST — ALIGNEMENT FINAL DES ACTIONS
+   Profil / MP / Site
+   ========================================================= */
+
+
+/* La zone devient une vraie ligne */
+html body .mmic-member-card-actions {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+
+    gap: 7px !important;
+
+    width: 100% !important;
+
+    margin-top: auto !important;
+    padding-top: 11px !important;
+
+    border-top: 1px solid rgba(216,176,140,.28) !important;
+
+    box-sizing: border-box !important;
+}
+
+
+/* Tous les enfants restent dans la rangée */
+html body .mmic-member-card-actions > * {
+    position: static !important;
+
+    display: inline-flex !important;
+
+    flex: 0 0 auto !important;
+
+    margin: 0 !important;
+}
+
+
+/* =========================================================
+   PROFIL
+   ========================================================= */
+
+html body .mmic-member-card-profile {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    width: auto !important;
+    min-width: 64px !important;
+    height: 28px !important;
+
+    margin: 0 !important;
+    padding: 0 11px !important;
+
+    border: 1px solid rgba(216,176,140,.58) !important;
+    border-radius: 6px !important;
+
+    background:
+        linear-gradient(
+            180deg,
+            #fffdf9 0%,
+            #f7f0e8 100%
+        ) !important;
+
+    color: #102438 !important;
+
+    font-family: Verdana, Arial, sans-serif !important;
+    font-size: 6.5px !important;
+    font-weight: 700 !important;
+
+    letter-spacing: .8px !important;
+    line-height: 1 !important;
+
+    text-decoration: none !important;
+    text-transform: uppercase !important;
+
+    box-sizing: border-box !important;
+}
+
+
+/* =========================================================
+   MP + SITE
+   ========================================================= */
+
+html body .mmic-member-card-action {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    width: 28px !important;
+    min-width: 28px !important;
+    height: 28px !important;
+    min-height: 28px !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    border: 0 !important;
+    background: transparent !important;
+
+    box-shadow: none !important;
+
+    line-height: 1 !important;
+}
+
+
+/* Le lien interne devient le bouton rond */
+html body .mmic-member-card-action a {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    width: 28px !important;
+    min-width: 28px !important;
+    height: 28px !important;
+    min-height: 28px !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    border: 1px solid #d8b08c !important;
+    border-radius: 50% !important;
+
+    background: #102438 !important;
+
+    box-sizing: border-box !important;
+
+    line-height: 1 !important;
+
+    text-decoration: none !important;
+
+    box-shadow:
+        inset 0 1px 0 rgba(255,255,255,.08),
+        0 3px 7px rgba(16,36,56,.10) !important;
+}
+
+
+/* On retire définitivement les vieux GIF */
+html body .mmic-member-card-action img {
+    display: none !important;
+}
+
+
+/* =========================================================
+   ICÔNES
+   ========================================================= */
+
+html body .mmic-member-card-action a::before {
+    content: "" !important;
+
+    display: block !important;
+
+    width: 11px !important;
+    height: 11px !important;
+
+    background: #e4b184 !important;
+
+    -webkit-mask-repeat: no-repeat !important;
+    mask-repeat: no-repeat !important;
+
+    -webkit-mask-position: center !important;
+    mask-position: center !important;
+
+    -webkit-mask-size: contain !important;
+    mask-size: contain !important;
+}
+
+
+/* MP */
+
+html body .mmic-member-card-pm a::before {
+    -webkit-mask-image:
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M3 5h18v14H3V5Zm2 2v1l7 5 7-5V7l-7 5-7-5Zm14 10V10l-7 5-7-5v7h14Z'/%3E%3C/svg%3E") !important;
+
+    mask-image:
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M3 5h18v14H3V5Zm2 2v1l7 5 7-5V7l-7 5-7-5Zm14 10V10l-7 5-7-5v7h14Z'/%3E%3C/svg%3E") !important;
+}
+
+
+/* SITE */
+
+html body .mmic-member-card-www a::before {
+    -webkit-mask-image:
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='m12 3 9 8h-2v9h-5v-6h-4v6H5v-9H3l9-8Z'/%3E%3C/svg%3E") !important;
+
+    mask-image:
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='m12 3 9 8h-2v9h-5v-6h-4v6H5v-9H3l9-8Z'/%3E%3C/svg%3E") !important;
+}
+
+
+/* =========================================================
+   HOVER
+   ========================================================= */
+
+html body .mmic-member-card-profile:hover {
+    transform: translateY(-1px) !important;
+
+    border-color: #c78d68 !important;
+
+    color: #b97a56 !important;
+}
+
+
+html body .mmic-member-card-action a:hover {
+    transform: translateY(-2px) scale(1.04) !important;
+
+    background: #173751 !important;
+}
+/* Wrapper vide = disparu */
+html body .mmic-member-card-action:empty {
+    display: none !important;
+}
