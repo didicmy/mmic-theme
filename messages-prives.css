@@ -1164,3 +1164,662 @@ html body .mmic-pm-message:hover
 .mmic-pm-message-title {
     color: #b97a56 !important;
 }
+/* =========================================================
+   MEET ME IN CHICAGO
+   MESSAGES PRIVÉS — LECTURE
+   ========================================================= */
+
+
+/* ---------------------------------------------------------
+   CONTENEUR
+   --------------------------------------------------------- */
+
+html body .mmic-pm-read {
+    width: calc(100% - 24px);
+    max-width: 1100px;
+
+    margin: 26px auto 40px;
+
+    color: #102438;
+
+    box-sizing: border-box;
+}
+
+
+html body .mmic-pm-read * {
+    box-sizing: border-box;
+}
+
+
+/* ---------------------------------------------------------
+   CARTE PRINCIPALE
+   --------------------------------------------------------- */
+
+html body .mmic-pm-read-card {
+    display: grid;
+
+    grid-template-columns: 190px minmax(0, 1fr);
+
+    overflow: hidden;
+
+    border: 1px solid #dfcdbc;
+    border-radius: 10px;
+
+    background:
+        linear-gradient(
+            100deg,
+            #fbf5ed 0%,
+            #fffdf9 34%,
+            #fffaf4 100%
+        );
+
+    box-shadow:
+        0 7px 20px rgba(16,36,56,.07);
+}
+
+
+/* ---------------------------------------------------------
+   COLONNE AUTEUR
+   --------------------------------------------------------- */
+
+html body .mmic-pm-read-author {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    min-width: 0;
+
+    padding: 16px 14px;
+
+    border-right: 1px solid #ead8c8;
+
+    background:
+        linear-gradient(
+            180deg,
+            #f7eee4 0%,
+            #fffaf4 100%
+        );
+
+    text-align: center;
+}
+
+
+/* Avatar */
+
+html body .mmic-pm-read-avatar {
+    position: relative;
+
+    width: 150px;
+    height: 210px;
+
+    margin-bottom: 13px;
+
+    overflow: hidden;
+
+    border: 1px solid #d8b08c;
+    border-radius: 8px;
+
+    background: #102438;
+
+    box-shadow:
+        0 5px 13px rgba(16,36,56,.13);
+}
+
+
+html body .mmic-pm-read-avatar img {
+    display: block !important;
+
+    width: 100% !important;
+    height: 100% !important;
+
+    max-width: none !important;
+    max-height: none !important;
+
+    object-fit: cover !important;
+    object-position: center !important;
+}
+
+
+/* Petite étiquette */
+
+html body .mmic-pm-read-author-kicker {
+    margin-bottom: 4px;
+
+    color: #b97a56;
+
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 6px;
+    font-weight: 700;
+
+    letter-spacing: 1.25px;
+    text-transform: uppercase;
+}
+
+
+/* Nom */
+
+html body .mmic-pm-read-author-name {
+    width: 100%;
+
+    overflow: hidden;
+
+    color: #102438;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 17px;
+
+    line-height: 1.2;
+
+    text-overflow: ellipsis;
+}
+
+
+/* ---------------------------------------------------------
+   CONTACTS
+   --------------------------------------------------------- */
+
+html body .mmic-pm-read-contact {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 6px;
+
+    width: 100%;
+
+    margin-top: 14px;
+    padding-top: 12px;
+
+    border-top: 1px solid #ead8c8;
+}
+
+
+html body .mmic-pm-contact-item:empty {
+    display: none !important;
+}
+
+
+/* liens */
+
+html body .mmic-pm-contact-item a {
+    display: inline-flex !important;
+
+    align-items: center !important;
+    justify-content: center !important;
+
+    width: 28px !important;
+    height: 28px !important;
+
+    overflow: hidden !important;
+
+    border: 1px solid #d8b08c !important;
+    border-radius: 50% !important;
+
+    background: #102438 !important;
+
+    color: #e4b184 !important;
+
+    text-decoration: none !important;
+
+    box-shadow:
+        0 2px 5px rgba(16,36,56,.12) !important;
+
+    transition:
+        transform .16s ease,
+        background .16s ease !important;
+}
+
+
+html body .mmic-pm-contact-item a:hover {
+    transform: translateY(-1px) !important;
+
+    background: #173751 !important;
+}
+
+
+/* anciennes images Forumactif */
+
+html body .mmic-pm-contact-item img {
+    max-width: 15px !important;
+    max-height: 15px !important;
+}
+
+
+/* ---------------------------------------------------------
+   CONTENU
+   --------------------------------------------------------- */
+
+html body .mmic-pm-read-content {
+    min-width: 0;
+
+    padding: 18px 20px 16px;
+}
+
+
+/* ---------------------------------------------------------
+   EN-TÊTE
+   --------------------------------------------------------- */
+
+html body .mmic-pm-read-header {
+    display: flex;
+
+    align-items: flex-start;
+    justify-content: space-between;
+
+    gap: 18px;
+
+    padding-bottom: 14px;
+
+    border-bottom: 1px solid #ead8c8;
+}
+
+
+html body .mmic-pm-read-heading {
+    min-width: 0;
+}
+
+
+html body .mmic-pm-read-kicker {
+    display: block;
+
+    margin-bottom: 5px;
+
+    color: #b97a56;
+
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 6px;
+    font-weight: 700;
+
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+}
+
+
+html body .mmic-pm-read-title {
+    margin: 0;
+
+    color: #102438;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 24px;
+    font-weight: 400;
+
+    line-height: 1.15;
+}
+
+
+/* ---------------------------------------------------------
+   CITATION / ÉDITION
+   --------------------------------------------------------- */
+
+html body .mmic-pm-read-top-actions {
+    display: flex;
+
+    flex: 0 0 auto;
+
+    align-items: center;
+
+    gap: 6px;
+}
+
+
+html body .mmic-pm-read-native-action:empty {
+    display: none !important;
+}
+
+
+html body .mmic-pm-read-native-action a {
+    display: inline-flex !important;
+
+    align-items: center !important;
+    justify-content: center !important;
+
+    min-width: 70px !important;
+    height: 30px !important;
+
+    padding: 0 10px !important;
+
+    overflow: hidden !important;
+
+    border: 1px solid #d8b08c !important;
+    border-radius: 6px !important;
+
+    background: #fffaf4 !important;
+    color: #102438 !important;
+
+    font-family: Verdana, Arial, sans-serif !important;
+    font-size: 6px !important;
+    font-weight: 700 !important;
+
+    letter-spacing: .6px !important;
+
+    text-decoration: none !important;
+    text-transform: uppercase !important;
+
+    transition:
+        transform .16s ease,
+        background .16s ease,
+        color .16s ease !important;
+}
+
+
+html body .mmic-pm-read-native-action a:hover {
+    transform: translateY(-1px) !important;
+
+    background: #102438 !important;
+    color: #fffaf4 !important;
+}
+
+
+/*
+ * On conserve les liens natifs Forumactif,
+ * mais on cache leurs anciennes images.
+ */
+
+html body .mmic-pm-read-native-action img {
+    display: none !important;
+}
+
+
+/* Labels personnalisés */
+
+html body .mmic-pm-read-native-action--quote a::after {
+    content: "Citer";
+}
+
+
+html body .mmic-pm-read-native-action--edit a::after {
+    content: "Éditer";
+}
+
+
+html body .mmic-pm-read-native-action--reply a::after {
+    content: "Répondre";
+}
+
+
+/* ---------------------------------------------------------
+   MÉTADONNÉES
+   --------------------------------------------------------- */
+
+html body .mmic-pm-read-meta {
+    display: grid;
+
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    gap: 8px;
+
+    margin: 14px 0 18px;
+}
+
+
+html body .mmic-pm-read-meta-item {
+    min-width: 0;
+
+    padding: 8px 10px;
+
+    border: 1px solid #ead8c8;
+    border-radius: 6px;
+
+    background: #fbf6f0;
+}
+
+
+html body .mmic-pm-read-meta-item > span {
+    display: block;
+
+    margin-bottom: 4px;
+
+    color: #b97a56;
+
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 5.5px;
+    font-weight: 700;
+
+    letter-spacing: .9px;
+
+    text-transform: uppercase;
+}
+
+
+html body .mmic-pm-read-meta-item > strong {
+    display: block;
+
+    overflow: hidden;
+
+    color: #102438;
+
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 7px;
+    font-weight: 600;
+
+    line-height: 1.4;
+
+    text-overflow: ellipsis;
+}
+
+
+/* ---------------------------------------------------------
+   CORPS DU MESSAGE
+   --------------------------------------------------------- */
+
+html body .mmic-pm-read-message {
+    min-height: 170px;
+
+    padding: 18px 4px 24px;
+
+    color: #292e33;
+
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 11px;
+
+    line-height: 1.75;
+
+    text-align: left;
+}
+
+
+html body .mmic-pm-read-message p {
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+
+html body .mmic-pm-read-message img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* ---------------------------------------------------------
+   PIED DU MESSAGE
+   --------------------------------------------------------- */
+
+html body .mmic-pm-read-footer {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 12px;
+
+    padding-top: 13px;
+
+    border-top: 1px solid #ead8c8;
+}
+
+
+/* Répondre */
+
+html body .mmic-pm-read-reply
+.mmic-pm-read-native-action a {
+    min-width: 100px !important;
+
+    background: #102438 !important;
+    color: #fffaf4 !important;
+}
+
+
+/* ---------------------------------------------------------
+   SAUVEGARDER / SUPPRIMER
+   --------------------------------------------------------- */
+
+html body .mmic-pm-read-management {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: flex-end;
+
+    gap: 6px;
+}
+
+
+html body .mmic-pm-read-button {
+    height: 30px;
+
+    padding: 0 10px;
+
+    border: 1px solid #d8b08c;
+    border-radius: 6px;
+
+    background: #fffaf4;
+    color: #102438;
+
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 6px;
+    font-weight: 700;
+
+    letter-spacing: .5px;
+
+    text-transform: uppercase;
+
+    cursor: pointer;
+
+    transition:
+        transform .16s ease,
+        background .16s ease,
+        color .16s ease;
+}
+
+
+html body .mmic-pm-read-button:hover {
+    transform: translateY(-1px);
+
+    background: #102438;
+    color: #fffaf4;
+}
+
+
+html body .mmic-pm-read-button--delete:hover {
+    background: #7c4545;
+}
+
+
+/* =========================================================
+   HISTORIQUE
+   ========================================================= */
+
+html body .mmic-pm-review {
+    margin-top: 18px;
+
+    overflow: hidden;
+
+    border: 1px solid #dfcdbc;
+    border-radius: 10px;
+
+    background: #fffaf4;
+
+    box-shadow:
+        0 5px 14px rgba(16,36,56,.05);
+}
+
+
+html body .mmic-pm-review-header {
+    position: relative;
+
+    padding: 16px 20px;
+
+    border-bottom: 1px solid #d8b08c;
+
+    background:
+        linear-gradient(
+            135deg,
+            #102438 0%,
+            #0d2135 100%
+        );
+
+    text-align: center;
+}
+
+
+html body .mmic-pm-review-kicker {
+    display: block;
+
+    margin-bottom: 4px;
+
+    color: #e4b184;
+
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 6px;
+    font-weight: 700;
+
+    letter-spacing: 1.4px;
+
+    text-transform: uppercase;
+}
+
+
+html body .mmic-pm-review-header h2 {
+    margin: 0;
+
+    color: #fffaf4;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+html body .mmic-pm-review-content {
+    padding: 12px;
+}
+
+
+/* ---------------------------------------------------------
+   RESPONSIVE
+   --------------------------------------------------------- */
+
+@media (max-width: 750px) {
+
+    html body .mmic-pm-read-card {
+        grid-template-columns: 1fr;
+    }
+
+    html body .mmic-pm-read-author {
+        border-right: 0;
+        border-bottom: 1px solid #ead8c8;
+    }
+
+    html body .mmic-pm-read-avatar {
+        width: 110px;
+        height: 150px;
+    }
+
+    html body .mmic-pm-read-meta {
+        grid-template-columns: 1fr;
+    }
+
+    html body .mmic-pm-read-footer {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    html body .mmic-pm-read-management {
+        justify-content: flex-start;
+    }
+
+}
