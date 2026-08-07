@@ -2353,3 +2353,230 @@ a[href*="#"]:hover {
 
     background: #173751 !important;
 }
+/* =========================================================
+   LISTE DES SUJETS — FINITIONS FINALES
+   ========================================================= */
+
+
+/* ---------------------------------------------------------
+   RETOUR EN HAUT
+   --------------------------------------------------------- */
+
+html body .mmic-viewforum-top-link,
+html body a[href="#top"] {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    width: 32px !important;
+    height: 32px !important;
+
+    border: 1px solid #d8b08c !important;
+    border-radius: 50% !important;
+
+    background: #102438 !important;
+    color: #e4b184 !important;
+
+    text-decoration: none !important;
+
+    box-shadow:
+        inset 0 1px 0 rgba(255,255,255,.08),
+        0 3px 7px rgba(16,36,56,.12) !important;
+
+    transition:
+        transform .18s ease,
+        background .18s ease,
+        color .18s ease,
+        box-shadow .18s ease !important;
+}
+
+html body .mmic-viewforum-top-link:hover,
+html body a[href="#top"]:hover {
+    transform: translateY(-2px) !important;
+
+    background: #d8b08c !important;
+    color: #102438 !important;
+
+    box-shadow:
+        0 6px 12px rgba(16,36,56,.15) !important;
+}
+
+
+/* ---------------------------------------------------------
+   BLOCS DU BAS
+   --------------------------------------------------------- */
+
+html body .mmic-viewforum-moderators,
+html body .mmic-viewforum-users,
+html body .mmic-viewforum-permissions {
+    padding: 18px 20px !important;
+
+    border: 1px solid #e2d2c1 !important;
+    border-radius: 9px !important;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fffdf9 0%,
+            #faf5ee 100%
+        ) !important;
+
+    box-shadow:
+        inset 0 1px 0 rgba(255,255,255,.85),
+        0 2px 6px rgba(16,36,56,.04) !important;
+}
+
+
+/* ---------------------------------------------------------
+   TITRES DES BLOCS
+   --------------------------------------------------------- */
+
+html body .mmic-viewforum-moderators-title,
+html body .mmic-viewforum-users-title,
+html body .mmic-viewforum-permissions-title {
+    color: #b97a56 !important;
+
+    font-size: 8px !important;
+    font-weight: 700 !important;
+
+    letter-spacing: 1.7px !important;
+    text-transform: uppercase !important;
+}
+
+
+/* Si les titres ne possèdent pas de classe dédiée */
+
+html body .mmic-viewforum-moderators > strong:first-child,
+html body .mmic-viewforum-users > strong:first-child,
+html body .mmic-viewforum-permissions > strong:first-child {
+    color: #b97a56 !important;
+
+    font-size: 8px !important;
+    font-weight: 700 !important;
+
+    letter-spacing: 1.7px !important;
+    text-transform: uppercase !important;
+}
+
+
+/* ---------------------------------------------------------
+   LIENS DES BLOCS DU BAS
+   --------------------------------------------------------- */
+
+html body .mmic-viewforum-users a,
+html body .mmic-viewforum-permissions a,
+html body .mmic-viewforum-moderators a {
+    color: #102438 !important;
+
+    text-decoration: none !important;
+
+    transition:
+        color .18s ease,
+        text-decoration-color .18s ease !important;
+}
+
+html body .mmic-viewforum-users a:hover,
+html body .mmic-viewforum-permissions a:hover,
+html body .mmic-viewforum-moderators a:hover {
+    color: #b97a56 !important;
+    text-decoration: underline !important;
+    text-decoration-color: rgba(185,122,86,.45) !important;
+    text-underline-offset: 2px !important;
+}
+
+
+/* ---------------------------------------------------------
+   RÉPONSES / VUES
+   --------------------------------------------------------- */
+
+html body .mmic-topic-numbers {
+    display: flex !important;
+    align-items: center !important;
+
+    gap: 8px !important;
+}
+
+html body .mmic-topic-number {
+    min-width: 42px !important;
+
+    padding: 3px 7px !important;
+
+    border: 1px solid rgba(216,176,140,.35) !important;
+    border-radius: 6px !important;
+
+    background:
+        linear-gradient(
+            180deg,
+            #fffdf9,
+            #f7f0e8
+        ) !important;
+
+    text-align: center !important;
+
+    box-shadow:
+        inset 0 1px 0 rgba(255,255,255,.8) !important;
+}
+
+
+/* ---------------------------------------------------------
+   CARTES DES SUJETS — HOVER FINAL
+   --------------------------------------------------------- */
+
+html body .mmic-topic {
+    transition:
+        transform .18s ease,
+        border-color .18s ease,
+        box-shadow .18s ease !important;
+}
+
+html body .mmic-topic:hover {
+    transform: translateY(-2px) !important;
+
+    border-color: rgba(185,122,86,.50) !important;
+
+    box-shadow:
+        0 8px 18px rgba(16,36,56,.08),
+        inset 0 1px 0 rgba(255,255,255,.88) !important;
+}
+
+
+/* ---------------------------------------------------------
+   AVATAR DU DERNIER PASSAGE
+   --------------------------------------------------------- */
+
+html body .mmic-topic-last-avatar {
+    transition:
+        transform .18s ease,
+        box-shadow .18s ease,
+        filter .18s ease !important;
+}
+
+html body .mmic-topic:hover .mmic-topic-last-avatar {
+    transform: translateY(-2px) scale(1.035) !important;
+
+    box-shadow:
+        0 6px 13px rgba(16,36,56,.14) !important;
+
+    filter:
+        contrast(1.02)
+        saturate(1.03) !important;
+}
+
+
+/* ---------------------------------------------------------
+   MOBILE
+   --------------------------------------------------------- */
+
+@media (max-width: 650px) {
+
+    html body .mmic-viewforum-moderators,
+    html body .mmic-viewforum-users,
+    html body .mmic-viewforum-permissions {
+        padding: 15px !important;
+    }
+
+    html body .mmic-topic-numbers {
+        gap: 5px !important;
+    }
+
+}
