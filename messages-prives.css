@@ -1823,3 +1823,14 @@ html body .mmic-pm-review-content {
     }
 
 }
+/* =========================================================
+   LECTURE MP — NAVIGATION
+   ========================================================= */
+
+html body .mmic-pm-read-navigation {
+    margin-bottom: 14px !important;
+}
+
+html body .mmic-pm-read-navigation .mmic-pm-toolbar {
+    margin-bottom: 0 !important;
+}
