@@ -1,0 +1,1062 @@
+/* =========================================================
+   MEET ME IN CHICAGO
+   MESSAGES PRIVÉS — BOÎTE DE RÉCEPTION
+   ========================================================= */
+
+
+/* ---------------------------------------------------------
+   PAGE
+   --------------------------------------------------------- */
+
+html body .mmic-pm-page {
+    width: calc(100% - 24px);
+    max-width: 1100px;
+
+    margin: 26px auto 40px;
+
+    color: #102438;
+
+    box-sizing: border-box;
+}
+
+
+html body .mmic-pm-page * {
+    box-sizing: border-box;
+}
+
+
+/* ---------------------------------------------------------
+   HERO
+   --------------------------------------------------------- */
+
+html body .mmic-pm-hero {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 130px;
+
+    margin-bottom: 18px;
+    padding: 24px 30px;
+
+    overflow: hidden;
+
+    border: 1px solid rgba(216,176,140,.65);
+    border-radius: 10px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #102438 0%,
+            #0d2135 100%
+        );
+
+    color: #fffaf4;
+
+    text-align: center;
+
+    box-shadow:
+        0 8px 20px rgba(16,36,56,.10),
+        inset 0 1px 0 rgba(255,255,255,.05);
+}
+
+
+html body .mmic-pm-hero-kicker {
+    position: relative;
+    z-index: 2;
+
+    margin-bottom: 6px;
+
+    color: #e4b184;
+
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 7px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+
+html body .mmic-pm-hero-title {
+    position: relative;
+    z-index: 2;
+
+    margin: 0;
+
+    color: #fffaf4;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 28px;
+    font-weight: 400;
+
+    line-height: 1.1;
+}
+
+
+html body .mmic-pm-hero-text {
+    position: relative;
+    z-index: 2;
+
+    max-width: 620px;
+
+    margin: 8px auto 0;
+
+    color: rgba(255,250,244,.78);
+
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 8px;
+
+    line-height: 1.6;
+}
+
+
+html body .mmic-pm-hero-word {
+    position: absolute;
+
+    right: 25px;
+    bottom: -12px;
+
+    color: rgba(255,255,255,.035);
+
+    font-family: Georgia, serif;
+    font-size: 58px;
+    font-weight: 700;
+
+    letter-spacing: 4px;
+
+    pointer-events: none;
+}
+
+
+/* ---------------------------------------------------------
+   BARRE DOSSIERS + STOCKAGE
+   --------------------------------------------------------- */
+
+html body .mmic-pm-toolbar {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1fr)
+        270px;
+
+    gap: 14px;
+
+    margin-bottom: 14px;
+
+    padding: 12px;
+
+    border: 1px solid #dfcdbc;
+    border-radius: 10px;
+
+    background: #fffaf4;
+
+    box-shadow:
+        0 4px 13px rgba(16,36,56,.05);
+}
+
+
+/* ---------------------------------------------------------
+   DOSSIERS
+   --------------------------------------------------------- */
+
+html body .mmic-pm-folders {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 8px;
+}
+
+
+html body .mmic-pm-folder {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+
+    min-height: 42px;
+
+    padding: 7px 10px;
+
+    border: 1px solid #e5d5c6;
+    border-radius: 7px;
+
+    background: #fbf6f0;
+
+    transition:
+        transform .16s ease,
+        border-color .16s ease,
+        box-shadow .16s ease;
+}
+
+
+html body .mmic-pm-folder:hover {
+    transform: translateY(-1px);
+
+    border-color: #d8b08c;
+
+    box-shadow:
+        0 4px 9px rgba(16,36,56,.08);
+}
+
+
+html body .mmic-pm-folder-original {
+    display: none !important;
+}
+
+
+html body .mmic-pm-folder-link {
+    min-width: 0;
+
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 7px;
+    font-weight: 700;
+
+    letter-spacing: .45px;
+
+    text-transform: uppercase;
+}
+
+
+html body .mmic-pm-folder-link a {
+    color: #102438 !important;
+
+    text-decoration: none !important;
+}
+
+
+/* ---------------------------------------------------------
+   ICÔNES DOSSIERS
+   --------------------------------------------------------- */
+
+html body .mmic-pm-folder-icon {
+    display: inline-flex;
+
+    flex: 0 0 26px;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 26px;
+    height: 26px;
+
+    border: 1px solid #d8b08c;
+    border-radius: 50%;
+
+    background: #102438;
+}
+
+
+html body .mmic-pm-folder-icon::before {
+    content: "";
+
+    width: 13px;
+    height: 13px;
+
+    background: #e4b184;
+
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+
+    -webkit-mask-position: center;
+    mask-position: center;
+
+    -webkit-mask-size: contain;
+    mask-size: contain;
+}
+
+
+/* Réception */
+
+html body .mmic-pm-folder-icon--inbox::before {
+    -webkit-mask-image:
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Zm0 4v10h16V8l-8 5L4 8Zm1-2 7 4.4L19 6H5Z'/%3E%3C/svg%3E");
+
+    mask-image:
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Zm0 4v10h16V8l-8 5L4 8Zm1-2 7 4.4L19 6H5Z'/%3E%3C/svg%3E");
+}
+
+
+/* Envoyés */
+
+html body .mmic-pm-folder-icon--sent::before {
+    -webkit-mask-image:
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='m2 3 20 9-20 9 4-8 9-1-9-1-4-8Z'/%3E%3C/svg%3E");
+
+    mask-image:
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='m2 3 20 9-20 9 4-8 9-1-9-1-4-8Z'/%3E%3C/svg%3E");
+}
+
+
+/* Boîte d'envoi */
+
+html body .mmic-pm-folder-icon--outbox::before {
+    -webkit-mask-image:
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M5 3h14a2 2 0 0 1 2 2v14H3V5a2 2 0 0 1 2-2Zm7 3-4 4h3v4h2v-4h3l-4-4Z'/%3E%3C/svg%3E");
+
+    mask-image:
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M5 3h14a2 2 0 0 1 2 2v14H3V5a2 2 0 0 1 2-2Zm7 3-4 4h3v4h2v-4h3l-4-4Z'/%3E%3C/svg%3E");
+}
+
+
+/* Archives */
+
+html body .mmic-pm-folder-icon--archive::before {
+    -webkit-mask-image:
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M3 4h18v4H3V4Zm2 6h14v10H5V10Zm4 2v2h6v-2H9Z'/%3E%3C/svg%3E");
+
+    mask-image:
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M3 4h18v4H3V4Zm2 6h14v10H5V10Zm4 2v2h6v-2H9Z'/%3E%3C/svg%3E");
+}
+
+
+/* ---------------------------------------------------------
+   STOCKAGE
+   --------------------------------------------------------- */
+
+html body .mmic-pm-storage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 7px 10px;
+
+    border-left: 1px solid #ead9ca;
+}
+
+
+html body .mmic-pm-storage-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 10px;
+
+    margin-bottom: 8px;
+}
+
+
+html body .mmic-pm-storage-label {
+    color: #b97a56;
+
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 6px;
+    font-weight: 700;
+
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+
+html body .mmic-pm-storage-status {
+    color: #102438;
+
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 7px;
+}
+
+
+html body .mmic-pm-storage-track {
+    position: relative;
+
+    width: 100%;
+    height: 7px;
+
+    overflow: hidden;
+
+    border-radius: 20px;
+
+    background: #eadfd5;
+}
+
+
+html body .mmic-pm-storage-progress {
+    display: block;
+
+    min-width: 4px;
+    height: 100%;
+
+    border-radius: inherit;
+
+    background: #c78d68;
+}
+
+
+html body .mmic-pm-storage-scale {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 5px;
+
+    color: #99887b;
+
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 6px;
+}
+
+
+/* ---------------------------------------------------------
+   ACTIONS DU HAUT
+   --------------------------------------------------------- */
+
+html body .mmic-pm-actions {
+    display: flex;
+
+    align-items: flex-end;
+    justify-content: space-between;
+
+    gap: 15px;
+
+    margin-bottom: 12px;
+}
+
+
+html body .mmic-pm-new-original {
+    display: none !important;
+}
+
+
+html body .mmic-pm-new-button {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 7px;
+
+    min-height: 34px;
+
+    padding: 0 14px;
+
+    border: 1px solid #d8b08c;
+    border-radius: 6px;
+
+    background: #102438;
+    color: #fffaf4 !important;
+
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 7px;
+    font-weight: 700;
+
+    letter-spacing: .8px;
+
+    text-decoration: none !important;
+    text-transform: uppercase;
+
+    box-shadow:
+        0 3px 7px rgba(16,36,56,.12);
+}
+
+
+html body .mmic-pm-new-icon {
+    width: 13px;
+    height: 13px;
+
+    background: #e4b184;
+
+    -webkit-mask-image:
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M11 3h2v8h8v2h-8v8h-2v-8H3v-2h8V3Z'/%3E%3C/svg%3E");
+
+    mask-image:
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M11 3h2v8h8v2h-8v8h-2v-8H3v-2h8V3Z'/%3E%3C/svg%3E");
+
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+
+    -webkit-mask-position: center;
+    mask-position: center;
+
+    -webkit-mask-size: contain;
+    mask-size: contain;
+}
+
+
+/* filtre */
+
+html body .mmic-pm-filter {
+    display: flex;
+
+    align-items: flex-end;
+
+    gap: 7px;
+
+    color: #b97a56;
+
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 6px;
+    font-weight: 700;
+
+    letter-spacing: .8px;
+    text-transform: uppercase;
+}
+
+
+html body .mmic-pm-filter select {
+    height: 32px;
+
+    min-width: 155px;
+
+    padding: 0 8px;
+
+    border: 1px solid #dfcdbc;
+    border-radius: 6px;
+
+    background: #fffdf9;
+    color: #102438;
+
+    font-size: 7px;
+
+    outline: none;
+}
+
+
+html body .mmic-pm-filter-button {
+    height: 32px;
+
+    padding: 0 11px;
+
+    border: 1px solid #d8b08c;
+    border-radius: 6px;
+
+    background: #102438;
+    color: #fffaf4;
+
+    font-size: 7px;
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+
+/* ---------------------------------------------------------
+   LISTE
+   --------------------------------------------------------- */
+
+html body .mmic-pm-list {
+    display: flex;
+    flex-direction: column;
+
+    gap: 8px;
+}
+
+
+html body .mmic-pm-list-header {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1fr)
+        150px
+        145px
+        55px;
+
+    gap: 10px;
+
+    padding: 0 18px 5px 64px;
+
+    color: #b97a56;
+
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 6px;
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+}
+
+
+html body .mmic-pm-list-heading--check {
+    text-align: center;
+}
+
+
+/* ---------------------------------------------------------
+   MESSAGE
+   --------------------------------------------------------- */
+
+html body .mmic-pm-message {
+    display: grid;
+
+    grid-template-columns:
+        46px
+        minmax(0, 1fr)
+        150px
+        145px
+        55px;
+
+    align-items: center;
+
+    gap: 10px;
+
+    min-height: 72px;
+
+    padding: 9px 12px;
+
+    border: 1px solid #dfcdbc;
+    border-radius: 9px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #fffaf4 0%,
+            #fffdf9 100%
+        );
+
+    box-shadow:
+        0 3px 9px rgba(16,36,56,.045);
+
+    transition:
+        transform .16s ease,
+        border-color .16s ease,
+        box-shadow .16s ease;
+}
+
+
+html body .mmic-pm-message:hover {
+    transform: translateY(-1px);
+
+    border-color: #d8b08c;
+
+    box-shadow:
+        0 5px 13px rgba(16,36,56,.075);
+}
+
+
+/* statut */
+
+html body .mmic-pm-message-status {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+
+html body .mmic-pm-original-folder,
+html body .mmic-pm-original-icon {
+    display: none !important;
+}
+
+
+html body .mmic-pm-status-icon {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 30px;
+    height: 30px;
+
+    border: 1px solid #d8b08c;
+    border-radius: 7px;
+
+    background: #102438;
+
+    box-shadow:
+        0 3px 6px rgba(16,36,56,.12);
+}
+
+
+html body .mmic-pm-status-icon::before {
+    content: "";
+
+    width: 14px;
+    height: 14px;
+
+    background: #e4b184;
+
+    -webkit-mask-image:
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Zm0 4v10h16V8l-8 5L4 8Z'/%3E%3C/svg%3E");
+
+    mask-image:
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Zm0 4v10h16V8l-8 5L4 8Z'/%3E%3C/svg%3E");
+
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+
+    -webkit-mask-position: center;
+    mask-position: center;
+
+    -webkit-mask-size: contain;
+    mask-size: contain;
+}
+
+
+/* sujet */
+
+html body .mmic-pm-message-main {
+    min-width: 0;
+}
+
+
+html body .mmic-pm-message-kicker,
+html body .mmic-pm-meta-label {
+    display: block;
+
+    margin-bottom: 4px;
+
+    color: #b97a56;
+
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 5.5px;
+    font-weight: 700;
+
+    letter-spacing: .9px;
+
+    text-transform: uppercase;
+}
+
+
+html body .mmic-pm-message-title {
+    display: block;
+
+    overflow: hidden;
+
+    color: #102438 !important;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 15px;
+    font-weight: 400;
+
+    line-height: 1.25;
+
+    text-decoration: none !important;
+
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+html body .mmic-pm-message-title:hover {
+    color: #b97a56 !important;
+}
+
+
+/* expéditeur / date */
+
+html body .mmic-pm-message-from,
+html body .mmic-pm-message-date > span:last-child {
+    color: #102438;
+
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 7px;
+    font-weight: 600;
+}
+
+
+/* ---------------------------------------------------------
+   CHECKBOX CUSTOM
+   --------------------------------------------------------- */
+
+html body .mmic-pm-message-check {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+}
+
+
+html body .mmic-pm-message-check input {
+    position: absolute;
+
+    opacity: 0;
+
+    pointer-events: none;
+}
+
+
+html body .mmic-pm-message-check span {
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 18px;
+    height: 18px;
+
+    border: 1px solid #d8b08c;
+    border-radius: 5px;
+
+    background: #fffdf9;
+}
+
+
+html body .mmic-pm-message-check input:checked + span {
+    background: #102438;
+}
+
+
+html body .mmic-pm-message-check input:checked + span::after {
+    content: "✓";
+
+    color: #e4b184;
+
+    font-size: 10px;
+    font-weight: 700;
+}
+
+
+/* ---------------------------------------------------------
+   VIDE
+   --------------------------------------------------------- */
+
+html body .mmic-pm-empty {
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+
+    gap: 6px;
+
+    padding: 35px;
+
+    border: 1px solid #dfcdbc;
+    border-radius: 9px;
+
+    background: #fffaf4;
+
+    color: #756a61;
+
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 8px;
+}
+
+
+html body .mmic-pm-empty strong {
+    color: #102438;
+
+    font-family: Georgia, serif;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+
+/* ---------------------------------------------------------
+   ACTIONS DE SÉLECTION
+   --------------------------------------------------------- */
+
+html body .mmic-pm-selection {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+
+    margin-top: 14px;
+
+    padding: 12px;
+
+    border: 1px solid #dfcdbc;
+    border-radius: 9px;
+
+    background: #fffaf4;
+}
+
+
+html body .mmic-pm-selection-links {
+    display: flex;
+
+    justify-content: flex-end;
+
+    gap: 7px;
+
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 6px;
+
+    text-transform: uppercase;
+}
+
+
+html body .mmic-pm-selection-links a {
+    color: #b97a56 !important;
+
+    font-weight: 700;
+
+    text-decoration: none !important;
+}
+
+
+html body .mmic-pm-selection-buttons {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: flex-end;
+
+    gap: 6px;
+}
+
+
+html body .mmic-pm-action-button {
+    min-height: 30px;
+
+    padding: 0 10px;
+
+    border: 1px solid #d8b08c;
+    border-radius: 6px;
+
+    background: #fffaf4;
+    color: #102438;
+
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 6px;
+    font-weight: 700;
+
+    letter-spacing: .5px;
+
+    text-transform: uppercase;
+
+    cursor: pointer;
+
+    transition:
+        transform .15s ease,
+        background .15s ease,
+        color .15s ease;
+}
+
+
+html body .mmic-pm-action-button:hover {
+    transform: translateY(-1px);
+
+    background: #102438;
+    color: #fffaf4;
+}
+
+
+html body .mmic-pm-action-button--danger:hover {
+    background: #7d4545;
+}
+
+
+/* ---------------------------------------------------------
+   FOOTER / PAGINATION
+   --------------------------------------------------------- */
+
+html body .mmic-pm-footer {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 15px;
+
+    margin-top: 12px;
+
+    color: #756a61;
+
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 7px;
+}
+
+
+html body .mmic-pm-pagination a {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-width: 24px;
+    height: 24px;
+
+    margin-left: 3px;
+
+    padding: 0 6px;
+
+    border: 1px solid #dfcdbc;
+    border-radius: 5px;
+
+    background: #fffaf4;
+
+    color: #102438 !important;
+
+    text-decoration: none !important;
+}
+
+
+/* ---------------------------------------------------------
+   JUMPBOX
+   --------------------------------------------------------- */
+
+html body .mmic-pm-jumpbox {
+    display: flex;
+
+    justify-content: flex-end;
+
+    margin-top: 12px;
+}
+
+
+/* ---------------------------------------------------------
+   RESPONSIVE
+   --------------------------------------------------------- */
+
+@media (max-width: 900px) {
+
+    html body .mmic-pm-toolbar {
+        grid-template-columns: 1fr;
+    }
+
+    html body .mmic-pm-storage {
+        border-left: 0;
+        border-top: 1px solid #ead9ca;
+    }
+
+    html body .mmic-pm-message {
+        grid-template-columns:
+            40px
+            minmax(0, 1fr)
+            44px;
+    }
+
+    html body .mmic-pm-message-user,
+    html body .mmic-pm-message-date {
+        grid-column: 2;
+
+        margin-top: 3px;
+    }
+
+    html body .mmic-pm-message-check {
+        grid-column: 3;
+        grid-row: 1 / span 3;
+    }
+
+    html body .mmic-pm-list-header {
+        display: none;
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    html body .mmic-pm-folders {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    html body .mmic-pm-actions {
+        align-items: stretch;
+
+        flex-direction: column;
+    }
+
+    html body .mmic-pm-filter {
+        align-items: stretch;
+
+        flex-direction: column;
+    }
+
+    html body .mmic-pm-filter select {
+        width: 100%;
+    }
+
+}
