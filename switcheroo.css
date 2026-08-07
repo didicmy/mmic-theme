@@ -112,7 +112,7 @@ html body .mmic-switcheroo .switcheroo__squircle {
 
     background: #102438 !important;
 
-    overflow: hidden !important;
+    overflow: visible !important;
 
     box-shadow:
         inset 0 1px 0 rgba(255,255,255,.06),
@@ -957,4 +957,30 @@ html body .mmic-switcheroo
     transform: scale(1.10) !important;
 
     background: #fffaf4 !important;
+}
+/* =========================================================
+   SWITCHEROO — AVATAR CLIPPÉ, TOOLTIP LIBRE
+   ========================================================= */
+
+html body .mmic-switcheroo .switcheroo__avatar {
+    width: 100% !important;
+    height: 100% !important;
+
+    border-radius: 10px !important;
+
+    overflow: hidden !important;
+}
+
+
+html body .mmic-switcheroo .switcheroo__avatar img {
+    width: 100% !important;
+    height: 100% !important;
+
+    object-fit: cover !important;
+    object-position: center !important;
+
+    border-radius: 10px !important;
+}
+html body .mmic-switcheroo .switcheroo__popper {
+    z-index: 10002 !important;
 }
