@@ -1975,3 +1975,68 @@ html body .mmic-member-card-actions > * {
 
     margin: 0 !important;
 }
+/* =========================================================
+   MEMBERLIST — FIX FINAL DU BOUTON RECHERCHER
+   ========================================================= */
+
+html body .mmic-memberlist-submit {
+    display: inline-grid !important;
+
+    grid-template-columns: 12px auto !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    column-gap: 8px !important;
+
+    width: 118px !important;
+    min-width: 118px !important;
+    max-width: 118px !important;
+
+    padding: 0 12px !important;
+
+    overflow: visible !important;
+}
+
+
+/* Loupe : sa propre colonne, pas touche au texte */
+html body .mmic-memberlist-submit-icon {
+    display: block !important;
+
+    grid-column: 1 !important;
+
+    width: 10px !important;
+    height: 10px !important;
+
+    min-width: 10px !important;
+    max-width: 10px !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    transform: none !important;
+}
+
+
+/* Texte : sa propre colonne */
+html body .mmic-memberlist-submit-text {
+    display: block !important;
+
+    grid-column: 2 !important;
+
+    width: auto !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    color: #fffaf4 !important;
+
+    font-size: 6px !important;
+    font-weight: 700 !important;
+
+    letter-spacing: .7px !important;
+    line-height: 1 !important;
+
+    white-space: nowrap !important;
+
+    transform: none !important;
+}
