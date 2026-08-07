@@ -1957,3 +1957,82 @@ html body .mmic-pm-read-shortcut-icon--new {
     mask-image:
         url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M11 3h2v8h8v2h-8v8h-2v-8H3v-2h8V3Z'/%3E%3C/svg%3E");
 }
+/* =========================================================
+   LECTURE MP — BOUTONS DE GESTION
+   ========================================================= */
+
+html body .mmic-pm-read-management {
+    display: flex !important;
+
+    flex-wrap: wrap !important;
+
+    align-items: center !important;
+    justify-content: flex-end !important;
+
+    gap: 7px !important;
+}
+
+html body .mmic-pm-read-management
+input.mmic-pm-read-button {
+    appearance: none !important;
+    -webkit-appearance: none !important;
+
+    display: inline-flex !important;
+
+    width: auto !important;
+    min-width: 120px !important;
+    height: 32px !important;
+
+    margin: 0 !important;
+    padding: 0 12px !important;
+
+    border: 1px solid #d8b08c !important;
+    border-radius: 6px !important;
+
+    background: #fffaf4 !important;
+    color: #102438 !important;
+
+    font-family: Verdana, Arial, sans-serif !important;
+    font-size: 6px !important;
+    font-weight: 700 !important;
+
+    letter-spacing: .6px !important;
+    line-height: 30px !important;
+
+    text-align: center !important;
+    text-transform: uppercase !important;
+
+    box-shadow:
+        0 3px 7px rgba(16,36,56,.07) !important;
+
+    cursor: pointer !important;
+
+    transition:
+        transform .16s ease,
+        background .16s ease,
+        color .16s ease,
+        border-color .16s ease !important;
+}
+
+html body .mmic-pm-read-management
+input.mmic-pm-read-button:hover {
+    transform: translateY(-1px) !important;
+
+    border-color: #c78d68 !important;
+
+    background: #102438 !important;
+    color: #fffaf4 !important;
+}
+
+html body .mmic-pm-read-management
+input.mmic-pm-read-button--delete {
+    min-width: 115px !important;
+}
+
+html body .mmic-pm-read-management
+input.mmic-pm-read-button--delete:hover {
+    border-color: #8e5959 !important;
+
+    background: #7c4545 !important;
+    color: #fffaf4 !important;
+}
