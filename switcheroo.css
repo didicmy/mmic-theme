@@ -12,7 +12,7 @@
 html body .mmic-switcheroo {
     position: fixed !important;
 
-    left: 26px !important;
+    left: 6px !important;
     top: 95px !important;
 
     transform: none !important;
@@ -382,7 +382,7 @@ html body [class*="switcheroo"] input:focus {
 @media (max-width: 900px) {
 
     html body .mmic-switcheroo {
-        left: 10px !important;
+        left: 0px !important;
         top: 85px !important;
 
         width: 50px !important;
