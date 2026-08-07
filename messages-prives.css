@@ -2140,3 +2140,293 @@ input[type="submit"].mmic-pm-read-button--delete:hover {
     background: #7c4545 !important;
     color: #fffaf4 !important;
 }
+/* =========================================================
+   MESSAGES PRIVÉS — HISTORIQUE
+   ========================================================= */
+
+html body .mmic-pm-history {
+    width: 100%;
+
+    color: #102438;
+}
+
+
+/* ---------------------------------------------------------
+   LISTE
+   --------------------------------------------------------- */
+
+html body .mmic-pm-history-list {
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+
+/* ---------------------------------------------------------
+   CARTE
+   --------------------------------------------------------- */
+
+html body .mmic-pm-history-item {
+    display: grid;
+
+    grid-template-columns: 150px minmax(0, 1fr);
+
+    overflow: hidden;
+
+    border: 1px solid #dfcdbc;
+    border-radius: 8px;
+
+    background:
+        linear-gradient(
+            100deg,
+            #fbf5ed 0%,
+            #fffdf9 38%,
+            #fffaf4 100%
+        );
+
+    box-shadow:
+        0 4px 11px rgba(16,36,56,.05);
+}
+
+
+/* ---------------------------------------------------------
+   AUTEUR
+   --------------------------------------------------------- */
+
+html body .mmic-pm-history-author {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 12px 10px;
+
+    border-right: 1px solid #ead8c8;
+
+    background:
+        linear-gradient(
+            180deg,
+            #f7eee4 0%,
+            #fffaf4 100%
+        );
+
+    text-align: center;
+}
+
+
+html body .mmic-pm-history-avatar {
+    width: 110px;
+    height: 145px;
+
+    margin-bottom: 10px;
+
+    overflow: hidden;
+
+    border: 1px solid #d8b08c;
+    border-radius: 7px;
+
+    background: #102438;
+
+    box-shadow:
+        0 4px 10px rgba(16,36,56,.12);
+}
+
+
+html body .mmic-pm-history-avatar img {
+    display: block !important;
+
+    width: 100% !important;
+    height: 100% !important;
+
+    max-width: none !important;
+    max-height: none !important;
+
+    object-fit: cover !important;
+    object-position: center !important;
+}
+
+
+html body .mmic-pm-history-author-kicker {
+    margin-bottom: 3px;
+
+    color: #b97a56;
+
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 5.5px;
+    font-weight: 700;
+
+    letter-spacing: 1.1px;
+
+    text-transform: uppercase;
+}
+
+
+html body .mmic-pm-history-author-name {
+    color: #102438;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 15px;
+
+    line-height: 1.2;
+}
+
+
+/* ---------------------------------------------------------
+   CONTENU
+   --------------------------------------------------------- */
+
+html body .mmic-pm-history-content {
+    min-width: 0;
+
+    padding: 13px 15px;
+}
+
+
+/* ---------------------------------------------------------
+   MÉTADONNÉES
+   --------------------------------------------------------- */
+
+html body .mmic-pm-history-meta {
+    display: grid;
+
+    grid-template-columns: 170px minmax(0, 1fr);
+
+    gap: 8px;
+
+    margin-bottom: 12px;
+
+    padding-bottom: 10px;
+
+    border-bottom: 1px solid #ead8c8;
+}
+
+
+html body .mmic-pm-history-meta-item {
+    min-width: 0;
+
+    padding: 7px 9px;
+
+    border: 1px solid #ead8c8;
+    border-radius: 6px;
+
+    background: #fbf6f0;
+}
+
+
+html body .mmic-pm-history-meta-label {
+    display: block;
+
+    margin-bottom: 3px;
+
+    color: #b97a56;
+
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 5.5px;
+    font-weight: 700;
+
+    letter-spacing: .9px;
+
+    text-transform: uppercase;
+}
+
+
+html body .mmic-pm-history-meta-item strong {
+    display: block;
+
+    overflow: hidden;
+
+    color: #102438;
+
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 7px;
+    font-weight: 600;
+
+    line-height: 1.35;
+
+    text-overflow: ellipsis;
+}
+
+
+/* ---------------------------------------------------------
+   MESSAGE
+   --------------------------------------------------------- */
+
+html body .mmic-pm-history-message {
+    min-height: 110px;
+
+    padding: 4px 2px 8px;
+
+    color: #34383c;
+
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 10px;
+
+    line-height: 1.65;
+
+    text-align: left;
+}
+
+
+html body .mmic-pm-history-message p {
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+
+html body .mmic-pm-history-message img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* ---------------------------------------------------------
+   PAGINATION
+   --------------------------------------------------------- */
+
+html body .mmic-pm-history-pagination {
+    margin-top: 10px;
+
+    text-align: right;
+
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 7px;
+}
+
+
+html body .mmic-pm-history-pagination a {
+    color: #b97a56 !important;
+
+    text-decoration: none !important;
+}
+
+
+html body .mmic-pm-history-pagination a:hover {
+    color: #102438 !important;
+}
+
+
+/* ---------------------------------------------------------
+   RESPONSIVE
+   --------------------------------------------------------- */
+
+@media (max-width: 700px) {
+
+    html body .mmic-pm-history-item {
+        grid-template-columns: 1fr;
+    }
+
+    html body .mmic-pm-history-author {
+        border-right: 0;
+        border-bottom: 1px solid #ead8c8;
+    }
+
+    html body .mmic-pm-history-avatar {
+        width: 90px;
+        height: 120px;
+    }
+
+    html body .mmic-pm-history-meta {
+        grid-template-columns: 1fr;
+    }
+
+}
