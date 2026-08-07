@@ -1483,10 +1483,10 @@ html body .mmic-pm-contact-profile a::after {
 
 
 /* ---------------------------------------------------------
-   MESSAGE PRIVÉ
+   E-MAIL
    --------------------------------------------------------- */
 
-html body .mmic-pm-contact-pm a::before {
+html body .mmic-pm-contact-email a::before {
     -webkit-mask-image:
         url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M4 5h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Zm0 2 8 5 8-5H4Zm16 10V9l-8 5-8-5v8h16Z'/%3E%3C/svg%3E") !important;
 
@@ -1494,8 +1494,8 @@ html body .mmic-pm-contact-pm a::before {
         url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M4 5h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Zm0 2 8 5 8-5H4Zm16 10V9l-8 5-8-5v8h16Z'/%3E%3C/svg%3E") !important;
 }
 
-html body .mmic-pm-contact-pm a::after {
-    content: "Message" !important;
+html body .mmic-pm-contact-email a::after {
+    content: "E-mail" !important;
 }
 
 
