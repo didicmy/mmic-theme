@@ -819,3 +819,105 @@ html body .mmic-memberlist-empty {
         grid-column: auto;
     }
 }
+/* =========================================================
+   MEMBERLIST — FORCE L'AFFICHAGE DE LA RECHERCHE MEMBRE
+   ========================================================= */
+
+html body .mmic-memberlist-filter-inline
+.mmic-memberlist-filter-user {
+    display: flex !important;
+    align-items: center !important;
+
+    flex: 0 0 190px !important;
+
+    width: 190px !important;
+    min-width: 190px !important;
+    max-width: 190px !important;
+
+    height: 32px !important;
+
+    margin: 10px 0 0 !important;
+    padding: 0 !important;
+
+    visibility: visible !important;
+    opacity: 1 !important;
+
+    overflow: visible !important;
+}
+
+
+/* Le fugitif lui-même */
+html body .mmic-memberlist-filter-inline
+.mmic-memberlist-filter-user input.post[type="text"],
+html body .mmic-memberlist-filter-inline
+input[name="username"] {
+    display: block !important;
+
+    position: static !important;
+
+    flex: 1 1 auto !important;
+
+    width: 190px !important;
+    min-width: 190px !important;
+    max-width: 190px !important;
+
+    height: 32px !important;
+    min-height: 32px !important;
+
+    margin: 0 !important;
+    padding: 0 11px !important;
+
+    border: 1px solid #dfcdbc !important;
+    border-radius: 6px !important;
+
+    background: #fffdf9 !important;
+    background-image: none !important;
+
+    color: #102438 !important;
+
+    font-family: Verdana, Arial, sans-serif !important;
+    font-size: 7px !important;
+    font-weight: 400 !important;
+
+    line-height: 30px !important;
+
+    visibility: visible !important;
+    opacity: 1 !important;
+
+    transform: none !important;
+
+    clip: auto !important;
+    clip-path: none !important;
+
+    overflow: visible !important;
+
+    box-sizing: border-box !important;
+
+    appearance: auto !important;
+    -webkit-appearance: auto !important;
+}
+
+
+/* Placeholder */
+html body .mmic-memberlist-filter-inline
+input[name="username"]::placeholder {
+    color: rgba(16,36,56,.48) !important;
+
+    font-family: Verdana, Arial, sans-serif !important;
+    font-size: 7px !important;
+    font-style: italic !important;
+
+    opacity: 1 !important;
+}
+
+
+/* Focus */
+html body .mmic-memberlist-filter-inline
+input[name="username"]:focus {
+    border-color: #c78d68 !important;
+
+    box-shadow:
+        0 0 0 2px rgba(185,122,86,.10) !important;
+
+    outline: none !important;
+}
