@@ -2816,56 +2816,56 @@ html body .mmic-pm-compose-page #add_username {
     vertical-align: middle;
 }
 
-/* ---------------------------------------------------------
-   ÉDITEUR + SMILEYS
-   --------------------------------------------------------- */
+/* =========================================================
+   SMILEYS — DERNIER AJUSTEMENT
+   ========================================================= */
 
-html body .mmic-pm-compose-page #parent_editor_simple {
-    display: table-row !important;
-}
+html body .mmic-pm-compose-page
+.mmic-pm-compose-smilies {
+    width: 190px !important;
+    min-width: 190px !important;
+    max-width: 190px !important;
 
-html body .mmic-pm-compose-page .mmic-pm-compose-smilies {
-    width: 180px !important;
-    min-width: 180px !important;
-    max-width: 180px !important;
-    padding: 12px 10px !important;
+    padding: 12px !important;
+
     vertical-align: top !important;
     text-align: center !important;
+
     border-right: 1px solid #ead8c8 !important;
+
     background: #fbf5ed !important;
 }
 
-html body .mmic-pm-compose-message-label {
-    display: block !important;
-    width: 100% !important;
-    margin: 0 0 10px !important;
-    color: #b97a56 !important;
-    font-family: Verdana, Arial, sans-serif !important;
-    font-size: 5.5px !important;
-    font-weight: 700 !important;
-    letter-spacing: .9px !important;
-    text-align: center !important;
-    text-transform: uppercase !important;
-}
 
-html body .mmic-pm-compose-page .mmic-pm-compose-smilies #smileyContainer {
+html body .mmic-pm-compose-page
+.mmic-pm-compose-smilies #smileyContainer {
     display: block !important;
-    width: 150px !important;
-    max-width: 150px !important;
+
+    width: 165px !important;
+    max-width: 165px !important;
+
     margin: 0 auto !important;
     padding: 0 !important;
+
     text-align: center !important;
 }
 
-html body .mmic-pm-compose-page .mmic-pm-compose-smilies #smileyContainer iframe {
+
+html body .mmic-pm-compose-page
+.mmic-pm-compose-smilies #smileyContainer iframe {
     display: block !important;
-    width: 150px !important;
-    min-width: 150px !important;
-    max-width: 150px !important;
+
+    width: 165px !important;
+    min-width: 165px !important;
+    max-width: 165px !important;
+
     height: 245px !important;
+
     margin: 0 auto !important;
     padding: 0 !important;
+
     border: 0 !important;
+
     background: transparent !important;
 }
 
