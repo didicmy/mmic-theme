@@ -3787,3 +3787,422 @@ input[name="preview"]:hover {
     }
 
 }
+/* =========================================================
+   COMPOSITION MP — CORRECTIF PROPRE FINAL
+   ========================================================= */
+
+
+/* ---------------------------------------------------------
+   BARRE DOSSIERS
+   --------------------------------------------------------- */
+
+html body .mmic-pm-compose-page .mmic-pm-compose-toolbar {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+
+    gap: 12px !important;
+
+    width: 100% !important;
+
+    margin: 0 0 14px !important;
+    padding: 10px !important;
+
+    border: 1px solid #dfcdbc !important;
+    border-radius: 9px !important;
+
+    background: #fffaf4 !important;
+}
+
+
+html body .mmic-pm-compose-page
+.mmic-pm-compose-toolbar .mmic-pm-folders {
+
+    display: grid !important;
+
+    grid-template-columns:
+        repeat(4, minmax(125px, 1fr)) !important;
+
+    flex: 1 1 auto !important;
+
+    gap: 7px !important;
+
+    min-width: 0 !important;
+}
+
+
+html body .mmic-pm-compose-page
+.mmic-pm-compose-toolbar .mmic-pm-folder {
+
+    display: flex !important;
+
+    align-items: center !important;
+
+    gap: 8px !important;
+
+    min-width: 0 !important;
+    min-height: 42px !important;
+
+    padding: 7px 10px !important;
+}
+
+
+html body .mmic-pm-compose-page
+.mmic-pm-compose-toolbar .mmic-pm-folder-link {
+
+    display: block !important;
+
+    min-width: 0 !important;
+
+    color: #102438 !important;
+
+    font-family: Verdana, Arial, sans-serif !important;
+    font-size: 6.5px !important;
+    font-weight: 700 !important;
+
+    letter-spacing: .45px !important;
+
+    text-transform: uppercase !important;
+}
+
+
+html body .mmic-pm-compose-page
+.mmic-pm-compose-toolbar .mmic-pm-folder-link a {
+
+    color: #102438 !important;
+
+    text-decoration: none !important;
+}
+
+
+/* ---------------------------------------------------------
+   DESTINATAIRE + SUJET
+   --------------------------------------------------------- */
+
+html body .mmic-pm-compose-card
+> tbody
+> tr:not(#parent_editor_simple)
+> td:first-child {
+
+    width: 150px !important;
+
+    padding:
+        14px 18px !important;
+}
+
+
+html body .mmic-pm-compose-card
+> tbody
+> tr:not(#parent_editor_simple)
+> td:nth-child(2) {
+
+    width: auto !important;
+
+    padding:
+        10px 20px
+        10px 0 !important;
+}
+
+
+html body .mmic-pm-compose-page
+input[name="username[]"],
+
+html body .mmic-pm-compose-page
+input[name="username"] {
+
+    width: 100% !important;
+    max-width: none !important;
+    min-width: 0 !important;
+
+    margin-bottom: 7px !important;
+}
+
+
+html body .mmic-pm-compose-page
+input[name="subject"] {
+
+    display: block !important;
+
+    width: 100% !important;
+    max-width: none !important;
+
+    margin: 0 !important;
+}
+
+
+/* bouton recherche sous le champ */
+
+html body .mmic-pm-compose-page #find_user {
+
+    display: inline-flex !important;
+
+    align-items: center !important;
+    justify-content: center !important;
+
+    min-width: 175px !important;
+
+    height: 34px !important;
+
+    margin: 0 !important;
+}
+
+
+/* petit + */
+
+html body .mmic-pm-compose-page #add_username {
+
+    width: 20px !important;
+    height: 20px !important;
+
+    margin: 0 6px 0 0 !important;
+
+    vertical-align: middle !important;
+}
+
+
+/* ---------------------------------------------------------
+   ZONE ÉDITEUR
+   --------------------------------------------------------- */
+
+html body .mmic-pm-compose-page #parent_editor_simple {
+
+    display: flex !important;
+
+    align-items: stretch !important;
+
+    width: 100% !important;
+
+    padding: 12px !important;
+
+    gap: 12px !important;
+
+    background: transparent !important;
+}
+
+
+/* ÉDITEUR À GAUCHE */
+
+html body .mmic-pm-compose-page
+#parent_editor_simple > td:nth-child(2) {
+
+    order: 1 !important;
+
+    display: block !important;
+
+    flex: 1 1 auto !important;
+
+    width: auto !important;
+    min-width: 0 !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    background: transparent !important;
+}
+
+
+/* SMILEYS À DROITE */
+
+html body .mmic-pm-compose-page
+#parent_editor_simple > td:first-child {
+
+    order: 2 !important;
+
+    display: block !important;
+
+    flex: 0 0 190px !important;
+
+    width: 190px !important;
+    min-width: 190px !important;
+    max-width: 190px !important;
+
+    height: auto !important;
+    min-height: 0 !important;
+
+    margin: 0 !important;
+    padding: 12px !important;
+
+    border: 1px solid #ead8c8 !important;
+    border-radius: 7px !important;
+
+    background: #fbf5ed !important;
+
+    align-self: flex-start !important;
+}
+
+
+/* ---------------------------------------------------------
+   SMILEYS
+   --------------------------------------------------------- */
+
+html body .mmic-pm-compose-page #smileyContainer {
+
+    display: flex !important;
+
+    flex-wrap: wrap !important;
+
+    align-items: center !important;
+    align-content: flex-start !important;
+    justify-content: center !important;
+
+    gap: 2px !important;
+
+    width: 100% !important;
+    max-width: 165px !important;
+
+    height: auto !important;
+    min-height: 0 !important;
+
+    margin: 0 auto !important;
+    padding: 0 !important;
+}
+
+
+html body .mmic-pm-compose-page #smileyContainer img {
+
+    width: auto !important;
+    height: auto !important;
+
+    max-width: 22px !important;
+    max-height: 22px !important;
+
+    margin: 1px !important;
+
+    object-fit: contain !important;
+}
+
+
+/* ---------------------------------------------------------
+   SCEDITOR
+   --------------------------------------------------------- */
+
+html body .mmic-pm-compose-page .sceditor-container {
+
+    display: block !important;
+
+    width: 100% !important;
+    max-width: none !important;
+
+    min-height: 355px !important;
+
+    margin: 0 !important;
+}
+
+
+html body .mmic-pm-compose-page
+.sceditor-container iframe,
+
+html body .mmic-pm-compose-page
+.sceditor-container textarea,
+
+html body .mmic-pm-compose-page
+#text_editor_textarea {
+
+    min-height: 310px !important;
+}
+
+
+/* ---------------------------------------------------------
+   PRÉVISUALISATION + ENVOYER
+   --------------------------------------------------------- */
+
+html body .mmic-pm-compose-actions td {
+
+    padding: 14px !important;
+
+    text-align: center !important;
+}
+
+
+html body .mmic-pm-compose-actions input[type="submit"] {
+
+    min-width: 125px !important;
+
+    height: 34px !important;
+
+    margin: 0 5px !important;
+
+    border-radius: 6px !important;
+
+    font-family: Verdana, Arial, sans-serif !important;
+    font-size: 6px !important;
+    font-weight: 700 !important;
+
+    letter-spacing: .7px !important;
+
+    text-transform: uppercase !important;
+}
+
+
+/* prévisualisation */
+
+html body .mmic-pm-compose-actions input[name="preview"] {
+
+    border: 1px solid #d8b08c !important;
+
+    background: #fffaf4 !important;
+
+    color: #102438 !important;
+}
+
+
+/* envoyer */
+
+html body .mmic-pm-compose-actions input[name="post"] {
+
+    border: 1px solid #d8b08c !important;
+
+    background: #102438 !important;
+
+    color: #fffaf4 !important;
+}
+
+
+/* ---------------------------------------------------------
+   RESPONSIVE
+   --------------------------------------------------------- */
+
+@media (max-width: 850px) {
+
+    html body .mmic-pm-compose-page
+    .mmic-pm-compose-toolbar {
+
+        flex-direction: column !important;
+
+        align-items: stretch !important;
+    }
+
+
+    html body .mmic-pm-compose-page
+    .mmic-pm-compose-toolbar .mmic-pm-folders {
+
+        grid-template-columns:
+            repeat(2, minmax(0,1fr)) !important;
+    }
+
+
+    html body .mmic-pm-compose-page
+    #parent_editor_simple {
+
+        flex-direction: column !important;
+    }
+
+
+    html body .mmic-pm-compose-page
+    #parent_editor_simple > td:first-child {
+
+        width: 100% !important;
+        min-width: 0 !important;
+        max-width: none !important;
+
+        flex-basis: auto !important;
+    }
+
+
+    html body .mmic-pm-compose-page
+    #smileyContainer {
+
+        max-width: none !important;
+    }
+
+}
