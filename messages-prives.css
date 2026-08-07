@@ -1218,9 +1218,7 @@ html body .mmic-pm-message:has(
 }
 /* Message lu */
 
-html body .mmic-pm-message:has(
-.mmic-pm-original-folder img[src$="/folder.gif"]
-)
+
 .mmic-pm-status-icon::before{
 
     content:"✉" !important;
