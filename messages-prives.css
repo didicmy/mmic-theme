@@ -643,52 +643,6 @@ html body .mmic-pm-original-icon {
     display: none !important;
 }
 
-
-html body .mmic-pm-status-icon {
-    display: flex;
-
-    align-items: center;
-    justify-content: center;
-
-    width: 30px;
-    height: 30px;
-
-    border: 1px solid #d8b08c;
-    border-radius: 7px;
-
-    background: #102438;
-
-    box-shadow:
-        0 3px 6px rgba(16,36,56,.12);
-}
-
-
-/* =========================================================
-   ICÔNE ENVELOPPE
-   ========================================================= */
-
-html body .mmic-pm-status-icon{
-    position:relative !important;
-}
-
-html body .mmic-pm-status-icon::before{
-    content:"✉" !important;
-
-    position:absolute !important;
-
-    left:50%;
-    top:50%;
-
-    transform:translate(-50%,-50%);
-
-    font-size:16px !important;
-    line-height:1 !important;
-
-    color:#f4dcc1 !important;
-}
-
-
-
 /* sujet */
 
 html body .mmic-pm-message-main {
@@ -1084,7 +1038,9 @@ html body .mmic-pm-message-title:hover {
    ========================================================= */
 
 
-/* Base commune */
+/* ---------------------------------------------------------
+   BASE COMMUNE
+   --------------------------------------------------------- */
 
 html body .mmic-pm-status-icon {
     position: relative !important;
@@ -1103,11 +1059,15 @@ html body .mmic-pm-status-icon {
 
     box-shadow:
         0 3px 6px rgba(16,36,56,.12) !important;
+
+    overflow: visible !important;
 }
 
 
 html body .mmic-pm-status-icon::before {
     content: "" !important;
+
+    display: block !important;
 
     width: 15px !important;
     height: 15px !important;
@@ -1125,9 +1085,9 @@ html body .mmic-pm-status-icon::before {
 }
 
 
-/* =========================================================
+/* ---------------------------------------------------------
    NON LU — ENVELOPPE FERMÉE
-   ========================================================= */
+   --------------------------------------------------------- */
 
 html body .mmic-pm-message:has(
     .mmic-pm-original-folder img[src*="folder_new"]
@@ -1144,9 +1104,9 @@ html body .mmic-pm-message:has(
 }
 
 
-/* =========================================================
+/* ---------------------------------------------------------
    LU — ENVELOPPE OUVERTE
-   ========================================================= */
+   --------------------------------------------------------- */
 
 html body .mmic-pm-message:has(
     .mmic-pm-original-folder img[src$="/folder.gif"]
@@ -1154,14 +1114,13 @@ html body .mmic-pm-message:has(
 .mmic-pm-status-icon::before {
 
     -webkit-mask-image:
-        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M12 3 2 10v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-9L12 3Zm0 2.5 7.7 5.4L12 16l-7.7-5.1L12 5.5ZM4 12.5l8 5.3 8-5.3V19H4v-6.5Z'/%3E%3C/svg%3E") !important;
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M3.5 9.5 12 3l8.5 6.5V20H3.5V9.5Zm2 1.1V18h13v-7.4L12 15.8 5.5 10.6Zm.8-1.5L12 13.7l5.7-4.6L12 4.8 6.3 9.1Z'/%3E%3C/svg%3E") !important;
 
     mask-image:
-        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M12 3 2 10v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-9L12 3Zm0 2.5 7.7 5.4L12 16l-7.7-5.1L12 5.5ZM4 12.5l8 5.3 8-5.3V19H4v-6.5Z'/%3E%3C/svg%3E") !important;
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M3.5 9.5 12 3l8.5 6.5V20H3.5V9.5Zm2 1.1V18h13v-7.4L12 15.8 5.5 10.6Zm.8-1.5L12 13.7l5.7-4.6L12 4.8 6.3 9.1Z'/%3E%3C/svg%3E") !important;
 
     background: #d8b08c !important;
 }
-
 /* Sujet lu légèrement plus doux */
 
 html body .mmic-pm-message:has(
