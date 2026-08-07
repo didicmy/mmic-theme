@@ -1342,93 +1342,127 @@ html body .mmic-pm-contact-item:empty {
 }
 
 /* =========================================================
-   LECTURE MP — BOUTONS CONTACT SOUS L'AVATAR
+   CONTACT
    ========================================================= */
 
-html body .mmic-pm-read-contact {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+html body .mmic-pm-read-contact{
+    display:flex;
+    flex-direction:column;
+    gap:8px;
 
-    gap: 7px;
+    width:100%;
 
-    width: 100%;
+    margin-top:16px;
+    padding-top:14px;
 
-    margin-top: 14px;
-    padding-top: 12px;
-
-    border-top: 1px solid #ead8c8;
+    border-top:1px solid #ead8c8;
 }
 
-html body .mmic-pm-contact-item:empty {
-    display: none !important;
+html body .mmic-pm-contact-item{
+    width:100%;
 }
 
-html body .mmic-pm-contact-item a {
-    display: inline-flex !important;
-    align-items: center !important;
-    justify-content: center !important;
+html body .mmic-pm-contact-item a{
 
-    width: 31px !important;
-    height: 31px !important;
+    display:flex !important;
+    align-items:center;
+    justify-content:center;
 
-    margin: 0 !important;
-    padding: 0 !important;
+    gap:8px;
 
-    overflow: hidden !important;
+    width:100%;
+    height:34px;
 
-    border: 1px solid #d8b08c !important;
-    border-radius: 7px !important;
+    border:1px solid #d8b08c;
+    border-radius:7px;
 
-    background: #fffaf4 !important;
-    color: #102438 !important;
+    background:#fffaf4;
 
-    text-decoration: none !important;
+    color:#102438;
 
-    box-shadow:
-        0 2px 5px rgba(16,36,56,.07) !important;
+    font-family:Verdana;
+    font-size:10px;
+    font-weight:700;
 
-    transition:
-        transform .16s ease,
-        background .16s ease,
-        border-color .16s ease,
-        box-shadow .16s ease !important;
+    text-transform:uppercase;
+    letter-spacing:.5px;
+
+    text-decoration:none;
+
+    transition:.2s;
 }
 
-html body .mmic-pm-contact-item a:hover {
-    transform: translateY(-1px) !important;
+html body .mmic-pm-contact-item a:hover{
 
-    border-color: #c78d68 !important;
+    background:#102438;
 
-    background: #102438 !important;
+    color:#fff;
 
-    box-shadow:
-        0 4px 8px rgba(16,36,56,.12) !important;
+    border-color:#102438;
+
 }
 
 /* anciennes images Forumactif */
 
-html body .mmic-pm-contact-item img {
-    display: block !important;
-
-    max-width: 14px !important;
-    max-height: 14px !important;
-
-    margin: 0 !important;
-
-    opacity: .82 !important;
-
-    transition:
-        opacity .16s ease,
-        filter .16s ease !important;
+html body .mmic-pm-contact-item img{
+    display:none !important;
 }
 
-html body .mmic-pm-contact-item a:hover img {
-    opacity: 1 !important;
+/* Profil */
+
+html body .mmic-pm-contact-profile a::before{
+
+    font-family:"Font Awesome 6 Free";
+    font-weight:900;
+    content:"\f007";
+
+    margin-right:6px;
+
+}
+
+html body .mmic-pm-contact-profile a::after{
+
+    content:"Profil";
+
 }
 
 
+/* MP */
+
+html body .mmic-pm-contact-pm a::before{
+
+    font-family:"Font Awesome 6 Free";
+    font-weight:900;
+    content:"\f0e0";
+
+    margin-right:6px;
+
+}
+
+html body .mmic-pm-contact-pm a::after{
+
+    content:"Message";
+
+}
+
+
+/* Site */
+
+html body .mmic-pm-contact-www a::before{
+
+    font-family:"Font Awesome 6 Free";
+    font-weight:900;
+    content:"\f0ac";
+
+    margin-right:6px;
+
+}
+
+html body .mmic-pm-contact-www a::after{
+
+    content:"Site";
+
+}
 
 /* anciennes images Forumactif */
 
