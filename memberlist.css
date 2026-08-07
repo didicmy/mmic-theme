@@ -1196,3 +1196,325 @@ html body .mmic-member-card-action a:hover {
 html body .mmic-member-card-action:empty {
     display: none !important;
 }
+/* =========================================================
+   MEMBERLIST — FILTRE COMPACT SUR UNE SEULE LIGNE
+   ========================================================= */
+
+html body .mmic-memberlist-filter {
+    margin-top: 14px !important;
+
+    padding: 14px 16px !important;
+
+    border: 1px solid #e2d2c1 !important;
+    border-radius: 10px !important;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fffdf9 0%,
+            #faf5ee 100%
+        ) !important;
+
+    box-shadow:
+        0 4px 12px rgba(16,36,56,.05),
+        inset 0 1px 0 rgba(255,255,255,.85) !important;
+}
+
+
+/* Ancien titre devenu inutile */
+
+html body .mmic-memberlist-filter-title {
+    display: none !important;
+}
+
+
+/* ---------------------------------------------------------
+   LIGNE PRINCIPALE
+   --------------------------------------------------------- */
+
+html body .mmic-memberlist-filter-inline {
+    display: flex !important;
+
+    align-items: flex-end !important;
+    justify-content: center !important;
+
+    gap: 12px !important;
+
+    width: 100% !important;
+
+    box-sizing: border-box !important;
+}
+
+
+/* ---------------------------------------------------------
+   PETIT TITRE À GAUCHE
+   --------------------------------------------------------- */
+
+html body .mmic-memberlist-filter-brand {
+    display: flex !important;
+    align-items: center !important;
+
+    min-height: 32px !important;
+
+    margin-right: 4px !important;
+    padding-bottom: 2px !important;
+}
+
+
+html body .mmic-memberlist-filter-brand span {
+    color: #b97a56 !important;
+
+    font-size: 7px !important;
+    font-weight: 700 !important;
+
+    letter-spacing: 1.5px !important;
+    line-height: 1.2 !important;
+
+    text-transform: uppercase !important;
+
+    white-space: nowrap !important;
+}
+
+
+/* ---------------------------------------------------------
+   CHAMPS
+   --------------------------------------------------------- */
+
+html body .mmic-memberlist-filter-field {
+    display: flex !important;
+    flex-direction: column !important;
+
+    gap: 5px !important;
+
+    min-width: 0 !important;
+
+    margin: 0 !important;
+}
+
+
+html body .mmic-memberlist-filter-field > span {
+    color: #b97a56 !important;
+
+    font-size: 6px !important;
+    font-weight: 700 !important;
+
+    letter-spacing: 1px !important;
+    line-height: 1 !important;
+
+    text-transform: uppercase !important;
+}
+
+
+/* Nom d'utilisateur un peu plus large */
+
+html body .mmic-memberlist-filter-user {
+    width: 185px !important;
+    flex: 0 0 185px !important;
+}
+
+
+/* Tri */
+
+html body .mmic-memberlist-filter-field select {
+    width: 170px !important;
+}
+
+
+/* Ordre un peu moins large */
+
+html body .mmic-memberlist-filter-field:nth-of-type(3) select {
+    width: 145px !important;
+}
+
+
+/* Inputs et select */
+
+html body .mmic-memberlist-filter input[type="text"],
+html body .mmic-memberlist-filter select {
+    height: 32px !important;
+
+    padding: 0 10px !important;
+
+    border: 1px solid #dfcdbc !important;
+    border-radius: 6px !important;
+
+    background: #fffdf9 !important;
+    color: #102438 !important;
+
+    font-size: 8px !important;
+
+    box-sizing: border-box !important;
+
+    outline: none !important;
+}
+
+
+html body .mmic-memberlist-filter input[type="text"]:focus,
+html body .mmic-memberlist-filter select:focus {
+    border-color: #c78d68 !important;
+
+    box-shadow:
+        0 0 0 2px rgba(185,122,86,.10) !important;
+}
+
+
+/* =========================================================
+   BOUTON RECHERCHER
+   ========================================================= */
+
+html body .mmic-memberlist-submit {
+    display: inline-flex !important;
+
+    align-items: center !important;
+    justify-content: center !important;
+
+    gap: 7px !important;
+
+    width: auto !important;
+    min-width: 100px !important;
+
+    height: 32px !important;
+
+    margin: 0 !important;
+    padding: 0 12px !important;
+
+    border: 1px solid #d8b08c !important;
+    border-radius: 6px !important;
+
+    background: #102438 !important;
+    color: #fffaf4 !important;
+
+    font-family: Verdana, Arial, sans-serif !important;
+    font-size: 6.5px !important;
+    font-weight: 700 !important;
+
+    letter-spacing: .8px !important;
+    line-height: 1 !important;
+
+    text-transform: uppercase !important;
+
+    box-shadow:
+        inset 0 1px 0 rgba(255,255,255,.08),
+        0 3px 7px rgba(16,36,56,.09) !important;
+
+    cursor: pointer !important;
+
+    box-sizing: border-box !important;
+
+    transition:
+        transform .16s ease,
+        background .16s ease,
+        border-color .16s ease,
+        box-shadow .16s ease !important;
+}
+
+
+/* Loupe SVG */
+
+html body .mmic-memberlist-submit-icon {
+    display: block !important;
+
+    width: 11px !important;
+    height: 11px !important;
+
+    background: #e4b184 !important;
+
+    -webkit-mask-image:
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M10 4a6 6 0 1 0 0 12 6 6 0 0 0 0-12Zm0-2a8 8 0 1 1 4.9 14.3L21.6 23 20 24.6l-6.7-6.7A8 8 0 0 1 10 2Z'/%3E%3C/svg%3E") !important;
+
+    mask-image:
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M10 4a6 6 0 1 0 0 12 6 6 0 0 0 0-12Zm0-2a8 8 0 1 1 4.9 14.3L21.6 23 20 24.6l-6.7-6.7A8 8 0 0 1 10 2Z'/%3E%3C/svg%3E") !important;
+
+    -webkit-mask-repeat: no-repeat !important;
+    mask-repeat: no-repeat !important;
+
+    -webkit-mask-position: center !important;
+    mask-position: center !important;
+
+    -webkit-mask-size: contain !important;
+    mask-size: contain !important;
+}
+
+
+html body .mmic-memberlist-submit:hover {
+    transform: translateY(-1px) !important;
+
+    background: #173751 !important;
+    border-color: #c78d68 !important;
+
+    box-shadow:
+        inset 0 1px 0 rgba(255,255,255,.09),
+        0 5px 10px rgba(16,36,56,.13) !important;
+}
+
+
+/* =========================================================
+   CHICAGO DE FOND — PLUS DISCRET
+   ========================================================= */
+
+html body .mmic-memberlist-hero::after {
+    content: "CHICAGO" !important;
+
+    position: absolute !important;
+
+    right: 24px !important;
+    bottom: 6px !important;
+
+    color: rgba(255,255,255,.018) !important;
+
+    font-family: Georgia, "Times New Roman", serif !important;
+
+    font-size: 28px !important;
+    font-weight: 700 !important;
+
+    letter-spacing: 4px !important;
+    line-height: 1 !important;
+
+    pointer-events: none !important;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    html body .mmic-memberlist-filter-inline {
+        flex-wrap: wrap !important;
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    html body .mmic-memberlist-filter-inline {
+        align-items: stretch !important;
+    }
+
+    html body .mmic-memberlist-filter-brand {
+        width: 100% !important;
+
+        justify-content: center !important;
+
+        margin-right: 0 !important;
+    }
+
+    html body .mmic-memberlist-filter-field,
+    html body .mmic-memberlist-filter-user {
+        width: 100% !important;
+        flex: 1 1 100% !important;
+    }
+
+    html body .mmic-memberlist-filter input[type="text"],
+    html body .mmic-memberlist-filter select,
+    html body .mmic-memberlist-filter-field select {
+        width: 100% !important;
+    }
+
+    html body .mmic-memberlist-submit {
+        width: 100% !important;
+    }
+
+}
