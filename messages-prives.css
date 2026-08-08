@@ -3174,3 +3174,136 @@ html body .mmic-pm-compose-page .mmic-pm-history {
         max-width: 150px !important;
     }
 }
+/* ----------------------------------------------------
+   PREVISUALISATION MP
+---------------------------------------------------- */
+
+html body .mmic-pm-preview{
+
+    margin:0 0 18px;
+
+    border:1px solid #dfcdbc;
+
+    border-radius:10px;
+
+    overflow:hidden;
+
+    background:#fffaf4;
+
+    box-shadow:0 4px 10px rgba(16,36,56,.05);
+
+}
+
+html body .mmic-pm-preview-header{
+
+    background:#13263d;
+
+    padding:18px;
+
+    text-align:center;
+
+}
+
+html body .mmic-pm-preview-kicker{
+
+    font-size:10px;
+
+    letter-spacing:.18em;
+
+    text-transform:uppercase;
+
+    color:#c99b74;
+
+    margin-bottom:6px;
+
+}
+
+html body .mmic-pm-preview-header h2{
+
+    margin:0;
+
+    color:#fff;
+
+    font-size:34px;
+
+}
+
+html body .mmic-pm-preview-body{
+
+    padding:25px;
+
+}
+
+html body .mmic-pm-preview-meta{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,minmax(240px,1fr));
+
+    gap:16px;
+
+    margin-bottom:25px;
+
+}
+
+html body .mmic-preview-item{
+
+    background:#fffdf9;
+
+    border:1px solid #ead8c8;
+
+    border-radius:8px;
+
+    padding:14px;
+
+}
+
+html body .mmic-preview-item span{
+
+    display:block;
+
+    text-transform:uppercase;
+
+    font-size:10px;
+
+    letter-spacing:.12em;
+
+    color:#b98b66;
+
+    margin-bottom:4px;
+
+}
+
+html body .mmic-preview-item strong{
+
+    display:block;
+
+    color:#13263d;
+
+    font-size:14px;
+
+    font-weight:700;
+
+}
+
+html body .mmic-pm-preview-message{
+
+    border:1px solid #ead8c8;
+
+    border-radius:8px;
+
+    background:#fffdf9;
+
+    padding:22px;
+
+}
+
+html body .mmic-pm-preview-message .postbody{
+
+    margin:0;
+
+    color:#404040;
+
+    line-height:1.7;
+
+}
