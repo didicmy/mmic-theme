@@ -2945,6 +2945,15 @@ html body .mmic-pm-compose-page
     background: #fffaf4 !important;
 
     flex: 0 0 auto !important;
+       width:auto !important;
+    min-width:unset !important;
+    max-width:none !important;
+
+    display:inline-flex !important;
+    align-items:center !important;
+
+    white-space:nowrap !important;
+
 }
 html body .mmic-pm-compose-page
 .mmic-pm-compose-editor .sceditor-button {
@@ -2958,6 +2967,12 @@ html body .mmic-pm-compose-page
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
+       width:22px !important;
+    height:22px !important;
+
+    margin:0 2px !important;
+
+    flex:none !important;
 }
 html body .mmic-pm-compose-page
 .mmic-pm-compose-editor .sceditor-button div {
