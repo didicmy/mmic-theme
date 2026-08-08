@@ -2965,9 +2965,9 @@ html body .mmic-pm-compose-page
     min-width: 22px !important;
     max-width: none !important;
 
-    height: 24px !important;
-    min-height: 24px !important;
-    max-height: 24px !important;
+height: 20px !important;
+min-height: 20px !important;
+max-height: 20px !important;
 
     margin: 0 2px !important;
     padding: 0 !important;
