@@ -1402,3 +1402,134 @@ html body .mmic-navigation-account:hover
 .mmic-navigation-username {
     color: #d8b08c !important;
 }
+/* ==========================================================
+   NAVIGATION — NOTIFICATIONS
+========================================================== */
+
+.mmic-navigation-notifications{
+    position:relative;
+
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+
+    gap:6px;
+
+    flex:0 0 auto;
+
+    min-height:32px;
+
+    padding:0 10px;
+
+    color:#fff !important;
+
+    text-decoration:none !important;
+
+    font-size:9px;
+    font-weight:700;
+
+    letter-spacing:.06em;
+    text-transform:uppercase;
+
+    white-space:nowrap;
+
+    border-radius:6px;
+
+    transition:
+        background .2s ease,
+        color .2s ease,
+        border-color .2s ease;
+}
+
+
+/* petite icône */
+.mmic-navigation-notifications-icon{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    width:18px;
+    height:18px;
+
+    border:1px solid #d2a27e;
+    border-radius:50%;
+
+    color:#d2a27e;
+
+    font-size:10px;
+    line-height:1;
+}
+
+
+/* survol */
+.mmic-navigation-notifications:hover{
+    background:rgba(255,255,255,.06);
+
+    color:#d2a27e !important;
+}
+
+
+/* ----------------------------------------------------------
+   COMPTEUR
+---------------------------------------------------------- */
+
+.mmic-navigation-notifications-count{
+    display:none;
+
+    align-items:center;
+    justify-content:center;
+
+    min-width:16px;
+    height:16px;
+
+    box-sizing:border-box;
+
+    padding:0 4px;
+
+    border-radius:10px;
+
+    background:#d2a27e;
+    color:#13263d;
+
+    font-family:Arial,sans-serif;
+    font-size:9px;
+    font-weight:700;
+
+    line-height:16px;
+
+    text-align:center;
+}
+
+
+/* notification non lue */
+.mmic-navigation-notifications.mmic-has-notifications
+.mmic-navigation-notifications-count{
+    display:inline-flex;
+}
+
+
+/* l'icône change aussi légèrement */
+.mmic-navigation-notifications.mmic-has-notifications
+.mmic-navigation-notifications-icon{
+    background:#d2a27e;
+    color:#13263d;
+}
+
+
+/* petit signal visuel très discret */
+.mmic-navigation-notifications.mmic-has-notifications::after{
+    content:"";
+
+    position:absolute;
+
+    top:4px;
+    left:24px;
+
+    width:5px;
+    height:5px;
+
+    border-radius:50%;
+
+    background:#fff;
+    border:1px solid #d2a27e;
+}
