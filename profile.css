@@ -2816,3 +2816,197 @@ html body .mmic-profile-business-contact > div > div {
         #f8f2eb 100%
     ) !important;
 }
+/* =========================================================
+   PROFIL — EDITION
+   ========================================================= */
+
+html body .mmic-profile-edit-page {
+    width: calc(100% - 24px);
+    max-width: 1100px;
+    margin: 30px auto 40px;
+    color: #102438;
+    box-sizing: border-box;
+}
+
+/* ---------------------------------------------------------
+   TABLE PRINCIPALE
+   --------------------------------------------------------- */
+
+html body .mmic-profile-edit-page .mmic-profile-edit-table {
+    width: 100% !important;
+    border: 1px solid #dfcdbc !important;
+    border-radius: 10px !important;
+    overflow: hidden !important;
+    background: #fffaf4 !important;
+    border-spacing: 0 !important;
+    box-shadow: 0 5px 14px rgba(16,36,56,.05);
+}
+
+/* ---------------------------------------------------------
+   BANDEAUX DE SECTION
+   --------------------------------------------------------- */
+
+html body .mmic-profile-edit-page .thHead,
+html body .mmic-profile-edit-page .thSides {
+    background: #13263d !important;
+    color: #fff !important;
+
+    border: 0 !important;
+    border-top: 1px solid #d2a27e !important;
+    border-bottom: 1px solid #d2a27e !important;
+
+    padding: 13px 18px !important;
+
+    font-family: Georgia, "Times New Roman", serif !important;
+    font-size: 18px !important;
+    font-weight: 600 !important;
+
+    text-align: center !important;
+    letter-spacing: .01em !important;
+
+    height: auto !important;
+}
+
+/* petite ligne décorative implicite */
+html body .mmic-profile-edit-page .thHead::before,
+html body .mmic-profile-edit-page .thSides::before {
+    content: "PROFIL";
+    display: block;
+
+    margin-bottom: 3px;
+
+    font-family: Arial, sans-serif;
+    font-size: 8px;
+    font-weight: 700;
+
+    letter-spacing: .18em;
+    text-transform: uppercase;
+
+    color: #c99b74;
+}
+
+/* ---------------------------------------------------------
+   LIGNES / CELLULES
+   --------------------------------------------------------- */
+
+html body .mmic-profile-edit-page td.row1,
+html body .mmic-profile-edit-page td.row2 {
+    background: #fffaf4 !important;
+    border: 0 !important;
+    border-bottom: 1px solid #f0e4d8 !important;
+    padding: 9px 14px !important;
+    vertical-align: middle !important;
+}
+
+/* colonne des intitulés */
+html body .mmic-profile-edit-page td.row1 {
+    width: 36%;
+    color: #13263d !important;
+}
+
+/* colonne des champs */
+html body .mmic-profile-edit-page td.row2 {
+    color: #303030 !important;
+}
+
+/* ---------------------------------------------------------
+   TYPOGRAPHIE
+   --------------------------------------------------------- */
+
+html body .mmic-profile-edit-page .gen,
+html body .mmic-profile-edit-page .genmed {
+    font-size: 13px !important;
+    color: #13263d !important;
+}
+
+html body .mmic-profile-edit-page .gensmall {
+    font-size: 11px !important;
+    color: #7b7168 !important;
+    line-height: 1.45 !important;
+}
+
+/* ---------------------------------------------------------
+   INPUTS / SELECTS / TEXTAREA
+   --------------------------------------------------------- */
+
+html body .mmic-profile-edit-page input[type="text"],
+html body .mmic-profile-edit-page input[type="password"],
+html body .mmic-profile-edit-page input[type="file"],
+html body .mmic-profile-edit-page select,
+html body .mmic-profile-edit-page textarea {
+    max-width: 100%;
+
+    border: 1px solid #dfcdbc !important;
+    border-radius: 6px !important;
+
+    background: #fffdf9 !important;
+    color: #13263d !important;
+
+    padding: 6px 8px !important;
+
+    box-sizing: border-box !important;
+}
+
+html body .mmic-profile-edit-page textarea {
+    min-height: 90px;
+}
+
+/* ---------------------------------------------------------
+   LIENS
+   --------------------------------------------------------- */
+
+html body .mmic-profile-edit-page a {
+    color: #9d6f4f;
+}
+
+html body .mmic-profile-edit-page a:hover {
+    color: #13263d;
+}
+
+/* ---------------------------------------------------------
+   BOUTONS BAS DE PAGE
+   --------------------------------------------------------- */
+
+html body .mmic-profile-edit-page .catBottom {
+    background: #fffaf4 !important;
+    border: 0 !important;
+
+    padding: 18px !important;
+
+    text-align: center !important;
+}
+
+html body .mmic-profile-edit-page .mainoption,
+html body .mmic-profile-edit-page .liteoption {
+    min-width: 115px;
+
+    padding: 9px 16px !important;
+
+    border: 1px solid #d2a27e !important;
+    border-radius: 6px !important;
+
+    background: #fffaf4 !important;
+
+    color: #13263d !important;
+
+    font-size: 9px !important;
+    font-weight: 700 !important;
+
+    letter-spacing: .08em !important;
+    text-transform: uppercase !important;
+
+    cursor: pointer;
+}
+
+html body .mmic-profile-edit-page .mainoption {
+    background: #13263d !important;
+    color: #fff !important;
+}
+
+html body .mmic-profile-edit-page .mainoption:hover {
+    background: #1d3553 !important;
+}
+
+html body .mmic-profile-edit-page .liteoption:hover {
+    background: #f5ece2 !important;
+}
