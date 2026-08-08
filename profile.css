@@ -3606,3 +3606,48 @@ body.mmic-profile-followers .followBtn:hover {
     background:#d2a27e !important;
     color:#13263d !important;
 }
+/* ==========================================================
+   PROFIL — MEMBRES SUIVIS
+   Ajustements cartes
+========================================================== */
+
+body.mmic-profile-followers .follower-card {
+    align-items:center !important;
+
+    padding:14px 16px !important;
+
+    min-height:82px;
+
+    gap:14px !important;
+}
+
+body.mmic-profile-followers .follower-card img {
+    width:52px !important;
+    height:52px !important;
+
+    margin:0 !important;
+
+    object-fit:cover !important;
+    border-radius:6px !important;
+}
+
+body.mmic-profile-followers .follower-card .details {
+    display:flex !important;
+    flex-direction:column !important;
+    justify-content:center !important;
+    align-items:flex-start !important;
+
+    gap:8px !important;
+}
+
+/* Pseudo */
+body.mmic-profile-followers .follower-card .details p {
+    margin:0 !important;
+
+    line-height:1.1 !important;
+}
+
+/* Bouton */
+body.mmic-profile-followers .follower-card .followBtn {
+    margin:0 !important;
+}
