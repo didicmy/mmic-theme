@@ -3064,3 +3064,56 @@ html body .mmic-profile-edit-page td.row2 span.gen{
     line-height:1.5;
     color:#6f6b66;
 }
+/* ==========================================================
+   BLOC EXPORT DE DONNÉES
+========================================================== */
+
+/* La ligne contenant l'export devient un bloc moderne */
+html body .mmic-profile-edit-page
+td.row1:has(+ td.row2 a[href*="rgpd.php"]) {
+    display:block !important;
+    width:auto !important;
+
+    text-align:center !important;
+
+    padding:16px 20px 8px !important;
+
+    border-bottom:0 !important;
+}
+
+html body .mmic-profile-edit-page
+td.row1:has(+ td.row2 a[href*="rgpd.php"]) + td.row2 {
+    display:block !important;
+    width:auto !important;
+
+    text-align:center !important;
+
+    padding:8px 20px 18px !important;
+
+    border-bottom:1px solid #f0e4d8 !important;
+}
+
+/* Bouton centré */
+html body .mmic-profile-edit-page
+td.row2 a[href*="rgpd.php"] {
+    margin:0 auto 10px !important;
+}
+
+/* Texte explicatif sous le bouton */
+html body .mmic-profile-edit-page
+td.row2 a[href*="rgpd.php"] + br {
+    display:none !important;
+}
+
+html body .mmic-profile-edit-page
+td.row2 a[href*="rgpd.php"] ~ .gen {
+    display:block !important;
+
+    max-width:520px;
+    margin:0 auto !important;
+
+    text-align:center !important;
+    line-height:1.5 !important;
+
+    color:#6f6b66 !important;
+}
