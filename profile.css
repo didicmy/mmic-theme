@@ -3064,56 +3064,63 @@ html body .mmic-profile-edit-page td.row2 span.gen{
     line-height:1.5;
     color:#6f6b66;
 }
-/* ==========================================================
-   BLOC EXPORT DE DONNÉES
-========================================================== */
+/*==================================================
+=            CARTE EXPORT DES DONNÉES              =
+==================================================*/
 
-/* La ligne contenant l'export devient un bloc moderne */
-html body .mmic-profile-edit-page
-td.row1:has(+ td.row2 a[href*="rgpd.php"]) {
-    display:block !important;
-    width:auto !important;
+/* La ligne contenant le texte et le bouton */
+html body .mmic-profile-edit-page tr:has(a[href*="rgpd.php"]) td{
+    border:0 !important;
+    background:transparent !important;
+    padding:0 !important;
+}
 
+/* Carte */
+html body .mmic-profile-edit-page a[href*="rgpd.php"]{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+
+    padding:9px 18px;
+
+    background:#16283d;
+    color:#fff !important;
+
+    border:1px solid #d8b38d;
+    border-radius:6px;
+
+    text-decoration:none !important;
+    font-size:11px;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:.08em;
+
+    transition:.25s;
+}
+
+html body .mmic-profile-edit-page a[href*="rgpd.php"]:hover{
+    background:#d8b38d;
+    color:#16283d !important;
+}
+
+/* Le conteneur qui englobe texte + bouton */
+html body .mmic-profile-edit-page td.row1:has(a[href*="rgpd.php"]){
     text-align:center !important;
-
-    padding:16px 20px 8px !important;
-
-    border-bottom:0 !important;
+    padding:26px 20px !important;
 }
 
-html body .mmic-profile-edit-page
-td.row1:has(+ td.row2 a[href*="rgpd.php"]) + td.row2 {
-    display:block !important;
-    width:auto !important;
-
-    text-align:center !important;
-
-    padding:8px 20px 18px !important;
-
-    border-bottom:1px solid #f0e4d8 !important;
-}
-
-/* Bouton centré */
-html body .mmic-profile-edit-page
-td.row2 a[href*="rgpd.php"] {
-    margin:0 auto 10px !important;
-}
-
-/* Texte explicatif sous le bouton */
-html body .mmic-profile-edit-page
-td.row2 a[href*="rgpd.php"] + br {
-    display:none !important;
-}
-
-html body .mmic-profile-edit-page
-td.row2 a[href*="rgpd.php"] ~ .gen {
-    display:block !important;
-
+/* Texte explicatif */
+html body .mmic-profile-edit-page td.row1:has(a[href*="rgpd.php"]) span.gen{
+    display:block;
     max-width:520px;
-    margin:0 auto !important;
+    margin:18px auto 0;
 
-    text-align:center !important;
-    line-height:1.5 !important;
+    font-size:13px;
+    line-height:1.7;
+    color:#5d5d5d;
+}
 
-    color:#6f6b66 !important;
+/* Petit espace sous le bouton */
+html body .mmic-profile-edit-page td.row1:has(a[href*="rgpd.php"]) a{
+    margin:18px auto 12px;
 }
