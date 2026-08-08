@@ -2953,6 +2953,8 @@ padding: 2px 5px !important;
     flex: 0 0 auto !important;
 
     box-sizing: border-box !important;
+   justify-content: center !important;
+   
 }
 
 html body .mmic-pm-compose-page
