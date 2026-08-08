@@ -3896,10 +3896,11 @@ body.mmic-profile-notifications #page-body td.catBottom{
     }
 }
 /* ==========================================================
-   PROFIL — SUJETS SURVEILLÉS
+   PROFIL — SUJETS SURVEILLÉS + FAVORIS
+   Classe commune : mmic-profile-topic-list
 ========================================================== */
 
-body.mmic-watched-topics-page #page-body{
+body.mmic-profile-topic-list #page-body{
     color:#13263d;
 }
 
@@ -3908,7 +3909,7 @@ body.mmic-watched-topics-page #page-body{
    TABLEAU PRINCIPAL
 ---------------------------------------------------------- */
 
-body.mmic-watched-topics-page #page-body table.forumline{
+body.mmic-profile-topic-list #page-body table.forumline{
     width:100% !important;
 
     border:1px solid #dfcdbc !important;
@@ -3929,11 +3930,11 @@ body.mmic-watched-topics-page #page-body table.forumline{
 
 /* ----------------------------------------------------------
    GRAND BANDEAU
-   "1 sujet surveillé"
+   "1 sujet surveillé" / "0 favori"
 ---------------------------------------------------------- */
 
-body.mmic-watched-topics-page #page-body .catHead,
-body.mmic-watched-topics-page #page-body .thHead{
+body.mmic-profile-topic-list #page-body .catHead,
+body.mmic-profile-topic-list #page-body .thHead{
     height:auto !important;
 
     padding:10px 16px !important;
@@ -3953,8 +3954,9 @@ body.mmic-watched-topics-page #page-body .thHead{
 
 
 /* Petit kicker */
-body.mmic-watched-topics-page #page-body .catHead::before,
-body.mmic-watched-topics-page #page-body .thHead::before{
+
+body.mmic-profile-topic-list #page-body .catHead::before,
+body.mmic-profile-topic-list #page-body .thHead::before{
     content:"PROFIL";
 
     display:block;
@@ -3976,7 +3978,7 @@ body.mmic-watched-topics-page #page-body .thHead::before{
    EN-TÊTES DES COLONNES
 ---------------------------------------------------------- */
 
-body.mmic-watched-topics-page #page-body th{
+body.mmic-profile-topic-list #page-body th{
     height:auto !important;
 
     padding:8px 7px !important;
@@ -3994,18 +3996,18 @@ body.mmic-watched-topics-page #page-body th{
     font-weight:600 !important;
 }
 
-body.mmic-watched-topics-page #page-body th:last-child{
+body.mmic-profile-topic-list #page-body th:last-child{
     border-right:0 !important;
 }
 
 
 /* ----------------------------------------------------------
-   LIGNES DES SUJETS
+   LIGNES DES SUJETS / FAVORIS
 ---------------------------------------------------------- */
 
-body.mmic-watched-topics-page #page-body td.row1,
-body.mmic-watched-topics-page #page-body td.row2,
-body.mmic-watched-topics-page #page-body table.forumline td{
+body.mmic-profile-topic-list #page-body td.row1,
+body.mmic-profile-topic-list #page-body td.row2,
+body.mmic-profile-topic-list #page-body table.forumline td{
     padding:8px 9px !important;
 
     border:0 !important;
@@ -4017,27 +4019,28 @@ body.mmic-watched-topics-page #page-body table.forumline td{
     vertical-align:middle !important;
 }
 
-body.mmic-watched-topics-page #page-body tr:last-child td{
+body.mmic-profile-topic-list #page-body tr:last-child td{
     border-bottom:0 !important;
 }
 
 
 /* alternance très légère */
-body.mmic-watched-topics-page #page-body tr:nth-child(even) td.row1,
-body.mmic-watched-topics-page #page-body tr:nth-child(even) td.row2{
+
+body.mmic-profile-topic-list #page-body tr:nth-child(even) td.row1,
+body.mmic-profile-topic-list #page-body tr:nth-child(even) td.row2{
     background:#fffdf9 !important;
 }
 
 
 /* ----------------------------------------------------------
-   LIENS DES SUJETS
+   LIENS
 ---------------------------------------------------------- */
 
-body.mmic-watched-topics-page #page-body a{
+body.mmic-profile-topic-list #page-body a{
     color:#9d6f4f;
 }
 
-body.mmic-watched-topics-page #page-body a:hover{
+body.mmic-profile-topic-list #page-body a:hover{
     color:#13263d;
 }
 
@@ -4046,14 +4049,14 @@ body.mmic-watched-topics-page #page-body a:hover{
    TYPOGRAPHIE
 ---------------------------------------------------------- */
 
-body.mmic-watched-topics-page #page-body .gen,
-body.mmic-watched-topics-page #page-body .genmed{
+body.mmic-profile-topic-list #page-body .gen,
+body.mmic-profile-topic-list #page-body .genmed{
     color:#13263d !important;
 
     font-size:11px !important;
 }
 
-body.mmic-watched-topics-page #page-body .gensmall{
+body.mmic-profile-topic-list #page-body .gensmall{
     color:#756b63 !important;
 
     font-size:10px !important;
@@ -4065,7 +4068,7 @@ body.mmic-watched-topics-page #page-body .gensmall{
    CHECKBOX
 ---------------------------------------------------------- */
 
-body.mmic-watched-topics-page #page-body input[type="checkbox"]{
+body.mmic-profile-topic-list #page-body input[type="checkbox"]{
     width:14px;
     height:14px;
 
@@ -4076,12 +4079,12 @@ body.mmic-watched-topics-page #page-body input[type="checkbox"]{
 
 
 /* ----------------------------------------------------------
-   BOUTON "ARRÊTER DE SURVEILLER..."
+   BOUTONS
 ---------------------------------------------------------- */
 
-body.mmic-watched-topics-page #page-body input[type="submit"],
-body.mmic-watched-topics-page #page-body .mainoption,
-body.mmic-watched-topics-page #page-body .liteoption{
+body.mmic-profile-topic-list #page-body input[type="submit"],
+body.mmic-profile-topic-list #page-body .mainoption,
+body.mmic-profile-topic-list #page-body .liteoption{
     padding:7px 14px !important;
 
     border:1px solid #d2a27e !important;
@@ -4101,9 +4104,9 @@ body.mmic-watched-topics-page #page-body .liteoption{
     transition:.2s ease !important;
 }
 
-body.mmic-watched-topics-page #page-body input[type="submit"]:hover,
-body.mmic-watched-topics-page #page-body .mainoption:hover,
-body.mmic-watched-topics-page #page-body .liteoption:hover{
+body.mmic-profile-topic-list #page-body input[type="submit"]:hover,
+body.mmic-profile-topic-list #page-body .mainoption:hover,
+body.mmic-profile-topic-list #page-body .liteoption:hover{
     background:#d2a27e !important;
     color:#13263d !important;
 }
@@ -4113,7 +4116,7 @@ body.mmic-watched-topics-page #page-body .liteoption:hover{
    BAS DE TABLEAU / PAGINATION
 ---------------------------------------------------------- */
 
-body.mmic-watched-topics-page #page-body .catBottom{
+body.mmic-profile-topic-list #page-body .catBottom{
     background:#f5ece2 !important;
 
     border:0 !important;
@@ -4126,10 +4129,10 @@ body.mmic-watched-topics-page #page-body .catBottom{
 
 
 /* ----------------------------------------------------------
-   "TOUT SÉLECTIONNER"
+   "TOUT SÉLECTIONNER / TOUT DÉSÉLECTIONNER"
 ---------------------------------------------------------- */
 
-body.mmic-watched-topics-page #page-body .gensmall a{
+body.mmic-profile-topic-list #page-body .gensmall a{
     font-weight:600;
 }
 
@@ -4138,7 +4141,7 @@ body.mmic-watched-topics-page #page-body .gensmall a{
    "SAUTER VERS"
 ---------------------------------------------------------- */
 
-body.mmic-watched-topics-page #page-body select{
+body.mmic-profile-topic-list #page-body select{
     border:1px solid #dfcdbc !important;
     border-radius:5px !important;
 
