@@ -3152,12 +3152,31 @@ html body .mmic-profile-edit-page
 .mmic-profile-edit-table td.row2 .gensmall {
     line-height: 1.5;
 }
-html body .mmic-profile-edit-page .mmic-profile-avatar-current {
-    text-align: center !important;
-    padding-left: 60px !important;
+html body .mmic-profile-edit-page .mmic-avatar-current{
+    width:100%;
+    text-align:center;
+    padding:10px 30px 10px 55px;
+    box-sizing:border-box;
 }
 
-html body .mmic-profile-edit-page .mmic-profile-avatar-current img {
-    display: block;
-    margin: 0 auto 8px !important;
+html body .mmic-profile-edit-page .mmic-avatar-current img{
+    display:block;
+    margin:8px auto 10px;
+}
+
+html body .mmic-profile-edit-page .mmic-avatar-current .gensmall:first-child{
+    display:block;
+    margin-bottom:8px;
+    color:#9b7b5b;
+    text-transform:uppercase;
+    letter-spacing:.08em;
+    font-size:11px;
+}
+
+html body .mmic-profile-edit-page .mmic-avatar-delete{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:6px;
+    margin-top:8px;
 }
