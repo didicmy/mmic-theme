@@ -2908,6 +2908,7 @@ html body .mmic-pm-compose-page
     display: flex !important;
     flex-wrap: wrap !important;
     align-items: center !important;
+   justify-content: center !important;   /* <-- Centre les groupes */
 
     width: 100% !important;
 
