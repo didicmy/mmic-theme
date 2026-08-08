@@ -3234,28 +3234,30 @@ html body .mmic-pm-preview-body{
 
 }
 
-html body .mmic-pm-preview-meta{
-
+.mmic-pm-preview-meta{
     display:grid;
-
-    grid-template-columns:repeat(2,minmax(240px,1fr));
-
-    gap:16px;
-
-    margin-bottom:25px;
-
+    grid-template-columns:1fr 1fr;
+    gap:8px 30px;
+    margin-bottom:16px;
+}
+.mmic-pm-preview-label{
+    font-size:9px;
+    text-transform:uppercase;
+    letter-spacing:.15em;
+    color:#b88d68;
+    min-width:60px;
 }
 
-html body .mmic-preview-item{
+.mmic-pm-preview-value{
+    font-size:14px;
+    font-weight:600;
+    color:#13263d;
+}
 
-    background:#fffdf9;
-
-    border:1px solid #ead8c8;
-
-    border-radius:8px;
-
-    padding:14px;
-
+.mmic-pm-preview-item{
+    display:flex;
+    align-items:center;
+    gap:10px;
 }
 
 html body .mmic-preview-item span{
@@ -3286,15 +3288,17 @@ html body .mmic-preview-item strong{
 
 }
 
-html body .mmic-pm-preview-message{
+.mmic-pm-preview-message{
+
+    padding:18px 20px;
+
+    background:#fffdfa;
 
     border:1px solid #ead8c8;
 
     border-radius:8px;
 
-    background:#fffdf9;
-
-    padding:22px;
+    line-height:1.7;
 
 }
 
