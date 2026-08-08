@@ -3651,3 +3651,247 @@ body.mmic-profile-followers .follower-card .details p {
 body.mmic-profile-followers .follower-card .followBtn {
     margin:0 !important;
 }
+/* ==========================================================
+   PROFIL — NOTIFICATIONS
+   On garde la structure Forumactif, on l'habille façon MMIC
+========================================================== */
+
+body.mmic-profile-notifications #page-body{
+    color:#13263d;
+}
+
+
+/* ----------------------------------------------------------
+   TABLEAUX PRINCIPAUX
+---------------------------------------------------------- */
+
+body.mmic-profile-notifications #page-body table.forumline{
+    width:100% !important;
+
+    border:1px solid #dfcdbc !important;
+    border-radius:8px !important;
+
+    border-spacing:0 !important;
+    border-collapse:separate !important;
+
+    background:#fffaf4 !important;
+
+    overflow:hidden !important;
+
+    margin-bottom:16px !important;
+
+    box-shadow:0 4px 12px rgba(16,36,56,.04);
+}
+
+
+/* ----------------------------------------------------------
+   BANDEAUX PRINCIPAUX
+---------------------------------------------------------- */
+
+body.mmic-profile-notifications #page-body th,
+body.mmic-profile-notifications #page-body .thHead,
+body.mmic-profile-notifications #page-body .thSides,
+body.mmic-profile-notifications #page-body .catHead{
+    height:auto !important;
+
+    padding:10px 14px !important;
+
+    border:0 !important;
+    border-bottom:1px solid #d2a27e !important;
+
+    background:#13263d !important;
+    color:#fff !important;
+
+    text-align:center !important;
+
+    font-family:Georgia, "Times New Roman", serif !important;
+    font-size:15px !important;
+    font-weight:600 !important;
+
+    line-height:1.2 !important;
+}
+
+
+/* Petit kicker MMIC */
+body.mmic-profile-notifications #page-body th::before,
+body.mmic-profile-notifications #page-body .thHead::before,
+body.mmic-profile-notifications #page-body .thSides::before,
+body.mmic-profile-notifications #page-body .catHead::before{
+    content:"PROFIL";
+
+    display:block;
+
+    margin-bottom:3px;
+
+    color:#c99b74;
+
+    font-family:Arial, sans-serif;
+    font-size:7px;
+    font-weight:700;
+
+    letter-spacing:.18em;
+    text-transform:uppercase;
+}
+
+
+/* ----------------------------------------------------------
+   SOUS-EN-TÊTES DU TABLEAU
+   "Types de notifications / Par email / Push..."
+---------------------------------------------------------- */
+
+body.mmic-profile-notifications #page-body .cat,
+body.mmic-profile-notifications #page-body .catBottom,
+body.mmic-profile-notifications #page-body td.cat,
+body.mmic-profile-notifications #page-body td.catBottom{
+    background:#f5ece2 !important;
+
+    color:#13263d !important;
+
+    border:0 !important;
+    border-bottom:1px solid #dfcdbc !important;
+
+    padding:8px 10px !important;
+
+    font-size:10px !important;
+    font-weight:700 !important;
+
+    letter-spacing:.05em !important;
+    text-transform:uppercase !important;
+}
+
+
+/* ----------------------------------------------------------
+   CELLULES
+---------------------------------------------------------- */
+
+body.mmic-profile-notifications #page-body td.row1,
+body.mmic-profile-notifications #page-body td.row2,
+body.mmic-profile-notifications #page-body table.forumline td{
+    background:#fffaf4 !important;
+
+    color:#13263d !important;
+
+    border:0 !important;
+    border-bottom:1px solid #f0e4d8 !important;
+
+    padding:6px 10px !important;
+
+    vertical-align:middle !important;
+}
+
+
+/* alternance légère, sans faire tableau Excel */
+body.mmic-profile-notifications #page-body tr:nth-child(even) td.row1,
+body.mmic-profile-notifications #page-body tr:nth-child(even) td.row2{
+    background:#fffdf9 !important;
+}
+
+
+/* ----------------------------------------------------------
+   TYPOGRAPHIE
+---------------------------------------------------------- */
+
+body.mmic-profile-notifications #page-body .gen,
+body.mmic-profile-notifications #page-body .genmed{
+    color:#13263d !important;
+
+    font-size:11px !important;
+}
+
+body.mmic-profile-notifications #page-body .gensmall{
+    color:#756b63 !important;
+
+    font-size:10px !important;
+    line-height:1.4 !important;
+}
+
+
+/* ----------------------------------------------------------
+   CASES À COCHER
+---------------------------------------------------------- */
+
+body.mmic-profile-notifications #page-body input[type="checkbox"]{
+    width:14px;
+    height:14px;
+
+    accent-color:#13263d;
+
+    cursor:pointer;
+}
+
+
+/* ----------------------------------------------------------
+   BOUTONS
+---------------------------------------------------------- */
+
+body.mmic-profile-notifications #page-body input[type="submit"],
+body.mmic-profile-notifications #page-body .mainoption,
+body.mmic-profile-notifications #page-body .liteoption{
+    min-height:27px;
+
+    padding:6px 13px !important;
+
+    border:1px solid #d2a27e !important;
+    border-radius:5px !important;
+
+    background:#13263d !important;
+    color:#fff !important;
+
+    font-size:9px !important;
+    font-weight:700 !important;
+
+    letter-spacing:.07em !important;
+    text-transform:uppercase !important;
+
+    cursor:pointer !important;
+
+    transition:.2s ease !important;
+}
+
+body.mmic-profile-notifications #page-body input[type="submit"]:hover,
+body.mmic-profile-notifications #page-body .mainoption:hover,
+body.mmic-profile-notifications #page-body .liteoption:hover{
+    background:#d2a27e !important;
+    color:#13263d !important;
+}
+
+
+/* ----------------------------------------------------------
+   LIENS "TOUT SÉLECTIONNER / TOUT DÉSÉLECTIONNER"
+---------------------------------------------------------- */
+
+body.mmic-profile-notifications #page-body a{
+    color:#9d6f4f;
+}
+
+body.mmic-profile-notifications #page-body a:hover{
+    color:#13263d;
+}
+
+
+/* ----------------------------------------------------------
+   BLOC "0 NOTIFICATION"
+---------------------------------------------------------- */
+
+body.mmic-profile-notifications #page-body .catBottom,
+body.mmic-profile-notifications #page-body td.catBottom{
+    text-align:center !important;
+}
+
+
+/* ----------------------------------------------------------
+   RESPONSIVE LÉGER
+---------------------------------------------------------- */
+
+@media (max-width:750px){
+
+    body.mmic-profile-notifications #page-body table.forumline{
+        font-size:10px !important;
+    }
+
+    body.mmic-profile-notifications #page-body th,
+    body.mmic-profile-notifications #page-body td{
+        padding-left:6px !important;
+        padding-right:6px !important;
+    }
+}
