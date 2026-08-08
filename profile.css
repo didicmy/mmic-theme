@@ -3010,3 +3010,35 @@ html body .mmic-profile-edit-page .mainoption:hover {
 html body .mmic-profile-edit-page .liteoption:hover {
     background: #f5ece2 !important;
 }
+/* Bouton Export des données */
+html body .mmic-profile-edit-page a[data-action="export"],
+html body .mmic-profile-edit-page a[href*="export"],
+html body .mmic-profile-edit-page a[href*="gdpr"]{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+
+    padding:10px 18px;
+    margin-top:6px;
+
+    background:#16283d;
+    color:#fff !important;
+
+    border:1px solid #d8b38d;
+    border-radius:6px;
+
+    text-decoration:none !important;
+    font-size:12px;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:.08em;
+
+    transition:.2s;
+}
+
+html body .mmic-profile-edit-page a[data-action="export"]:hover,
+html body .mmic-profile-edit-page a[href*="export"]:hover,
+html body .mmic-profile-edit-page a[href*="gdpr"]:hover{
+    background:#d8b38d;
+    color:#16283d !important;
+}
