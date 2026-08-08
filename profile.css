@@ -4284,8 +4284,10 @@ body.mmic-profile-signature #page-body .sceditor-container{
     box-shadow:0 4px 10px rgba(16,36,56,.04);
 }
 
+/* ----------------------------------------------------------
+   SCEDITOR — BARRE D'OUTILS PLUS COMPACTE
+---------------------------------------------------------- */
 
-/* barre d’outils */
 body.mmic-profile-signature #page-body .sceditor-toolbar{
     display:flex !important;
     flex-wrap:wrap !important;
@@ -4293,49 +4295,75 @@ body.mmic-profile-signature #page-body .sceditor-toolbar{
     align-items:center !important;
     justify-content:center !important;
 
-    gap:3px !important;
+    gap:2px !important;
 
-    padding:7px !important;
+    padding:6px 8px !important;
 
     border:0 !important;
     border-bottom:1px solid #dfcdbc !important;
 
     background:#f5ece2 !important;
+
+    box-sizing:border-box !important;
 }
 
 
-/* groupes de boutons */
+/* Groupes de boutons */
 body.mmic-profile-signature #page-body .sceditor-group{
     display:inline-flex !important;
 
+    flex-wrap:nowrap !important;
     align-items:center !important;
 
     float:none !important;
 
-    margin:2px 3px !important;
-    padding:3px 4px !important;
+    width:auto !important;
+    min-width:0 !important;
+    max-width:none !important;
+
+    min-height:24px !important;
+
+    margin:2px !important;
+    padding:2px 3px !important;
 
     border:1px solid #e3d2c2 !important;
     border-radius:5px !important;
 
     background:#fffaf4 !important;
+
+    white-space:nowrap !important;
 }
 
 
-/* boutons éditeur */
+/* Boutons */
 body.mmic-profile-signature #page-body .sceditor-button{
     display:flex !important;
 
     align-items:center !important;
     justify-content:center !important;
 
-    width:22px !important;
-    height:22px !important;
+    flex:0 0 20px !important;
+
+    width:20px !important;
+    height:20px !important;
+
+    min-width:20px !important;
+    min-height:20px !important;
 
     margin:0 1px !important;
+    padding:0 !important;
 }
 
 
+/* Icône interne */
+body.mmic-profile-signature #page-body .sceditor-button div{
+    width:18px !important;
+    height:18px !important;
+
+    margin:0 !important;
+
+    background-size:auto !important;
+}
 /* zone texte */
 body.mmic-profile-signature #page-body .sceditor-container iframe,
 body.mmic-profile-signature #page-body .sceditor-container textarea{
