@@ -3895,3 +3895,255 @@ body.mmic-profile-notifications #page-body td.catBottom{
         padding-right:6px !important;
     }
 }
+/* ==========================================================
+   PROFIL — SUJETS SURVEILLÉS
+========================================================== */
+
+body.mmic-watched-topics-page #page-body{
+    color:#13263d;
+}
+
+
+/* ----------------------------------------------------------
+   TABLEAU PRINCIPAL
+---------------------------------------------------------- */
+
+body.mmic-watched-topics-page #page-body table.forumline{
+    width:100% !important;
+
+    border:1px solid #dfcdbc !important;
+    border-radius:8px !important;
+
+    border-spacing:0 !important;
+    border-collapse:separate !important;
+
+    background:#fffaf4 !important;
+
+    overflow:hidden !important;
+
+    margin-bottom:14px !important;
+
+    box-shadow:0 4px 12px rgba(16,36,56,.04);
+}
+
+
+/* ----------------------------------------------------------
+   GRAND BANDEAU
+   "1 sujet surveillé"
+---------------------------------------------------------- */
+
+body.mmic-watched-topics-page #page-body .catHead,
+body.mmic-watched-topics-page #page-body .thHead{
+    height:auto !important;
+
+    padding:10px 16px !important;
+
+    border:0 !important;
+    border-bottom:1px solid #d2a27e !important;
+
+    background:#13263d !important;
+    color:#fff !important;
+
+    text-align:center !important;
+
+    font-family:Georgia, "Times New Roman", serif !important;
+    font-size:16px !important;
+    font-weight:600 !important;
+}
+
+
+/* Petit kicker */
+body.mmic-watched-topics-page #page-body .catHead::before,
+body.mmic-watched-topics-page #page-body .thHead::before{
+    content:"PROFIL";
+
+    display:block;
+
+    margin-bottom:3px;
+
+    color:#c99b74;
+
+    font-family:Arial, sans-serif;
+    font-size:7px;
+    font-weight:700;
+
+    letter-spacing:.18em;
+    text-transform:uppercase;
+}
+
+
+/* ----------------------------------------------------------
+   EN-TÊTES DES COLONNES
+---------------------------------------------------------- */
+
+body.mmic-watched-topics-page #page-body th{
+    height:auto !important;
+
+    padding:8px 7px !important;
+
+    border:0 !important;
+    border-right:1px solid rgba(255,255,255,.12) !important;
+
+    background:#13263d !important;
+    color:#fff !important;
+
+    text-align:center !important;
+
+    font-family:Georgia, "Times New Roman", serif !important;
+    font-size:12px !important;
+    font-weight:600 !important;
+}
+
+body.mmic-watched-topics-page #page-body th:last-child{
+    border-right:0 !important;
+}
+
+
+/* ----------------------------------------------------------
+   LIGNES DES SUJETS
+---------------------------------------------------------- */
+
+body.mmic-watched-topics-page #page-body td.row1,
+body.mmic-watched-topics-page #page-body td.row2,
+body.mmic-watched-topics-page #page-body table.forumline td{
+    padding:8px 9px !important;
+
+    border:0 !important;
+    border-bottom:1px solid #f0e4d8 !important;
+
+    background:#fffaf4 !important;
+    color:#13263d !important;
+
+    vertical-align:middle !important;
+}
+
+body.mmic-watched-topics-page #page-body tr:last-child td{
+    border-bottom:0 !important;
+}
+
+
+/* alternance très légère */
+body.mmic-watched-topics-page #page-body tr:nth-child(even) td.row1,
+body.mmic-watched-topics-page #page-body tr:nth-child(even) td.row2{
+    background:#fffdf9 !important;
+}
+
+
+/* ----------------------------------------------------------
+   LIENS DES SUJETS
+---------------------------------------------------------- */
+
+body.mmic-watched-topics-page #page-body a{
+    color:#9d6f4f;
+}
+
+body.mmic-watched-topics-page #page-body a:hover{
+    color:#13263d;
+}
+
+
+/* ----------------------------------------------------------
+   TYPOGRAPHIE
+---------------------------------------------------------- */
+
+body.mmic-watched-topics-page #page-body .gen,
+body.mmic-watched-topics-page #page-body .genmed{
+    color:#13263d !important;
+
+    font-size:11px !important;
+}
+
+body.mmic-watched-topics-page #page-body .gensmall{
+    color:#756b63 !important;
+
+    font-size:10px !important;
+    line-height:1.4 !important;
+}
+
+
+/* ----------------------------------------------------------
+   CHECKBOX
+---------------------------------------------------------- */
+
+body.mmic-watched-topics-page #page-body input[type="checkbox"]{
+    width:14px;
+    height:14px;
+
+    accent-color:#13263d;
+
+    cursor:pointer;
+}
+
+
+/* ----------------------------------------------------------
+   BOUTON "ARRÊTER DE SURVEILLER..."
+---------------------------------------------------------- */
+
+body.mmic-watched-topics-page #page-body input[type="submit"],
+body.mmic-watched-topics-page #page-body .mainoption,
+body.mmic-watched-topics-page #page-body .liteoption{
+    padding:7px 14px !important;
+
+    border:1px solid #d2a27e !important;
+    border-radius:5px !important;
+
+    background:#13263d !important;
+    color:#fff !important;
+
+    font-size:9px !important;
+    font-weight:700 !important;
+
+    letter-spacing:.06em !important;
+    text-transform:uppercase !important;
+
+    cursor:pointer !important;
+
+    transition:.2s ease !important;
+}
+
+body.mmic-watched-topics-page #page-body input[type="submit"]:hover,
+body.mmic-watched-topics-page #page-body .mainoption:hover,
+body.mmic-watched-topics-page #page-body .liteoption:hover{
+    background:#d2a27e !important;
+    color:#13263d !important;
+}
+
+
+/* ----------------------------------------------------------
+   BAS DE TABLEAU / PAGINATION
+---------------------------------------------------------- */
+
+body.mmic-watched-topics-page #page-body .catBottom{
+    background:#f5ece2 !important;
+
+    border:0 !important;
+    border-top:1px solid #dfcdbc !important;
+
+    padding:8px 10px !important;
+
+    color:#13263d !important;
+}
+
+
+/* ----------------------------------------------------------
+   "TOUT SÉLECTIONNER"
+---------------------------------------------------------- */
+
+body.mmic-watched-topics-page #page-body .gensmall a{
+    font-weight:600;
+}
+
+
+/* ----------------------------------------------------------
+   "SAUTER VERS"
+---------------------------------------------------------- */
+
+body.mmic-watched-topics-page #page-body select{
+    border:1px solid #dfcdbc !important;
+    border-radius:5px !important;
+
+    background:#fffdf9 !important;
+    color:#13263d !important;
+
+    padding:5px 7px !important;
+}
