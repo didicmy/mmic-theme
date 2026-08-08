@@ -3198,7 +3198,7 @@ html body .mmic-pm-preview-header{
 
     background:#13263d;
 
-    padding:18px;
+    padding:14px;
 
     text-align:center;
 
@@ -3206,7 +3206,7 @@ html body .mmic-pm-preview-header{
 
 html body .mmic-pm-preview-kicker{
 
-    font-size:10px;
+    font-size:9px;
 
     letter-spacing:.18em;
 
@@ -3214,7 +3214,7 @@ html body .mmic-pm-preview-kicker{
 
     color:#c99b74;
 
-    margin-bottom:6px;
+    margin-bottom:4px;
 
 }
 
@@ -3224,13 +3224,13 @@ html body .mmic-pm-preview-header h2{
 
     color:#fff;
 
-    font-size:34px;
+    font-size:26px;
 
 }
 
 html body .mmic-pm-preview-body{
 
-    padding:25px;
+    padding:18px;
 
 }
 
