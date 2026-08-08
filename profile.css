@@ -3126,57 +3126,64 @@ html body .mmic-profile-edit-page td.row1:has(a[href*="rgpd.php"]) a{
 }
 /* ==========================================================
    PROFIL — ONGLET AVATAR
-   Conserve la structure Forumactif
 ========================================================== */
 
-/* Première grande zone : texte à gauche / avatar à droite */
-html body .mmic-profile-edit-page
-.mmic-profile-edit-table td.row1:first-child {
-    padding-left: 18px !important;
-}
-
-/* Colonne contenant l'avatar */
-html body .mmic-profile-edit-page
-.mmic-profile-edit-table td.row2 {
-    box-sizing: border-box;
-}
-
-/* Image actuelle : on la décale légèrement vers la droite */
-html body .mmic-profile-edit-page
-.mmic-profile-edit-table td.row2 img {
-    margin-left: 20px;
-}
-
-/* Légende "Image actuelle" */
-html body .mmic-profile-edit-page
-.mmic-profile-edit-table td.row2 .gensmall {
-    line-height: 1.5;
-}
 html body .mmic-profile-edit-page .mmic-avatar-current{
     width:100%;
-    text-align:center;
-    padding:10px 30px 10px 55px;
     box-sizing:border-box;
+
+    text-align:center;
+
+    padding:10px 10px 10px 70px;
 }
 
-html body .mmic-profile-edit-page .mmic-avatar-current img{
+/* Titre "Image actuelle" */
+html body .mmic-profile-edit-page
+.mmic-avatar-current > .gensmall:first-child{
     display:block;
-    margin:8px auto 10px;
-}
 
-html body .mmic-profile-edit-page .mmic-avatar-current .gensmall:first-child{
-    display:block;
-    margin-bottom:8px;
-    color:#9b7b5b;
-    text-transform:uppercase;
+    margin-bottom:10px;
+
+    color:#9b7b5b !important;
+
+    font-size:11px !important;
     letter-spacing:.08em;
-    font-size:11px;
+
+    text-transform:uppercase;
 }
 
-html body .mmic-profile-edit-page .mmic-avatar-delete{
+/* Avatar */
+html body .mmic-profile-edit-page
+.mmic-avatar-current > img{
+    display:block;
+
+    margin:0 auto 10px !important;
+}
+
+/* Ligne suppression */
+html body .mmic-profile-edit-page
+.mmic-avatar-delete{
     display:flex;
-    justify-content:center;
     align-items:center;
+    justify-content:center;
+
     gap:6px;
-    margin-top:8px;
+
+    margin-top:6px;
+}
+
+html body .mmic-profile-edit-page
+.mmic-avatar-delete input{
+    margin:0 !important;
+}
+
+html body .mmic-profile-edit-page
+.mmic-avatar-delete .gensmall{
+    margin:0 !important;
+
+    color:#746b64 !important;
+
+    font-size:11px !important;
+    text-transform:none !important;
+    letter-spacing:0 !important;
 }
