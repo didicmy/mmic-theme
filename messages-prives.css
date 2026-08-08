@@ -2937,7 +2937,8 @@ html body .mmic-pm-compose-page
     max-width: none !important;
 
     margin: 0 !important;
-    padding: 3px 5px !important;
+   min-height: 26px !important;
+padding: 2px 5px !important;
 
     gap: 1px !important;
 
