@@ -2907,16 +2907,14 @@ html body .mmic-pm-compose-page
 .mmic-pm-compose-editor .sceditor-toolbar {
     display: flex !important;
     flex-wrap: wrap !important;
+    justify-content: center !important;
     align-items: center !important;
-   justify-content: center !important;   /* <-- Centre les groupes */
 
     width: 100% !important;
+    min-height: 46px !important;
 
-    min-height: 42px !important;
-
-    padding: 6px 7px !important;
-
-    gap: 2px !important;
+    padding: 7px 8px !important;
+    gap: 5px !important;
 
     border: 0 !important;
     border-bottom: 1px solid #ead8c8 !important;
@@ -2928,56 +2926,67 @@ html body .mmic-pm-compose-page
 
 html body .mmic-pm-compose-page
 .mmic-pm-compose-editor .sceditor-group {
-    display: flex !important;
+    display: inline-flex !important;
     flex-wrap: nowrap !important;
     align-items: center !important;
 
     float: none !important;
 
-    margin: 2px 3px !important;
-    padding: 3px 4px !important;
+    width: auto !important;
+    min-width: 0 !important;
+    max-width: none !important;
 
-    min-height: 28px !important;
+    min-height: 30px !important;
+
+    margin: 0 !important;
+    padding: 3px 5px !important;
+
+    gap: 2px !important;
 
     border: 1px solid #e3d2c2 !important;
     border-radius: 5px !important;
 
     background: #fffaf4 !important;
 
+    white-space: nowrap !important;
+    overflow: visible !important;
+
     flex: 0 0 auto !important;
-       width:auto !important;
-    min-width:unset !important;
-    max-width:none !important;
 
-    display:inline-flex !important;
-    align-items:center !important;
-
-    white-space:nowrap !important;
-
+    box-sizing: border-box !important;
 }
+
 html body .mmic-pm-compose-page
 .mmic-pm-compose-editor .sceditor-button {
-    flex: 0 0 auto !important;
-
-    margin: 0 1px !important;
-
-    min-width: 22px !important;
-    min-height: 22px !important;
-
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
-       width:22px !important;
-    height:22px !important;
 
-    margin:0 2px !important;
+    flex: 0 0 24px !important;
 
-    flex:none !important;
+    width: 24px !important;
+    min-width: 24px !important;
+    max-width: 24px !important;
+
+    height: 24px !important;
+    min-height: 24px !important;
+    max-height: 24px !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    overflow: visible !important;
+
+    box-sizing: border-box !important;
 }
+
 html body .mmic-pm-compose-page
 .mmic-pm-compose-editor .sceditor-button div {
     width: 20px !important;
     height: 20px !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
 
     background-size: auto !important;
 }
