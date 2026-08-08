@@ -3188,135 +3188,191 @@ html body .mmic-profile-edit-page
     letter-spacing:0 !important;
 }
 /* ==========================================================
-   PROFIL MMIC
-   ONGLET : AMIS ET IGNORÉS
+   PROFIL — AMIS ET IGNORÉS
 ========================================================== */
 
-html body .mmic-profile-edit-page table.forumline{
-    width:100%;
-    margin:0 0 22px;
-    border:1px solid #e5d3c2;
-    border-radius:10px;
-    overflow:hidden;
-    border-collapse:separate;
-    border-spacing:0;
-    background:#fffdf9;
+body.mmic-profile-friendsfoes #page-body {
+    color:#13263d;
 }
+
 
 /* ----------------------------------------------------------
-   Bandeaux
+   BLOCS FORUMACTIF
 ---------------------------------------------------------- */
 
-html body .mmic-profile-edit-page table.forumline th{
-    background:#16283d !important;
-    color:#ffffff !important;
-    border:none;
-    padding:18px 20px;
-    text-align:center;
+body.mmic-profile-friendsfoes #page-body table.forumline {
+    width:100% !important;
 
-    font-family:"Cormorant Garamond",serif;
-    font-size:30px;
-    font-weight:700;
-    letter-spacing:.02em;
-    line-height:1.2;
+    margin:0 0 14px !important;
 
-    position:relative;
+    border:1px solid #dfcdbc !important;
+    border-radius:8px !important;
+
+    border-spacing:0 !important;
+
+    background:#fffaf4 !important;
+
+    overflow:hidden;
 }
 
-html body .mmic-profile-edit-page table.forumline th::before{
+
+/* ----------------------------------------------------------
+   BANDEAUX
+---------------------------------------------------------- */
+
+body.mmic-profile-friendsfoes #page-body table.forumline th {
+    height:auto !important;
+
+    padding:10px 16px !important;
+
+    border:0 !important;
+    border-top:1px solid #d2a27e !important;
+    border-bottom:1px solid #d2a27e !important;
+
+    background:#13263d !important;
+
+    color:#fff !important;
+
+    text-align:center !important;
+
+    font-family:Georgia, "Times New Roman", serif !important;
+    font-size:17px !important;
+    font-weight:600 !important;
+
+    line-height:1.2 !important;
+}
+
+
+/* Petit kicker */
+body.mmic-profile-friendsfoes #page-body table.forumline th::before {
     content:"PROFIL";
+
     display:block;
 
-    color:#d8b38d;
-    font-family:Montserrat,sans-serif;
-    font-size:10px;
+    margin-bottom:3px;
+
+    color:#c99b74;
+
+    font-family:Arial, sans-serif;
+    font-size:7px;
     font-weight:700;
-    letter-spacing:.22em;
+
+    letter-spacing:.18em;
     text-transform:uppercase;
-
-    margin-bottom:4px;
 }
+
 
 /* ----------------------------------------------------------
-   Corps
+   CELLULES
 ---------------------------------------------------------- */
 
-html body .mmic-profile-edit-page table.forumline td{
-    padding:18px 22px;
-    border-top:1px solid #f1e6db;
-    vertical-align:middle;
-    color:#13263d;
-    line-height:1.6;
+body.mmic-profile-friendsfoes #page-body table.forumline td {
+    padding:7px 12px !important;
+
+    border:0 !important;
+    border-bottom:1px solid #f0e4d8 !important;
+
+    background:#fffaf4 !important;
+
+    color:#13263d !important;
+
+    vertical-align:middle !important;
 }
+
+
+/* dernière ligne */
+body.mmic-profile-friendsfoes #page-body table.forumline tr:last-child td {
+    border-bottom:0 !important;
+}
+
 
 /* ----------------------------------------------------------
-   Titres secondaires
+   TEXTE
 ---------------------------------------------------------- */
 
-html body .mmic-profile-edit-page .gen,
-html body .mmic-profile-edit-page .gensmall{
-    color:#5d4a3b;
+body.mmic-profile-friendsfoes #page-body .gen,
+body.mmic-profile-friendsfoes #page-body .genmed {
+    color:#13263d !important;
+    font-size:12px !important;
 }
+
+body.mmic-profile-friendsfoes #page-body .gensmall {
+    color:#756b63 !important;
+
+    font-size:11px !important;
+    line-height:1.45 !important;
+}
+
 
 /* ----------------------------------------------------------
-   Champs
+   CHAMPS
 ---------------------------------------------------------- */
 
-html body .mmic-profile-edit-page input.post{
-    border:1px solid #dfc7ad;
-    border-radius:6px;
-    padding:8px 10px;
-    background:#fffdfa;
-    transition:.2s;
+body.mmic-profile-friendsfoes #page-body input[type="text"],
+body.mmic-profile-friendsfoes #page-body input.post {
+    min-height:27px;
+
+    padding:5px 8px !important;
+
+    box-sizing:border-box;
+
+    border:1px solid #dfcdbc !important;
+    border-radius:5px !important;
+
+    background:#fffdf9 !important;
+    color:#13263d !important;
 }
 
-html body .mmic-profile-edit-page input.post:focus{
-    outline:none;
-    border-color:#d8b38d;
-    box-shadow:0 0 0 3px rgba(216,179,141,.15);
+body.mmic-profile-friendsfoes #page-body input[type="text"]:focus,
+body.mmic-profile-friendsfoes #page-body input.post:focus {
+    outline:none !important;
+
+    border-color:#c99b74 !important;
+
+    box-shadow:0 0 0 2px rgba(201,155,116,.12) !important;
 }
+
 
 /* ----------------------------------------------------------
-   Boutons
+   BOUTONS AJOUTER
 ---------------------------------------------------------- */
 
-html body .mmic-profile-edit-page input.liteoption{
-    background:#16283d;
-    color:#fff;
+body.mmic-profile-friendsfoes #page-body input[type="submit"],
+body.mmic-profile-friendsfoes #page-body input.liteoption,
+body.mmic-profile-friendsfoes #page-body input.mainoption {
+    min-height:27px;
 
-    border:1px solid #d8b38d;
-    border-radius:6px;
+    padding:6px 13px !important;
 
-    padding:8px 16px;
+    border:1px solid #d2a27e !important;
+    border-radius:5px !important;
 
-    text-transform:uppercase;
-    font-size:11px;
-    font-weight:700;
-    letter-spacing:.08em;
+    background:#13263d !important;
+    color:#fff !important;
 
-    cursor:pointer;
-    transition:.25s;
+    font-size:9px !important;
+    font-weight:700 !important;
+
+    letter-spacing:.07em !important;
+    text-transform:uppercase !important;
+
+    cursor:pointer !important;
+
+    transition:.2s ease !important;
 }
 
-html body .mmic-profile-edit-page input.liteoption:hover{
-    background:#d8b38d;
-    color:#16283d;
+body.mmic-profile-friendsfoes #page-body input[type="submit"]:hover,
+body.mmic-profile-friendsfoes #page-body input.liteoption:hover,
+body.mmic-profile-friendsfoes #page-body input.mainoption:hover {
+    background:#d2a27e !important;
+    color:#13263d !important;
 }
+
 
 /* ----------------------------------------------------------
-   Espacement
+   PETITS ESPACES ENTRE LES BLOCS
 ---------------------------------------------------------- */
 
-html body .mmic-profile-edit-page table.forumline tr + tr td{
-    padding-top:20px;
-    padding-bottom:20px;
-}
-
-/* ----------------------------------------------------------
-   Aucun résultat
----------------------------------------------------------- */
-
-html body .mmic-profile-edit-page em{
-    color:#8d7763;
-    font-style:italic;
+body.mmic-profile-friendsfoes #page-body table.forumline + br {
+    line-height:5px !important;
 }
