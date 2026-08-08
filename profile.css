@@ -4150,7 +4150,8 @@ body.mmic-profile-topic-list #page-body select{
 
     padding:5px 7px !important;
 }
-body.mmic-profile-signature .mmic-signature-tab{
+body.mmic-profile-signature .mmic-signature-tab,
+.mmic-signature-tab-active{
     color:#13263d !important;
     font-weight:700 !important;
 }
