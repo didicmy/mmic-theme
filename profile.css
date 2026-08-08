@@ -3010,35 +3010,36 @@ html body .mmic-profile-edit-page .mainoption:hover {
 html body .mmic-profile-edit-page .liteoption:hover {
     background: #f5ece2 !important;
 }
-/* Bouton Export des données */
-html body .mmic-profile-edit-page a[data-action="export"],
-html body .mmic-profile-edit-page a[href*="export"],
-html body .mmic-profile-edit-page a[href*="gdpr"]{
-    display:inline-flex;
-    align-items:center;
-    justify-content:center;
+/* ==========================================================
+   BOUTON EXPORT DES DONNÉES
+========================================================== */
 
-    padding:10px 18px;
-    margin-top:6px;
+html body .mmic-profile-edit-page a[href*="rgpd.php"]{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 
-    background:#16283d;
-    color:#fff !important;
+    padding: 10px 18px;
+    margin: 0 0 10px;
 
-    border:1px solid #d8b38d;
-    border-radius:6px;
+    background: #16283d;
+    color: #ffffff !important;
 
-    text-decoration:none !important;
-    font-size:12px;
-    font-weight:700;
-    text-transform:uppercase;
-    letter-spacing:.08em;
+    border: 1px solid #d8b38d;
+    border-radius: 6px;
 
-    transition:.2s;
+    text-decoration: none !important;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1;
+
+    transition: .25s ease;
 }
 
-html body .mmic-profile-edit-page a[data-action="export"]:hover,
-html body .mmic-profile-edit-page a[href*="export"]:hover,
-html body .mmic-profile-edit-page a[href*="gdpr"]:hover{
-    background:#d8b38d;
-    color:#16283d !important;
+html body .mmic-profile-edit-page a[href*="rgpd.php"]:hover{
+    background: #d8b38d;
+    color: #16283d !important;
 }
