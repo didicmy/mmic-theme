@@ -4150,6 +4150,263 @@ body.mmic-profile-topic-list #page-body select{
 
     padding:5px 7px !important;
 }
+/* ==========================================================
+   PROFIL — SIGNATURE
+========================================================== */
+
+body.mmic-profile-signature #page-body{
+    color:#13263d;
+}
+
+
+/* ----------------------------------------------------------
+   TABLEAUX PRINCIPAUX
+---------------------------------------------------------- */
+
+body.mmic-profile-signature #page-body table.forumline{
+    width:100% !important;
+
+    border:1px solid #dfcdbc !important;
+    border-radius:8px !important;
+
+    border-spacing:0 !important;
+    border-collapse:separate !important;
+
+    background:#fffaf4 !important;
+
+    overflow:hidden !important;
+
+    margin-bottom:16px !important;
+
+    box-shadow:0 4px 12px rgba(16,36,56,.04);
+}
+
+
+/* ----------------------------------------------------------
+   BANDEAUX
+---------------------------------------------------------- */
+
+body.mmic-profile-signature #page-body th,
+body.mmic-profile-signature #page-body .thHead,
+body.mmic-profile-signature #page-body .thSides,
+body.mmic-profile-signature #page-body .catHead{
+    height:auto !important;
+
+    padding:10px 16px !important;
+
+    border:0 !important;
+    border-bottom:1px solid #d2a27e !important;
+
+    background:#13263d !important;
+    color:#fff !important;
+
+    text-align:center !important;
+
+    font-family:Georgia, "Times New Roman", serif !important;
+    font-size:17px !important;
+    font-weight:600 !important;
+
+    line-height:1.2 !important;
+}
+
+
+/* Petit kicker */
+body.mmic-profile-signature #page-body th::before,
+body.mmic-profile-signature #page-body .thHead::before,
+body.mmic-profile-signature #page-body .thSides::before,
+body.mmic-profile-signature #page-body .catHead::before{
+    content:"PROFIL";
+
+    display:block;
+
+    margin-bottom:3px;
+
+    color:#c99b74;
+
+    font-family:Arial, sans-serif;
+    font-size:7px;
+    font-weight:700;
+
+    letter-spacing:.18em;
+    text-transform:uppercase;
+}
+
+
+/* ----------------------------------------------------------
+   CELLULES
+---------------------------------------------------------- */
+
+body.mmic-profile-signature #page-body td.row1,
+body.mmic-profile-signature #page-body td.row2,
+body.mmic-profile-signature #page-body table.forumline td{
+    background:#fffaf4 !important;
+
+    color:#13263d !important;
+
+    border:0 !important;
+
+    padding:10px 12px !important;
+}
+
+
+/* ----------------------------------------------------------
+   TEXTE "SIGNATURE :"
+---------------------------------------------------------- */
+
+body.mmic-profile-signature #page-body .gen,
+body.mmic-profile-signature #page-body .genmed{
+    color:#13263d !important;
+
+    font-size:11px !important;
+}
+
+body.mmic-profile-signature #page-body .gensmall{
+    color:#756b63 !important;
+
+    font-size:10px !important;
+}
+
+
+/* ----------------------------------------------------------
+   ÉDITEUR
+---------------------------------------------------------- */
+
+body.mmic-profile-signature #page-body .sceditor-container{
+    width:100% !important;
+
+    border:1px solid #dfcdbc !important;
+    border-radius:7px !important;
+
+    background:#fffdf9 !important;
+
+    overflow:hidden !important;
+
+    box-shadow:0 4px 10px rgba(16,36,56,.04);
+}
+
+
+/* barre d’outils */
+body.mmic-profile-signature #page-body .sceditor-toolbar{
+    display:flex !important;
+    flex-wrap:wrap !important;
+
+    align-items:center !important;
+    justify-content:center !important;
+
+    gap:3px !important;
+
+    padding:7px !important;
+
+    border:0 !important;
+    border-bottom:1px solid #dfcdbc !important;
+
+    background:#f5ece2 !important;
+}
+
+
+/* groupes de boutons */
+body.mmic-profile-signature #page-body .sceditor-group{
+    display:inline-flex !important;
+
+    align-items:center !important;
+
+    float:none !important;
+
+    margin:2px 3px !important;
+    padding:3px 4px !important;
+
+    border:1px solid #e3d2c2 !important;
+    border-radius:5px !important;
+
+    background:#fffaf4 !important;
+}
+
+
+/* boutons éditeur */
+body.mmic-profile-signature #page-body .sceditor-button{
+    display:flex !important;
+
+    align-items:center !important;
+    justify-content:center !important;
+
+    width:22px !important;
+    height:22px !important;
+
+    margin:0 1px !important;
+}
+
+
+/* zone texte */
+body.mmic-profile-signature #page-body .sceditor-container iframe,
+body.mmic-profile-signature #page-body .sceditor-container textarea{
+    width:100% !important;
+
+    min-height:220px !important;
+
+    box-sizing:border-box !important;
+
+    background:#fffdf9 !important;
+}
+
+
+/* ----------------------------------------------------------
+   SMILEYS
+---------------------------------------------------------- */
+
+body.mmic-profile-signature #page-body #smiley-box,
+body.mmic-profile-signature #page-body .smile-status-box{
+    background:#fffaf4 !important;
+
+    border-right:1px solid #dfcdbc !important;
+
+    padding:10px !important;
+
+    box-sizing:border-box !important;
+}
+
+
+/* ----------------------------------------------------------
+   BOUTONS BAS
+---------------------------------------------------------- */
+
+body.mmic-profile-signature #page-body input[type="submit"],
+body.mmic-profile-signature #page-body .mainoption,
+body.mmic-profile-signature #page-body .liteoption{
+    padding:7px 14px !important;
+
+    border:1px solid #d2a27e !important;
+    border-radius:5px !important;
+
+    background:#13263d !important;
+    color:#fff !important;
+
+    font-size:9px !important;
+    font-weight:700 !important;
+
+    letter-spacing:.06em !important;
+    text-transform:uppercase !important;
+
+    cursor:pointer !important;
+
+    transition:.2s ease !important;
+}
+
+body.mmic-profile-signature #page-body input[type="submit"]:hover,
+body.mmic-profile-signature #page-body .mainoption:hover,
+body.mmic-profile-signature #page-body .liteoption:hover{
+    background:#d2a27e !important;
+    color:#13263d !important;
+}
+
+
+/* ----------------------------------------------------------
+   ONGLET SIGNATURE ACTIF
+---------------------------------------------------------- */
+
+body.mmic-profile-signature .mmic-signature-tab{
+    color:#13263d !important;
+    font-weight:700 !important;
+}
 body.mmic-profile-signature .mmic-signature-tab,
 .mmic-signature-tab-active{
     color:#13263d !important;
