@@ -3220,11 +3220,11 @@ html body .mmic-pm-preview-kicker{
 
 html body .mmic-pm-preview-header h2{
 
-    margin:0;
-
     color:#fff;
-
-    font-size:26px;
+font-size: 20px;
+    font-weight:700;
+    line-height:1.2;
+    margin:0;
 
 }
 
