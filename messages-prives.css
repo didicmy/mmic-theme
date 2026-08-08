@@ -3311,3 +3311,122 @@ html body .mmic-pm-preview-message .postbody{
     line-height:1.7;
 
 }
+/*--------------------------------------------------
+   PAGE D'INFORMATIONS
+--------------------------------------------------*/
+
+html body .mmic-message-page{
+
+    width:100%;
+    margin:20px 0;
+
+    border:1px solid #dfcdbc;
+    border-radius:10px;
+
+    overflow:hidden;
+
+    background:#fffdfa;
+
+    box-shadow:0 6px 16px rgba(16,36,56,.06);
+
+}
+
+html body .mmic-message-header{
+
+    background:#13263d;
+
+    padding:18px;
+
+    text-align:center;
+
+}
+
+html body .mmic-message-kicker{
+
+    font-size:9px;
+
+    text-transform:uppercase;
+
+    letter-spacing:.18em;
+
+    color:#caa27e;
+
+    margin-bottom:5px;
+
+}
+
+html body .mmic-message-header h2{
+
+    margin:0;
+
+    color:#fff;
+
+    font-size:22px;
+
+    font-weight:700;
+
+}
+
+html body .mmic-message-body{
+
+    padding:25px;
+
+}
+
+html body .mmic-message-content{
+
+    text-align:center;
+
+    font-size:15px;
+
+    line-height:1.8;
+
+    color:#13263d;
+
+    padding:18px;
+
+    border:1px solid #ead8c8;
+
+    border-radius:8px;
+
+    background:#fff;
+
+}
+
+html body .mmic-message-actions{
+
+    margin-top:22px;
+
+    text-align:center;
+
+}
+
+html body .mmic-message-button{
+
+    display:inline-block;
+
+    padding:10px 22px;
+
+    border-radius:6px;
+
+    background:#13263d;
+
+    color:#fff !important;
+
+    text-decoration:none;
+
+    text-transform:uppercase;
+
+    font-size:10px;
+
+    letter-spacing:.12em;
+
+    transition:.25s;
+
+}
+
+html body .mmic-message-button:hover{
+
+    background:#1d3553;
+
+}
