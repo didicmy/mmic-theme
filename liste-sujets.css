@@ -1,5 +1,5 @@
 /* =========================================================
-   MEET ME IN CHICAGO — LISTE DES SUJETS
+   MEET ME IN CHICAGO — LISTE DES SUJETS — VERSION NETTOYÉE
    =========================================================
 
    Cette feuille contient uniquement la page listant les sujets :
@@ -47,35 +47,6 @@
   margin-bottom: 9px;
 }
 
-.mmic-new-topic-button {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-
-  min-height: 34px;
-  padding: 0 14px;
-
-  border: 1px solid #b97a56;
-  border-radius: 7px;
-
-  background: #102438;
-  color: #fbf8f3 !important;
-
-  box-shadow: 0 3px 8px rgba(16, 36, 56, 0.13);
-
-  font-size: 8px;
-  font-weight: 700;
-  letter-spacing: 0.8px;
-  text-decoration: none !important;
-  text-transform: uppercase;
-
-  transition:
-    background-color 0.2s ease,
-    border-color 0.2s ease,
-    transform 0.2s ease,
-    box-shadow 0.2s ease;
-}
-
 .mmic-new-topic-icon {
   display: inline-flex;
   align-items: center;
@@ -93,17 +64,6 @@
   font-weight: normal;
   line-height: 1;
 }
-
-.mmic-new-topic-button:hover {
-  border-color: #102438;
-
-  background: #b97a56;
-
-  box-shadow: 0 5px 12px rgba(16, 36, 56, 0.18);
-
-  transform: translateY(-2px);
-}
-
 
 /* =========================================================
    FIL D’ARIANE
@@ -487,7 +447,6 @@
 .mmic-topic-dates:empty {
   display: none;
 }
-
 
 
 /* AUTEUR ET COMPTEURS */
