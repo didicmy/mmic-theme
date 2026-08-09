@@ -1,5 +1,5 @@
 /* =========================================================
-   PROFIL UTILISATEUR — MEET ME IN CHICAGO
+   PROFIL UTILISATEUR — MEET ME IN CHICAGO — VERSION NETTOYÉE
    ========================================================= */
 
 html body .mmic-profile-page {
@@ -12,7 +12,6 @@ html body .mmic-profile-page {
 
     box-sizing: border-box;
 }
-
 
 /* =========================================================
    FIL D’ARIANE
@@ -60,7 +59,6 @@ html body .mmic-profile-breadcrumb strong {
 
     font-weight: 600;
 }
-
 
 /* =========================================================
    EN-TÊTE
@@ -164,7 +162,6 @@ html body .mmic-profile-hero-content {
     box-sizing: border-box;
 }
 
-
 /* =========================================================
    AVATAR LOSANGE DU PROFIL
    ========================================================= */
@@ -233,7 +230,6 @@ html body .mmic-profile-avatar-image img {
     object-fit: cover;
     object-position: center top;
 }
-
 
 /* =========================================================
    IDENTITÉ
@@ -318,7 +314,6 @@ html body .mmic-profile-last-visit strong {
     text-transform: uppercase;
 }
 
-
 /* =========================================================
    ACTIONS DU PROFIL
    ========================================================= */
@@ -393,7 +388,6 @@ html body .mmic-profile-private-message a {
     text-transform: uppercase;
 }
 
-
 /* =========================================================
    STRUCTURE PRINCIPALE
    ========================================================= */
@@ -429,7 +423,6 @@ html body .mmic-profile-card {
     overflow: hidden;
     box-sizing: border-box;
 }
-
 
 /* =========================================================
    TITRES DE CARTES
@@ -491,7 +484,6 @@ html body .mmic-profile-card-heading h2 {
     font-weight: 400;
     line-height: 1.2;
 }
-
 
 /* =========================================================
    COLONNE GAUCHE
@@ -589,7 +581,6 @@ html body .mmic-profile-admin-links {
     margin-top: 9px;
 }
 
-
 /* =========================================================
    CONTACT
    ========================================================= */
@@ -669,7 +660,6 @@ html body .mmic-profile-admin-comment-title span {
     text-transform: uppercase;
 }
 
-
 /* =========================================================
    TITRES DES GRANDES SECTIONS
    ========================================================= */
@@ -722,7 +712,6 @@ html body .mmic-profile-section-decoration span {
 
     background: #d8b08c;
 }
-
 
 /* =========================================================
    DERNIÈRE VISITE
@@ -783,7 +772,6 @@ html body .mmic-profile-visit-highlight div strong {
 
     font-size: 9px;
 }
-
 
 /* =========================================================
    CHAMPS DU PROFIL
@@ -898,7 +886,6 @@ html body .mmic-profile-post-links > div a {
     text-transform: uppercase;
 }
 
-
 /* =========================================================
    ÉDITION AJAX
    ========================================================= */
@@ -962,7 +949,6 @@ html body .mmic-profile-page .form-error {
     font-size: 8px;
 }
 
-
 /* =========================================================
    RÉCOMPENSES
    ========================================================= */
@@ -1007,7 +993,6 @@ html body .mmic-profile-awards-list img:hover {
 
     box-shadow: 0 8px 16px rgba(16, 36, 56, 0.14);
 }
-
 
 /* =========================================================
    FEUILLE RPG
@@ -1143,7 +1128,6 @@ html body .mmic-profile-rpg-administration {
     text-align: center;
 }
 
-
 /* =========================================================
    ANCIENS BOUTONS ET IMAGES FORUMACTIF
    ========================================================= */
@@ -1157,7 +1141,6 @@ html body .mmic-profile-page .mmic-profile-admin-links a,
 html body .mmic-profile-page .mmic-profile-rpg-administration a {
     color: #102438 !important;
 }
-
 
 /* =========================================================
    RESPONSIVE
@@ -1185,7 +1168,6 @@ html body .mmic-profile-page .mmic-profile-rpg-administration a {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
-
 
 @media (max-width: 650px) {
 
@@ -1264,7 +1246,6 @@ html body .mmic-profile-business-card {
     box-sizing: border-box;
 }
 
-
 /* =========================================================
    PARTIE GAUCHE
    ========================================================= */
@@ -1291,7 +1272,6 @@ html body .mmic-profile-business-left {
     box-sizing: border-box;
 }
 
-
 html body .mmic-profile-business-left::before {
     content: "";
 
@@ -1312,7 +1292,6 @@ html body .mmic-profile-business-left::before {
             transparent
         );
 }
-
 
 /* Avatar principal de la carte */
 
@@ -1338,7 +1317,6 @@ html body .mmic-profile-business-avatar {
     overflow: hidden;
 }
 
-
 html body .mmic-profile-business-avatar img {
     display: block;
 
@@ -1352,18 +1330,15 @@ html body .mmic-profile-business-avatar img {
     transition: transform 0.35s ease;
 }
 
-
 html body .mmic-profile-business-avatar:hover img {
     transform: scale(1.05);
 }
-
 
 /* Nom sous l’avatar */
 
 html body .mmic-profile-business-name {
     text-align: center;
 }
-
 
 html body .mmic-profile-business-name span {
     display: block;
@@ -1378,7 +1353,6 @@ html body .mmic-profile-business-name span {
     text-transform: uppercase;
 }
 
-
 html body .mmic-profile-business-name strong {
     display: block;
 
@@ -1389,7 +1363,6 @@ html body .mmic-profile-business-name strong {
     font-weight: 400;
     line-height: 1.15;
 }
-
 
 html body .mmic-profile-business-name small {
     display: block;
@@ -1404,7 +1377,6 @@ html body .mmic-profile-business-name small {
     text-transform: uppercase;
 }
 
-
 /* Présence */
 
 html body .mmic-profile-business-presence {
@@ -1412,7 +1384,6 @@ html body .mmic-profile-business-presence {
 
     border-top: 1px solid rgba(216, 176, 140, 0.34);
 }
-
 
 html body .mmic-profile-business-presence-line {
     display: flex;
@@ -1425,7 +1396,6 @@ html body .mmic-profile-business-presence-line {
     border-bottom: 1px solid rgba(216, 176, 140, 0.28);
 }
 
-
 html body .mmic-profile-business-presence-line span,
 html body .mmic-profile-business-groups > span {
     color: #b97a56;
@@ -1436,7 +1406,6 @@ html body .mmic-profile-business-groups > span {
     text-transform: uppercase;
 }
 
-
 html body .mmic-profile-business-presence-line strong {
     color: #102438;
 
@@ -1446,7 +1415,6 @@ html body .mmic-profile-business-presence-line strong {
     text-align: right;
 }
 
-
 /* Groupes */
 
 html body .mmic-profile-business-groups {
@@ -1455,7 +1423,6 @@ html body .mmic-profile-business-groups {
     border-bottom: 1px solid rgba(216, 176, 140, 0.28);
 }
 
-
 html body .mmic-profile-business-groups > div {
     display: flex;
     flex-wrap: wrap;
@@ -1463,7 +1430,6 @@ html body .mmic-profile-business-groups > div {
 
     margin-top: 8px;
 }
-
 
 html body .mmic-profile-business-groups a {
     padding: 5px 8px;
@@ -1481,7 +1447,6 @@ html body .mmic-profile-business-groups a {
     text-transform: uppercase;
 }
 
-
 /* Actions */
 
 html body .mmic-profile-business-actions {
@@ -1490,7 +1455,6 @@ html body .mmic-profile-business-actions {
 
     margin-top: 16px;
 }
-
 
 html body .mmic-profile-business-actions .mmic-profile-follow,
 html body .mmic-profile-business-actions
@@ -1525,7 +1489,6 @@ html body .mmic-profile-business-actions
         transform 0.22s ease;
 }
 
-
 html body .mmic-profile-business-actions .mmic-profile-follow:hover,
 html body .mmic-profile-business-actions
 .mmic-profile-private-message a:hover {
@@ -1535,7 +1498,6 @@ html body .mmic-profile-business-actions
     transform: translateY(-2px);
 }
 
-
 html body .mmic-profile-business-admin {
     display: flex;
     justify-content: center;
@@ -1544,7 +1506,6 @@ html body .mmic-profile-business-admin {
 
     margin-top: 14px;
 }
-
 
 /* =========================================================
    PARTIE DROITE
@@ -1562,7 +1523,6 @@ html body .mmic-profile-business-right {
             #fbf7f1 100%
         );
 }
-
 
 /* En-tête de la carte */
 
@@ -1591,12 +1551,10 @@ html body .mmic-profile-business-header {
     box-sizing: border-box;
 }
 
-
 html body .mmic-profile-business-header > div:first-child {
     position: relative;
     z-index: 2;
 }
-
 
 html body .mmic-profile-business-header > div:first-child > span {
     display: block;
@@ -1611,7 +1569,6 @@ html body .mmic-profile-business-header > div:first-child > span {
     text-transform: uppercase;
 }
 
-
 html body .mmic-profile-business-header h2 {
     margin: 0;
 
@@ -1622,7 +1579,6 @@ html body .mmic-profile-business-header h2 {
     font-weight: 400;
     line-height: 1.15;
 }
-
 
 html body .mmic-profile-business-mark {
     position: absolute;
@@ -1639,7 +1595,6 @@ html body .mmic-profile-business-mark {
     pointer-events: none;
 }
 
-
 /* =========================================================
    INFORMATIONS EN GRILLE
    ========================================================= */
@@ -1654,7 +1609,6 @@ html body .mmic-profile-business-fields {
 
     box-sizing: border-box;
 }
-
 
 html body .mmic-profile-business-fields .mmic-profile-field {
     display: grid;
@@ -1672,7 +1626,6 @@ html body .mmic-profile-business-fields .mmic-profile-field {
     overflow: visible;
     box-sizing: border-box;
 }
-
 
 html body
 .mmic-profile-business-fields
@@ -1697,7 +1650,6 @@ html body
     box-sizing: border-box;
 }
 
-
 html body
 .mmic-profile-business-fields
 .mmic-profile-field-value {
@@ -1715,7 +1667,6 @@ html body
     box-sizing: border-box;
 }
 
-
 html body
 .mmic-profile-business-fields
 .mmic-profile-field-content {
@@ -1723,7 +1674,6 @@ html body
 
     overflow-wrap: anywhere;
 }
-
 
 /* Champ occupant toute la largeur lorsqu’il contient beaucoup de texte */
 
@@ -1733,7 +1683,6 @@ html body
     grid-column: 1 / -1;
 }
 
-
 /* =========================================================
    CONTACT
    ========================================================= */
@@ -1741,7 +1690,6 @@ html body
 html body .mmic-profile-business-contact {
     padding: 0 20px 20px;
 }
-
 
 html body .mmic-profile-business-subtitle {
     display: flex;
@@ -1751,7 +1699,6 @@ html body .mmic-profile-business-subtitle {
 
     margin: 1px 0 13px;
 }
-
 
 html body .mmic-profile-business-subtitle span {
     width: 42px;
@@ -1765,7 +1712,6 @@ html body .mmic-profile-business-subtitle span {
         );
 }
 
-
 html body .mmic-profile-business-subtitle span:last-child {
     background:
         linear-gradient(
@@ -1775,7 +1721,6 @@ html body .mmic-profile-business-subtitle span:last-child {
         );
 }
 
-
 html body .mmic-profile-business-subtitle strong {
     color: #b97a56;
 
@@ -1783,7 +1728,6 @@ html body .mmic-profile-business-subtitle strong {
     letter-spacing: 0.16em;
     text-transform: uppercase;
 }
-
 
 html body
 .mmic-profile-business-contact
@@ -1795,7 +1739,6 @@ html body
 
     padding: 0;
 }
-
 
 html body
 .mmic-profile-business-contact
@@ -1814,7 +1757,6 @@ html body
     background: #fffaf4;
 }
 
-
 html body
 .mmic-profile-business-contact
 .mmic-profile-contact-label {
@@ -1826,7 +1768,6 @@ html body
     text-transform: uppercase;
 }
 
-
 html body
 .mmic-profile-business-contact
 .mmic-profile-contact-content {
@@ -1834,7 +1775,6 @@ html body
 
     font-size: 8px;
 }
-
 
 /* =========================================================
    RESPONSIVE
@@ -1855,7 +1795,6 @@ html body
         grid-template-columns: 1fr;
     }
 }
-
 
 @media (max-width: 600px) {
 
@@ -2257,7 +2196,6 @@ html body .mmic-profile-business-subtitle strong {
     font-size: 8px !important;
     letter-spacing: 1.7px !important;
 }
-
 
 /* =========================================================
    PROFIL — FINITIONS PROPRES ET UNIQUES
@@ -3098,11 +3036,6 @@ html body .mmic-profile-edit-page a[href*="rgpd.php"]{
     transition:.25s;
 }
 
-html body .mmic-profile-edit-page a[href*="rgpd.php"]:hover{
-    background:#d8b38d;
-    color:#16283d !important;
-}
-
 /* Le conteneur qui englobe texte + bouton */
 html body .mmic-profile-edit-page td.row1:has(a[href*="rgpd.php"]){
     text-align:center !important;
@@ -3195,7 +3128,6 @@ body.mmic-profile-friendsfoes #page-body {
     color:#13263d;
 }
 
-
 /* ----------------------------------------------------------
    BLOCS FORUMACTIF
 ---------------------------------------------------------- */
@@ -3214,7 +3146,6 @@ body.mmic-profile-friendsfoes #page-body table.forumline {
 
     overflow:hidden;
 }
-
 
 /* ----------------------------------------------------------
    BANDEAUX
@@ -3242,7 +3173,6 @@ body.mmic-profile-friendsfoes #page-body table.forumline th {
     line-height:1.2 !important;
 }
 
-
 /* Petit kicker */
 body.mmic-profile-friendsfoes #page-body table.forumline th::before {
     content:"PROFIL";
@@ -3261,7 +3191,6 @@ body.mmic-profile-friendsfoes #page-body table.forumline th::before {
     text-transform:uppercase;
 }
 
-
 /* ----------------------------------------------------------
    CELLULES
 ---------------------------------------------------------- */
@@ -3279,12 +3208,10 @@ body.mmic-profile-friendsfoes #page-body table.forumline td {
     vertical-align:middle !important;
 }
 
-
 /* dernière ligne */
 body.mmic-profile-friendsfoes #page-body table.forumline tr:last-child td {
     border-bottom:0 !important;
 }
-
 
 /* ----------------------------------------------------------
    TEXTE
@@ -3302,7 +3229,6 @@ body.mmic-profile-friendsfoes #page-body .gensmall {
     font-size:11px !important;
     line-height:1.45 !important;
 }
-
 
 /* ----------------------------------------------------------
    CHAMPS
@@ -3331,7 +3257,6 @@ body.mmic-profile-friendsfoes #page-body input.post:focus {
 
     box-shadow:0 0 0 2px rgba(201,155,116,.12) !important;
 }
-
 
 /* ----------------------------------------------------------
    BOUTONS AJOUTER
@@ -3368,7 +3293,6 @@ body.mmic-profile-friendsfoes #page-body input.mainoption:hover {
     color:#13263d !important;
 }
 
-
 /* ----------------------------------------------------------
    PETITS ESPACES ENTRE LES BLOCS
 ---------------------------------------------------------- */
@@ -3387,7 +3311,6 @@ body.mmic-profile-friendsfoes #page-body table.forumline + br {
 body.mmic-profile-followers #page-body {
     color:#13263d;
 }
-
 
 /* ----------------------------------------------------------
    TABLE / BLOC PRINCIPAL
@@ -3409,7 +3332,6 @@ body.mmic-profile-followers #page-body table.forumline {
 
     box-shadow:0 4px 12px rgba(16,36,56,.04);
 }
-
 
 /* ----------------------------------------------------------
    BANDEAU "MEMBRES SUIVIS"
@@ -3440,7 +3362,6 @@ body.mmic-profile-followers #page-body table.forumline .catHead {
     line-height:1.2 !important;
 }
 
-
 /* Petit kicker */
 body.mmic-profile-followers #page-body table.forumline th::before,
 body.mmic-profile-followers #page-body table.forumline .thHead::before,
@@ -3461,7 +3382,6 @@ body.mmic-profile-followers #page-body table.forumline .catHead::before {
     letter-spacing:.18em;
     text-transform:uppercase;
 }
-
 
 /* ----------------------------------------------------------
    CELLULES
@@ -3484,7 +3404,6 @@ body.mmic-profile-followers #page-body table.forumline tr:last-child td {
     border-bottom:0 !important;
 }
 
-
 /* ----------------------------------------------------------
    MESSAGE "AUCUN MEMBRE SUIVI"
 ---------------------------------------------------------- */
@@ -3505,7 +3424,6 @@ body.mmic-profile-followers #page-body table.forumline td:only-child {
     color:#817267 !important;
 }
 
-
 /* ----------------------------------------------------------
    CARTES DES MEMBRES SUIVIS
    Utilisé lorsqu'il y aura des membres
@@ -3520,7 +3438,6 @@ body.mmic-profile-followers .followers_block {
 
     padding:18px !important;
 }
-
 
 /* Carte membre */
 body.mmic-profile-followers .follower-card {
@@ -3548,7 +3465,6 @@ body.mmic-profile-followers .follower-card:hover {
     box-shadow:0 4px 12px rgba(16,36,56,.06);
 }
 
-
 /* Avatar */
 body.mmic-profile-followers .follower-card img {
     width:55px !important;
@@ -3560,7 +3476,6 @@ body.mmic-profile-followers .follower-card img {
 
     margin-right:12px !important;
 }
-
 
 /* Informations */
 body.mmic-profile-followers .follower-card .details {
@@ -3576,7 +3491,6 @@ body.mmic-profile-followers .follower-card .details p {
     font-size:15px;
     font-weight:600;
 }
-
 
 /* ----------------------------------------------------------
    BOUTON SUIVRE / NE PLUS SUIVRE
@@ -3660,7 +3574,6 @@ body.mmic-profile-notifications #page-body{
     color:#13263d;
 }
 
-
 /* ----------------------------------------------------------
    TABLEAUX PRINCIPAUX
 ---------------------------------------------------------- */
@@ -3682,7 +3595,6 @@ body.mmic-profile-notifications #page-body table.forumline{
 
     box-shadow:0 4px 12px rgba(16,36,56,.04);
 }
-
 
 /* ----------------------------------------------------------
    BANDEAUX PRINCIPAUX
@@ -3711,7 +3623,6 @@ body.mmic-profile-notifications #page-body .catHead{
     line-height:1.2 !important;
 }
 
-
 /* Petit kicker MMIC */
 body.mmic-profile-notifications #page-body th::before,
 body.mmic-profile-notifications #page-body .thHead::before,
@@ -3732,7 +3643,6 @@ body.mmic-profile-notifications #page-body .catHead::before{
     letter-spacing:.18em;
     text-transform:uppercase;
 }
-
 
 /* ----------------------------------------------------------
    SOUS-EN-TÊTES DU TABLEAU
@@ -3759,7 +3669,6 @@ body.mmic-profile-notifications #page-body td.catBottom{
     text-transform:uppercase !important;
 }
 
-
 /* ----------------------------------------------------------
    CELLULES
 ---------------------------------------------------------- */
@@ -3779,13 +3688,11 @@ body.mmic-profile-notifications #page-body table.forumline td{
     vertical-align:middle !important;
 }
 
-
 /* alternance légère, sans faire tableau Excel */
 body.mmic-profile-notifications #page-body tr:nth-child(even) td.row1,
 body.mmic-profile-notifications #page-body tr:nth-child(even) td.row2{
     background:#fffdf9 !important;
 }
-
 
 /* ----------------------------------------------------------
    TYPOGRAPHIE
@@ -3805,7 +3712,6 @@ body.mmic-profile-notifications #page-body .gensmall{
     line-height:1.4 !important;
 }
 
-
 /* ----------------------------------------------------------
    CASES À COCHER
 ---------------------------------------------------------- */
@@ -3818,7 +3724,6 @@ body.mmic-profile-notifications #page-body input[type="checkbox"]{
 
     cursor:pointer;
 }
-
 
 /* ----------------------------------------------------------
    BOUTONS
@@ -3855,7 +3760,6 @@ body.mmic-profile-notifications #page-body .liteoption:hover{
     color:#13263d !important;
 }
 
-
 /* ----------------------------------------------------------
    LIENS "TOUT SÉLECTIONNER / TOUT DÉSÉLECTIONNER"
 ---------------------------------------------------------- */
@@ -3868,7 +3772,6 @@ body.mmic-profile-notifications #page-body a:hover{
     color:#13263d;
 }
 
-
 /* ----------------------------------------------------------
    BLOC "0 NOTIFICATION"
 ---------------------------------------------------------- */
@@ -3877,7 +3780,6 @@ body.mmic-profile-notifications #page-body .catBottom,
 body.mmic-profile-notifications #page-body td.catBottom{
     text-align:center !important;
 }
-
 
 /* ----------------------------------------------------------
    RESPONSIVE LÉGER
@@ -3904,7 +3806,6 @@ body.mmic-profile-topic-list #page-body{
     color:#13263d;
 }
 
-
 /* ----------------------------------------------------------
    TABLEAU PRINCIPAL
 ---------------------------------------------------------- */
@@ -3926,7 +3827,6 @@ body.mmic-profile-topic-list #page-body table.forumline{
 
     box-shadow:0 4px 12px rgba(16,36,56,.04);
 }
-
 
 /* ----------------------------------------------------------
    GRAND BANDEAU
@@ -3952,7 +3852,6 @@ body.mmic-profile-topic-list #page-body .thHead{
     font-weight:600 !important;
 }
 
-
 /* Petit kicker */
 
 body.mmic-profile-topic-list #page-body .catHead::before,
@@ -3972,7 +3871,6 @@ body.mmic-profile-topic-list #page-body .thHead::before{
     letter-spacing:.18em;
     text-transform:uppercase;
 }
-
 
 /* ----------------------------------------------------------
    EN-TÊTES DES COLONNES
@@ -4000,7 +3898,6 @@ body.mmic-profile-topic-list #page-body th:last-child{
     border-right:0 !important;
 }
 
-
 /* ----------------------------------------------------------
    LIGNES DES SUJETS / FAVORIS
 ---------------------------------------------------------- */
@@ -4023,14 +3920,12 @@ body.mmic-profile-topic-list #page-body tr:last-child td{
     border-bottom:0 !important;
 }
 
-
 /* alternance très légère */
 
 body.mmic-profile-topic-list #page-body tr:nth-child(even) td.row1,
 body.mmic-profile-topic-list #page-body tr:nth-child(even) td.row2{
     background:#fffdf9 !important;
 }
-
 
 /* ----------------------------------------------------------
    LIENS
@@ -4043,7 +3938,6 @@ body.mmic-profile-topic-list #page-body a{
 body.mmic-profile-topic-list #page-body a:hover{
     color:#13263d;
 }
-
 
 /* ----------------------------------------------------------
    TYPOGRAPHIE
@@ -4063,7 +3957,6 @@ body.mmic-profile-topic-list #page-body .gensmall{
     line-height:1.4 !important;
 }
 
-
 /* ----------------------------------------------------------
    CHECKBOX
 ---------------------------------------------------------- */
@@ -4076,7 +3969,6 @@ body.mmic-profile-topic-list #page-body input[type="checkbox"]{
 
     cursor:pointer;
 }
-
 
 /* ----------------------------------------------------------
    BOUTONS
@@ -4111,7 +4003,6 @@ body.mmic-profile-topic-list #page-body .liteoption:hover{
     color:#13263d !important;
 }
 
-
 /* ----------------------------------------------------------
    BAS DE TABLEAU / PAGINATION
 ---------------------------------------------------------- */
@@ -4127,7 +4018,6 @@ body.mmic-profile-topic-list #page-body .catBottom{
     color:#13263d !important;
 }
 
-
 /* ----------------------------------------------------------
    "TOUT SÉLECTIONNER / TOUT DÉSÉLECTIONNER"
 ---------------------------------------------------------- */
@@ -4135,7 +4025,6 @@ body.mmic-profile-topic-list #page-body .catBottom{
 body.mmic-profile-topic-list #page-body .gensmall a{
     font-weight:600;
 }
-
 
 /* ----------------------------------------------------------
    "SAUTER VERS"
@@ -4158,7 +4047,6 @@ body.mmic-profile-signature #page-body{
     color:#13263d;
 }
 
-
 /* ----------------------------------------------------------
    TABLEAUX PRINCIPAUX
 ---------------------------------------------------------- */
@@ -4180,7 +4068,6 @@ body.mmic-profile-signature #page-body table.forumline{
 
     box-shadow:0 4px 12px rgba(16,36,56,.04);
 }
-
 
 /* ----------------------------------------------------------
    BANDEAUX
@@ -4209,7 +4096,6 @@ body.mmic-profile-signature #page-body .catHead{
     line-height:1.2 !important;
 }
 
-
 /* Petit kicker */
 body.mmic-profile-signature #page-body th::before,
 body.mmic-profile-signature #page-body .thHead::before,
@@ -4231,7 +4117,6 @@ body.mmic-profile-signature #page-body .catHead::before{
     text-transform:uppercase;
 }
 
-
 /* ----------------------------------------------------------
    CELLULES
 ---------------------------------------------------------- */
@@ -4247,7 +4132,6 @@ body.mmic-profile-signature #page-body table.forumline td{
 
     padding:10px 12px !important;
 }
-
 
 /* ----------------------------------------------------------
    TEXTE "SIGNATURE :"
@@ -4265,7 +4149,6 @@ body.mmic-profile-signature #page-body .gensmall{
 
     font-size:10px !important;
 }
-
 
 /* ----------------------------------------------------------
    ÉDITEUR
@@ -4307,7 +4190,6 @@ body.mmic-profile-signature #page-body .sceditor-toolbar{
     box-sizing:border-box !important;
 }
 
-
 /* Groupes de boutons */
 body.mmic-profile-signature #page-body .sceditor-group{
     display:inline-flex !important;
@@ -4334,7 +4216,6 @@ body.mmic-profile-signature #page-body .sceditor-group{
     white-space:nowrap !important;
 }
 
-
 /* Boutons */
 body.mmic-profile-signature #page-body .sceditor-button{
     display:flex !important;
@@ -4353,7 +4234,6 @@ body.mmic-profile-signature #page-body .sceditor-button{
     margin:0 1px !important;
     padding:0 !important;
 }
-
 
 /* Icône interne */
 body.mmic-profile-signature #page-body .sceditor-button div{
@@ -4376,7 +4256,6 @@ body.mmic-profile-signature #page-body .sceditor-container textarea{
     background:#fffdf9 !important;
 }
 
-
 /* ----------------------------------------------------------
    SMILEYS
 ---------------------------------------------------------- */
@@ -4391,7 +4270,6 @@ body.mmic-profile-signature #page-body .smile-status-box{
 
     box-sizing:border-box !important;
 }
-
 
 /* ----------------------------------------------------------
    BOUTONS BAS
@@ -4425,7 +4303,6 @@ body.mmic-profile-signature #page-body .liteoption:hover{
     background:#d2a27e !important;
     color:#13263d !important;
 }
-
 
 /* ----------------------------------------------------------
    ONGLET SIGNATURE ACTIF
