@@ -262,7 +262,30 @@
 
   object-fit: cover;
 }
+/* =========================================================
+   SÉCURITÉ — IMAGES / GIF DANS LE PROFIL DES MESSAGES
+   ========================================================= */
 
+.mmic-vt-profile img {
+  max-width: 100% !important;
+  height: auto !important;
+
+  box-sizing: border-box;
+}
+
+/* Si le champ contient une table Forumactif */
+.mmic-vt-profile table,
+.mmic-vt-profile tbody,
+.mmic-vt-profile tr,
+.mmic-vt-profile td {
+  max-width: 100% !important;
+  box-sizing: border-box;
+}
+
+/* Les contenus personnalisés ne peuvent plus sortir du profil */
+.mmic-vt-profile {
+  overflow: hidden;
+}
 
 /* =========================================================
    INFORMATIONS DU PROFIL
