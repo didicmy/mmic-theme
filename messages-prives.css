@@ -1,6 +1,6 @@
 /* =========================================================
    MEET ME IN CHICAGO
-   MESSAGES PRIVÉS — BOÎTE DE RÉCEPTION 
+   MESSAGES PRIVÉS — VERSION NETTOYÉE
    ========================================================= */
 
 
@@ -1367,9 +1367,6 @@ html body .mmic-pm-contact-item {
     width: 100% !important;
 }
 
-html body .mmic-pm-contact-item:empty {
-    display: none !important;
-}
 
 html body .mmic-pm-contact-item a {
     display: inline-flex !important;
@@ -2954,7 +2951,7 @@ padding: 2px 5px !important;
 
     box-sizing: border-box !important;
    justify-content: center !important;
-   
+
 }
 
 html body .mmic-pm-compose-page
