@@ -14,8 +14,11 @@
    - le responsive ;
    - l’en-tête/date des messages.
 
-   Les styles visuels des boutons et actions sont centralisés
-   dans buttons.css et ne sont donc pas répétés ici.
+   Les boutons et actions propres à la vue d’un sujet sont gérés
+   directement dans ce fichier afin d’éviter les conflits avec
+   les images natives Forumactif.
+
+   buttons.css reste réservé aux boutons globaux hors viewtopic.
 
    IMPORTANT : ce fichier concerne le PROFIL DANS LES MESSAGES.
    La page complète 'Voir le profil' reste dans profile.css.
@@ -955,3 +958,323 @@
 
   background: #102438;
 }
+
+/* =========================================================
+   BOUTONS DU VIEWTOPIC — VERSION DÉFINITIVE
+   ========================================================= */
+
+/* ---------------------------------------------------------
+   BOUTONS PRINCIPAUX : NOUVEAU SUJET / RÉPONDRE
+   --------------------------------------------------------- */
+
+.mmic-vt-top-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 7px;
+  margin-top: 12px;
+  margin-bottom: 8px;
+}
+
+.mmic-vt-main-button,
+.mmic-vt-small-button {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 7px !important;
+
+  min-height: 31px;
+  padding: 0 12px;
+
+  border: 1px solid #b97a56 !important;
+  border-radius: 6px !important;
+
+  background: #102438 !important;
+  color: #fbf8f3 !important;
+
+  box-shadow: 0 3px 8px rgba(16, 36, 56, 0.12);
+
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 1;
+  text-decoration: none !important;
+  text-transform: uppercase;
+
+  box-sizing: border-box;
+
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.mmic-vt-main-button-icon {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  width: 17px;
+  height: 17px;
+  flex: 0 0 17px;
+
+  border-radius: 50%;
+
+  background: #b97a56;
+  color: #fbf8f3;
+
+  font-size: 11px;
+  line-height: 1;
+}
+
+.mmic-vt-main-button:hover,
+.mmic-vt-small-button:hover {
+  border-color: #102438 !important;
+
+  background: #b97a56 !important;
+  color: #fbf8f3 !important;
+
+  box-shadow: 0 5px 12px rgba(16, 36, 56, 0.17);
+
+  transform: translateY(-2px);
+}
+
+
+/* ---------------------------------------------------------
+   ACTIONS DES MESSAGES
+   Citation multiple / Citer / Éditer / Supprimer / IP…
+   --------------------------------------------------------- */
+
+html body .mmic-vt-post-actions {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-end !important;
+  flex-wrap: wrap !important;
+  gap: 5px !important;
+
+  min-height: 30px !important;
+  margin-left: auto !important;
+}
+
+html body .mmic-vt-post-actions .mmic-vt-action {
+  position: relative !important;
+
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 6px !important;
+
+  width: auto !important;
+  min-width: 30px !important;
+  height: 26px !important;
+  padding: 0 9px !important;
+
+  overflow: hidden !important;
+
+  border: 1px solid #ddc9b8 !important;
+  border-radius: 6px !important;
+
+  background: #fbf8f3 !important;
+  color: #102438 !important;
+
+  box-shadow: 0 1px 3px rgba(16, 36, 56, 0.08) !important;
+
+  font: 700 7px Arial, sans-serif !important;
+  letter-spacing: 0.6px !important;
+  line-height: 1 !important;
+  text-transform: uppercase !important;
+
+  box-sizing: border-box !important;
+
+  transition:
+    transform 0.18s ease,
+    border-color 0.18s ease,
+    background-color 0.18s ease,
+    color 0.18s ease,
+    box-shadow 0.18s ease;
+}
+
+/*
+   On conserve le vrai lien / la vraie image Forumactif par-dessus
+   toute la capsule pour que le clic continue de fonctionner,
+   mais on rend son visuel totalement transparent.
+*/
+html body .mmic-vt-post .mmic-vt-post-actions .mmic-vt-action > a,
+html body .mmic-vt-post .mmic-vt-post-actions .mmic-vt-action > img,
+html body .mmic-vt-post .mmic-vt-post-actions .mmic-vt-action a,
+html body .mmic-vt-post .mmic-vt-post-actions .mmic-vt-action a img {
+  position: absolute !important;
+  inset: 0 !important;
+  z-index: 5 !important;
+
+  display: block !important;
+
+  width: 100% !important;
+  max-width: none !important;
+  height: 100% !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  border: 0 !important;
+  border-radius: 0 !important;
+
+  background: transparent !important;
+
+  opacity: 0 !important;
+
+  cursor: pointer !important;
+}
+
+
+/* Petit rond décoratif / pictogramme */
+
+html body .mmic-vt-action::before {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  width: 15px !important;
+  height: 15px !important;
+  flex: 0 0 15px !important;
+
+  border-radius: 50% !important;
+
+  background: #102438 !important;
+  color: #d8b08c !important;
+
+  font: 700 9px Arial, sans-serif !important;
+  line-height: 1 !important;
+}
+
+
+/* Citation multiple — Forumactif utilise directement une image,
+   pas forcément un lien <a>. Le sélecteur ci-dessus gère les deux. */
+
+.mmic-vt-action-multiquote::before {
+  content: "+";
+}
+
+.mmic-vt-action-multiquote::after {
+  content: "Multiple";
+}
+
+
+/* Citer */
+
+.mmic-vt-action-quote::before {
+  content: "“";
+}
+
+.mmic-vt-action-quote::after {
+  content: "Citer";
+}
+
+
+/* Éditer */
+
+.mmic-vt-action-edit::before {
+  content: "✎";
+}
+
+.mmic-vt-action-edit::after {
+  content: "Éditer";
+}
+
+
+/* Supprimer */
+
+.mmic-vt-action-delete::before {
+  content: "×";
+}
+
+.mmic-vt-action-delete::after {
+  content: "";
+}
+
+
+/* IP */
+
+.mmic-vt-action-ip::before {
+  content: "i";
+}
+
+.mmic-vt-action-ip::after {
+  content: "IP";
+}
+
+
+/* Rapporter */
+
+.mmic-vt-action-report::before {
+  content: "!";
+}
+
+.mmic-vt-action-report::after {
+  content: "";
+}
+
+
+/* Remercier */
+
+.mmic-vt-action-thank::before {
+  content: "♥";
+}
+
+.mmic-vt-action-thank::after {
+  content: "Merci";
+}
+
+
+/* Petites actions uniquement pictogramme */
+
+html body .mmic-vt-action-delete,
+html body .mmic-vt-action-report {
+  gap: 0 !important;
+}
+
+html body .mmic-vt-action-ip {
+  width: 30px !important;
+  gap: 0 !important;
+}
+
+
+/* Survol */
+
+html body .mmic-vt-action:hover {
+  border-color: #b97a56 !important;
+
+  background: #102438 !important;
+  color: #fbf8f3 !important;
+
+  box-shadow: 0 3px 7px rgba(16, 36, 56, 0.14) !important;
+
+  transform: translateY(-1px) !important;
+}
+
+html body .mmic-vt-action:hover::before {
+  background: #d8b08c !important;
+  color: #102438 !important;
+}
+
+
+/* ---------------------------------------------------------
+   RESPONSIVE DES BOUTONS
+   --------------------------------------------------------- */
+
+@media (max-width: 600px) {
+  .mmic-vt-top-actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .mmic-vt-main-button,
+  .mmic-vt-small-button {
+    width: 100%;
+  }
+
+  html body .mmic-vt-post-actions {
+    justify-content: flex-start !important;
+  }
+}
+
