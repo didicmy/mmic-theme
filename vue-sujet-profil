@@ -330,7 +330,11 @@
   margin-right: auto;
   margin-left: auto;
 }
-
+/* Empêcher le débordement des images et des GIFs dans le profil des messages */
+.postprofile img, .user_profile img, .postdetails img {
+    max-width: 100% !important;
+    height: auto !important;
+}
 
 /* LIENS DU PROFIL */
 
