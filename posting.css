@@ -1,6 +1,6 @@
 /* =========================================================
    POSTING BODY — MEET ME IN CHICAGO
-   VERSION NETTOYÉE ET CONSOLIDÉE
+   VERSION NETTOYÉE, CONSOLIDÉE ET VÉRIFIÉE
    Les règles répétées ont été fusionnées en conservant
    la valeur réellement prioritaire dans la cascade.
    ========================================================= */
@@ -1528,13 +1528,6 @@ html body .mmic-posting-page .mmic-posting-footer-tools td {
   padding: 0 !important;
   color: #766a61 !important;
   font-size: 8px !important;
-}
-
-html body .mmic-posting-page .mmic-posting-jumpbox {
-  display: flex !important;
-  align-items: center !important;
-  justify-content: flex-end !important;
-  gap: 6px !important;
 }
 
 
