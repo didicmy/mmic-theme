@@ -2632,9 +2632,13 @@ html body .mmic-vt-profile-fields > div {
   display: flex !important;
   align-items: center !important;
   justify-content: space-between !important;
+  gap: 10px !important;
 
+  min-width: 0 !important;
   min-height: 27px !important;
   padding: 5px 2px !important;
+
+  overflow: hidden !important;
 
   border-top: 1px solid rgba(216, 176, 140, 0.14) !important;
 
@@ -2642,6 +2646,41 @@ html body .mmic-vt-profile-fields > div {
 
   font-size: 7px !important;
   letter-spacing: 0.45px !important;
+
+  box-sizing: border-box !important;
+}
+
+/* Valeurs et médias des champs */
+html body .mmic-vt-profile-fields > div > img,
+html body .mmic-vt-profile-fields > div img {
+  display: block !important;
+
+  width: auto !important;
+  max-width: 100% !important;
+  height: auto !important;
+
+  min-width: 0 !important;
+  flex: 0 1 auto !important;
+
+  margin: 5px auto !important;
+
+  object-fit: contain !important;
+  box-sizing: border-box !important;
+}
+/* Un champ contenant une image peut se réorganiser proprement */
+html body .mmic-vt-profile-fields > div:has(img) {
+  flex-direction: column !important;
+  align-items: stretch !important;
+}
+
+html body .mmic-vt-profile-fields > div:has(img) > .label {
+  width: 100% !important;
+}
+
+html body .mmic-vt-profile-fields > div:has(img) img {
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
 }
 
 
