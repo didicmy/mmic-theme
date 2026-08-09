@@ -1,5 +1,6 @@
 /* =========================================================
    MEET ME IN CHICAGO — BOUTONS GLOBAUX
+   VERSION NETTOYÉE
    =========================================================
 
    Cette feuille regroupe uniquement les vrais boutons
@@ -134,7 +135,6 @@
 
   transform: rotate(5deg);
 }
-
 
 
 /* =========================================================
@@ -272,80 +272,6 @@
 
 
 /* ---------------------------------------------------------
-   OPTIONS SOUS LA LISTE
-   --------------------------------------------------------- */
-
-.mmic-viewforum-options {
-  display: flex !important;
-  align-items: center !important;
-  justify-content: flex-end !important;
-  flex-wrap: wrap !important;
-  gap: 7px !important;
-}
-
-.mmic-viewforum-option,
-.mmic-viewforum-option a,
-.mmic-viewforum-watch,
-.mmic-viewforum-watch a {
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  gap: 6px !important;
-
-  min-height: 28px !important;
-  padding: 0 10px !important;
-
-  border: 1px solid #ddd1c6 !important;
-  border-radius: 6px !important;
-
-  background: #f7f1e9 !important;
-  color: #625951 !important;
-
-  box-shadow: 0 2px 5px rgba(16, 36, 56, 0.04) !important;
-
-  font-size: 7px !important;
-  font-weight: 700 !important;
-  letter-spacing: 0.6px !important;
-  line-height: 1 !important;
-  text-decoration: none !important;
-  text-transform: uppercase !important;
-
-  box-sizing: border-box !important;
-
-  transition:
-    color 0.2s ease,
-    background-color 0.2s ease,
-    border-color 0.2s ease,
-    transform 0.2s ease,
-    box-shadow 0.2s ease !important;
-}
-
-/* Empêche le texte de "Marquer..." de rester énorme */
-.mmic-viewforum-option {
-  font-size: 7px !important;
-}
-
-.mmic-viewforum-option > span:first-child {
-  color: #b97a56 !important;
-  font-size: 9px !important;
-}
-
-.mmic-viewforum-option:hover,
-.mmic-viewforum-option:hover a,
-.mmic-viewforum-watch:hover,
-.mmic-viewforum-watch:hover a {
-  border-color: #b97a56 !important;
-
-  background: #102438 !important;
-  color: #fbf8f3 !important;
-
-  box-shadow: 0 4px 9px rgba(16, 36, 56, 0.12) !important;
-
-  transform: translateY(-1px) !important;
-}
-
-
-/* ---------------------------------------------------------
    RETOUR EN HAUT
    --------------------------------------------------------- */
 
@@ -388,24 +314,6 @@
   color: #fbf8f3 !important;
 
   transform: translateY(-2px) !important;
-}
-
-
-/* ---------------------------------------------------------
-   BLOC SOUS LA LISTE PLUS ÉQUILIBRÉ
-   --------------------------------------------------------- */
-
-.mmic-viewforum-links {
-  min-height: 42px !important;
-  padding: 8px 11px !important;
-}
-
-.mmic-viewforum-moderators {
-  flex: 1 1 auto !important;
-}
-
-.mmic-viewforum-options {
-  flex: 0 1 auto !important;
 }
 
 
@@ -637,7 +545,6 @@
 }
 
 
-
 /* =========================================================
    VUE D’UN SUJET — OUTILS INFÉRIEURS & MODÉRATION
    ========================================================= */
@@ -741,7 +648,6 @@
 
   margin-top: 7px;
 }
-
 
 
 /* =========================================================
