@@ -1,402 +1,73 @@
-/* =========================================================
-   MEET ME IN CHICAGO
-   FICHE DE PRÉSENTATION
-   ========================================================= */
-
-.mmic-card {
-  width: 100%;
-  max-width: 620px;
-
-  margin: 22px auto;
-
-  overflow: hidden;
-
-  border: 1px solid rgba(193, 116, 76, .45);
-  border-radius: 8px;
-
-  background: #f7f1e9;
-
-  color: #514943;
-
-  box-sizing: border-box;
-
-  box-shadow:
-    0 6px 18px rgba(16, 43, 66, .08);
+/*-------- Présentation -------*/
+.entete {
+  height:65px; width:580px;
+  display:flex;
+  margin:auto;
+  border-left:solid 3px #A7BEC7;
+  border-right:solid 3px #A7BEC7;
 }
-
-
-.mmic-card *,
-.mmic-card *::before,
-.mmic-card *::after {
-  box-sizing: border-box;
+.name {
+  height:65px; width:290px;
+  background-color:#2D3A4A;
+  text-align:center;
 }
-
-
-/* =========================================================
-   TITRE
-   ========================================================= */
-
-.mmic-card-title {
-  padding: 15px 20px;
-
-  background:
-    linear-gradient(
-      180deg,
-      #173149 0%,
-      #102b42 100%
-    );
-
-  color: #f8f2eb;
-
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 25px;
-  font-weight: normal;
-
-  letter-spacing: .08em;
-
-  text-align: center;
+.group {
+  height:65px; width:290px;
+  background-color:#344356;
+  text-align:center;
 }
-
-
-/* =========================================================
-   TRIGGER WARNINGS
-   ========================================================= */
-
-.mmic-card-tw {
-  margin: 15px 18px 12px;
-
-  padding: 8px 10px;
-
-  border-left: 3px solid #c1744c;
-
-  background: #eee5da;
-
-  color: #655c55;
-
-  font-size: 7.5px;
-  line-height: 1.45;
+.gtitre {
+  color:#C4D3D9;
+  font-size:30px;
+  font-family: 'Julius Sans One', sans-serif;
 }
-
-
-.mmic-card-tw strong {
-  color: #102b42;
-
-  font-size: 7px;
-
-  letter-spacing: .08em;
-  text-transform: uppercase;
+.background {
+  background-color:#E4E4E4;
+  width:520px;
+  border-left:solid 3px #A7BEC7;
+  border-right:solid 3px #A7BEC7;
+  margin:auto;
+  padding:30px;
 }
-
-
-/* =========================================================
-   HAUT : INFORMATIONS + AVATAR
-   ========================================================= */
-
-.mmic-card-top {
-  display: flex;
-
-  align-items: stretch;
-
-  gap: 14px;
-
-  padding: 0 18px 16px;
+.contenu {
+  margin-top: 20px;
+  background-color:#D7D8D9;
+  padding:10px;
 }
-
-
-/* =========================================================
-   INFORMATIONS
-   ========================================================= */
-
-.mmic-card-infos {
-  flex: 1 1 auto;
-
-  min-width: 0;
-
-  height: 330px;
-
-  padding: 10px;
-
-  background: #e9e1d8;
-
-  border-radius: 5px;
+.h2 {
+  color:#84A4B0;
+  font-size:18px;
+  font-family: 'Unica One', cursive;
 }
-
-
-.mmic-card-block-title {
-  margin-bottom: 7px;
-
-  color: #b16e49;
-
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 13px;
-
-  letter-spacing: .04em;
+.texte {
+  color:#292929;
+  font-size:12px;
 }
-
-
-.mmic-card-scroll {
-  height: 282px;
-
-  padding: 8px 10px;
-
-  overflow-y: auto;
-  overflow-x: hidden;
-
-  background: #fbf8f3;
-
-  color: #55504c;
-
-  font-size: 7.5px;
-  line-height: 1.45;
-
-  scrollbar-width: thin;
-  scrollbar-color: #c1744c #eee5da;
+.credits {
+  font-size: 11px;
 }
-
-
-.mmic-card-scroll p {
-  margin: 0 0 6px;
+.infoz {
+  height:380px;
+  margin-right:30px;
+  background-color:#D7D8D9;
+  padding:10px;
+  overflow:auto;
 }
-
-
-.mmic-card-scroll p:last-child {
-  margin-bottom: 0;
+.avatar200x400 {
+  background-color:#D7D8D9;
+  width:200x; height:400px;
+  box-shadow: 0px 0px 6px black;
 }
-
-
-.mmic-card-scroll strong {
-  color: #102b42;
+.joueur  {
+  height:100px;
+  background-color:#D7D8D9;
+  padding:10px;
+  overflow:auto;
+  margin-left:10px;
 }
-
-
-/* =========================================================
-   AVATAR
-   ========================================================= */
-
-.mmic-card-avatar {
-  flex: 0 0 190px;
-
-  width: 190px;
-  height: 330px;
-
-  overflow: hidden;
-
-  border: 1px solid rgba(193, 116, 76, .50);
-  border-radius: 5px;
-
-  background: #eee8e1;
+.icone100x100 {
+  background-color:#D7D8D9;
+  width:100x; height:100px;
+  box-shadow: 0px 0px 6px black;
 }
-
-
-.mmic-card-avatar img {
-  display: block;
-
-  width: 100%;
-  height: 100%;
-
-  object-fit: cover;
-}
-
-
-/* =========================================================
-   SECTIONS
-   ========================================================= */
-
-.mmic-card-section {
-  margin: 0 18px 14px;
-
-  padding: 10px;
-
-  background: #e9e1d8;
-
-  border-radius: 5px;
-}
-
-
-.mmic-card-section-title {
-  margin-bottom: 8px;
-
-  color: #102b42;
-
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 15px;
-  font-weight: normal;
-
-  letter-spacing: .08em;
-
-  text-align: center;
-  text-transform: uppercase;
-}
-
-
-.mmic-card-section-title::after {
-  content: "";
-
-  display: block;
-
-  width: 30px;
-  height: 1px;
-
-  margin: 6px auto 0;
-
-  background: #c1744c;
-}
-
-
-/* =========================================================
-   CARACTÈRE
-   ========================================================= */
-
-.mmic-card-text-scroll {
-  height: 150px;
-
-  padding: 11px 12px;
-
-  overflow-y: auto;
-  overflow-x: hidden;
-
-  background: #fbf8f3;
-
-  color: #55504c;
-
-  font-size: 8px;
-  line-height: 1.6;
-
-  text-align: justify;
-
-  scrollbar-width: thin;
-  scrollbar-color: #c1744c #eee5da;
-}
-
-
-/* =========================================================
-   HISTOIRE
-   ========================================================= */
-
-.mmic-card-story-scroll {
-  height: 230px;
-
-  padding: 12px 13px;
-
-  overflow-y: auto;
-  overflow-x: hidden;
-
-  background: #fbf8f3;
-
-  color: #55504c;
-
-  font-size: 8px;
-  line-height: 1.65;
-
-  text-align: justify;
-
-  scrollbar-width: thin;
-  scrollbar-color: #c1744c #eee5da;
-}
-
-
-/* =========================================================
-   DERRIÈRE L'ÉCRAN
-   ========================================================= */
-
-.mmic-card-player {
-  margin: 0 18px 18px;
-
-  padding: 10px;
-
-  background: #e5ddd3;
-
-  border-radius: 5px;
-}
-
-
-.mmic-card-player-scroll {
-  height: 120px;
-
-  padding: 10px 12px;
-
-  overflow-y: auto;
-  overflow-x: hidden;
-
-  background: #fbf8f3;
-
-  color: #55504c;
-
-  font-size: 7.5px;
-  line-height: 1.45;
-
-  scrollbar-width: thin;
-  scrollbar-color: #c1744c #eee5da;
-}
-
-
-.mmic-card-player-scroll p {
-  margin: 0 0 6px;
-}
-
-
-.mmic-card-player-scroll p:last-child {
-  margin-bottom: 0;
-}
-
-
-.mmic-card-player-scroll strong {
-  color: #102b42;
-}
-
-
-/* =========================================================
-   SCROLLBARS CHROME / EDGE
-   ========================================================= */
-
-.mmic-card-scroll::-webkit-scrollbar,
-.mmic-card-text-scroll::-webkit-scrollbar,
-.mmic-card-story-scroll::-webkit-scrollbar,
-.mmic-card-player-scroll::-webkit-scrollbar {
-  width: 5px;
-}
-
-
-.mmic-card-scroll::-webkit-scrollbar-track,
-.mmic-card-text-scroll::-webkit-scrollbar-track,
-.mmic-card-story-scroll::-webkit-scrollbar-track,
-.mmic-card-player-scroll::-webkit-scrollbar-track {
-  background: #eee5da;
-}
-
-
-.mmic-card-scroll::-webkit-scrollbar-thumb,
-.mmic-card-text-scroll::-webkit-scrollbar-thumb,
-.mmic-card-story-scroll::-webkit-scrollbar-thumb,
-.mmic-card-player-scroll::-webkit-scrollbar-thumb {
-  background: #c1744c;
-
-  border-radius: 10px;
-}
-
-
-/* =========================================================
-   RESPONSIVE
-   ========================================================= */
-
-@media screen and (max-width: 620px) {
-
-  .mmic-card {
-    width: 96%;
-  }
-
-  .mmic-card-top {
-    flex-direction: column-reverse;
-  }
-
-  .mmic-card-avatar {
-    width: 190px;
-
-    margin: auto;
-  }
-
-  .mmic-card-infos {
-    width: 100%;
-  }
-
-}
+/*------- Fin présentaion -------*/
