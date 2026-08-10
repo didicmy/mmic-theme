@@ -187,3 +187,45 @@
     padding: 8px 10px !important;
   }
 }
+/* =========================================================
+   BANDEAU PRINCIPAL FAQ
+   ========================================================= */
+
+.mmic-faq-page table.forumline th.thHead {
+  height: auto !important;
+
+  padding: 16px 20px !important;
+
+  border: 0 !important;
+  border-bottom: 2px solid #b97a56 !important;
+
+  background: #102438 !important;
+  background-image: none !important;
+
+  color: #fbf8f3 !important;
+
+  font-family: Georgia, serif;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  letter-spacing: 1.4px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.mmic-faq-page table.forumline th.thHead::before,
+.mmic-faq-page table.forumline th.thHead::after {
+  content: "";
+
+  display: inline-block;
+
+  width: 36px;
+  height: 1px;
+
+  margin: 0 12px 4px;
+
+  background: #b97a56;
+}
+.mmic-faq-page table.forumline th.thHead,
+.mmic-faq-page table.forumline th.thHead * {
+  color: #fbf8f3 !important;
+}
