@@ -1,0 +1,268 @@
+/* =========================================================
+   MEET ME IN CHICAGO — RECHERCHE D'UTILISATEUR
+   ========================================================= */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+
+  background: #ece7e1;
+}
+
+
+/* =========================================================
+   CARTE
+   ========================================================= */
+
+.mmic-user-search {
+  width: calc(100% - 24px);
+  max-width: 470px;
+
+  margin: 12px auto;
+
+  overflow: hidden;
+
+  border: 1px solid rgba(216, 176, 140, 0.55);
+  border-radius: 10px;
+
+  background: #fbf8f3;
+
+  box-shadow: 0 8px 22px rgba(16, 36, 56, 0.12);
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.mmic-user-search-header {
+  padding: 15px 18px 14px;
+
+  background:
+    linear-gradient(
+      180deg,
+      #173149 0%,
+      #102438 100%
+    );
+
+  text-align: center;
+}
+
+.mmic-user-search-kicker {
+  display: block;
+
+  margin-bottom: 5px;
+
+  color: #d8b08c;
+
+  font-size: 6px;
+  font-weight: 700;
+
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+}
+
+.mmic-user-search-header h1 {
+  margin: 0;
+
+  color: #fbf8f3;
+
+  font-family: Georgia, serif;
+  font-size: 17px;
+  font-weight: normal;
+}
+
+.mmic-user-search-line {
+  display: block;
+
+  width: 34px;
+  height: 1px;
+
+  margin: 9px auto 0;
+
+  background: #b97a56;
+}
+
+
+/* =========================================================
+   CONTENU
+   ========================================================= */
+
+.mmic-user-search-body {
+  padding: 18px;
+}
+
+.mmic-user-search-field,
+.mmic-user-search-results {
+  margin-bottom: 16px;
+}
+
+.mmic-user-search-field label,
+.mmic-user-search-results label {
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: #a06d50;
+
+  font-size: 7px;
+  font-weight: 700;
+
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+
+/* =========================================================
+   LIGNE CHAMP + BOUTON
+   ========================================================= */
+
+.mmic-user-search-row {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+}
+
+
+/* =========================================================
+   INPUT / SELECT
+   ========================================================= */
+
+.mmic-user-search-input,
+.mmic-user-search-select {
+  flex: 1;
+
+  min-width: 0;
+  height: 32px;
+
+  padding: 0 10px;
+
+  border: 1px solid #dfcdbc;
+  border-radius: 6px;
+
+  background: #fffdf9;
+
+  color: #102438;
+
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 9px;
+
+  box-sizing: border-box;
+
+  outline: none;
+
+  transition:
+    border-color .2s ease,
+    box-shadow .2s ease;
+}
+
+.mmic-user-search-input:focus,
+.mmic-user-search-select:focus {
+  border-color: #b97a56;
+
+  box-shadow: 0 0 0 2px rgba(185, 122, 86, 0.12);
+}
+
+
+/* =========================================================
+   BOUTONS
+   ========================================================= */
+
+.mmic-user-search-button {
+  height: 32px;
+
+  padding: 0 14px;
+
+  border: 1px solid #b97a56;
+  border-radius: 6px;
+
+  background: #102438;
+
+  color: #fbf8f3;
+
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 7px;
+  font-weight: 700;
+
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+
+  cursor: pointer;
+
+  transition:
+    background .2s ease,
+    color .2s ease,
+    border-color .2s ease;
+}
+
+.mmic-user-search-button:hover {
+  background: #b97a56;
+  border-color: #b97a56;
+
+  color: #fff;
+}
+
+
+/* =========================================================
+   TEXTE D'AIDE
+   ========================================================= */
+
+.mmic-user-search-help {
+  margin-top: 7px;
+
+  color: #766a61;
+
+  font-size: 7px;
+  line-height: 1.5;
+}
+
+
+/* =========================================================
+   FERMER
+   ========================================================= */
+
+.mmic-user-search-footer {
+  margin-top: 18px;
+  padding-top: 13px;
+
+  border-top: 1px solid rgba(216, 176, 140, 0.32);
+
+  text-align: right;
+}
+
+.mmic-user-search-footer a {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  min-height: 28px;
+
+  padding: 0 12px;
+
+  border: 1px solid rgba(216, 176, 140, 0.55);
+  border-radius: 6px;
+
+  color: #102438;
+
+  font-size: 7px;
+  font-weight: 700;
+
+  letter-spacing: 0.08em;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  transition:
+    background .2s ease,
+    color .2s ease;
+}
+
+.mmic-user-search-footer a:hover {
+  background: #102438;
+  color: #fbf8f3;
+}
