@@ -1,0 +1,273 @@
+/* =========================================================
+   MEET ME IN CHICAGO — CALENDRIER
+   ========================================================= */
+
+.mmic-calendar {
+  width: 100%;
+  margin: 20px auto 35px;
+  background: #fbf8f3;
+  border: 1px solid #dfd1c3;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(12, 24, 39, 0.08);
+}
+
+/* HEADER */
+
+.mmic-calendar-header {
+  padding: 22px 20px 18px;
+  background: #102438;
+  border-bottom: 2px solid #b97a56;
+}
+
+.mmic-calendar-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+.mmic-calendar-title h1 {
+  margin: 0;
+  color: #fbf8f3;
+  font-size: 16px;
+  font-family: Georgia, serif;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.mmic-calendar-title-line {
+  width: 42px;
+  height: 1px;
+  background: #b97a56;
+}
+
+/* CONTROLES */
+
+.mmic-calendar-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.mmic-calendar-selects {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+}
+
+.mmic-calendar-selects select,
+.mmic-calendar-submit,
+.mmic-calendar-add-event {
+  height: 32px;
+  border: 1px solid #d8c7b8;
+  border-radius: 6px;
+  background: #fbf8f3;
+  color: #102438;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.mmic-calendar-selects select {
+  padding: 0 8px;
+}
+
+.mmic-calendar-submit {
+  padding: 0 14px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: .7px;
+}
+
+.mmic-calendar-submit:hover {
+  background: #b97a56;
+  color: #fff;
+  border-color: #b97a56;
+}
+
+.mmic-calendar-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border: 1px solid rgba(185, 122, 86, .8);
+  border-radius: 50%;
+  color: #fbf8f3;
+  text-decoration: none;
+  font-size: 22px;
+  line-height: 1;
+  transition: .2s ease;
+}
+
+.mmic-calendar-nav:hover {
+  background: #b97a56;
+  color: #fff;
+}
+
+/* JOURS */
+
+.mmic-calendar-weekdays {
+  display: flex;
+  background: #18334c;
+}
+
+.mmic-calendar-weekday {
+  box-sizing: border-box;
+  padding: 10px 5px;
+  color: #f1d8c4;
+  text-align: center;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .8px;
+  text-transform: uppercase;
+  border-right: 1px solid rgba(255,255,255,.08);
+}
+
+.mmic-calendar-weekday:last-child {
+  border-right: 0;
+}
+
+/* SEMAINES */
+
+.mmic-calendar-week {
+  display: flex;
+}
+
+.mmic-calendar-day {
+  box-sizing: border-box;
+  min-height: 125px;
+  background: #fbf8f3;
+  border-right: 1px solid #eadfd5;
+  border-bottom: 1px solid #eadfd5;
+  vertical-align: top;
+}
+
+.mmic-calendar-day:last-child {
+  border-right: 0;
+}
+
+.mmic-calendar-day-empty {
+  background: #f5eee7;
+}
+
+/* HAUT DE CASE */
+
+.mmic-calendar-day-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 30px;
+  padding: 6px 8px;
+  background: #f5eee7;
+  border-bottom: 1px solid #eadfd5;
+}
+
+.mmic-calendar-date {
+  color: #102438;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.mmic-calendar-add-day {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #102438;
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.mmic-calendar-add-day:hover {
+  background: #b97a56;
+}
+
+/* EVENEMENTS */
+
+.mmic-calendar-events {
+  padding: 8px;
+}
+
+.mmic-calendar-event-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 5px;
+  margin-bottom: 5px;
+}
+
+.mmic-calendar-event {
+  min-width: 0;
+  font-size: 9px;
+  line-height: 1.35;
+}
+
+.mmic-calendar-event-link {
+  color: #765744;
+  text-decoration: none;
+}
+
+.mmic-calendar-event-link:hover {
+  color: #b97a56;
+  text-decoration: underline;
+}
+
+.mmic-calendar-more {
+  flex: 0 0 auto;
+  color: #b97a56;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.mmic-calendar-more-events {
+  margin-top: 4px;
+}
+
+/* BAS */
+
+.mmic-calendar-footer {
+  padding: 15px;
+  text-align: center;
+  background: #f5eee7;
+}
+
+.mmic-calendar-add-event {
+  padding: 0 16px;
+  background: #102438;
+  border-color: #102438;
+  color: #fff;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: .7px;
+}
+
+.mmic-calendar-add-event:hover {
+  background: #b97a56;
+  border-color: #b97a56;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 800px) {
+
+  .mmic-calendar {
+    overflow-x: auto;
+  }
+
+  .mmic-calendar-grid {
+    min-width: 720px;
+  }
+
+  .mmic-calendar-controls {
+    flex-wrap: wrap;
+  }
+
+}
