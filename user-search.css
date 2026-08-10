@@ -266,3 +266,256 @@ body {
   background: #102438;
   color: #fbf8f3;
 }
+/* =========================================================
+   RECHERCHE UTILISATEUR — POPUP JQMODAL FORUMACTIF
+   ========================================================= */
+
+#find_username.jqmWindow {
+  width: 390px !important;
+  max-width: calc(100vw - 30px) !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  overflow: hidden !important;
+
+  border: 1px solid rgba(216, 176, 140, 0.55) !important;
+  border-radius: 10px !important;
+
+  background: #fbf8f3 !important;
+
+  box-shadow: 0 12px 28px rgba(16, 36, 56, 0.18) !important;
+}
+
+
+/* Formulaire */
+
+#find_username #search_form {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+
+/* On neutralise les vieux tableaux Forumactif */
+
+#find_username table,
+#find_username tbody,
+#find_username tr,
+#find_username td {
+  border: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+
+/* Tableau extérieur */
+
+#find_username #search_form > table {
+  width: 100% !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  border-spacing: 0 !important;
+}
+
+
+/* Carte intérieure */
+
+#find_username .forumline {
+  width: 100% !important;
+
+  margin: 0 !important;
+
+  border: 0 !important;
+  border-spacing: 0 !important;
+
+  background: #fbf8f3 !important;
+}
+
+
+/* =========================================================
+   TITRE
+   ========================================================= */
+
+#find_username .thHead {
+  height: auto !important;
+
+  padding: 14px 18px !important;
+
+  border: 0 !important;
+
+  background:
+    linear-gradient(
+      180deg,
+      #173149 0%,
+      #102438 100%
+    ) !important;
+
+  color: #fbf8f3 !important;
+
+  font-family: Georgia, serif !important;
+  font-size: 15px !important;
+  font-weight: normal !important;
+
+  text-align: center !important;
+}
+
+
+/* =========================================================
+   CONTENU
+   ========================================================= */
+
+#find_username td.row1 {
+  padding: 16px 18px !important;
+
+  background: #fbf8f3 !important;
+
+  color: #625951 !important;
+
+  font-size: 8px !important;
+  line-height: 1.6 !important;
+}
+
+
+/* On réduit les vieux BR qui créent des trous */
+
+#find_username td.row1 > br:first-child,
+#find_username td.row1 > br:last-child {
+  display: none !important;
+}
+
+
+/* =========================================================
+   CHAMPS
+   ========================================================= */
+
+#find_username input[type="text"],
+#find_username select {
+  height: 31px !important;
+
+  padding: 0 9px !important;
+
+  border: 1px solid #dfcdbc !important;
+  border-radius: 6px !important;
+
+  background: #fffdf9 !important;
+
+  color: #102438 !important;
+
+  font-family: Verdana, Arial, sans-serif !important;
+  font-size: 9px !important;
+
+  box-sizing: border-box !important;
+  outline: none !important;
+}
+
+
+#find_username input[type="text"] {
+  width: 215px !important;
+}
+
+
+#find_username select {
+  min-width: 160px !important;
+}
+
+
+#find_username input[type="text"]:focus,
+#find_username select:focus {
+  border-color: #b97a56 !important;
+
+  box-shadow:
+    0 0 0 2px rgba(185, 122, 86, 0.12) !important;
+}
+
+
+/* =========================================================
+   BOUTONS
+   ========================================================= */
+
+#find_username input[type="submit"],
+#find_username input[type="button"] {
+  min-height: 31px !important;
+
+  padding: 0 12px !important;
+
+  border: 1px solid #b97a56 !important;
+  border-radius: 6px !important;
+
+  background: #102438 !important;
+
+  color: #fbf8f3 !important;
+
+  font-family: Verdana, Arial, sans-serif !important;
+  font-size: 7px !important;
+  font-weight: 700 !important;
+
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase !important;
+
+  cursor: pointer !important;
+
+  transition:
+    background .2s ease,
+    border-color .2s ease !important;
+}
+
+
+#find_username input[type="submit"]:hover,
+#find_username input[type="button"]:hover {
+  background: #b97a56 !important;
+  border-color: #b97a56 !important;
+}
+
+
+/* =========================================================
+   TEXTE D'AIDE
+   ========================================================= */
+
+#find_username .gensmall {
+  display: inline-block !important;
+
+  margin: 7px 0 10px !important;
+
+  color: #766a61 !important;
+
+  font-size: 7px !important;
+  line-height: 1.45 !important;
+}
+
+
+/* =========================================================
+   FERMER LA FENÊTRE
+   ========================================================= */
+
+#find_username a.genmed {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  min-height: 28px !important;
+
+  margin-top: 12px !important;
+  padding: 0 11px !important;
+
+  border: 1px solid rgba(216, 176, 140, 0.60) !important;
+  border-radius: 6px !important;
+
+  background: transparent !important;
+
+  color: #102438 !important;
+
+  font-size: 7px !important;
+  font-weight: 700 !important;
+
+  letter-spacing: .08em !important;
+  text-decoration: none !important;
+  text-transform: uppercase !important;
+}
+
+
+#find_username a.genmed:hover {
+  background: #102438 !important;
+  color: #fbf8f3 !important;
+}
