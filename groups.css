@@ -199,3 +199,458 @@
     padding: 9px !important;
   }
 }
+/* =========================================================
+   MEET ME IN CHICAGO — PAGE DES GROUPES
+   ========================================================= */
+
+.mmic-group-page {
+  width: 100%;
+  max-width: 980px;
+  margin: 45px auto;
+  box-sizing: border-box;
+  color: #162a3c;
+}
+
+
+/* ---------- cartes ---------- */
+
+.mmic-group-card {
+  background: #f8f4ed;
+  border: 1px solid rgba(167, 100, 72, 0.28);
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 22px;
+  box-shadow: 0 8px 22px rgba(14, 39, 59, 0.08);
+}
+
+
+/* ---------- grand header ---------- */
+
+.mmic-group-heading {
+  position: relative;
+  padding: 32px 40px 28px;
+  background: #102a40;
+  text-align: center;
+}
+
+.mmic-group-heading-small {
+  display: block;
+  margin-bottom: 8px;
+
+  font-family: Georgia, serif;
+  font-size: 9px;
+  font-weight: 700;
+
+  letter-spacing: 4px;
+  text-transform: uppercase;
+
+  color: #c89358;
+}
+
+.mmic-group-heading h1 {
+  margin: 0;
+
+  font-family: Georgia, serif;
+  font-size: 28px;
+  font-weight: 400;
+
+  letter-spacing: 2px;
+
+  color: #f7f1e8;
+}
+
+.mmic-group-heading-line {
+  display: block;
+  width: 38px;
+  height: 2px;
+
+  margin: 14px auto 0;
+
+  background: #a76452;
+}
+
+
+/* ---------- informations ---------- */
+
+.mmic-group-information {
+  padding: 12px 36px 24px;
+}
+
+.mmic-group-info-row {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 25px;
+
+  padding: 15px 0;
+
+  border-bottom: 1px solid rgba(16, 42, 64, 0.1);
+}
+
+.mmic-group-info-row:last-child {
+  border-bottom: 0;
+}
+
+.mmic-group-label {
+  font-family: Georgia, serif;
+  font-size: 10px;
+  font-weight: 700;
+
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+
+  color: #a76452;
+}
+
+.mmic-group-value {
+  font-size: 12px;
+  line-height: 1.7;
+
+  color: #4c5660;
+}
+
+.mmic-group-name {
+  font-family: Georgia, serif;
+  font-size: 16px;
+  font-weight: 700;
+
+  color: #102a40;
+}
+
+.mmic-group-description {
+  max-width: 700px;
+}
+
+
+/* ---------- options admin ---------- */
+
+.mmic-group-options {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px;
+}
+
+.mmic-group-options label {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+
+  cursor: pointer;
+}
+
+.mmic-group-options input[type="radio"] {
+  accent-color: #a76452;
+}
+
+
+/* ---------- titres sections ---------- */
+
+.mmic-group-section-title {
+  padding: 13px 22px;
+
+  background: #102a40;
+
+  text-align: center;
+}
+
+.mmic-group-section-title span {
+  font-family: Georgia, serif;
+  font-size: 11px;
+  font-weight: 700;
+
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  color: #c89358;
+}
+
+
+/* ---------- membres ---------- */
+
+.mmic-group-members-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.mmic-group-member {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 25px;
+
+  min-height: 65px;
+
+  padding: 18px 25px;
+
+  border-bottom: 1px solid rgba(16, 42, 64, 0.1);
+}
+
+.mmic-group-member:last-child {
+  border-bottom: 0;
+}
+
+.mmic-group-moderator {
+  background: rgba(200, 147, 88, 0.07);
+}
+
+.mmic-group-member-main {
+  flex: 1;
+}
+
+.mmic-group-member-name a {
+  font-family: Georgia, serif;
+  font-size: 15px;
+  font-weight: 700;
+
+  text-decoration: none;
+}
+
+.mmic-group-member-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+
+  margin-top: 6px;
+
+  font-size: 10px;
+  text-transform: uppercase;
+
+  letter-spacing: 0.7px;
+
+  color: #7e8285;
+}
+
+.mmic-group-member-stats strong {
+  color: #a76452;
+}
+
+.mmic-group-member-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.mmic-group-member-actions img {
+  max-height: 22px;
+}
+
+.mmic-group-select input {
+  accent-color: #a76452;
+}
+
+
+/* ---------- aucun membre ---------- */
+
+.mmic-group-empty {
+  padding: 30px;
+
+  text-align: center;
+
+  font-family: Georgia, serif;
+  font-size: 12px;
+  font-style: italic;
+
+  color: #8c8178;
+}
+
+
+/* ---------- administration ---------- */
+
+.mmic-group-admin-note {
+  margin: 20px 25px 0;
+  padding: 12px 15px;
+
+  border-left: 3px solid #c89358;
+
+  background: rgba(200, 147, 88, 0.08);
+
+  font-size: 11px;
+  line-height: 1.6;
+
+  color: #4c5660;
+}
+
+.mmic-group-admin-tools {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  gap: 12px;
+
+  padding: 20px 25px;
+}
+
+.mmic-group-add-member {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+
+/* ---------- champs ---------- */
+
+.mmic-group-input {
+  box-sizing: border-box;
+
+  min-width: 180px;
+
+  padding: 8px 11px;
+
+  border: 1px solid rgba(16, 42, 64, 0.2);
+  border-radius: 6px;
+
+  background: #fffdf9;
+
+  color: #102a40;
+
+  outline: none;
+}
+
+.mmic-group-input:focus {
+  border-color: #a76452;
+}
+
+
+/* ---------- boutons ---------- */
+
+.mmic-group-button {
+  padding: 8px 13px;
+
+  border: 1px solid #a76452;
+  border-radius: 6px;
+
+  background: #102a40;
+
+  font-family: Georgia, serif;
+  font-size: 9px;
+  font-weight: 700;
+
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+
+  color: #f8f4ed;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.mmic-group-button:hover {
+  background: #a76452;
+  color: #fff;
+}
+
+.mmic-group-button-small {
+  padding: 6px 10px;
+}
+
+.mmic-group-button-secondary {
+  background: transparent;
+  color: #102a40;
+}
+
+.mmic-group-button-secondary:hover {
+  color: #fff;
+}
+
+.mmic-group-remove {
+  border-color: rgba(167, 100, 82, 0.7);
+}
+
+
+/* ---------- pagination ---------- */
+
+.mmic-group-pagination {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 10px 3px 20px;
+
+  font-size: 11px;
+
+  color: #6f777d;
+}
+
+.mmic-group-pagination a {
+  color: #a76452;
+  text-decoration: none;
+}
+
+.mmic-group-pending {
+  margin-bottom: 15px;
+}
+
+
+/* ---------- jumpbox ---------- */
+
+.mmic-group-jumpbox {
+  margin-top: 10px;
+
+  text-align: right;
+}
+
+
+/* ---------- petites corrections Forumactif ---------- */
+
+.mmic-group-page img {
+  vertical-align: middle;
+}
+
+.mmic-group-page a {
+  transition: opacity 0.2s ease;
+}
+
+.mmic-group-page a:hover {
+  opacity: 0.72;
+}
+
+
+/* ---------- responsive ---------- */
+
+@media (max-width: 700px) {
+
+  .mmic-group-page {
+    margin: 25px auto;
+  }
+
+  .mmic-group-heading {
+    padding: 25px 20px;
+  }
+
+  .mmic-group-heading h1 {
+    font-size: 22px;
+  }
+
+  .mmic-group-information {
+    padding: 10px 20px 20px;
+  }
+
+  .mmic-group-info-row {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+
+  .mmic-group-member {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .mmic-group-admin-tools {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .mmic-group-add-member {
+    flex-direction: column;
+  }
+
+  .mmic-group-input {
+    width: 100%;
+  }
+
+}
