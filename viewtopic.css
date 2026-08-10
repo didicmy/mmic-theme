@@ -411,7 +411,91 @@
 .mmic-vt-online:empty {
   display: none;
 }
+/* =========================================================
+   PROFIL MESSAGE — BOUTONS MODERNES
+   ========================================================= */
 
+.mmic-vt-profile-links .mmic-vt-profile-link {
+  min-width: auto;
+  min-height: 25px;
+  padding: 0;
+
+  border: 0;
+  background: transparent;
+}
+
+
+/* lien généré par Forumactif */
+
+.mmic-vt-profile-links .mmic-vt-profile-link > a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 25px;
+  min-width: 36px;
+  padding: 0 7px;
+
+  box-sizing: border-box;
+
+  border: 1px solid rgba(209, 145, 104, 0.65);
+  border-radius: 5px;
+
+  background: rgba(251, 248, 243, 0.06);
+
+  font-family: Georgia, serif;
+  font-size: 7px;
+  font-weight: 700;
+
+  letter-spacing: .5px;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  color: #f8f4ed;
+
+  transition:
+    background .2s ease,
+    border-color .2s ease,
+    color .2s ease;
+}
+
+
+.mmic-vt-profile-links .mmic-vt-profile-link > a:hover {
+  background: #a76452;
+  border-color: #c89358;
+  color: #fff;
+}
+
+
+/* On enterre les images Forumactif 🪦 */
+
+.mmic-vt-profile-links .mmic-vt-profile-link > a > img {
+  display: none !important;
+}
+
+
+/* PROFIL */
+
+.mmic-vt-profile-links
+.mmic-vt-profile-link:nth-child(1) > a::after {
+  content: "Profil";
+}
+
+
+/* MP */
+
+.mmic-vt-profile-links
+.mmic-vt-profile-link:nth-child(2) > a::after {
+  content: "MP";
+}
+
+
+/* EMAIL */
+
+.mmic-vt-profile-links
+.mmic-vt-profile-link:nth-child(3) > a::after {
+  content: "Email";
+}
 
 /* =========================================================
    CONTENU DU MESSAGE
