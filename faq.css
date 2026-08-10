@@ -1,0 +1,189 @@
+/* =========================================================
+   MEET ME IN CHICAGO — FAQ
+   ========================================================= */
+
+.mmic-faq-page #page-body {
+  padding-top: 18px;
+}
+
+/* =========================================================
+   TITRE GENERAL
+   ========================================================= */
+
+.mmic-faq-page table.forumline:first-of-type {
+  width: 100% !important;
+  margin: 0 0 16px !important;
+
+  border: 1px solid #dfd1c3 !important;
+  border-collapse: separate !important;
+  border-spacing: 0 !important;
+  border-radius: 12px;
+
+  overflow: hidden;
+
+  background: #fbf8f3;
+  box-shadow: 0 8px 24px rgba(12, 24, 39, 0.06);
+}
+
+.mmic-faq-page table.forumline:first-of-type .catHead {
+  height: auto !important;
+
+  padding: 16px 20px !important;
+
+  border: 0 !important;
+  border-bottom: 2px solid #b97a56 !important;
+
+  background: #102438 !important;
+  background-image: none !important;
+
+  color: #fbf8f3 !important;
+
+  font-family: Georgia, serif;
+  font-size: 14px !important;
+  font-weight: 600;
+  letter-spacing: 1.4px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* =========================================================
+   BLOCS DE CATEGORIES
+   ========================================================= */
+
+.mmic-faq-page table.forumline:not(:first-of-type) {
+  width: 100% !important;
+
+  margin: 0 0 12px !important;
+
+  border: 1px solid #dfd1c3 !important;
+  border-collapse: separate !important;
+  border-spacing: 0 !important;
+  border-radius: 9px;
+
+  overflow: hidden;
+
+  background: #fbf8f3;
+}
+
+/* Titre catégorie */
+
+.mmic-faq-page table.forumline:not(:first-of-type) .catHead {
+  height: auto !important;
+
+  padding: 9px 14px !important;
+
+  border: 0 !important;
+  border-bottom: 1px solid #dfd1c3 !important;
+
+  background: #f5eee7 !important;
+  background-image: none !important;
+
+  color: #9a6548 !important;
+
+  font-family: Georgia, serif;
+  font-size: 11px !important;
+  font-weight: 700;
+  letter-spacing: .8px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+/* =========================================================
+   CELLULES
+   ========================================================= */
+
+.mmic-faq-page table.forumline td.row1,
+.mmic-faq-page table.forumline td.row2,
+.mmic-faq-page table.forumline td.row3 {
+  padding: 9px 14px !important;
+
+  border: 0 !important;
+
+  background: #fbf8f3 !important;
+}
+
+/* =========================================================
+   LIENS DE QUESTIONS
+   ========================================================= */
+
+.mmic-faq-page table.forumline a {
+  display: inline-block;
+
+  padding: 3px 0;
+
+  color: #765744 !important;
+
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 1.45;
+
+  text-decoration: none;
+
+  transition:
+    color .2s ease,
+    transform .2s ease;
+}
+
+.mmic-faq-page table.forumline a::before {
+  content: "›";
+
+  display: inline-block;
+
+  margin-right: 6px;
+
+  color: #b97a56;
+
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.mmic-faq-page table.forumline a:hover {
+  color: #b97a56 !important;
+  transform: translateX(2px);
+}
+
+/* =========================================================
+   TEXTES
+   ========================================================= */
+
+.mmic-faq-page .gen,
+.mmic-faq-page .genmed,
+.mmic-faq-page .gensmall {
+  color: #625b55;
+
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+/* =========================================================
+   ESPACEMENTS
+   ========================================================= */
+
+.mmic-faq-page br.clear {
+  display: block;
+  height: 4px;
+  content: "";
+}
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 800px) {
+
+  .mmic-faq-page table.forumline:first-of-type .catHead {
+    padding: 13px 10px !important;
+    font-size: 12px !important;
+  }
+
+  .mmic-faq-page table.forumline:not(:first-of-type) .catHead {
+    padding: 8px 10px !important;
+    font-size: 10px !important;
+  }
+
+  .mmic-faq-page table.forumline td.row1,
+  .mmic-faq-page table.forumline td.row2,
+  .mmic-faq-page table.forumline td.row3 {
+    padding: 8px 10px !important;
+  }
+}
