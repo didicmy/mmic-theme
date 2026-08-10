@@ -731,3 +731,85 @@
 .mmic-group-jumpbox input[type="button"]:hover {
   background: #a76452;
 }
+/* =========================================================
+   GROUPES — LIENS MP / EMAIL / WWW
+   ========================================================= */
+
+.mmic-group-member-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 6px;
+
+  margin-top: 0;
+}
+
+/* On garde nos petites coques */
+.mmic-group-member-actions .mmic-vt-profile-link {
+  min-width: auto;
+  min-height: 26px;
+
+  padding: 0;
+
+  background: transparent;
+  border: 0;
+}
+
+/* Le lien généré par Forumactif devient notre bouton */
+.mmic-group-member-actions .mmic-vt-profile-link a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 42px;
+  height: 26px;
+
+  padding: 0 9px;
+
+  border: 1px solid rgba(209, 145, 104, 0.7);
+  border-radius: 5px;
+
+  background: #102a40;
+
+  font-family: Georgia, serif;
+  font-size: 8px;
+  font-weight: 700;
+
+  letter-spacing: 0.8px;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  color: #f8f4ed;
+
+  box-sizing: border-box;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
+}
+
+.mmic-group-member-actions .mmic-vt-profile-link a:hover {
+  background: #a76452;
+  color: #ffffff;
+}
+
+
+/* On cache les anciennes images Forumactif */
+.mmic-group-member-actions .mmic-vt-profile-link img {
+  display: none !important;
+}
+
+
+/* Texte de remplacement */
+.mmic-group-member-actions .mmic-vt-profile-link:nth-child(1) a::after {
+  content: "MP";
+}
+
+.mmic-group-member-actions .mmic-vt-profile-link:nth-child(2) a::after {
+  content: "Email";
+}
+
+.mmic-group-member-actions .mmic-vt-profile-link:nth-child(3) a::after {
+  content: "WWW";
+}
