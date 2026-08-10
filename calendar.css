@@ -4,7 +4,7 @@
 
 .mmic-calendar {
   width: 100%;
-  margin: 20px auto 35px;
+  margin: 16px auto 30px;
   background: #fbf8f3;
   border: 1px solid #dfd1c3;
   border-radius: 12px;
@@ -12,10 +12,12 @@
   box-shadow: 0 8px 24px rgba(12, 24, 39, 0.08);
 }
 
-/* HEADER */
+/* =========================================================
+   HEADER
+   ========================================================= */
 
 .mmic-calendar-header {
-  padding: 22px 20px 18px;
+  padding: 12px 16px 10px;
   background: #102438;
   border-bottom: 2px solid #b97a56;
 }
@@ -24,63 +26,66 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 14px;
-  margin-bottom: 18px;
+  gap: 12px;
+  margin-bottom: 10px;
 }
 
 .mmic-calendar-title h1 {
   margin: 0;
   color: #fbf8f3;
-  font-size: 16px;
   font-family: Georgia, serif;
+  font-size: 13px;
   font-weight: 600;
-  letter-spacing: 2px;
+  letter-spacing: 1.7px;
 }
 
 .mmic-calendar-title-line {
-  width: 42px;
+  width: 38px;
   height: 1px;
   background: #b97a56;
 }
 
-/* CONTROLES */
+/* =========================================================
+   CONTROLES
+   ========================================================= */
 
 .mmic-calendar-controls {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 12px;
+  gap: 8px;
 }
 
 .mmic-calendar-selects {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 7px;
+  gap: 6px;
+  flex-wrap: nowrap;
 }
 
 .mmic-calendar-selects select,
 .mmic-calendar-submit,
 .mmic-calendar-add-event {
-  height: 32px;
+  height: 28px;
   border: 1px solid #d8c7b8;
   border-radius: 6px;
   background: #fbf8f3;
   color: #102438;
-  font-size: 10px;
+  font-size: 9px;
   font-weight: 600;
 }
 
 .mmic-calendar-selects select {
-  padding: 0 8px;
+  padding: 0 7px;
 }
 
 .mmic-calendar-submit {
-  padding: 0 14px;
+  padding: 0 12px;
   cursor: pointer;
   text-transform: uppercase;
-  letter-spacing: .7px;
+  letter-spacing: .6px;
+  transition: .2s ease;
 }
 
 .mmic-calendar-submit:hover {
@@ -91,16 +96,21 @@
 
 .mmic-calendar-nav {
   display: flex;
+  flex: 0 0 27px;
   align-items: center;
   justify-content: center;
-  width: 34px;
-  height: 34px;
+
+  width: 27px;
+  height: 27px;
+
   border: 1px solid rgba(185, 122, 86, .8);
   border-radius: 50%;
+
   color: #fbf8f3;
   text-decoration: none;
-  font-size: 22px;
+  font-size: 17px;
   line-height: 1;
+
   transition: .2s ease;
 }
 
@@ -109,22 +119,36 @@
   color: #fff;
 }
 
-/* JOURS */
+/* =========================================================
+   GRILLE
+   ========================================================= */
+
+.mmic-calendar-grid {
+  width: 100%;
+}
+
+/* Ligne Lundi → Dimanche */
 
 .mmic-calendar-weekdays {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  width: 100%;
   background: #18334c;
 }
 
 .mmic-calendar-weekday {
   box-sizing: border-box;
-  padding: 10px 5px;
+  min-width: 0;
+  padding: 9px 4px;
+
   color: #f1d8c4;
   text-align: center;
-  font-size: 10px;
+
+  font-size: 9px;
   font-weight: 700;
-  letter-spacing: .8px;
+  letter-spacing: .7px;
   text-transform: uppercase;
+
   border-right: 1px solid rgba(255,255,255,.08);
 }
 
@@ -132,44 +156,60 @@
   border-right: 0;
 }
 
-/* SEMAINES */
+/* Chaque semaine = exactement 7 colonnes */
 
 .mmic-calendar-week {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  width: 100%;
 }
+
+/* =========================================================
+   CASES DES JOURS
+   ========================================================= */
 
 .mmic-calendar-day {
   box-sizing: border-box;
-  min-height: 125px;
+  width: auto !important;
+  min-width: 0;
+  min-height: 105px;
+
   background: #fbf8f3;
+
   border-right: 1px solid #eadfd5;
   border-bottom: 1px solid #eadfd5;
+
   vertical-align: top;
 }
 
-.mmic-calendar-day:last-child {
+.mmic-calendar-day:nth-child(7n) {
   border-right: 0;
 }
 
 .mmic-calendar-day-empty {
+  min-height: 105px;
   background: #f5eee7;
 }
 
-/* HAUT DE CASE */
+/* =========================================================
+   HAUT DE CHAQUE CASE
+   ========================================================= */
 
 .mmic-calendar-day-top {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 30px;
-  padding: 6px 8px;
+
+  min-height: 29px;
+  padding: 5px 7px;
+
   background: #f5eee7;
   border-bottom: 1px solid #eadfd5;
 }
 
 .mmic-calendar-date {
   color: #102438;
-  font-size: 10px;
+  font-size: 9px;
   font-weight: 700;
 }
 
@@ -177,23 +217,32 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 18px;
-  height: 18px;
+
+  width: 17px;
+  height: 17px;
+
   border-radius: 50%;
   background: #102438;
   color: #fff;
+
   text-decoration: none;
-  font-size: 13px;
+  font-size: 12px;
+  line-height: 1;
+
+  transition: .2s ease;
 }
 
 .mmic-calendar-add-day:hover {
   background: #b97a56;
+  color: #fff;
 }
 
-/* EVENEMENTS */
+/* =========================================================
+   EVENEMENTS
+   ========================================================= */
 
 .mmic-calendar-events {
-  padding: 8px;
+  padding: 7px;
 }
 
 .mmic-calendar-event-row {
@@ -201,18 +250,26 @@
   align-items: flex-start;
   justify-content: space-between;
   gap: 5px;
+
   margin-bottom: 5px;
 }
 
 .mmic-calendar-event {
   min-width: 0;
+
   font-size: 9px;
   line-height: 1.35;
+
+  overflow-wrap: anywhere;
 }
 
 .mmic-calendar-event-link {
   color: #765744;
   text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+
+  transition: color .2s ease;
 }
 
 .mmic-calendar-event-link:hover {
@@ -222,31 +279,44 @@
 
 .mmic-calendar-more {
   flex: 0 0 auto;
+
   color: #b97a56;
   text-decoration: none;
   font-weight: 700;
+}
+
+.mmic-calendar-more:hover {
+  color: #102438;
 }
 
 .mmic-calendar-more-events {
   margin-top: 4px;
 }
 
-/* BAS */
+/* =========================================================
+   BAS DU CALENDRIER
+   ========================================================= */
 
 .mmic-calendar-footer {
-  padding: 15px;
+  padding: 13px;
   text-align: center;
+
   background: #f5eee7;
+  border-top: 1px solid #eadfd5;
 }
 
 .mmic-calendar-add-event {
-  padding: 0 16px;
+  padding: 0 15px;
+
   background: #102438;
   border-color: #102438;
   color: #fff;
+
   cursor: pointer;
   text-transform: uppercase;
-  letter-spacing: .7px;
+  letter-spacing: .6px;
+
+  transition: .2s ease;
 }
 
 .mmic-calendar-add-event:hover {
@@ -254,7 +324,9 @@
   border-color: #b97a56;
 }
 
-/* RESPONSIVE */
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
 
 @media (max-width: 800px) {
 
@@ -270,4 +342,7 @@
     flex-wrap: wrap;
   }
 
+  .mmic-calendar-selects {
+    flex-wrap: wrap;
+  }
 }
