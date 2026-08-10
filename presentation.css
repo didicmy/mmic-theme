@@ -34,6 +34,8 @@
   background-color:#D7D8D9;
   padding:10px;
   max-height:150px;
+      overflow-y: auto;
+  overflow-x: hidden;
  
 }
 .h2 {
@@ -45,8 +47,7 @@
 .texte {
   color:#292929;
   font-size:12px;
-      overflow-y: auto;
-  overflow-x: hidden;
+  
 }
 .credits {
   font-size: 11px;
@@ -56,6 +57,8 @@
   margin-right:30px;
   background-color:#D7D8D9;
   padding:10px;
+      overflow-y: auto;
+  overflow-x: hidden;
 }
 .avatar200x400 {
   background-color:#D7D8D9;
