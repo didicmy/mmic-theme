@@ -53,7 +53,9 @@
   margin-right:30px;
   background-color:#D7D8D9;
   padding:10px;
-  overflow:auto;
+    overflow-y: auto;
+  overflow-x: hidden;
+  
 }
 .avatar200x400 {
   background-color:#D7D8D9;
