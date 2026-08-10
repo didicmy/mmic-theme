@@ -1,588 +1,402 @@
-/* ==========================================================
+/* =========================================================
    MEET ME IN CHICAGO
    FICHE DE PRÉSENTATION
-   presentation.css
-   ========================================================== */
+   ========================================================= */
 
+.mmic-card {
+  width: 100%;
+  max-width: 620px;
 
-/* ==========================================================
-   01 — CONTENEUR GÉNÉRAL
-   ========================================================== */
+  margin: 22px auto;
 
-.mmic-pres {
-    width: 100%;
-    max-width: 640px;
-    margin: 20px auto;
+  overflow: hidden;
 
-    background: #faf7f2;
-    border: 1px solid #dfc4aa;
-    border-radius: 10px;
+  border: 1px solid rgba(193, 116, 76, .45);
+  border-radius: 8px;
 
-    box-sizing: border-box;
-    overflow: hidden;
+  background: #f7f1e9;
 
-    color: #23313c;
-    font-family: Arial, Helvetica, sans-serif;
+  color: #514943;
+
+  box-sizing: border-box;
+
+  box-shadow:
+    0 6px 18px rgba(16, 43, 66, .08);
 }
 
 
-/* Sécurité Forumactif */
-
-.mmic-pres *,
-.mmic-pres *::before,
-.mmic-pres *::after {
-    box-sizing: border-box;
+.mmic-card *,
+.mmic-card *::before,
+.mmic-card *::after {
+  box-sizing: border-box;
 }
 
 
-/* ==========================================================
-   02 — EN-TÊTE
-   ========================================================== */
+/* =========================================================
+   TITRE
+   ========================================================= */
 
-.mmic-pres-head {
-    padding: 22px 25px 18px;
+.mmic-card-title {
+  padding: 15px 20px;
 
-    text-align: center;
+  background:
+    linear-gradient(
+      180deg,
+      #173149 0%,
+      #102b42 100%
+    );
 
-    background: #faf7f2;
+  color: #f8f2eb;
+
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 25px;
+  font-weight: normal;
+
+  letter-spacing: .08em;
+
+  text-align: center;
 }
 
 
-.mmic-pres-name {
-    margin: 0;
+/* =========================================================
+   TRIGGER WARNINGS
+   ========================================================= */
 
-    color: #102b42;
+.mmic-card-tw {
+  margin: 15px 18px 12px;
 
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 25px;
-    font-weight: normal;
-    line-height: 1.2;
+  padding: 8px 10px;
+
+  border-left: 3px solid #c1744c;
+
+  background: #eee5da;
+
+  color: #655c55;
+
+  font-size: 7.5px;
+  line-height: 1.45;
 }
 
 
-.mmic-pres-quote {
-    margin-top: 7px;
+.mmic-card-tw strong {
+  color: #102b42;
 
-    color: #b26e48;
+  font-size: 7px;
 
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 9px;
-    font-style: italic;
-    line-height: 1.4;
+  letter-spacing: .08em;
+  text-transform: uppercase;
 }
 
 
-/* ==========================================================
-   03 — TRIGGER WARNINGS
-   ========================================================== */
+/* =========================================================
+   HAUT : INFORMATIONS + AVATAR
+   ========================================================= */
 
-.mmic-pres-tw {
-    margin: 0 22px 18px;
-    padding: 9px 12px;
+.mmic-card-top {
+  display: flex;
 
-    background: #f2ece4;
-    border-left: 3px solid #c7794e;
+  align-items: stretch;
 
-    color: #4c5358;
+  gap: 14px;
 
-    font-size: 8px;
-    line-height: 1.45;
+  padding: 0 18px 16px;
 }
 
 
-.mmic-pres-tw strong {
-    display: block;
+/* =========================================================
+   INFORMATIONS
+   ========================================================= */
 
-    margin-bottom: 2px;
+.mmic-card-infos {
+  flex: 1 1 auto;
 
-    color: #102b42;
+  min-width: 0;
 
-    font-size: 7px;
-    letter-spacing: .08em;
-    text-transform: uppercase;
+  height: 330px;
+
+  padding: 10px;
+
+  background: #e9e1d8;
+
+  border-radius: 5px;
 }
 
 
-/* ==========================================================
-   04 — PARTIE PRINCIPALE
-   ========================================================== */
+.mmic-card-block-title {
+  margin-bottom: 7px;
 
-.mmic-pres-main {
-    display: grid;
+  color: #b16e49;
 
-    grid-template-columns: 190px minmax(0, 1fr);
-    grid-template-areas:
-        "avatar infos"
-        "character anecdotes";
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 13px;
 
-    column-gap: 16px;
-    row-gap: 14px;
-
-    align-items: start;
-
-    padding: 0 22px 20px;
+  letter-spacing: .04em;
 }
 
 
-/* ==========================================================
-   05 — AVATAR
-   ========================================================== */
+.mmic-card-scroll {
+  height: 282px;
 
-.mmic-pres-avatar-wrap {
-    grid-area: avatar;
+  padding: 8px 10px;
 
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  background: #fbf8f3;
+
+  color: #55504c;
+
+  font-size: 7.5px;
+  line-height: 1.45;
+
+  scrollbar-width: thin;
+  scrollbar-color: #c1744c #eee5da;
+}
+
+
+.mmic-card-scroll p {
+  margin: 0 0 6px;
+}
+
+
+.mmic-card-scroll p:last-child {
+  margin-bottom: 0;
+}
+
+
+.mmic-card-scroll strong {
+  color: #102b42;
+}
+
+
+/* =========================================================
+   AVATAR
+   ========================================================= */
+
+.mmic-card-avatar {
+  flex: 0 0 190px;
+
+  width: 190px;
+  height: 330px;
+
+  overflow: hidden;
+
+  border: 1px solid rgba(193, 116, 76, .50);
+  border-radius: 5px;
+
+  background: #eee8e1;
+}
+
+
+.mmic-card-avatar img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+
+/* =========================================================
+   SECTIONS
+   ========================================================= */
+
+.mmic-card-section {
+  margin: 0 18px 14px;
+
+  padding: 10px;
+
+  background: #e9e1d8;
+
+  border-radius: 5px;
+}
+
+
+.mmic-card-section-title {
+  margin-bottom: 8px;
+
+  color: #102b42;
+
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 15px;
+  font-weight: normal;
+
+  letter-spacing: .08em;
+
+  text-align: center;
+  text-transform: uppercase;
+}
+
+
+.mmic-card-section-title::after {
+  content: "";
+
+  display: block;
+
+  width: 30px;
+  height: 1px;
+
+  margin: 6px auto 0;
+
+  background: #c1744c;
+}
+
+
+/* =========================================================
+   CARACTÈRE
+   ========================================================= */
+
+.mmic-card-text-scroll {
+  height: 150px;
+
+  padding: 11px 12px;
+
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  background: #fbf8f3;
+
+  color: #55504c;
+
+  font-size: 8px;
+  line-height: 1.6;
+
+  text-align: justify;
+
+  scrollbar-width: thin;
+  scrollbar-color: #c1744c #eee5da;
+}
+
+
+/* =========================================================
+   HISTOIRE
+   ========================================================= */
+
+.mmic-card-story-scroll {
+  height: 230px;
+
+  padding: 12px 13px;
+
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  background: #fbf8f3;
+
+  color: #55504c;
+
+  font-size: 8px;
+  line-height: 1.65;
+
+  text-align: justify;
+
+  scrollbar-width: thin;
+  scrollbar-color: #c1744c #eee5da;
+}
+
+
+/* =========================================================
+   DERRIÈRE L'ÉCRAN
+   ========================================================= */
+
+.mmic-card-player {
+  margin: 0 18px 18px;
+
+  padding: 10px;
+
+  background: #e5ddd3;
+
+  border-radius: 5px;
+}
+
+
+.mmic-card-player-scroll {
+  height: 120px;
+
+  padding: 10px 12px;
+
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  background: #fbf8f3;
+
+  color: #55504c;
+
+  font-size: 7.5px;
+  line-height: 1.45;
+
+  scrollbar-width: thin;
+  scrollbar-color: #c1744c #eee5da;
+}
+
+
+.mmic-card-player-scroll p {
+  margin: 0 0 6px;
+}
+
+
+.mmic-card-player-scroll p:last-child {
+  margin-bottom: 0;
+}
+
+
+.mmic-card-player-scroll strong {
+  color: #102b42;
+}
+
+
+/* =========================================================
+   SCROLLBARS CHROME / EDGE
+   ========================================================= */
+
+.mmic-card-scroll::-webkit-scrollbar,
+.mmic-card-text-scroll::-webkit-scrollbar,
+.mmic-card-story-scroll::-webkit-scrollbar,
+.mmic-card-player-scroll::-webkit-scrollbar {
+  width: 5px;
+}
+
+
+.mmic-card-scroll::-webkit-scrollbar-track,
+.mmic-card-text-scroll::-webkit-scrollbar-track,
+.mmic-card-story-scroll::-webkit-scrollbar-track,
+.mmic-card-player-scroll::-webkit-scrollbar-track {
+  background: #eee5da;
+}
+
+
+.mmic-card-scroll::-webkit-scrollbar-thumb,
+.mmic-card-text-scroll::-webkit-scrollbar-thumb,
+.mmic-card-story-scroll::-webkit-scrollbar-thumb,
+.mmic-card-player-scroll::-webkit-scrollbar-thumb {
+  background: #c1744c;
+
+  border-radius: 10px;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media screen and (max-width: 620px) {
+
+  .mmic-card {
+    width: 96%;
+  }
+
+  .mmic-card-top {
+    flex-direction: column-reverse;
+  }
+
+  .mmic-card-avatar {
     width: 190px;
-}
 
+    margin: auto;
+  }
 
-.mmic-pres-avatar {
-    width: 190px;
-    height: 285px;
-
-    margin: 0;
-
-    overflow: hidden;
-
-    background: #f6f1eb;
-    border: 1px solid #d4a77f;
-    border-radius: 7px;
-}
-
-
-.mmic-pres-avatar img {
-    display: block;
-
+  .mmic-card-infos {
     width: 100%;
-    height: 100%;
+  }
 
-    object-fit: cover;
-}
-
-
-.mmic-pres-avatar-credit {
-    margin-top: 6px;
-
-    color: #ad6844;
-
-    font-size: 6px;
-    font-weight: bold;
-
-    letter-spacing: .08em;
-    line-height: 1.4;
-
-    text-align: center;
-    text-transform: uppercase;
-}
-
-
-/* ==========================================================
-   06 — INFORMATIONS DU PERSONNAGE
-   ========================================================== */
-
-.mmic-pres-infos-wrap {
-    grid-area: infos;
-
-    min-width: 0;
-}
-
-
-.mmic-pres-small-title {
-    margin: 0 0 6px;
-
-    color: #b56d47;
-
-    font-size: 6px;
-    font-weight: bold;
-
-    letter-spacing: .16em;
-    line-height: 1.4;
-
-    text-transform: uppercase;
-}
-
-
-.mmic-pres-infos {
-    width: 100%;
-    height: 285px;
-
-    padding: 11px 12px;
-
-    overflow-x: hidden;
-    overflow-y: auto;
-
-    background: #fffdf9;
-
-    border: 1px solid #e5cdb7;
-    border-radius: 7px;
-
-    scrollbar-width: thin;
-    scrollbar-color: #b97a56 #f2ebe3;
-}
-
-
-.mmic-pres-infos p {
-    margin: 0 0 6px;
-
-    color: #52585c;
-
-    font-size: 8px;
-    line-height: 1.45;
-}
-
-
-.mmic-pres-infos p:last-child {
-    margin-bottom: 0;
-}
-
-
-.mmic-pres-infos strong {
-    color: #102b42;
-
-    font-weight: bold;
-}
-
-
-/* scrollbar Chrome / Edge */
-
-.mmic-pres-infos::-webkit-scrollbar {
-    width: 5px;
-}
-
-
-.mmic-pres-infos::-webkit-scrollbar-track {
-    background: #f2ebe3;
-}
-
-
-.mmic-pres-infos::-webkit-scrollbar-thumb {
-    background: #b97a56;
-    border-radius: 10px;
-}
-
-
-/* ==========================================================
-   07 — CARACTÈRE
-   ========================================================== */
-
-.mmic-pres-character-wrap {
-    grid-area: character;
-
-    width: 190px;
-    min-width: 0;
-}
-
-
-.mmic-pres-character {
-    width: 100%;
-    height: 160px;
-
-    padding: 11px 12px;
-
-    overflow-x: hidden;
-    overflow-y: auto;
-
-    background: #fffdf9;
-
-    border: 1px solid #e5cdb7;
-    border-radius: 7px;
-
-    color: #53595d;
-
-    font-size: 8px;
-    line-height: 1.55;
-
-    text-align: justify;
-
-    scrollbar-width: thin;
-    scrollbar-color: #b97a56 #f2ebe3;
-}
-
-
-.mmic-pres-character::-webkit-scrollbar {
-    width: 5px;
-}
-
-
-.mmic-pres-character::-webkit-scrollbar-track {
-    background: #f2ebe3;
-}
-
-
-.mmic-pres-character::-webkit-scrollbar-thumb {
-    background: #b97a56;
-    border-radius: 10px;
-}
-
-
-/* ==========================================================
-   08 — ANECDOTES
-   ========================================================== */
-
-.mmic-pres-anecdotes-wrap {
-    grid-area: anecdotes;
-
-    min-width: 0;
-}
-
-
-.mmic-pres-anecdotes {
-    width: 100%;
-    height: 160px;
-
-    padding: 11px 12px;
-
-    overflow-x: hidden;
-    overflow-y: auto;
-
-    background: #fffdf9;
-
-    border: 1px solid #e5cdb7;
-    border-radius: 7px;
-
-    scrollbar-width: thin;
-    scrollbar-color: #b97a56 #f2ebe3;
-}
-
-
-.mmic-pres-anecdotes p {
-    margin: 0 0 7px;
-
-    color: #555b60;
-
-    font-size: 8px;
-    line-height: 1.45;
-}
-
-
-.mmic-pres-anecdotes p:last-child {
-    margin-bottom: 0;
-}
-
-
-.mmic-pres-anecdotes strong {
-    color: #c1744c;
-
-    font-weight: bold;
-}
-
-
-.mmic-pres-anecdotes::-webkit-scrollbar {
-    width: 5px;
-}
-
-
-.mmic-pres-anecdotes::-webkit-scrollbar-track {
-    background: #f2ebe3;
-}
-
-
-.mmic-pres-anecdotes::-webkit-scrollbar-thumb {
-    background: #b97a56;
-    border-radius: 10px;
-}
-
-
-/* ==========================================================
-   09 — TITRES DES SECTIONS
-   ========================================================== */
-
-.mmic-pres-section-head {
-    margin: 0 0 14px;
-
-    text-align: center;
-}
-
-
-.mmic-pres-section-kicker {
-    display: block;
-
-    margin-bottom: 7px;
-
-    color: #b56d47;
-
-    font-size: 6px;
-    font-weight: bold;
-
-    letter-spacing: .15em;
-    line-height: 1.4;
-
-    text-transform: uppercase;
-}
-
-
-.mmic-pres-section-title {
-    margin: 0;
-
-    color: #102b42;
-
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 16px;
-    font-weight: normal;
-    line-height: 1.3;
-}
-
-
-/* ==========================================================
-   10 — HISTOIRE
-   ========================================================== */
-
-.mmic-pres-story {
-    padding: 20px 22px;
-
-    background: #faf7f2;
-
-    border-top: 1px solid #ead8c7;
-}
-
-
-.mmic-pres-story-content {
-    width: 100%;
-
-    min-height: 120px;
-
-    padding: 15px 16px;
-
-    background: #fffdf9;
-
-    border: 1px solid #e5cdb7;
-    border-radius: 7px;
-
-    color: #51585c;
-
-    font-size: 9px;
-    line-height: 1.65;
-
-    text-align: justify;
-}
-
-
-/* Permet à l'histoire de grandir naturellement */
-
-.mmic-pres-story-content p {
-    margin: 0 0 10px;
-}
-
-
-.mmic-pres-story-content p:last-child {
-    margin-bottom: 0;
-}
-
-
-/* ==========================================================
-   11 — DERRIÈRE L'ÉCRAN
-   ========================================================== */
-
-.mmic-pres-player {
-    padding: 20px 22px 22px;
-
-    background: #f3ede4;
-
-    border-top: 1px solid #e3cfbb;
-}
-
-
-.mmic-pres-player-grid {
-    display: grid;
-
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-
-    gap: 8px 18px;
-
-    padding: 13px 15px;
-
-    background: #fffdf9;
-
-    border: 1px solid #e5cdb7;
-    border-radius: 7px;
-}
-
-
-.mmic-pres-player-item {
-    min-width: 0;
-
-    color: #555b60;
-
-    font-size: 8px;
-    line-height: 1.45;
-}
-
-
-.mmic-pres-player-item strong {
-    color: #102b42;
-
-    font-weight: bold;
-}
-
-
-/* ==========================================================
-   12 — PETITE CROIX / SYMBOLE DEVANT LES INFOS
-   ========================================================== */
-
-.mmic-pres-infos p::before,
-.mmic-pres-player-item::before {
-    content: "☩";
-
-    margin-right: 4px;
-
-    color: #c1744c;
-}
-
-
-/* ==========================================================
-   13 — RÉDUCTION DES ESPACES FORCÉS PAR FORUMACTIF
-   ========================================================== */
-
-.mmic-pres br + br {
-    display: none;
-}
-
-
-.mmic-pres-main > br,
-.mmic-pres-infos-wrap > br,
-.mmic-pres-avatar-wrap > br,
-.mmic-pres-character-wrap > br,
-.mmic-pres-anecdotes-wrap > br {
-    display: none;
-}
-
-
-/* ==========================================================
-   14 — RESPONSIVE
-   ========================================================== */
-
-@media screen and (max-width: 650px) {
-
-    .mmic-pres {
-        width: 96%;
-    }
-
-    .mmic-pres-main {
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            "avatar"
-            "infos"
-            "character"
-            "anecdotes";
-
-        gap: 12px;
-    }
-
-    .mmic-pres-avatar-wrap,
-    .mmic-pres-character-wrap {
-        width: 100%;
-    }
-
-    .mmic-pres-avatar {
-        margin: auto;
-    }
-
-    .mmic-pres-infos,
-    .mmic-pres-character,
-    .mmic-pres-anecdotes {
-        width: 100%;
-    }
-
-    .mmic-pres-player-grid {
-        grid-template-columns: 1fr;
-    }
 }
