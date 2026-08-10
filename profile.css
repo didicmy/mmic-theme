@@ -4314,176 +4314,46 @@ body.mmic-profile-signature .mmic-signature-tab,
     font-weight:700 !important;
 }
 /* =========================================================
-   CARTE DE VISITE — COLONNE COORDONNÉES
-   ========================================================= */
-
-html body .mmic-profile-business-right {
-    display: grid !important;
-
-    grid-template-columns:
-        minmax(0, 1fr)
-        185px !important;
-
-    grid-template-rows:
-        auto
-        1fr !important;
-
-    align-items: start !important;
-
-    height: auto !important;
-    min-height: 0 !important;
-}
-
-
-/* En-tête sur toute la largeur */
-
-html body .mmic-profile-business-header {
-    grid-column: 1 / -1;
-    grid-row: 1;
-}
-
-
-/* Champs du profil */
-
-html body .mmic-profile-business-fields {
-    grid-column: 1;
-    grid-row: 2;
-
-    align-self: start;
-
-    padding-right: 12px !important;
-}
-
-
-/* Colonne coordonnées */
-
-html body .mmic-profile-business-contact {
-    grid-column: 2;
-    grid-row: 2;
-
-    align-self: start !important;
-
-    margin: 18px 18px 18px 0 !important;
-    padding: 14px !important;
-
-    border: 1px solid rgba(216, 176, 140, 0.34);
-    border-radius: 8px;
-
-    background: rgba(255, 250, 244, 0.72);
-
-    box-sizing: border-box;
-}
-
-
-/* Le titre n'a plus besoin de grandes lignes */
-
-html body .mmic-profile-business-subtitle {
-    margin: 0 0 13px !important;
-}
-
-html body .mmic-profile-business-subtitle span {
-    width: 18px !important;
-}
-
-
-/* Contacts les uns sous les autres */
-
-html body
-.mmic-profile-business-contact
-.mmic-profile-contact-list {
-    display: grid !important;
-    grid-template-columns: 1fr !important;
-
-    width: 100% !important;
-    gap: 8px !important;
-}
-
-
-/* Chaque contact occupe toute la colonne */
-
-html body
-.mmic-profile-business-contact
-.mmic-profile-contact-item {
-    width: 100% !important;
-    min-width: 0 !important;
-
-    box-sizing: border-box;
-}
-
-
-/* =========================================================
-   RESPONSIVE
-   La colonne repasse dessous lorsque l'écran devient étroit
-   ========================================================= */
-
-@media (max-width: 900px) {
-
-    html body .mmic-profile-business-right {
-        display: block !important;
-    }
-
-    html body .mmic-profile-business-contact {
-        margin: 0 18px 20px !important;
-    }
-
-    html body
-    .mmic-profile-business-contact
-    .mmic-profile-contact-list {
-        grid-template-columns:
-            repeat(2, minmax(0, 1fr)) !important;
-    }
-
-}
-
-@media (max-width: 600px) {
-
-    html body
-    .mmic-profile-business-contact
-    .mmic-profile-contact-list {
-        grid-template-columns: 1fr !important;
-    }
-
-}
-/* =========================================================
-   PROFIL — COORDONNÉES SOUS LE BOUTON SUIVRE
+   PROFIL — CONTACTS DISCRETS SOUS SUIVRE
    ========================================================= */
 
 html body .mmic-profile-business-left
 .mmic-profile-business-contact {
     width: 100% !important;
 
-    margin: 14px 0 0 !important;
-    padding: 14px 0 0 !important;
+    margin: 10px 0 0 !important;
+    padding: 10px 0 4px !important;
 
     border: 0 !important;
-    border-top: 1px solid rgba(216, 176, 140, 0.30) !important;
+    border-top: 1px solid rgba(216, 176, 140, 0.28) !important;
 
     background: transparent !important;
 
-    box-sizing: border-box;
+    box-sizing: border-box !important;
 }
 
+
+/* Petit titre */
 
 html body .mmic-profile-business-left
 .mmic-profile-business-subtitle {
-    margin: 0 0 10px !important;
+    margin: 0 0 8px !important;
+    gap: 7px !important;
 }
-
 
 html body .mmic-profile-business-left
 .mmic-profile-business-subtitle span {
-    width: 22px !important;
+    width: 14px !important;
 }
-
 
 html body .mmic-profile-business-left
 .mmic-profile-business-subtitle strong {
-    font-size: 6px !important;
-    letter-spacing: 0.14em !important;
+    font-size: 5px !important;
+    letter-spacing: 0.12em !important;
 }
 
 
-/* Contacts empilés discrètement */
+/* Liste compacte */
 
 html body .mmic-profile-business-left
 .mmic-profile-contact-list {
@@ -4492,19 +4362,106 @@ html body .mmic-profile-business-left
 
     width: 100% !important;
 
-    gap: 6px !important;
+    gap: 5px !important;
     padding: 0 !important;
 }
 
 
+/* Chaque contact */
+
 html body .mmic-profile-business-left
 .mmic-profile-contact-item {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+
     width: 100% !important;
     min-width: 0 !important;
-    min-height: 34px !important;
+    min-height: 29px !important;
 
     margin: 0 !important;
-    padding: 6px 8px !important;
+    padding: 4px 6px !important;
+
+    border: 1px solid rgba(216, 176, 140, 0.28) !important;
+    border-radius: 5px !important;
+
+    background: rgba(255, 250, 244, 0.48) !important;
 
     box-sizing: border-box !important;
+}
+
+
+/* Libellé discret */
+
+html body .mmic-profile-business-left
+.mmic-profile-contact-label {
+    font-size: 5px !important;
+    letter-spacing: 0.08em !important;
+}
+
+
+/* Petit bouton rond */
+
+html body .mmic-profile-business-left
+.mmic-profile-contact-content a {
+    width: 24px !important;
+    height: 24px !important;
+    min-width: 24px !important;
+    min-height: 24px !important;
+
+    padding: 0 !important;
+}
+
+
+/* La colonne gauche et la carte doivent grandir avec les contacts */
+
+html body .mmic-profile-business-left {
+    height: auto !important;
+    min-height: 0 !important;
+    overflow: visible !important;
+}
+
+html body .mmic-profile-business-card {
+    height: auto !important;
+    overflow: visible !important;
+}
+
+
+/* =========================================================
+   PROFIL — RESTAURATION DE LA LARGEUR DES CHAMPS
+   ========================================================= */
+
+html body .mmic-profile-business-right {
+    display: flex !important;
+    flex-direction: column !important;
+
+    min-width: 0 !important;
+    width: auto !important;
+
+    height: auto !important;
+    min-height: 0 !important;
+
+    padding: 0 !important;
+}
+
+html body .mmic-profile-business-header {
+    width: auto !important;
+}
+
+html body .mmic-profile-business-fields {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+
+    width: 100% !important;
+
+    margin: 0 !important;
+    padding: 18px 20px !important;
+
+    box-sizing: border-box !important;
+}
+
+@media (max-width: 800px) {
+    html body .mmic-profile-business-fields {
+        grid-template-columns: 1fr !important;
+    }
 }
