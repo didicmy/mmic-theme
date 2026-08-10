@@ -33,12 +33,13 @@
   margin-top: 20px;
   background-color:#D7D8D9;
   padding:10px;
-  text-align: center;
+ 
 }
 .h2 {
   color:#84A4B0;
   font-size:18px;
   font-family: 'Unica One', cursive;
+   text-align: center;
 }
 .texte {
   color:#292929;
