@@ -4,7 +4,7 @@
 
 .mmic-free-topics {
   position: fixed;
-  top: 230px;
+  top: 195px;
   right: 24px;
 
   width: 215px;
@@ -77,6 +77,8 @@
 
 .mmic-free-topics-list {
   padding: 8px 14px 4px;
+     max-height: 285px;
+  overflow-y: auto;
 }
 
 .mmic-free-topic {
