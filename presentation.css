@@ -1,353 +1,588 @@
-/* =========================================================
-   MEET ME IN CHICAGO — FICHE PRÉSENTATION
-   ========================================================= */
+/* ==========================================================
+   MEET ME IN CHICAGO
+   FICHE DE PRÉSENTATION
+   presentation.css
+   ========================================================== */
+
+
+/* ==========================================================
+   01 — CONTENEUR GÉNÉRAL
+   ========================================================== */
 
 .mmic-pres {
-  width: 100%;
-  max-width: 650px;
+    width: 100%;
+    max-width: 640px;
+    margin: 20px auto;
 
-  margin: 20px auto;
+    background: #faf7f2;
+    border: 1px solid #dfc4aa;
+    border-radius: 10px;
 
-  border: 1px solid rgba(216, 176, 140, .55);
-  border-radius: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
 
-  background: #fbf8f3;
-
-  overflow: hidden;
-
-  color: #5d544e;
-
-  box-sizing: border-box;
-
-  box-shadow: 0 5px 16px rgba(16, 36, 56, .08);
+    color: #23313c;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
-/* =========================================================
-   NOM + CITATION
-   ========================================================= */
+/* Sécurité Forumactif */
+
+.mmic-pres *,
+.mmic-pres *::before,
+.mmic-pres *::after {
+    box-sizing: border-box;
+}
+
+
+/* ==========================================================
+   02 — EN-TÊTE
+   ========================================================== */
 
 .mmic-pres-head {
-  padding: 20px 24px 15px;
+    padding: 22px 25px 18px;
 
-  text-align: center;
+    text-align: center;
+
+    background: #faf7f2;
 }
 
-.mmic-pres-head h1 {
-  margin: 0;
 
-  color: #102438;
+.mmic-pres-name {
+    margin: 0;
 
-  font-family: Georgia, serif;
-  font-size: 25px;
-  font-weight: normal;
+    color: #102b42;
 
-  letter-spacing: .05em;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 25px;
+    font-weight: normal;
+    line-height: 1.2;
 }
+
 
 .mmic-pres-quote {
-  margin-top: 5px;
+    margin-top: 7px;
 
-  color: #a06d50;
+    color: #b26e48;
 
-  font-family: Georgia, serif;
-  font-size: 8px;
-  font-style: italic;
-
-  letter-spacing: .05em;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 9px;
+    font-style: italic;
+    line-height: 1.4;
 }
 
 
-/* =========================================================
-   TRIGGER WARNINGS
-   ========================================================= */
+/* ==========================================================
+   03 — TRIGGER WARNINGS
+   ========================================================== */
 
 .mmic-pres-tw {
-  margin: 0 22px 18px;
-  padding: 8px 11px;
+    margin: 0 22px 18px;
+    padding: 9px 12px;
 
-  border-left: 3px solid #b97a56;
+    background: #f2ece4;
+    border-left: 3px solid #c7794e;
 
-  background: #f3ece3;
+    color: #4c5358;
 
-  font-size: 7px;
-  line-height: 1.5;
+    font-size: 8px;
+    line-height: 1.45;
 }
+
 
 .mmic-pres-tw strong {
-  margin-right: 6px;
+    display: block;
 
-  color: #102438;
+    margin-bottom: 2px;
 
-  text-transform: uppercase;
-  letter-spacing: .10em;
+    color: #102b42;
+
+    font-size: 7px;
+    letter-spacing: .08em;
+    text-transform: uppercase;
 }
 
 
-/* =========================================================
-   HAUT DE FICHE
-   ========================================================= */
+/* ==========================================================
+   04 — PARTIE PRINCIPALE
+   ========================================================== */
 
-.mmic-pres-top {
-  display: flex;
-  flex-wrap: nowrap;
+.mmic-pres-main {
+    display: grid;
 
-  align-items: flex-start;
+    grid-template-columns: 190px minmax(0, 1fr);
+    grid-template-areas:
+        "avatar infos"
+        "character anecdotes";
 
-  gap: 18px;
+    column-gap: 16px;
+    row-gap: 14px;
 
-  padding: 0 22px 22px;
-}
+    align-items: start;
 
-.mmic-pres-left {
-  flex: 0 0 190px;
-
-  min-width: 0;
-}
-
-.mmic-pres-right {
-  flex: 1 1 auto;
-
-  min-width: 0;
+    padding: 0 22px 20px;
 }
 
 
-/* =========================================================
-   AVATAR
-   ========================================================= */
+/* ==========================================================
+   05 — AVATAR
+   ========================================================== */
+
+.mmic-pres-avatar-wrap {
+    grid-area: avatar;
+
+    width: 190px;
+}
+
+
+.mmic-pres-avatar {
+    width: 190px;
+    height: 285px;
+
+    margin: 0;
+
+    overflow: hidden;
+
+    background: #f6f1eb;
+    border: 1px solid #d4a77f;
+    border-radius: 7px;
+}
+
 
 .mmic-pres-avatar img {
-  display: block;
+    display: block;
 
-  width: 190px;
-  height: 285px;
+    width: 100%;
+    height: 100%;
 
-  object-fit: cover;
-
-  border: 1px solid #d8b08c;
-  border-radius: 7px;
-
-  box-shadow: 0 4px 10px rgba(16, 36, 56, .08);
+    object-fit: cover;
 }
+
 
 .mmic-pres-avatar-credit {
-  margin-top: 6px;
+    margin-top: 6px;
 
-  color: #a06d50;
+    color: #ad6844;
 
-  font-size: 5.5px;
-  font-weight: 700;
+    font-size: 6px;
+    font-weight: bold;
 
-  letter-spacing: .10em;
-  text-align: center;
-  text-transform: uppercase;
+    letter-spacing: .08em;
+    line-height: 1.4;
+
+    text-align: center;
+    text-transform: uppercase;
 }
 
 
-/* =========================================================
-   INFOS
-   ========================================================= */
+/* ==========================================================
+   06 — INFORMATIONS DU PERSONNAGE
+   ========================================================== */
 
-.mmic-pres-info-title,
-.mmic-pres-mini-title {
-  margin-bottom: 8px;
+.mmic-pres-infos-wrap {
+    grid-area: infos;
 
-  color: #b97a56;
-
-  font-size: 6px;
-  font-weight: 700;
-
-  letter-spacing: .16em;
-  text-transform: uppercase;
-}
-
-.mmic-pres-info {
-  padding: 11px 12px;
-
-  border: 1px solid rgba(216, 176, 140, .38);
-  border-radius: 7px;
-
-  background: #fffdf9;
-}
-
-.mmic-pres-info p {
-  margin: 0 0 5px;
-
-  font-size: 7.5px;
-  line-height: 1.45;
-}
-
-.mmic-pres-info p:last-child {
-  margin-bottom: 0;
-}
-
-.mmic-pres-info strong {
-  color: #102438;
+    min-width: 0;
 }
 
 
-/* =========================================================
-   PETITS BLOCS
-   ========================================================= */
+.mmic-pres-small-title {
+    margin: 0 0 6px;
 
-.mmic-pres-mini-block {
-  margin-top: 13px;
+    color: #b56d47;
+
+    font-size: 6px;
+    font-weight: bold;
+
+    letter-spacing: .16em;
+    line-height: 1.4;
+
+    text-transform: uppercase;
 }
 
-.mmic-pres-character,
-.mmic-pres-anecdotes {
-  padding: 11px 12px;
 
-  border: 1px solid rgba(216, 176, 140, .34);
-  border-radius: 7px;
+.mmic-pres-infos {
+    width: 100%;
+    height: 285px;
 
-  background: #fffdf9;
+    padding: 11px 12px;
+
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    background: #fffdf9;
+
+    border: 1px solid #e5cdb7;
+    border-radius: 7px;
+
+    scrollbar-width: thin;
+    scrollbar-color: #b97a56 #f2ebe3;
 }
+
+
+.mmic-pres-infos p {
+    margin: 0 0 6px;
+
+    color: #52585c;
+
+    font-size: 8px;
+    line-height: 1.45;
+}
+
+
+.mmic-pres-infos p:last-child {
+    margin-bottom: 0;
+}
+
+
+.mmic-pres-infos strong {
+    color: #102b42;
+
+    font-weight: bold;
+}
+
+
+/* scrollbar Chrome / Edge */
+
+.mmic-pres-infos::-webkit-scrollbar {
+    width: 5px;
+}
+
+
+.mmic-pres-infos::-webkit-scrollbar-track {
+    background: #f2ebe3;
+}
+
+
+.mmic-pres-infos::-webkit-scrollbar-thumb {
+    background: #b97a56;
+    border-radius: 10px;
+}
+
+
+/* ==========================================================
+   07 — CARACTÈRE
+   ========================================================== */
+
+.mmic-pres-character-wrap {
+    grid-area: character;
+
+    width: 190px;
+    min-width: 0;
+}
+
 
 .mmic-pres-character {
-  font-size: 7.5px;
-  line-height: 1.6;
+    width: 100%;
+    height: 160px;
 
-  text-align: justify;
+    padding: 11px 12px;
+
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    background: #fffdf9;
+
+    border: 1px solid #e5cdb7;
+    border-radius: 7px;
+
+    color: #53595d;
+
+    font-size: 8px;
+    line-height: 1.55;
+
+    text-align: justify;
+
+    scrollbar-width: thin;
+    scrollbar-color: #b97a56 #f2ebe3;
 }
+
+
+.mmic-pres-character::-webkit-scrollbar {
+    width: 5px;
+}
+
+
+.mmic-pres-character::-webkit-scrollbar-track {
+    background: #f2ebe3;
+}
+
+
+.mmic-pres-character::-webkit-scrollbar-thumb {
+    background: #b97a56;
+    border-radius: 10px;
+}
+
+
+/* ==========================================================
+   08 — ANECDOTES
+   ========================================================== */
+
+.mmic-pres-anecdotes-wrap {
+    grid-area: anecdotes;
+
+    min-width: 0;
+}
+
+
+.mmic-pres-anecdotes {
+    width: 100%;
+    height: 160px;
+
+    padding: 11px 12px;
+
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    background: #fffdf9;
+
+    border: 1px solid #e5cdb7;
+    border-radius: 7px;
+
+    scrollbar-width: thin;
+    scrollbar-color: #b97a56 #f2ebe3;
+}
+
 
 .mmic-pres-anecdotes p {
-  margin: 0 0 7px;
+    margin: 0 0 7px;
 
-  font-size: 7.5px;
-  line-height: 1.5;
+    color: #555b60;
+
+    font-size: 8px;
+    line-height: 1.45;
 }
+
 
 .mmic-pres-anecdotes p:last-child {
-  margin-bottom: 0;
+    margin-bottom: 0;
 }
+
 
 .mmic-pres-anecdotes strong {
-  color: #b97a56;
+    color: #c1744c;
+
+    font-weight: bold;
 }
 
 
-/* =========================================================
-   SECTIONS BASSES
-   ========================================================= */
-
-.mmic-pres-story,
-.mmic-pres-player {
-  padding: 22px;
-
-  border-top: 1px solid rgba(216, 176, 140, .34);
+.mmic-pres-anecdotes::-webkit-scrollbar {
+    width: 5px;
 }
+
+
+.mmic-pres-anecdotes::-webkit-scrollbar-track {
+    background: #f2ebe3;
+}
+
+
+.mmic-pres-anecdotes::-webkit-scrollbar-thumb {
+    background: #b97a56;
+    border-radius: 10px;
+}
+
+
+/* ==========================================================
+   09 — TITRES DES SECTIONS
+   ========================================================== */
 
 .mmic-pres-section-head {
-  margin-bottom: 14px;
+    margin: 0 0 14px;
 
-  text-align: center;
-}
-
-.mmic-pres-section-head span {
-  display: block;
-
-  margin-bottom: 3px;
-
-  color: #b97a56;
-
-  font-size: 5.5px;
-  font-weight: 700;
-
-  letter-spacing: .18em;
-  text-transform: uppercase;
-}
-
-.mmic-pres-section-head h2 {
-  margin: 0;
-
-  color: #102438;
-
-  font-family: Georgia, serif;
-  font-size: 16px;
-  font-weight: normal;
+    text-align: center;
 }
 
 
-/* =========================================================
-   HISTOIRE
-   ========================================================= */
+.mmic-pres-section-kicker {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: #b56d47;
+
+    font-size: 6px;
+    font-weight: bold;
+
+    letter-spacing: .15em;
+    line-height: 1.4;
+
+    text-transform: uppercase;
+}
+
+
+.mmic-pres-section-title {
+    margin: 0;
+
+    color: #102b42;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.3;
+}
+
+
+/* ==========================================================
+   10 — HISTOIRE
+   ========================================================== */
+
+.mmic-pres-story {
+    padding: 20px 22px;
+
+    background: #faf7f2;
+
+    border-top: 1px solid #ead8c7;
+}
+
 
 .mmic-pres-story-content {
-  padding: 14px 16px;
+    width: 100%;
 
-  border: 1px solid rgba(216, 176, 140, .34);
-  border-radius: 7px;
+    min-height: 120px;
 
-  background: #fffdf9;
+    padding: 15px 16px;
 
-  font-size: 8px;
-  line-height: 1.75;
+    background: #fffdf9;
 
-  text-align: justify;
+    border: 1px solid #e5cdb7;
+    border-radius: 7px;
+
+    color: #51585c;
+
+    font-size: 9px;
+    line-height: 1.65;
+
+    text-align: justify;
 }
 
 
-/* =========================================================
-   DERRIÈRE L'ÉCRAN
-   ========================================================= */
+/* Permet à l'histoire de grandir naturellement */
+
+.mmic-pres-story-content p {
+    margin: 0 0 10px;
+}
+
+
+.mmic-pres-story-content p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* ==========================================================
+   11 — DERRIÈRE L'ÉCRAN
+   ========================================================== */
 
 .mmic-pres-player {
-  background: #f4eee5;
-}
+    padding: 20px 22px 22px;
 
-.mmic-pres-player-content {
-  display: flex;
-  flex-wrap: wrap;
+    background: #f3ede4;
 
-  gap: 7px 12px;
-
-  padding: 12px 14px;
-
-  border: 1px solid rgba(216, 176, 140, .30);
-  border-radius: 7px;
-
-  background: rgba(255, 253, 249, .72);
-}
-
-.mmic-pres-player-content p {
-  flex: 1 1 45%;
-
-  min-width: 200px;
-
-  margin: 0;
-
-  font-size: 7.5px;
-  line-height: 1.45;
-}
-
-.mmic-pres-player-content strong {
-  color: #102438;
+    border-top: 1px solid #e3cfbb;
 }
 
 
-/* =========================================================
-   RESPONSIVE
-   ========================================================= */
+.mmic-pres-player-grid {
+    display: grid;
 
-@media (max-width: 600px) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
 
-  .mmic-pres-top {
-    flex-wrap: wrap;
-  }
+    gap: 8px 18px;
 
-  .mmic-pres-left,
-  .mmic-pres-right {
-    flex: 1 1 100%;
-  }
+    padding: 13px 15px;
 
-  .mmic-pres-avatar img {
-    margin: auto;
-  }
+    background: #fffdf9;
 
-  .mmic-pres-player-content p {
-    flex-basis: 100%;
+    border: 1px solid #e5cdb7;
+    border-radius: 7px;
+}
+
+
+.mmic-pres-player-item {
     min-width: 0;
-  }
 
+    color: #555b60;
+
+    font-size: 8px;
+    line-height: 1.45;
+}
+
+
+.mmic-pres-player-item strong {
+    color: #102b42;
+
+    font-weight: bold;
+}
+
+
+/* ==========================================================
+   12 — PETITE CROIX / SYMBOLE DEVANT LES INFOS
+   ========================================================== */
+
+.mmic-pres-infos p::before,
+.mmic-pres-player-item::before {
+    content: "☩";
+
+    margin-right: 4px;
+
+    color: #c1744c;
+}
+
+
+/* ==========================================================
+   13 — RÉDUCTION DES ESPACES FORCÉS PAR FORUMACTIF
+   ========================================================== */
+
+.mmic-pres br + br {
+    display: none;
+}
+
+
+.mmic-pres-main > br,
+.mmic-pres-infos-wrap > br,
+.mmic-pres-avatar-wrap > br,
+.mmic-pres-character-wrap > br,
+.mmic-pres-anecdotes-wrap > br {
+    display: none;
+}
+
+
+/* ==========================================================
+   14 — RESPONSIVE
+   ========================================================== */
+
+@media screen and (max-width: 650px) {
+
+    .mmic-pres {
+        width: 96%;
+    }
+
+    .mmic-pres-main {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "avatar"
+            "infos"
+            "character"
+            "anecdotes";
+
+        gap: 12px;
+    }
+
+    .mmic-pres-avatar-wrap,
+    .mmic-pres-character-wrap {
+        width: 100%;
+    }
+
+    .mmic-pres-avatar {
+        margin: auto;
+    }
+
+    .mmic-pres-infos,
+    .mmic-pres-character,
+    .mmic-pres-anecdotes {
+        width: 100%;
+    }
+
+    .mmic-pres-player-grid {
+        grid-template-columns: 1fr;
+    }
 }
