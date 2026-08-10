@@ -2778,3 +2778,200 @@ html body .mmic-posting-page
 #optionsitems .thHead td:last-child {
   background: transparent !important;
 }
+
+
+/* =========================================================
+   POSTING — BLOCS INFÉRIEURS
+   Calendrier / Sondage / SEO
+   Harmonisation avec le bloc Options
+   ========================================================= */
+
+/* Conteneurs ouverts et fermés */
+html body .mmic-posting-page #calendaritems,
+html body .mmic-posting-page #calendaritems_show,
+html body .mmic-posting-page #pollitems,
+html body .mmic-posting-page #pollitems_show,
+html body .mmic-posting-page #seotools,
+html body .mmic-posting-page #seotools_show {
+  width: 100% !important;
+  margin: 8px 0 !important;
+  padding: 0 !important;
+
+  border: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+
+/* Tableau principal de chaque bloc */
+html body .mmic-posting-page #calendaritems > table,
+html body .mmic-posting-page #calendaritems_show > table,
+html body .mmic-posting-page #pollitems > table,
+html body .mmic-posting-page #pollitems_show > table,
+html body .mmic-posting-page #seotools > table,
+html body .mmic-posting-page #seotools_show > table {
+  width: 100% !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  border: 1px solid rgba(216, 176, 140, 0.40) !important;
+  border-radius: 8px !important;
+  border-spacing: 0 !important;
+
+  background:
+    linear-gradient(
+      180deg,
+      #fffdf9 0%,
+      #f8f2eb 100%
+    ) !important;
+
+  box-shadow:
+    0 3px 8px rgba(16, 36, 56, 0.04) !important;
+
+  overflow: hidden !important;
+}
+
+
+/* En-tête bleu nuit */
+html body .mmic-posting-page #calendaritems th.thHead,
+html body .mmic-posting-page #calendaritems_show th.thHead,
+html body .mmic-posting-page #pollitems th.thHead,
+html body .mmic-posting-page #pollitems_show th.thHead,
+html body .mmic-posting-page #seotools th.thHead,
+html body .mmic-posting-page #seotools_show th.thHead {
+  height: 38px !important;
+  padding: 0 !important;
+
+  border: 0 !important;
+
+  background:
+    linear-gradient(
+      180deg,
+      #173149 0%,
+      #102438 100%
+    ) !important;
+
+  color: #d8b08c !important;
+}
+
+
+/* Petits tableaux internes des headers */
+html body .mmic-posting-page #calendaritems th.thHead > table,
+html body .mmic-posting-page #calendaritems_show th.thHead > table,
+html body .mmic-posting-page #pollitems th.thHead > table,
+html body .mmic-posting-page #pollitems_show th.thHead > table,
+html body .mmic-posting-page #seotools th.thHead > table,
+html body .mmic-posting-page #seotools_show th.thHead > table {
+  width: 100% !important;
+  height: 38px !important;
+
+  margin: 0 !important;
+  border: 0 !important;
+  border-spacing: 0 !important;
+
+  background: transparent !important;
+}
+
+
+/* Cellules du header */
+html body .mmic-posting-page #calendaritems th.thHead td,
+html body .mmic-posting-page #calendaritems_show th.thHead td,
+html body .mmic-posting-page #pollitems th.thHead td,
+html body .mmic-posting-page #pollitems_show th.thHead td,
+html body .mmic-posting-page #seotools th.thHead td,
+html body .mmic-posting-page #seotools_show th.thHead td {
+  height: 38px !important;
+  padding: 0 12px !important;
+
+  border: 0 !important;
+  background: transparent !important;
+
+  color: #d8b08c !important;
+}
+
+
+/* Titres */
+html body .mmic-posting-page #calendaritems th.thHead .gen,
+html body .mmic-posting-page #calendaritems_show th.thHead .gen,
+html body .mmic-posting-page #pollitems th.thHead .gen,
+html body .mmic-posting-page #pollitems_show th.thHead .gen,
+html body .mmic-posting-page #seotools th.thHead .gen,
+html body .mmic-posting-page #seotools_show th.thHead .gen,
+html body .mmic-posting-page #calendaritems th.thHead b,
+html body .mmic-posting-page #calendaritems_show th.thHead b,
+html body .mmic-posting-page #pollitems th.thHead b,
+html body .mmic-posting-page #pollitems_show th.thHead b,
+html body .mmic-posting-page #seotools th.thHead b,
+html body .mmic-posting-page #seotools_show th.thHead b {
+  color: #d8b08c !important;
+
+  font-size: 8px !important;
+  font-weight: 700 !important;
+
+  letter-spacing: 0.18em !important;
+  text-transform: uppercase !important;
+}
+
+
+/* Boutons + / - Forumactif */
+html body .mmic-posting-page #calendaritems th.thHead img,
+html body .mmic-posting-page #calendaritems_show th.thHead img,
+html body .mmic-posting-page #pollitems th.thHead img,
+html body .mmic-posting-page #pollitems_show th.thHead img,
+html body .mmic-posting-page #seotools th.thHead img,
+html body .mmic-posting-page #seotools_show th.thHead img {
+  width: 16px !important;
+  height: 16px !important;
+
+  padding: 2px !important;
+
+  border: 1px solid rgba(216, 176, 140, 0.55) !important;
+  border-radius: 4px !important;
+
+  background: rgba(255, 255, 255, 0.05) !important;
+
+  box-sizing: border-box !important;
+}
+
+
+/* Contenu ouvert */
+html body .mmic-posting-page #calendaritems_show .row1,
+html body .mmic-posting-page #calendaritems_show .row2,
+html body .mmic-posting-page #pollitems_show .row1,
+html body .mmic-posting-page #pollitems_show .row2,
+html body .mmic-posting-page #seotools_show .row1,
+html body .mmic-posting-page #seotools_show .row2 {
+  height: auto !important;
+
+  padding: 10px 14px !important;
+
+  border: 0 !important;
+  border-bottom: 1px solid rgba(216, 176, 140, 0.17) !important;
+
+  color: #5f554e !important;
+
+  font-size: 8px !important;
+  line-height: 1.55 !important;
+}
+
+html body .mmic-posting-page #calendaritems_show .row1,
+html body .mmic-posting-page #pollitems_show .row1,
+html body .mmic-posting-page #seotools_show .row1 {
+  background: #f7f1e9 !important;
+}
+
+html body .mmic-posting-page #calendaritems_show .row2,
+html body .mmic-posting-page #pollitems_show .row2,
+html body .mmic-posting-page #seotools_show .row2 {
+  background: #fffdf9 !important;
+}
+
+
+/* Dernière ligne sans séparation */
+html body .mmic-posting-page #calendaritems_show tr:last-child td,
+html body .mmic-posting-page #pollitems_show tr:last-child td,
+html body .mmic-posting-page #seotools_show tr:last-child td {
+  border-bottom: 0 !important;
+}
+
