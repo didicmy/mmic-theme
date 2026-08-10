@@ -1,0 +1,201 @@
+/* =========================================================
+   MEET ME IN CHICAGO — GROUPES
+   ========================================================= */
+
+.mmic-groups-page #page-body {
+  padding-top: 18px;
+}
+
+/* =========================================================
+   TABLEAUX PRINCIPAUX
+   ========================================================= */
+
+.mmic-groups-page table.forumline {
+  width: 100% !important;
+  margin: 0 0 18px !important;
+
+  border: 1px solid #dfd1c3 !important;
+  border-collapse: separate !important;
+  border-spacing: 0 !important;
+  border-radius: 11px;
+
+  overflow: hidden;
+
+  background: #fbf8f3;
+  box-shadow: 0 8px 24px rgba(12, 24, 39, 0.05);
+}
+
+/* =========================================================
+   TITRES DES BLOCS
+   ========================================================= */
+
+.mmic-groups-page table.forumline th.thHead {
+  height: auto !important;
+
+  padding: 14px 18px !important;
+
+  border: 0 !important;
+  border-bottom: 2px solid #b97a56 !important;
+
+  background: #102438 !important;
+  background-image: none !important;
+
+  color: #fbf8f3 !important;
+
+  font-family: Georgia, serif;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  letter-spacing: 1.3px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Décoration cuivre */
+
+.mmic-groups-page table.forumline th.thHead::before,
+.mmic-groups-page table.forumline th.thHead::after {
+  content: "";
+
+  display: inline-block;
+
+  width: 34px;
+  height: 1px;
+
+  margin: 0 11px 4px;
+
+  background: #b97a56;
+}
+
+.mmic-groups-page table.forumline th.thHead,
+.mmic-groups-page table.forumline th.thHead * {
+  color: #fbf8f3 !important;
+}
+
+/* =========================================================
+   CELLULES
+   ========================================================= */
+
+.mmic-groups-page table.forumline td.row1,
+.mmic-groups-page table.forumline td.row2,
+.mmic-groups-page table.forumline td.row3,
+.mmic-groups-page table.forumline td {
+  padding: 12px 14px !important;
+
+  border-color: #eadfd5 !important;
+
+  background: #fbf8f3 !important;
+
+  color: #625b55;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+/* Première colonne descriptive */
+
+.mmic-groups-page table.forumline td:first-child {
+  color: #625b55;
+  font-weight: 500;
+}
+
+/* =========================================================
+   LIENS DES GROUPES
+   ========================================================= */
+
+.mmic-groups-page table.forumline a {
+  color: #765744 !important;
+
+  font-weight: 600;
+  text-decoration: none;
+
+  transition:
+    color .2s ease,
+    transform .2s ease;
+}
+
+.mmic-groups-page table.forumline a:hover {
+  color: #b97a56 !important;
+  text-decoration: underline;
+}
+
+/* =========================================================
+   SELECTEUR "SAUTER VERS"
+   ========================================================= */
+
+.mmic-groups-page select {
+  height: 29px;
+
+  padding: 0 8px;
+
+  border: 1px solid #d8c7b8;
+  border-radius: 6px;
+
+  background: #fbf8f3;
+  color: #102438;
+
+  font-size: 9px;
+  font-weight: 600;
+}
+
+/* Bouton Aller */
+
+.mmic-groups-page input[type="submit"],
+.mmic-groups-page input[type="button"] {
+  min-height: 29px;
+
+  padding: 0 12px;
+
+  border: 1px solid #102438;
+  border-radius: 6px;
+
+  background: #102438;
+  color: #fff;
+
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: .5px;
+
+  cursor: pointer;
+
+  transition: .2s ease;
+}
+
+.mmic-groups-page input[type="submit"]:hover,
+.mmic-groups-page input[type="button"]:hover {
+  background: #b97a56;
+  border-color: #b97a56;
+}
+
+/* =========================================================
+   PETITS TEXTES
+   ========================================================= */
+
+.mmic-groups-page .gen,
+.mmic-groups-page .genmed,
+.mmic-groups-page .gensmall {
+  color: #625b55;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 800px) {
+
+  .mmic-groups-page table.forumline th.thHead {
+    padding: 12px 10px !important;
+    font-size: 11px !important;
+  }
+
+  .mmic-groups-page table.forumline th.thHead::before,
+  .mmic-groups-page table.forumline th.thHead::after {
+    width: 20px;
+    margin-left: 7px;
+    margin-right: 7px;
+  }
+
+  .mmic-groups-page table.forumline td {
+    padding: 9px !important;
+  }
+}
