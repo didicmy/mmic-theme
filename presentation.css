@@ -1,326 +1,271 @@
 /* =========================================================
-   MEET ME IN CHICAGO — FICHE DE PRÉSENTATION V2
-   ADAPTÉE À LA LARGEUR DES POSTS
+   MEET ME IN CHICAGO — FICHE PRÉSENTATION
    ========================================================= */
 
-.mmic-presentation {
+.mmic-pres {
   width: 100%;
-  max-width: 100%;
+  max-width: 650px;
 
-  margin: 18px 0;
-
-  overflow: hidden;
+  margin: 20px auto;
 
   border: 1px solid rgba(216, 176, 140, .55);
   border-radius: 10px;
 
   background: #fbf8f3;
 
-  color: #554c46;
+  overflow: hidden;
 
-  box-shadow: 0 6px 18px rgba(16, 36, 56, .08);
+  color: #5d544e;
 
   box-sizing: border-box;
+
+  box-shadow: 0 5px 16px rgba(16, 36, 56, .08);
 }
 
 
 /* =========================================================
-   HEADER
+   NOM + CITATION
    ========================================================= */
 
-.mmic-presentation-header {
-  padding: 22px 24px 20px;
-
-  background:
-    linear-gradient(
-      180deg,
-      #173149 0%,
-      #102438 100%
-    );
+.mmic-pres-head {
+  padding: 20px 24px 15px;
 
   text-align: center;
 }
 
-.mmic-presentation-kicker {
-  display: block;
-
-  margin-bottom: 6px;
-
-  color: #d8b08c;
-
-  font-size: 6px;
-  font-weight: 700;
-
-  letter-spacing: .24em;
-  text-transform: uppercase;
-}
-
-.mmic-presentation-header h1 {
+.mmic-pres-head h1 {
   margin: 0;
 
-  color: #fbf8f3;
+  color: #102438;
 
   font-family: Georgia, serif;
   font-size: 25px;
   font-weight: normal;
+
+  letter-spacing: .05em;
 }
 
-.mmic-presentation-quote {
-  margin-top: 6px;
+.mmic-pres-quote {
+  margin-top: 5px;
 
-  color: rgba(251, 248, 243, .68);
+  color: #a06d50;
 
   font-family: Georgia, serif;
-  font-size: 9px;
+  font-size: 8px;
   font-style: italic;
-}
 
-.mmic-presentation-header-line {
-  display: block;
-
-  width: 34px;
-  height: 1px;
-
-  margin: 11px auto 0;
-
-  background: #b97a56;
+  letter-spacing: .05em;
 }
 
 
 /* =========================================================
-   INTRO — AVATAR + IDENTITÉ
+   TRIGGER WARNINGS
    ========================================================= */
 
-.mmic-presentation-intro {
-  display: grid;
+.mmic-pres-tw {
+  margin: 0 22px 18px;
+  padding: 8px 11px;
 
-  grid-template-columns:
-    minmax(150px, 180px)
-    minmax(0, 1fr);
+  border-left: 3px solid #b97a56;
+
+  background: #f3ece3;
+
+  font-size: 7px;
+  line-height: 1.5;
+}
+
+.mmic-pres-tw strong {
+  margin-right: 6px;
+
+  color: #102438;
+
+  text-transform: uppercase;
+  letter-spacing: .10em;
+}
+
+
+/* =========================================================
+   HAUT DE FICHE
+   ========================================================= */
+
+.mmic-pres-top {
+  display: flex;
+  flex-wrap: nowrap;
+
+  align-items: flex-start;
 
   gap: 18px;
 
-  padding: 20px;
+  padding: 0 22px 22px;
 }
 
-.mmic-presentation-picture {
+.mmic-pres-left {
+  flex: 0 0 190px;
+
   min-width: 0;
 }
 
-.mmic-presentation-picture img {
+.mmic-pres-right {
+  flex: 1 1 auto;
+
+  min-width: 0;
+}
+
+
+/* =========================================================
+   AVATAR
+   ========================================================= */
+
+.mmic-pres-avatar img {
   display: block;
 
-  width: 100%;
-  max-width: 180px;
-  height: 270px;
-
-  margin: 0 auto;
+  width: 190px;
+  height: 285px;
 
   object-fit: cover;
 
   border: 1px solid #d8b08c;
-  border-radius: 8px;
+  border-radius: 7px;
 
-  box-shadow: 0 4px 12px rgba(16, 36, 56, .08);
+  box-shadow: 0 4px 10px rgba(16, 36, 56, .08);
 }
 
-.mmic-presentation-avatar-name {
-  margin-top: 7px;
+.mmic-pres-avatar-credit {
+  margin-top: 6px;
 
   color: #a06d50;
 
-  font-size: 6px;
+  font-size: 5.5px;
   font-weight: 700;
 
-  letter-spacing: .12em;
+  letter-spacing: .10em;
   text-align: center;
   text-transform: uppercase;
 }
 
 
 /* =========================================================
-   IDENTITÉ
+   INFOS
    ========================================================= */
 
-.mmic-presentation-identity {
-  min-width: 0;
-}
-
-.mmic-presentation-small-title {
-  margin-bottom: 10px;
+.mmic-pres-info-title,
+.mmic-pres-mini-title {
+  margin-bottom: 8px;
 
   color: #b97a56;
 
-  font-size: 7px;
+  font-size: 6px;
+  font-weight: 700;
+
+  letter-spacing: .16em;
+  text-transform: uppercase;
+}
+
+.mmic-pres-info {
+  padding: 11px 12px;
+
+  border: 1px solid rgba(216, 176, 140, .38);
+  border-radius: 7px;
+
+  background: #fffdf9;
+}
+
+.mmic-pres-info p {
+  margin: 0 0 5px;
+
+  font-size: 7.5px;
+  line-height: 1.45;
+}
+
+.mmic-pres-info p:last-child {
+  margin-bottom: 0;
+}
+
+.mmic-pres-info strong {
+  color: #102438;
+}
+
+
+/* =========================================================
+   PETITS BLOCS
+   ========================================================= */
+
+.mmic-pres-mini-block {
+  margin-top: 13px;
+}
+
+.mmic-pres-character,
+.mmic-pres-anecdotes {
+  padding: 11px 12px;
+
+  border: 1px solid rgba(216, 176, 140, .34);
+  border-radius: 7px;
+
+  background: #fffdf9;
+}
+
+.mmic-pres-character {
+  font-size: 7.5px;
+  line-height: 1.6;
+
+  text-align: justify;
+}
+
+.mmic-pres-anecdotes p {
+  margin: 0 0 7px;
+
+  font-size: 7.5px;
+  line-height: 1.5;
+}
+
+.mmic-pres-anecdotes p:last-child {
+  margin-bottom: 0;
+}
+
+.mmic-pres-anecdotes strong {
+  color: #b97a56;
+}
+
+
+/* =========================================================
+   SECTIONS BASSES
+   ========================================================= */
+
+.mmic-pres-story,
+.mmic-pres-player {
+  padding: 22px;
+
+  border-top: 1px solid rgba(216, 176, 140, .34);
+}
+
+.mmic-pres-section-head {
+  margin-bottom: 14px;
+
+  text-align: center;
+}
+
+.mmic-pres-section-head span {
+  display: block;
+
+  margin-bottom: 3px;
+
+  color: #b97a56;
+
+  font-size: 5.5px;
   font-weight: 700;
 
   letter-spacing: .18em;
   text-transform: uppercase;
 }
 
-.mmic-presentation-info-grid {
-  display: grid;
-
-  grid-template-columns:
-    repeat(2, minmax(0, 1fr));
-
-  gap: 7px;
-}
-
-.mmic-presentation-info {
-  min-width: 0;
-
-  padding: 8px 9px;
-
-  border: 1px solid rgba(216, 176, 140, .36);
-  border-radius: 6px;
-
-  background: #fffdf9;
-
-  box-sizing: border-box;
-}
-
-.mmic-presentation-info span {
-  display: block;
-
-  margin-bottom: 4px;
-
-  color: #b97a56;
-
-  font-size: 5.5px;
-  font-weight: 700;
-
-  letter-spacing: .08em;
-  line-height: 1.35;
-  text-transform: uppercase;
-}
-
-.mmic-presentation-info p {
-  margin: 0;
-
-  color: #655b54;
-
-  font-size: 7.5px;
-  line-height: 1.45;
-
-  overflow-wrap: anywhere;
-}
-
-
-/* =========================================================
-   SECTIONS
-   ========================================================= */
-
-.mmic-presentation-section {
-  padding: 20px 22px;
-
-  border-top: 1px solid rgba(216, 176, 140, .32);
-}
-
-.mmic-presentation-section-title,
-.mmic-presentation-player-heading {
-  display: flex;
-
-  align-items: center;
-
-  gap: 11px;
-
-  margin-bottom: 15px;
-}
-
-.mmic-presentation-section-title > span,
-.mmic-presentation-player-heading > span {
-  display: inline-flex;
-
-  align-items: center;
-  justify-content: center;
-
-  flex: 0 0 auto;
-
-  width: 30px;
-  height: 30px;
-
-  border-radius: 50%;
-
-  background: #102438;
-
-  color: #d8b08c;
-
-  font-family: Georgia, serif;
-  font-size: 10px;
-}
-
-.mmic-presentation-section-title small,
-.mmic-presentation-player-heading small {
-  display: block;
-
-  margin-bottom: 2px;
-
-  color: #b97a56;
-
-  font-size: 5.5px;
-  font-weight: 700;
-
-  letter-spacing: .13em;
-  text-transform: uppercase;
-}
-
-.mmic-presentation-section-title h2,
-.mmic-presentation-player-heading h2 {
+.mmic-pres-section-head h2 {
   margin: 0;
 
   color: #102438;
 
   font-family: Georgia, serif;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: normal;
-}
-
-
-/* =========================================================
-   ENTRE LES LIGNES
-   ========================================================= */
-
-.mmic-presentation-prompts {
-  display: grid;
-
-  grid-template-columns:
-    repeat(2, minmax(0, 1fr));
-
-  gap: 8px;
-}
-
-.mmic-presentation-prompt {
-  min-width: 0;
-
-  padding: 10px 11px;
-
-  border: 1px solid rgba(216, 176, 140, .34);
-  border-radius: 6px;
-
-  background: #fffdf9;
-}
-
-.mmic-presentation-prompt span {
-  display: block;
-
-  margin-bottom: 5px;
-
-  color: #a06d50;
-
-  font-family: Georgia, serif;
-  font-size: 9.5px;
-}
-
-.mmic-presentation-prompt p {
-  margin: 0;
-
-  color: #655c55;
-
-  font-size: 7.5px;
-  line-height: 1.55;
-
-  text-align: justify;
 }
 
 
@@ -328,135 +273,18 @@
    HISTOIRE
    ========================================================= */
 
-.mmic-presentation-choice-note {
-  margin-bottom: 13px;
-  padding: 10px 12px;
-
-  border-left: 3px solid #b97a56;
-
-  background: #f4eee5;
-
-  color: #645b54;
-
-  font-size: 7.5px;
-  line-height: 1.55;
-}
-
-.mmic-presentation-choice-note strong {
-  color: #102438;
-}
-
-.mmic-presentation-history {
-  margin-bottom: 16px;
-  padding: 12px 14px;
+.mmic-pres-story-content {
+  padding: 14px 16px;
 
   border: 1px solid rgba(216, 176, 140, .34);
-  border-radius: 6px;
+  border-radius: 7px;
 
   background: #fffdf9;
-}
-
-.mmic-presentation-history-label {
-  display: block;
-
-  margin-bottom: 8px;
-
-  color: #b97a56;
-
-  font-size: 5.5px;
-  font-weight: 700;
-
-  letter-spacing: .14em;
-  text-transform: uppercase;
-}
-
-.mmic-presentation-history p {
-  margin: 0;
-
-  color: #625951;
 
   font-size: 8px;
-  line-height: 1.7;
-}
+  line-height: 1.75;
 
-.mmic-presentation-questions {
-  display: grid;
-
-  grid-template-columns:
-    repeat(2, minmax(0, 1fr));
-
-  gap: 7px;
-}
-
-.mmic-presentation-questions
-.mmic-presentation-history-label {
-  grid-column: 1 / -1;
-}
-
-.mmic-presentation-question {
-  min-width: 0;
-
-  padding: 9px 10px;
-
-  border: 1px solid rgba(216, 176, 140, .30);
-  border-radius: 6px;
-
-  background: #fffdf9;
-
-  color: #625951;
-
-  font-size: 7.5px;
-  line-height: 1.5;
-}
-
-.mmic-presentation-question strong {
-  margin-right: 5px;
-
-  color: #b97a56;
-}
-
-
-/* =========================================================
-   DÉTAILS
-   ========================================================= */
-
-.mmic-presentation-details {
-  display: grid;
-
-  grid-template-columns:
-    repeat(2, minmax(0, 1fr));
-
-  gap: 7px;
-}
-
-.mmic-presentation-details div {
-  min-width: 0;
-
-  padding: 9px 10px;
-
-  border: 1px solid rgba(216, 176, 140, .33);
-  border-radius: 6px;
-
-  background: #fffdf9;
-
-  color: #625951;
-
-  font-size: 7.5px;
-  line-height: 1.5;
-}
-
-.mmic-presentation-details span {
-  display: block;
-
-  margin-bottom: 4px;
-
-  color: #a06d50;
-
-  font-size: 5.5px;
-  font-weight: 700;
-
-  letter-spacing: .08em;
-  text-transform: uppercase;
+  text-align: justify;
 }
 
 
@@ -464,66 +292,37 @@
    DERRIÈRE L'ÉCRAN
    ========================================================= */
 
-.mmic-presentation-player {
-  padding: 20px 22px 18px;
-
-  border-top: 1px solid rgba(216, 176, 140, .40);
-
+.mmic-pres-player {
   background: #f4eee5;
 }
 
-.mmic-presentation-player-grid {
-  display: grid;
+.mmic-pres-player-content {
+  display: flex;
+  flex-wrap: wrap;
 
-  grid-template-columns:
-    repeat(2, minmax(0, 1fr));
+  gap: 7px 12px;
 
-  gap: 7px;
-}
+  padding: 12px 14px;
 
-.mmic-presentation-player-grid div {
-  min-width: 0;
-
-  padding: 9px 10px;
-
-  border: 1px solid rgba(216, 176, 140, .32);
-  border-radius: 6px;
+  border: 1px solid rgba(216, 176, 140, .30);
+  border-radius: 7px;
 
   background: rgba(255, 253, 249, .72);
+}
 
-  color: #625951;
+.mmic-pres-player-content p {
+  flex: 1 1 45%;
+
+  min-width: 200px;
+
+  margin: 0;
 
   font-size: 7.5px;
   line-height: 1.45;
-
-  box-sizing: border-box;
 }
 
-.mmic-presentation-player-grid span {
-  display: block;
-
-  margin-bottom: 4px;
-
-  color: #b97a56;
-
-  font-size: 5.5px;
-  font-weight: 700;
-
-  letter-spacing: .08em;
-  text-transform: uppercase;
-}
-
-.mmic-presentation-credits {
-  margin-top: 14px;
-
-  color: #897b72;
-
-  font-size: 5.5px;
-
-  letter-spacing: .07em;
-
-  text-align: center;
-  text-transform: uppercase;
+.mmic-pres-player-content strong {
+  color: #102438;
 }
 
 
@@ -531,18 +330,24 @@
    RESPONSIVE
    ========================================================= */
 
-@media (max-width: 560px) {
+@media (max-width: 600px) {
 
-  .mmic-presentation-intro {
-    grid-template-columns: 1fr;
+  .mmic-pres-top {
+    flex-wrap: wrap;
   }
 
-  .mmic-presentation-info-grid,
-  .mmic-presentation-prompts,
-  .mmic-presentation-questions,
-  .mmic-presentation-details,
-  .mmic-presentation-player-grid {
-    grid-template-columns: 1fr;
+  .mmic-pres-left,
+  .mmic-pres-right {
+    flex: 1 1 100%;
+  }
+
+  .mmic-pres-avatar img {
+    margin: auto;
+  }
+
+  .mmic-pres-player-content p {
+    flex-basis: 100%;
+    min-width: 0;
   }
 
 }
