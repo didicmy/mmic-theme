@@ -4465,3 +4465,34 @@ html body .mmic-profile-business-fields {
         grid-template-columns: 1fr !important;
     }
 }
+
+
+/* =========================================================
+   PROFIL — CORRECTION LISTE DE CONTACTS VARIABLE
+   Empêche le 3e contact (et les suivants) de déborder.
+   ========================================================= */
+
+html body .mmic-profile-business-left
+.mmic-profile-business-contact > .mmic-profile-contact-list {
+    height: auto !important;
+    min-height: 0 !important;
+    min-width: 0 !important;
+    overflow: visible !important;
+
+    padding: 0 !important;
+}
+
+html body .mmic-profile-business-left
+.mmic-profile-business-contact > .mmic-profile-business-subtitle {
+    height: auto !important;
+    min-height: 0 !important;
+    min-width: 0 !important;
+}
+
+/* La colonne gauche doit calculer sa hauteur à partir de tous les contacts. */
+html body .mmic-profile-business-left
+.mmic-profile-business-contact {
+    height: auto !important;
+    min-height: 0 !important;
+    overflow: visible !important;
+}
