@@ -4313,3 +4313,134 @@ body.mmic-profile-signature .mmic-signature-tab,
     color:#13263d !important;
     font-weight:700 !important;
 }
+/* =========================================================
+   CARTE DE VISITE — COLONNE COORDONNÉES
+   ========================================================= */
+
+html body .mmic-profile-business-right {
+    display: grid !important;
+
+    grid-template-columns:
+        minmax(0, 1fr)
+        185px !important;
+
+    grid-template-rows:
+        auto
+        1fr !important;
+
+    align-items: start !important;
+
+    height: auto !important;
+    min-height: 0 !important;
+}
+
+
+/* En-tête sur toute la largeur */
+
+html body .mmic-profile-business-header {
+    grid-column: 1 / -1;
+    grid-row: 1;
+}
+
+
+/* Champs du profil */
+
+html body .mmic-profile-business-fields {
+    grid-column: 1;
+    grid-row: 2;
+
+    align-self: start;
+
+    padding-right: 12px !important;
+}
+
+
+/* Colonne coordonnées */
+
+html body .mmic-profile-business-contact {
+    grid-column: 2;
+    grid-row: 2;
+
+    align-self: start !important;
+
+    margin: 18px 18px 18px 0 !important;
+    padding: 14px !important;
+
+    border: 1px solid rgba(216, 176, 140, 0.34);
+    border-radius: 8px;
+
+    background: rgba(255, 250, 244, 0.72);
+
+    box-sizing: border-box;
+}
+
+
+/* Le titre n'a plus besoin de grandes lignes */
+
+html body .mmic-profile-business-subtitle {
+    margin: 0 0 13px !important;
+}
+
+html body .mmic-profile-business-subtitle span {
+    width: 18px !important;
+}
+
+
+/* Contacts les uns sous les autres */
+
+html body
+.mmic-profile-business-contact
+.mmic-profile-contact-list {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+
+    width: 100% !important;
+    gap: 8px !important;
+}
+
+
+/* Chaque contact occupe toute la colonne */
+
+html body
+.mmic-profile-business-contact
+.mmic-profile-contact-item {
+    width: 100% !important;
+    min-width: 0 !important;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   La colonne repasse dessous lorsque l'écran devient étroit
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    html body .mmic-profile-business-right {
+        display: block !important;
+    }
+
+    html body .mmic-profile-business-contact {
+        margin: 0 18px 20px !important;
+    }
+
+    html body
+    .mmic-profile-business-contact
+    .mmic-profile-contact-list {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr)) !important;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    html body
+    .mmic-profile-business-contact
+    .mmic-profile-contact-list {
+        grid-template-columns: 1fr !important;
+    }
+
+}
