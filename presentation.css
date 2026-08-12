@@ -76,6 +76,7 @@
 }
 .joueur  {
   height:100px;
+  width:300px;
   background-color:#D7D8D9;
   padding:10px;
   overflow:auto;
