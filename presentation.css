@@ -61,10 +61,18 @@
   overflow-x: hidden;
 }
 .avatar {
-  background-color:#D7D8D9;
-  width: 200px;       
-  height: 400px;    
-box-shadow: 0px 0px 6px black;
+  background-color: #D7D8D9;
+  width: 200px;
+  height: 400px;
+  box-shadow: 0px 0px 6px black;
+  overflow: hidden;
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 .joueur  {
   height:100px;
@@ -73,10 +81,16 @@ box-shadow: 0px 0px 6px black;
   overflow:auto;
   margin-left:10px;
 }
-.icone100x100 {
+.icone {
   background-color:#D7D8D9;
   width:100x; height:100px;
   box-shadow: 0px 0px 6px black;
+}
+.icone img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 <style>
   .h2 {
