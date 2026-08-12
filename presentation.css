@@ -62,10 +62,9 @@
 }
 .avatar {
   background-color:#D7D8D9;
-  width: 200px;       /* S'adapte à la largeur voulue */
-  height: 400px;     /* Fixe une hauteur précise */
-  object-fit: cover;
-  box-shadow: 0px 0px 6px black;
+  width: 200px;       
+  height: 400px;    
+box-shadow: 0px 0px 6px black;
 }
 .joueur  {
   height:100px;
