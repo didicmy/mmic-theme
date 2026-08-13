@@ -31,21 +31,37 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+
   min-height: 34px;
   padding: 8px 15px;
+
   border: 1px solid rgba(213, 141, 122, 0.82);
   border-radius: 4px;
-  background: var(--navy);
+
+  background: #A96F68;
+
   color: #ffffff !important;
+
   font-size: 10px;
   letter-spacing: 1.2px;
   text-transform: uppercase;
-  transition: 0.2s;
+
+  box-shadow: 0 2px 5px rgba(81, 61, 59, 0.08);
+
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .mmic-main-links a:hover,
 .mmic-button:hover {
-  background: var(--copper);
+  background: #B9827C;
+  border-color: #E0A08B;
+
+  box-shadow: 0 4px 9px rgba(81, 61, 59, 0.12);
+
   transform: translateY(-1px);
 }
 
