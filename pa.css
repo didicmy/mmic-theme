@@ -23,13 +23,13 @@
    ========================================================= */
 
 .mmic-pa {
-  --navy: #4f383a;
-  --paper: #fff8f4;
-  --cream: #f8e9df;
-  --copper: #c97d67;
-  --border: #e5c6b8;
-  --text: #4a3837;
-  --muted: #8b706b;
+  --navy: #7F5855;
+  --paper: #FFF8F4;
+  --cream: #F8E9DF;
+  --copper: #D58D7A;
+  --border: #E7C2B5;
+  --text: #513D3B;
+  --muted: #92736D;
 
   box-sizing: border-box;
   width: 100%;
@@ -61,8 +61,8 @@
 
   background-image:
     linear-gradient(
-      rgba(8, 18, 31, 0.42),
-      rgba(8, 18, 31, 0.42)
+    rgba(105, 73, 70, 0.42),
+    rgba(105, 73, 70, 0.42)
     ),
     url("https://i.servimg.com/u/f28/15/72/31/14/ae6d9c10.png");
 
@@ -224,7 +224,7 @@
   inset: 0;
   background: linear-gradient(
     transparent,
-    rgba(12, 24, 39, 0.82)
+    rgba(105, 73, 70, 0.82)
   );
 }
 
@@ -481,7 +481,7 @@
 .mmic-partners-heading {
   margin-bottom: 9px;
 
-  color: #a06d50;
+  color: #B97869;
   font-size: 9px;
   font-weight: 700;
   letter-spacing: 1.2px;
@@ -525,19 +525,19 @@
 .mmic-partners-list a::before {
   content: "◇";
   margin-right: 5px;
-  color: #b97a56;
+  color: #D58D7A;
   font-size: 9px;
 }
 
 .mmic-partners-list a:hover {
-  border-color: #b97a56;
+  border-color: #D58D7A;
   background: #102438;
   color: #fbf8f3 !important;
   transform: translateY(-1px);
 }
 
 .mmic-partners-list a:hover::before {
-  color: #fbf8f3;
+  color: #FFF4ED;
 }
 
 .mmic-partners-all {
@@ -546,7 +546,7 @@
   width: max-content;
   margin: 11px auto 0;
 
-  color: #a06d50 !important;
+  color: #B97869  !important;
   font-size: 8px;
   font-weight: 700;
   letter-spacing: 0.7px;
@@ -555,11 +555,11 @@
 }
 
 .mmic-partners-all:hover {
-  color: #102438 !important;
+  color: #7F5855  !important;
 }
 
 .mmic-partners-toggle.is-open {
-  color: #b97a56 !important;
+  color: #D58D7A  !important;
 }
 
 .mmic-partners-toggle.is-open .mmic-icon {
