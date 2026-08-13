@@ -25,12 +25,12 @@ html body .mmic-main-navigation {
     border-bottom: 2px solid #C97961 !important;
     border-radius: 0 !important;
 
-   background:
+background:
     linear-gradient(
         135deg,
-        #5B3E3D 0%,
-        #6F4D4A 52%,
-        #5B3E3D 100%
+        #76504D 0%,
+        #865B55 52%,
+        #76504D 100%
     ) !important;
 
     box-shadow:
