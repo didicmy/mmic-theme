@@ -22,16 +22,16 @@ html body .mmic-main-navigation {
     padding: 0 !important;
 
     border: 0 !important;
-    border-bottom: 2px solid #b97a56 !important;
+    border-bottom: 2px solid #C97961 !important;
     border-radius: 0 !important;
 
-    background:
-        linear-gradient(
-            135deg,
-            #0c1d2f 0%,
-            #132d45 52%,
-            #0c1d2f 100%
-        ) !important;
+   background:
+    linear-gradient(
+        135deg,
+        #5B3E3D 0%,
+        #6F4D4A 52%,
+        #5B3E3D 100%
+    ) !important;
 
     box-shadow:
         0 5px 18px rgba(9, 24, 39, 0.24),
@@ -51,14 +51,14 @@ html body .mmic-main-navigation::after {
 
     height: 2px;
 
-    background: linear-gradient(
-        90deg,
-        transparent,
-        #b97a56 18%,
-        #d8b08c 50%,
-        #b97a56 82%,
-        transparent
-    );
+ background: linear-gradient(
+    90deg,
+    transparent,
+    #C97961 18%,
+    #E9A58F 50%,
+    #C97961 82%,
+    transparent
+);
 
     pointer-events: none;
 }
