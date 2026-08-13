@@ -1915,3 +1915,28 @@ html body .mmic-forum-legend .mmic-legend-item:hover
 .mmic-legend-icon::before {
     background: #f3c69f !important;
 }
+/* =========================================================
+   SURCHARGE FINALE — TITRES DE CATÉGORIES
+   ========================================================= */
+
+.mmic-category .titreCate {
+  background:
+    linear-gradient(
+      90deg,
+      #76504D 0%,
+      #8C615D 50%,
+      #76504D 100%
+    ) !important;
+
+  border-color: rgba(213, 141, 122, 0.70) !important;
+  border-bottom-color: #D58D7A !important;
+}
+
+.mmic-category .titreCate span {
+  color: #FFF8F4 !important;
+}
+
+.mmic-category .titreCate span::before,
+.mmic-category .titreCate span::after {
+  background: #D58D7A !important;
+}
