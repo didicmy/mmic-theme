@@ -1940,12 +1940,3 @@ html body .mmic-forum-legend .mmic-legend-item:hover
 .mmic-category .titreCate span::after {
   background: #D58D7A !important;
 }
-/* =========================================================
-   TITRES DES GRANDES CATÉGORIES
-   ========================================================= */
-
-.mmic-category .titreCate,
-.mmic-category .titreCate span,
-.mmic-category .titreCate a {
-    color: #FFF8F4 !important;
-}
