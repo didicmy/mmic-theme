@@ -890,3 +890,48 @@ html body .mmic-viewforum-watch
     }
 
 }
+/* =========================================================
+   INDEX — LIEN SUPPRIMER LES COOKIES
+   ========================================================= */
+
+a[href*="delete_cookies"],
+a[href*="cookies"] {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+
+  min-height: 30px;
+  padding: 7px 12px;
+
+  border: 1px solid #E7C2B5;
+  border-radius: 6px;
+
+  background: #FFF8F4;
+
+  color: #7F5855 !important;
+
+  font-size: 8px;
+  font-weight: 700;
+
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  text-decoration: none !important;
+
+  box-shadow: 0 2px 5px rgba(81, 61, 59, 0.06);
+
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+a[href*="delete_cookies"]:hover,
+a[href*="cookies"]:hover {
+  background: #A96F68;
+  border-color: #D58D7A;
+  color: #FFF8F4 !important;
+
+  transform: translateY(-1px);
+}
