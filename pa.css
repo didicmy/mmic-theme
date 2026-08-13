@@ -23,13 +23,13 @@
    ========================================================= */
 
 .mmic-pa {
-  --navy: #0c1827;
-  --paper: #fbf8f3;
-  --cream: #f4eee5;
-  --copper: #b97a56;
-  --border: #d8cbbd;
-  --text: #252525;
-  --muted: #786f67;
+  --navy: #4f383a;
+  --paper: #fff8f4;
+  --cream: #f8e9df;
+  --copper: #c97d67;
+  --border: #e5c6b8;
+  --text: #4a3837;
+  --muted: #8b706b;
 
   box-sizing: border-box;
   width: 100%;
