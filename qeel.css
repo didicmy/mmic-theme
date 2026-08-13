@@ -719,3 +719,119 @@
   color: rgba(16, 36, 56, 0.05);
 }
 /* =========================================================
+   QEEL — HARMONISATION NOUVELLE PALETTE
+   ========================================================= */
+
+/* ---------- grand en-tête ---------- */
+
+.mmic-qeel-header {
+  border-bottom-color: #d98f7c;
+
+  background:
+    linear-gradient(
+      90deg,
+      #8f5d58 0%,
+      #a86f67 50%,
+      #8f5d58 100%
+    );
+}
+
+/* petite signature */
+.mmic-qeel-eyebrow {
+  color: #efb69d;
+}
+
+/* grand titre */
+.mmic-qeel-header h2 {
+  color: #fff8f4;
+}
+
+/* phrase sous le titre */
+.mmic-qeel-header p {
+  color: rgba(255, 248, 244, 0.78);
+}
+
+/* skyline en arrière-plan */
+.mmic-qeel-header::after {
+  opacity: 0.10;
+}
+
+
+/* ---------- titres des trois cartes ---------- */
+
+.mmic-qeel-card-title {
+  color: #75433f;
+  border-bottom-color: rgba(217, 143, 124, 0.32);
+}
+
+
+/* ---------- petites icônes rondes des titres ---------- */
+
+.mmic-qeel-title-icon {
+  background: #9a625d;
+  border-color: #d98f7c;
+  color: #fff8f4;
+}
+
+
+/* ---------- statistiques ---------- */
+
+.mmic-qeel-stat-icon {
+  background: #9a625d;
+  color: #f2b59d;
+}
+
+
+/* ---------- dernier arrivé ---------- */
+
+.mmic-qeel-newest {
+  border-left-color: #d98f7c;
+  background: rgba(217, 143, 124, 0.08);
+}
+
+.mmic-qeel-small-title {
+  color: #a76452;
+}
+
+
+/* ---------- liens du QEEL ---------- */
+
+.mmic-qeel a {
+  color: #a76452;
+}
+
+.mmic-qeel a:hover {
+  color: #75433f;
+}
+
+
+/* ---------- groupes ---------- */
+
+/* On garde leur couleur propre.
+   Seul le fond au survol rejoint la nouvelle palette. */
+
+.mmic-qeel-group:hover {
+  background: #8f5d58;
+}
+
+
+/* ---------- filigrane CHICAGO ---------- */
+
+.mmic-qeel-city-mark {
+  color: rgba(143, 93, 88, 0.06);
+}
+
+
+/* ---------- ombres légèrement réchauffées ---------- */
+
+.mmic-qeel {
+  box-shadow: 0 7px 20px rgba(117, 67, 63, 0.10);
+}
+
+.mmic-qeel-card {
+  box-shadow: 0 3px 9px rgba(117, 67, 63, 0.06);
+}
+
+.mmic-qeel-group:hover {
+  box-shadow: 0 3px 7px rgba(117, 67, 63, 0.12);
+}
