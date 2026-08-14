@@ -1361,4 +1361,433 @@ html body .mmic-vt-action:hover::before {
     justify-content: flex-start !important;
   }
 }
+/* =========================================================
+   MEET ME IN CHICAGO — VIEWTOPIC
+   NOUVELLE PALETTE + PROFIL RÉORGANISÉ
+   ========================================================= */
 
+
+/* =========================================================
+   1. CARTE DU MESSAGE
+   ========================================================= */
+
+html body .mmic-vt-post {
+  border-color: #E7C2B5;
+
+  background: #FFFDFB;
+
+  box-shadow:
+    0 6px 16px rgba(117, 67, 63, .07);
+}
+
+
+/* =========================================================
+   2. PROFIL — NOUVELLE PALETTE
+   ========================================================= */
+
+html body .mmic-vt-profile {
+  display: flex;
+  flex-direction: column;
+
+  border-right-color: #D58D7A;
+
+  background:
+    linear-gradient(
+      165deg,
+      #A96F68 0%,
+      #98635F 58%,
+      #895652 100%
+    );
+
+  color: #FFF8F4;
+}
+
+
+/* =========================================================
+   3. NOUVEL ORDRE DU PROFIL
+   ========================================================= */
+
+/* pseudo + rang */
+
+html body .mmic-vt-profile-top {
+  order: 1;
+}
+
+
+/* avatar */
+
+html body .mmic-vt-avatar {
+  order: 2;
+}
+
+
+/* boutons PROFIL / MP / EMAIL
+   passent immédiatement sous l'avatar */
+
+html body .mmic-vt-profile-links {
+  order: 3;
+
+  margin-top: 10px;
+  margin-bottom: 4px;
+}
+
+
+/* statut en ligne */
+
+html body .mmic-vt-online {
+  order: 4;
+
+  margin-top: 4px;
+  margin-bottom: 3px;
+}
+
+
+/* champs longs ensuite */
+
+html body .mmic-vt-profile-fields {
+  order: 5;
+
+  margin-top: 9px;
+}
+
+
+/* =========================================================
+   4. PSEUDO / RANG
+   ========================================================= */
+
+html body .mmic-vt-username,
+html body .mmic-vt-username a {
+  color: #FFFDFB !important;
+}
+
+
+html body .mmic-vt-rank {
+  color: #FFD0BC;
+}
+
+
+/* =========================================================
+   5. AVATAR
+   ========================================================= */
+
+html body .mmic-vt-avatar {
+  border-color: #F0B29E;
+
+  background: #F8E7DF;
+
+  box-shadow:
+    0 5px 14px rgba(92, 49, 45, .20);
+}
+
+
+/* =========================================================
+   6. CHAMPS DU PROFIL
+   ========================================================= */
+
+html body .mmic-vt-profile-fields {
+  border-top-color: rgba(255, 248, 244, .20);
+}
+
+
+html body .mmic-vt-profile-field {
+  border-bottom-color: rgba(255, 248, 244, .13);
+
+  color: #F8EAE5;
+}
+
+
+html body .mmic-vt-profile-field .label,
+html body .mmic-vt-profile-field strong {
+  color: #FFD0BC;
+}
+
+
+/* =========================================================
+   7. BOUTONS PROFIL / MP / EMAIL
+   ========================================================= */
+
+html body
+.mmic-vt-profile-links
+.mmic-vt-profile-link > a {
+  border-color: rgba(255, 210, 191, .72);
+
+  background: rgba(255, 248, 244, .08);
+
+  color: #FFF8F4;
+
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.06);
+
+  transition:
+    background .2s ease,
+    border-color .2s ease,
+    transform .2s ease;
+}
+
+
+html body
+.mmic-vt-profile-links
+.mmic-vt-profile-link > a:hover {
+  border-color: #FFF0E8;
+
+  background: rgba(255, 248, 244, .18);
+
+  color: #FFF;
+
+  transform: translateY(-1px);
+}
+
+
+/* =========================================================
+   8. FIL D'ARIANE + TITRE
+   ========================================================= */
+
+html body .mmic-vt-navigation {
+  border-color: #E7C2B5;
+
+  background: #FFF8F4;
+}
+
+
+html body .mmic-vt-breadcrumb a {
+  color: #75433F !important;
+}
+
+
+html body .mmic-vt-breadcrumb a:hover {
+  color: #A96F68 !important;
+}
+
+
+html body .mmic-vt-heading-line,
+html body .mmic-vt-section-title,
+html body .mmic-vt-signature-line {
+  color: #A96F68;
+}
+
+
+html body .mmic-vt-heading-line::before,
+html body .mmic-vt-heading-line::after,
+html body .mmic-vt-section-title::before,
+html body .mmic-vt-section-title::after,
+html body .mmic-vt-signature-line::before,
+html body .mmic-vt-signature-line::after {
+  background: #E2B3A3;
+}
+
+
+html body .mmic-vt-topic-heading h1 {
+  color: #75433F;
+}
+
+
+/* =========================================================
+   9. ENTÊTE DU MESSAGE / DATE
+   ========================================================= */
+
+html body .mmic-vt-post-header {
+  border-bottom-color: #EED8CF;
+
+  background: #FFF7F2;
+}
+
+
+html body .mmic-vt-post-date {
+  color: #8F7A73;
+}
+
+
+/* vieux rond bleu devant la date */
+
+html body .mmic-vt-post-date::before {
+  border-color: #D58D7A;
+
+  background: #A96F68;
+}
+
+
+/* ancienne icône éventuelle */
+
+html body .mmic-vt-post-date-icon {
+  background: #A96F68;
+
+  color: #FFF8F4;
+}
+
+
+/* =========================================================
+   10. ACTIONS DU MESSAGE
+   MULTIPLE / CITER / ÉDITER / SUPPRIMER...
+   ========================================================= */
+
+html body .mmic-vt-post-actions .mmic-vt-action {
+  border-color: #E7C2B5 !important;
+
+  background: #FFF8F4 !important;
+
+  color: #75433F !important;
+
+  box-shadow:
+    0 1px 3px rgba(117,67,63,.07) !important;
+}
+
+
+html body .mmic-vt-action::before {
+  background: #A96F68 !important;
+
+  color: #FFF8F4 !important;
+}
+
+
+html body .mmic-vt-action:hover {
+  border-color: #D58D7A !important;
+
+  background: #A96F68 !important;
+
+  color: #FFF8F4 !important;
+
+  box-shadow:
+    0 3px 7px rgba(117,67,63,.13) !important;
+}
+
+
+html body .mmic-vt-action:hover::before {
+  background: #FFF8F4 !important;
+
+  color: #A96F68 !important;
+}
+
+
+/* =========================================================
+   11. BOUTONS NOUVEAU SUJET / RÉPONDRE
+   ========================================================= */
+
+html body .mmic-vt-main-button,
+html body .mmic-vt-small-button {
+  border-color: #D58D7A !important;
+
+  background: #A96F68 !important;
+
+  color: #FFF8F4 !important;
+
+  box-shadow:
+    0 3px 8px rgba(117,67,63,.12);
+}
+
+
+html body .mmic-vt-main-button-icon {
+  background: #8F5D58;
+
+  color: #FFF8F4;
+}
+
+
+html body .mmic-vt-main-button:hover,
+html body .mmic-vt-small-button:hover {
+  border-color: #F0B29E !important;
+
+  background: #8F5D58 !important;
+
+  color: #FFF8F4 !important;
+
+  box-shadow:
+    0 5px 12px rgba(117,67,63,.16);
+}
+
+
+/* =========================================================
+   12. CONTENU DU MESSAGE
+   ========================================================= */
+
+html body .mmic-vt-content {
+  background: #FFFDFB;
+}
+
+
+html body .mmic-vt-message {
+  color: #574B48;
+}
+
+
+html body .mmic-vt-message blockquote {
+  border-left-color: #D58D7A;
+
+  background: #FFF3ED;
+
+  color: #685854;
+}
+
+
+html body .mmic-vt-message code {
+  background: #F7E8E1;
+}
+
+
+/* =========================================================
+   13. VOTES
+   ========================================================= */
+
+html body .mmic-vt-vote-button a {
+  background: #A96F68;
+
+  color: #FFF8F4 !important;
+}
+
+
+html body .mmic-vt-vote-button a:hover {
+  background: #8F5D58;
+}
+
+
+/* =========================================================
+   14. BLOCS DU BAS
+   ========================================================= */
+
+html body .mmic-vt-topic-bottom,
+html body .mmic-vt-quick-reply,
+html body .mmic-vt-permissions,
+html body .mmic-vt-bottom-tools,
+html body .mmic-vt-moderation-panel,
+html body .mmic-vt-admin-tools,
+html body .mmic-vt-hidden-post,
+html body .mmic-vt-no-post {
+  border-color: #E7C2B5;
+
+  background: #FFF8F4;
+}
+
+
+html body .mmic-vt-watch-topic a {
+  color: #75433F !important;
+}
+
+
+html body .mmic-vt-permissions-title {
+  border-color: #E7C2B5;
+
+  color: #A76452;
+}
+
+
+html body .mmic-vt-jumpbox select {
+  border-color: #E7C2B5;
+
+  background: #FFF8F4;
+
+  color: #75433F;
+}
+
+
+/* =========================================================
+   15. MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+  html body .mmic-vt-profile {
+    border-right: 0;
+
+    border-bottom-color: #D58D7A;
+  }
+
+}
