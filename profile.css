@@ -5079,3 +5079,187 @@ body.mmic-profile-signature #page-body table.forumline .thSides *,
 body.mmic-profile-signature #page-body table.forumline .catHead * {
     color: #FFF8F4 !important;
 }
+/* =========================================================
+   CORRECTIF FINAL — BANDEAUX PROFIL
+   MEMBRES SUIVIS / NOTIFICATIONS / SUJETS / FAVORIS
+   ========================================================= */
+
+
+/* =========================================================
+   MEMBRES SUIVIS
+   ========================================================= */
+
+body.mmic-profile-followers #page-body th,
+body.mmic-profile-followers #page-body .thHead,
+body.mmic-profile-followers #page-body .thSides,
+body.mmic-profile-followers #page-body .catHead {
+    background-image:
+        linear-gradient(
+            90deg,
+            #8F5D58 0%,
+            #A96F68 50%,
+            #8F5D58 100%
+        ) !important;
+
+    background-color: #A96F68 !important;
+
+    border-color: #D58D7A !important;
+
+    color: #FFF8F4 !important;
+}
+
+body.mmic-profile-followers #page-body th *,
+body.mmic-profile-followers #page-body .thHead *,
+body.mmic-profile-followers #page-body .thSides *,
+body.mmic-profile-followers #page-body .catHead * {
+    color: #FFF8F4 !important;
+}
+
+
+/* bouton "ne plus suivre" */
+
+body.mmic-profile-followers #page-body input[type="submit"],
+body.mmic-profile-followers #page-body .mainoption,
+body.mmic-profile-followers #page-body .liteoption {
+    background: #A96F68 !important;
+    border-color: #D58D7A !important;
+    color: #FFF8F4 !important;
+}
+
+body.mmic-profile-followers #page-body input[type="submit"]:hover,
+body.mmic-profile-followers #page-body .mainoption:hover,
+body.mmic-profile-followers #page-body .liteoption:hover {
+    background: #8F5D58 !important;
+    border-color: #F0B29E !important;
+}
+
+
+/* =========================================================
+   NOTIFICATIONS
+   ========================================================= */
+
+body.mmic-profile-notifications #page-body th,
+body.mmic-profile-notifications #page-body .thHead,
+body.mmic-profile-notifications #page-body .thSides,
+body.mmic-profile-notifications #page-body .catHead {
+    background-image:
+        linear-gradient(
+            90deg,
+            #8F5D58 0%,
+            #A96F68 50%,
+            #8F5D58 100%
+        ) !important;
+
+    background-color: #A96F68 !important;
+
+    border-color: #D58D7A !important;
+
+    color: #FFF8F4 !important;
+}
+
+body.mmic-profile-notifications #page-body th *,
+body.mmic-profile-notifications #page-body .thHead *,
+body.mmic-profile-notifications #page-body .thSides *,
+body.mmic-profile-notifications #page-body .catHead * {
+    color: #FFF8F4 !important;
+}
+
+
+/* bouton enregistrer */
+
+body.mmic-profile-notifications #page-body input[type="submit"],
+body.mmic-profile-notifications #page-body .mainoption {
+    background: #A96F68 !important;
+    border-color: #D58D7A !important;
+    color: #FFF8F4 !important;
+}
+
+body.mmic-profile-notifications #page-body input[type="submit"]:hover,
+body.mmic-profile-notifications #page-body .mainoption:hover {
+    background: #8F5D58 !important;
+}
+
+
+/* =========================================================
+   SUJETS SURVEILLÉS
+   ========================================================= */
+
+body.mmic-profile-topic-list #page-body th,
+body.mmic-profile-topic-list #page-body .thHead,
+body.mmic-profile-topic-list #page-body .thSides,
+body.mmic-profile-topic-list #page-body .catHead {
+    background-image:
+        linear-gradient(
+            90deg,
+            #8F5D58 0%,
+            #A96F68 50%,
+            #8F5D58 100%
+        ) !important;
+
+    background-color: #A96F68 !important;
+
+    border-color: #D58D7A !important;
+
+    color: #FFF8F4 !important;
+}
+
+body.mmic-profile-topic-list #page-body th *,
+body.mmic-profile-topic-list #page-body .thHead *,
+body.mmic-profile-topic-list #page-body .thSides *,
+body.mmic-profile-topic-list #page-body .catHead * {
+    color: #FFF8F4 !important;
+}
+
+
+/* =========================================================
+   FAVORIS
+   ========================================================= */
+
+body.mmic-profile-favourites #page-body th,
+body.mmic-profile-favourites #page-body .thHead,
+body.mmic-profile-favourites #page-body .thSides,
+body.mmic-profile-favourites #page-body .catHead {
+    background-image:
+        linear-gradient(
+            90deg,
+            #8F5D58 0%,
+            #A96F68 50%,
+            #8F5D58 100%
+        ) !important;
+
+    background-color: #A96F68 !important;
+
+    border-color: #D58D7A !important;
+
+    color: #FFF8F4 !important;
+}
+
+body.mmic-profile-favourites #page-body th *,
+body.mmic-profile-favourites #page-body .thHead *,
+body.mmic-profile-favourites #page-body .thSides *,
+body.mmic-profile-favourites #page-body .catHead * {
+    color: #FFF8F4 !important;
+}
+
+
+/* =========================================================
+   PETIT KICKER "PROFIL"
+   ========================================================= */
+
+body.mmic-profile-followers #page-body th::before,
+body.mmic-profile-followers #page-body .thHead::before,
+body.mmic-profile-followers #page-body .thSides::before,
+
+body.mmic-profile-notifications #page-body th::before,
+body.mmic-profile-notifications #page-body .thHead::before,
+body.mmic-profile-notifications #page-body .thSides::before,
+
+body.mmic-profile-topic-list #page-body th::before,
+body.mmic-profile-topic-list #page-body .thHead::before,
+body.mmic-profile-topic-list #page-body .thSides::before,
+
+body.mmic-profile-favourites #page-body th::before,
+body.mmic-profile-favourites #page-body .thHead::before,
+body.mmic-profile-favourites #page-body .thSides::before {
+    color: #F0B29E !important;
+}
