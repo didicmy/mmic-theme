@@ -4858,3 +4858,164 @@ body.mmic-profile-topic-list input[type="checkbox"],
 body.mmic-profile-friendsfoes input[type="checkbox"] {
     accent-color: #A96F68 !important;
 }
+/* =========================================================
+   MEET ME IN CHICAGO — AMIS & IGNORÉS
+   HARMONISATION PALETTE
+   ========================================================= */
+
+
+/* =========================================================
+   BANDEAUX
+   ========================================================= */
+
+body.mmic-profile-friendsfoes #page-body table.forumline th,
+body.mmic-profile-friendsfoes #page-body table.forumline .thHead,
+body.mmic-profile-friendsfoes #page-body table.forumline .thSides,
+body.mmic-profile-friendsfoes #page-body table.forumline .catHead {
+    height: auto !important;
+
+    border: 0 !important;
+    border-top: 1px solid #E3AD9A !important;
+    border-bottom: 1px solid #D58D7A !important;
+
+    background:
+        linear-gradient(
+            90deg,
+            #8F5D58 0%,
+            #A96F68 50%,
+            #8F5D58 100%
+        ) !important;
+
+    background-image: none !important;
+
+    color: #FFF8F4 !important;
+}
+
+
+/* tout le contenu du bandeau */
+
+body.mmic-profile-friendsfoes #page-body table.forumline th *,
+body.mmic-profile-friendsfoes #page-body table.forumline .thHead *,
+body.mmic-profile-friendsfoes #page-body table.forumline .thSides *,
+body.mmic-profile-friendsfoes #page-body table.forumline .catHead * {
+    color: #FFF8F4 !important;
+}
+
+
+/* petit "PROFIL" */
+
+body.mmic-profile-friendsfoes #page-body table.forumline th::before,
+body.mmic-profile-friendsfoes #page-body table.forumline .thHead::before,
+body.mmic-profile-friendsfoes #page-body table.forumline .thSides::before,
+body.mmic-profile-friendsfoes #page-body table.forumline .catHead::before {
+    color: #F0B29E !important;
+}
+
+
+/* =========================================================
+   TABLEAUX / BLOCS
+   ========================================================= */
+
+body.mmic-profile-friendsfoes #page-body table.forumline {
+    border-color: #E7C2B5 !important;
+
+    background: #FFF8F4 !important;
+
+    box-shadow:
+        0 4px 12px rgba(117, 67, 63, .05) !important;
+}
+
+
+body.mmic-profile-friendsfoes #page-body table.forumline td {
+    border-color: #F0DDD4 !important;
+
+    background: #FFF8F4 !important;
+
+    color: #75433F !important;
+}
+
+
+/* =========================================================
+   TEXTES
+   ========================================================= */
+
+body.mmic-profile-friendsfoes #page-body .gen,
+body.mmic-profile-friendsfoes #page-body .genmed {
+    color: #75433F !important;
+}
+
+
+body.mmic-profile-friendsfoes #page-body .gensmall {
+    color: #9A817A !important;
+}
+
+
+/* =========================================================
+   CHAMP "AJOUTER UN AMI / IGNORÉ"
+   ========================================================= */
+
+body.mmic-profile-friendsfoes #page-body input[type="text"],
+body.mmic-profile-friendsfoes #page-body input.post {
+    border: 1px solid #E7C2B5 !important;
+    border-radius: 5px !important;
+
+    background: #FFFAF7 !important;
+
+    color: #75433F !important;
+
+    box-shadow: none !important;
+}
+
+
+body.mmic-profile-friendsfoes #page-body input[type="text"]:focus,
+body.mmic-profile-friendsfoes #page-body input.post:focus {
+    outline: none !important;
+
+    border-color: #D58D7A !important;
+
+    box-shadow:
+        0 0 0 2px rgba(213, 141, 122, .12) !important;
+}
+
+
+/* =========================================================
+   BOUTONS
+   ========================================================= */
+
+body.mmic-profile-friendsfoes #page-body input[type="submit"],
+body.mmic-profile-friendsfoes #page-body input.mainoption,
+body.mmic-profile-friendsfoes #page-body input.liteoption {
+    border: 1px solid #D58D7A !important;
+
+    background: #A96F68 !important;
+
+    color: #FFF8F4 !important;
+
+    box-shadow:
+        0 3px 7px rgba(117, 67, 63, .10) !important;
+}
+
+
+body.mmic-profile-friendsfoes #page-body input[type="submit"]:hover,
+body.mmic-profile-friendsfoes #page-body input.mainoption:hover,
+body.mmic-profile-friendsfoes #page-body input.liteoption:hover {
+    border-color: #F0B29E !important;
+
+    background: #8F5D58 !important;
+
+    color: #FFF8F4 !important;
+}
+
+
+/* =========================================================
+   LIENS
+   ========================================================= */
+
+body.mmic-profile-friendsfoes #page-body a {
+    color: #A76452 !important;
+}
+
+
+body.mmic-profile-friendsfoes #page-body a:hover {
+    color: #75433F !important;
+}
