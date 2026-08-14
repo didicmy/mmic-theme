@@ -5263,3 +5263,52 @@ body.mmic-profile-favourites #page-body .thHead::before,
 body.mmic-profile-favourites #page-body .thSides::before {
     color: #F0B29E !important;
 }
+/* =========================================================
+   MEMBRES SUIVIS — CORRECTIF BANDEAU RÉCALCITRANT
+   ========================================================= */
+
+html body.mmic-profile-followers
+#page-body
+table.forumline
+thead
+tr
+th.thHead {
+    background:
+        linear-gradient(
+            90deg,
+            #8F5D58 0%,
+            #A96F68 50%,
+            #8F5D58 100%
+        ) !important;
+
+    border: 0 !important;
+    border-bottom: 1px solid #D58D7A !important;
+
+    color: #FFF8F4 !important;
+}
+
+
+/* texte du bandeau */
+
+html body.mmic-profile-followers
+#page-body
+table.forumline
+thead
+tr
+th.thHead > div {
+    background: transparent !important;
+
+    color: #FFF8F4 !important;
+}
+
+
+/* petit PROFIL */
+
+html body.mmic-profile-followers
+#page-body
+table.forumline
+thead
+tr
+th.thHead::before {
+    color: #F0B29E !important;
+}
