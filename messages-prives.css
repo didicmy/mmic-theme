@@ -3750,3 +3750,214 @@ html body .mmic-pm-compose-page
 #optionsitems_show input[type="checkbox"] {
     accent-color: #b6837b !important;
 }
+/* =========================================================
+   MEET ME IN CHICAGO
+   MP — COMPOSITION + PRÉVISUALISATION
+   PALETTE ÉTÉ 2026
+   ========================================================= */
+
+
+/* ---------------------------------------------------------
+   GRAND BANDEAU — ENVOYER UN NOUVEAU MESSAGE
+   --------------------------------------------------------- */
+
+html body .mmic-pm-compose-page .thHead,
+html body .mmic-pm-compose-page th.thHead,
+html body .mmic-pm-compose-page table.forumline > tbody > tr:first-child > th {
+    background: #b6837b !important;
+    background-image: none !important;
+
+    border-color: #d8a17e !important;
+    border-bottom-color: #d8a17e !important;
+
+    color: #fffaf4 !important;
+}
+
+
+/* tout ce qui se trouve dans le bandeau */
+
+html body .mmic-pm-compose-page .thHead *,
+html body .mmic-pm-compose-page th.thHead * {
+    color: #fffaf4 !important;
+}
+
+
+/* petit texte "CORRESPONDANCE PRIVÉE" */
+
+html body .mmic-pm-compose-page .thHead::before,
+html body .mmic-pm-compose-page th.thHead::before {
+    color: #f0c5a5 !important;
+}
+
+
+/* ---------------------------------------------------------
+   TITRE PRINCIPAL PERSONNALISÉ
+   --------------------------------------------------------- */
+
+html body .mmic-pm-compose-header,
+html body .mmic-pm-compose-title,
+html body .mmic-pm-compose-head {
+    background: #b6837b !important;
+    background-image: none !important;
+
+    border-color: #d8a17e !important;
+
+    color: #fffaf4 !important;
+}
+
+html body .mmic-pm-compose-header *,
+html body .mmic-pm-compose-title *,
+html body .mmic-pm-compose-head * {
+    color: #fffaf4 !important;
+}
+
+
+/* ---------------------------------------------------------
+   CHAMPS / LABELS
+   --------------------------------------------------------- */
+
+html body .mmic-pm-compose-page
+.mmic-pm-compose-card > tbody > tr:not(#parent_editor_simple)
+> td:first-child .gen,
+
+html body .mmic-pm-compose-page
+.mmic-pm-compose-card > tbody > tr:not(#parent_editor_simple)
+> td:first-child .genmed {
+    color: #b46f61 !important;
+}
+
+
+/* ---------------------------------------------------------
+   TROUVER UN NOM D'UTILISATEUR
+   --------------------------------------------------------- */
+
+html body .mmic-pm-compose-page #find_user {
+    border-color: #d8a17e !important;
+
+    background: #b6837b !important;
+    color: #fffaf4 !important;
+}
+
+html body .mmic-pm-compose-page #find_user:hover {
+    border-color: #c98b78 !important;
+
+    background: #a66f67 !important;
+}
+
+
+/* ---------------------------------------------------------
+   NAVIGATION DU HAUT
+   --------------------------------------------------------- */
+
+html body .mmic-pm-compose-return {
+    border-color: #d8a17e !important;
+
+    background: #b6837b !important;
+    color: #fffaf4 !important;
+}
+
+html body .mmic-pm-compose-return:hover {
+    background: #a66f67 !important;
+}
+
+
+/* ---------------------------------------------------------
+   BOUTONS ENVOYER / PRÉVISUALISER
+   --------------------------------------------------------- */
+
+html body .mmic-pm-compose-actions input[type="submit"] {
+    border-color: #d8a17e !important;
+
+    background: #b6837b !important;
+    color: #fffaf4 !important;
+}
+
+html body .mmic-pm-compose-actions input[type="submit"]:hover {
+    border-color: #c98b78 !important;
+
+    background: #a66f67 !important;
+    color: #fffaf4 !important;
+}
+
+
+/* =========================================================
+   PRÉVISUALISATION DU MESSAGE PRIVÉ
+   ========================================================= */
+
+/*
+   Forumactif réutilise parfois une table native au-dessus
+   du formulaire quand on prévisualise.
+*/
+
+html body .mmic-pm-compose-page
+table.forumline:first-of-type .thHead,
+
+html body .mmic-pm-compose-page
+table.forumline:first-of-type th.thHead {
+    background: #b6837b !important;
+    background-image: none !important;
+
+    border-color: #d8a17e !important;
+
+    color: #fffaf4 !important;
+}
+
+html body .mmic-pm-compose-page
+table.forumline:first-of-type .thHead *,
+
+html body .mmic-pm-compose-page
+table.forumline:first-of-type th.thHead * {
+    color: #fffaf4 !important;
+}
+
+
+/* ---------------------------------------------------------
+   APERÇU PERSONNALISÉ SI CLASSES MMIC
+   --------------------------------------------------------- */
+
+html body .mmic-pm-preview-header,
+html body .mmic-pm-preview-head,
+html body .mmic-pm-preview-title {
+    background: #b6837b !important;
+    background-image: none !important;
+
+    border-color: #d8a17e !important;
+
+    color: #fffaf4 !important;
+}
+
+html body .mmic-pm-preview-header *,
+html body .mmic-pm-preview-head *,
+html body .mmic-pm-preview-title * {
+    color: #fffaf4 !important;
+}
+
+
+/* ---------------------------------------------------------
+   APERÇU — PETITS LABELS
+   --------------------------------------------------------- */
+
+html body .mmic-pm-compose-page .mmic-pm-preview-kicker,
+html body .mmic-pm-compose-page .mmic-pm-preview-label {
+    color: #b46f61 !important;
+}
+
+
+/* ---------------------------------------------------------
+   OPTIONS
+   --------------------------------------------------------- */
+
+html body .mmic-pm-compose-page #optionsitems th,
+html body .mmic-pm-compose-page #optionsitems_show th {
+    background: #b6837b !important;
+    background-image: none !important;
+
+    border-color: #d8a17e !important;
+
+    color: #fffaf4 !important;
+}
+
+html body .mmic-pm-compose-page #optionsitems th *,
+html body .mmic-pm-compose-page #optionsitems_show th * {
+    color: #fffaf4 !important;
+}
