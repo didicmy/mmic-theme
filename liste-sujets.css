@@ -2539,3 +2539,354 @@ html body .mmic-topic:hover .mmic-topic-last-avatar {
     }
 
 }
+/* =========================================================
+   MEET ME IN CHICAGO — LISTE DES SUJETS
+   PALETTE ÉTÉ 2026 — SURCHARGE FINALE
+   ========================================================= */
+
+
+/* ---------------------------------------------------------
+   FIL D'ARIANE
+   --------------------------------------------------------- */
+
+html body .mmic-viewforum-navigation {
+    border-color: #E7C2B5 !important;
+    background: #FFF8F4 !important;
+    color: #8F7A73 !important;
+}
+
+html body .mmic-viewforum-breadcrumb a {
+    color: #75433F !important;
+}
+
+html body .mmic-viewforum-breadcrumb a:hover,
+html body .mmic-viewforum-more-label {
+    color: #A76452 !important;
+}
+
+
+/* ---------------------------------------------------------
+   PETIT TITRE AU-DESSUS DES SUJETS
+   --------------------------------------------------------- */
+
+html body .mmic-topics-divider {
+    color: #A96F68 !important;
+}
+
+html body .mmic-topics-divider::before,
+html body .mmic-topics-divider::after {
+    background: #E7C2B5 !important;
+}
+
+html body .mmic-topics-divider span {
+    color: #A96F68 !important;
+}
+
+html body .mmic-topics-title,
+html body .mmic-topics-header h1 {
+    color: #75433F !important;
+}
+
+html body .mmic-topics-header .mmic-topics-pagination {
+    color: #8F7A73 !important;
+}
+
+html body .mmic-topics-header .mmic-topics-pagination a {
+    color: #A76452 !important;
+}
+
+
+/* ---------------------------------------------------------
+   CARTES DES SUJETS
+   --------------------------------------------------------- */
+
+html body .mmic-topic {
+    border-color: #E7C2B5 !important;
+
+    background:
+        linear-gradient(
+            135deg,
+            #FFFDFB 0%,
+            #FFF8F4 100%
+        ) !important;
+
+    box-shadow:
+        0 2px 7px rgba(117,67,63,.04) !important;
+}
+
+html body .mmic-topic:hover {
+    border-color: rgba(169,111,104,.48) !important;
+
+    box-shadow:
+        0 8px 18px rgba(117,67,63,.08),
+        inset 0 1px 0 rgba(255,255,255,.9) !important;
+}
+
+
+/* Petit trait qui apparaît au hover */
+
+html body .mmic-topic::before {
+    background:
+        linear-gradient(
+            180deg,
+            transparent,
+            #A96F68 25%,
+            #F0B29E 50%,
+            #A96F68 75%,
+            transparent
+        ) !important;
+}
+
+
+/* ---------------------------------------------------------
+   ICÔNE DE STATUT
+   --------------------------------------------------------- */
+
+html body .mmic-topic-status,
+html body .mmic-topic-status-icon {
+    border-color: #D58D7A !important;
+
+    background:
+        linear-gradient(
+            145deg,
+            #8F5D58 0%,
+            #A96F68 100%
+        ) !important;
+
+    box-shadow:
+        inset 0 1px 0 rgba(255,255,255,.10),
+        0 3px 7px rgba(117,67,63,.12) !important;
+}
+
+
+/* Icône blanche / pêche */
+
+html body .mmic-topic-status-icon::before {
+    background: #FFF8F4 !important;
+}
+
+
+/* Nouveau message = un peu plus lumineux */
+
+html body .mmic-topic[data-folder-state="Nouveaux messages"]
+.mmic-topic-status-icon {
+    border-color: #F0B29E !important;
+
+    box-shadow:
+        inset 0 1px 0 rgba(255,255,255,.12),
+        0 0 0 2px rgba(213,141,122,.12),
+        0 4px 9px rgba(117,67,63,.14) !important;
+}
+
+
+/* ---------------------------------------------------------
+   TITRE DU SUJET
+   --------------------------------------------------------- */
+
+html body .mmic-topic-title {
+    color: #75433F !important;
+}
+
+html body .mmic-topic-title:hover {
+    color: #A96F68 !important;
+}
+
+html body .mmic-topic-title::after {
+    background:
+        linear-gradient(
+            90deg,
+            #A96F68,
+            transparent
+        ) !important;
+}
+
+
+/* Type éventuel : annonce / note / etc. */
+
+html body .mmic-topic-type:not(:empty) {
+    background: #A96F68 !important;
+    color: #FFF8F4 !important;
+}
+
+
+/* ---------------------------------------------------------
+   AUTEUR + INFOS
+   --------------------------------------------------------- */
+
+html body .mmic-topic-main,
+html body .mmic-topic-meta {
+    border-color: #EED8CF !important;
+}
+
+html body .mmic-topic-meta {
+    color: #8F7A73 !important;
+}
+
+html body .mmic-topic-meta-label {
+    color: #A76452 !important;
+}
+
+
+/* Réponses / vues */
+
+html body .mmic-topic-number {
+    border-color: rgba(213,141,122,.32) !important;
+
+    background:
+        linear-gradient(
+            180deg,
+            #FFFDFB,
+            #FFF7F2
+        ) !important;
+
+    box-shadow:
+        inset 0 1px 0 rgba(255,255,255,.85) !important;
+}
+
+html body .mmic-topic-number strong {
+    color: #75433F !important;
+}
+
+html body .mmic-topic-number span {
+    color: #9B837B !important;
+}
+
+
+/* ---------------------------------------------------------
+   DERNIER PASSAGE
+   --------------------------------------------------------- */
+
+html body .mmic-topic-last {
+    border-color: rgba(213,141,122,.30) !important;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255,253,251,.94),
+            rgba(255,246,241,.80)
+        ) !important;
+}
+
+html body .mmic-topic:hover .mmic-topic-last {
+    border-color: rgba(169,111,104,.42) !important;
+
+    background:
+        linear-gradient(
+            135deg,
+            #FFFDFB,
+            #FFF5F0
+        ) !important;
+}
+
+html body .mmic-topic-last-avatar {
+    border-color: #D58D7A !important;
+
+    background: #F8E7DF !important;
+
+    box-shadow:
+        0 3px 7px rgba(117,67,63,.10) !important;
+}
+
+html body .mmic-topic:hover .mmic-topic-last-avatar {
+    box-shadow:
+        0 6px 13px rgba(117,67,63,.14) !important;
+}
+
+html body .mmic-topic-last-content {
+    color: #8F7A73 !important;
+}
+
+html body .mmic-topic-last-content::before {
+    color: #A76452 !important;
+}
+
+html body .mmic-topic-last-author a {
+    color: #75433F !important;
+}
+
+
+/* ---------------------------------------------------------
+   BAS DE PAGE — MODÉRATION / UTILISATEURS / PERMISSIONS
+   --------------------------------------------------------- */
+
+html body .mmic-viewforum-links,
+html body .mmic-viewforum-moderators,
+html body .mmic-viewforum-users,
+html body .mmic-viewforum-permissions {
+    border-color: #E7C2B5 !important;
+
+    background: #FFF8F4 !important;
+
+    box-shadow:
+        inset 0 1px 0 rgba(255,255,255,.8),
+        0 2px 6px rgba(117,67,63,.04) !important;
+}
+
+
+/* Titres */
+
+html body .mmic-viewforum-moderators-title,
+html body .mmic-viewforum-users-title,
+html body .mmic-viewforum-permissions-title,
+html body .mmic-viewforum-moderators > strong:first-child,
+html body .mmic-viewforum-users > strong:first-child,
+html body .mmic-viewforum-permissions > strong:first-child {
+    color: #A76452 !important;
+}
+
+
+/* Rond des utilisateurs présents */
+
+html body .mmic-viewforum-users h3 {
+    color: #75433F !important;
+}
+
+html body .mmic-viewforum-users h3::before,
+html body .mmic-viewforum-users-icon {
+    background: #A96F68 !important;
+    color: #FFF8F4 !important;
+}
+
+
+/* Liens */
+
+html body .mmic-viewforum-users a,
+html body .mmic-viewforum-permissions a,
+html body .mmic-viewforum-moderators a {
+    color: #75433F !important;
+}
+
+html body .mmic-viewforum-users a:hover,
+html body .mmic-viewforum-permissions a:hover,
+html body .mmic-viewforum-moderators a:hover {
+    color: #A96F68 !important;
+
+    text-decoration-color:
+        rgba(169,111,104,.45) !important;
+}
+
+
+/* ---------------------------------------------------------
+   RETOUR EN HAUT
+   --------------------------------------------------------- */
+
+html body .mmic-viewforum-top-link,
+html body a[href="#top"] {
+    border-color: #D58D7A !important;
+
+    background: #A96F68 !important;
+
+    color: #FFF8F4 !important;
+
+    box-shadow:
+        0 3px 8px rgba(117,67,63,.12) !important;
+}
+
+html body .mmic-viewforum-top-link:hover,
+html body a[href="#top"]:hover {
+    background: #8F5D58 !important;
+    color: #FFF8F4 !important;
+
+    box-shadow:
+        0 6px 12px rgba(117,67,63,.15) !important;
+}
