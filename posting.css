@@ -3150,3 +3150,78 @@ html body .mmic-posting-page #optionsitems_show .thHead a:hover {
   background: rgba(255, 255, 255, .18) !important;
   border-color: #fffaf6 !important;
 }
+/* =========================================================
+   OPTIONS — DOSE DE CHEVAL
+   ========================================================= */
+
+/* La table entière */
+html body .mmic-posting-page #optionsitems > table.forumline,
+html body .mmic-posting-page #optionsitems_show > table.forumline {
+  background: #b6837b !important;
+  background-color: #b6837b !important;
+  background-image: none !important;
+
+  border: 1px solid #d8a17e !important;
+  border-radius: 7px !important;
+
+  box-shadow: none !important;
+}
+
+
+/* Le TH qui contient "OPTIONS" */
+html body .mmic-posting-page #optionsitems > table.forumline > tbody > tr > th.thHead,
+html body .mmic-posting-page #optionsitems_show > table.forumline > tbody > tr > th.thHead {
+  background: #b6837b !important;
+  background-color: #b6837b !important;
+  background-image: none !important;
+
+  border: 0 !important;
+
+  color: #fffaf6 !important;
+}
+
+
+/* Forumactif a ENCORE une table dans le TH */
+html body .mmic-posting-page #optionsitems th.thHead table,
+html body .mmic-posting-page #optionsitems th.thHead tbody,
+html body .mmic-posting-page #optionsitems th.thHead tr,
+html body .mmic-posting-page #optionsitems th.thHead td,
+
+html body .mmic-posting-page #optionsitems_show th.thHead table,
+html body .mmic-posting-page #optionsitems_show th.thHead tbody,
+html body .mmic-posting-page #optionsitems_show th.thHead tr,
+html body .mmic-posting-page #optionsitems_show th.thHead td {
+  background: #b6837b !important;
+  background-color: #b6837b !important;
+  background-image: none !important;
+
+  border: 0 !important;
+}
+
+
+/* Texte OPTIONS */
+html body .mmic-posting-page #optionsitems th.thHead .gen,
+html body .mmic-posting-page #optionsitems_show th.thHead .gen {
+  color: #fffaf6 !important;
+}
+
+
+/* Bouton + à droite */
+html body .mmic-posting-page #optionsitems th.thHead a,
+html body .mmic-posting-page #optionsitems_show th.thHead a {
+  background: rgba(255,255,255,.10) !important;
+  background-image: none !important;
+
+  border: 1px solid rgba(255,250,246,.55) !important;
+
+  color: #fffaf6 !important;
+}
+
+
+/* Hover du petit + */
+html body .mmic-posting-page #optionsitems th.thHead a:hover,
+html body .mmic-posting-page #optionsitems_show th.thHead a:hover {
+  background: rgba(255,255,255,.22) !important;
+
+  border-color: #fffaf6 !important;
+}
