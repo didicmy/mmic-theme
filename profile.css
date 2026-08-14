@@ -4496,3 +4496,365 @@ html body .mmic-profile-business-left
     min-height: 0 !important;
     overflow: visible !important;
 }
+/* =========================================================
+   MEET ME IN CHICAGO — PROFIL / ÉDITION
+   HARMONISATION NOUVELLE PALETTE
+   À COLLER TOUT EN BAS DU CSS PROFIL
+   ========================================================= */
+
+
+/* =========================================================
+   CONTENEUR GÉNÉRAL
+   ========================================================= */
+
+html body .mmic-profile-edit-page {
+    color: #75433F;
+}
+
+
+/* =========================================================
+   TABLEAU PRINCIPAL
+   ========================================================= */
+
+html body .mmic-profile-edit-page .mmic-profile-edit-table,
+html body .mmic-profile-edit-page table.forumline {
+    border-color: #E7C2B5 !important;
+
+    background: #FFF8F4 !important;
+
+    box-shadow:
+        0 5px 14px rgba(117, 67, 63, .06) !important;
+}
+
+
+/* =========================================================
+   GRANDS BANDEAUX
+   "ENREGISTREMENT", "PROFIL PERSONNALISÉ", ETC.
+   ========================================================= */
+
+html body .mmic-profile-edit-page .thHead,
+html body .mmic-profile-edit-page .thSides,
+html body .mmic-profile-edit-page th.thHead,
+html body .mmic-profile-edit-page th.thSides {
+    border: 0 !important;
+
+    border-top: 1px solid #E3AD9A !important;
+    border-bottom: 1px solid #D58D7A !important;
+
+    background:
+        linear-gradient(
+            90deg,
+            #8F5D58 0%,
+            #A96F68 50%,
+            #8F5D58 100%
+        ) !important;
+
+    background-image: none;
+
+    color: #FFF8F4 !important;
+}
+
+
+/* contenu des bandeaux */
+
+html body .mmic-profile-edit-page .thHead *,
+html body .mmic-profile-edit-page .thSides *,
+html body .mmic-profile-edit-page th.thHead *,
+html body .mmic-profile-edit-page th.thSides * {
+    color: #FFF8F4 !important;
+}
+
+
+/* petit "PROFIL" au-dessus du titre */
+
+html body .mmic-profile-edit-page .thHead::before,
+html body .mmic-profile-edit-page .thSides::before {
+    color: #F0B29E !important;
+}
+
+
+/* =========================================================
+   CELLULES
+   ========================================================= */
+
+html body .mmic-profile-edit-page td.row1,
+html body .mmic-profile-edit-page td.row2,
+html body .mmic-profile-edit-page td.row3 {
+    border-bottom-color: #F0DDD4 !important;
+
+    background: #FFF8F4 !important;
+
+    color: #7F6761 !important;
+}
+
+
+/* intitulés */
+
+html body .mmic-profile-edit-page td.row1 {
+    color: #75433F !important;
+}
+
+
+/* =========================================================
+   TEXTES
+   ========================================================= */
+
+html body .mmic-profile-edit-page .gen,
+html body .mmic-profile-edit-page .genmed {
+    color: #75433F !important;
+}
+
+
+html body .mmic-profile-edit-page .gensmall {
+    color: #9A817A !important;
+}
+
+
+/* =========================================================
+   CHAMPS
+   ========================================================= */
+
+html body .mmic-profile-edit-page input[type="text"],
+html body .mmic-profile-edit-page input[type="password"],
+html body .mmic-profile-edit-page input[type="email"],
+html body .mmic-profile-edit-page input[type="number"],
+html body .mmic-profile-edit-page input[type="file"],
+html body .mmic-profile-edit-page select,
+html body .mmic-profile-edit-page textarea {
+    border: 1px solid #E7C2B5 !important;
+
+    background: #FFFAF7 !important;
+
+    color: #75433F !important;
+
+    box-shadow: none !important;
+}
+
+
+html body .mmic-profile-edit-page input[type="text"]:focus,
+html body .mmic-profile-edit-page input[type="password"]:focus,
+html body .mmic-profile-edit-page input[type="email"]:focus,
+html body .mmic-profile-edit-page input[type="number"]:focus,
+html body .mmic-profile-edit-page select:focus,
+html body .mmic-profile-edit-page textarea:focus {
+    outline: none !important;
+
+    border-color: #D58D7A !important;
+
+    box-shadow:
+        0 0 0 2px rgba(213, 141, 122, .12) !important;
+}
+
+
+/* radios / checkbox */
+
+html body .mmic-profile-edit-page input[type="radio"],
+html body .mmic-profile-edit-page input[type="checkbox"] {
+    accent-color: #A96F68;
+}
+
+
+/* =========================================================
+   LIENS
+   ========================================================= */
+
+html body .mmic-profile-edit-page a {
+    color: #A76452;
+}
+
+
+html body .mmic-profile-edit-page a:hover {
+    color: #75433F;
+}
+
+
+/* =========================================================
+   BOUTONS BAS DE PAGE
+   ========================================================= */
+
+html body .mmic-profile-edit-page .mainoption,
+html body .mmic-profile-edit-page input.mainoption {
+    border-color: #D58D7A !important;
+
+    background: #A96F68 !important;
+
+    color: #FFF8F4 !important;
+
+    box-shadow:
+        0 3px 7px rgba(117, 67, 63, .10) !important;
+}
+
+
+html body .mmic-profile-edit-page .mainoption:hover,
+html body .mmic-profile-edit-page input.mainoption:hover {
+    border-color: #F0B29E !important;
+
+    background: #8F5D58 !important;
+
+    color: #FFF8F4 !important;
+}
+
+
+html body .mmic-profile-edit-page .liteoption,
+html body .mmic-profile-edit-page input.liteoption {
+    border-color: #E7C2B5 !important;
+
+    background: #FFF8F4 !important;
+
+    color: #75433F !important;
+}
+
+
+html body .mmic-profile-edit-page .liteoption:hover,
+html body .mmic-profile-edit-page input.liteoption:hover {
+    border-color: #D58D7A !important;
+
+    background: #F8EDE7 !important;
+
+    color: #A76452 !important;
+}
+
+
+/* zone contenant les boutons */
+
+html body .mmic-profile-edit-page .catBottom {
+    background: #FFF8F4 !important;
+}
+
+
+/* =========================================================
+   EXPORT DES DONNÉES
+   ========================================================= */
+
+html body .mmic-profile-edit-page a[href*="rgpd.php"] {
+    border-color: #D58D7A !important;
+
+    background: #A96F68 !important;
+
+    color: #FFF8F4 !important;
+}
+
+
+html body .mmic-profile-edit-page a[href*="rgpd.php"]:hover {
+    background: #8F5D58 !important;
+
+    color: #FFF8F4 !important;
+}
+
+
+/* =========================================================
+   AUTRES ONGLETS DU PROFIL
+   NOTIFICATIONS / AMIS / SUIVIS / SUJETS / FAVORIS / SIGNATURE
+   ========================================================= */
+
+body.mmic-profile-notifications #page-body th,
+body.mmic-profile-notifications #page-body .thHead,
+body.mmic-profile-notifications #page-body .thSides,
+body.mmic-profile-notifications #page-body .catHead,
+
+body.mmic-profile-friendsfoes #page-body th,
+body.mmic-profile-friendsfoes #page-body .thHead,
+body.mmic-profile-friendsfoes #page-body .thSides,
+body.mmic-profile-friendsfoes #page-body .catHead,
+
+body.mmic-profile-followers #page-body th,
+body.mmic-profile-followers #page-body .thHead,
+body.mmic-profile-followers #page-body .thSides,
+body.mmic-profile-followers #page-body .catHead,
+
+body.mmic-profile-topic-list #page-body th,
+body.mmic-profile-topic-list #page-body .thHead,
+body.mmic-profile-topic-list #page-body .thSides,
+body.mmic-profile-topic-list #page-body .catHead,
+
+body.mmic-profile-signature #page-body th,
+body.mmic-profile-signature #page-body .thHead,
+body.mmic-profile-signature #page-body .thSides,
+body.mmic-profile-signature #page-body .catHead {
+    border-color: #D58D7A !important;
+
+    background:
+        linear-gradient(
+            90deg,
+            #8F5D58 0%,
+            #A96F68 50%,
+            #8F5D58 100%
+        ) !important;
+
+    background-image: none !important;
+
+    color: #FFF8F4 !important;
+}
+
+
+/* kicker "PROFIL" */
+
+body.mmic-profile-notifications #page-body th::before,
+body.mmic-profile-notifications #page-body .thHead::before,
+body.mmic-profile-notifications #page-body .thSides::before,
+body.mmic-profile-notifications #page-body .catHead::before,
+
+body.mmic-profile-friendsfoes #page-body th::before,
+body.mmic-profile-friendsfoes #page-body .thHead::before,
+body.mmic-profile-friendsfoes #page-body .thSides::before,
+body.mmic-profile-friendsfoes #page-body .catHead::before,
+
+body.mmic-profile-followers #page-body th::before,
+body.mmic-profile-followers #page-body .thHead::before,
+body.mmic-profile-followers #page-body .thSides::before,
+body.mmic-profile-followers #page-body .catHead::before,
+
+body.mmic-profile-topic-list #page-body th::before,
+body.mmic-profile-topic-list #page-body .thHead::before,
+body.mmic-profile-topic-list #page-body .thSides::before,
+body.mmic-profile-topic-list #page-body .catHead::before {
+    color: #F0B29E !important;
+}
+
+
+/* =========================================================
+   BOUTONS DES AUTRES ONGLETS
+   ========================================================= */
+
+body.mmic-profile-notifications #page-body input[type="submit"],
+body.mmic-profile-notifications #page-body .mainoption,
+
+body.mmic-profile-friendsfoes #page-body input[type="submit"],
+body.mmic-profile-friendsfoes #page-body .mainoption,
+
+body.mmic-profile-followers #page-body input[type="submit"],
+body.mmic-profile-followers #page-body .mainoption,
+
+body.mmic-profile-topic-list #page-body input[type="submit"],
+body.mmic-profile-topic-list #page-body .mainoption,
+
+body.mmic-profile-signature #page-body input[type="submit"],
+body.mmic-profile-signature #page-body .mainoption {
+    border-color: #D58D7A !important;
+
+    background: #A96F68 !important;
+
+    color: #FFF8F4 !important;
+}
+
+
+body.mmic-profile-notifications #page-body input[type="submit"]:hover,
+body.mmic-profile-friendsfoes #page-body input[type="submit"]:hover,
+body.mmic-profile-followers #page-body input[type="submit"]:hover,
+body.mmic-profile-topic-list #page-body input[type="submit"]:hover,
+body.mmic-profile-signature #page-body input[type="submit"]:hover {
+    background: #8F5D58 !important;
+
+    color: #FFF8F4 !important;
+}
+
+
+/* =========================================================
+   CHECKBOX DES PAGES ANNEXES
+   ========================================================= */
+
+body.mmic-profile-notifications input[type="checkbox"],
+body.mmic-profile-topic-list input[type="checkbox"],
+body.mmic-profile-friendsfoes input[type="checkbox"] {
+    accent-color: #A96F68 !important;
+}
