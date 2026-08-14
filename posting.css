@@ -2974,4 +2974,124 @@ html body .mmic-posting-page #pollitems_show tr:last-child td,
 html body .mmic-posting-page #seotools_show tr:last-child td {
   border-bottom: 0 !important;
 }
+/* =========================================================
+   POSTING BODY — NOUVELLE PALETTE MMIC
+   14/08/2026
+   ========================================================= */
 
+body .mmic-posting-page {
+  --mmic-post-rose: #b6837b;
+  --mmic-post-rose-dark: #9f675f;
+  --mmic-post-rose-hover: #c18d83;
+  --mmic-post-accent: #d8a17e;
+  --mmic-post-light: #fffaf6;
+  --mmic-post-text: #694c46;
+}
+
+
+/* =========================================================
+   BANDEAUX
+   ========================================================= */
+
+/* Prévisualisation / erreurs / informations */
+html body .mmic-posting-page .mmic-posting-feedback th,
+html body .mmic-posting-page .mmic-posting-feedback .thHead,
+html body .mmic-posting-page .mmic-posting-feedback .catHead,
+html body .mmic-posting-page .mmic-posting-feedback .catBottom,
+
+/* Titre "Poster une réponse" */
+html body .mmic-posting-page .mmic-posting-editor-title,
+
+/* Options et autres panneaux */
+html body .mmic-posting-page .mmic-posting-panel-card .thHead,
+
+/* Revue du sujet */
+html body .mmic-posting-page .mmic-posting-topic-review th,
+html body .mmic-posting-page .mmic-posting-topic-review .thHead,
+html body .mmic-posting-page .mmic-posting-topic-review .catHead {
+  background: var(--mmic-post-rose) !important;
+  background-image: none !important;
+  color: #fffaf6 !important;
+  border-color: var(--mmic-post-accent) !important;
+}
+
+
+/* Textes contenus dans les bandeaux */
+html body .mmic-posting-page .mmic-posting-editor-title span,
+html body .mmic-posting-page .mmic-posting-panel-card .thHead .gen,
+html body .mmic-posting-page .mmic-posting-panel-card .thHead b,
+html body .mmic-posting-page .mmic-posting-topic-review th *,
+html body .mmic-posting-page .mmic-posting-topic-review .thHead *,
+html body .mmic-posting-page .mmic-posting-topic-review .catHead * {
+  color: #fffaf6 !important;
+}
+
+
+/* =========================================================
+   BOUTONS PRINCIPAUX
+   ========================================================= */
+
+html body .mmic-posting-page input[name="preview"],
+html body .mmic-posting-page input[name="post"],
+html body .mmic-posting-page .mmic-posting-submit-button,
+html body .mmic-posting-page .mmic-posting-jumpbox input[type="submit"],
+html body .mmic-posting-page .mmic-posting-jumpbox input[type="button"] {
+  background: var(--mmic-post-rose) !important;
+  background-image: none !important;
+
+  border-color: var(--mmic-post-rose-dark) !important;
+  color: #fffaf6 !important;
+
+  box-shadow:
+    0 3px 7px rgba(105, 76, 70, .12),
+    inset 0 1px 0 rgba(255,255,255,.16) !important;
+}
+
+html body .mmic-posting-page input[name="preview"]:hover,
+html body .mmic-posting-page input[name="post"]:hover,
+html body .mmic-posting-page .mmic-posting-submit-button:hover,
+html body .mmic-posting-page .mmic-posting-jumpbox input[type="submit"]:hover,
+html body .mmic-posting-page .mmic-posting-jumpbox input[type="button"]:hover {
+  background: var(--mmic-post-rose-hover) !important;
+  border-color: var(--mmic-post-rose-dark) !important;
+  color: #fff !important;
+}
+
+
+/* =========================================================
+   LIENS / ACCENTS
+   ========================================================= */
+
+html body .mmic-posting-page a {
+  color: var(--mmic-post-text);
+}
+
+html body .mmic-posting-page a:hover {
+  color: var(--mmic-post-rose-dark);
+}
+
+
+/* =========================================================
+   CHAMPS ACTIFS
+   ========================================================= */
+
+html body .mmic-posting-page input[type="text"]:focus,
+html body .mmic-posting-page input[type="password"]:focus,
+html body .mmic-posting-page input[type="email"]:focus,
+html body .mmic-posting-page select:focus,
+html body .mmic-posting-page textarea:focus {
+  border-color: var(--mmic-post-rose) !important;
+
+  box-shadow:
+    0 0 0 3px rgba(182, 131, 123, .12) !important;
+}
+
+
+/* =========================================================
+   CHECKBOX / RADIO
+   ========================================================= */
+
+html body .mmic-posting-page input[type="checkbox"],
+html body .mmic-posting-page input[type="radio"] {
+  accent-color: var(--mmic-post-rose) !important;
+}
