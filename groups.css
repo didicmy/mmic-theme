@@ -813,3 +813,377 @@
 .mmic-group-member-actions .mmic-vt-profile-link:nth-child(3) a::after {
   content: "WWW";
 }
+/* =========================================================
+   MEET ME IN CHICAGO — GROUPES
+   HARMONISATION NOUVELLE PALETTE
+   ========================================================= */
+
+
+/* =========================================================
+   PAGE GÉNÉRALE /groups
+   ========================================================= */
+
+.mmic-groups-page table.forumline {
+  border-color: #E7C2B5 !important;
+
+  background: #FFF8F4;
+
+  box-shadow:
+    0 8px 24px rgba(117, 67, 63, .06);
+}
+
+
+/* grands bandeaux */
+
+.mmic-groups-page table.forumline th.thHead {
+  border-bottom-color: #D58D7A !important;
+
+  background:
+    linear-gradient(
+      90deg,
+      #8F5D58 0%,
+      #A96F68 50%,
+      #8F5D58 100%
+    ) !important;
+
+  color: #FFF8F4 !important;
+}
+
+
+.mmic-groups-page table.forumline th.thHead,
+.mmic-groups-page table.forumline th.thHead * {
+  color: #FFF8F4 !important;
+}
+
+
+.mmic-groups-page table.forumline th.thHead::before,
+.mmic-groups-page table.forumline th.thHead::after {
+  background: #D58D7A;
+}
+
+
+/* cellules */
+
+.mmic-groups-page table.forumline td.row1,
+.mmic-groups-page table.forumline td.row2,
+.mmic-groups-page table.forumline td.row3,
+.mmic-groups-page table.forumline td {
+  border-color: #F0DDD4 !important;
+
+  background: #FFF8F4 !important;
+
+  color: #7F6761;
+}
+
+
+.mmic-groups-page table.forumline td:first-child {
+  color: #7F6761;
+}
+
+
+/* liens */
+
+.mmic-groups-page table.forumline a {
+  color: #7F5855 !important;
+}
+
+
+.mmic-groups-page table.forumline a:hover {
+  color: #A76452 !important;
+}
+
+
+/* sélecteurs */
+
+.mmic-groups-page select {
+  border-color: #E7C2B5;
+
+  background: #FFFAF7;
+  color: #75433F;
+}
+
+
+.mmic-groups-page input[type="submit"],
+.mmic-groups-page input[type="button"] {
+  border-color: #D58D7A;
+
+  background: #A96F68;
+  color: #FFF8F4;
+}
+
+
+.mmic-groups-page input[type="submit"]:hover,
+.mmic-groups-page input[type="button"]:hover {
+  background: #8F5D58;
+
+  border-color: #F0B29E;
+}
+
+
+.mmic-groups-page .gen,
+.mmic-groups-page .genmed,
+.mmic-groups-page .gensmall {
+  color: #7F6761;
+}
+
+
+/* =========================================================
+   PAGES INDIVIDUELLES DE GROUPE
+   ========================================================= */
+
+.mmic-group-page {
+  color: #75433F;
+}
+
+
+/* carte principale */
+
+.mmic-group-card {
+  background: #FFF8F4;
+
+  border-color: rgba(213, 141, 122, .38);
+
+  box-shadow:
+    0 8px 22px rgba(117,67,63,.08);
+}
+
+
+/* =========================================================
+   GRAND HEADER
+   ========================================================= */
+
+.mmic-group-heading {
+  background:
+    linear-gradient(
+      135deg,
+      #8F5D58 0%,
+      #A96F68 52%,
+      #8F5D58 100%
+    );
+}
+
+
+.mmic-group-heading-small {
+  color: #F0B29E;
+}
+
+
+.mmic-group-heading h1 {
+  color: #FFF8F4;
+}
+
+
+.mmic-group-heading-line {
+  background: #D58D7A;
+}
+
+
+/* =========================================================
+   INFORMATIONS
+   ========================================================= */
+
+.mmic-group-info-row {
+  border-bottom-color: rgba(227,173,154,.35);
+}
+
+
+.mmic-group-label {
+  color: #A76452;
+}
+
+
+.mmic-group-value {
+  color: #7F6761;
+}
+
+
+.mmic-group-name {
+  color: #75433F;
+}
+
+
+/* =========================================================
+   TITRES DES SECTIONS
+   ========================================================= */
+
+.mmic-group-section-title {
+  background:
+    linear-gradient(
+      90deg,
+      #8F5D58 0%,
+      #A96F68 50%,
+      #8F5D58 100%
+    );
+}
+
+
+.mmic-group-section-title span {
+  color: #FFF8F4;
+}
+
+
+/* =========================================================
+   MEMBRES
+   ========================================================= */
+
+.mmic-group-member {
+  border-bottom-color: rgba(227,173,154,.35);
+}
+
+
+.mmic-group-moderator {
+  background: rgba(213,141,122,.08);
+}
+
+
+.mmic-group-member-stats {
+  color: #A9958D;
+}
+
+
+.mmic-group-member-stats strong {
+  color: #A76452;
+}
+
+
+/* =========================================================
+   NOTE ADMIN
+   ========================================================= */
+
+.mmic-group-admin-note {
+  border-left-color: #D58D7A;
+
+  background: rgba(213,141,122,.09);
+
+  color: #7F6761;
+}
+
+
+/* =========================================================
+   CHAMPS
+   ========================================================= */
+
+.mmic-group-input {
+  border-color: rgba(213,141,122,.42);
+
+  background: #FFFAF7;
+
+  color: #75433F;
+}
+
+
+.mmic-group-input:focus {
+  border-color: #D58D7A;
+
+  box-shadow:
+    0 0 0 2px rgba(213,141,122,.12);
+}
+
+
+/* =========================================================
+   BOUTONS
+   ========================================================= */
+
+.mmic-group-button {
+  border-color: #D58D7A;
+
+  background: #A96F68;
+
+  color: #FFF8F4;
+}
+
+
+.mmic-group-button:hover {
+  background: #8F5D58;
+
+  border-color: #F0B29E;
+
+  color: #FFF8F4;
+}
+
+
+.mmic-group-button-secondary {
+  background: transparent;
+
+  color: #75433F;
+}
+
+
+.mmic-group-button-secondary:hover {
+  background: #A96F68;
+
+  color: #FFF8F4;
+}
+
+
+.mmic-group-remove {
+  border-color: rgba(167,100,82,.65);
+}
+
+
+/* =========================================================
+   PAGINATION
+   ========================================================= */
+
+.mmic-group-pagination {
+  color: #A9958D;
+}
+
+
+.mmic-group-pagination a {
+  color: #A76452;
+}
+
+
+/* =========================================================
+   JUMPBOX
+   ========================================================= */
+
+.mmic-group-jumpbox {
+  color: #8B7670;
+}
+
+
+.mmic-group-jumpbox select {
+  border-color: rgba(213,141,122,.45);
+
+  background: #FFF8F4;
+
+  color: #75433F;
+}
+
+
+.mmic-group-jumpbox input[type="submit"],
+.mmic-group-jumpbox input[type="button"] {
+  border-color: #D58D7A;
+
+  background: #A96F68;
+
+  color: #FFF8F4;
+}
+
+
+.mmic-group-jumpbox input[type="submit"]:hover,
+.mmic-group-jumpbox input[type="button"]:hover {
+  background: #8F5D58;
+}
+
+
+/* =========================================================
+   MP / EMAIL / WWW
+   ========================================================= */
+
+.mmic-group-member-actions .mmic-vt-profile-link a {
+  border-color: rgba(213,141,122,.75);
+
+  background: #A96F68;
+
+  color: #FFF8F4;
+}
+
+
+.mmic-group-member-actions .mmic-vt-profile-link a:hover {
+  background: #8F5D58;
+
+  color: #FFF8F4;
+}
