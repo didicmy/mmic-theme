@@ -5325,3 +5325,247 @@ tr
 th.thHead::before {
     color: #F0B29E !important;
 }
+/* =========================================================
+   MEET ME IN CHICAGO
+   PROFIL MEMBRE — ÉRADICATION FINALE DU BLEU 😂
+   ========================================================= */
+
+
+/* =========================================================
+   GRAND HEADER DU PROFIL
+   ========================================================= */
+
+html body .mmic-profile-hero {
+    background:
+        linear-gradient(
+            135deg,
+            #8F5D58 0%,
+            #A96F68 52%,
+            #8F5D58 100%
+        ) !important;
+
+    border-color: #E3AD9A !important;
+
+    box-shadow:
+        0 8px 22px rgba(117, 67, 63, 0.16),
+        inset 0 1px 0 rgba(255, 255, 255, 0.08) !important;
+}
+
+
+/* petite ligne décorative sous le header */
+
+html body .mmic-profile-hero::after {
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            #D58D7A 18%,
+            #E3AD9A 50%,
+            #D58D7A 82%,
+            transparent
+        ) !important;
+}
+
+
+/* =========================================================
+   TEXTES DU HEADER
+   ========================================================= */
+
+html body .mmic-profile-hero-city,
+html body .mmic-profile-eyebrow,
+html body .mmic-profile-rank,
+html body .mmic-profile-last-visit strong {
+    color: #F2C79D !important;
+}
+
+html body .mmic-profile-username {
+    color: #FFF8F4 !important;
+}
+
+html body .mmic-profile-status,
+html body .mmic-profile-last-visit {
+    color: rgba(255, 248, 244, 0.88) !important;
+}
+
+html body .mmic-profile-status-dot {
+    border-color: #F2C79D !important;
+    background: #D58D7A !important;
+
+    box-shadow:
+        0 0 0 3px rgba(242, 199, 157, 0.16) !important;
+}
+
+
+/* =========================================================
+   AVATAR LOSANGE DU HEADER
+   ========================================================= */
+
+html body .mmic-profile-avatar-diamond {
+    border-color: #F2C79D !important;
+    background: #FFF8F4 !important;
+
+    box-shadow:
+        0 12px 27px rgba(117, 67, 63, 0.30),
+        0 0 0 3px #D58D7A,
+        inset 0 0 0 2px #8F5D58 !important;
+}
+
+html body .mmic-profile-avatar-diamond:hover {
+    box-shadow:
+        0 16px 35px rgba(117, 67, 63, 0.36),
+        0 0 0 4px #D58D7A,
+        inset 0 0 0 2px #8F5D58 !important;
+}
+
+
+/* =========================================================
+   BOUTON SUIVRE
+   ========================================================= */
+
+html body .mmic-profile-follow,
+html body .mmic-profile-business-actions .mmic-profile-follow {
+    background: #8F5D58 !important;
+    border-color: #E3AD9A !important;
+    color: #FFF8F4 !important;
+}
+
+html body .mmic-profile-follow:hover,
+html body .mmic-profile-business-actions .mmic-profile-follow:hover {
+    background: #D58D7A !important;
+    color: #75433F !important;
+}
+
+
+/* =========================================================
+   BOUTON MESSAGE PRIVÉ
+   ========================================================= */
+
+html body .mmic-profile-private-message a,
+html body .mmic-profile-business-actions
+.mmic-profile-private-message a {
+    background: #A96F68 !important;
+    border-color: #E3AD9A !important;
+    color: #FFF8F4 !important;
+}
+
+html body .mmic-profile-private-message a:hover,
+html body .mmic-profile-business-actions
+.mmic-profile-private-message a:hover {
+    background: #D58D7A !important;
+    color: #75433F !important;
+}
+
+
+/* =========================================================
+   PETITS BOUTONS RONDS DE CONTACT
+   MP / EMAIL / SITE
+   ========================================================= */
+
+html body .mmic-profile-contact-content a,
+html body .mmic-profile-business-contact a {
+    background: #8F5D58 !important;
+    border-color: #E3AD9A !important;
+    color: #F2C79D !important;
+
+    box-shadow:
+        0 2px 5px rgba(117, 67, 63, 0.18),
+        inset 0 1px 0 rgba(255, 255, 255, 0.08) !important;
+}
+
+html body .mmic-profile-contact-content a:hover,
+html body .mmic-profile-business-contact a:hover {
+    background: #A96F68 !important;
+    color: #FFF8F4 !important;
+
+    box-shadow:
+        0 5px 10px rgba(117, 67, 63, 0.22),
+        0 0 0 2px rgba(227, 173, 154, 0.20) !important;
+}
+
+html body .mmic-profile-contact-content a::before,
+html body .mmic-profile-business-contact a::before {
+    color: #F2C79D !important;
+}
+
+
+/* =========================================================
+   TEXTES QUI UTILISAIENT ENCORE LE BLEU
+   ========================================================= */
+
+html body .mmic-profile-sidebar-rank strong,
+html body .mmic-profile-sidebar-line strong,
+html body .mmic-profile-contact-content,
+html body .mmic-profile-admin-comment-title strong,
+html body .mmic-profile-section-title h2,
+html body .mmic-profile-visit-highlight div strong,
+html body .mmic-profile-business-name strong,
+html body .mmic-profile-business-header h2,
+html body .mmic-profile-business-presence-line strong {
+    color: #75433F !important;
+}
+
+
+/* =========================================================
+   LIENS ET GROUPES
+   ========================================================= */
+
+html body .mmic-profile-breadcrumb a,
+html body .mmic-profile-group-list a,
+html body .mmic-profile-business-groups a,
+html body .mmic-profile-page
+.mmic-profile-admin-links a,
+html body .mmic-profile-page
+.mmic-profile-rpg-administration a {
+    color: #75433F !important;
+}
+
+html body .mmic-profile-breadcrumb a:hover,
+html body .mmic-profile-group-list a:hover,
+html body .mmic-profile-business-groups a:hover {
+    color: #A96F68 !important;
+}
+
+
+/* =========================================================
+   PETITE ICÔNE DERNIÈRE VISITE
+   ========================================================= */
+
+html body .mmic-profile-visit-icon {
+    background: #8F5D58 !important;
+    color: #F2C79D !important;
+}
+
+
+/* =========================================================
+   AUTRES ANCIENS BANDEAUX DU PROFIL
+   au cas où ils réapparaissent
+   ========================================================= */
+
+html body .mmic-profile-card-heading,
+html body .mmic-profile-rpg-header {
+    background:
+        linear-gradient(
+            135deg,
+            #8F5D58,
+            #A96F68
+        ) !important;
+}
+
+html body .mmic-profile-card-heading h2,
+html body .mmic-profile-rpg-header h2 {
+    color: #FFF8F4 !important;
+}
+
+html body .mmic-profile-heading-icon {
+    border-color: #E3AD9A !important;
+    color: #F2C79D !important;
+}
+
+
+/* =========================================================
+   MARQUE DÉCORATIVE DE LA CARTE
+   ========================================================= */
+
+html body .mmic-profile-business-mark {
+    color: rgba(117, 67, 63, 0.055) !important;
+}
