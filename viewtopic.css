@@ -1903,3 +1903,151 @@ html body .mmic-vt-quick-reply .mainoption,
 html body .mmic-vt-quick-reply .liteoption {
   margin-top: 9px;
 }
+/* =========================================================
+   VIEWTOPIC — FINITIONS RÉPONSE RAPIDE + ONLINE
+   ========================================================= */
+
+
+/* ---------------------------------------------------------
+   STATUT EN LIGNE — ON LE RECRÉE NOUS-MÊMES
+   --------------------------------------------------------- */
+
+html body .mmic-vt-online {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 18px;
+
+  margin: 7px auto 4px !important;
+}
+
+
+/* vieille image Forumactif */
+
+html body .mmic-vt-online img {
+  display: none !important;
+}
+
+
+/* notre nouveau badge */
+
+html body .mmic-vt-online::before {
+  content: "En ligne";
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 4px 9px;
+
+  border: 1px solid rgba(255, 210, 191, .68);
+  border-radius: 10px;
+
+  background: rgba(255, 248, 244, .10);
+
+  color: #FFF8F4;
+
+  font-size: 7px;
+  font-weight: 700;
+
+  letter-spacing: .8px;
+  line-height: 1;
+  text-transform: uppercase;
+
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.06);
+}
+
+
+/* petit point devant "En ligne" */
+
+html body .mmic-vt-online::after {
+  content: "";
+
+  width: 5px;
+  height: 5px;
+
+  margin-left: -53px;
+  margin-right: 48px;
+
+  border-radius: 50%;
+
+  background: #FFD0BC;
+
+  box-shadow:
+    0 0 0 2px rgba(255,208,188,.13);
+
+  pointer-events: none;
+}
+
+
+/* ---------------------------------------------------------
+   RÉPONSE RAPIDE — BOUTONS
+   --------------------------------------------------------- */
+
+html body .mmic-vt-quick-reply input.liteoption,
+html body .mmic-vt-quick-reply input.mainoption {
+  min-height: 28px;
+
+  padding: 0 14px !important;
+
+  border: 1px solid #D58D7A !important;
+  border-radius: 5px !important;
+
+  background: #A96F68 !important;
+  background-image: none !important;
+
+  color: #FFF8F4 !important;
+
+  font-family: Arial, sans-serif !important;
+  font-size: 8px !important;
+  font-weight: 700 !important;
+
+  letter-spacing: .7px;
+  text-transform: uppercase;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 2px 5px rgba(117,67,63,.10) !important;
+
+  transition:
+    background .2s ease,
+    border-color .2s ease,
+    transform .2s ease,
+    box-shadow .2s ease;
+}
+
+
+/* Prévisualisation un peu plus légère */
+
+html body .mmic-vt-quick-reply input.liteoption {
+  background: #FFF8F4 !important;
+
+  color: #8F5D58 !important;
+}
+
+
+/* hover */
+
+html body .mmic-vt-quick-reply input.liteoption:hover,
+html body .mmic-vt-quick-reply input.mainoption:hover {
+  border-color: #F0B29E !important;
+
+  background: #8F5D58 !important;
+
+  color: #FFF8F4 !important;
+
+  transform: translateY(-1px);
+
+  box-shadow:
+    0 4px 8px rgba(117,67,63,.14) !important;
+}
+
+
+/* petit espace entre les deux */
+
+html body .mmic-vt-quick-reply input.mainoption {
+  margin-left: 5px !important;
+}
