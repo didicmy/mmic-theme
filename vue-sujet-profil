@@ -955,3 +955,397 @@
 
   background: #102438;
 }
+/* =========================================================
+   MEET ME IN CHICAGO — VUE D'UN SUJET
+   PALETTE ÉTÉ 2026 — SURCHARGE FINALE
+   ========================================================= */
+
+
+/* ---------------------------------------------------------
+   FIL D'ARIANE
+   --------------------------------------------------------- */
+
+html body .mmic-vt-navigation {
+    border-color: #E7C2B5 !important;
+    background: #FFF8F4 !important;
+}
+
+html body .mmic-vt-breadcrumb {
+    color: #8F7A73 !important;
+}
+
+html body .mmic-vt-breadcrumb a {
+    color: #75433F !important;
+}
+
+html body .mmic-vt-breadcrumb a:hover {
+    color: #A96F68 !important;
+}
+
+
+/* ---------------------------------------------------------
+   TITRE DU SUJET
+   --------------------------------------------------------- */
+
+html body .mmic-vt-heading-line,
+html body .mmic-vt-section-title,
+html body .mmic-vt-signature-line {
+    color: #A96F68 !important;
+}
+
+html body .mmic-vt-heading-line::before,
+html body .mmic-vt-heading-line::after,
+html body .mmic-vt-section-title::before,
+html body .mmic-vt-section-title::after,
+html body .mmic-vt-signature-line::before,
+html body .mmic-vt-signature-line::after {
+    background: #E2B3A3 !important;
+}
+
+html body .mmic-vt-topic-heading h1 {
+    color: #75433F !important;
+}
+
+html body .mmic-vt-pagination {
+    color: #8F7A73 !important;
+}
+
+
+/* ---------------------------------------------------------
+   CARTE DU MESSAGE
+   --------------------------------------------------------- */
+
+html body .mmic-vt-post {
+    border-color: #E7C2B5 !important;
+
+    background: #FFFDFB !important;
+
+    box-shadow:
+        0 6px 16px rgba(117,67,63,.07) !important;
+}
+
+
+/* =========================================================
+   PROFIL À GAUCHE
+   ========================================================= */
+
+html body .mmic-vt-profile {
+    border-right-color: #D58D7A !important;
+
+    background:
+        linear-gradient(
+            165deg,
+            #A96F68 0%,
+            #97615D 58%,
+            #8E5753 100%
+        ) !important;
+
+    color: #FFF8F4 !important;
+}
+
+
+/* Nom */
+
+html body .mmic-vt-username,
+html body .mmic-vt-username a {
+    color: #FFFDFB !important;
+}
+
+
+/* Rang */
+
+html body .mmic-vt-rank {
+    color: #FFD2BF !important;
+}
+
+
+/* Avatar */
+
+html body .mmic-vt-avatar {
+    border-color: #F0B29E !important;
+
+    background: #F8E7DF !important;
+
+    box-shadow:
+        0 5px 14px rgba(91,48,45,.20) !important;
+}
+
+
+/* ---------------------------------------------------------
+   CHAMPS DU PROFIL
+   --------------------------------------------------------- */
+
+html body .mmic-vt-profile-fields {
+    border-top-color: rgba(255,248,244,.22) !important;
+}
+
+html body .mmic-vt-profile-field {
+    border-bottom-color: rgba(255,248,244,.15) !important;
+
+    color: #F8EAE5 !important;
+}
+
+html body .mmic-vt-profile-field .label,
+html body .mmic-vt-profile-field strong {
+    color: #FFD0BC !important;
+}
+
+
+/* ---------------------------------------------------------
+   LIENS PROFIL
+   --------------------------------------------------------- */
+
+html body .mmic-vt-profile-link {
+    border-color: rgba(255,210,191,.72) !important;
+
+    background: rgba(255,248,244,.08) !important;
+
+    transition:
+        background .18s ease,
+        border-color .18s ease,
+        transform .18s ease !important;
+}
+
+html body .mmic-vt-profile-link:hover {
+    transform: translateY(-1px);
+
+    border-color: #FFF0E8 !important;
+
+    background: rgba(255,248,244,.16) !important;
+}
+
+
+/* ---------------------------------------------------------
+   EN-TÊTE DU MESSAGE
+   --------------------------------------------------------- */
+
+html body .mmic-vt-post-header {
+    border-bottom-color: #EED8CF !important;
+
+    background: #FFF7F2 !important;
+}
+
+html body .mmic-vt-post-date {
+    color: #8F7A73 !important;
+}
+
+
+/* Petit point devant la date */
+
+html body .mmic-vt-post-date::before {
+    border-color: #D58D7A !important;
+    background: #A96F68 !important;
+}
+
+
+/* Si l'ancienne icône de date existe encore */
+
+html body .mmic-vt-post-date-icon {
+    background: #A96F68 !important;
+    color: #FFF8F4 !important;
+}
+
+
+/* ---------------------------------------------------------
+   CONTENU DU MESSAGE
+   --------------------------------------------------------- */
+
+html body .mmic-vt-content {
+    background: #FFFDFB !important;
+}
+
+html body .mmic-vt-message {
+    color: #574B48 !important;
+}
+
+html body .mmic-vt-message blockquote {
+    border-left-color: #D58D7A !important;
+
+    background: #FFF3ED !important;
+    color: #685854 !important;
+}
+
+html body .mmic-vt-message code {
+    background: #F7E8E1 !important;
+}
+
+
+/* ---------------------------------------------------------
+   SIGNATURE
+   --------------------------------------------------------- */
+
+html body .mmic-vt-signature .signature {
+    color: #8B7871 !important;
+}
+
+
+/* ---------------------------------------------------------
+   PIED DU MESSAGE
+   --------------------------------------------------------- */
+
+html body .mmic-vt-post-footer {
+    border-top-color: #EED8CF !important;
+
+    background: #FFF7F2 !important;
+}
+
+html body .mmic-vt-post-anchor {
+    color: #A76452 !important;
+}
+
+
+/* ---------------------------------------------------------
+   VOTE
+   --------------------------------------------------------- */
+
+html body .mmic-vt-vote-button a {
+    background: #A96F68 !important;
+    color: #FFF8F4 !important;
+
+    transition:
+        background .18s ease,
+        transform .18s ease !important;
+}
+
+html body .mmic-vt-vote-button a:hover {
+    transform: translateY(-1px);
+
+    background: #8F5D58 !important;
+}
+
+
+/* ---------------------------------------------------------
+   PIÈCES JOINTES
+   --------------------------------------------------------- */
+
+html body .mmic-vt-attachments {
+    border-color: #E7C2B5 !important;
+
+    background: #FFF7F2 !important;
+}
+
+html body .mmic-vt-attachments > dt {
+    color: #A76452 !important;
+}
+
+
+/* ---------------------------------------------------------
+   BAS DU SUJET
+   --------------------------------------------------------- */
+
+html body .mmic-vt-topic-bottom {
+    border-color: #E7C2B5 !important;
+
+    background: #FFF8F4 !important;
+
+    color: #8F7A73 !important;
+}
+
+html body .mmic-vt-watch-topic a {
+    color: #75433F !important;
+}
+
+
+/* ---------------------------------------------------------
+   RÉPONSE RAPIDE
+   --------------------------------------------------------- */
+
+html body .mmic-vt-quick-reply {
+    border-color: #E7C2B5 !important;
+
+    background: #FFFDFB !important;
+
+    box-shadow:
+        0 3px 10px rgba(117,67,63,.04) !important;
+}
+
+
+/* ---------------------------------------------------------
+   PERMISSIONS
+   --------------------------------------------------------- */
+
+html body .mmic-vt-permissions {
+    border-color: #E7C2B5 !important;
+
+    background: #FFF8F4 !important;
+}
+
+html body .mmic-vt-permissions-title {
+    border-right-color: #E7C2B5 !important;
+
+    color: #A76452 !important;
+}
+
+html body .mmic-vt-permissions-content {
+    color: #8F7A73 !important;
+}
+
+
+/* ---------------------------------------------------------
+   OUTILS INFÉRIEURS
+   --------------------------------------------------------- */
+
+html body .mmic-vt-bottom-tools {
+    border-color: #E7C2B5 !important;
+
+    background: #FFFDFB !important;
+}
+
+html body .mmic-vt-jumpbox {
+    color: #8F7A73 !important;
+}
+
+html body .mmic-vt-jumpbox select {
+    border-color: #E7C2B5 !important;
+
+    background: #FFF8F4 !important;
+
+    color: #75433F !important;
+}
+
+
+/* ---------------------------------------------------------
+   MODÉRATION / ADMIN
+   --------------------------------------------------------- */
+
+html body .mmic-vt-moderation-panel,
+html body .mmic-vt-admin-tools {
+    border-color: #E7C2B5 !important;
+
+    background: #FFF8F4 !important;
+
+    color: #8F7A73 !important;
+}
+
+
+/* ---------------------------------------------------------
+   MESSAGE MASQUÉ / ABSENT
+   --------------------------------------------------------- */
+
+html body .mmic-vt-hidden-post,
+html body .mmic-vt-no-post {
+    border-color: #E7C2B5 !important;
+
+    background: #FFF8F4 !important;
+
+    color: #8F7A73 !important;
+}
+
+
+/* ---------------------------------------------------------
+   MOBILE
+   --------------------------------------------------------- */
+
+@media (max-width: 600px) {
+
+    html body .mmic-vt-profile {
+        border-right: 0 !important;
+        border-bottom: 3px solid #D58D7A !important;
+    }
+
+    html body .mmic-vt-permissions-title {
+        border-right: 0 !important;
+        border-bottom-color: #E7C2B5 !important;
+    }
+
+}
