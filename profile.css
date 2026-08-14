@@ -3345,7 +3345,12 @@ body.mmic-profile-followers #page-body table.forumline .catHead {
     border-top:1px solid #d2a27e !important;
     border-bottom:1px solid #d2a27e !important;
 
-    background:#13263d !important;
+    background: linear-gradient(
+    90deg,
+    #8F5D58 0%,
+    #A96F68 50%,
+    #8F5D58 100%
+) !important;
 
     color:#fff !important;
 
