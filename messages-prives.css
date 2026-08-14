@@ -3961,3 +3961,155 @@ html body .mmic-pm-compose-page #optionsitems th *,
 html body .mmic-pm-compose-page #optionsitems_show th * {
     color: #fffaf4 !important;
 }
+/* =========================================================
+   MP — DERNIERS AJUSTEMENTS
+   Nouveau message + page Informations
+   ========================================================= */
+
+
+/* ---------------------------------------------------------
+   BOUTON "NOUVEAU MESSAGE" SUR LA PAGE DE LECTURE
+   --------------------------------------------------------- */
+
+html body .mmic-pm-read-page a[href*="mode=post"],
+html body .mmic-pm-read-page .mmic-pm-new-message,
+html body .mmic-pm-read-page .mmic-pm-nav-new {
+    background: #b6837b !important;
+    background-image: none !important;
+
+    border-color: #d8a17e !important;
+
+    color: #fffaf4 !important;
+
+    box-shadow: 0 2px 6px rgba(166, 111, 103, .12) !important;
+}
+
+html body .mmic-pm-read-page a[href*="mode=post"] *,
+html body .mmic-pm-read-page .mmic-pm-new-message *,
+html body .mmic-pm-read-page .mmic-pm-nav-new * {
+    color: #fffaf4 !important;
+}
+
+html body .mmic-pm-read-page a[href*="mode=post"]:hover,
+html body .mmic-pm-read-page .mmic-pm-new-message:hover,
+html body .mmic-pm-read-page .mmic-pm-nav-new:hover {
+    background: #a66f67 !important;
+    border-color: #c98b78 !important;
+    color: #fffaf4 !important;
+}
+
+
+/* =========================================================
+   PAGE "INFORMATIONS" APRÈS ENVOI D'UN MP
+   ========================================================= */
+
+/* gros bandeau */
+
+html body .mmic-pm-info-page .thHead,
+html body .mmic-pm-info-page th.thHead,
+html body .mmic-pm-info-page table.forumline > tbody > tr:first-child > th {
+    background: #b6837b !important;
+    background-image: none !important;
+
+    border: 0 !important;
+    border-bottom: 2px solid #d8a17e !important;
+
+    color: #fffaf4 !important;
+}
+
+html body .mmic-pm-info-page .thHead *,
+html body .mmic-pm-info-page th.thHead * {
+    color: #fffaf4 !important;
+}
+
+
+/* kicker "INFORMATION" */
+
+html body .mmic-pm-info-page .thHead::before,
+html body .mmic-pm-info-page th.thHead::before {
+    color: #f0c5a5 !important;
+}
+
+
+/* si le titre a une classe personnalisée */
+
+html body .mmic-pm-info-page .mmic-pm-info-header,
+html body .mmic-pm-info-page .mmic-pm-info-title {
+    background: #b6837b !important;
+    background-image: none !important;
+
+    border-color: #d8a17e !important;
+
+    color: #fffaf4 !important;
+}
+
+html body .mmic-pm-info-page .mmic-pm-info-header *,
+html body .mmic-pm-info-page .mmic-pm-info-title * {
+    color: #fffaf4 !important;
+}
+
+
+/* carte de contenu */
+
+html body .mmic-pm-info-page table.forumline {
+    background: #fffaf4 !important;
+
+    border: 1px solid #dfcdbc !important;
+    border-radius: 10px !important;
+
+    border-collapse: separate !important;
+    border-spacing: 0 !important;
+
+    overflow: hidden !important;
+
+    box-shadow: 0 5px 16px rgba(166, 111, 103, .06) !important;
+}
+
+
+/* texte */
+
+html body .mmic-pm-info-page .row1,
+html body .mmic-pm-info-page .row2,
+html body .mmic-pm-info-page .row3 {
+    background: #fffaf4 !important;
+
+    color: #6f4b43 !important;
+}
+
+
+/* liens "retour boîte de réception / index" */
+
+html body .mmic-pm-info-page a {
+    color: #b46f61 !important;
+
+    transition: color .2s ease !important;
+}
+
+html body .mmic-pm-info-page a:hover {
+    color: #8f5c55 !important;
+}
+
+
+/* bouton retour accueil */
+
+html body .mmic-pm-info-page input[type="submit"],
+html body .mmic-pm-info-page .mainoption,
+html body .mmic-pm-info-page .button {
+    background: #b6837b !important;
+    background-image: none !important;
+
+    border: 1px solid #d8a17e !important;
+    border-radius: 5px !important;
+
+    color: #fffaf4 !important;
+
+    box-shadow: none !important;
+}
+
+html body .mmic-pm-info-page input[type="submit"]:hover,
+html body .mmic-pm-info-page .mainoption:hover,
+html body .mmic-pm-info-page .button:hover {
+    background: #a66f67 !important;
+    border-color: #c98b78 !important;
+    color: #fffaf4 !important;
+}
