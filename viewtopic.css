@@ -1791,3 +1791,115 @@ html body .mmic-vt-jumpbox select {
   }
 
 }
+/* =========================================================
+   VIEWTOPIC — DERNIÈRES FINITIONS
+   EN LIGNE + RÉPONSE RAPIDE
+   ========================================================= */
+
+
+/* ---------------------------------------------------------
+   STATUT EN LIGNE
+   --------------------------------------------------------- */
+
+/* on masque la vieille image Forumactif verte */
+
+html body .mmic-vt-online img {
+  display: none !important;
+}
+
+
+/* transformation en petit badge assorti */
+
+html body .mmic-vt-online {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 7px auto 4px !important;
+}
+
+
+html body .mmic-vt-online a,
+html body .mmic-vt-online span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 4px 9px;
+
+  border: 1px solid rgba(255, 210, 191, .65);
+  border-radius: 10px;
+
+  background: rgba(255, 248, 244, .10);
+
+  color: #FFF8F4 !important;
+
+  font-size: 7px !important;
+  font-weight: 700;
+
+  letter-spacing: .8px;
+  text-decoration: none !important;
+  text-transform: uppercase;
+}
+
+
+/* petit point lumineux */
+
+html body .mmic-vt-online a::before,
+html body .mmic-vt-online span::before {
+  content: "";
+
+  width: 5px;
+  height: 5px;
+
+  margin-right: 5px;
+
+  border-radius: 50%;
+
+  background: #FFD0BC;
+
+  box-shadow:
+    0 0 0 2px rgba(255, 208, 188, .12);
+}
+
+
+/* ---------------------------------------------------------
+   RÉPONSE RAPIDE — CENTRAGE
+   --------------------------------------------------------- */
+
+html body .mmic-vt-quick-reply {
+  text-align: center;
+}
+
+
+/* table / conteneur natif Forumactif */
+
+html body .mmic-vt-quick-reply > table,
+html body .mmic-vt-quick-reply form > table {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+
+/* éditeur SCEditor */
+
+html body .mmic-vt-quick-reply .sceditor-container {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+
+/* zone contenant l'éditeur */
+
+html body .mmic-vt-quick-reply #textarea_content {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+
+/* boutons Prévisualisation / Envoyer */
+
+html body .mmic-vt-quick-reply .mainoption,
+html body .mmic-vt-quick-reply .liteoption {
+  margin-top: 9px;
+}
