@@ -3427,3 +3427,326 @@ html body .mmic-message-button:hover{
     background:#1d3553;
 
 }
+/* =========================================================
+   MEET ME IN CHICAGO
+   MESSAGES PRIVÉS — PALETTE ÉTÉ 2026
+   ========================================================= */
+
+/* ---------------------------------------------------------
+   GRAND BANDEAU
+   --------------------------------------------------------- */
+
+html body .mmic-pm-hero {
+    background: #b6837b !important;
+    background-image: none !important;
+
+    border-color: #d8a17e !important;
+
+    box-shadow:
+        0 8px 20px rgba(166,111,103,.10),
+        inset 0 1px 0 rgba(255,255,255,.08) !important;
+}
+
+html body .mmic-pm-hero-kicker {
+    color: #f0c5a5 !important;
+}
+
+html body .mmic-pm-hero-title {
+    color: #fffaf4 !important;
+}
+
+html body .mmic-pm-hero-text {
+    color: rgba(255,250,244,.82) !important;
+}
+
+html body .mmic-pm-hero-word {
+    color: rgba(255,255,255,.035) !important;
+}
+
+
+/* ---------------------------------------------------------
+   DOSSIERS — ICÔNES
+   --------------------------------------------------------- */
+
+html body .mmic-pm-folder-icon {
+    border-color: #d8a17e !important;
+    background: #b6837b !important;
+}
+
+html body .mmic-pm-folder-icon::before {
+    background: #fff4ea !important;
+}
+
+html body .mmic-pm-folder-link a {
+    color: #75473f !important;
+}
+
+html body .mmic-pm-folder:hover {
+    border-color: #c98b78 !important;
+
+    box-shadow:
+        0 4px 9px rgba(166,111,103,.08) !important;
+}
+
+
+/* ---------------------------------------------------------
+   STOCKAGE
+   --------------------------------------------------------- */
+
+html body .mmic-pm-storage-label {
+    color: #b46f61 !important;
+}
+
+html body .mmic-pm-storage-status {
+    color: #75473f !important;
+}
+
+html body .mmic-pm-storage-progress {
+    background: #b6837b !important;
+}
+
+
+/* ---------------------------------------------------------
+   NOUVEAU MESSAGE
+   --------------------------------------------------------- */
+
+html body .mmic-pm-new-button {
+    border-color: #d8a17e !important;
+
+    background: #b6837b !important;
+    color: #fffaf4 !important;
+
+    box-shadow:
+        0 3px 7px rgba(166,111,103,.12) !important;
+}
+
+html body .mmic-pm-new-button:hover {
+    background: #a66f67 !important;
+    color: #fffaf4 !important;
+}
+
+html body .mmic-pm-new-icon {
+    background: #fff4ea !important;
+}
+
+
+/* ---------------------------------------------------------
+   FILTRE
+   --------------------------------------------------------- */
+
+html body .mmic-pm-filter {
+    color: #b46f61 !important;
+}
+
+html body .mmic-pm-filter select {
+    color: #75473f !important;
+}
+
+html body .mmic-pm-filter-button {
+    border-color: #d8a17e !important;
+
+    background: #b6837b !important;
+    color: #fffaf4 !important;
+}
+
+html body .mmic-pm-filter-button:hover {
+    background: #a66f67 !important;
+}
+
+
+/* ---------------------------------------------------------
+   TITRES / LISTE DES MESSAGES
+   --------------------------------------------------------- */
+
+html body .mmic-pm-list-header,
+html body .mmic-pm-message-kicker,
+html body .mmic-pm-meta-label {
+    color: #b46f61 !important;
+}
+
+html body .mmic-pm-message-title {
+    color: #75473f !important;
+}
+
+html body .mmic-pm-message-title:hover,
+html body .mmic-pm-message:hover .mmic-pm-message-title {
+    color: #b46f61 !important;
+}
+
+html body .mmic-pm-message-from,
+html body .mmic-pm-message-date > span:last-child {
+    color: #75473f !important;
+}
+
+
+/* ---------------------------------------------------------
+   ENVELOPPES LU / NON LU
+   --------------------------------------------------------- */
+
+html body .mmic-pm-status-icon {
+    border-color: #d8a17e !important;
+
+    background: #b6837b !important;
+
+    box-shadow:
+        0 3px 6px rgba(166,111,103,.12) !important;
+}
+
+html body .mmic-pm-status-icon::before {
+    background: #fff4ea !important;
+}
+
+html body .mmic-pm-message:has(
+    .mmic-pm-original-folder img[src*="folder_new"]
+)
+.mmic-pm-status-icon::before {
+    background: #fff4ea !important;
+}
+
+html body .mmic-pm-message:has(
+    .mmic-pm-original-folder img[src$="/folder.gif"]
+)
+.mmic-pm-status-icon::before {
+    background: #efd0b8 !important;
+}
+
+
+/* ---------------------------------------------------------
+   CASES À COCHER
+   --------------------------------------------------------- */
+
+html body .mmic-pm-message-check input:checked + span {
+    background: #b6837b !important;
+}
+
+html body .mmic-pm-message-check input:checked + span::after {
+    color: #fffaf4 !important;
+}
+
+
+/* ---------------------------------------------------------
+   BOUTONS DE SÉLECTION
+   --------------------------------------------------------- */
+
+html body .mmic-pm-selection-links a {
+    color: #b46f61 !important;
+}
+
+html body .mmic-pm-action-button {
+    color: #75473f !important;
+}
+
+html body .mmic-pm-action-button:hover {
+    border-color: #c98b78 !important;
+
+    background: #b6837b !important;
+    color: #fffaf4 !important;
+}
+
+
+/* =========================================================
+   LECTURE D'UN MESSAGE PRIVÉ
+   ========================================================= */
+
+html body .mmic-pm-read {
+    color: #75473f !important;
+}
+
+html body .mmic-pm-read-avatar {
+    background: #b6837b !important;
+    border-color: #d8a17e !important;
+}
+
+html body .mmic-pm-read-author-kicker,
+html body .mmic-pm-read-kicker {
+    color: #b46f61 !important;
+}
+
+html body .mmic-pm-read-author-name,
+html body .mmic-pm-read-title {
+    color: #75473f !important;
+}
+
+html body .mmic-pm-read-native-action a {
+    color: #75473f !important;
+}
+
+html body .mmic-pm-read-native-action a:hover {
+    background: #b6837b !important;
+    color: #fffaf4 !important;
+}
+
+html body .mmic-pm-read-reply
+.mmic-pm-read-native-action a {
+    background: #b6837b !important;
+    color: #fffaf4 !important;
+}
+
+html body .mmic-pm-read-button {
+    color: #75473f !important;
+}
+
+html body .mmic-pm-read-button:hover {
+    background: #b6837b !important;
+    color: #fffaf4 !important;
+}
+
+
+/* ---------------------------------------------------------
+   HISTORIQUE D'UN MP
+   --------------------------------------------------------- */
+
+html body .mmic-pm-review-header {
+    background: #b6837b !important;
+    background-image: none !important;
+
+    border-bottom-color: #d8a17e !important;
+}
+
+html body .mmic-pm-review-kicker {
+    color: #f0c5a5 !important;
+}
+
+html body .mmic-pm-review-header h2 {
+    color: #fffaf4 !important;
+}
+
+
+/* =========================================================
+   COMPOSITION D'UN MESSAGE PRIVÉ
+   ========================================================= */
+
+html body .mmic-pm-compose-page {
+    color: #75473f !important;
+}
+
+html body .mmic-pm-compose-toolbar .mmic-pm-folder-link,
+html body .mmic-pm-compose-toolbar .mmic-pm-folder-link a {
+    color: #75473f !important;
+}
+
+html body .mmic-pm-compose-return,
+html body .mmic-pm-compose-page #find_user {
+    border-color: #d8a17e !important;
+
+    background: #b6837b !important;
+    color: #fffaf4 !important;
+}
+
+html body .mmic-pm-compose-return:hover,
+html body .mmic-pm-compose-page #find_user:hover {
+    background: #a66f67 !important;
+}
+
+html body .mmic-pm-compose-page #optionsitems th,
+html body .mmic-pm-compose-page #optionsitems_show th {
+    background: #b6837b !important;
+    background-image: none !important;
+
+    color: #fffaf4 !important;
+}
+
+html body .mmic-pm-compose-page
+#optionsitems_show input[type="checkbox"] {
+    accent-color: #b6837b !important;
+}
