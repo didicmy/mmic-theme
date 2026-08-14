@@ -1,19 +1,26 @@
 /* =========================================================
    MEET ME IN CHICAGO — DERNIÈRES IMAGES
+   NOUVELLE PALETTE
    ========================================================= */
 
 .mmic-images-page #page-body {
   padding-top: 18px;
 }
 
-/* Conteneur principal */
+
+/* =========================================================
+   CONTENEUR PRINCIPAL
+   ========================================================= */
 
 .mmic-images-page #page-body > div,
 .mmic-images-page #page-body > table {
   box-sizing: border-box;
 }
 
-/* Titre */
+
+/* =========================================================
+   TITRE
+   ========================================================= */
 
 .mmic-images-page h1.page-title {
   position: relative;
@@ -21,26 +28,36 @@
   margin: 0 0 14px;
   padding: 18px 20px;
 
-  border: 1px solid #dfd1c3;
-  border-bottom: 2px solid #b97a56;
+  border: 1px solid #E7C2B5;
+  border-bottom: 2px solid #D58D7A;
   border-radius: 12px 12px 0 0;
 
-  background: #102438;
+  background:
+    linear-gradient(
+      90deg,
+      #8F5D58 0%,
+      #A96F68 50%,
+      #8F5D58 100%
+    );
 
-  color: #fbf8f3;
+  color: #FFF8F4;
+
   font-family: Georgia, serif;
   font-size: 15px;
   font-weight: 600;
+
   letter-spacing: 1.5px;
   text-align: center;
   text-transform: uppercase;
 }
+
 
 /* Petite décoration autour du titre */
 
 .mmic-images-page h1.page-title::before,
 .mmic-images-page h1.page-title::after {
   content: "";
+
   display: inline-block;
 
   width: 36px;
@@ -48,45 +65,59 @@
 
   margin: 0 12px 4px;
 
-  background: #b97a56;
+  background: #D58D7A;
 }
 
-/* Description */
+
+/* =========================================================
+   DESCRIPTION
+   ========================================================= */
 
 .mmic-images-page .imagelist_desc {
   margin: 0;
   padding: 17px 20px;
 
-  border-left: 1px solid #dfd1c3;
-  border-right: 1px solid #dfd1c3;
+  border-left: 1px solid #E7C2B5;
+  border-right: 1px solid #E7C2B5;
 
-  background: #fbf8f3;
+  background: #FFF8F4;
 
-  color: #625b55;
+  color: #7F6761;
+
   font-size: 11px;
   line-height: 1.65;
+
   text-align: center;
 }
 
-/* Tableau natif Forumactif */
+
+/* =========================================================
+   TABLEAU NATIF FORUMACTIF
+   ========================================================= */
 
 .mmic-images-page table.forumline {
   width: 100% !important;
 
   margin: 0 0 25px !important;
 
-  border: 1px solid #dfd1c3 !important;
+  border: 1px solid #E7C2B5 !important;
   border-collapse: separate !important;
   border-spacing: 0 !important;
+
   border-radius: 0 0 12px 12px;
 
   overflow: hidden;
 
-  background: #fbf8f3;
-  box-shadow: 0 8px 24px rgba(12, 24, 39, 0.06);
+  background: #FFF8F4;
+
+  box-shadow:
+    0 8px 24px rgba(117, 67, 63, 0.07);
 }
 
-/* Ancien bandeau Forumactif */
+
+/* =========================================================
+   BANDEAU NATIF FORUMACTIF
+   ========================================================= */
 
 .mmic-images-page table.forumline .catHead {
   height: auto !important;
@@ -94,43 +125,56 @@
   padding: 10px 14px !important;
 
   border: 0 !important;
-  border-top: 1px solid #eadfd5 !important;
+  border-top: 1px solid #F0DDD4 !important;
 
-  background: #f5eee7 !important;
+  background: #F8EDE7 !important;
   background-image: none !important;
 
-  color: #102438 !important;
+  color: #75433F !important;
 
   font-family: Georgia, serif;
   font-size: 11px !important;
   font-weight: 600;
+
   letter-spacing: .8px;
   text-transform: uppercase;
 }
 
-/* Liens */
+
+/* =========================================================
+   LIENS
+   ========================================================= */
 
 .mmic-images-page table.forumline a {
-  color: #765744;
+  color: #7F5855;
+
   text-decoration: none;
+
   transition: color .2s ease;
 }
 
+
 .mmic-images-page table.forumline a:hover {
-  color: #b97a56;
+  color: #A76452;
 }
 
-/* Cellules contenant les images */
+
+/* =========================================================
+   CELLULES
+   ========================================================= */
 
 .mmic-images-page table.forumline td {
   box-sizing: border-box;
 
-  border-color: #eadfd5 !important;
+  border-color: #F0DDD4 !important;
 
-  background: #fbf8f3;
+  background: #FFF8F4;
 }
 
-/* Images éventuelles */
+
+/* =========================================================
+   IMAGES ÉVENTUELLES
+   ========================================================= */
 
 .mmic-images-page table.forumline img {
   max-width: 100%;
@@ -139,32 +183,44 @@
   border-radius: 7px;
 }
 
-/* Si aucune image n'est encore présente */
+
+/* =========================================================
+   AUCUNE IMAGE / LIGNES NATIVES
+   ========================================================= */
 
 .mmic-images-page table.forumline .row1,
 .mmic-images-page table.forumline .row2,
 .mmic-images-page table.forumline .row3 {
   padding: 12px !important;
-  background: #fbf8f3 !important;
+
+  background: #FFF8F4 !important;
 }
 
-/* Responsive */
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
 
 @media (max-width: 800px) {
 
   .mmic-images-page h1.page-title {
     padding: 14px 10px;
+
     font-size: 13px;
   }
+
 
   .mmic-images-page h1.page-title::before,
   .mmic-images-page h1.page-title::after {
     width: 20px;
+
     margin-left: 7px;
     margin-right: 7px;
   }
 
+
   .mmic-images-page .imagelist_desc {
     padding: 14px;
   }
+
 }
