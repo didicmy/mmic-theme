@@ -1680,199 +1680,152 @@
    BAS DU FORUM — LÉGENDE DES MESSAGES
    ========================================================= */
 
-/* =========================================================
-   LÉGENDE DES MESSAGES SOUS LE QUEEL
-   ========================================================= */
-
 .mmic-forum-legend {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 8px;
+  gap: 9px;
 
   width: calc(100% - 24px);
-  margin: 15px auto 10px;
+  margin: 16px auto 11px;
 }
 
-.mmic-legend-item {
+
+/* =========================================================
+   LES TROIS PETITS BOUTONS
+   ========================================================= */
+
+.mmic-forum-legend .mmic-legend-item {
   display: inline-flex;
   align-items: center;
   gap: 7px;
 
-  min-height: 28px;
-  padding: 3px 10px 3px 5px;
+  min-height: 30px;
+  padding: 4px 11px 4px 5px;
 
-  border: 1px solid #ddd1c6;
-  border-radius: 20px;
+  box-sizing: border-box;
 
-  background: #fbf8f3;
-  color: #625951;
+  border: 1px solid #E7C2B5;
+  border-radius: 18px;
 
-  box-shadow: 0 2px 5px rgba(16, 36, 56, 0.05);
+  background: #FFF8F4;
+  color: #7F5855;
+
+  box-shadow:
+    0 2px 5px rgba(81, 61, 59, 0.06);
 
   font-size: 7px;
   font-weight: 700;
-  letter-spacing: 0.35px;
+  letter-spacing: 0.45px;
   text-transform: uppercase;
 
   transition:
+    background 0.2s ease,
     border-color 0.2s ease,
-    background-color 0.2s ease,
     color 0.2s ease,
-    transform 0.2s ease;
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
-.mmic-legend-icon {
+
+/* =========================================================
+   CERCLE DES ICÔNES
+   ========================================================= */
+
+.mmic-forum-legend .mmic-legend-icon {
+  position: relative;
+
   display: inline-flex;
-  flex: 0 0 22px;
   align-items: center;
   justify-content: center;
+
+  flex: 0 0 22px;
 
   width: 22px;
   height: 22px;
 
   overflow: hidden;
 
-  border: 1px solid #d19168;
+  border: 1px solid #D58D7A;
   border-radius: 50%;
 
-  background: #102438;
-}
+  background:
+    linear-gradient(
+      145deg,
+      #A96F68 0%,
+      #8C615D 100%
+    );
 
-.mmic-legend-icon img {
-  display: block;
-
-  width: 14px !important;
-  height: 14px !important;
-  max-width: 14px !important;
-
-  object-fit: contain;
-}
-
-.mmic-legend-item:hover {
-  border-color: #b97a56;
-
-  background: #102438;
-  color: #fbf8f3;
-
-  transform: translateY(-2px);
-}
-
-.mmic-legend-new {
-  box-shadow: inset 0 0 0 2px rgba(185, 122, 86, 0.22);
-}
-
-.mmic-legend-none {
-  opacity: 0.82;
-}
-
-.mmic-legend-locked {
-  background: #596979;
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.10),
+    0 2px 5px rgba(81,61,59,.10);
 }
 
 
-/* Responsive de la légende */
+/* On masque les anciens GIF Forumactif */
 
-@media (max-width: 620px) {
-  .mmic-forum-legend {
-    align-items: stretch;
-    flex-direction: column;
-  }
-
-  .mmic-legend-item {
-    justify-content: flex-start;
-    width: 100%;
-    box-sizing: border-box;
-  }
+.mmic-forum-legend .mmic-legend-icon img {
+  display: none !important;
 }
+
+
 /* =========================================================
-   LÉGENDE DU FORUM — ICÔNES PERSONNALISÉES
-   Remplace les anciens GIF Forumactif
+   ICÔNE COMMUNE
    ========================================================= */
 
-/* On masque définitivement les vieilles images Forumactif */
-html body .mmic-forum-legend .mmic-legend-icon img {
-    display: none !important;
-}
+.mmic-forum-legend .mmic-legend-icon::before {
+  content: "";
 
+  display: block;
 
-/* ---------------------------------------------------------
-   BASE COMMUNE DES TROIS ICÔNES
-   --------------------------------------------------------- */
+  width: 10px;
+  height: 10px;
 
-html body .mmic-forum-legend .mmic-legend-icon {
-    position: relative !important;
+  background: #FFF8F4;
 
-    display: inline-flex !important;
-    align-items: center !important;
-    justify-content: center !important;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
 
-    width: 22px !important;
-    height: 22px !important;
+  -webkit-mask-position: center;
+  mask-position: center;
 
-    flex: 0 0 22px !important;
+  -webkit-mask-size: contain;
+  mask-size: contain;
 
-    border: 1px solid #d8b08c !important;
-    border-radius: 50% !important;
-
-    background: #102438 !important;
-
-    box-shadow:
-        inset 0 0 0 2px rgba(255,255,255,.04),
-        0 2px 5px rgba(16,36,56,.10) !important;
-
-    overflow: hidden !important;
-
-    opacity: 1 !important;
-}
-
-
-/* L'icône elle-même */
-html body .mmic-forum-legend .mmic-legend-icon::before {
-    content: "" !important;
-
-    display: block !important;
-
-    width: 10px !important;
-    height: 10px !important;
-
-    background: #e4b184 !important;
-
-    -webkit-mask-repeat: no-repeat !important;
-    mask-repeat: no-repeat !important;
-
-    -webkit-mask-position: center !important;
-    mask-position: center !important;
-
-    -webkit-mask-size: contain !important;
-    mask-size: contain !important;
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease;
 }
 
 
 /* =========================================================
    NOUVEAUX MESSAGES
-   enveloppe ouverte
+   enveloppe
    ========================================================= */
 
-html body .mmic-forum-legend .mmic-legend-new::before {
-    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M20 6H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2Zm0 2-8 5-8-5h16Zm0 10H4V10l8 5 8-5v8Z'/%3E%3C/svg%3E") !important;
+.mmic-forum-legend .mmic-legend-new::before {
+  -webkit-mask-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M20 6H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2Zm0 2-8 5-8-5h16Zm0 10H4V10l8 5 8-5v8Z'/%3E%3C/svg%3E");
 
-    mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M20 6H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2Zm0 2-8 5-8-5h16Zm0 10H4V10l8 5 8-5v8Z'/%3E%3C/svg%3E") !important;
+  mask-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M20 6H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2Zm0 2-8 5-8-5h16Zm0 10H4V10l8 5 8-5v8Z'/%3E%3C/svg%3E");
 }
 
 
 /* =========================================================
    PAS DE NOUVEAUX MESSAGES
-   petit cercle
+   cercle
    ========================================================= */
 
-html body .mmic-forum-legend .mmic-legend-none::before {
-    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18Zm0 2a7 7 0 1 1 0 14 7 7 0 0 1 0-14Z'/%3E%3C/svg%3E") !important;
+.mmic-forum-legend .mmic-legend-none::before {
+  -webkit-mask-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18Zm0 2a7 7 0 1 1 0 14 7 7 0 0 1 0-14Z'/%3E%3C/svg%3E");
 
-    mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18Zm0 2a7 7 0 1 1 0 14 7 7 0 0 1 0-14Z'/%3E%3C/svg%3E") !important;
+  mask-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18Zm0 2a7 7 0 1 1 0 14 7 7 0 0 1 0-14Z'/%3E%3C/svg%3E");
 
-    opacity: .72 !important;
+  opacity: .72;
 }
 
 
@@ -1881,39 +1834,83 @@ html body .mmic-forum-legend .mmic-legend-none::before {
    cadenas
    ========================================================= */
 
-html body .mmic-forum-legend .mmic-legend-locked::before {
-    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M17 8h-1V6a4 4 0 0 0-8 0v2H7a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-9a2 2 0 0 0-2-2Zm-7-2a2 2 0 0 1 4 0v2h-4V6Zm7 13H7v-9h10v9Z'/%3E%3C/svg%3E") !important;
+.mmic-forum-legend .mmic-legend-locked::before {
+  -webkit-mask-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M17 8h-1V6a4 4 0 0 0-8 0v2H7a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-9a2 2 0 0 0-2-2Zm-7-2a2 2 0 0 1 4 0v2h-4V6Zm7 13H7v-9h10v9Z'/%3E%3C/svg%3E");
 
-    mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M17 8h-1V6a4 4 0 0 0-8 0v2H7a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-9a2 2 0 0 0-2-2Zm-7-2a2 2 0 0 1 4 0v2h-4V6Zm7 13H7v-9h10v9Z'/%3E%3C/svg%3E") !important;
+  mask-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M17 8h-1V6a4 4 0 0 0-8 0v2H7a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-9a2 2 0 0 0-2-2Zm-7-2a2 2 0 0 1 4 0v2h-4V6Zm7 13H7v-9h10v9Z'/%3E%3C/svg%3E");
 }
 
 
-/* Le verrouillé reste légèrement plus grisé */
-html body .mmic-forum-legend .mmic-legend-locked {
-    background: #34485a !important;
+/* Le verrouillé reste légèrement plus discret */
+
+.mmic-forum-legend .mmic-legend-locked {
+  opacity: .78;
+}
+
+.mmic-forum-legend
+.mmic-legend-item:has(.mmic-legend-locked) {
+  background: #F8E9DF;
 }
 
 
-/* ---------------------------------------------------------
-   PETIT EFFET DE FINITION
-   --------------------------------------------------------- */
+/* =========================================================
+   SURVOL
+   ========================================================= */
 
-html body .mmic-forum-legend .mmic-legend-item {
-    transition:
-        transform .18s ease,
-        box-shadow .18s ease !important;
+.mmic-forum-legend .mmic-legend-item:hover {
+  border-color: #D58D7A;
+
+  background: #A96F68;
+  color: #FFF8F4;
+
+  transform: translateY(-1px);
+
+  box-shadow:
+    0 4px 10px rgba(81, 61, 59, .11);
 }
 
-html body .mmic-forum-legend .mmic-legend-item:hover {
-    transform: translateY(-1px) !important;
+.mmic-forum-legend
+.mmic-legend-item:hover
+.mmic-legend-icon {
+  border-color: #F0B29E;
 
-    box-shadow:
-        0 4px 10px rgba(16,36,56,.09) !important;
+  background:
+    linear-gradient(
+      145deg,
+      #8C615D 0%,
+      #76504D 100%
+    );
 }
 
-html body .mmic-forum-legend .mmic-legend-item:hover
+.mmic-forum-legend
+.mmic-legend-item:hover
 .mmic-legend-icon::before {
-    background: #f3c69f !important;
+  background: #FFF8F4;
+  transform: scale(1.08);
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 620px) {
+
+  .mmic-forum-legend {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .mmic-forum-legend .mmic-legend-item {
+    justify-content: flex-start;
+
+    width: 100%;
+
+    box-sizing: border-box;
+  }
+
 }
 /* =========================================================
    SURCHARGE FINALE — TITRES DE CATÉGORIES
