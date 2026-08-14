@@ -1,15 +1,14 @@
 /* ==========================================================
-   PAGE CONNEXION — MEET ME IN CHICAGO
-   Version séparée et nettoyée
+PAGE CONNEXION — MEET ME IN CHICAGO
+PALETTE HARMONISÉE
 ========================================================== */
 
 body.mmic-login-page #page-body{
-    color:#13263d;
+    color:#75433F;
 }
 
-
 /* ----------------------------------------------------------
-   CONTENEUR PRINCIPAL DU FORMULAIRE
+CONTENEUR PRINCIPAL DU FORMULAIRE
 ---------------------------------------------------------- */
 
 body.mmic-login-page form[name="form_login"]{
@@ -21,51 +20,55 @@ body.mmic-login-page form[name="form_login"]{
     box-sizing:border-box;
 }
 
-
 /* Petit lien "Meet Me In Chicago" au-dessus */
+
 body.mmic-login-page form[name="form_login"] > table:first-child{
     width:100% !important;
-
     margin-bottom:8px !important;
 }
 
 body.mmic-login-page form[name="form_login"] > table:first-child .nav{
     padding:0 6px !important;
 
-    color:#9d6f4f !important;
+    color:#A76452 !important;
 
     font-size:10px !important;
 }
 
 body.mmic-login-page form[name="form_login"] > table:first-child a{
-    color:#9d6f4f !important;
+    color:#A76452 !important;
     text-decoration:none !important;
+}
+
+body.mmic-login-page form[name="form_login"] > table:first-child a:hover{
+    color:#75433F !important;
 }
 
 
 /* ----------------------------------------------------------
-   CARTE
+CARTE
 ---------------------------------------------------------- */
 
 body.mmic-login-page form[name="form_login"] > table.forumline{
     width:100% !important;
 
-    border:1px solid #dfcdbc !important;
+    border:1px solid #E7C2B5 !important;
     border-radius:8px !important;
 
     border-spacing:0 !important;
     border-collapse:separate !important;
 
-    background:#fffaf4 !important;
+    background:#FFF8F4 !important;
 
     overflow:hidden !important;
 
-    box-shadow:0 5px 16px rgba(16,36,56,.06);
+    box-shadow:
+        0 5px 16px rgba(117,67,63,.06);
 }
 
 
 /* ----------------------------------------------------------
-   BANDEAU DU HAUT
+BANDEAU DU HAUT
 ---------------------------------------------------------- */
 
 body.mmic-login-page form[name="form_login"] .thHead{
@@ -76,11 +79,17 @@ body.mmic-login-page form[name="form_login"] .thHead{
     padding:13px 16px 12px !important;
 
     border:0 !important;
-    border-bottom:1px solid #d2a27e !important;
+    border-bottom:1px solid #D58D7A !important;
 
-    background:#13263d !important;
+    background:
+        linear-gradient(
+            90deg,
+            #8F5D58 0%,
+            #A96F68 50%,
+            #8F5D58 100%
+        ) !important;
 
-    color:#fff !important;
+    color:#FFF8F4 !important;
 
     text-align:center !important;
 
@@ -91,8 +100,8 @@ body.mmic-login-page form[name="form_login"] .thHead{
     line-height:1.3 !important;
 }
 
-
 /* Petit kicker */
+
 body.mmic-login-page form[name="form_login"] .thHead::before{
     content:"ESPACE MEMBRE";
 
@@ -100,7 +109,7 @@ body.mmic-login-page form[name="form_login"] .thHead::before{
 
     margin-bottom:4px;
 
-    color:#c99b74;
+    color:#F0B29E;
 
     font-family:Arial, sans-serif;
     font-size:7px;
@@ -112,32 +121,32 @@ body.mmic-login-page form[name="form_login"] .thHead::before{
 
 
 /* ----------------------------------------------------------
-   ZONE CENTRALE
+ZONE CENTRALE
 ---------------------------------------------------------- */
 
 body.mmic-login-page form[name="form_login"] td.row1{
-    background:#fffaf4 !important;
+    background:#FFF8F4 !important;
 
     border:0 !important;
 
     padding:18px 20px !important;
 
-    color:#13263d !important;
+    color:#75433F !important;
 }
 
-
 /* Table interne */
+
 body.mmic-login-page form[name="form_login"] td.row1 table{
     margin:0 auto !important;
 }
 
 
 /* ----------------------------------------------------------
-   LABELS
+LABELS
 ---------------------------------------------------------- */
 
 body.mmic-login-page form[name="form_login"] .gen{
-    color:#13263d !important;
+    color:#75433F !important;
 
     font-size:11px !important;
 }
@@ -145,14 +154,14 @@ body.mmic-login-page form[name="form_login"] .gen{
 body.mmic-login-page form[name="form_login"] .align_droite{
     padding-right:10px !important;
 
-    color:#13263d !important;
+    color:#75433F !important;
 
     text-align:right !important;
 }
 
 
 /* ----------------------------------------------------------
-   CHAMPS
+CHAMPS
 ---------------------------------------------------------- */
 
 body.mmic-login-page form[name="form_login"]
@@ -165,12 +174,12 @@ input[type="password"]{
 
     padding:0 10px !important;
 
-    border:1px solid #dfcdbc !important;
+    border:1px solid #E7C2B5 !important;
     border-radius:5px !important;
 
-    background:#fffdf9 !important;
+    background:#FFFAF7 !important;
 
-    color:#13263d !important;
+    color:#75433F !important;
 
     font-size:11px !important;
 
@@ -190,14 +199,15 @@ input[type="text"]:focus,
 
 body.mmic-login-page form[name="form_login"]
 input[type="password"]:focus{
-    border-color:#c99b74 !important;
+    border-color:#D58D7A !important;
 
-    box-shadow:0 0 0 2px rgba(201,155,116,.12) !important;
+    box-shadow:
+        0 0 0 2px rgba(213,141,122,.12) !important;
 }
 
 
 /* ----------------------------------------------------------
-   MOT DE PASSE + OEIL
+MOT DE PASSE + OEIL
 ---------------------------------------------------------- */
 
 body.mmic-login-page form[name="form_login"] .password-container{
@@ -233,7 +243,7 @@ body.mmic-login-page form[name="form_login"]
 
 
 /* ----------------------------------------------------------
-   CONNEXION AUTOMATIQUE
+CONNEXION AUTOMATIQUE
 ---------------------------------------------------------- */
 
 body.mmic-login-page form[name="form_login"]
@@ -243,7 +253,7 @@ input[type="checkbox"]{
 
     margin-left:5px;
 
-    accent-color:#13263d;
+    accent-color:#A96F68;
 
     vertical-align:middle;
 
@@ -252,7 +262,7 @@ input[type="checkbox"]{
 
 
 /* ----------------------------------------------------------
-   BOUTON CONNEXION
+BOUTON CONNEXION
 ---------------------------------------------------------- */
 
 body.mmic-login-page form[name="form_login"] .mainoption{
@@ -260,11 +270,11 @@ body.mmic-login-page form[name="form_login"] .mainoption{
 
     padding:8px 18px !important;
 
-    border:1px solid #d2a27e !important;
+    border:1px solid #D58D7A !important;
     border-radius:5px !important;
 
-    background:#13263d !important;
-    color:#fff !important;
+    background:#A96F68 !important;
+    color:#FFF8F4 !important;
 
     font-size:9px !important;
     font-weight:700 !important;
@@ -274,17 +284,26 @@ body.mmic-login-page form[name="form_login"] .mainoption{
 
     cursor:pointer !important;
 
-    transition:.2s ease !important;
+    transition:
+        background .2s ease,
+        border-color .2s ease,
+        box-shadow .2s ease !important;
 }
 
 body.mmic-login-page form[name="form_login"] .mainoption:hover{
-    background:#d2a27e !important;
-    color:#13263d !important;
+    background:#8F5D58 !important;
+
+    border-color:#F0B29E !important;
+
+    color:#FFF8F4 !important;
+
+    box-shadow:
+        0 4px 9px rgba(117,67,63,.14) !important;
 }
 
 
 /* ----------------------------------------------------------
-   CONNEXION SOCIALE
+CONNEXION SOCIALE
 ---------------------------------------------------------- */
 
 body.mmic-login-page form[name="form_login"] .social_btn{
@@ -302,7 +321,7 @@ body.mmic-login-page form[name="form_login"] .fb_or{
 
     width:180px;
 
-    color:#9d6f4f;
+    color:#A76452;
 
     font-size:9px;
     font-weight:700;
@@ -322,7 +341,7 @@ body.mmic-login-page form[name="form_login"] .fb_or::after{
     width:58px;
     height:1px;
 
-    background:#dfcdbc;
+    background:#E7C2B5;
 }
 
 body.mmic-login-page form[name="form_login"] .fb_or::before{
@@ -333,8 +352,8 @@ body.mmic-login-page form[name="form_login"] .fb_or::after{
     right:0;
 }
 
-
 /* Topic'it */
+
 body.mmic-login-page form[name="form_login"] .ti-connect{
     display:flex;
     justify-content:center;
@@ -342,17 +361,17 @@ body.mmic-login-page form[name="form_login"] .ti-connect{
 
 
 /* ----------------------------------------------------------
-   LIENS BAS
+LIENS BAS
 ---------------------------------------------------------- */
 
 body.mmic-login-page form[name="form_login"] .gensmall{
-    color:#756b63 !important;
+    color:#8F7A73 !important;
 
     font-size:10px !important;
 }
 
 body.mmic-login-page form[name="form_login"] .gensmall a{
-    color:#9d6f4f !important;
+    color:#A76452 !important;
 
     font-weight:600 !important;
 
@@ -362,12 +381,12 @@ body.mmic-login-page form[name="form_login"] .gensmall a{
 }
 
 body.mmic-login-page form[name="form_login"] .gensmall a:hover{
-    color:#13263d !important;
+    color:#75433F !important;
 }
 
 
 /* ----------------------------------------------------------
-   ESPACEMENTS
+ESPACEMENTS
 ---------------------------------------------------------- */
 
 body.mmic-login-page form[name="form_login"] tr{
@@ -384,7 +403,7 @@ body.mmic-login-page form[name="form_login"] .mt10{
 
 
 /* ----------------------------------------------------------
-   VERSION MOBILE
+VERSION MOBILE
 ---------------------------------------------------------- */
 
 @media (max-width:700px){
@@ -406,4 +425,5 @@ body.mmic-login-page form[name="form_login"] .mt10{
     input[type="password"]{
         width:180px !important;
     }
+
 }
