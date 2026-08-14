@@ -3308,124 +3308,133 @@ html body .mmic-pm-preview-message .postbody{
     line-height:1.7;
 
 }
-/*--------------------------------------------------
-   PAGE D'INFORMATIONS
---------------------------------------------------*/
+/* =========================================================
+   MMIC — PAGE INFORMATION / CONFIRMATION
+   Palette été
+   ========================================================= */
 
-html body .mmic-message-page{
+.mmic-message-page {
+    width: 100%;
+    margin: 30px auto;
+    overflow: hidden;
 
-    width:100%;
-    margin:20px 0;
+    border: 1px solid #dfcdbc;
+    border-radius: 10px;
 
-    border:1px solid #dfcdbc;
-    border-radius:10px;
-
-    overflow:hidden;
-
-    background:#fffdfa;
-
-    box-shadow:0 6px 16px rgba(16,36,56,.06);
-
+    background: #fffaf4;
+    box-shadow: 0 6px 18px rgba(121, 78, 67, .07);
 }
 
-html body .mmic-message-header{
+/* Bandeau */
 
-    background:#13263d;
+.mmic-message-header {
+    padding: 17px 20px 15px;
 
-    padding:18px;
+    background: #b98278 !important;
+    border-bottom: 1px solid #d2a27e;
 
-    text-align:center;
-
+    text-align: center;
 }
 
-html body .mmic-message-kicker{
+.mmic-message-kicker {
+    margin-bottom: 5px;
 
-    font-size:9px;
+    color: #f2c79f !important;
 
-    text-transform:uppercase;
-
-    letter-spacing:.18em;
-
-    color:#caa27e;
-
-    margin-bottom:5px;
-
+    font-size: 7px;
+    font-weight: 700;
+    letter-spacing: .18em;
+    text-transform: uppercase;
 }
 
-html body .mmic-message-header h2{
+.mmic-message-header h2 {
+    margin: 0;
 
-    margin:0;
+    color: #fffaf4 !important;
 
-    color:#fff;
-
-    font-size:22px;
-
-    font-weight:700;
-
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 21px;
+    font-weight: 600;
 }
 
-html body .mmic-message-body{
+/* Corps */
 
-    padding:25px;
+.mmic-message-body {
+    padding: 22px;
 
+    background: #fffaf4;
 }
 
-html body .mmic-message-content{
+.mmic-message-content {
+    padding: 18px 20px;
 
-    text-align:center;
+    border: 1px solid #dfcdbc;
+    border-radius: 7px;
 
-    font-size:15px;
+    background: #fffdf9;
 
-    line-height:1.8;
+    color: #6f5148;
+    text-align: center;
 
-    color:#13263d;
-
-    padding:18px;
-
-    border:1px solid #ead8c8;
-
-    border-radius:8px;
-
-    background:#fff;
-
+    font-size: 12px;
+    line-height: 1.8;
 }
 
-html body .mmic-message-actions{
+/* Liens générés par Forumactif dans MESSAGE_TEXT */
 
-    margin-top:22px;
+.mmic-message-content a {
+    color: #b77868 !important;
 
-    text-align:center;
+    font-weight: 600;
+    text-decoration: none;
 
+    transition: color .2s ease;
 }
 
-html body .mmic-message-button{
-
-    display:inline-block;
-
-    padding:10px 22px;
-
-    border-radius:6px;
-
-    background:#13263d;
-
-    color:#fff !important;
-
-    text-decoration:none;
-
-    text-transform:uppercase;
-
-    font-size:10px;
-
-    letter-spacing:.12em;
-
-    transition:.25s;
-
+.mmic-message-content a:hover {
+    color: #8f5f55 !important;
+    text-decoration: underline;
 }
 
-html body .mmic-message-button:hover{
+/* Bouton retour */
 
-    background:#1d3553;
+.mmic-message-actions {
+    display: flex;
+    justify-content: center;
 
+    margin-top: 18px;
+}
+
+.mmic-message-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 30px;
+    padding: 0 18px;
+
+    border: 1px solid #b98278;
+    border-radius: 5px;
+
+    background: #b98278 !important;
+    color: #fffaf4 !important;
+
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: .08em;
+    text-decoration: none !important;
+    text-transform: uppercase;
+
+    transition:
+        background .2s ease,
+        color .2s ease,
+        border-color .2s ease;
+}
+
+.mmic-message-button:hover {
+    background: #fffaf4 !important;
+    color: #b77868 !important;
+    border-color: #d2a27e;
 }
 /* =========================================================
    MEET ME IN CHICAGO
