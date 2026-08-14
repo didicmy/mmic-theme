@@ -1,53 +1,78 @@
 /* =========================================================
    MEET ME IN CHICAGO — ACTIVITÉS
+   NOUVELLE PALETTE
    ========================================================= */
 
 .mmic-discover-page #page-body {
   padding-top: 18px;
 }
 
-/* CONTENEUR PRINCIPAL */
+
+/* =========================================================
+   CONTENEUR PRINCIPAL
+   ========================================================= */
 
 .mmic-discover-page #discover-page {
   width: 100% !important;
+
   margin: 0 auto 30px !important;
 
-  border: 1px solid #dfd1c3 !important;
+  border: 1px solid #E7C2B5 !important;
   border-collapse: separate !important;
   border-spacing: 0 !important;
   border-radius: 12px;
 
   overflow: hidden;
 
-  background: #fbf8f3;
-  box-shadow: 0 8px 24px rgba(12, 24, 39, 0.06);
+  background: #FFF8F4;
+
+  box-shadow:
+    0 8px 24px rgba(117, 67, 63, 0.07);
 }
 
-/* GRAND TITRE */
 
-.mmic-discover-page #discover-page > tbody > tr:first-child .catHead {
+/* =========================================================
+   GRAND TITRE
+   ========================================================= */
+
+.mmic-discover-page
+#discover-page > tbody > tr:first-child .catHead {
   padding: 16px 20px !important;
 
   border: 0 !important;
-  border-bottom: 2px solid #b97a56 !important;
+  border-bottom: 2px solid #D58D7A !important;
 
-  background: #102438 !important;
-  background-image: none !important;
+  background:
+    linear-gradient(
+      90deg,
+      #8F5D58 0%,
+      #A96F68 50%,
+      #8F5D58 100%
+    ) !important;
 
-  color: #fbf8f3 !important;
+  background-image: none;
+
+  color: #FFF8F4 !important;
 
   font-family: Georgia, serif;
   font-size: 14px !important;
   font-weight: 600;
+
   letter-spacing: 1.5px;
   text-align: center;
   text-transform: uppercase;
 }
 
-/* PETITES LIGNES DÉCORATIVES */
 
-.mmic-discover-page #discover-page > tbody > tr:first-child .catHead::before,
-.mmic-discover-page #discover-page > tbody > tr:first-child .catHead::after {
+/* =========================================================
+   PETITES LIGNES DÉCORATIVES
+   ========================================================= */
+
+.mmic-discover-page
+#discover-page > tbody > tr:first-child .catHead::before,
+
+.mmic-discover-page
+#discover-page > tbody > tr:first-child .catHead::after {
   content: "";
 
   display: inline-block;
@@ -57,12 +82,16 @@
 
   margin: 0 12px 4px;
 
-  background: #b97a56;
+  background: #D58D7A;
 }
 
-/* TITRES DES DATES */
 
-.mmic-discover-page #discover-page td.catHead:not(
+/* =========================================================
+   TITRES DES DATES
+   ========================================================= */
+
+.mmic-discover-page
+#discover-page td.catHead:not(
   #discover-page > tbody > tr:first-child td.catHead
 ) {
   height: auto !important;
@@ -70,22 +99,26 @@
   padding: 8px 12px !important;
 
   border: 0 !important;
-  border-top: 1px solid #dfd1c3 !important;
-  border-bottom: 1px solid #dfd1c3 !important;
+  border-top: 1px solid #E7C2B5 !important;
+  border-bottom: 1px solid #E7C2B5 !important;
 
-  background: #f5eee7 !important;
+  background: #F8EDE7 !important;
   background-image: none !important;
 
-  color: #9a6548 !important;
+  color: #A76452 !important;
 
   font-family: Georgia, serif;
   font-size: 10px !important;
   font-weight: 700;
+
   letter-spacing: .8px;
   text-transform: uppercase;
 }
 
-/* LIGNES D'ACTIVITÉ */
+
+/* =========================================================
+   LIGNES D’ACTIVITÉ
+   ========================================================= */
 
 .mmic-discover-page #discover-page td.row1,
 .mmic-discover-page #discover-page td.row2,
@@ -93,38 +126,48 @@
   padding: 10px 12px !important;
 
   border: 0 !important;
-  border-bottom: 1px solid #eee3d9 !important;
+  border-bottom: 1px solid #F0DDD4 !important;
 
-  background: #fbf8f3 !important;
+  background: #FFF8F4 !important;
 }
 
-/* AVATAR */
+
+/* =========================================================
+   AVATAR
+   ========================================================= */
 
 .mmic-discover-page #discover-page img {
   border-radius: 50%;
 }
 
-/* TEXTE */
+
+/* =========================================================
+   TEXTE
+   ========================================================= */
 
 .mmic-discover-page #discover-page .gensmall,
 .mmic-discover-page #discover-page .gen,
 .mmic-discover-page #discover-page .genmed {
-  color: #625b55 !important;
+  color: #7F6761 !important;
 
   font-size: 10px !important;
   line-height: 1.45;
 }
 
-/* HEURE */
+
+/* heure */
 
 .mmic-discover-page #discover-page .gensmall {
-  color: #9b8f85 !important;
+  color: #A9958D !important;
 }
 
-/* LIENS */
+
+/* =========================================================
+   LIENS
+   ========================================================= */
 
 .mmic-discover-page #discover-page a {
-  color: #765744 !important;
+  color: #7F5855 !important;
 
   font-weight: 600;
   text-decoration: none;
@@ -132,18 +175,27 @@
   transition: color .2s ease;
 }
 
+
 .mmic-discover-page #discover-page a:hover {
-  color: #b97a56 !important;
+  color: #A76452 !important;
+
   text-decoration: underline;
 }
 
-/* ESPACEMENT ENTRE LES BLOCS */
 
-.mmic-discover-page #discover-page tr + tr td.catHead {
+/* =========================================================
+   ESPACEMENT ENTRE LES BLOCS
+   ========================================================= */
+
+.mmic-discover-page
+#discover-page tr + tr td.catHead {
   margin-top: 8px;
 }
 
-/* RESPONSIVE */
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
 
 @media (max-width: 800px) {
 
@@ -151,21 +203,31 @@
     font-size: 9px;
   }
 
-  .mmic-discover-page #discover-page > tbody > tr:first-child .catHead {
+
+  .mmic-discover-page
+  #discover-page > tbody > tr:first-child .catHead {
     padding: 13px 10px !important;
+
     font-size: 12px !important;
   }
 
-  .mmic-discover-page #discover-page > tbody > tr:first-child .catHead::before,
-  .mmic-discover-page #discover-page > tbody > tr:first-child .catHead::after {
+
+  .mmic-discover-page
+  #discover-page > tbody > tr:first-child .catHead::before,
+
+  .mmic-discover-page
+  #discover-page > tbody > tr:first-child .catHead::after {
     width: 20px;
+
     margin-left: 7px;
     margin-right: 7px;
   }
+
 
   .mmic-discover-page #discover-page td.row1,
   .mmic-discover-page #discover-page td.row2,
   .mmic-discover-page #discover-page td.row3 {
     padding: 8px !important;
   }
+
 }
