@@ -1187,3 +1187,201 @@
 
   color: #FFF8F4;
 }
+/* =========================================================
+   GROUPES — MEMBRES EN ATTENTE
+   ========================================================= */
+
+.mmic-group-pending {
+  margin: 18px 0 15px;
+}
+
+
+/* ---------- tableau Forumactif ---------- */
+
+.mmic-group-pending table {
+  width: 100% !important;
+
+  margin: 0 !important;
+
+  border: 1px solid #E7C2B5 !important;
+  border-collapse: separate !important;
+  border-spacing: 0 !important;
+
+  border-radius: 9px;
+
+  overflow: hidden;
+
+  background: #FFF8F4 !important;
+
+  box-shadow:
+    0 5px 14px rgba(117, 67, 63, .06);
+}
+
+
+/* ---------- grand en-tête des colonnes ---------- */
+
+.mmic-group-pending th,
+.mmic-group-pending .thTop,
+.mmic-group-pending .thCornerL,
+.mmic-group-pending .thCornerR {
+  height: auto !important;
+
+  padding: 8px 7px !important;
+
+  border: 0 !important;
+  border-right: 1px solid rgba(255,248,244,.12) !important;
+
+  background: #A96F68 !important;
+  background-image: none !important;
+
+  color: #FFF8F4 !important;
+
+  font-family: Georgia, serif;
+  font-size: 9px !important;
+  font-weight: 700 !important;
+
+  letter-spacing: .55px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+
+.mmic-group-pending th:last-child {
+  border-right: 0 !important;
+}
+
+
+/* ---------- titre "Membres en attente" ---------- */
+
+.mmic-group-pending .catBottom,
+.mmic-group-pending .catHead,
+.mmic-group-pending .catLeft,
+.mmic-group-pending .catRight {
+  height: auto !important;
+
+  padding: 8px 10px !important;
+
+  border: 0 !important;
+  border-top: 1px solid #E7C2B5 !important;
+  border-bottom: 1px solid #E7C2B5 !important;
+
+  background: #F8EDE7 !important;
+  background-image: none !important;
+
+  color: #A76452 !important;
+
+  font-family: Georgia, serif;
+  font-size: 10px !important;
+  font-weight: 700 !important;
+
+  letter-spacing: .8px;
+  text-transform: uppercase;
+}
+
+
+/* ---------- cellules ---------- */
+
+.mmic-group-pending td,
+.mmic-group-pending td.row1,
+.mmic-group-pending td.row2,
+.mmic-group-pending td.row3 {
+  padding: 8px 7px !important;
+
+  border: 0 !important;
+  border-bottom: 1px solid #F0DDD4 !important;
+
+  background: #FFF8F4 !important;
+  background-image: none !important;
+
+  color: #7F6761 !important;
+
+  font-size: 9px;
+  line-height: 1.4;
+
+  text-align: center;
+}
+
+
+/* ---------- liens ---------- */
+
+.mmic-group-pending a {
+  color: #7F5855 !important;
+
+  font-weight: 600;
+  text-decoration: none;
+}
+
+
+.mmic-group-pending a:hover {
+  color: #A76452 !important;
+
+  text-decoration: underline;
+}
+
+
+/* ---------- zone des boutons approuver / refuser ---------- */
+
+.mmic-group-pending input[type="submit"],
+.mmic-group-pending input[type="button"] {
+  min-height: 27px;
+
+  padding: 0 10px;
+
+  border: 1px solid #D58D7A !important;
+  border-radius: 5px;
+
+  background: #A96F68 !important;
+  background-image: none !important;
+
+  color: #FFF8F4 !important;
+
+  font-family: Georgia, serif;
+  font-size: 8px;
+  font-weight: 700;
+
+  letter-spacing: .4px;
+  text-transform: uppercase;
+
+  cursor: pointer;
+
+  transition:
+    background .2s ease,
+    border-color .2s ease;
+}
+
+
+.mmic-group-pending input[type="submit"]:hover,
+.mmic-group-pending input[type="button"]:hover {
+  background: #8F5D58 !important;
+
+  border-color: #F0B29E !important;
+}
+
+
+/* ---------- checkbox ---------- */
+
+.mmic-group-pending input[type="checkbox"] {
+  accent-color: #A96F68;
+}
+
+
+/* ---------- anciens petits boutons/images Forumactif ---------- */
+
+.mmic-group-pending img {
+  vertical-align: middle;
+}
+
+
+/* ---------- responsive ---------- */
+
+@media (max-width: 700px) {
+
+  .mmic-group-pending {
+    overflow-x: auto;
+  }
+
+  .mmic-group-pending table {
+    min-width: 650px;
+  }
+
+}
