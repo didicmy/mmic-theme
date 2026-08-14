@@ -5019,3 +5019,63 @@ body.mmic-profile-friendsfoes #page-body a {
 body.mmic-profile-friendsfoes #page-body a:hover {
     color: #75433F !important;
 }
+/* =========================================================
+   CORRECTIF — BANDEAUX PROFIL DISPARUS
+   AMIS & IGNORÉS + SIGNATURE
+   ========================================================= */
+
+
+/* ---------- AMIS & IGNORÉS ---------- */
+
+body.mmic-profile-friendsfoes #page-body table.forumline th,
+body.mmic-profile-friendsfoes #page-body table.forumline .thHead,
+body.mmic-profile-friendsfoes #page-body table.forumline .thSides,
+body.mmic-profile-friendsfoes #page-body table.forumline .catHead {
+    background-image:
+        linear-gradient(
+            90deg,
+            #8F5D58 0%,
+            #A96F68 50%,
+            #8F5D58 100%
+        ) !important;
+
+    background-color: #A96F68 !important;
+
+    color: #FFF8F4 !important;
+}
+
+
+body.mmic-profile-friendsfoes #page-body table.forumline th *,
+body.mmic-profile-friendsfoes #page-body table.forumline .thHead *,
+body.mmic-profile-friendsfoes #page-body table.forumline .thSides *,
+body.mmic-profile-friendsfoes #page-body table.forumline .catHead * {
+    color: #FFF8F4 !important;
+}
+
+
+/* ---------- SIGNATURE ---------- */
+
+body.mmic-profile-signature #page-body table.forumline th,
+body.mmic-profile-signature #page-body table.forumline .thHead,
+body.mmic-profile-signature #page-body table.forumline .thSides,
+body.mmic-profile-signature #page-body table.forumline .catHead {
+    background-image:
+        linear-gradient(
+            90deg,
+            #8F5D58 0%,
+            #A96F68 50%,
+            #8F5D58 100%
+        ) !important;
+
+    background-color: #A96F68 !important;
+
+    color: #FFF8F4 !important;
+}
+
+
+body.mmic-profile-signature #page-body table.forumline th *,
+body.mmic-profile-signature #page-body table.forumline .thHead *,
+body.mmic-profile-signature #page-body table.forumline .thSides *,
+body.mmic-profile-signature #page-body table.forumline .catHead * {
+    color: #FFF8F4 !important;
+}
