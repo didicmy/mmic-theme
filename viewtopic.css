@@ -2051,3 +2051,21 @@ html body .mmic-vt-quick-reply input.mainoption:hover {
 html body .mmic-vt-quick-reply input.mainoption {
   margin-left: 5px !important;
 }
+/* =========================================================
+   VIEWTOPIC — SUPPRESSION DU BOUTON PROFIL VIDE
+   ========================================================= */
+
+/* cache les entrées de profil réellement vides */
+html body .mmic-vt-profile-link:empty {
+  display: none !important;
+}
+
+/* sécurité pour les liens vides contenus dans le bouton */
+html body .mmic-vt-profile-link > a:empty {
+  display: none !important;
+}
+
+/* si le conteneur ne contient plus rien de visible */
+html body .mmic-vt-profile-link:not(:has(a:not(:empty))) {
+  display: none !important;
+}
