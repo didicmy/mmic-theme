@@ -4000,116 +4000,155 @@ html body .mmic-pm-read-page .mmic-pm-nav-new:hover {
 
 
 /* =========================================================
-   PAGE "INFORMATIONS" APRÈS ENVOI D'UN MP
+   MP — PAGE INFORMATION APRÈS ENVOI
    ========================================================= */
 
-/* gros bandeau */
+body.mmic-pm-info-page table.forumline {
+    width: 100% !important;
 
-html body .mmic-pm-info-page .thHead,
-html body .mmic-pm-info-page th.thHead,
-html body .mmic-pm-info-page table.forumline > tbody > tr:first-child > th {
-    background: #b6837b !important;
-    background-image: none !important;
+    border: 1px solid #dfcdbc !important;
+    border-collapse: separate !important;
+    border-spacing: 0 !important;
+    border-radius: 10px !important;
+
+    overflow: hidden !important;
+
+    background: #fffaf4 !important;
+
+    box-shadow: 0 5px 16px rgba(166,111,103,.06) !important;
+}
+
+
+/* BANDEAU */
+
+body.mmic-pm-info-page table.forumline .thHead,
+body.mmic-pm-info-page table.forumline th.thHead {
+    height: auto !important;
+
+    padding: 15px 20px !important;
 
     border: 0 !important;
     border-bottom: 2px solid #d8a17e !important;
 
-    color: #fffaf4 !important;
-}
-
-html body .mmic-pm-info-page .thHead *,
-html body .mmic-pm-info-page th.thHead * {
-    color: #fffaf4 !important;
-}
-
-
-/* kicker "INFORMATION" */
-
-html body .mmic-pm-info-page .thHead::before,
-html body .mmic-pm-info-page th.thHead::before {
-    color: #f0c5a5 !important;
-}
-
-
-/* si le titre a une classe personnalisée */
-
-html body .mmic-pm-info-page .mmic-pm-info-header,
-html body .mmic-pm-info-page .mmic-pm-info-title {
     background: #b6837b !important;
     background-image: none !important;
 
-    border-color: #d8a17e !important;
+    color: #fffaf4 !important;
 
+    text-align: center !important;
+
+    font-family: Georgia, "Times New Roman", serif !important;
+    font-size: 18px !important;
+    font-weight: 600 !important;
+}
+
+body.mmic-pm-info-page table.forumline .thHead *,
+body.mmic-pm-info-page table.forumline th.thHead * {
     color: #fffaf4 !important;
 }
 
-html body .mmic-pm-info-page .mmic-pm-info-header *,
-html body .mmic-pm-info-page .mmic-pm-info-title * {
-    color: #fffaf4 !important;
+
+/* PETIT "INFORMATION" */
+
+body.mmic-pm-info-page table.forumline .thHead::before,
+body.mmic-pm-info-page table.forumline th.thHead::before {
+    content: "INFORMATION";
+
+    display: block;
+
+    margin-bottom: 5px;
+
+    color: #f2c5a3 !important;
+
+    font-family: Arial, sans-serif;
+    font-size: 7px;
+    font-weight: 700;
+
+    letter-spacing: .18em;
+    text-transform: uppercase;
 }
 
 
-/* carte de contenu */
+/* CONTENU */
 
-html body .mmic-pm-info-page table.forumline {
-    background: #fffaf4 !important;
+body.mmic-pm-info-page table.forumline td.row1,
+body.mmic-pm-info-page table.forumline td.row2,
+body.mmic-pm-info-page table.forumline td.row3 {
+    padding: 22px !important;
 
-    border: 1px solid #dfcdbc !important;
-    border-radius: 10px !important;
+    border: 0 !important;
 
-    border-collapse: separate !important;
-    border-spacing: 0 !important;
-
-    overflow: hidden !important;
-
-    box-shadow: 0 5px 16px rgba(166, 111, 103, .06) !important;
-}
-
-
-/* texte */
-
-html body .mmic-pm-info-page .row1,
-html body .mmic-pm-info-page .row2,
-html body .mmic-pm-info-page .row3 {
     background: #fffaf4 !important;
 
     color: #6f4b43 !important;
 }
 
 
-/* liens "retour boîte de réception / index" */
+/* LIENS */
 
-html body .mmic-pm-info-page a {
+body.mmic-pm-info-page table.forumline a {
     color: #b46f61 !important;
 
-    transition: color .2s ease !important;
+    text-decoration: underline !important;
+
+    transition: color .2s ease;
 }
 
-html body .mmic-pm-info-page a:hover {
+body.mmic-pm-info-page table.forumline a:hover {
     color: #8f5c55 !important;
 }
 
 
-/* bouton retour accueil */
+/* BOUTON RETOUR */
 
-html body .mmic-pm-info-page input[type="submit"],
-html body .mmic-pm-info-page .mainoption,
-html body .mmic-pm-info-page .button {
-    background: #b6837b !important;
-    background-image: none !important;
+body.mmic-pm-info-page .mainoption,
+body.mmic-pm-info-page input[type="submit"] {
+    padding: 9px 20px !important;
 
     border: 1px solid #d8a17e !important;
     border-radius: 5px !important;
 
+    background: #b6837b !important;
+    background-image: none !important;
+
     color: #fffaf4 !important;
+
+    font-size: 9px !important;
+    font-weight: 700 !important;
+
+    letter-spacing: .08em !important;
+    text-transform: uppercase !important;
 
     box-shadow: none !important;
+
+    cursor: pointer !important;
 }
 
-html body .mmic-pm-info-page input[type="submit"]:hover,
-html body .mmic-pm-info-page .mainoption:hover,
-html body .mmic-pm-info-page .button:hover {
+body.mmic-pm-info-page .mainoption:hover,
+body.mmic-pm-info-page input[type="submit"]:hover {
     background: #a66f67 !important;
     border-color: #c98b78 !important;
+}
+/* =========================================================
+   MP — BOUTON NOUVEAU MESSAGE / LECTURE
+   ========================================================= */
+
+html body .mmic-pm-read-shortcut--primary {
+    background: #b6837b !important;
+    background-image: none !important;
+
+    border: 1px solid #d8a17e !important;
+
     color: #fffaf4 !important;
+
+    box-shadow: 0 2px 6px rgba(166, 111, 103, .12) !important;
+}
+
+html body .mmic-pm-read-shortcut--primary * {
+    color: #fffaf4 !important;
+}
+
+html body .mmic-pm-read-shortcut--primary:hover {
+    background: #a66f67 !important;
+    border-color: #c98b78 !important;
 }
