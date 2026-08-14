@@ -3498,28 +3498,36 @@ body.mmic-profile-followers .follower-card .details p {
 ---------------------------------------------------------- */
 
 body.mmic-profile-followers .followBtn {
-    padding:7px 12px !important;
+    padding: 7px 12px !important;
 
-    border:1px solid #d2a27e !important;
-    border-radius:5px !important;
+    border: 1px solid #D58D7A !important;
+    border-radius: 5px !important;
 
-    background:#13263d !important;
-    color:#fff !important;
+    background: #A96F68 !important;
 
-    font-size:9px !important;
-    font-weight:700 !important;
+    color: #FFF8F4 !important;
 
-    letter-spacing:.06em !important;
-    text-transform:uppercase !important;
+    font-size: 9px !important;
+    font-weight: 700 !important;
+    letter-spacing: .6px !important;
+    text-transform: uppercase !important;
 
-    cursor:pointer !important;
+    cursor: pointer;
 
-    transition:.2s ease !important;
+    transition:
+        background .2s ease,
+        border-color .2s ease,
+        box-shadow .2s ease;
 }
 
 body.mmic-profile-followers .followBtn:hover {
-    background:#d2a27e !important;
-    color:#13263d !important;
+    background: #8F5D58 !important;
+    border-color: #F0B29E !important;
+
+    box-shadow:
+        0 4px 9px rgba(117, 67, 63, .14) !important;
+
+    color: #FFF8F4 !important;
 }
 /* ==========================================================
    PROFIL — MEMBRES SUIVIS
