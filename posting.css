@@ -3095,3 +3095,58 @@ html body .mmic-posting-page input[type="checkbox"],
 html body .mmic-posting-page input[type="radio"] {
   accent-color: var(--mmic-post-rose) !important;
 }
+/* =========================================================
+   OPTIONS — DERNIER RÉFRACTAIRE BLEU
+   ========================================================= */
+
+html body .mmic-posting-page #optionsitems .thHead,
+html body .mmic-posting-page #optionsitems_show .thHead {
+  background: #b6837b !important;
+  background-image: none !important;
+
+  border: 0 !important;
+  border-bottom: 1px solid #d8a17e !important;
+
+  color: #fffaf6 !important;
+}
+
+
+/* Forumactif cache une table dans le th... évidemment 😑 */
+
+html body .mmic-posting-page #optionsitems .thHead > table,
+html body .mmic-posting-page #optionsitems_show .thHead > table,
+html body .mmic-posting-page #optionsitems .thHead > table tbody,
+html body .mmic-posting-page #optionsitems_show .thHead > table tbody,
+html body .mmic-posting-page #optionsitems .thHead > table tr,
+html body .mmic-posting-page #optionsitems_show .thHead > table tr,
+html body .mmic-posting-page #optionsitems .thHead > table td,
+html body .mmic-posting-page #optionsitems_show .thHead > table td {
+  background: transparent !important;
+  background-image: none !important;
+}
+
+
+/* Texte OPTIONS */
+
+html body .mmic-posting-page #optionsitems .thHead .gen,
+html body .mmic-posting-page #optionsitems_show .thHead .gen,
+html body .mmic-posting-page #optionsitems .thHead span,
+html body .mmic-posting-page #optionsitems_show .thHead span {
+  color: #fffaf6 !important;
+}
+
+
+/* Petit bouton + à droite */
+
+html body .mmic-posting-page #optionsitems .thHead a,
+html body .mmic-posting-page #optionsitems_show .thHead a {
+  border-color: rgba(255, 250, 246, .55) !important;
+  background: rgba(255, 255, 255, .08) !important;
+  color: #fffaf6 !important;
+}
+
+html body .mmic-posting-page #optionsitems .thHead a:hover,
+html body .mmic-posting-page #optionsitems_show .thHead a:hover {
+  background: rgba(255, 255, 255, .18) !important;
+  border-color: #fffaf6 !important;
+}
