@@ -3,6 +3,8 @@
    ========================================================= */
 
 .mmic-vt-message .codebox {
+       width: 490px;
+    max-width: 100%;
   margin: 25px 0;
   padding: 0;
 
