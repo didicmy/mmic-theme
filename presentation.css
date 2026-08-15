@@ -1,102 +1,137 @@
-/*-------- Présentation -------*/
+/* =========================================
+   FICHE DE PRÉSENTATION — MEET ME IN CHICAGO
+   ========================================= */
+
+/* -------- En-tête -------- */
+
 .entete {
-  height:65px; width:580px;
-  display:flex;
-  margin:auto;
-  border-left:solid 3px #A7BEC7;
-  border-right:solid 3px #A7BEC7;
+    height: 65px;
+    width: 580px;
+    display: flex;
+    margin: auto;
+    border-left: solid 3px #D8A08C;
+    border-right: solid 3px #D8A08C;
 }
+
 .name {
-  height:65px; width:580px;
-  background-color:#2D3A4A;
-  text-align:center;
+    height: 65px;
+    width: 580px;
+    background-color: #BC887D;
+    text-align: center;
 }
+
 .group {
-  height:65px; width:290px;
-  background-color:#344356;
-  text-align:center;
+    height: 65px;
+    width: 290px;
+    background-color: #A96F68;
+    text-align: center;
 }
+
 .gtitre {
-  color:#C4D3D9;
-  font-size:30px;
-  font-family: 'Julius Sans One', sans-serif;
+    color: #FFF9F4;
+    font-size: 30px;
+    font-family: 'Julius Sans One', sans-serif;
 }
+
+
+/* -------- Fond général -------- */
+
 .background {
-  background-color:#E4E4E4;
-  width:520px;
-  border-left:solid 3px #A7BEC7;
-  border-right:solid 3px #A7BEC7;
-  margin:auto;
-  padding:30px;
+    background-color: #FFF9F4;
+    width: 520px;
+    border-left: solid 3px #D8A08C;
+    border-right: solid 3px #D8A08C;
+    margin: auto;
+    padding: 30px;
 }
+
+
+/* -------- Blocs de contenu -------- */
+
 .contenu {
-  margin-top: 20px;
-  background-color:#D7D8D9;
-  padding:10px;
-  max-height:250px;
-      overflow-y: auto;
-  overflow-x: hidden;
- 
+    margin-top: 20px;
+    background-color: #F7E8E1;
+    padding: 10px;
+    max-height: 250px;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
+
 .h2 {
-  color:#84A4B0;
-  font-size:18px;
-  font-family: 'Unica One', cursive;
-   text-align: center;
+    color: #A96F68;
+    font-size: 18px;
+    font-family: 'Unica One', cursive;
+    text-align: center;
 }
+
 .texte {
-  color:#292929;
-  font-size:12px;
-  
+    color: #633F38;
+    font-size: 12px;
 }
+
 .credits {
-  font-size: 11px;
+    font-size: 11px;
+    color: #A96F68;
 }
+
+
+/* -------- Informations personnage -------- */
+
 .infoz {
-  height:380px;
-  margin-right:30px;
-  background-color:#D7D8D9;
-  padding:10px;
-      overflow-y: auto;
-  overflow-x: hidden;
+    height: 380px;
+    margin-right: 30px;
+    background-color: #F7E8E1;
+    padding: 10px;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
+
+
+/* -------- Avatar -------- */
+
 .avatar {
-  background-color: #D7D8D9;
-  width: 200px;
-  height: 400px;
-  box-shadow: 0px 0px 6px black;
-  overflow: hidden;
+    background-color: #F7E8E1;
+    width: 200px;
+    height: 400px;
+    box-shadow: 0 0 6px rgba(99, 63, 56, 0.35);
+    overflow: hidden;
 }
 
 .avatar img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-.joueur  {
-  height:100px;
-  width:300px;
-  background-color:#D7D8D9;
-  padding:10px;
-  overflow:auto;
-  margin-left:40px;
-}
-.icone {
-  background-color:#D7D8D9;
-  width:100x; height:100px;
-  box-shadow: 0px 0px 6px black;
-}
-.icone img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-<style>
-  .h2 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     display: block;
-    text-align: center;
-  }
-</style>
-/*------- Fin présentaion -------*/
+}
+
+
+/* -------- Partie joueur -------- */
+
+.joueur {
+    height: 100px;
+    width: 300px;
+    background-color: #F7E8E1;
+    padding: 10px;
+    overflow: auto;
+    margin-left: 40px;
+}
+
+
+/* -------- Icône joueur -------- */
+
+.icone {
+    background-color: #F7E8E1;
+    width: 100px;
+    height: 100px;
+    box-shadow: 0 0 6px rgba(99, 63, 56, 0.35);
+    overflow: hidden;
+}
+
+.icone img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* ------- Fin présentation ------- */
