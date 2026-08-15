@@ -3,16 +3,23 @@
    ========================================================= */
 
 .mmic-vt-message .codebox {
-       width: 490px;
-    max-width: 100%;
-  margin: 25px 0;
-  padding: 0;
+    width: 490px;
+    max-width: calc(100% - 20px);
 
-  border: 1px solid #dfd1c3;
-  border-radius: 8px;
+    margin-top: 25px;
+    margin-bottom: 25px;
 
-  background: #fbf8f3;
-  overflow: hidden;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+
+    padding: 0;
+
+    border: 1px solid #dfd1c3;
+    border-radius: 8px;
+
+    background: #fbf8f3;
+    overflow: hidden;
 }
 
 /* =========================================================
