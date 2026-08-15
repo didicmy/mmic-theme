@@ -6,7 +6,7 @@
 
 .entete {
     height: 65px;
-    width: 580px;
+    width: 550px;
     display: flex;
     margin: auto;
     border-left: solid 3px #D8A08C;
@@ -15,7 +15,7 @@
 
 .name {
     height: 65px;
-    width: 580px;
+    width: 550px;
     background-color: #BC887D;
     text-align: center;
 }
@@ -38,7 +38,7 @@
 
 .background {
     background-color: #FFF9F4;
-    width: 520px;
+    width: 490px;
     border-left: solid 3px #D8A08C;
     border-right: solid 3px #D8A08C;
     margin: auto;
