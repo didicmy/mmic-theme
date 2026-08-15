@@ -3,15 +3,12 @@
    ========================================================= */
 
 .mmic-vt-message .codebox {
+    display: block;
+
     width: 490px;
     max-width: calc(100% - 20px);
 
-    margin-top: 25px;
-    margin-bottom: 25px;
-
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
+    margin: 25px auto !important;
 
     padding: 0;
 
@@ -20,6 +17,10 @@
 
     background: #fbf8f3;
     overflow: hidden;
+
+    position: static;
+    left: auto;
+    transform: none;
 }
 
 /* =========================================================
