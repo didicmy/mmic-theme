@@ -111,5 +111,34 @@
     text-align: justify;
     letter-spacing: 0.15px;
 }
+.mmic-bottin-liste {
+    width: fit-content;
+    min-width: 260px;
+    margin: 25px auto 55px auto;
+}
 
+.mmic-bottin-entree {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 6px 0;
+}
+
+.mmic-bottin-entree a {
+    text-decoration: none;
+}
+
+.mmic-bottin-symbole {
+    font-size: 8px;
+}
+
+.mmic-bottin-pris,
+.mmic-bottin-reserve,
+.mmic-bottin-libre {
+    margin-left: auto;
+    padding-left: 25px;
+    font-size: 9px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
 /* ------- Fin bottins------- */
