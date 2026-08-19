@@ -1,0 +1,110 @@
+/* =========================================
+   FICHE DE PRe-lien — MEET ME IN CHICAGO
+   ========================================= */
+
+/* -------- En-tête -------- */
+
+.plentete {
+    height: 65px;
+    width: 550px;
+    display: flex;
+    margin: auto;
+    border-left: solid 3px #D8A08C;
+    border-right: solid 3px #D8A08C;
+}
+
+.plname {
+    height: 65px;
+    width: 550px;
+    background-color: #BC887D;
+    text-align: center;
+}
+
+.plgroup {
+    height: 65px;
+    width: 290px;
+    background-color: #A96F68;
+    text-align: center;
+}
+
+.plgtitre {
+    color: #FFF9F4;
+    font-size: 30px;
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+
+/* -------- Fond général -------- */
+
+.plbackground {
+    background-color: #FFF9F4;
+    width: 490px;
+    border-left: solid 3px #D8A08C;
+    border-right: solid 3px #D8A08C;
+    margin: auto;
+    padding: 30px;
+}
+
+
+/* -------- Blocs de contenu -------- */
+
+.plcontenu {
+    margin-top: 20px;
+    background-color: #F7E8E1;
+    padding: 10px;
+    max-height: 250px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.plh2 {
+    color: #A96F68;
+    font-size: 18px;
+    font-family: 'Unica One', cursive;
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+
+.pltexte {
+    color: #633F38;
+    font-size: 12px;
+}
+
+.plcredits {
+    font-size: 11px;
+    color: #A96F68;
+}
+
+
+
+/* -------- Partie lien -------- */
+
+.pllien {
+    height: 100px;
+    width: 350px;
+    background-color: #F7E8E1;
+    padding: 10px;
+    overflow: auto;
+    margin-left: 20px;
+}
+
+
+/* -------- Icône lien -------- */
+
+.plicone {
+    background-color: #F7E8E1;
+    width: 100px;
+    height: 100px;
+    box-shadow: 0 0 6px rgba(99, 63, 56, 0.35);
+    overflow: hidden;
+}
+
+.plicone img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* ------- Fin pré-lien ------- */
