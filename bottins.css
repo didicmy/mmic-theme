@@ -137,14 +137,29 @@
     font-size: 8px;
 }
 
-.mmic-bottin-pris,
-.mmic-bottin-reserve,
+.mmic-bottin-pris {
+       margin-left: auto;
+    padding-left: 25px;
+    font-size: 9px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+   color: #9B5F59;
+}
+.mmic-bottin-reserve {    
+   margin-left: auto;
+    padding-left: 25px;
+    font-size: 9px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+   color: #D19A72;
+}
 .mmic-bottin-libre {
     margin-left: auto;
     padding-left: 25px;
     font-size: 9px;
     text-transform: uppercase;
     letter-spacing: 1px;
+   color: #8FA397;
 }
 .bolegende {
     width: fit-content;
@@ -161,8 +176,18 @@
     gap: 8px;
 }
 
-.bolegende-symbole {
+.bolegende-symbole-pris {
     font-size: 14px;
-    color: #A96F68;
+    color: #9B5F59;
+}
+
+.bolegende-symbole-reserve {
+    font-size: 14px;
+    color: #D19A72;
+}
+
+.bolegende-symbole-libre {
+    font-size: 14px;
+    color: #8FA397;
 }
 /* ------- Fin bottins------- */
