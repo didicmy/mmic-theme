@@ -111,6 +111,14 @@
     text-align: justify;
     letter-spacing: 0.15px;
 }
+.botexte3 {
+    color: #633F38;
+    font-family: 'Lato', sans-serif;
+    font-size: 12.5px;
+    line-height: 1.65;
+    text-align: justify;
+    letter-spacing: 0.15px;
+}
 .mmic-bottin-liste {
     width: fit-content;
     min-width: 260px;
