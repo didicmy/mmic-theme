@@ -73,6 +73,41 @@
     font-size: 11px;
     color: #A96F68;
 }
+.reglement-section {
+    margin: 28px 0 0;
+}
 
+.reglement-section:first-child {
+    margin-top: 0;
+}
+
+.reglement-titre {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+
+    color: #A96F68;
+    font-family: 'Unica One', cursive;
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: .4px;
+}
+
+.reglement-titre::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 1px;
+    margin: 7px auto 0;
+
+    background: #D8A08C;
+}
+
+.reglement-texte {
+    color: #633F38;
+    font-size: 12px;
+    line-height: 1.55;
+    text-align: justify;
+}
 
 /* ------- Fin règlement------- */
