@@ -1,0 +1,115 @@
+/* =========================================
+   FICHE DE bottins — MEET ME IN CHICAGO
+   ========================================= */
+
+/* -------- En-tête -------- */
+
+.boentete {
+    height: 65px;
+    width: 550px;
+    display: flex;
+    margin: auto;
+    border-left: solid 3px #D8A08C;
+    border-right: solid 3px #D8A08C;
+}
+
+.boname {
+    height: 65px;
+    width: 550px;
+    background-color: #BC887D;
+    text-align: center;
+}
+
+.bogroup {
+    height: 65px;
+    width: 290px;
+    background-color: #A96F68;
+    text-align: center;
+}
+
+.bogtitre {
+    color: #FFF9F4;
+    font-size: 30px;
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+
+/* -------- Fond général -------- */
+
+.bobackground {
+    background-color: #FFF9F4;
+    width: 490px;
+    border-left: solid 3px #D8A08C;
+    border-right: solid 3px #D8A08C;
+    margin: auto;
+    padding: 30px;
+}
+
+
+/* -------- Blocs de contenu -------- */
+
+.bocontenu {
+    margin-top: 20px;
+    background-color: #F7E8E1;
+    padding: 10px;
+    max-height: auto;
+}
+
+.boh2 {
+    color: #A96F68;
+    font-size: 18px;
+    font-family: 'Unica One', cursive;
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+
+.botexte {
+    color: #633F38;
+    font-size: 12px;
+}
+
+.bocredits {
+    font-size: 11px;
+    color: #A96F68;
+}
+.bosection {
+    margin: 28px 0 0;
+}
+
+.bosection:first-child {
+    margin-top: 0;
+}
+
+.botitre {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+
+    color: #A96F68;
+    font-family: 'Unica One', cursive;
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: .4px;
+}
+
+.botitre::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 1px;
+    margin: 7px auto 0;
+
+    background: #D8A08C;
+}
+
+.botexte2 {
+    color: #633F38;
+    font-family: 'Lato', sans-serif;
+    font-size: 12.5px;
+    line-height: 1.65;
+    text-align: justify;
+    letter-spacing: 0.15px;
+}
+
+/* ------- Fin bottins------- */
