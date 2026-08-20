@@ -1,0 +1,157 @@
+/* =========================================
+   FICHE DE bottins des dc — MEET ME IN CHICAGO
+   ========================================= */
+
+/* -------- En-tête -------- */
+
+.dcentete {
+    height: 65px;
+    width: 550px;
+    display: flex;
+    margin: auto;
+    border-left: solid 3px #D8A08C;
+    border-right: solid 3px #D8A08C;
+}
+
+.dcname {
+    height: 65px;
+    width: 550px;
+    background-color: #BC887D;
+    text-align: center;
+}
+
+.dcgroup {
+    height: 65px;
+    width: 290px;
+    background-color: #A96F68;
+    text-align: center;
+}
+
+.dcgtitre {
+    color: #FFF9F4;
+    font-size: 30px;
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+
+/* -------- Fond général -------- */
+
+.dcbackground {
+    background-color: #FFF9F4;
+    width: 490px;
+    border-left: solid 3px #D8A08C;
+    border-right: solid 3px #D8A08C;
+    margin: auto;
+    padding: 30px;
+}
+
+
+/* -------- Blocs de contenu -------- */
+
+.dccontenu {
+    margin-top: 20px;
+    background-color: #F7E8E1;
+    padding: 10px;
+    max-height: auto;
+}
+
+.dch2 {
+    color: #A96F68;
+    font-size: 18px;
+    font-family: 'Unica One', cursive;
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+
+.dctexte {
+    color: #633F38;
+    font-size: 12px;
+}
+
+.dccredits {
+    font-size: 11px;
+    color: #A96F68;
+}
+.dcsection {
+    margin: 22px 0 0;
+}
+
+.dcsection:first-child {
+    margin-top: 0;
+}
+
+.dctitre2 {
+    display: block;
+    width: 100%;
+    margin-bottom: 8px;
+
+    color: #A96F68;
+    font-family: 'Unica One', cursive;
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: .4px;
+}
+
+.dctitre2::after {
+    content: "";
+    display: block;
+    width: 52px;
+    height: 1px;
+    margin: 6px auto 0;
+
+    background: #D8A08C;
+}
+
+.dctexte2 {
+    color: #633F38;
+    font-family: 'Lato', sans-serif;
+    font-size: 12.5px;
+    line-height: 0.65;
+    text-align: justify;
+    letter-spacing: 0.15px;
+}
+.dctexte3 {
+    color: #633F38;
+    font-family: 'Lato', sans-serif;
+    font-size: 12.5px;
+    line-height: 1.65;
+    text-align: justify;
+    letter-spacing: 0.15px;
+}
+.mmic-dc-joueur {
+    margin: 16px 0 4px;
+    color: #A96F68;
+    font-family: 'Unica One', cursive;
+    font-size: 15px;
+    letter-spacing: .4px;
+    text-align: left;
+}
+
+.mmic-dc-liste {
+    margin: 0 0 18px 12px;
+}
+
+.mmic-dc-entree {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    min-height: 20px;
+    line-height: 1.15;
+}
+
+.mmic-dc-entree a {
+    color: #633F38;
+    text-decoration: none;
+    transition: color .2s ease;
+}
+
+.mmic-dc-entree a:hover {
+    color: #A96F68;
+}
+
+.mmic-dc-symbole {
+    color: #BC887D;
+    font-size: 8px;
+}
+/* ------- Fin bottins------- */
