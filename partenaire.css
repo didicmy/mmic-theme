@@ -88,6 +88,38 @@
     overflow: auto;
     margin-left: 0px;
 }
+.partliste {
+    margin: 15px 0 25px 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
 
+.partentree {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #633F38;
+    font-family: 'Lato', sans-serif;
+    font-size: 12.5px;
+    line-height: 1.3;
+}
+
+.partentree::before {
+    content: "◆";
+    color: #BC887D;
+    font-size: 7px;
+}
+
+.partentree a {
+    color: #A96F68;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color .2s ease;
+}
+
+.partentree a:hover {
+    color: #BC887D;
+}
 
 /* ------- Fin pré-lien ------- */
