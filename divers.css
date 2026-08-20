@@ -173,3 +173,21 @@
     background: #A96F68;
     color: #FFF9F4 !important;
 }
+/* IMAGES — FICHE DE VALIDATION */
+
+.validationimages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin: 5px 0 22px;
+}
+
+.validationimages img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    display: block;
+    border: 2px solid #FFF9F4;
+    box-shadow: 0 2px 5px rgba(99, 63, 56, 0.18);
+}
