@@ -76,15 +76,15 @@
     color: #A96F68;
 }
 
-.partenaniresection {
+.partenairesection {
     margin: 22px 0 0;
 }
 
-.partenaniresection:first-child {
+.partenairesection:first-child {
     margin-top: 0;
 }
 
-.partenaniretitre2 {
+.partenairetitre2 {
     display: block;
     width: 100%;
     margin-bottom: 8px;
@@ -96,7 +96,7 @@
     letter-spacing: .4px;
 }
 
-.partenaniretitre2::after {
+.partenairetitre2::after {
     content: "";
     display: block;
     width: 52px;
@@ -106,7 +106,7 @@
     background: #D8A08C;
 }
 
-.partenaniretexte3 {
+.partenairetexte3 {
     color: #633F38;
     font-family: 'Lato', sans-serif;
     font-size: 12.5px;
