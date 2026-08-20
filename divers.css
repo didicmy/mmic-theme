@@ -145,3 +145,31 @@
     color: #A96F68;
     font-weight: 600;
 }
+/* BOUTONS STAFF — FICHE DE VALIDATION */
+
+.staffvalidation {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.staffvalidation a {
+    display: inline-block;
+    min-width: 90px;
+    padding: 7px 12px;
+    background: #BC887D;
+    color: #FFF9F4 !important;
+    font-family: 'Unica One', sans-serif;
+    font-size: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none !important;
+    border-radius: 3px;
+    transition: 0.2s ease;
+}
+
+.staffvalidation a:hover {
+    background: #A96F68;
+    color: #FFF9F4 !important;
+}
