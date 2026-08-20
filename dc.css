@@ -134,7 +134,7 @@
     width: 52px;
     height: 1px;
     margin: 6px auto 0;
-
+text-align: left;
     background: #D8A08C;
 }
 
@@ -145,7 +145,7 @@
 .mmic-dc-entree {
     display: flex;
     align-items: center;
-    gap: 7px;
+    gap: 2px;
     min-height: 20px;
     line-height: 0.65;
 }
