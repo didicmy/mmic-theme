@@ -48,31 +48,6 @@
 
 /* -------- Blocs de contenu -------- */
 
-.metiercontenu {
-    margin-top: 20px;
-    background-color: #F7E8E1;
-    padding: 10px;
-    max-height: auto;
-}
-
-.metierh2 {
-    color: #A96F68;
-    font-size: 18px;
-    font-family: 'Unica One', cursive;
-    text-align: center;
-    display: block;
-    width: 100%;
-}
-
-.metiertexte {
-    color: #633F38;
-    font-size: 12px;
-}
-
-.metiercredits {
-    font-size: 11px;
-    color: #A96F68;
-}
 .metiersection {
     margin: 22px 0 0;
 }
@@ -103,14 +78,6 @@
     background: #D8A08C;
 }
 
-.metiertexte2 {
-    color: #633F38;
-    font-family: 'Lato', sans-serif;
-    font-size: 12.5px;
-    line-height: 0.65;
-    text-align: justify;
-    letter-spacing: 0.15px;
-}
 .metiertexte3 {
     color: #633F38;
     font-family: 'Lato', sans-serif;
