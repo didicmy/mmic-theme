@@ -127,7 +127,7 @@
     margin: 15px 0 25px 12px;
     display: flex;
     flex-direction: column;
-    gap: 7px;
+    gap: px;
 }
 
 .partentree {
