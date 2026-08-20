@@ -1,0 +1,139 @@
+/* =========================================
+   FICHE DE bottin avatar — MEET ME IN CHICAGO
+   ========================================= */
+
+/* -------- En-tête -------- */
+
+.logentete {
+    height: 65px;
+    width: 550px;
+    display: flex;
+    margin: auto;
+    border-left: solid 3px #D8A08C;
+    border-right: solid 3px #D8A08C;
+}
+
+.logname {
+    height: 65px;
+    width: 550px;
+    background-color: #BC887D;
+    text-align: center;
+}
+
+.loggroup {
+    height: 65px;
+    width: 290px;
+    background-color: #A96F68;
+    text-align: center;
+}
+
+.loggtitre {
+    color: #FFF9F4;
+    font-size: 30px;
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+
+/* -------- Fond général -------- */
+
+.logbackground {
+    background-color: #FFF9F4;
+    width: 490px;
+    border-left: solid 3px #D8A08C;
+    border-right: solid 3px #D8A08C;
+    margin: auto;
+    padding: 30px;
+}
+
+
+/* -------- Blocs de contenu -------- */
+
+.logsection {
+    margin: 22px 0 0;
+}
+
+.logsection:first-child {
+    margin-top: 0;
+}
+
+.logtitre2 {
+    display: block;
+    width: 100%;
+    margin-bottom: 8px;
+
+    color: #A96F68;
+    font-family: 'Unica One', cursive;
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: .4px;
+}
+
+.logtitre2::after {
+    content: "";
+    display: block;
+    width: 52px;
+    height: 1px;
+    margin: 6px auto 0;
+
+    background: #D8A08C;
+}
+
+.logtexte3 {
+    color: #633F38;
+    font-family: 'Lato', sans-serif;
+    font-size: 12.5px;
+    line-height: 1.65;
+    text-align: justify;
+    letter-spacing: 0.15px;
+}
+.mmic-log-zone {
+    margin: 8px 0 12px;
+    color: #A96F68;
+    font-family: 'Unica One', cursive;
+    font-size: 15px;
+    letter-spacing: .5px;
+    text-align: left;
+}
+.mmic-log-lieu {
+    margin: 6px 0 4px 10px;
+    color: #8F5E58;
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: .3px;
+}
+.mmic-log-lieu a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.mmic-log-lieu a:hover {
+    color: #BC887D;
+}
+.mmic-log-entree {
+    margin: 2px 0 2px 20px;
+    font-family: 'Lato', sans-serif;
+    font-size: 11.5px;
+    line-height: 1.3;
+}
+
+.mmic-log-poste {
+    color: #A96F68;
+    font-weight: 600;
+}
+
+.mmic-log-separateur {
+    margin: 0 5px;
+    color: #D8A08C;
+}
+
+.mmic-log-entree a {
+    color: #633F38;
+    text-decoration: none;
+}
+
+.mmic-log-entree a:hover {
+    color: #A96F68;
+}
+
+/* ------- Fin bottins------- */
