@@ -115,3 +115,19 @@
 }
 
 /* ------- Fin du squelette ------- */
+
+/* DATE — FICHE ANNONCES */
+.annoncedate {
+    text-align: right;
+    font-family: 'Lato', sans-serif;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #A96F68;
+    margin: 0 0 20px 0;
+}
+
+.annoncedate::before {
+    content: "— ";
+    color: #D8A08C;
+}
