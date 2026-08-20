@@ -131,3 +131,15 @@
     content: "— ";
     color: #D8A08C;
 }
+/* Absence */
+
+.absenceligne {
+    margin: 7px 0;
+    font-size: 12px;
+    color: #633F38;
+}
+
+.absencenom {
+    color: #A96F68;
+    font-weight: 600;
+}
