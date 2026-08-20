@@ -187,15 +187,18 @@
 .bolegende-symbole-pris {
     font-size: 14px;
     color: #9B5F59;
+   font-family: 'Lato', sans-serif;
 }
 
 .bolegende-symbole-reserve {
     font-size: 14px;
     color: #D19A72;
+   font-family: 'Lato', sans-serif;
 }
 
 .bolegende-symbole-libre {
     font-size: 14px;
     color: #8FA397;
+   font-family: 'Lato', sans-serif;
 }
 /* ------- Fin bottins------- */
