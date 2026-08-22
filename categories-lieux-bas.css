@@ -1989,11 +1989,7 @@
 .mmic-category
 .blocCate:has(a[href*="/f103-ils-sont-recherches"])
 .blocDernierPost {
-  grid-column: auto !important;
+  grid-column: 4 !important;
 }
 
-.mmic-category
-.blocCate:has(a[href*="/f103-ils-sont-recherches"])
-.avatarCate {
-  display: block !important;
-}
+
