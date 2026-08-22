@@ -1971,3 +1971,32 @@
 .mmic-category .titreCate a {
   color: #FFF8F4 !important;
 }
+/* =========================================================
+   ILS SONT RECHERCHÉS — PAS DE COLONNE MINI-LIEUX
+   ========================================================= */
+
+.mmic-category
+.blocCate:has(a[href*="/f103-ils-sont-recherches"])
+.mmic-home-places {
+  display: none !important;
+}
+
+.mmic-category
+.blocCate:has(a[href*="/f103-ils-sont-recherches"]) {
+  grid-template-columns:
+    58px
+    minmax(0, 1fr)
+    115px !important;
+}
+
+.mmic-category
+.blocCate:has(a[href*="/f103-ils-sont-recherches"])
+.blocDernierPost {
+  grid-column: auto !important;
+}
+
+.mmic-category
+.blocCate:has(a[href*="/f103-ils-sont-recherches"])
+.avatarCate {
+  display: block !important;
+}
