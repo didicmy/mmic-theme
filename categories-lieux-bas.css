@@ -1986,13 +1986,14 @@
   grid-template-columns:
     58px
     minmax(0, 1fr)
+    185px
     115px !important;
 }
 
 .mmic-category
 .blocCate:has(a[href*="/f103-ils-sont-recherches"])
 .blocDernierPost {
-  grid-column: auto !important;
+  grid-column: 4 !important;
 }
 
 .mmic-category
