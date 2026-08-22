@@ -206,3 +206,17 @@
     color: #A96F68;
     font-weight: 600;
 }
+/* associations et clubs */
+
+.assoligne {
+    margin: 0;
+    padding: 2px 0;
+    font-size: 12px;
+    color: #633F38;
+    line-height: 1.4;
+}
+
+.assonom {
+    color: #A96F68;
+    font-weight: 600;
+}
