@@ -312,7 +312,7 @@
 
   color: #ded7cf;
 
-  font-size: 7px;
+  font-size: 10px;
   line-height: 1.45;
 
   box-sizing: border-box;
@@ -322,12 +322,11 @@
 .mmic-vt-profile-field strong {
   color: #d19168;
 
-  font-size: 6px;
+  font-size: 8px;
   font-weight: 700;
   letter-spacing: 0.6px;
   text-transform: uppercase;
 }
-
 
 /* Images / GIF placés dans les champs personnalisés */
 
