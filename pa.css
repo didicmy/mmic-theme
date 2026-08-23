@@ -604,7 +604,7 @@
    ========================================================= */
 
 .mmic-weather {
-  margin-top: 50px;
+  margin-top: 16px;
   padding-top: 10px;
 
   border-top: 1px solid var(--border);
@@ -615,7 +615,7 @@
 
 .mmic-weather-title {
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: 35px;
 
   color: var(--navy);
 
