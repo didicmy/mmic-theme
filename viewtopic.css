@@ -2063,3 +2063,10 @@ html body .mmic-vt-profile-link:has(
 .mmic-vt-action:empty {
   display: none !important;
 }
+/* =========================================================
+   MASQUER LES ACTIONS NON AUTORISÉES / VIDES
+   ========================================================= */
+
+.mmic-vt-post-actions .mmic-vt-action:empty {
+  display: none !important;
+}
