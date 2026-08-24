@@ -1069,3 +1069,37 @@ html body .mmic-navigation-guest-links a {
         width: 100% !important;
     }
 }
+/* =========================================================
+   NAVIGATION — VERSION MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+  .mmic-navigation-links {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    justify-content: flex-start !important;
+
+    width: 100%;
+    max-width: 100%;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    padding: 0 10px;
+
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+
+    scrollbar-width: none;
+  }
+
+  .mmic-navigation-links::-webkit-scrollbar {
+    display: none;
+  }
+
+  .mmic-navigation-links a.mainmenu {
+    flex: 0 0 auto;
+  }
+
+}
