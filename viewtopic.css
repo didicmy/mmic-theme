@@ -2059,3 +2059,7 @@ html body .mmic-vt-profile-link:has(
 ) {
   display: none !important;
 }
+/* Cache les boutons d'action auxquels le membre n'a pas accès */
+.mmic-vt-action:empty {
+  display: none !important;
+}
