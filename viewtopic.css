@@ -2070,3 +2070,78 @@ html body .mmic-vt-profile-link:has(
 .mmic-vt-post-actions .mmic-vt-action:empty {
   display: none !important;
 }
+/* =========================================================
+   J'AIME — STYLE MMIC
+   ========================================================= */
+
+.mmic-vt-likes {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  margin-top: 10px;
+}
+
+.mmic-vt-like-list,
+.mmic-vt-dislike-list {
+  color: #9a6d61;
+
+  font-size: 8px;
+  line-height: 1.4;
+}
+
+.mmic-vt-like-button,
+.mmic-vt-dislike-button {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 5px !important;
+
+  min-height: 24px !important;
+  padding: 4px 9px !important;
+
+  border: 1px solid #e7c2b5 !important;
+  border-radius: 6px !important;
+
+  background: #fff8f4 !important;
+  color: #9c6557 !important;
+
+  font-family: inherit !important;
+  font-size: 8px !important;
+  font-weight: 700 !important;
+  line-height: 1 !important;
+  text-transform: uppercase !important;
+
+  box-shadow: none !important;
+
+  cursor: pointer !important;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease !important;
+}
+
+.mmic-vt-like-button:hover,
+.mmic-vt-dislike-button:hover {
+  background: #b8786c !important;
+  border-color: #b8786c !important;
+  color: #fffaf4 !important;
+
+  transform: translateY(-1px);
+}
+
+.mmic-vt-like-icon {
+  font-size: 11px;
+  line-height: 1;
+}
+
+/* état déjà aimé */
+.mmic-vt-like-button.fa_like,
+.mmic-vt-like-button.liked,
+.mmic-vt-like-button.active {
+  background: #b8786c !important;
+  border-color: #b8786c !important;
+  color: #fffaf4 !important;
+}
