@@ -1103,3 +1103,45 @@ html body .mmic-navigation-guest-links a {
   }
 
 }
+/* =========================================================
+   NAVIGATION — TABLETTE / MOBILE
+   ========================================================= */
+
+@media (max-width: 1100px) {
+
+  .mmic-navigation-inner {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+  }
+
+  .mmic-navigation-links {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    justify-content: flex-start !important;
+
+    min-width: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+
+    padding: 0 12px !important;
+
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+
+    white-space: nowrap !important;
+
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .mmic-navigation-links::-webkit-scrollbar {
+    display: none;
+  }
+
+  .mmic-navigation-links a.mainmenu {
+    flex: 0 0 auto !important;
+    white-space: nowrap !important;
+  }
+
+}
