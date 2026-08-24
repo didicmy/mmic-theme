@@ -2154,3 +2154,48 @@ html body .mmic-vt-dislike-list {
     font-size: 8px !important;
     line-height: 1.4 !important;
 }
+/* =====================================================
+   MMIC — LISTE DES MEMBRES QUI AIMENT LE MESSAGE
+   ===================================================== */
+
+/* Ligne complète : "X aime ce message" + bouton J'aime */
+html body .mmic-vt-likes {
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  min-height: 30px !important;
+  padding: 5px 8px !important;
+  box-sizing: border-box !important;
+
+  font-size: 10px !important;
+  color: #B9786D !important;
+}
+
+/* Liste des personnes ayant aimé */
+html body .mmic-vt-like-list {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 3px !important;
+
+  font-size: 10px !important;
+  color: #B9786D !important;
+}
+
+/* Les pseudos */
+html body .mmic-vt-like-list a {
+  color: #75433F !important;
+  font-weight: 700 !important;
+  text-decoration: none !important;
+  transition: color .2s ease !important;
+}
+
+/* Survol du pseudo */
+html body .mmic-vt-like-list a:hover {
+  color: #B9786D !important;
+  text-decoration: none !important;
+}
+
+/* Un peu d'espace avant le bouton J'aime */
+html body .mmic-vt-like-button {
+  margin-left: 2px !important;
+}
