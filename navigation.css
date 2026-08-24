@@ -998,13 +998,15 @@ html body .mmic-navigation-guest-links a {
 }
 
 
-/* Mobile */
-@media (max-width: 760px) {
+/* =========================================================
+   MOBILE / PETITS ÉCRANS
+   ========================================================= */
+
+@media (max-width: 1050px) {
 
     html body .mmic-main-navigation {
         position: relative !important;
         min-height: 0 !important;
-
         margin-top: 10px !important;
     }
 
@@ -1044,13 +1046,27 @@ html body .mmic-navigation-guest-links a {
 
     html body .mmic-navigation-links {
         justify-content: flex-start !important;
-        flex-wrap: wrap !important;
+        flex-wrap: nowrap !important;
 
-        overflow: visible !important;
+        width: 100% !important;
+        max-width: 100% !important;
+
+        overflow-x: auto !important;
+        overflow-y: hidden !important;
+
+        white-space: nowrap !important;
+        -webkit-overflow-scrolling: touch;
+
+        scrollbar-width: none;
+    }
+
+    html body .mmic-navigation-links::-webkit-scrollbar {
+        display: none;
     }
 
     html body .mmic-navigation-links a {
-        flex: 1 1 auto !important;
+        flex: 0 0 auto !important;
+        white-space: nowrap !important;
     }
 
     html body .mmic-navigation-notifications {
@@ -1068,80 +1084,4 @@ html body .mmic-navigation-guest-links a {
     html body #mmic-member-menu {
         width: 100% !important;
     }
-}
-/* =========================================================
-   NAVIGATION — VERSION MOBILE
-   ========================================================= */
-
-@media (max-width: 700px) {
-
-  .mmic-navigation-links {
-    display: flex !important;
-    flex-wrap: nowrap !important;
-    justify-content: flex-start !important;
-
-    width: 100%;
-    max-width: 100%;
-
-    overflow-x: auto;
-    overflow-y: hidden;
-
-    padding: 0 10px;
-
-    white-space: nowrap;
-    -webkit-overflow-scrolling: touch;
-
-    scrollbar-width: none;
-  }
-
-  .mmic-navigation-links::-webkit-scrollbar {
-    display: none;
-  }
-
-  .mmic-navigation-links a.mainmenu {
-    flex: 0 0 auto;
-  }
-
-}
-/* =========================================================
-   NAVIGATION — TABLETTE / MOBILE
-   ========================================================= */
-
-@media (max-width: 1100px) {
-
-  .mmic-navigation-inner {
-    width: 100% !important;
-    max-width: 100% !important;
-    min-width: 0 !important;
-  }
-
-  .mmic-navigation-links {
-    display: flex !important;
-    flex-wrap: nowrap !important;
-    justify-content: flex-start !important;
-
-    min-width: 0 !important;
-    width: 100% !important;
-    max-width: 100% !important;
-
-    padding: 0 12px !important;
-
-    overflow-x: auto !important;
-    overflow-y: hidden !important;
-
-    white-space: nowrap !important;
-
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;
-  }
-
-  .mmic-navigation-links::-webkit-scrollbar {
-    display: none;
-  }
-
-  .mmic-navigation-links a.mainmenu {
-    flex: 0 0 auto !important;
-    white-space: nowrap !important;
-  }
-
 }
