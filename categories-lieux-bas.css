@@ -2012,3 +2012,30 @@
 .blocDernierPost {
   grid-column: 4 !important;
 }
+/* =========================================================
+   PREMIERS PAS — SANS MINI-LIEUX + AVATAR REMIS EN PLACE
+   ========================================================= */
+
+.mmic-category
+.blocCate:has(a[href*="/f1-premiers-pas"])
+.mmic-home-places {
+  display: none !important;
+}
+
+.mmic-category
+.blocCate:has(a[href*="/f1-premiers-pas"]) {
+  grid-template-columns: 58px minmax(0, 1fr) 76px 205px !important;
+}
+
+.mmic-category
+.blocCate:has(a[href*="/f1-premiers-pas"])
+.avatarCate {
+  grid-column: 3 !important;
+  display: flex !important;
+}
+
+.mmic-category
+.blocCate:has(a[href*="/f1-premiers-pas"])
+.blocDernierPost {
+  grid-column: 4 !important;
+}
