@@ -1988,35 +1988,20 @@
 
 .mmic-category
 .blocCate:has(a[href*="/f103-ils-sont-recherches"])
+.avatarCate {
+  grid-column: 3 !important;
+  display: flex !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.mmic-category
+.blocCate:has(a[href*="/f103-ils-sont-recherches"])
 .blocDernierPost {
   grid-column: 4 !important;
 }
-
 /* =========================================================
    PREMIERS PAS — SANS MINI-LIEUX
-   ========================================================= */
-
-.mmic-category
-.blocCate:has(a[href*="/f1-premiers-pas"])
-.mmic-home-places {
-  display: none !important;
-}
-
-.mmic-category
-.blocCate:has(a[href*="/f1-premiers-pas"]) {
-  grid-template-columns: 58px minmax(0, 1fr) 76px 205px !important;
-     grid-column: 3 !important;
-  display: flex !important;
-
-}
-
-.mmic-category
-.blocCate:has(a[href*="/f1-premiers-pas"])
-.blocDernierPost {
-  grid-column: 4 !important;
-}
-/* =========================================================
-   PREMIERS PAS — SANS MINI-LIEUX + AVATAR REMIS EN PLACE
    ========================================================= */
 
 .mmic-category
@@ -2035,6 +2020,8 @@
 .avatarCate {
   grid-column: 3 !important;
   display: flex !important;
+  visibility: visible !important;
+  opacity: 1 !important;
 }
 
 .mmic-category
