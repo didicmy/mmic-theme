@@ -5569,3 +5569,38 @@ html body .mmic-profile-heading-icon {
 html body .mmic-profile-business-mark {
     color: rgba(117, 67, 63, 0.055) !important;
 }
+.mmic-profile-stats {
+    margin-top: 18px;
+    padding-top: 4px;
+}
+
+.mmic-profile-stats-list {
+    margin-top: 10px;
+}
+
+.mmic-profile-stat-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 9px 0;
+    border-bottom: 1px solid #E7C2B5;
+    text-decoration: none;
+    color: inherit;
+}
+
+.mmic-profile-stat-link span {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    color: #92736D;
+}
+
+.mmic-profile-stat-link strong {
+    font-size: 11px;
+    color: #76504D;
+}
+
+.mmic-profile-stat-link:hover strong {
+    color: #D58D7A;
+}
