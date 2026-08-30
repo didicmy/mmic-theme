@@ -982,10 +982,10 @@ html body .mmic-navigation-guest-links a {
         grid-row: 1 !important;
     }
 
-    html body .mmic-navigation-notifications {
-        grid-column: 3 !important;
-        grid-row: 1 !important;
-    }
+html body .mmic-navigation-notifications-wrap {
+    grid-column: 3 !important;
+    grid-row: 1 !important;
+}
 
     html body .mmic-navigation-search {
         grid-column: 1 / -1 !important;
@@ -1029,4 +1029,232 @@ html body .mmic-navigation-guest-links a {
         flex: 0 0 auto !important;
         white-space: nowrap !important;
     }
+}
+/* =========================================================
+   MENU DÉROULANT — NOTIFICATIONS
+   ========================================================= */
+
+html body .mmic-navigation-notifications-wrap {
+    position: relative !important;
+
+    grid-column: 3 !important;
+    grid-row: 1 !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-end !important;
+
+    width: auto !important;
+}
+
+
+/*
+ * Le bouton garde exactement le style
+ * actuel des notifications.
+ */
+html body .mmic-navigation-notifications-wrap
+.mmic-navigation-notifications {
+    grid-column: auto !important;
+    grid-row: auto !important;
+}
+
+
+/* MENU */
+
+html body .mmic-notifications-menu {
+    position: absolute !important;
+
+    top: calc(100% + 14px) !important;
+    right: 0 !important;
+    z-index: 100000 !important;
+
+    display: none !important;
+
+    width: 330px !important;
+    max-height: 430px !important;
+
+    border: 1px solid rgba(216, 176, 140, 0.62) !important;
+    border-radius: 9px !important;
+
+    background: #fbf8f3 !important;
+
+    box-shadow:
+        0 14px 32px rgba(9, 24, 39, 0.24),
+        inset 0 1px 0 rgba(255, 255, 255, 0.9) !important;
+
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+}
+
+
+html body .mmic-notifications-menu.mmic-notifications-open {
+    display: block !important;
+}
+
+
+/* PETITE FLÈCHE */
+
+html body .mmic-notifications-menu::before {
+    content: "";
+
+    position: absolute;
+
+    top: -6px;
+    right: 50px;
+
+    width: 10px;
+    height: 10px;
+
+    border-top:
+        1px solid rgba(216, 176, 140, 0.62);
+
+    border-left:
+        1px solid rgba(216, 176, 140, 0.62);
+
+    background: #fbf8f3;
+
+    transform: rotate(45deg);
+}
+
+
+/* EN-TÊTE */
+
+html body .mmic-notifications-menu-head {
+    padding: 14px 16px 12px !important;
+
+    border-bottom:
+        1px solid rgba(216, 176, 140, 0.35) !important;
+}
+
+
+html body .mmic-notifications-menu-head span {
+    display: block;
+
+    margin-bottom: 4px;
+
+    color: #b97a56;
+
+    font-size: 7px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+}
+
+
+html body .mmic-notifications-menu-head strong {
+    display: block;
+
+    color: #76504D;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
+/* LISTE */
+
+html body .mmic-notifications-list {
+    max-height: 310px;
+
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+
+html body .mmic-notifications-list li {
+    display: block !important;
+
+    margin: 0 !important;
+    padding: 11px 14px !important;
+
+    border-bottom:
+        1px solid rgba(216, 176, 140, 0.28) !important;
+
+    background: transparent !important;
+    color: #513D3B !important;
+
+    font-size: 10px !important;
+    line-height: 1.45 !important;
+
+    list-style: none !important;
+}
+
+
+html body .mmic-notifications-list li.unread {
+    background: #F8E9DF !important;
+}
+
+
+html body .mmic-notifications-list li:hover {
+    background: #FFF3ED !important;
+}
+
+
+html body .mmic-notifications-list .content,
+html body .mmic-notifications-list .contentText {
+    display: block !important;
+
+    width: auto !important;
+    height: auto !important;
+
+    margin: 0 !important;
+
+    overflow: visible !important;
+
+    float: none !important;
+}
+
+
+html body .mmic-notifications-list a {
+    color: #8C615D !important;
+
+    font-weight: 700 !important;
+    text-decoration: none !important;
+}
+
+
+html body .mmic-notifications-list a:hover {
+    color: #D58D7A !important;
+}
+
+
+html body .mmic-notifications-empty,
+html body .mmic-notifications-loading {
+    padding: 24px 15px;
+
+    color: #92736D;
+
+    font-size: 10px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+
+/* VOIR TOUT */
+
+html body .mmic-notifications-all {
+    display: block !important;
+
+    padding: 11px 15px !important;
+
+    border-top:
+        1px solid rgba(216, 176, 140, 0.35) !important;
+
+    background: #F8E9DF !important;
+    color: #8C615D !important;
+
+    font-size: 8px !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.1em !important;
+
+    text-align: center !important;
+    text-decoration: none !important;
+    text-transform: uppercase !important;
+}
+
+
+html body .mmic-notifications-all:hover {
+    background: #EFD9CD !important;
+    color: #76504D !important;
 }
