@@ -5604,3 +5604,9 @@ html body .mmic-profile-business-mark {
 .mmic-profile-stat-link:hover strong {
     color: #D58D7A;
 }
+.mmic-profile-stat-detail {
+    padding: 3px 0;
+    font-size: 9px;
+    line-height: 1.4;
+    color: #92736D;
+}
