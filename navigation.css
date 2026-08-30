@@ -602,14 +602,21 @@ html body .mmic-navigation-notifications {
     margin: 0 !important;
     padding: 0 9px !important;
 
+    /* Neutralise le style natif du bouton */
+    border: 0 !important;
+    outline: 0 !important;
     border-radius: 6px !important;
 
+    background: transparent !important;
     color: #fffaf4 !important;
 
+    font-family: inherit !important;
     font-size: 8px !important;
     font-weight: 700 !important;
     letter-spacing: 0.05em !important;
     line-height: 1 !important;
+
+    text-align: center !important;
     text-decoration: none !important;
     text-transform: uppercase !important;
     white-space: nowrap !important;
@@ -617,21 +624,41 @@ html body .mmic-navigation-notifications {
     align-self: center !important;
     justify-self: end !important;
 
+    box-shadow: none !important;
+
+    appearance: none !important;
+    -webkit-appearance: none !important;
+
     box-sizing: border-box !important;
+
+    cursor: pointer !important;
 
     transition:
         background 0.2s ease,
         color 0.2s ease !important;
 }
 
-html body .mmic-navigation-notifications:hover {
+
+/* SURVOL */
+
+html body .mmic-navigation-notifications:hover,
+html body .mmic-navigation-notifications:focus {
+    border: 0 !important;
+    outline: 0 !important;
+
     background: rgba(216, 176, 140, 0.14) !important;
     color: #d8b08c !important;
+
+    box-shadow: none !important;
 }
+
+
+/* ICÔNE */
 
 html body .mmic-navigation-notifications-icon {
     display: inline-flex !important;
     flex: 0 0 18px !important;
+
     align-items: center !important;
     justify-content: center !important;
 
@@ -641,6 +668,7 @@ html body .mmic-navigation-notifications-icon {
     border: 1px solid #d2a27e !important;
     border-radius: 50% !important;
 
+    background: transparent !important;
     color: #d2a27e !important;
 
     font-size: 10px !important;
@@ -649,10 +677,16 @@ html body .mmic-navigation-notifications-icon {
     box-sizing: border-box !important;
 }
 
+
+/* TEXTE */
+
 html body .mmic-navigation-notifications-label {
     display: inline-block !important;
     line-height: 1 !important;
 }
+
+
+/* COMPTEUR */
 
 html body .mmic-navigation-notifications-count {
     display: none;
@@ -668,7 +702,7 @@ html body .mmic-navigation-notifications-count {
     border-radius: 10px;
 
     background: #d2a27e;
-    color: #13263d;
+    color: #513D3B;
 
     font-family: Arial, sans-serif;
     font-size: 9px;
@@ -680,21 +714,32 @@ html body .mmic-navigation-notifications-count {
     box-sizing: border-box;
 }
 
-html body .mmic-navigation-notifications.mmic-has-notifications
+
+/* NOTIFICATIONS NON LUES */
+
+html body
+.mmic-navigation-notifications.mmic-has-notifications
 .mmic-navigation-notifications-count {
     display: inline-flex;
 }
 
-html body .mmic-navigation-notifications.mmic-has-notifications
+
+html body
+.mmic-navigation-notifications.mmic-has-notifications
 .mmic-navigation-notifications-icon {
     background: #d2a27e !important;
-    color: #13263d !important;
+    color: #513D3B !important;
 }
 
-html body .mmic-navigation-notifications.mmic-has-notifications::after {
+
+/* PETIT POINT */
+
+html body
+.mmic-navigation-notifications.mmic-has-notifications::after {
     content: "";
 
     position: absolute;
+
     top: 4px;
     left: 24px;
 
@@ -704,9 +749,8 @@ html body .mmic-navigation-notifications.mmic-has-notifications::after {
     border: 1px solid #d2a27e;
     border-radius: 50%;
 
-    background: #fff;
+    background: #fffaf4;
 }
-
 
 /* =========================================================
    9. RECHERCHE
