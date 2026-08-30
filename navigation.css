@@ -235,8 +235,8 @@ html body .mmic-navigation-avatar::after {
 html body .mmic-navigation-avatar img {
     position: absolute !important;
 
-    top: 50% !important;
-    left: 50% !important;
+    top: 0% !important;
+    left: 0% !important;
 
     display: block !important;
 
