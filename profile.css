@@ -5610,3 +5610,38 @@ html body .mmic-profile-business-mark {
     line-height: 1.4;
     color: #92736D;
 }
+/* =========================================================
+   SUJETS SURVEILLÉS / FAVORIS
+   PSEUDOS DE GROUPES SANS FOND
+   ========================================================= */
+
+html body.mmic-profile-topic-list
+#page-body
+span.name
+a.gensmall
+.usr_grp_clr,
+html body.mmic-profile-topic-list
+#page-body
+span.name
+a.gensmall
+.usr_grp_clr strong {
+    background: transparent !important;
+    background-color: transparent !important;
+
+    border: 0 !important;
+    box-shadow: none !important;
+
+    padding: 0 !important;
+}
+html body.mmic-profile-topic-list
+#page-body
+span.name
+a > span[style*="color"] {
+    background: transparent !important;
+    background-color: transparent !important;
+
+    border: 0 !important;
+    box-shadow: none !important;
+
+    padding: 0 !important;
+}
