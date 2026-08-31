@@ -5612,36 +5612,58 @@ html body .mmic-profile-business-mark {
 }
 /* =========================================================
    SUJETS SURVEILLÉS / FAVORIS
-   PSEUDOS DE GROUPES SANS FOND
+   SUPPRESSION DU FOND DES PSEUDOS COLORÉS
    ========================================================= */
 
 html body.mmic-profile-topic-list
 #page-body
-span.name
-a.gensmall
-.usr_grp_clr,
+span.name,
+
 html body.mmic-profile-topic-list
 #page-body
-span.name
-a.gensmall
-.usr_grp_clr strong {
-    background: transparent !important;
+span.name > a,
+
+html body.mmic-profile-topic-list
+#page-body
+span.name > a > span,
+
+html body.mmic-profile-topic-list
+#page-body
+span.name > a > span > strong,
+
+html body.mmic-profile-topic-list
+#page-body
+.usr_grp_clr,
+
+html body.mmic-profile-topic-list
+#page-body
+[class*="group-"].usr_grp_clr,
+
+html body.mmic-profile-topic-list
+#page-body
+span[class*="group-"] {
+
+    background: none !important;
     background-color: transparent !important;
+    background-image: none !important;
 
     border: 0 !important;
+
     box-shadow: none !important;
+    text-shadow: none !important;
 
     padding: 0 !important;
 }
 html body.mmic-profile-topic-list
 #page-body
-span.name
-a > span[style*="color"] {
-    background: transparent !important;
+span.name *::before,
+
+html body.mmic-profile-topic-list
+#page-body
+span.name *::after {
+    background: none !important;
     background-color: transparent !important;
+    background-image: none !important;
 
-    border: 0 !important;
     box-shadow: none !important;
-
-    padding: 0 !important;
 }
