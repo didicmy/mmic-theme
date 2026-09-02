@@ -8,51 +8,104 @@
     box-sizing: border-box;
 }
 
-/* ---------- BOUTON FLOTTANT ---------- */
+/* =========================================================
+   BOUTON ACCESSIBILITÉ — VERSION MMIC
+   ========================================================= */
 
 #mmic-a11y-button {
     position: fixed;
-    left: 22px;
-    bottom: 22px;
+    left: 20px;
+    bottom: 20px;
     z-index: 99998;
 
-    width: 48px;
-    height: 48px;
+    width: 46px;
+    height: 46px;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
-    border: 1px solid #E7C2B5;
+    padding: 0;
+
+    /* Médaillon MMIC */
+    border: 3px solid #FFF8F4;
     border-radius: 50%;
 
     background: #B6837B;
     color: #FFF8F4;
 
-    font-family: Arial, sans-serif;
+    /* Petit contour extérieur comme les éléments du forum */
+    outline: 1px solid #D58D7A;
+    outline-offset: 2px;
+
+    font-family: Arial, Verdana, sans-serif;
     font-size: 22px;
     line-height: 1;
 
     cursor: pointer;
 
-    box-shadow: 0 5px 18px rgba(81, 61, 59, 0.22);
+    box-shadow:
+        0 4px 12px rgba(81, 61, 59, .22),
+        inset 0 0 0 1px rgba(255, 255, 255, .18);
 
     transition:
         transform .2s ease,
-        background .2s ease,
+        background-color .2s ease,
         box-shadow .2s ease;
 }
 
-#mmic-a11y-button:hover,
-#mmic-a11y-button:focus-visible {
+
+/* Petit effet Chicago au survol */
+
+#mmic-a11y-button:hover {
     background: #8C615D;
-    transform: translateY(-2px);
-    box-shadow: 0 7px 22px rgba(81, 61, 59, 0.28);
+
+    transform:
+        translateY(-2px)
+        rotate(-3deg)
+        scale(1.05);
+
+    box-shadow:
+        0 7px 18px rgba(81, 61, 59, .28),
+        inset 0 0 0 1px rgba(255, 255, 255, .20);
 }
 
+
+/* Navigation clavier */
+
 #mmic-a11y-button:focus-visible {
+    background: #8C615D;
+
     outline: 3px solid #D58D7A;
-    outline-offset: 3px;
+    outline-offset: 4px;
+}
+
+
+/* Quand le panneau est ouvert */
+
+#mmic-a11y-button[aria-expanded="true"] {
+    background: #76504D;
+
+    box-shadow:
+        0 4px 14px rgba(81, 61, 59, .30),
+        inset 0 0 0 1px rgba(255, 255, 255, .20);
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    #mmic-a11y-button {
+        left: 14px;
+        bottom: 14px;
+
+        width: 43px;
+        height: 43px;
+
+        font-size: 20px;
+    }
+
 }
 
 
