@@ -348,24 +348,37 @@ html.mmic-a11y-size-large body {
 }
 
 
-/* Contraste renforcé */
+/* =========================================================
+   ACCESSIBILITÉ — CONTRASTE RENFORCÉ SANS CASSER LES FIXED
+   ========================================================= */
 
+html.mmic-a11y-contrast {
+    --mmic-a11y-text: #2f211f;
+    --mmic-a11y-bg: #fffaf7;
+}
+
+/* Renforce les textes sans filtrer toute la page */
 html.mmic-a11y-contrast body {
-    filter: contrast(1.25);
+    color: var(--mmic-a11y-text) !important;
 }
 
-
-/* Niveaux de gris */
-
-html.mmic-a11y-grayscale body {
-    filter: grayscale(1);
+/* Textes secondaires du forum */
+html.mmic-a11y-contrast .descriptionForum,
+html.mmic-a11y-contrast .dernierPost,
+html.mmic-a11y-contrast .mmic-lastpost-title {
+    color: #382522 !important;
 }
 
+/* Liens */
+html.mmic-a11y-contrast a {
+    color: #5f302c;
+}
 
-/* Contraste + niveaux de gris ensemble */
-
-html.mmic-a11y-contrast.mmic-a11y-grayscale body {
-    filter: contrast(1.25) grayscale(1);
+/* Les liens gardent un repère clair au clavier */
+html.mmic-a11y-contrast a:focus-visible,
+html.mmic-a11y-contrast button:focus-visible {
+    outline: 3px solid #713e39 !important;
+    outline-offset: 2px !important;
 }
 
 
