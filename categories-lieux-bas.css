@@ -2030,47 +2030,26 @@
   grid-column: 4 !important;
 }
 /* =========================================================
-   MMIC — LISIBILITÉ DES TEXTES DE L'INDEX
+   MMIC — LISIBILITÉ DES CATÉGORIES
    ========================================================= */
 
-/* Descriptions des forums */
-.forum-desc,
-.forum-description,
-.forum_desc,
-.forumcontent,
-.forum-content,
-.forum-description-text {
-    font-size: 12px !important;
+/* Description des forums */
+.mmic-category .descriptionForum {
+    font-size: 13px !important;
+    line-height: 1.6 !important;
+}
+
+
+/* Bloc du dernier message */
+.mmic-category .dernierPost {
+    font-size: 11px !important;
     line-height: 1.55 !important;
 }
 
 
-/* Zone "dernier message" */
-.lastpost,
-.last-post,
-.lastpost-info,
-.lastpost-details,
-.last-post-info,
-.last-post-details {
-    font-size: 11px !important;
-    line-height: 1.45 !important;
-}
-
-
-/* Petits libellés / date / heure / auteur dans le dernier message */
-.lastpost .gensmall,
-.last-post .gensmall,
-.lastpost-info .gensmall,
-.last-post-info .gensmall {
-    font-size: 10.5px !important;
-    line-height: 1.45 !important;
-}
-
-
-/* Compteurs sujets / messages */
-.forum-stats,
-.forumstats,
-.forum-stat,
-.forum-statistics {
-    font-size: 10.5px !important;
+/* Petit titre "DERNIER MESSAGE" */
+.mmic-category .mmic-lastpost-title {
+    font-size: 10px !important;
+    line-height: 1.4 !important;
+    letter-spacing: .8px !important;
 }
