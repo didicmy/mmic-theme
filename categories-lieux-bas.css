@@ -2029,3 +2029,48 @@
 .blocDernierPost {
   grid-column: 4 !important;
 }
+/* =========================================================
+   MMIC — LISIBILITÉ DES TEXTES DE L'INDEX
+   ========================================================= */
+
+/* Descriptions des forums */
+.forum-desc,
+.forum-description,
+.forum_desc,
+.forumcontent,
+.forum-content,
+.forum-description-text {
+    font-size: 12px !important;
+    line-height: 1.55 !important;
+}
+
+
+/* Zone "dernier message" */
+.lastpost,
+.last-post,
+.lastpost-info,
+.lastpost-details,
+.last-post-info,
+.last-post-details {
+    font-size: 11px !important;
+    line-height: 1.45 !important;
+}
+
+
+/* Petits libellés / date / heure / auteur dans le dernier message */
+.lastpost .gensmall,
+.last-post .gensmall,
+.lastpost-info .gensmall,
+.last-post-info .gensmall {
+    font-size: 10.5px !important;
+    line-height: 1.45 !important;
+}
+
+
+/* Compteurs sujets / messages */
+.forum-stats,
+.forumstats,
+.forum-stat,
+.forum-statistics {
+    font-size: 10.5px !important;
+}
