@@ -2053,3 +2053,45 @@
     line-height: 1.4 !important;
     letter-spacing: .8px !important;
 }
+/* =========================================================
+   MMIC — INSCRIPTION : TITRES NATIFS FORUMACTIF
+   ========================================================= */
+
+form#form_register .thHead,
+form#form_register th.thHead {
+    background: #B6837B !important;
+    background-image: none !important;
+
+    color: #FFF8F4 !important;
+
+    border: 1px solid #E7C2B5 !important;
+
+    font-family: Georgia, serif !important;
+    font-size: 14px !important;
+    font-weight: bold !important;
+
+    text-shadow: none !important;
+
+    padding: 8px 12px !important;
+}
+
+
+/* Si du texte ou un lien se trouve dedans */
+form#form_register .thHead a,
+form#form_register .thHead span {
+    color: #FFF8F4 !important;
+}
+form#form_register th.thHead,
+form#form_register th.thSides,
+form#form_register th.thTop,
+form#form_register th.thLeft,
+form#form_register th.thRight,
+form#form_register th.thBottom,
+form#form_register th.thCornerL,
+form#form_register th.thCornerR {
+    background: #B6837B !important;
+    background-image: none !important;
+    color: #FFF8F4 !important;
+    border-color: #E7C2B5 !important;
+    text-shadow: none !important;
+}
