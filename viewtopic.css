@@ -2266,3 +2266,11 @@ html body .mmic-vt-post-actions .mmic-tag-button:focus-visible {
     outline: 2px solid #D58D7A !important;
     outline-offset: 2px !important;
 }
+/* =====================================================
+   MMIC — LIENS PROFIL : VUE SUJET
+   Garde uniquement PROFIL / MP / EMAIL
+   ===================================================== */
+
+html body .mmic-vt-profile-links .mmic-vt-profile-link:nth-child(n+4) {
+    display: none !important;
+}
