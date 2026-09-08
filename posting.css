@@ -1051,7 +1051,6 @@ html body .mmic-posting-page .mmic-posting-topic-review hr {
 
   html body .mmic-posting-page .sceditor-container iframe, html body .mmic-posting-page .sceditor-container textarea, html body .mmic-posting-page #text_editor_textarea {
     min-height: 300px !important;
-    height: 300px !important;
   }
 
   html body .mmic-posting-page .mmic-posting-smileys {
@@ -1120,7 +1119,6 @@ html body .mmic-posting-page .sceditor-container iframe, html body .mmic-posting
   outline: none !important;
   box-sizing: border-box !important;
   min-height: 385px !important;
-  height: 385px !important;
 }
 
 html body .mmic-posting-page .sceditor-toolbar {
@@ -3226,4 +3224,13 @@ html body .mmic-posting-page #optionsitems_show th.thHead a:hover {
   border-color: #fffaf6 !important;
 }
 
+/* =========================================================
+   MMIC — REDIMENSIONNEMENT DE LA ZONE D'ÉCRITURE
+   Laisse SCEditor gérer la hauteur avec sa poignée.
+   ========================================================= */
+
+html body .mmic-posting-page .sceditor-grip {
+  display: block !important;
+  cursor: se-resize !important;
+}
 
