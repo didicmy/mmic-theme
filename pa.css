@@ -264,10 +264,7 @@
   border-radius: 50%;
   transition: 0.2s;
 }
-/* Teinte rosée — Keegan */
-.mmic-staff-member[href*="/u23"] img {
-    filter: sepia(12%) saturate(110%) hue-rotate(320deg) brightness(103%);
-}
+
 .mmic-staff-member:hover img {
   transform: translateY(-3px);
 }
