@@ -2161,3 +2161,51 @@ html body .mmic-vt-dislike-list {
 html body .fa_like_list {
   display: none !important;
 }
+/* =====================================================
+   MMIC — BOUTON TAG
+   ===================================================== */
+
+.mmic-tag-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 42px;
+    height: 22px;
+
+    margin-right: 6px;
+    padding: 0 10px;
+
+    box-sizing: border-box;
+
+    border: 1px solid #B6837B;
+    border-radius: 12px;
+
+    background: #76504D;
+    color: #FFF8F4;
+
+    font-family: Georgia, serif;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+    cursor: pointer;
+
+    transition:
+        background-color .2s ease,
+        transform .2s ease,
+        box-shadow .2s ease;
+}
+
+.mmic-tag-button:hover {
+    background: #8C615D;
+    transform: translateY(-1px);
+
+    box-shadow:
+        0 3px 8px rgba(81, 61, 59, .22);
+}
+
+.mmic-tag-button:focus-visible {
+    outline: 2px solid #D58D7A;
+    outline-offset: 2px;
+}
