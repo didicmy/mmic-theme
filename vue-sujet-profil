@@ -1349,3 +1349,11 @@ html body .mmic-vt-no-post {
     }
 
 }
+/* =====================================================
+   MMIC — LIENS PROFIL : VUE SUJET
+   Garde uniquement PROFIL / MP / EMAIL
+   ===================================================== */
+
+html body .mmic-vt-profile-links .mmic-vt-profile-link:nth-child(n+4) {
+    display: none !important;
+}
