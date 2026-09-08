@@ -3224,13 +3224,40 @@ html body .mmic-posting-page #optionsitems_show th.thHead a:hover {
   border-color: #fffaf6 !important;
 }
 
+
+
 /* =========================================================
    MMIC — REDIMENSIONNEMENT DE LA ZONE D'ÉCRITURE
-   Laisse SCEditor gérer la hauteur avec sa poignée.
    ========================================================= */
 
-html body .mmic-posting-page .sceditor-grip {
-  display: block !important;
-  cursor: se-resize !important;
+html body .mmic-posting-page .mmic-editor-resizer {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    z-index: 20;
+
+    width: 18px;
+    height: 18px;
+
+    cursor: ns-resize;
+
+    opacity: .65;
+
+    background:
+        linear-gradient(
+            135deg,
+            transparent 0 38%,
+            #B6837B 39% 46%,
+            transparent 47% 58%,
+            #B6837B 59% 66%,
+            transparent 67%
+        );
+
+    border-radius: 3px;
+
+    transition: opacity .2s ease;
 }
 
+html body .mmic-posting-page .mmic-editor-resizer:hover {
+    opacity: 1;
+}
