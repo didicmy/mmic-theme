@@ -835,3 +835,146 @@
 .mmic-qeel-group:hover {
   box-shadow: 0 3px 7px rgba(117, 67, 63, 0.12);
 }
+/* =========================================================
+   CRÉDITS — QEEL
+   ========================================================= */
+
+.mmic-qeel-credits {
+    width: calc(100% - 24px);
+    max-width: 900px;
+
+    margin: 2px auto 18px;
+    padding: 14px 20px;
+
+    box-sizing: border-box;
+
+    border-top: 1px solid rgba(217, 143, 124, 0.28);
+    border-bottom: 1px solid rgba(217, 143, 124, 0.18);
+
+    color: #8a6d68;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 8px;
+    line-height: 1.7;
+
+    text-align: center;
+}
+
+.mmic-qeel-credits p {
+    margin: 0;
+}
+
+.mmic-qeel-credits-phrase {
+    margin-bottom: 7px !important;
+
+    color: #a76452;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 9px;
+    font-style: italic;
+}
+
+.mmic-qeel-credits-signatures {
+    color: #80635e;
+
+    font-size: 7.5px;
+    letter-spacing: 0.3px;
+}
+
+.mmic-qeel-credits-signatures strong {
+    color: #75433f;
+    font-weight: 700;
+}
+
+.mmic-qeel-credits-thanks {
+    margin-top: 7px !important;
+
+    color: #9a7b75;
+
+    font-size: 7px;
+    font-style: italic;
+}
+
+.mmic-qeel-credits-thanks strong {
+    color: #8f5d58;
+}
+/* =========================================================
+   QEEL — PALETTE MMIC ACTUELLE
+   ========================================================= */
+
+.mmic-qeel-header {
+    border-bottom-color: #d98f7c !important;
+
+    background:
+        linear-gradient(
+            90deg,
+            #8f5d58 0%,
+            #a86f67 50%,
+            #8f5d58 100%
+        ) !important;
+}
+
+.mmic-qeel-eyebrow {
+    color: #efb69d !important;
+}
+
+.mmic-qeel-header h2 {
+    color: #fff8f4 !important;
+}
+
+.mmic-qeel-header p {
+    color: rgba(255, 248, 244, 0.78) !important;
+}
+
+.mmic-qeel-header::after {
+    opacity: 0.10 !important;
+}
+
+.mmic-qeel-card-title {
+    color: #75433f !important;
+    border-bottom-color: rgba(217, 143, 124, 0.32) !important;
+}
+
+.mmic-qeel-title-icon {
+    background: #9a625d !important;
+    border-color: #d98f7c !important;
+    color: #fff8f4 !important;
+}
+
+.mmic-qeel-stat-icon {
+    background: #9a625d !important;
+    color: #f2b59d !important;
+}
+
+.mmic-qeel-newest {
+    border-left-color: #d98f7c !important;
+    background: rgba(217, 143, 124, 0.08) !important;
+}
+
+.mmic-qeel-small-title {
+    color: #a76452 !important;
+}
+
+.mmic-qeel a {
+    color: #a76452 !important;
+}
+
+.mmic-qeel a:hover {
+    color: #75433f !important;
+}
+
+.mmic-qeel-group:hover {
+    background: #8f5d58 !important;
+}
+
+.mmic-qeel-city-mark {
+    color: rgba(143, 93, 88, 0.06) !important;
+}
+
+.mmic-qeel {
+    box-shadow: 0 7px 20px rgba(117, 67, 63, 0.10) !important;
+}
+
+.mmic-qeel-card {
+    box-shadow: 0 3px 9px rgba(117, 67, 63, 0.06) !important;
+}
