@@ -836,67 +836,29 @@
   box-shadow: 0 3px 7px rgba(117, 67, 63, 0.12);
 }
 /* =========================================================
-   CRÉDITS — QEEL
+   CRÉDITS — INTÉGRÉS À LA CARTE DES DERNIÈRES 48H
    ========================================================= */
 
 .mmic-qeel-credits {
-    width: calc(100% - 24px);
-    max-width: 900px;
+    margin-top: 14px;
+    padding-top: 10px;
 
-    margin: 2px auto 18px;
-    padding: 14px 20px;
+    border-top: 1px solid rgba(217, 143, 124, 0.22);
 
-    box-sizing: border-box;
-
-    border-top: 1px solid rgba(217, 143, 124, 0.28);
-    border-bottom: 1px solid rgba(217, 143, 124, 0.18);
-
-    color: #8a6d68;
-
+    color: #92736d;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 8px;
-    line-height: 1.7;
-
+    font-size: 7.5px;
+    line-height: 1.65;
     text-align: center;
 }
 
-.mmic-qeel-credits p {
+.mmic-qeel-credits-line {
     margin: 0;
 }
 
-.mmic-qeel-credits-phrase {
-    margin-bottom: 7px !important;
-
-    color: #a76452;
-
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 9px;
-    font-style: italic;
-}
-
-.mmic-qeel-credits-signatures {
-    color: #80635e;
-
-    font-size: 7.5px;
-    letter-spacing: 0.3px;
-}
-
-.mmic-qeel-credits-signatures strong {
-    color: #75433f;
-    font-weight: 700;
-}
-
-.mmic-qeel-credits-thanks {
-    margin-top: 7px !important;
-
-    color: #9a7b75;
-
-    font-size: 7px;
-    font-style: italic;
-}
-
-.mmic-qeel-credits-thanks strong {
+.mmic-qeel-credits strong {
     color: #8f5d58;
+    font-weight: 700;
 }
 /* =========================================================
    QEEL — PALETTE MMIC ACTUELLE
