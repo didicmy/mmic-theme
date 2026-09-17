@@ -839,16 +839,21 @@
    CRÉDITS — INTÉGRÉS À LA CARTE DES DERNIÈRES 48H
    ========================================================= */
 
+.mmic-qeel-recent {
+    display: flex;
+    flex-direction: column;
+}
+
 .mmic-qeel-credits {
-    margin-top: 22px;
-    padding-top: 10px;
+    margin-top: auto;
+    padding-top: 22px;
 
     border-top: 1px solid rgba(217, 143, 124, 0.22);
 
     color: #92736d;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 9px;
-    line-height: 1.65;
+    line-height: 1.8;
     text-align: center;
 }
 
