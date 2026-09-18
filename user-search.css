@@ -899,3 +899,18 @@ html body #search_menu a {
 html body #search_menu a:hover {
     color: #D58D7A !important;
 }
+/* =========================================================
+   MMIC — BANDEAU DU MENU RECHERCHER
+   ========================================================= */
+
+html body #search_menu th.thHead {
+    background: #8C615D !important;
+    background-image: none !important;
+    color: #FFF8F4 !important;
+    border: 1px solid #D58D7A !important;
+}
+
+html body #search_menu th.thHead a,
+html body #search_menu th.thHead span {
+    color: #FFF8F4 !important;
+}
