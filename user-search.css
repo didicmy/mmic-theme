@@ -812,3 +812,40 @@ html body .mmic-search-results .name *::after {
     background-image: none !important;
     box-shadow: none !important;
 }
+/* =========================================================
+   MMIC — MENU DE RECHERCHE DE LA NAVIGATION
+   ========================================================= */
+
+html body #search_menu,
+html body #search_menu > div,
+html body #search_menu .forumline {
+    background: #8C615D !important;
+    border-color: #D58D7A !important;
+    color: #FFF8F4 !important;
+}
+
+html body #search_menu input[type="text"] {
+    border: 1px solid #E7C2B5 !important;
+    background: #FFF8F4 !important;
+    color: #513D3B !important;
+}
+
+html body #search_menu input[type="submit"],
+html body #search_menu input[type="button"] {
+    border: 1px solid #D58D7A !important;
+    border-radius: 5px !important;
+    background: #76504D !important;
+    color: #FFF8F4 !important;
+}
+
+html body #search_menu input[type="submit"]:hover,
+html body #search_menu input[type="button"]:hover {
+    background: #D58D7A !important;
+    color: #FFF8F4 !important;
+}
+
+html body #search_menu label,
+html body #search_menu span,
+html body #search_menu a {
+    color: #FFF8F4 !important;
+}
