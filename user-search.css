@@ -904,13 +904,12 @@ html body #search_menu a:hover {
    ========================================================= */
 
 html body #search_menu th.thHead {
-    background: #8C615D !important;
+    background-color: #8C615D !important;
     background-image: none !important;
     color: #FFF8F4 !important;
-    border: 1px solid #D58D7A !important;
+    border: 0 !important;
 }
 
-html body #search_menu th.thHead a,
-html body #search_menu th.thHead span {
+html body #search_menu th.thHead * {
     color: #FFF8F4 !important;
 }
