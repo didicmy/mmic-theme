@@ -519,3 +519,267 @@ body {
   background: #102438 !important;
   color: #fbf8f3 !important;
 }
+/* =========================================================
+   MEET ME IN CHICAGO — RÉSULTATS DE RECHERCHE
+   ========================================================= */
+
+/* Conteneur */
+html body .mmic-search-results {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* =========================================================
+   TABLEAU PRINCIPAL
+   ========================================================= */
+
+html body .mmic-search-results table.forumline {
+    width: 100% !important;
+
+    border: 1px solid #E7C2B5 !important;
+    border-collapse: separate !important;
+    border-spacing: 0 !important;
+
+    border-radius: 8px !important;
+    overflow: hidden !important;
+
+    background: #FFF8F4 !important;
+
+    box-shadow: 0 5px 15px rgba(81, 61, 59, .08) !important;
+}
+
+/* =========================================================
+   TITRE — "3 résultats trouvés..."
+   ========================================================= */
+
+html body .mmic-search-results .catHead {
+    height: auto !important;
+
+    padding: 13px 15px !important;
+
+    border: 0 !important;
+
+    background: #8C615D !important;
+
+    color: #FFF8F4 !important;
+
+    text-align: center !important;
+}
+
+html body .mmic-search-results .catHead .cattitle {
+    margin: 0 !important;
+
+    color: #FFF8F4 !important;
+
+    font-family: Georgia, "Times New Roman", serif !important;
+    font-size: 14px !important;
+    font-weight: normal !important;
+
+    letter-spacing: .4px !important;
+}
+
+/* =========================================================
+   EN-TÊTES DU TABLEAU
+   ========================================================= */
+
+html body .mmic-search-results .thTop,
+html body .mmic-search-results .thCornerL,
+html body .mmic-search-results .thCornerR {
+    height: 27px !important;
+
+    padding: 6px 5px !important;
+
+    border: 0 !important;
+    border-bottom: 1px solid #E7C2B5 !important;
+
+    background: #F8E9DF !important;
+
+    color: #76504D !important;
+
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 8px !important;
+    font-weight: 700 !important;
+
+    letter-spacing: .08em !important;
+    text-transform: uppercase !important;
+
+    text-align: center !important;
+}
+
+/* =========================================================
+   CELLULES
+   ========================================================= */
+
+html body .mmic-search-results .row1,
+html body .mmic-search-results .row2,
+html body .mmic-search-results .row3 {
+    border: 0 !important;
+    border-bottom: 1px solid rgba(231, 194, 181, .55) !important;
+
+    background: #FFF8F4 !important;
+
+    color: #513D3B !important;
+
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 9px !important;
+}
+
+html body .mmic-search-results .row2 {
+    background: #FCF1EC !important;
+}
+
+/* Survol d'une ligne */
+html body .mmic-search-results tr:hover .row1,
+html body .mmic-search-results tr:hover .row2,
+html body .mmic-search-results tr:hover .row3 {
+    background: #F8E9DF !important;
+}
+
+/* =========================================================
+   TITRES DES SUJETS
+   ========================================================= */
+
+html body .mmic-search-results h2.topic-title {
+    margin: 0 !important;
+
+    font-family: Georgia, "Times New Roman", serif !important;
+    font-size: 11px !important;
+    font-weight: normal !important;
+}
+
+html body .mmic-search-results a.topictitle {
+    color: #76504D !important;
+
+    font-family: Georgia, "Times New Roman", serif !important;
+    font-size: 11px !important;
+    font-weight: bold !important;
+
+    text-decoration: none !important;
+}
+
+html body .mmic-search-results a.topictitle:hover {
+    color: #D58D7A !important;
+}
+
+/* =========================================================
+   LIENS ET TEXTES
+   ========================================================= */
+
+html body .mmic-search-results a.postdetails,
+html body .mmic-search-results a.gensmall,
+html body .mmic-search-results .postdetails {
+    color: #76504D !important;
+}
+
+html body .mmic-search-results a:hover {
+    color: #D58D7A !important;
+}
+
+/* Auteurs */
+html body .mmic-search-results .name {
+    color: #8C615D !important;
+}
+
+/* =========================================================
+   BAS DU TABLEAU
+   ========================================================= */
+
+html body .mmic-search-results .catBottom {
+    padding: 8px !important;
+
+    border: 0 !important;
+
+    background: #F8E9DF !important;
+
+    color: #76504D !important;
+
+    font-size: 8px !important;
+}
+
+html body .mmic-search-results .catBottom a {
+    color: #8C615D !important;
+
+    text-decoration: none !important;
+}
+
+html body .mmic-search-results .catBottom a:hover {
+    color: #D58D7A !important;
+}
+
+/* =========================================================
+   PAGINATION / NAVIGATION
+   ========================================================= */
+
+html body .mmic-search-results > table:not(.forumline) {
+    color: #76504D !important;
+}
+
+html body .mmic-search-results > table:not(.forumline) .nav,
+html body .mmic-search-results > table:not(.forumline) .gensmall {
+    color: #76504D !important;
+
+    font-size: 8px !important;
+}
+
+html body .mmic-search-results > table:not(.forumline) a {
+    color: #8C615D !important;
+
+    text-decoration: none !important;
+}
+
+html body .mmic-search-results > table:not(.forumline) a:hover {
+    color: #D58D7A !important;
+}
+
+/* =========================================================
+   BOUTON "ARRÊTER DE SURVEILLER"
+   ========================================================= */
+
+html body .mmic-search-results input.liteoption {
+    border: 1px solid #D58D7A !important;
+    border-radius: 6px !important;
+
+    padding: 6px 10px !important;
+
+    background: #8C615D !important;
+    color: #FFF8F4 !important;
+
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 8px !important;
+    font-weight: 700 !important;
+
+    cursor: pointer !important;
+}
+
+html body .mmic-search-results input.liteoption:hover {
+    background: #D58D7A !important;
+    border-color: #D58D7A !important;
+}
+
+/* =========================================================
+   RÉSULTATS PAR MESSAGES
+   ========================================================= */
+
+html body .mmic-search-posts .topictitle {
+    color: #76504D !important;
+
+    font-family: Georgia, "Times New Roman", serif !important;
+    font-size: 11px !important;
+}
+
+html body .mmic-search-posts .postbody {
+    color: #513D3B !important;
+
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 10px !important;
+
+    line-height: 1.6 !important;
+}
+
+html body .mmic-search-posts .postbody a {
+    color: #8C615D !important;
+}
+
+html body .mmic-search-posts .postbody a:hover {
+    color: #D58D7A !important;
+}
