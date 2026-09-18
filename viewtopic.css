@@ -2274,3 +2274,11 @@ html body .mmic-vt-post-actions .mmic-tag-button:focus-visible {
 html body .mmic-vt-profile-links .mmic-vt-profile-link:nth-child(n+4) {
     display: none !important;
 }
+html body .mmic-vt-native-anchor {
+    display: block;
+    width: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    scroll-margin-top: 90px;
+}
