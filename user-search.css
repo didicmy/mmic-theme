@@ -822,24 +822,46 @@ html body #search_menu {
     box-shadow: 0 4px 12px rgba(81, 61, 59, .15) !important;
 }
 
-/* En-tête du menu */
-html body #search_menu > div:first-child,
+/* Barre supérieure du menu */
+html body #search_menu table,
+html body #search_menu tr,
+html body #search_menu td,
 html body #search_menu .catHead,
-html body #search_menu .catBottom {
-    background: #8C615D !important;
-    background-image: none !important;
-    color: #FFF8F4 !important;
+html body #search_menu .thHead,
+html body #search_menu .thTop {
     border-color: #D58D7A !important;
 }
 
-/* Texte du menu */
-html body #search_menu,
+/* On neutralise les fonds Forumactif */
+html body #search_menu td {
+    background-image: none !important;
+}
+
+/* Fond de la barre "Rechercher" */
+html body #search_menu td:first-child {
+    background-color: #8C615D !important;
+    background-image: none !important;
+    color: #FFF8F4 !important;
+}
+
+/* Texte de la barre */
+html body #search_menu td:first-child *,
+html body #search_menu .catHead *,
+html body #search_menu .thHead * {
+    color: #FFF8F4 !important;
+}
+
+/* Zone intérieure */
+html body #search_menu {
+    color: #513D3B !important;
+}
+
 html body #search_menu span,
 html body #search_menu label {
     color: #513D3B !important;
 }
 
-/* Champ de recherche */
+/* Champ */
 html body #search_menu input[type="text"] {
     box-sizing: border-box !important;
     border: 1px solid #D8B0A5 !important;
