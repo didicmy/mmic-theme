@@ -783,3 +783,32 @@ html body .mmic-search-posts .postbody a {
 html body .mmic-search-posts .postbody a:hover {
     color: #D58D7A !important;
 }
+/* =========================================================
+   MMIC — RECHERCHE — NEUTRALISER LES FONDS DES PSEUDOS
+   ========================================================= */
+
+html body .mmic-search-results .name,
+html body .mmic-search-results .name > a,
+html body .mmic-search-results .name > a > span,
+html body .mmic-search-results .name > a > span > strong,
+html body .mmic-search-results .usr_grp_clr,
+html body .mmic-search-results [class*="group-"].usr_grp_clr,
+html body .mmic-search-results span[class*="group-"] {
+    background: none !important;
+    background-color: transparent !important;
+    background-image: none !important;
+
+    border: 0 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+
+    padding: 0 !important;
+}
+
+html body .mmic-search-results .name *::before,
+html body .mmic-search-results .name *::after {
+    background: none !important;
+    background-color: transparent !important;
+    background-image: none !important;
+    box-shadow: none !important;
+}
